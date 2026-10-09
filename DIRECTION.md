@@ -140,6 +140,28 @@ film seconds visible (lap variable `stream_window_s`).
   Default `stream_labels: names` for his own viewing; `hashed` is the arm for any public cut.
 - The stream never flashes or sounds: it is the ledger scrolling past, the industrial base read as lineage.
 
+## Immersion, the camera and the player (Derek, 2026-10-10, second viewing)
+
+- **Full-bleed.** The map owns the whole frame at any size; no reserved columns or empty margins. The ticker, surface
+  tallies, nation panel, stream and radio band are HUD plates: translucent dark panels (about 60% opacity, 1 px
+  border) hugging the edges, the map allowed to run under them. The camera fits the known world into the **safe
+  area** (the frame minus the plates' insets) so land never hides behind a plate when it matters. `hud: plates`
+  (default) | `columns` (the old layout) is the lap arm.
+- **Mobile.** The player page is responsive and `render(f)` takes its layout from the viewport (deterministic per
+  size): landscape = plates at the edges; portrait = ticker top, band bottom, nations as a one-line strip of swatches
+  with test counts that expands on tap, surfaces behind a tap, the stream as a thin edge strip or hidden
+  (`hud_portrait`). The exported video stays 1920 × 1080.
+- **Start tight.** When the known world is one region it fills about 60% of the safe area (`camera_start_fill` 0.6;
+  `max_hex_px` raised accordingly); the camera only ever pulls back, as before, so the growth of scale is experienced
+  as zoom. The first Windows continent and the Linux crossing are pull-back moments, uncaptioned.
+- **The player.** Transport: play/pause and speed steps `--  -  ▶  +  ++` over 1, 1.5, 2, 3, 4 (`++` to 4, `--` to 1),
+  keyboard too; speed never changes the export. The status bar is a scrubber with **hashmarks** at: era boundaries,
+  each surface's first appearance (a new continent), each nation's entry, the migration, the offload storm, and
+  **regime changes** computed from the cumulative series: where a piecewise-linear fit of log(cumulative commits,
+  launches, files) against story time breaks (slope change above `marks_slope_threshold`), the places where linear
+  growth turns quadratic or logarithmic. Marks are a compile output (`marks.json`, each with a kind, a frame and a
+  short label shown on hover); the exported video's ticker hairline carries them faintly.
+
 ## Sound
 
 One tone per launch, pitch by nation (human A3, Claude E4, Codex G4, OpenCode B4, local models C3, automation D4,

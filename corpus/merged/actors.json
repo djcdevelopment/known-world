@@ -180,7 +180,7 @@
   },
   {
    "class": "claude",
-   "events": 29019,
+   "events": 29074,
    "first_ts": "2026-07-25T04:45:00Z",
    "hosts": [
     "omen-linux",
@@ -191,7 +191,7 @@
    "kinds": {
     "chat_msg": 27500,
     "chat_session": 564,
-    "commit": 955
+    "commit": 1010
    },
    "last_ts": "2026-09-26T04:06:07Z",
    "name": "claude-opus-5"
@@ -293,7 +293,7 @@
   },
   {
    "class": "claude",
-   "events": 2098,
+   "events": 2099,
    "first_ts": "2026-07-04T10:47:42Z",
    "hosts": [
     "omen-linux",
@@ -303,7 +303,7 @@
    "kinds": {
     "chat_msg": 1947,
     "chat_session": 127,
-    "commit": 24
+    "commit": 25
    },
    "last_ts": "2026-09-27T17:45:00Z",
    "name": "claude-sonnet-5"
@@ -339,8 +339,22 @@
   },
   {
    "class": "claude",
-   "events": 681,
-   "first_ts": "2026-06-01T11:36:33Z",
+   "events": 709,
+   "first_ts": "2026-04-18T18:11:51Z",
+   "hosts": [
+    "omen-c",
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 709
+   },
+   "last_ts": "2026-06-05T21:22:51Z",
+   "name": "claude-opus-4.7"
+  },
+  {
+   "class": "claude",
+   "events": 691,
+   "first_ts": "2026-05-29T22:58:59Z",
    "hosts": [
     "omen-linux",
     "omen-c",
@@ -348,10 +362,25 @@
     "am4"
    ],
    "kinds": {
-    "commit": 681
+    "commit": 691
    },
    "last_ts": "2026-07-24T06:03:12Z",
    "name": "claude-opus-4.8"
+  },
+  {
+   "class": "claude",
+   "events": 658,
+   "first_ts": "2026-09-03T09:51:00Z",
+   "hosts": [
+    "omen-linux",
+    "omen-c",
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 658
+   },
+   "last_ts": "2026-10-09T12:16:46Z",
+   "name": "claude-fable-5.1"
   },
   {
    "class": "claude",
@@ -368,35 +397,6 @@
    },
    "last_ts": "2026-10-09T12:45:04Z",
    "name": "claude-haiku-4-5-20251001"
-  },
-  {
-   "class": "claude",
-   "events": 535,
-   "first_ts": "2026-09-03T09:51:00Z",
-   "hosts": [
-    "omen-linux",
-    "omen-c",
-    "omen-e"
-   ],
-   "kinds": {
-    "commit": 535
-   },
-   "last_ts": "2026-10-09T12:16:46Z",
-   "name": "claude-fable-5.1"
-  },
-  {
-   "class": "claude",
-   "events": 493,
-   "first_ts": "2026-04-23T04:55:02Z",
-   "hosts": [
-    "omen-c",
-    "omen-e"
-   ],
-   "kinds": {
-    "commit": 493
-   },
-   "last_ts": "2026-06-05T21:22:51Z",
-   "name": "claude-opus-4.7"
   },
   {
    "class": "claude",
@@ -427,7 +427,7 @@
   },
   {
    "class": "claude",
-   "events": 73,
+   "events": 103,
    "first_ts": "2026-03-02T18:08:08Z",
    "hosts": [
     "omen-linux",
@@ -435,7 +435,7 @@
     "omen-e"
    ],
    "kinds": {
-    "commit": 73
+    "commit": 103
    },
    "last_ts": "2026-08-12T13:05:51Z",
    "name": "claude-sonnet-4.6"
@@ -756,7 +756,7 @@
   },
   {
    "class": "human",
-   "events": 9141,
+   "events": 11205,
    "first_ts": "2011-08-25T19:45:52Z",
    "hosts": [
     "omen-linux",
@@ -767,15 +767,15 @@
     "github"
    ],
    "kinds": {
-    "branch": 790,
-    "commit": 4637,
-    "file_birth": 2030,
-    "file_update": 1090,
+    "branch": 801,
+    "commit": 4714,
+    "file_birth": 3273,
+    "file_update": 1793,
     "offload_call": 223,
-    "repo_born": 167,
-    "worktree": 204
+    "repo_born": 176,
+    "worktree": 225
    },
-   "last_ts": "2026-10-09T12:22:31Z",
+   "last_ts": "2026-10-09T13:33:18Z",
    "name": "derek"
   },
   {
@@ -1113,6 +1113,19 @@
   },
   {
    "class": "third_party",
+   "events": 757,
+   "first_ts": "2025-03-11T17:15:05Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 757
+   },
+   "last_ts": "2026-09-03T13:35:45Z",
+   "name": "fe8f7507db70"
+  },
+  {
+   "class": "third_party",
    "events": 736,
    "first_ts": "2024-05-03T17:36:00Z",
    "hosts": [
@@ -1334,6 +1347,19 @@
   },
   {
    "class": "third_party",
+   "events": 161,
+   "first_ts": "2025-04-01T18:33:17Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 161
+   },
+   "last_ts": "2026-09-06T15:33:01Z",
+   "name": "c3202b125e8e"
+  },
+  {
+   "class": "third_party",
    "events": 158,
    "first_ts": "2025-06-14T08:34:20Z",
    "hosts": [
@@ -1373,6 +1399,19 @@
   },
   {
    "class": "third_party",
+   "events": 145,
+   "first_ts": "2025-05-08T17:55:20Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 145
+   },
+   "last_ts": "2026-09-03T14:28:09Z",
+   "name": "006b5dc03847"
+  },
+  {
+   "class": "third_party",
    "events": 141,
    "first_ts": "2024-10-02T23:49:47Z",
    "hosts": [
@@ -1383,6 +1422,19 @@
    },
    "last_ts": "2025-11-28T15:33:23Z",
    "name": "2ccd561f8fc1"
+  },
+  {
+   "class": "third_party",
+   "events": 139,
+   "first_ts": "2025-06-22T06:43:10Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 139
+   },
+   "last_ts": "2026-08-29T10:46:42Z",
+   "name": "2a94fc4d765e"
   },
   {
    "class": "third_party",
@@ -1436,6 +1488,19 @@
    },
    "last_ts": "2026-03-12T14:55:31Z",
    "name": "b78f1113adc3"
+  },
+  {
+   "class": "third_party",
+   "events": 118,
+   "first_ts": "2025-10-08T17:09:42Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 118
+   },
+   "last_ts": "2026-09-02T16:58:24Z",
+   "name": "1e3d6c73c522"
   },
   {
    "class": "third_party",
@@ -1592,6 +1657,19 @@
    },
    "last_ts": "2025-12-18T11:47:52Z",
    "name": "803fbfd91a69"
+  },
+  {
+   "class": "third_party",
+   "events": 69,
+   "first_ts": "2026-01-02T09:45:48Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 69
+   },
+   "last_ts": "2026-09-05T10:12:31Z",
+   "name": "a92c15f755d2"
   },
   {
    "class": "third_party",
@@ -1843,6 +1921,19 @@
   {
    "class": "third_party",
    "events": 42,
+   "first_ts": "2025-04-01T18:47:30Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 42
+   },
+   "last_ts": "2025-05-09T19:25:11Z",
+   "name": "8dae4d463c56"
+  },
+  {
+   "class": "third_party",
+   "events": 42,
    "first_ts": "2023-03-23T11:41:32Z",
    "hosts": [
     "omen-e"
@@ -1985,6 +2076,19 @@
   },
   {
    "class": "third_party",
+   "events": 33,
+   "first_ts": "2025-04-04T19:06:01Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 33
+   },
+   "last_ts": "2025-04-29T18:46:43Z",
+   "name": "704b7e496b8f"
+  },
+  {
+   "class": "third_party",
    "events": 32,
    "first_ts": "2023-03-17T17:47:35Z",
    "hosts": [
@@ -2047,6 +2151,19 @@
    },
    "last_ts": "2024-11-13T10:10:38Z",
    "name": "75c450c3f963"
+  },
+  {
+   "class": "third_party",
+   "events": 30,
+   "first_ts": "2025-04-03T20:43:04Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 30
+   },
+   "last_ts": "2026-02-12T22:01:43Z",
+   "name": "1b1e7b109995"
   },
   {
    "class": "third_party",
@@ -2259,6 +2376,19 @@
   },
   {
    "class": "third_party",
+   "events": 24,
+   "first_ts": "2025-10-15T17:43:28Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 24
+   },
+   "last_ts": "2026-04-21T18:50:47Z",
+   "name": "c76e8f23e461"
+  },
+  {
+   "class": "third_party",
    "events": 23,
    "first_ts": "2024-05-02T23:49:09Z",
    "hosts": [
@@ -2282,6 +2412,19 @@
    },
    "last_ts": "2022-03-30T19:22:08Z",
    "name": "4c6eb341eee9"
+  },
+  {
+   "class": "third_party",
+   "events": 22,
+   "first_ts": "2025-03-04T14:05:42Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 22
+   },
+   "last_ts": "2025-08-02T10:45:57Z",
+   "name": "79e5308c6084"
   },
   {
    "class": "third_party",
@@ -2610,6 +2753,71 @@
   },
   {
    "class": "third_party",
+   "events": 18,
+   "first_ts": "2026-07-18T08:43:21Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 18
+   },
+   "last_ts": "2026-09-02T16:55:36Z",
+   "name": "b3a8a2662f86"
+  },
+  {
+   "class": "third_party",
+   "events": 18,
+   "first_ts": "2025-03-17T11:44:01Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 18
+   },
+   "last_ts": "2026-08-09T18:40:56Z",
+   "name": "be1d92edb9b5"
+  },
+  {
+   "class": "third_party",
+   "events": 18,
+   "first_ts": "2026-01-05T23:15:19Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 18
+   },
+   "last_ts": "2026-01-28T18:32:42Z",
+   "name": "ee63746fed96"
+  },
+  {
+   "class": "third_party",
+   "events": 18,
+   "first_ts": "2026-02-04T22:36:38Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 18
+   },
+   "last_ts": "2026-08-02T19:32:10Z",
+   "name": "f5530f93c90c"
+  },
+  {
+   "class": "third_party",
+   "events": 17,
+   "first_ts": "2025-04-09T19:11:17Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 17
+   },
+   "last_ts": "2025-08-30T09:58:10Z",
+   "name": "63cfc97c42a0"
+  },
+  {
+   "class": "third_party",
    "events": 17,
    "first_ts": "2026-04-13T20:00:08Z",
    "hosts": [
@@ -2870,6 +3078,19 @@
   },
   {
    "class": "third_party",
+   "events": 13,
+   "first_ts": "2025-03-16T15:04:38Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 13
+   },
+   "last_ts": "2025-12-07T12:31:10Z",
+   "name": "8dd438c7ef1f"
+  },
+  {
+   "class": "third_party",
    "events": 12,
    "first_ts": "2023-05-29T04:45:50Z",
    "hosts": [
@@ -3036,6 +3257,19 @@
    },
    "last_ts": "2026-05-20T22:00:09Z",
    "name": "33264bd3e6d9"
+  },
+  {
+   "class": "third_party",
+   "events": 10,
+   "first_ts": "2026-08-02T15:14:41Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 10
+   },
+   "last_ts": "2026-08-25T03:24:21Z",
+   "name": "3820180c0724"
   },
   {
    "class": "third_party",
@@ -3274,6 +3508,19 @@
   {
    "class": "third_party",
    "events": 9,
+   "first_ts": "2026-08-01T19:55:54Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 9
+   },
+   "last_ts": "2026-08-23T07:33:32Z",
+   "name": "2d7bbe50c59f"
+  },
+  {
+   "class": "third_party",
+   "events": 9,
    "first_ts": "2026-01-28T04:53:36Z",
    "hosts": [
     "omen-e"
@@ -3452,6 +3699,32 @@
    },
    "last_ts": "2026-02-18T17:53:37Z",
    "name": "40ffa173eaac"
+  },
+  {
+   "class": "third_party",
+   "events": 8,
+   "first_ts": "2025-08-08T22:14:00Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 8
+   },
+   "last_ts": "2026-07-27T20:53:06Z",
+   "name": "4459b791a680"
+  },
+  {
+   "class": "third_party",
+   "events": 8,
+   "first_ts": "2025-03-23T20:10:49Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 8
+   },
+   "last_ts": "2026-06-19T20:55:53Z",
+   "name": "8cbbfd96c021"
   },
   {
    "class": "third_party",
@@ -4076,6 +4349,19 @@
    },
    "last_ts": "2025-10-23T11:37:31Z",
    "name": "bc5bec3809bc"
+  },
+  {
+   "class": "third_party",
+   "events": 7,
+   "first_ts": "2025-03-31T11:07:54Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 7
+   },
+   "last_ts": "2025-04-04T19:13:46Z",
+   "name": "c02b355db577"
   },
   {
    "class": "third_party",
@@ -4756,6 +5042,19 @@
   {
    "class": "third_party",
    "events": 5,
+   "first_ts": "2025-03-23T20:21:03Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 5
+   },
+   "last_ts": "2025-04-13T19:10:42Z",
+   "name": "3881b7eea49b"
+  },
+  {
+   "class": "third_party",
+   "events": 5,
    "first_ts": "2025-03-18T00:51:25Z",
    "hosts": [
     "omen-e"
@@ -5263,6 +5562,20 @@
   {
    "class": "third_party",
    "events": 4,
+   "first_ts": "2025-02-27T16:34:27Z",
+   "hosts": [
+    "omen-c",
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 4
+   },
+   "last_ts": "2025-02-27T17:35:41Z",
+   "name": "051990df9159"
+  },
+  {
+   "class": "third_party",
+   "events": 4,
    "first_ts": "2026-05-13T06:13:47Z",
    "hosts": [
     "omen-e"
@@ -5298,6 +5611,19 @@
    },
    "last_ts": "2025-06-02T09:12:20Z",
    "name": "0c641ee42734"
+  },
+  {
+   "class": "third_party",
+   "events": 4,
+   "first_ts": "2025-03-31T13:43:32Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 4
+   },
+   "last_ts": "2025-04-06T21:43:27Z",
+   "name": "0c9b256de405"
   },
   {
    "class": "third_party",
@@ -6082,6 +6408,19 @@
   {
    "class": "third_party",
    "events": 4,
+   "first_ts": "2025-05-02T10:48:32Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 4
+   },
+   "last_ts": "2025-07-02T20:38:44Z",
+   "name": "c6deb2f48b73"
+  },
+  {
+   "class": "third_party",
+   "events": 4,
    "first_ts": "2024-07-27T12:03:45Z",
    "hosts": [
     "omen-e"
@@ -6117,6 +6456,19 @@
    },
    "last_ts": "2026-07-08T02:41:54Z",
    "name": "d300301507d5"
+  },
+  {
+   "class": "third_party",
+   "events": 4,
+   "first_ts": "2025-08-13T17:16:01Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 4
+   },
+   "last_ts": "2026-07-19T17:33:09Z",
+   "name": "d9c63a790781"
   },
   {
    "class": "third_party",
@@ -6494,6 +6846,19 @@
    },
    "last_ts": "2025-01-28T14:17:25Z",
    "name": "1fc9d15dc513"
+  },
+  {
+   "class": "third_party",
+   "events": 3,
+   "first_ts": "2026-02-13T18:16:33Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 3
+   },
+   "last_ts": "2026-02-17T18:18:26Z",
+   "name": "21bd71baf379"
   },
   {
    "class": "third_party",
@@ -7226,6 +7591,19 @@
   {
    "class": "third_party",
    "events": 3,
+   "first_ts": "2026-04-15T16:33:25Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 3
+   },
+   "last_ts": "2026-04-17T21:01:46Z",
+   "name": "906b433e4f60"
+  },
+  {
+   "class": "third_party",
+   "events": 3,
    "first_ts": "2026-02-19T21:53:42Z",
    "hosts": [
     "omen-e"
@@ -7495,6 +7873,19 @@
    },
    "last_ts": "2026-09-07T11:36:58Z",
    "name": "b603a35a5d8a"
+  },
+  {
+   "class": "third_party",
+   "events": 3,
+   "first_ts": "2026-06-14T08:58:43Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 3
+   },
+   "last_ts": "2026-08-19T06:19:33Z",
+   "name": "b6638a70f575"
   },
   {
    "class": "third_party",
@@ -8552,6 +8943,19 @@
   {
    "class": "third_party",
    "events": 2,
+   "first_ts": "2025-06-01T08:21:52Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 2
+   },
+   "last_ts": "2025-06-30T21:45:55Z",
+   "name": "1fb60e8ffc92"
+  },
+  {
+   "class": "third_party",
+   "events": 2,
    "first_ts": "2025-02-17T10:25:12Z",
    "hosts": [
     "omen-e"
@@ -8600,6 +9004,19 @@
    },
    "last_ts": "2025-11-08T08:28:22Z",
    "name": "23c1173762d9"
+  },
+  {
+   "class": "third_party",
+   "events": 2,
+   "first_ts": "2026-05-31T07:39:00Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 2
+   },
+   "last_ts": "2026-07-26T07:35:53Z",
+   "name": "25194eca0a40"
   },
   {
    "class": "third_party",
@@ -8864,6 +9281,19 @@
   {
    "class": "third_party",
    "events": 2,
+   "first_ts": "2026-02-08T09:30:55Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 2
+   },
+   "last_ts": "2026-02-16T18:42:11Z",
+   "name": "3824c351f983"
+  },
+  {
+   "class": "third_party",
+   "events": 2,
    "first_ts": "2024-06-03T07:49:30Z",
    "hosts": [
     "omen-e"
@@ -9094,6 +9524,19 @@
    },
    "last_ts": "2026-08-20T07:27:51Z",
    "name": "467a821159ef"
+  },
+  {
+   "class": "third_party",
+   "events": 2,
+   "first_ts": "2025-06-26T17:09:15Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 2
+   },
+   "last_ts": "2025-07-02T20:45:20Z",
+   "name": "48447dcadb4d"
   },
   {
    "class": "third_party",
@@ -9436,6 +9879,19 @@
   {
    "class": "third_party",
    "events": 2,
+   "first_ts": "2025-09-02T06:46:42Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 2
+   },
+   "last_ts": "2025-11-17T21:39:05Z",
+   "name": "593b524c19fc"
+  },
+  {
+   "class": "third_party",
+   "events": 2,
    "first_ts": "2024-06-20T19:59:59Z",
    "hosts": [
     "omen-e"
@@ -9523,6 +9979,19 @@
    },
    "last_ts": "2026-09-02T19:59:36Z",
    "name": "5f6cb35c6686"
+  },
+  {
+   "class": "third_party",
+   "events": 2,
+   "first_ts": "2023-05-04T10:02:30Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 2
+   },
+   "last_ts": "2025-12-17T21:21:13Z",
+   "name": "5fad2aa041dd"
   },
   {
    "class": "third_party",
@@ -10749,6 +11218,19 @@
   {
    "class": "third_party",
    "events": 2,
+   "first_ts": "2025-03-08T19:12:48Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 2
+   },
+   "last_ts": "2025-03-10T22:45:40Z",
+   "name": "b08974704b74"
+  },
+  {
+   "class": "third_party",
+   "events": 2,
    "first_ts": "2026-07-23T03:01:35Z",
    "hosts": [
     "omen-e"
@@ -11217,6 +11699,19 @@
   {
    "class": "third_party",
    "events": 2,
+   "first_ts": "2026-08-15T19:44:02Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 2
+   },
+   "last_ts": "2026-08-15T19:44:02Z",
+   "name": "cd654064420a"
+  },
+  {
+   "class": "third_party",
+   "events": 2,
    "first_ts": "2026-07-28T19:02:33Z",
    "hosts": [
     "omen-e"
@@ -11330,6 +11825,19 @@
    },
    "last_ts": "2025-02-25T11:52:52Z",
    "name": "d1f809deda4a"
+  },
+  {
+   "class": "third_party",
+   "events": 2,
+   "first_ts": "2025-03-28T09:22:23Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 2
+   },
+   "last_ts": "2025-04-05T16:58:24Z",
+   "name": "d207a05f5ba7"
   },
   {
    "class": "third_party",
@@ -11590,6 +12098,19 @@
    },
    "last_ts": "2023-09-14T16:47:00Z",
    "name": "dd378c4ca75f"
+  },
+  {
+   "class": "third_party",
+   "events": 2,
+   "first_ts": "2026-09-04T15:25:04Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 2
+   },
+   "last_ts": "2026-09-05T10:07:14Z",
+   "name": "dda91be05c07"
   },
   {
    "class": "third_party",
@@ -12231,6 +12752,19 @@
   {
    "class": "third_party",
    "events": 1,
+   "first_ts": "2026-06-19T05:36:32Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2026-06-19T05:36:32Z",
+   "name": "000d637fdc01"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
    "first_ts": "2026-07-25T19:15:27Z",
    "hosts": [
     "omen-e"
@@ -12305,6 +12839,19 @@
    },
    "last_ts": "2024-01-30T09:16:38Z",
    "name": "016bacb1e3c4"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
+   "first_ts": "2026-08-15T12:45:51Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2026-08-15T12:45:51Z",
+   "name": "016cefcced48"
   },
   {
    "class": "third_party",
@@ -12452,6 +12999,19 @@
   {
    "class": "third_party",
    "events": 1,
+   "first_ts": "2026-03-30T21:49:23Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2026-03-30T21:49:23Z",
+   "name": "047c677f762e"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
    "first_ts": "2026-02-01T20:10:48Z",
    "hosts": [
     "omen-e"
@@ -12461,6 +13021,19 @@
    },
    "last_ts": "2026-02-01T20:10:48Z",
    "name": "047ffeb1b5fd"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
+   "first_ts": "2026-03-03T18:23:17Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2026-03-03T18:23:17Z",
+   "name": "04bc0426ab8a"
   },
   {
    "class": "third_party",
@@ -12500,19 +13073,6 @@
    },
    "last_ts": "2026-08-25T14:35:22Z",
    "name": "04ce1b6102f4"
-  },
-  {
-   "class": "third_party",
-   "events": 1,
-   "first_ts": "2025-02-27T17:35:41Z",
-   "hosts": [
-    "omen-c"
-   ],
-   "kinds": {
-    "commit": 1
-   },
-   "last_ts": "2025-02-27T17:35:41Z",
-   "name": "051990df9159"
   },
   {
    "class": "third_party",
@@ -13930,6 +14490,19 @@
    },
    "last_ts": "2025-01-24T11:14:39Z",
    "name": "1ce95522bd0f"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
+   "first_ts": "2026-06-29T15:58:12Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2026-06-29T15:58:12Z",
+   "name": "1d42977fcfd2"
   },
   {
    "class": "third_party",
@@ -15676,6 +16249,19 @@
   {
    "class": "third_party",
    "events": 1,
+   "first_ts": "2025-04-04T19:37:53Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2025-04-04T19:37:53Z",
+   "name": "351e6f44eb4d"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
    "first_ts": "2023-10-11T15:58:58Z",
    "hosts": [
     "omen-e"
@@ -16339,6 +16925,19 @@
   {
    "class": "third_party",
    "events": 1,
+   "first_ts": "2025-07-21T16:37:32Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2025-07-21T16:37:32Z",
+   "name": "3e7edb3789d3"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
    "first_ts": "2025-11-29T16:06:32Z",
    "hosts": [
     "omen-e"
@@ -16924,6 +17523,19 @@
   {
    "class": "third_party",
    "events": 1,
+   "first_ts": "2026-06-06T08:26:14Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2026-06-06T08:26:14Z",
+   "name": "473ec0d9ee84"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
    "first_ts": "2026-04-07T04:37:26Z",
    "hosts": [
     "omen-e"
@@ -17050,6 +17662,19 @@
    },
    "last_ts": "2025-06-11T14:42:25Z",
    "name": "48d8a855f825"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
+   "first_ts": "2025-05-19T15:27:03Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2025-05-19T15:27:03Z",
+   "name": "48e54cb1c307"
   },
   {
    "class": "third_party",
@@ -17271,6 +17896,19 @@
    },
    "last_ts": "2026-01-19T18:13:31Z",
    "name": "4d2a8c6c3a52"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
+   "first_ts": "2025-09-12T07:09:46Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2025-09-12T07:09:46Z",
+   "name": "4d667f238b65"
   },
   {
    "class": "third_party",
@@ -18402,19 +19040,6 @@
    },
    "last_ts": "2023-03-29T16:10:07Z",
    "name": "5f1b9d3502f6"
-  },
-  {
-   "class": "third_party",
-   "events": 1,
-   "first_ts": "2023-05-04T10:02:30Z",
-   "hosts": [
-    "omen-e"
-   ],
-   "kinds": {
-    "commit": 1
-   },
-   "last_ts": "2023-05-04T10:02:30Z",
-   "name": "5fad2aa041dd"
   },
   {
    "class": "third_party",
@@ -20564,6 +21189,19 @@
   {
    "class": "third_party",
    "events": 1,
+   "first_ts": "2026-09-02T07:36:52Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2026-09-02T07:36:52Z",
+   "name": "7e948bbddf54"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
    "first_ts": "2026-09-18T07:00:15Z",
    "hosts": [
     "omen-e"
@@ -21132,6 +21770,19 @@
    },
    "last_ts": "2025-02-26T20:44:00Z",
    "name": "870ea7bd9b9b"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
+   "first_ts": "2026-03-18T20:21:52Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2026-03-18T20:21:52Z",
+   "name": "87333783c58b"
   },
   {
    "class": "third_party",
@@ -21795,6 +22446,19 @@
    },
    "last_ts": "2023-03-15T20:35:25Z",
    "name": "913160bcb504"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
+   "first_ts": "2026-01-02T16:14:31Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2026-01-02T16:14:31Z",
+   "name": "914cfc6db326"
   },
   {
    "class": "third_party",
@@ -22510,6 +23174,19 @@
    },
    "last_ts": "2025-03-05T07:25:45Z",
    "name": "9bee94ebccfd"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
+   "first_ts": "2025-04-08T01:19:46Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2025-04-08T01:19:46Z",
+   "name": "9bf783c45070"
   },
   {
    "class": "third_party",
@@ -23723,6 +24400,19 @@
   {
    "class": "third_party",
    "events": 1,
+   "first_ts": "2026-05-03T09:33:31Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2026-05-03T09:33:31Z",
+   "name": "ad341b5438c2"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
    "first_ts": "2026-07-11T18:03:24Z",
    "hosts": [
     "omen-e"
@@ -24009,6 +24699,19 @@
   {
    "class": "third_party",
    "events": 1,
+   "first_ts": "2025-11-05T08:00:45Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2025-11-05T08:00:45Z",
+   "name": "b0a4d4508270"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
    "first_ts": "2026-02-14T08:06:27Z",
    "hosts": [
     "omen-e"
@@ -24057,6 +24760,19 @@
    },
    "last_ts": "2024-06-17T15:37:55Z",
    "name": "b118516c98a3"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
+   "first_ts": "2026-01-18T10:43:35Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2026-01-18T10:43:35Z",
+   "name": "b14999bc824a"
   },
   {
    "class": "third_party",
@@ -25257,6 +25973,19 @@
   {
    "class": "third_party",
    "events": 1,
+   "first_ts": "2025-08-10T08:09:08Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2025-08-10T08:09:08Z",
+   "name": "c275da773568"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
    "first_ts": "2026-08-03T12:26:09Z",
    "hosts": [
     "omen-e"
@@ -25305,6 +26034,19 @@
    },
    "last_ts": "2025-10-28T10:51:41Z",
    "name": "c322bb4f7edd"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
+   "first_ts": "2025-03-06T07:01:13Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2025-03-06T07:01:13Z",
+   "name": "c323c2d7f8f8"
   },
   {
    "class": "third_party",
@@ -26072,6 +26814,19 @@
    },
    "last_ts": "2024-01-09T16:16:37Z",
    "name": "cd3321c1d500"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
+   "first_ts": "2025-03-19T22:30:31Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2025-03-19T22:30:31Z",
+   "name": "cd5c4fc885d7"
   },
   {
    "class": "third_party",
@@ -28611,6 +29366,19 @@
   {
    "class": "third_party",
    "events": 1,
+   "first_ts": "2026-02-01T10:04:26Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2026-02-01T10:04:26Z",
+   "name": "f19eb4da31ad"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
    "first_ts": "2023-04-02T10:23:04Z",
    "hosts": [
     "omen-e"
@@ -28633,6 +29401,19 @@
    },
    "last_ts": "2026-07-16T15:57:04Z",
    "name": "f230956c50c1"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
+   "first_ts": "2025-05-13T19:53:08Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2025-05-13T19:53:08Z",
+   "name": "f24c42b89f0f"
   },
   {
    "class": "third_party",
@@ -29131,6 +29912,19 @@
   {
    "class": "third_party",
    "events": 1,
+   "first_ts": "2025-03-29T14:01:44Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2025-03-29T14:01:44Z",
+   "name": "f9ce12e26c18"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
    "first_ts": "2026-06-14T17:33:38Z",
    "hosts": [
     "omen-e"
@@ -29192,6 +29986,19 @@
    },
    "last_ts": "2026-03-14T07:43:13Z",
    "name": "fa8b6650ec87"
+  },
+  {
+   "class": "third_party",
+   "events": 1,
+   "first_ts": "2026-01-19T20:39:47Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "kinds": {
+    "commit": 1
+   },
+   "last_ts": "2026-01-19T20:39:47Z",
+   "name": "fab7c698fd86"
   },
   {
    "class": "third_party",

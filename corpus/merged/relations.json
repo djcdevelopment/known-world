@@ -1,5 +1,5 @@
 {
- "as_of": "2026-10-09T12:45:04Z",
+ "as_of": "2026-10-09T13:33:18Z",
  "constellations": [
   {
    "archetype": "engineering-only",
@@ -209,20 +209,14 @@
    "verifies": 7
   },
   "jepa_self_edges_dropped": 10,
-  "joined": 83,
+  "joined": 88,
   "joined_by_basis": {
-   "dirname": 11,
-   "github": 72
+   "dirname": 13,
+   "github": 75
   },
-  "lineages_without_manifest": 179,
+  "lineages_without_manifest": 226,
   "manifest_repos": 88,
-  "unjoined": [
-   "resume",
-   "tempo",
-   "tempo-viewer",
-   "tensor",
-   "wow-code"
-  ]
+  "unjoined": []
  },
  "edges": [
   {
@@ -436,7 +430,7 @@
    "dst": "tempo",
    "inferred_valid_from": "2026-06-09T19:37:17-07:00",
    "scope": "intra",
-   "since": null,
+   "since": "2026-05-31T12:06:01Z",
    "source": "jepa",
    "src": "discoverlay",
    "type": "consumes"
@@ -445,7 +439,7 @@
    "dst": "comfy-quest",
    "inferred_valid_from": "2026-09-09T01:44:37-07:00",
    "scope": "intra",
-   "since": "2026-09-03T18:03:56Z",
+   "since": "2026-09-04T05:12:09Z",
    "source": "jepa",
    "src": "dmos",
    "type": "consumes"
@@ -544,7 +538,7 @@
    "dst": "commandcenter",
    "inferred_valid_from": "2026-01-01T00:00:00Z",
    "scope": "intra",
-   "since": "2026-07-04T18:48:29Z",
+   "since": "2026-07-03T01:41:29Z",
    "source": "jepa",
    "src": "imagegen",
    "type": "consumes"
@@ -598,7 +592,7 @@
    "dst": "tempo",
    "inferred_valid_from": "2026-05-22T00:03:19-07:00",
    "scope": "intra",
-   "since": null,
+   "since": "2026-05-17T12:20:42Z",
    "source": "jepa",
    "src": "lantern",
    "type": "consumes"
@@ -607,7 +601,7 @@
    "dst": "tempo",
    "inferred_valid_from": "2026-06-16T07:44:40-07:00",
    "scope": "intra",
-   "since": null,
+   "since": "2026-06-04T04:53:56Z",
    "source": "jepa",
    "src": "leopard",
    "type": "consumes"
@@ -652,7 +646,7 @@
    "dst": "commandcenter",
    "inferred_valid_from": "2026-09-21T21:33:14-07:00",
    "scope": "intra",
-   "since": "2026-09-21T01:43:59Z",
+   "since": "2026-09-21T03:42:23Z",
    "source": "jepa",
    "src": "menu",
    "type": "consumes"
@@ -769,7 +763,7 @@
    "dst": "tempo",
    "inferred_valid_from": "2026-04-23T17:34:50-07:00",
    "scope": "intra",
-   "since": null,
+   "since": "2026-04-21T19:52:35Z",
    "source": "jepa",
    "src": "tempo-viewer",
    "type": "consumes"
@@ -787,7 +781,7 @@
    "dst": "tempo",
    "inferred_valid_from": "2026-06-22T23:02:10-07:00",
    "scope": "intra",
-   "since": null,
+   "since": "2026-06-23T06:02:10Z",
    "source": "jepa",
    "src": "tempo-workbench",
    "type": "consumes"
@@ -796,7 +790,7 @@
    "dst": "b70tools",
    "inferred_valid_from": "2026-09-09T00:26:57-07:00",
    "scope": "intra",
-   "since": null,
+   "since": "2026-09-09T07:05:53Z",
    "source": "jepa",
    "src": "tensor",
    "type": "consumes"
@@ -868,7 +862,7 @@
    "dst": "tempo",
    "inferred_valid_from": "2026-06-05T13:39:52-07:00",
    "scope": "intra",
-   "since": null,
+   "since": "2026-06-04T05:06:53Z",
    "source": "jepa",
    "src": "workbench",
    "type": "consumes"
@@ -877,7 +871,7 @@
    "dst": "tempo",
    "inferred_valid_from": "2026-04-18T22:27:55-07:00",
    "scope": "intra",
-   "since": null,
+   "since": "2026-04-19T03:35:36Z",
    "source": "jepa",
    "src": "wow-code",
    "type": "consumes"
@@ -1313,7 +1307,7 @@
   {
    "dst": "tempo",
    "scope": "intra",
-   "since": null,
+   "since": "2026-05-31T12:06:01Z",
    "source": "yaml",
    "src": "discoverlay",
    "type": "depends_on"
@@ -1321,7 +1315,7 @@
   {
    "dst": "comfy-quest",
    "scope": "intra",
-   "since": "2026-09-03T18:03:56Z",
+   "since": "2026-09-04T05:12:09Z",
    "source": "yaml",
    "src": "dmos",
    "type": "depends_on"
@@ -1393,7 +1387,7 @@
   {
    "dst": "commandcenter",
    "scope": "intra",
-   "since": "2026-07-04T18:48:29Z",
+   "since": "2026-07-03T01:41:29Z",
    "source": "yaml",
    "src": "imagegen",
    "type": "depends_on"
@@ -1433,7 +1427,7 @@
   {
    "dst": "tempo",
    "scope": "intra",
-   "since": null,
+   "since": "2026-05-17T12:20:42Z",
    "source": "yaml",
    "src": "lantern",
    "type": "depends_on"
@@ -1441,7 +1435,7 @@
   {
    "dst": "tempo",
    "scope": "intra",
-   "since": null,
+   "since": "2026-06-04T04:53:56Z",
    "source": "yaml",
    "src": "leopard",
    "type": "depends_on"
@@ -1481,7 +1475,7 @@
   {
    "dst": "commandcenter",
    "scope": "intra",
-   "since": "2026-09-21T01:43:59Z",
+   "since": "2026-09-21T03:42:23Z",
    "source": "yaml",
    "src": "menu",
    "type": "depends_on"
@@ -1569,7 +1563,7 @@
   {
    "dst": "tempo",
    "scope": "intra",
-   "since": null,
+   "since": "2026-04-21T19:52:35Z",
    "source": "yaml",
    "src": "tempo-viewer",
    "type": "depends_on"
@@ -1585,7 +1579,7 @@
   {
    "dst": "tempo",
    "scope": "intra",
-   "since": null,
+   "since": "2026-06-23T06:02:10Z",
    "source": "yaml",
    "src": "tempo-workbench",
    "type": "depends_on"
@@ -1593,7 +1587,7 @@
   {
    "dst": "b70tools",
    "scope": "intra",
-   "since": null,
+   "since": "2026-09-09T07:05:53Z",
    "source": "yaml",
    "src": "tensor",
    "type": "depends_on"
@@ -1657,7 +1651,7 @@
   {
    "dst": "tempo",
    "scope": "intra",
-   "since": null,
+   "since": "2026-06-04T05:06:53Z",
    "source": "yaml",
    "src": "workbench",
    "type": "depends_on"
@@ -1665,7 +1659,7 @@
   {
    "dst": "tempo",
    "scope": "intra",
-   "since": null,
+   "since": "2026-04-19T03:35:36Z",
    "source": "yaml",
    "src": "wow-code",
    "type": "depends_on"
@@ -1749,7 +1743,7 @@
    "dst": "tensor",
    "inferred_valid_from": "2026-06-01T00:00:00Z",
    "scope": "intra",
-   "since": null,
+   "since": "2026-09-09T07:05:53Z",
    "source": "jepa",
    "src": "commandcenter",
    "type": "leases_hardware_to"
@@ -2149,6 +2143,14 @@
    "depends_in": 0,
    "depends_out": 1
   },
+  "051983786f7637fb0b838f41f68df338e87f915e": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 1
+  },
   "05287b8ef8695014c00e9278b0ba1240c93b527a": {
    "contracts_in": 1,
    "contracts_out": 0,
@@ -2179,7 +2181,7 @@
    "cross_constellation": 0,
    "data_sources": 0,
    "depends_in": 0,
-   "depends_out": 2
+   "depends_out": 3
   },
   "1b448d5e90cc1a2088d19a118632506176cf09d0": {
    "contracts_in": 0,
@@ -2203,6 +2205,14 @@
    "cross_constellation": 0,
    "data_sources": 0,
    "depends_in": 1,
+   "depends_out": 1
+  },
+  "1e9ebf7884f9f00200c24f6e108100f1b1d96c11": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
    "depends_out": 1
   },
   "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de": {
@@ -2365,6 +2375,14 @@
    "depends_in": 0,
    "depends_out": 1
   },
+  "7860117fbf89287165ca84baa8f2679f65e572e8": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 1
+  },
   "7862f447633880878ff1e98e22e0ee9d33072e84": {
    "contracts_in": 0,
    "contracts_out": 0,
@@ -2389,6 +2407,14 @@
    "depends_in": 0,
    "depends_out": 1
   },
+  "7cb5a5f51e40282205871ed2ae962e279153703d": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 7,
+   "depends_out": 0
+  },
   "8379428a79e7d1e6f7055641be18a4e6d75fcf76": {
    "contracts_in": 0,
    "contracts_out": 2,
@@ -2404,6 +2430,14 @@
    "data_sources": 0,
    "depends_in": 1,
    "depends_out": 0
+  },
+  "aa33e4c8932824b88a99e3da9cdd27c412994e8c": {
+   "contracts_in": 1,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 1,
+   "depends_out": 2
   },
   "aeec44ac6aa0df4feed092f1354be134ae81be83": {
    "contracts_in": 0,
@@ -2509,30 +2543,6 @@
    "depends_in": 1,
    "depends_out": 1
   },
-  "dir:fx99:~/dmos": {
-   "contracts_in": 1,
-   "contracts_out": 0,
-   "cross_constellation": 0,
-   "data_sources": 0,
-   "depends_in": 1,
-   "depends_out": 2
-  },
-  "dir:fx99:~/menu": {
-   "contracts_in": 0,
-   "contracts_out": 0,
-   "cross_constellation": 0,
-   "data_sources": 0,
-   "depends_in": 0,
-   "depends_out": 1
-  },
-  "dir:omen-c:work/imagegen": {
-   "contracts_in": 0,
-   "contracts_out": 0,
-   "cross_constellation": 0,
-   "data_sources": 0,
-   "depends_in": 0,
-   "depends_out": 1
-  },
   "e580a2ef24acb12c5b90f5dc7264938d2eee28c1": {
    "contracts_in": 0,
    "contracts_out": 1,
@@ -2596,6 +2606,14 @@
    "data_sources": 0,
    "depends_in": 0,
    "depends_out": 2
+  },
+  "fc1c3946dbf3e3daf889c95a4d5447d86b19829c": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 1
   },
   "fe69bfd7e25a89d285126e23e16d01ef7f0275b1": {
    "contracts_in": 1,
@@ -3027,10 +3045,10 @@
     "creator-os"
    ],
    "github": "djcdevelopment/DMos",
-   "join_basis": "dirname",
+   "join_basis": "github",
    "kind": "git",
    "lifecycle": "active",
-   "lineage": "dir:fx99:~/dmos",
+   "lineage": "aa33e4c8932824b88a99e3da9cdd27c412994e8c",
    "name": "dmos",
    "primary": false,
    "role": "Dungeon Master OS narrative orchestration, world state engine, and chronicle generator",
@@ -3135,7 +3153,7 @@
    "join_basis": "dirname",
    "kind": "filesystem",
    "lifecycle": "active",
-   "lineage": "dir:omen-c:work/imagegen",
+   "lineage": "17b6526bb7f520061ed56eef0eb5846d524e30d8",
    "name": "imagegen",
    "primary": false,
    "role": "Guard-dog dream run sequential batch driver and manifest logger",
@@ -3345,7 +3363,7 @@
    "join_basis": "dirname",
    "kind": "filesystem",
    "lifecycle": "active",
-   "lineage": "dir:fx99:~/menu",
+   "lineage": "7860117fbf89287165ca84baa8f2679f65e572e8",
    "name": "menu",
    "primary": false,
    "role": "Nashville private chef menu planning and recipe generation application with HEARTH integration",
@@ -3552,10 +3570,10 @@
     "career-proof"
    ],
    "github": null,
-   "join_basis": "unjoined",
+   "join_basis": "dirname",
    "kind": "filesystem",
    "lifecycle": "active",
-   "lineage": null,
+   "lineage": "a7795c7ee4310fac3b86f8df9eca4e58d06936b8",
    "name": "resume",
    "primary": true,
    "role": "Evidence-controlled resume pipeline, career proof audit, and public capability feed exporter",
@@ -3702,10 +3720,10 @@
     "GAD"
    ],
    "github": "djcdevelopment/tempo",
-   "join_basis": "unjoined",
+   "join_basis": "github",
    "kind": "git",
    "lifecycle": "active",
-   "lineage": null,
+   "lineage": "7cb5a5f51e40282205871ed2ae962e279153703d",
    "name": "tempo",
    "primary": true,
    "role": "centerpiece \u2014 Windows-native, local-first WoW raid-leader tool (.NET 9)",
@@ -3717,10 +3735,10 @@
     "GAD"
    ],
    "github": "djcdevelopment/tempo-viewer",
-   "join_basis": "unjoined",
+   "join_basis": "github",
    "kind": "git",
    "lifecycle": "active",
-   "lineage": null,
+   "lineage": "1e9ebf7884f9f00200c24f6e108100f1b1d96c11",
    "name": "tempo-viewer",
    "primary": false,
    "role": "Standalone web viewer consuming raid-replay projections emitted by the Tempo engine",
@@ -3747,10 +3765,10 @@
     "omen-core"
    ],
    "github": null,
-   "join_basis": "unjoined",
+   "join_basis": "dirname",
    "kind": "filesystem",
    "lifecycle": "active",
-   "lineage": null,
+   "lineage": "fc1c3946dbf3e3daf889c95a4d5447d86b19829c",
    "name": "tensor",
    "primary": false,
    "role": "D3D12 expert tensor execution, dual compute queue scheduling witness, and GPU stream supervisor",
@@ -3913,10 +3931,10 @@
     "GAD"
    ],
    "github": null,
-   "join_basis": "unjoined",
+   "join_basis": "dirname",
    "kind": "filesystem",
    "lifecycle": "active",
-   "lineage": null,
+   "lineage": "051983786f7637fb0b838f41f68df338e87f915e",
    "name": "wow-code",
    "primary": false,
    "role": "Self-hosted, Windows-first, local-LLM guild intelligence suite and Lua addon codebase",

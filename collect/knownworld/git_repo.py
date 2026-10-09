@@ -259,7 +259,16 @@ def process_repo(path, host, disp, ident, opts=None):
         return res
     now = int(time.time())
 
-    if kind == "worktree":
+    sub_gitdir = None
+    if kind == "worktree":  # a submodule's .git file is a relative gitdir into the parent's .git/modules: a full repo
+        try:
+            m0 = re.match(r"^gitdir:\s*(\.\.?/.+)$", _read(os.path.join(path, ".git")).strip())
+            cand = os.path.normpath(os.path.join(path, m0.group(1))) if m0 else None
+            if cand and os.path.basename(os.path.dirname(cand)) == "modules" and is_bare_like(cand):
+                sub_gitdir = cand
+        except (OSError, PermissionError):
+            pass
+    if kind == "worktree" and sub_gitdir is None:
         common = "unresolved"
         try:
             gd = _read(os.path.join(path, ".git")).strip()
@@ -279,7 +288,7 @@ def process_repo(path, host, disp, ident, opts=None):
         return res
 
     is_bare = kind == "bare"
-    gitdir = path if is_bare else os.path.join(path, ".git")
+    gitdir = path if is_bare else (sub_gitdir or os.path.join(path, ".git"))
     remotes = read_remotes(gitdir)
     shallow_b = read_shallow(gitdir)
 

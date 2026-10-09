@@ -107,7 +107,7 @@ def process_source(ctx, src, cursor):
     else:
         host, disp = core.host_and_rel(path, ctx.item["host"] if ctx.item["host"] in ("omen-c", "omen-e", "omen-linux")
                                        else "omen-linux")
-    repo = "dir:%s:%s" % (host, core.clip(disp, 100))
+    repo = "dir:%s:%s" % (host, core.clip(disp or ".", 100))
     cap = (ctx.item.get("options") or {}).get("find_timeout_s", 900)
     reduced = ctx.time_left() + 40 < cap
     to = max(60, min(cap, ctx.time_left() + 40))

@@ -59,6 +59,39 @@ add("c-births", "fs_births", "omen-c",
                                                              "model", "venvs"], find_timeout_s=900)
 add("e-births", "fs_births", "omen-e", [], 2400, "e", children_of=[E + "/work"], loose_files=True,
     exclude_children=["models"], find_timeout_s=900)
+# --- task 1c: repositories and trees outside work/ (SURVEY 1g). Repo paths come from a bounded find
+# (maxdepth 5 below the E: root, `work` and the skip list excluded), listed explicitly so nested repos are found.
+E_ROOT_REPOS = ["gemini", "HANDOFF/_backup_staging/projects/meal-planner", "helloworld/old-goat-new-tricks",
+                "omen/bf6-highlights-retired-20260828", "omen/CC/GeneralsReplays", "omen/CC", "omen/clippy",
+                "omen/DMos-actor-controls", "omen/DMos-chronicle", "omen/DMos-chronicle-salience",
+                "omen/DMos-command-freshness", "omen/DMos", "omen/DMos-rc1", "omen/DMos-rehearsal",
+                "omen/DMos-secrets", "omen/imagegen", "omen/menu",
+                "omen/steward-multi-era/deploy-worktree-creator-carousel-d1b90f1",
+                "omen/steward-multi-era/deploy-worktree-creator-compact-a0db3a0",
+                "omen/steward-multi-era/deploy-worktree-creator-explorer-808d15f",
+                "omen/steward-multi-era/deploy-worktree-creator-guide-20260915",
+                "omen/steward-multi-era/deploy-worktree-creator-heatmap-acc5eb7", "omen/tensor", "resume",
+                "resume-wt/claude-seat-receipts", "resume-wt/gemini-proof-snapshot",
+                "resume-wt/linux-proof-review-20261006", "World of Warcraft/code", "World of Warcraft/Tempo",
+                "World of Warcraft/tempo-viewer", "World of Warcraft/Tempo-worktrees/agent-a",
+                "World of Warcraft/Tempo-worktrees/agent-b", "World of Warcraft/Tempo-worktrees/agent-c",
+                "World of Warcraft/Tempo-worktrees/stream-f-gamma", "World of Warcraft/Tempo-wt-A-1b9",
+                "World of Warcraft/Tempo-wt-A", "World of Warcraft/Tempo-wt-B", "World of Warcraft/Tempo-wt-C",
+                "World of Warcraft/Tempo-wt-D", "World of Warcraft/Tempo-wt-E", "World of Warcraft/Tempo-wt-F"]
+for k, s in enumerate("ab"):
+    add("e-root-git-" + s, "git_repo", "omen-e", [E + "/" + r for r in E_ROOT_REPOS], 1800, "e", (k, 2),
+        scan_depth=0, log_timeout_s=600)
+add("c-root-git", "git_repo", "omen-c", [C + "/assessment", C + "/tuning"], 900, "c", scan_depth=0, log_timeout_s=600)
+# births: E-root directories that are not repos (git children are skipped by fs_births); containers of repos are
+# walked through children_of so their repo children are not counted twice. Installers, caches, app installs and the
+# game client (_retail_) are skipped.
+add("e-root-births", "fs_births", "omen-e", [], 2400, "e",
+    children_of=[E, E + "/omen", E + "/World of Warcraft", E + "/helloworld", E + "/resume-wt"], loose_files=True,
+    exclude_children=["work", "omen", "World of Warcraft", "helloworld", "resume-wt", "ComfyUI", "SteamLibrary",
+                      "pip-cache", ".pnpm-store", "Comfy-Desktop", "Program Files", "Recovery", "$RECYCLE.BIN",
+                      "System Volume Information", "msdownld.tmp", "Audacity", "ISO", "_retail_", "models"],
+    find_timeout_s=900)
+
 import glob  # noqa: E402
 
 zero = sorted(d for pat in ("hybrid-context-trial", "jepa-evidence-units-2026*", "jepa-confirmation-2026*",
@@ -94,10 +127,15 @@ add("continuity-runs", "continuity", "omen-linux", [], 900, "c", parts=[
     {"kind": "assessment_runs", "host": "omen-c", "path": C + "/assessment/transcripts"}])
 
 
-def main():
+def main(only=()):
     os.makedirs(WL, exist_ok=True)
     index = []
     for it in items:
+        if only and not any(it["id"].startswith(o) for o in only):
+            index.append({"id": it["id"], "source_type": it["source_type"], "host": it["host"],
+                          "mount": it["mount"] or "none", "timeout_s": it["timeout_s"], "file": WL + it["id"] + ".json",
+                          "shard": "%d/%d" % (it["shard"]["k"], it["shard"]["n"])})
+            continue
         p = WL + it["id"] + ".json"
         with open(p, "w") as f:
             json.dump(it, f, indent=1)
@@ -112,4 +150,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1:])  # optional id prefixes: write only those items

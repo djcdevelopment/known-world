@@ -1,5 +1,5 @@
 {
- "actors": 2272,
+ "actors": 2334,
  "candidates": 6,
  "candidates_by_basis": {
   "name": 3,
@@ -42,25 +42,25 @@
   }
  },
  "chat_session_records": 2810,
- "components_multi": 21,
+ "components_multi": 30,
  "deduped": {
-  "branch": 178,
+  "branch": 185,
   "chat_msg": 90,
   "chat_session": 3,
-  "commit": 3865,
-  "repo_born": 33
+  "commit": 3953,
+  "repo_born": 41
  },
  "dropped_null_ts": {
-  "git_repo/branch": 702,
+  "git_repo/branch": 752,
   "git_repo/repo_born": 8
  },
- "dropped_null_ts_total": 710,
+ "dropped_null_ts_total": 760,
  "dup_items": {
   "chat_msg:claude-linux>claude-linux": 90,
   "chat_session:claude-linux>claude-linux": 3
  },
- "events_loaded": 217377,
- "events_out": 212498,
+ "events_loaded": 221785,
+ "events_out": 216753,
  "file_activity": {
   "per_host_ym": {
    "am4": {
@@ -416,9 +416,25 @@
     }
    },
    "omen-e": {
+    "2013-08": {
+     "file_update_files": 7,
+     "file_update_records": 1
+    },
+    "2013-10": {
+     "file_update_files": 1,
+     "file_update_records": 1
+    },
     "2014-05": {
      "file_update_files": 2,
      "file_update_records": 2
+    },
+    "2017-07": {
+     "file_update_files": 42,
+     "file_update_records": 4
+    },
+    "2018-08": {
+     "file_update_files": 17,
+     "file_update_records": 6
     },
     "2020-03": {
      "file_update_files": 5,
@@ -428,197 +444,333 @@
      "file_birth_files": 19,
      "file_birth_records": 2
     },
-    "2021-03": {
-     "file_update_files": 6,
+    "2021-01": {
+     "file_update_files": 3,
      "file_update_records": 1
+    },
+    "2021-02": {
+     "file_update_files": 5,
+     "file_update_records": 5
+    },
+    "2021-03": {
+     "file_update_files": 22,
+     "file_update_records": 6
+    },
+    "2021-04": {
+     "file_birth_files": 2,
+     "file_birth_records": 1
+    },
+    "2021-07": {
+     "file_birth_files": 5,
+     "file_birth_records": 2
+    },
+    "2021-08": {
+     "file_birth_files": 11,
+     "file_birth_records": 2
+    },
+    "2021-09": {
+     "file_birth_files": 1,
+     "file_birth_records": 1
     },
     "2021-10": {
-     "file_update_files": 4,
-     "file_update_records": 2
+     "file_birth_files": 3,
+     "file_birth_records": 2,
+     "file_update_files": 18,
+     "file_update_records": 6
+    },
+    "2021-11": {
+     "file_birth_files": 1,
+     "file_birth_records": 1
+    },
+    "2021-12": {
+     "file_update_files": 1,
+     "file_update_records": 1
     },
     "2022-01": {
+     "file_birth_files": 2,
+     "file_birth_records": 1,
      "file_update_files": 2,
      "file_update_records": 1
+    },
+    "2022-02": {
+     "file_birth_files": 1,
+     "file_birth_records": 1,
+     "file_update_files": 1,
+     "file_update_records": 1
+    },
+    "2022-03": {
+     "file_birth_files": 7,
+     "file_birth_records": 1,
+     "file_update_files": 2,
+     "file_update_records": 1
+    },
+    "2022-04": {
+     "file_birth_files": 2,
+     "file_birth_records": 1
     },
     "2022-05": {
      "file_update_files": 28,
      "file_update_records": 1
     },
+    "2022-09": {
+     "file_birth_files": 2,
+     "file_birth_records": 1
+    },
     "2022-10": {
      "file_update_files": 12,
      "file_update_records": 1
     },
-    "2023-03": {
+    "2023-01": {
+     "file_birth_files": 2,
+     "file_birth_records": 1,
+     "file_update_files": 11,
+     "file_update_records": 4
+    },
+    "2023-02": {
+     "file_birth_files": 2,
+     "file_birth_records": 2,
      "file_update_files": 1,
      "file_update_records": 1
+    },
+    "2023-03": {
+     "file_update_files": 46,
+     "file_update_records": 9
+    },
+    "2023-05": {
+     "file_birth_files": 2,
+     "file_birth_records": 1
     },
     "2023-06": {
      "file_update_files": 12,
      "file_update_records": 1
     },
+    "2023-08": {
+     "file_update_files": 115,
+     "file_update_records": 3
+    },
     "2023-09": {
+     "file_birth_files": 2,
+     "file_birth_records": 1,
      "file_update_files": 1,
      "file_update_records": 1
     },
     "2023-10": {
-     "file_update_files": 3,
-     "file_update_records": 3
+     "file_update_files": 66,
+     "file_update_records": 10
     },
     "2023-11": {
-     "file_update_files": 142,
-     "file_update_records": 1
+     "file_birth_files": 212,
+     "file_birth_records": 1,
+     "file_update_files": 186,
+     "file_update_records": 5
     },
     "2023-12": {
-     "file_update_files": 73,
+     "file_birth_files": 82,
+     "file_birth_records": 5,
+     "file_update_files": 120,
+     "file_update_records": 6
+    },
+    "2024-01": {
+     "file_birth_files": 11,
+     "file_birth_records": 3,
+     "file_update_files": 12,
+     "file_update_records": 6
+    },
+    "2024-02": {
+     "file_birth_files": 11,
+     "file_birth_records": 4,
+     "file_update_files": 23,
      "file_update_records": 4
     },
     "2024-03": {
-     "file_update_files": 18,
-     "file_update_records": 3
+     "file_birth_files": 1,
+     "file_birth_records": 1,
+     "file_update_files": 20,
+     "file_update_records": 4
     },
     "2024-04": {
-     "file_update_files": 1,
-     "file_update_records": 1
+     "file_birth_files": 9,
+     "file_birth_records": 4,
+     "file_update_files": 4,
+     "file_update_records": 2
     },
     "2024-05": {
-     "file_update_files": 1,
-     "file_update_records": 1
-    },
-    "2024-06": {
-     "file_update_files": 7,
-     "file_update_records": 2
-    },
-    "2024-07": {
-     "file_update_files": 10,
-     "file_update_records": 1
-    },
-    "2024-08": {
-     "file_birth_files": 166,
-     "file_birth_records": 6,
-     "file_update_files": 12,
-     "file_update_records": 2
-    },
-    "2024-09": {
-     "file_update_files": 95,
-     "file_update_records": 4
-    },
-    "2024-10": {
-     "file_update_files": 33,
-     "file_update_records": 5
-    },
-    "2024-11": {
-     "file_update_files": 60,
-     "file_update_records": 6
-    },
-    "2024-12": {
-     "file_update_files": 32,
-     "file_update_records": 9
-    },
-    "2025-01": {
-     "file_birth_files": 3,
-     "file_birth_records": 2,
-     "file_update_files": 42,
-     "file_update_records": 3
-    },
-    "2025-02": {
-     "file_birth_files": 52,
-     "file_birth_records": 3,
-     "file_update_files": 37,
-     "file_update_records": 5
-    },
-    "2025-03": {
      "file_birth_files": 4,
-     "file_birth_records": 1,
-     "file_update_files": 16,
-     "file_update_records": 4
-    },
-    "2025-05": {
-     "file_update_files": 27,
-     "file_update_records": 3
-    },
-    "2025-06": {
-     "file_birth_files": 17,
      "file_birth_records": 1,
      "file_update_files": 4,
-     "file_update_records": 1
-    },
-    "2025-07": {
-     "file_birth_files": 2,
-     "file_birth_records": 1,
-     "file_update_files": 17,
-     "file_update_records": 5
-    },
-    "2025-08": {
-     "file_birth_files": 72,
-     "file_birth_records": 10,
-     "file_update_files": 37,
      "file_update_records": 3
     },
-    "2025-09": {
+    "2024-06": {
      "file_birth_files": 12,
-     "file_birth_records": 2
-    },
-    "2025-10": {
-     "file_birth_files": 6,
-     "file_birth_records": 3,
-     "file_update_files": 112,
-     "file_update_records": 5
-    },
-    "2025-11": {
-     "file_update_files": 22,
+     "file_birth_records": 4,
+     "file_update_files": 27,
      "file_update_records": 7
     },
-    "2025-12": {
-     "file_birth_files": 4,
+    "2024-07": {
+     "file_birth_files": 9,
      "file_birth_records": 3,
-     "file_update_files": 2,
-     "file_update_records": 2
+     "file_update_files": 84,
+     "file_update_records": 8
     },
-    "2026-01": {
-     "file_birth_files": 19,
-     "file_birth_records": 2,
+    "2024-08": {
+     "file_birth_files": 170,
+     "file_birth_records": 9,
+     "file_update_files": 14,
+     "file_update_records": 3
+    },
+    "2024-09": {
+     "file_birth_files": 10,
+     "file_birth_records": 4,
+     "file_update_files": 437,
+     "file_update_records": 18
+    },
+    "2024-10": {
+     "file_birth_files": 49,
+     "file_birth_records": 11,
+     "file_update_files": 141,
+     "file_update_records": 18
+    },
+    "2024-11": {
+     "file_birth_files": 78,
+     "file_birth_records": 7,
+     "file_update_files": 1234,
+     "file_update_records": 29
+    },
+    "2024-12": {
+     "file_update_files": 56,
+     "file_update_records": 18
+    },
+    "2025-01": {
+     "file_birth_files": 12,
+     "file_birth_records": 8,
+     "file_update_files": 683,
+     "file_update_records": 18
+    },
+    "2025-02": {
+     "file_birth_files": 56,
+     "file_birth_records": 5,
+     "file_update_files": 206,
+     "file_update_records": 25
+    },
+    "2025-03": {
+     "file_birth_files": 8,
+     "file_birth_records": 3,
+     "file_update_files": 114,
+     "file_update_records": 17
+    },
+    "2025-04": {
+     "file_birth_files": 15,
+     "file_birth_records": 3,
+     "file_update_files": 4,
+     "file_update_records": 3
+    },
+    "2025-05": {
+     "file_birth_files": 70,
+     "file_birth_records": 5,
+     "file_update_files": 47,
+     "file_update_records": 11
+    },
+    "2025-06": {
+     "file_birth_files": 802,
+     "file_birth_records": 17,
+     "file_update_files": 8,
+     "file_update_records": 4
+    },
+    "2025-07": {
+     "file_birth_files": 53,
+     "file_birth_records": 18,
      "file_update_files": 42,
-     "file_update_records": 2
+     "file_update_records": 14
     },
-    "2026-02": {
-     "file_birth_files": 6,
-     "file_birth_records": 4
+    "2025-08": {
+     "file_birth_files": 89,
+     "file_birth_records": 17,
+     "file_update_files": 41,
+     "file_update_records": 5
     },
-    "2026-03": {
-     "file_birth_files": 14997,
-     "file_birth_records": 178,
-     "file_update_files": 9579,
-     "file_update_records": 72
+    "2025-09": {
+     "file_birth_files": 140,
+     "file_birth_records": 15,
+     "file_update_files": 52,
+     "file_update_records": 11
     },
-    "2026-04": {
-     "file_birth_files": 3695,
-     "file_birth_records": 120,
-     "file_update_files": 694,
+    "2025-10": {
+     "file_birth_files": 32,
+     "file_birth_records": 16,
+     "file_update_files": 124,
+     "file_update_records": 14
+    },
+    "2025-11": {
+     "file_birth_files": 383,
+     "file_birth_records": 7,
+     "file_update_files": 47,
+     "file_update_records": 19
+    },
+    "2025-12": {
+     "file_birth_files": 436,
+     "file_birth_records": 13,
+     "file_update_files": 19,
      "file_update_records": 12
     },
+    "2026-01": {
+     "file_birth_files": 790,
+     "file_birth_records": 14,
+     "file_update_files": 204,
+     "file_update_records": 17
+    },
+    "2026-02": {
+     "file_birth_files": 61,
+     "file_birth_records": 9,
+     "file_update_files": 682,
+     "file_update_records": 19
+    },
+    "2026-03": {
+     "file_birth_files": 20948,
+     "file_birth_records": 204,
+     "file_update_files": 9691,
+     "file_update_records": 100
+    },
+    "2026-04": {
+     "file_birth_files": 12316,
+     "file_birth_records": 203,
+     "file_update_files": 2386,
+     "file_update_records": 58
+    },
     "2026-05": {
-     "file_birth_files": 30081,
-     "file_birth_records": 120,
-     "file_update_files": 1216,
-     "file_update_records": 16
+     "file_birth_files": 34934,
+     "file_birth_records": 172,
+     "file_update_files": 3352,
+     "file_update_records": 56
     },
     "2026-06": {
-     "file_birth_files": 5006,
-     "file_birth_records": 82,
-     "file_update_files": 53,
-     "file_update_records": 20
+     "file_birth_files": 5669,
+     "file_birth_records": 145,
+     "file_update_files": 2083,
+     "file_update_records": 38
+    },
+    "2026-07": {
+     "file_birth_files": 802,
+     "file_birth_records": 46,
+     "file_update_files": 1022,
+     "file_update_records": 12
     },
     "2026-08": {
-     "file_birth_files": 6513,
-     "file_birth_records": 47,
-     "file_update_files": 29,
-     "file_update_records": 6
+     "file_birth_files": 13760,
+     "file_birth_records": 139,
+     "file_update_files": 1311,
+     "file_update_records": 26
     },
     "2026-09": {
-     "file_birth_files": 20734,
-     "file_birth_records": 75,
-     "file_update_files": 10,
-     "file_update_records": 8
+     "file_birth_files": 480891,
+     "file_birth_records": 758,
+     "file_update_files": 17770,
+     "file_update_records": 252
+    },
+    "2026-10": {
+     "file_birth_files": 86,
+     "file_birth_records": 10,
+     "file_update_files": 1,
+     "file_update_records": 1
     }
    },
    "omen-linux": {
@@ -707,6 +859,16 @@
     "update_files": 12499,
     "update_records": 228
    },
+   "e-root-births": {
+    "birth_bulk_records": 155,
+    "birth_bytes": 862969025863,
+    "birth_files": 491667,
+    "birth_records": 1243,
+    "update_bulk_records": 119,
+    "update_bytes": 81376518463,
+    "update_files": 30172,
+    "update_records": 703
+   },
    "fx99-births": {
     "birth_bulk_records": 14,
     "birth_bytes": 10572716519,
@@ -775,6 +937,12 @@
   "c-git-nested": {
    "events_loaded": 1055,
    "manifest_events": 1055,
+   "src": "git_repo",
+   "status": "complete"
+  },
+  "c-root-git": {
+   "events_loaded": 10,
+   "manifest_events": 10,
    "src": "git_repo",
    "status": "complete"
   },
@@ -856,6 +1024,24 @@
    "src": "git_repo",
    "status": "complete"
   },
+  "e-root-births": {
+   "events_loaded": 1946,
+   "manifest_events": 1946,
+   "src": "fs_births",
+   "status": "complete"
+  },
+  "e-root-git-a": {
+   "events_loaded": 2134,
+   "manifest_events": 2134,
+   "src": "git_repo",
+   "status": "complete"
+  },
+  "e-root-git-b": {
+   "events_loaded": 318,
+   "manifest_events": 318,
+   "src": "git_repo",
+   "status": "complete"
+  },
   "fx99-births": {
    "events_loaded": 249,
    "manifest_events": 249,
@@ -919,6 +1105,7 @@
   "c-git-b",
   "c-git-c",
   "c-git-nested",
+  "c-root-git",
   "chatgpt",
   "claude-linux",
   "claude-win",
@@ -932,6 +1119,9 @@
   "e-git-b",
   "e-git-c",
   "e-git-nested",
+  "e-root-births",
+  "e-root-git-a",
+  "e-root-git-b",
   "fx99-births",
   "fx99-git",
   "github-list",
@@ -947,24 +1137,23 @@
    "no_path": 11259
   },
   "claude_jsonl": {
-   "joined": 46676,
-   "joined_dir": 4737,
+   "joined": 53018,
+   "joined_dir": 6644,
    "no_path": 821,
-   "unmatched": 15807
+   "unmatched": 7558
   },
   "codex_jsonl": {
-   "joined": 43697,
-   "joined_dir": 2635,
+   "joined": 51109,
+   "joined_dir": 7228,
    "no_path": 5731,
-   "unmatched": 17763
+   "unmatched": 5758
   },
   "continuity": {
    "no_path": 332
   },
   "deepagents_runs": {
-   "joined": 133,
-   "no_path": 401,
-   "unmatched": 3
+   "joined": 136,
+   "no_path": 401
   },
   "hearth_ledger": {
    "no_path": 25985
@@ -975,25 +1164,25 @@
   }
  },
  "largest_components": [
+  12,
   11,
+  9,
+  8,
   8,
   6,
   5,
-  4,
-  4,
-  3,
-  3
+  5
  ],
- "last_ts": "2026-10-09T12:45:04Z",
+ "last_ts": "2026-10-09T13:33:18Z",
  "lineages": {
-  "dir": 135,
-  "git": 121,
+  "dir": 177,
+  "git": 130,
   "github_only": 2
  },
  "link_basis": {
-  "root": 30,
-  "sha_overlap": 3,
-  "worktree": 16
+  "root": 37,
+  "sha_overlap": 4,
+  "worktree": 42
  },
  "manifests": {
   "am4-births": {
@@ -1155,6 +1344,28 @@
    "warnings": [
     "roots_missing:10"
    ]
+  },
+  "c-root-git": {
+   "coverage": {
+    "excluded": 0,
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 0,
+    "out_of_range": 0,
+    "sources_seen": 2,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 10,
+   "raw_sum": 6,
+   "repos": 2,
+   "src": "git_repo",
+   "status": "complete",
+   "warnings": []
   },
   "chatgpt": {
    "coverage": {
@@ -1438,6 +1649,72 @@
     "roots_missing:18"
    ]
   },
+  "e-root-births": {
+   "coverage": {
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 0,
+    "out_of_range": 0,
+    "sources_seen": 51,
+    "sources_skipped": 0,
+    "update_null_mtime": 58
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 1946,
+   "raw_sum": 491673,
+   "repos": 0,
+   "src": "fs_births",
+   "status": "complete",
+   "warnings": []
+  },
+  "e-root-git-a": {
+   "coverage": {
+    "excluded": 0,
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 25,
+    "out_of_range": 0,
+    "sources_seen": 21,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 2134,
+   "raw_sum": 2082,
+   "repos": 21,
+   "src": "git_repo",
+   "status": "complete",
+   "warnings": []
+  },
+  "e-root-git-b": {
+   "coverage": {
+    "excluded": 0,
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 25,
+    "out_of_range": 0,
+    "sources_seen": 20,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 318,
+   "raw_sum": 268,
+   "repos": 20,
+   "src": "git_repo",
+   "status": "complete",
+   "warnings": []
+  },
   "fx99-births": {
    "coverage": {
     "invalid_remote_records": 0,
@@ -1644,34 +1921,34 @@
  "per_class": {
   "automation": 1112,
   "chatgpt": 11259,
-  "claude": 95723,
+  "claude": 96158,
   "codex": 71842,
-  "human": 9141,
+  "human": 11205,
   "local_model": 542,
   "opencode": 209,
-  "third_party": 22670
+  "third_party": 24426
  },
  "per_host": {
   "am4": 209,
   "cloud": 11259,
   "fx99": 301,
   "github": 54,
-  "omen-c": 93727,
-  "omen-e": 61602,
-  "omen-linux": 45346
+  "omen-c": 93726,
+  "omen-e": 65864,
+  "omen-linux": 45340
  },
  "per_kind": {
-  "branch": 790,
+  "branch": 801,
   "chat_msg": 146432,
   "chat_session": 2810,
-  "commit": 32121,
-  "file_birth": 2030,
-  "file_update": 1090,
+  "commit": 34389,
+  "file_birth": 3273,
+  "file_update": 1793,
   "offload_call": 26386,
   "receipt": 233,
-  "repo_born": 167,
+  "repo_born": 176,
   "run": 235,
-  "worktree": 204
+  "worktree": 225
  },
  "per_src_kind": {
   "chatgpt_export/chat_msg": 10879,
@@ -1684,12 +1961,12 @@
   "continuity/run": 99,
   "deepagents_runs/offload_call": 401,
   "deepagents_runs/run": 136,
-  "fs_births/file_birth": 2030,
-  "fs_births/file_update": 1090,
-  "git_repo/branch": 790,
-  "git_repo/commit": 32121,
-  "git_repo/repo_born": 113,
-  "git_repo/worktree": 204,
+  "fs_births/file_birth": 3273,
+  "fs_births/file_update": 1793,
+  "git_repo/branch": 801,
+  "git_repo/commit": 34389,
+  "git_repo/repo_born": 122,
+  "git_repo/worktree": 225,
   "github_api/repo_born": 54,
   "hearth_ledger/offload_call": 25985,
   "opencode_db/chat_msg": 185,
@@ -1698,6 +1975,12 @@
  "per_ym": {
   "2011-08": {
    "repo_born": 1
+  },
+  "2013-08": {
+   "file_update": 1
+  },
+  "2013-10": {
+   "file_update": 1
   },
   "2014-05": {
    "file_update": 2
@@ -1714,6 +1997,9 @@
   },
   "2017-05": {
    "file_update": 1
+  },
+  "2017-07": {
+   "file_update": 4
   },
   "2017-12": {
    "branch": 1,
@@ -1738,7 +2024,7 @@
   },
   "2018-08": {
    "commit": 11,
-   "file_update": 28,
+   "file_update": 34,
    "repo_born": 1
   },
   "2018-09": {
@@ -1810,8 +2096,17 @@
   "2020-12": {
    "file_birth": 2
   },
+  "2021-01": {
+   "file_update": 1
+  },
+  "2021-02": {
+   "file_update": 5
+  },
   "2021-03": {
-   "file_update": 10
+   "file_update": 15
+  },
+  "2021-04": {
+   "file_birth": 1
   },
   "2021-05": {
    "commit": 18,
@@ -1822,37 +2117,48 @@
    "commit": 20
   },
   "2021-07": {
-   "commit": 20
+   "commit": 20,
+   "file_birth": 2
   },
   "2021-08": {
-   "commit": 35
+   "commit": 35,
+   "file_birth": 2
   },
   "2021-09": {
-   "commit": 30
+   "commit": 30,
+   "file_birth": 1
   },
   "2021-10": {
    "commit": 20,
-   "file_update": 5
+   "file_birth": 2,
+   "file_update": 9
   },
   "2021-11": {
-   "commit": 12
+   "commit": 12,
+   "file_birth": 1
   },
   "2021-12": {
-   "commit": 13
+   "commit": 13,
+   "file_update": 1
   },
   "2022-01": {
    "commit": 23,
+   "file_birth": 1,
    "file_update": 3
   },
   "2022-02": {
-   "commit": 14
+   "commit": 14,
+   "file_birth": 1,
+   "file_update": 1
   },
   "2022-03": {
    "commit": 8,
-   "file_update": 3
+   "file_birth": 1,
+   "file_update": 4
   },
   "2022-04": {
-   "commit": 4
+   "commit": 4,
+   "file_birth": 1
   },
   "2022-05": {
    "commit": 39,
@@ -1868,7 +2174,8 @@
    "commit": 23
   },
   "2022-09": {
-   "commit": 12
+   "commit": 12,
+   "file_birth": 1
   },
   "2022-10": {
    "commit": 38,
@@ -1882,15 +2189,18 @@
    "commit": 49
   },
   "2023-01": {
-   "commit": 29
+   "commit": 29,
+   "file_birth": 1,
+   "file_update": 4
   },
   "2023-02": {
    "commit": 20,
-   "file_update": 1
+   "file_birth": 2,
+   "file_update": 2
   },
   "2023-03": {
    "commit": 308,
-   "file_update": 9,
+   "file_update": 17,
    "repo_born": 1
   },
   "2023-04": {
@@ -1901,6 +2211,7 @@
   },
   "2023-05": {
    "commit": 265,
+   "file_birth": 1,
    "repo_born": 1
   },
   "2023-06": {
@@ -1912,17 +2223,18 @@
   },
   "2023-08": {
    "commit": 269,
-   "file_update": 1
+   "file_update": 4
   },
   "2023-09": {
    "commit": 357,
+   "file_birth": 1,
    "file_update": 5
   },
   "2023-10": {
    "chat_msg": 6,
    "chat_session": 3,
    "commit": 335,
-   "file_update": 6,
+   "file_update": 13,
    "repo_born": 1
   },
   "2023-11": {
@@ -1930,213 +2242,229 @@
    "chat_msg": 2,
    "chat_session": 1,
    "commit": 351,
-   "file_update": 4,
+   "file_birth": 1,
+   "file_update": 8,
    "repo_born": 2
   },
   "2023-12": {
    "branch": 1,
    "commit": 339,
-   "file_update": 5
+   "file_birth": 5,
+   "file_update": 7
   },
   "2024-01": {
    "branch": 1,
    "commit": 532,
-   "file_update": 3
+   "file_birth": 3,
+   "file_update": 9
   },
   "2024-02": {
    "branch": 1,
    "commit": 461,
-   "file_update": 2
+   "file_birth": 4,
+   "file_update": 6
   },
   "2024-03": {
    "commit": 438,
-   "file_update": 5
+   "file_birth": 1,
+   "file_update": 6
   },
   "2024-04": {
    "branch": 3,
    "commit": 522,
-   "file_update": 1
+   "file_birth": 4,
+   "file_update": 2
   },
   "2024-05": {
    "branch": 5,
    "commit": 508,
-   "file_update": 1
+   "file_birth": 1,
+   "file_update": 3
   },
   "2024-06": {
    "branch": 1,
    "commit": 415,
-   "file_update": 5
+   "file_birth": 4,
+   "file_update": 10
   },
   "2024-07": {
    "branch": 5,
    "commit": 472,
-   "file_update": 2
+   "file_birth": 3,
+   "file_update": 9
   },
   "2024-08": {
    "branch": 3,
    "commit": 389,
-   "file_birth": 6,
-   "file_update": 17
+   "file_birth": 9,
+   "file_update": 18
   },
   "2024-09": {
    "branch": 5,
    "commit": 348,
-   "file_update": 17
+   "file_birth": 4,
+   "file_update": 31
   },
   "2024-10": {
    "branch": 7,
    "commit": 417,
-   "file_birth": 1,
-   "file_update": 16
+   "file_birth": 12,
+   "file_update": 29
   },
   "2024-11": {
    "branch": 4,
    "chat_msg": 6,
    "chat_session": 1,
    "commit": 549,
-   "file_update": 36
+   "file_birth": 7,
+   "file_update": 59
   },
   "2024-12": {
    "branch": 3,
    "chat_msg": 34,
    "chat_session": 5,
    "commit": 371,
-   "file_update": 18
+   "file_update": 27
   },
   "2025-01": {
    "branch": 7,
    "chat_msg": 98,
    "chat_session": 12,
    "commit": 467,
-   "file_birth": 2,
-   "file_update": 22
+   "file_birth": 8,
+   "file_update": 37
   },
   "2025-02": {
    "branch": 4,
    "chat_msg": 10,
    "chat_session": 3,
-   "commit": 411,
-   "file_birth": 3,
-   "file_update": 31,
+   "commit": 414,
+   "file_birth": 5,
+   "file_update": 51,
    "repo_born": 1
   },
   "2025-03": {
    "branch": 18,
    "chat_msg": 20,
    "chat_session": 5,
-   "commit": 502,
-   "file_birth": 1,
-   "file_update": 14
+   "commit": 604,
+   "file_birth": 3,
+   "file_update": 27
   },
   "2025-04": {
    "branch": 5,
    "chat_msg": 17,
    "chat_session": 3,
-   "commit": 394
+   "commit": 579,
+   "file_birth": 3,
+   "file_update": 3
   },
   "2025-05": {
-   "branch": 20,
+   "branch": 21,
    "chat_msg": 63,
    "chat_session": 6,
-   "commit": 600,
-   "file_update": 6
+   "commit": 699,
+   "file_birth": 5,
+   "file_update": 14
   },
   "2025-06": {
    "branch": 17,
    "chat_msg": 33,
    "chat_session": 4,
-   "commit": 531,
-   "file_birth": 1,
-   "file_update": 1
+   "commit": 686,
+   "file_birth": 17,
+   "file_update": 4
   },
   "2025-07": {
-   "branch": 43,
+   "branch": 44,
    "chat_msg": 145,
    "chat_session": 29,
-   "commit": 803,
-   "file_birth": 1,
-   "file_update": 6,
-   "repo_born": 2
+   "commit": 926,
+   "file_birth": 18,
+   "file_update": 15,
+   "repo_born": 3
   },
   "2025-08": {
    "branch": 26,
    "chat_msg": 100,
    "chat_session": 16,
-   "commit": 788,
-   "file_birth": 10,
-   "file_update": 6
+   "commit": 862,
+   "file_birth": 17,
+   "file_update": 8
   },
   "2025-09": {
    "branch": 30,
    "chat_msg": 91,
    "chat_session": 22,
-   "commit": 651,
-   "file_birth": 2
+   "commit": 784,
+   "file_birth": 15,
+   "file_update": 11
   },
   "2025-10": {
    "branch": 22,
    "chat_msg": 73,
    "chat_session": 17,
-   "commit": 666,
-   "file_birth": 3,
-   "file_update": 9
+   "commit": 728,
+   "file_birth": 16,
+   "file_update": 18
   },
   "2025-11": {
    "branch": 29,
    "chat_msg": 784,
    "chat_session": 43,
-   "commit": 804,
-   "file_update": 9
+   "commit": 887,
+   "file_birth": 7,
+   "file_update": 21
   },
   "2025-12": {
    "branch": 22,
    "chat_msg": 2535,
    "chat_session": 51,
-   "commit": 763,
-   "file_birth": 3,
-   "file_update": 2
+   "commit": 811,
+   "file_birth": 13,
+   "file_update": 12
   },
   "2026-01": {
    "branch": 24,
    "chat_msg": 3137,
    "chat_session": 67,
-   "commit": 578,
-   "file_birth": 2,
-   "file_update": 7,
+   "commit": 721,
+   "file_birth": 14,
+   "file_update": 22,
    "repo_born": 1
   },
   "2026-02": {
    "branch": 35,
    "chat_msg": 2420,
    "chat_session": 65,
-   "commit": 684,
-   "file_birth": 4,
-   "file_update": 3
+   "commit": 800,
+   "file_birth": 9,
+   "file_update": 22
   },
   "2026-03": {
    "branch": 51,
    "chat_msg": 1299,
    "chat_session": 25,
-   "commit": 2616,
-   "file_birth": 179,
-   "file_update": 76,
+   "commit": 2701,
+   "file_birth": 205,
+   "file_update": 104,
    "repo_born": 20
   },
   "2026-04": {
-   "branch": 17,
-   "commit": 928,
-   "file_birth": 120,
-   "file_update": 18,
-   "repo_born": 17,
-   "worktree": 22
+   "branch": 20,
+   "commit": 1207,
+   "file_birth": 203,
+   "file_update": 64,
+   "repo_born": 21,
+   "worktree": 33
   },
   "2026-05": {
    "branch": 38,
    "chat_msg": 8597,
    "chat_session": 185,
-   "commit": 1193,
-   "file_birth": 120,
-   "file_update": 80,
+   "commit": 1349,
+   "file_birth": 172,
+   "file_update": 120,
    "repo_born": 21,
    "worktree": 11
   },
@@ -2144,18 +2472,18 @@
    "branch": 34,
    "chat_msg": 8838,
    "chat_session": 222,
-   "commit": 1139,
-   "file_birth": 107,
-   "file_update": 66,
+   "commit": 1192,
+   "file_birth": 170,
+   "file_update": 84,
    "repo_born": 15
   },
   "2026-07": {
-   "branch": 140,
+   "branch": 141,
    "chat_msg": 19641,
    "chat_session": 380,
-   "commit": 2827,
-   "file_birth": 209,
-   "file_update": 88,
+   "commit": 2879,
+   "file_birth": 255,
+   "file_update": 100,
    "offload_call": 1264,
    "repo_born": 21,
    "worktree": 6
@@ -2164,39 +2492,39 @@
    "branch": 61,
    "chat_msg": 52833,
    "chat_session": 580,
-   "commit": 2583,
-   "file_birth": 253,
-   "file_update": 37,
+   "commit": 2685,
+   "file_birth": 345,
+   "file_update": 57,
    "offload_call": 108,
    "repo_born": 18,
    "run": 3,
    "worktree": 16
   },
   "2026-09": {
-   "branch": 76,
+   "branch": 81,
    "chat_msg": 33031,
    "chat_session": 557,
-   "commit": 2401,
-   "file_birth": 867,
-   "file_update": 211,
+   "commit": 2616,
+   "file_birth": 1550,
+   "file_update": 455,
    "offload_call": 1873,
    "receipt": 224,
-   "repo_born": 28,
+   "repo_born": 32,
    "run": 164,
-   "worktree": 64
+   "worktree": 73
   },
   "2026-10": {
    "branch": 27,
    "chat_msg": 12613,
    "chat_session": 506,
    "commit": 862,
-   "file_birth": 134,
-   "file_update": 12,
+   "file_birth": 144,
+   "file_update": 13,
    "offload_call": 23141,
    "receipt": 9,
    "repo_born": 10,
    "run": 68,
-   "worktree": 85
+   "worktree": 86
   }
  },
  "raw_item_kind": {
@@ -2236,6 +2564,11 @@
    "commit": 1020,
    "repo_born": 13,
    "worktree": 1
+  },
+  "c-root-git": {
+   "branch": 2,
+   "commit": 6,
+   "repo_born": 2
   },
   "chatgpt": {
    "chat_msg": 10879,
@@ -2297,6 +2630,22 @@
    "commit": 10668,
    "repo_born": 16
   },
+  "e-root-births": {
+   "file_birth": 1243,
+   "file_update": 703
+  },
+  "e-root-git-a": {
+   "branch": 33,
+   "commit": 2082,
+   "repo_born": 8,
+   "worktree": 11
+  },
+  "e-root-git-b": {
+   "branch": 33,
+   "commit": 268,
+   "repo_born": 7,
+   "worktree": 10
+  },
   "fx99-births": {
    "file_birth": 52,
    "file_update": 197
@@ -2348,12 +2697,12 @@
   "continuity/run": 99,
   "deepagents_runs/offload_call": 401,
   "deepagents_runs/run": 136,
-  "fs_births/file_birth": 2030,
-  "fs_births/file_update": 1090,
-  "git_repo/branch": 1670,
-  "git_repo/commit": 35986,
-  "git_repo/repo_born": 154,
-  "git_repo/worktree": 204,
+  "fs_births/file_birth": 3273,
+  "fs_births/file_update": 1793,
+  "git_repo/branch": 1738,
+  "git_repo/commit": 38342,
+  "git_repo/repo_born": 171,
+  "git_repo/worktree": 225,
   "github_api/repo_born": 54,
   "hearth_ledger/offload_call": 25985,
   "opencode_db/chat_msg": 185,
@@ -2567,6 +2916,34 @@
    "path": "~/fleet.git",
    "refs": 1,
    "repo_local": "fx99:~/fleet.git",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 5,
+   "commits": 5,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-root-git",
+   "lineage": "b386bddfef108f92f66c2b9c368cbf82a64b697f",
+   "path": "assessment",
+   "refs": 1,
+   "repo_local": "omen-c:assessment",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-root-git",
+   "lineage": "888fdd4b50af2e274d8162739b70ee335081b38d",
+   "path": "tuning",
+   "refs": 1,
+   "repo_local": "omen-c:tuning",
    "shallow": false,
    "worktree": false
   },
@@ -3249,7 +3626,7 @@
    "empty": false,
    "host": "omen-c",
    "item": "c-git-nested",
-   "lineage": "github:electronicarts/cnc_generals_zero_hour",
+   "lineage": "2e338c00cb1168e26c275c3f974640b5c5e7e370",
    "path": "work/research/cnc-generals",
    "refs": 3,
    "repo_local": "omen-c:work/research/cnc-generals",
@@ -3381,6 +3758,580 @@
    "repo_local": "omen-c:work/windtunnel",
    "shallow": false,
    "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 3,
+   "commits": 3,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-a",
+   "lineage": "32301c7b6dd4b19d7586062b5d8da9a6679475f4",
+   "path": "HANDOFF/_backup_staging/projects/meal-planner",
+   "refs": 1,
+   "repo_local": "omen-e:HANDOFF/_backup_staging/projects/meal-planner",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 295,
+   "commits": 295,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-a",
+   "lineage": "7cb5a5f51e40282205871ed2ae962e279153703d",
+   "path": "World of Warcraft/Tempo",
+   "refs": 26,
+   "repo_local": "omen-e:World of Warcraft/Tempo",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-b",
+   "lineage": "7cb5a5f51e40282205871ed2ae962e279153703d",
+   "path": "World of Warcraft/Tempo-worktrees/agent-a",
+   "refs": 0,
+   "repo_local": "omen-e:World of Warcraft/Tempo-worktrees/agent-a",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-a",
+   "lineage": "7cb5a5f51e40282205871ed2ae962e279153703d",
+   "path": "World of Warcraft/Tempo-worktrees/agent-b",
+   "refs": 0,
+   "repo_local": "omen-e:World of Warcraft/Tempo-worktrees/agent-b",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-a",
+   "lineage": "7cb5a5f51e40282205871ed2ae962e279153703d",
+   "path": "World of Warcraft/Tempo-worktrees/agent-c",
+   "refs": 0,
+   "repo_local": "omen-e:World of Warcraft/Tempo-worktrees/agent-c",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-b",
+   "lineage": "7cb5a5f51e40282205871ed2ae962e279153703d",
+   "path": "World of Warcraft/Tempo-worktrees/stream-f-gamma",
+   "refs": 0,
+   "repo_local": "omen-e:World of Warcraft/Tempo-worktrees/stream-f-gamma",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-b",
+   "lineage": "7cb5a5f51e40282205871ed2ae962e279153703d",
+   "path": "World of Warcraft/Tempo-wt-A",
+   "refs": 0,
+   "repo_local": "omen-e:World of Warcraft/Tempo-wt-A",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-a",
+   "lineage": "7cb5a5f51e40282205871ed2ae962e279153703d",
+   "path": "World of Warcraft/Tempo-wt-A-1b9",
+   "refs": 0,
+   "repo_local": "omen-e:World of Warcraft/Tempo-wt-A-1b9",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-a",
+   "lineage": "7cb5a5f51e40282205871ed2ae962e279153703d",
+   "path": "World of Warcraft/Tempo-wt-B",
+   "refs": 0,
+   "repo_local": "omen-e:World of Warcraft/Tempo-wt-B",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-a",
+   "lineage": "7cb5a5f51e40282205871ed2ae962e279153703d",
+   "path": "World of Warcraft/Tempo-wt-C",
+   "refs": 0,
+   "repo_local": "omen-e:World of Warcraft/Tempo-wt-C",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-a",
+   "lineage": "7cb5a5f51e40282205871ed2ae962e279153703d",
+   "path": "World of Warcraft/Tempo-wt-D",
+   "refs": 0,
+   "repo_local": "omen-e:World of Warcraft/Tempo-wt-D",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-b",
+   "lineage": "7cb5a5f51e40282205871ed2ae962e279153703d",
+   "path": "World of Warcraft/Tempo-wt-E",
+   "refs": 0,
+   "repo_local": "omen-e:World of Warcraft/Tempo-wt-E",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-b",
+   "lineage": "7cb5a5f51e40282205871ed2ae962e279153703d",
+   "path": "World of Warcraft/Tempo-wt-F",
+   "refs": 0,
+   "repo_local": "omen-e:World of Warcraft/Tempo-wt-F",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 2,
+   "commits": 2,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-a",
+   "lineage": "051983786f7637fb0b838f41f68df338e87f915e",
+   "path": "World of Warcraft/code",
+   "refs": 4,
+   "repo_local": "omen-e:World of Warcraft/code",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 8,
+   "commits": 8,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-b",
+   "lineage": "1e9ebf7884f9f00200c24f6e108100f1b1d96c11",
+   "path": "World of Warcraft/tempo-viewer",
+   "refs": 2,
+   "repo_local": "omen-e:World of Warcraft/tempo-viewer",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-b",
+   "lineage": "2144ddb13345f74710ea7db8917f088a2846f600",
+   "path": "gemini",
+   "refs": 1,
+   "repo_local": "omen-e:gemini",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 17,
+   "commits": 17,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-b",
+   "lineage": "a6b429fa8614dcff502a3df4bfbfeace72b51651",
+   "path": "helloworld/old-goat-new-tricks",
+   "refs": 2,
+   "repo_local": "omen-e:helloworld/old-goat-new-tricks",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1754,
+   "commits": 1754,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-a",
+   "lineage": "2e338c00cb1168e26c275c3f974640b5c5e7e370",
+   "path": "omen/CC",
+   "refs": 60,
+   "repo_local": "omen-e:omen/CC",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 4,
+   "commits": 4,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-a",
+   "lineage": "528d2eaf152e358c3dff7d25ec62b4f6b348a937",
+   "path": "omen/CC/GeneralsReplays",
+   "refs": 3,
+   "repo_local": "omen-e:omen/CC/GeneralsReplays",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 72,
+   "commits": 72,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-b",
+   "lineage": "aa33e4c8932824b88a99e3da9cdd27c412994e8c",
+   "path": "omen/DMos",
+   "refs": 33,
+   "repo_local": "omen-e:omen/DMos",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-b",
+   "lineage": "aa33e4c8932824b88a99e3da9cdd27c412994e8c",
+   "path": "omen/DMos-actor-controls",
+   "refs": 0,
+   "repo_local": "omen-e:omen/DMos-actor-controls",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-b",
+   "lineage": "aa33e4c8932824b88a99e3da9cdd27c412994e8c",
+   "path": "omen/DMos-chronicle",
+   "refs": 0,
+   "repo_local": "omen-e:omen/DMos-chronicle",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-a",
+   "lineage": "aa33e4c8932824b88a99e3da9cdd27c412994e8c",
+   "path": "omen/DMos-chronicle-salience",
+   "refs": 0,
+   "repo_local": "omen-e:omen/DMos-chronicle-salience",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-a",
+   "lineage": "aa33e4c8932824b88a99e3da9cdd27c412994e8c",
+   "path": "omen/DMos-command-freshness",
+   "refs": 0,
+   "repo_local": "omen-e:omen/DMos-command-freshness",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-b",
+   "lineage": "aa33e4c8932824b88a99e3da9cdd27c412994e8c",
+   "path": "omen/DMos-rc1",
+   "refs": 0,
+   "repo_local": "omen-e:omen/DMos-rc1",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-b",
+   "lineage": "aa33e4c8932824b88a99e3da9cdd27c412994e8c",
+   "path": "omen/DMos-rehearsal",
+   "refs": 0,
+   "repo_local": "omen-e:omen/DMos-rehearsal",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-a",
+   "lineage": "aa33e4c8932824b88a99e3da9cdd27c412994e8c",
+   "path": "omen/DMos-secrets",
+   "refs": 0,
+   "repo_local": "omen-e:omen/DMos-secrets",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 12,
+   "commits": 12,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-a",
+   "lineage": "e6fa603a4463fc18d711d8acc897fccd17921763",
+   "path": "omen/bf6-highlights-retired-20260828",
+   "refs": 2,
+   "repo_local": "omen-e:omen/bf6-highlights-retired-20260828",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 20,
+   "commits": 20,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-b",
+   "lineage": "e6fa603a4463fc18d711d8acc897fccd17921763",
+   "path": "omen/clippy",
+   "refs": 5,
+   "repo_local": "omen-e:omen/clippy",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 10,
+   "commits": 10,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-a",
+   "lineage": "17b6526bb7f520061ed56eef0eb5846d524e30d8",
+   "path": "omen/imagegen",
+   "refs": 3,
+   "repo_local": "omen-e:omen/imagegen",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 126,
+   "commits": 126,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-b",
+   "lineage": "7860117fbf89287165ca84baa8f2679f65e572e8",
+   "path": "omen/menu",
+   "refs": 3,
+   "repo_local": "omen-e:omen/menu",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-b",
+   "lineage": "168915c9674722417bfd3fcfadcc0883976da6db",
+   "path": "omen/steward-multi-era/deploy-worktree-creator-carousel-d1b90f1",
+   "refs": 0,
+   "repo_local": "omen-e:omen/steward-multi-era/deploy-worktree-creator-carousel-d1b90f1",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-a",
+   "lineage": "168915c9674722417bfd3fcfadcc0883976da6db",
+   "path": "omen/steward-multi-era/deploy-worktree-creator-compact-a0db3a0",
+   "refs": 0,
+   "repo_local": "omen-e:omen/steward-multi-era/deploy-worktree-creator-compact-a0db3a0",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-a",
+   "lineage": "168915c9674722417bfd3fcfadcc0883976da6db",
+   "path": "omen/steward-multi-era/deploy-worktree-creator-explorer-808d15f",
+   "refs": 0,
+   "repo_local": "omen-e:omen/steward-multi-era/deploy-worktree-creator-explorer-808d15f",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-a",
+   "lineage": "168915c9674722417bfd3fcfadcc0883976da6db",
+   "path": "omen/steward-multi-era/deploy-worktree-creator-guide-20260915",
+   "refs": 0,
+   "repo_local": "omen-e:omen/steward-multi-era/deploy-worktree-creator-guide-20260915",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-b",
+   "lineage": "168915c9674722417bfd3fcfadcc0883976da6db",
+   "path": "omen/steward-multi-era/deploy-worktree-creator-heatmap-acc5eb7",
+   "refs": 0,
+   "repo_local": "omen-e:omen/steward-multi-era/deploy-worktree-creator-heatmap-acc5eb7",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 2,
+   "commits": 2,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-a",
+   "lineage": "fc1c3946dbf3e3daf889c95a4d5447d86b19829c",
+   "path": "omen/tensor",
+   "refs": 1,
+   "repo_local": "omen-e:omen/tensor",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 24,
+   "commits": 24,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-b",
+   "lineage": "a7795c7ee4310fac3b86f8df9eca4e58d06936b8",
+   "path": "resume",
+   "refs": 13,
+   "repo_local": "omen-e:resume",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-b",
+   "lineage": "a7795c7ee4310fac3b86f8df9eca4e58d06936b8",
+   "path": "resume-wt/claude-seat-receipts",
+   "refs": 0,
+   "repo_local": "omen-e:resume-wt/claude-seat-receipts",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-a",
+   "lineage": "a7795c7ee4310fac3b86f8df9eca4e58d06936b8",
+   "path": "resume-wt/gemini-proof-snapshot",
+   "refs": 0,
+   "repo_local": "omen-e:resume-wt/gemini-proof-snapshot",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-root-git-b",
+   "lineage": "a7795c7ee4310fac3b86f8df9eca4e58d06936b8",
+   "path": "resume-wt/linux-proof-review-20261006",
+   "refs": 0,
+   "repo_local": "omen-e:resume-wt/linux-proof-review-20261006",
+   "shallow": false,
+   "worktree": true
   },
   {
    "bare": false,
@@ -4741,7 +5692,7 @@
    "worktree": true
   }
  ],
- "repo_records": 170,
+ "repo_records": 213,
  "repo_records_duplicate_skipped": 0,
  "sessions": 1155,
  "sessions_by_class": {

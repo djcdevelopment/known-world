@@ -191,9 +191,11 @@ def main():
                         "jepa_self_edges_dropped": jself,
                         "edges_by_type": dict(sorted(Counter(e["type"] for e in out).items())),
                         "edges_by_scope": dict(sorted(Counter(e["scope"] for e in out).items()))}}
-    with open(os.path.join(ROOT, "corpus/merged/relations.json"), "w") as f:
+    _dst = os.path.join(ROOT, "corpus/merged/relations.json")
+    with open(_dst + ".tmp", "w") as f:
         json.dump(res, f, indent=1, sort_keys=True)
         f.write("\n")
+    os.replace(_dst + ".tmp", _dst)  # atomic: readers stream corpus/merged
     c = res["coverage"]
     print("nodes=%d joined=%d unjoined=%d edges=%d self_dropped=%d" % (
         c["manifest_repos"], c["joined"], len(c["unjoined"]), len(out), jself))

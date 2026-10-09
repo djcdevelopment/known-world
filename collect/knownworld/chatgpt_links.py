@@ -130,9 +130,11 @@ def main():
                         "by_year": dict(sorted(year.items())), "with_projects_by_year": dict(sorted(year_p.items())),
                         "artifacts_by_type": dict(sorted((k or "none", v) for k, v in art.items())),
                         "calendar_days": len(cal)}}
-    with open(os.path.join(ROOT, "corpus/merged/chatgpt_links.json"), "w") as f:
+    _dst = os.path.join(ROOT, "corpus/merged/chatgpt_links.json")
+    with open(_dst + ".tmp", "w") as f:
         json.dump(res, f, indent=1, sort_keys=True)
         f.write("\n")
+    os.replace(_dst + ".tmp", _dst)  # atomic: readers stream corpus/merged
     c = res["coverage"]
     print("conversations=%d with_projects=%d with_lineages=%d lineages_matched=%d days=%d" % (
         c["conversations"], c["with_projects"], c["with_lineages"], c["lineages_matched"], c["calendar_days"]))

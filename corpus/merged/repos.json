@@ -1,5 +1,5 @@
 {
- "as_of": "2026-10-09T12:45:04Z",
+ "as_of": "2026-10-09T13:33:18Z",
  "candidates": [
   {
    "a": "0a29dacd17d4f11b289718412e5861a2bebb5cb3",
@@ -126,6 +126,45 @@
    "roots": [
     "033ee49e907f1f97655a3cf606d14cd43c60bbb4",
     "9f3de28ad2b65c2c095195bddda6e7eab98bd384"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 2
+   },
+   "commit_copies": 2,
+   "commits": 2,
+   "derek_share": 1.0,
+   "events": {
+    "commit": 2,
+    "repo_born": 1
+   },
+   "first_ts": "2026-04-19T03:35:36Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "051983786f7637fb0b838f41f68df338e87f915e",
+   "kind": "git",
+   "last_ts": "2026-04-19T05:27:55Z",
+   "members": 1,
+   "names": [
+    "code"
+   ],
+   "paths": {
+    "omen-e": [
+     "World of Warcraft/code"
+    ]
+   },
+   "refs": 4,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "051983786f7637fb0b838f41f68df338e87f915e"
    ],
    "shallow_only": false,
    "third_party": false,
@@ -483,9 +522,14 @@
    "id": "168915c9674722417bfd3fcfadcc0883976da6db",
    "kind": "git",
    "last_ts": "2026-09-16T06:20:31Z",
-   "members": 4,
+   "members": 9,
    "names": [
     "comfystewardview",
+    "deploy-worktree-creator-carousel-d1b90f1",
+    "deploy-worktree-creator-compact-a0db3a0",
+    "deploy-worktree-creator-explorer-808d15f",
+    "deploy-worktree-creator-guide-20260915",
+    "deploy-worktree-creator-heatmap-acc5eb7",
     "gallery-stage-steward-20260915",
     "steward-spatial-lab",
     "temp"
@@ -497,6 +541,11 @@
      "work/steward-spatial-lab"
     ],
     "omen-e": [
+     "omen/steward-multi-era/deploy-worktree-creator-carousel-d1b90f1",
+     "omen/steward-multi-era/deploy-worktree-creator-compact-a0db3a0",
+     "omen/steward-multi-era/deploy-worktree-creator-explorer-808d15f",
+     "omen/steward-multi-era/deploy-worktree-creator-guide-20260915",
+     "omen/steward-multi-era/deploy-worktree-creator-heatmap-acc5eb7",
      "work/temp"
     ]
    },
@@ -512,7 +561,7 @@
    ],
    "shallow_only": false,
    "third_party": false,
-   "worktree_records": 1
+   "worktree_records": 6
   },
   {
    "authors": {
@@ -560,13 +609,13 @@
     "claude": 3,
     "human": 7
    },
-   "commit_copies": 10,
+   "commit_copies": 20,
    "commits": 10,
    "derek_share": 1.0,
    "events": {
     "branch": 1,
-    "chat_msg": 296,
-    "chat_session": 3,
+    "chat_msg": 996,
+    "chat_session": 5,
     "commit": 10,
     "repo_born": 1
    },
@@ -578,18 +627,21 @@
    "id": "17b6526bb7f520061ed56eef0eb5846d524e30d8",
    "kind": "git",
    "last_ts": "2026-09-03T18:54:43Z",
-   "members": 1,
+   "members": 2,
    "names": [
+    "imagegen",
     "img"
    ],
    "paths": {
     "omen-e": [
+     "omen/imagegen",
      "work/img"
     ]
    },
-   "refs": 2,
+   "refs": 3,
    "region": null,
    "remotes": [
+    "E:/work/img",
     "github.com/djcdevelopment/tempo-imagegen"
    ],
    "rooted": true,
@@ -788,6 +840,49 @@
   },
   {
    "authors": {
+    "claude": 6,
+    "human": 2
+   },
+   "commit_copies": 8,
+   "commits": 8,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 8,
+    "repo_born": 1
+   },
+   "first_ts": "2026-04-21T19:52:35Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "1e9ebf7884f9f00200c24f6e108100f1b1d96c11",
+   "kind": "git",
+   "last_ts": "2026-04-24T00:34:50Z",
+   "members": 1,
+   "names": [
+    "tempo-viewer"
+   ],
+   "paths": {
+    "omen-e": [
+     "World of Warcraft/tempo-viewer"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/tempo-viewer"
+   ],
+   "rooted": true,
+   "roots": [
+    "1e9ebf7884f9f00200c24f6e108100f1b1d96c11"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
     "claude": 1061,
     "human": 1057
    },
@@ -888,6 +983,48 @@
    "rooted": true,
    "roots": [
     "207f79d2cf4fdc9ae3307bc318ed81d0fd04868d"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 1
+   },
+   "commit_copies": 1,
+   "commits": 1,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 1091,
+    "chat_session": 1,
+    "commit": 1,
+    "repo_born": 1
+   },
+   "first_ts": "2026-09-03T09:17:17Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "2144ddb13345f74710ea7db8917f088a2846f600",
+   "kind": "git",
+   "last_ts": "2026-09-03T09:17:17Z",
+   "members": 1,
+   "names": [
+    "gemini"
+   ],
+   "paths": {
+    "omen-e": [
+     "gemini"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "2144ddb13345f74710ea7db8917f088a2846f600"
    ],
    "shallow_only": false,
    "third_party": false,
@@ -1054,6 +1191,57 @@
   },
   {
    "authors": {
+    "claude": 1,
+    "third_party": 1753
+   },
+   "commit_copies": 1755,
+   "commits": 1754,
+   "derek_share": 0.0006,
+   "events": {
+    "branch": 4,
+    "chat_msg": 170,
+    "chat_session": 1,
+    "commit": 1754,
+    "repo_born": 1
+   },
+   "first_ts": "2025-02-27T16:34:27Z",
+   "foreign_org": true,
+   "hosts": [
+    "omen-c",
+    "omen-e"
+   ],
+   "id": "2e338c00cb1168e26c275c3f974640b5c5e7e370",
+   "kind": "git",
+   "last_ts": "2026-09-06T15:33:01Z",
+   "members": 2,
+   "names": [
+    "cc",
+    "cnc-generals"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/research/cnc-generals"
+    ],
+    "omen-e": [
+     "omen/CC"
+    ]
+   },
+   "refs": 60,
+   "region": null,
+   "remotes": [
+    "github.com/electronicarts/cnc_generals_zero_hour",
+    "github.com/thesuperhackers/generalsgamecode"
+   ],
+   "rooted": true,
+   "roots": [
+    "2e338c00cb1168e26c275c3f974640b5c5e7e370"
+   ],
+   "shallow_only": false,
+   "third_party": true,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
     "claude": 9
    },
    "commit_copies": 9,
@@ -1091,6 +1279,47 @@
    "rooted": true,
    "roots": [
     "2f501a833fcd934cda80323546967f6bb8495705"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 1,
+    "human": 2
+   },
+   "commit_copies": 3,
+   "commits": 3,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 3,
+    "repo_born": 1
+   },
+   "first_ts": "2026-04-30T23:53:36Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "32301c7b6dd4b19d7586062b5d8da9a6679475f4",
+   "kind": "git",
+   "last_ts": "2026-05-07T08:04:55Z",
+   "members": 1,
+   "names": [
+    "meal-planner"
+   ],
+   "paths": {
+    "omen-e": [
+     "HANDOFF/_backup_staging/projects/meal-planner"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "32301c7b6dd4b19d7586062b5d8da9a6679475f4"
    ],
    "shallow_only": false,
    "third_party": false,
@@ -1762,6 +1991,48 @@
    ],
    "shallow_only": false,
    "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "third_party": 4
+   },
+   "commit_copies": 4,
+   "commits": 4,
+   "derek_share": 0.0,
+   "events": {
+    "branch": 1,
+    "commit": 4,
+    "repo_born": 1
+   },
+   "first_ts": "2025-07-30T16:04:37Z",
+   "foreign_org": true,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "528d2eaf152e358c3dff7d25ec62b4f6b348a937",
+   "kind": "git",
+   "last_ts": "2026-02-10T22:21:56Z",
+   "members": 1,
+   "names": [
+    "generalsreplays"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/CC/GeneralsReplays"
+    ]
+   },
+   "refs": 3,
+   "region": null,
+   "remotes": [
+    "github.com/thesuperhackers/generalsreplays"
+   ],
+   "rooted": true,
+   "roots": [
+    "528d2eaf152e358c3dff7d25ec62b4f6b348a937"
+   ],
+   "shallow_only": false,
+   "third_party": true,
    "worktree_records": 0
   },
   {
@@ -2438,6 +2709,49 @@
   },
   {
    "authors": {
+    "claude": 121,
+    "human": 5
+   },
+   "commit_copies": 126,
+   "commits": 126,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 1511,
+    "chat_session": 32,
+    "commit": 126,
+    "repo_born": 1
+   },
+   "first_ts": "2026-09-21T03:42:23Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "7860117fbf89287165ca84baa8f2679f65e572e8",
+   "kind": "git",
+   "last_ts": "2026-09-22T04:33:14Z",
+   "members": 1,
+   "names": [
+    "menu"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/menu"
+    ]
+   },
+   "refs": 3,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "7860117fbf89287165ca84baa8f2679f65e572e8"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
     "human": 15
    },
    "commit_copies": 15,
@@ -2607,6 +2921,73 @@
   },
   {
    "authors": {
+    "claude": 247,
+    "human": 48
+   },
+   "commit_copies": 295,
+   "commits": 295,
+   "derek_share": 1.0,
+   "events": {
+    "chat_msg": 2944,
+    "chat_session": 67,
+    "commit": 295,
+    "repo_born": 1,
+    "worktree": 11
+   },
+   "first_ts": "2026-04-18T18:11:51Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "7cb5a5f51e40282205871ed2ae962e279153703d",
+   "kind": "git",
+   "last_ts": "2026-06-03T01:56:21Z",
+   "members": 12,
+   "names": [
+    "agent-a",
+    "agent-b",
+    "agent-c",
+    "stream-f-gamma",
+    "tempo",
+    "tempo-wt-a",
+    "tempo-wt-a-1b9",
+    "tempo-wt-b",
+    "tempo-wt-c",
+    "tempo-wt-d",
+    "tempo-wt-e",
+    "tempo-wt-f"
+   ],
+   "paths": {
+    "omen-e": [
+     "World of Warcraft/Tempo",
+     "World of Warcraft/Tempo-worktrees/agent-a",
+     "World of Warcraft/Tempo-worktrees/agent-b",
+     "World of Warcraft/Tempo-worktrees/agent-c",
+     "World of Warcraft/Tempo-worktrees/stream-f-gamma",
+     "World of Warcraft/Tempo-wt-A",
+     "World of Warcraft/Tempo-wt-A-1b9",
+     "World of Warcraft/Tempo-wt-B",
+     "World of Warcraft/Tempo-wt-C",
+     "World of Warcraft/Tempo-wt-D",
+     "World of Warcraft/Tempo-wt-E",
+     "World of Warcraft/Tempo-wt-F"
+    ]
+   },
+   "refs": 26,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/tempo"
+   ],
+   "rooted": true,
+   "roots": [
+    "7cb5a5f51e40282205871ed2ae962e279153703d"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 11
+  },
+  {
+   "authors": {
     "human": 6
    },
    "commit_copies": 6,
@@ -2733,7 +3114,7 @@
    "authors": {
     "human": 1
    },
-   "commit_copies": 1,
+   "commit_copies": 2,
    "commits": 1,
    "derek_share": 1.0,
    "events": {
@@ -2751,12 +3132,13 @@
    "id": "888fdd4b50af2e274d8162739b70ee335081b38d",
    "kind": "git",
    "last_ts": "2026-07-03T12:05:22Z",
-   "members": 1,
+   "members": 2,
    "names": [
     "tuning"
    ],
    "paths": {
     "omen-c": [
+     "tuning",
      "work/tuning"
     ]
    },
@@ -3268,7 +3650,7 @@
    "authors": {
     "claude": 17
    },
-   "commit_copies": 17,
+   "commit_copies": 34,
    "commits": 17,
    "derek_share": 1.0,
    "events": {
@@ -3279,21 +3661,26 @@
    "first_ts": "2026-06-17T22:25:19Z",
    "foreign_org": false,
    "hosts": [
-    "omen-linux"
+    "omen-linux",
+    "omen-e"
    ],
    "id": "a6b429fa8614dcff502a3df4bfbfeace72b51651",
    "kind": "git",
    "last_ts": "2026-06-18T00:18:50Z",
-   "members": 1,
+   "members": 2,
    "names": [
-    "llmquest"
+    "llmquest",
+    "old-goat-new-tricks"
    ],
    "paths": {
+    "omen-e": [
+     "helloworld/old-goat-new-tricks"
+    ],
     "omen-linux": [
      "~/work/known-world/cache/clones/llmquest.git"
     ]
    },
-   "refs": 1,
+   "refs": 2,
    "region": null,
    "remotes": [
     "github.com/djcdevelopment/llmquest"
@@ -3308,36 +3695,49 @@
   },
   {
    "authors": {
-    "claude": 12,
+    "claude": 14,
     "human": 12
    },
-   "commit_copies": 24,
-   "commits": 24,
+   "commit_copies": 48,
+   "commits": 26,
    "derek_share": 1.0,
    "events": {
-    "branch": 2,
-    "commit": 24,
+    "branch": 3,
+    "chat_msg": 1258,
+    "chat_session": 30,
+    "commit": 26,
     "repo_born": 1,
-    "worktree": 2
+    "worktree": 5
    },
    "first_ts": "2026-09-03T08:39:34Z",
    "foreign_org": false,
    "hosts": [
-    "omen-linux"
+    "omen-linux",
+    "omen-e"
    ],
    "id": "a7795c7ee4310fac3b86f8df9eca4e58d06936b8",
    "kind": "git",
    "last_ts": "2026-10-07T09:51:24Z",
-   "members": 1,
+   "members": 5,
    "names": [
+    "claude-seat-receipts",
+    "gemini-proof-snapshot",
+    "linux-proof-review-20261006",
+    "resume",
     "resume-linux"
    ],
    "paths": {
+    "omen-e": [
+     "resume",
+     "resume-wt/claude-seat-receipts",
+     "resume-wt/gemini-proof-snapshot",
+     "resume-wt/linux-proof-review-20261006"
+    ],
     "omen-linux": [
      "~/work/resume-linux.git"
     ]
    },
-   "refs": 2,
+   "refs": 13,
    "region": null,
    "remotes": [],
    "rooted": true,
@@ -3346,7 +3746,7 @@
    ],
    "shallow_only": false,
    "third_party": false,
-   "worktree_records": 0
+   "worktree_records": 3
   },
   {
    "authors": {
@@ -3393,6 +3793,66 @@
    "shallow_only": false,
    "third_party": false,
    "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 53,
+    "human": 19
+   },
+   "commit_copies": 72,
+   "commits": 72,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 3887,
+    "chat_session": 19,
+    "commit": 72,
+    "repo_born": 1,
+    "worktree": 7
+   },
+   "first_ts": "2026-09-04T05:12:09Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "aa33e4c8932824b88a99e3da9cdd27c412994e8c",
+   "kind": "git",
+   "last_ts": "2026-09-09T08:44:37Z",
+   "members": 8,
+   "names": [
+    "dmos",
+    "dmos-actor-controls",
+    "dmos-chronicle",
+    "dmos-chronicle-salience",
+    "dmos-command-freshness",
+    "dmos-rc1",
+    "dmos-rehearsal",
+    "dmos-secrets"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/DMos",
+     "omen/DMos-actor-controls",
+     "omen/DMos-chronicle",
+     "omen/DMos-chronicle-salience",
+     "omen/DMos-command-freshness",
+     "omen/DMos-rc1",
+     "omen/DMos-rehearsal",
+     "omen/DMos-secrets"
+    ]
+   },
+   "refs": 33,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/dmos"
+   ],
+   "rooted": true,
+   "roots": [
+    "aa33e4c8932824b88a99e3da9cdd27c412994e8c"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 7
   },
   {
    "authors": {
@@ -3620,7 +4080,7 @@
     "claude": 4,
     "human": 2
    },
-   "commit_copies": 6,
+   "commit_copies": 11,
    "commits": 6,
    "derek_share": 1.0,
    "events": {
@@ -3628,7 +4088,8 @@
     "chat_msg": 161,
     "chat_session": 2,
     "commit": 6,
-    "repo_born": 1
+    "repo_born": 1,
+    "run": 3
    },
    "first_ts": "2026-08-19T05:42:53Z",
    "foreign_org": false,
@@ -3638,12 +4099,13 @@
    "id": "b386bddfef108f92f66c2b9c368cbf82a64b697f",
    "kind": "git",
    "last_ts": "2026-08-20T01:54:34Z",
-   "members": 1,
+   "members": 2,
    "names": [
     "assessment"
    ],
    "paths": {
     "omen-c": [
+     "assessment",
      "work/assessment"
     ]
    },
@@ -5502,6 +5964,961 @@
   },
   {
    "events": {
+    "file_birth": 5,
+    "file_update": 1
+   },
+   "first_ts": "2024-08-14T09:38:17Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:.",
+   "kind": "dir",
+   "last_ts": "2026-06-14T06:54:19Z",
+   "names": [
+    "."
+   ],
+   "paths": {
+    "omen-e": [
+     "."
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-05-07T05:34:02Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:.claude",
+   "kind": "dir",
+   "last_ts": "2026-05-07T05:34:02Z",
+   "names": [
+    ".claude"
+   ],
+   "paths": {
+    "omen-e": [
+     ".claude"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 43,
+    "file_update": 5
+   },
+   "first_ts": "2026-08-25T00:12:14Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:BF6-Highlights",
+   "kind": "dir",
+   "last_ts": "2026-10-08T15:12:19Z",
+   "names": [
+    "bf6-highlights"
+   ],
+   "paths": {
+    "omen-e": [
+     "BF6-Highlights"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 7,
+    "file_update": 18
+   },
+   "first_ts": "2026-04-11T08:36:28Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:HANDOFF",
+   "kind": "dir",
+   "last_ts": "2026-05-07T18:27:46Z",
+   "names": [
+    "handoff"
+   ],
+   "paths": {
+    "omen-e": [
+     "HANDOFF"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-06-09T08:40:37Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:IndexCard",
+   "kind": "dir",
+   "last_ts": "2026-06-09T08:40:37Z",
+   "names": [
+    "indexcard"
+   ],
+   "paths": {
+    "omen-e": [
+     "IndexCard"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1,
+    "file_update": 2
+   },
+   "first_ts": "2026-01-17T09:33:06Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:New folder",
+   "kind": "dir",
+   "last_ts": "2026-02-15T23:47:38Z",
+   "names": [
+    "new folder"
+   ],
+   "paths": {
+    "omen-e": [
+     "New folder"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 718,
+    "chat_session": 1,
+    "file_birth": 3,
+    "file_update": 1
+   },
+   "first_ts": "2025-06-30T04:34:25Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:World of Warcraft",
+   "kind": "dir",
+   "last_ts": "2026-06-19T03:57:40Z",
+   "names": [
+    "world of warcraft"
+   ],
+   "paths": {
+    "omen-e": [
+     "World of Warcraft"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 10,
+    "file_update": 6
+   },
+   "first_ts": "2024-02-09T02:47:43Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:World of Warcraft/.battle.net",
+   "kind": "dir",
+   "last_ts": "2026-06-19T03:57:17Z",
+   "names": [
+    ".battle.net"
+   ],
+   "paths": {
+    "omen-e": [
+     "World of Warcraft/.battle.net"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 2
+   },
+   "first_ts": "2026-04-25T05:16:14Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:World of Warcraft/.claude",
+   "kind": "dir",
+   "last_ts": "2026-06-03T06:13:34Z",
+   "names": [
+    ".claude"
+   ],
+   "paths": {
+    "omen-e": [
+     "World of Warcraft/.claude"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 9,
+    "file_update": 2
+   },
+   "first_ts": "2026-04-18T21:18:18Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:World of Warcraft/Tempo-runtime",
+   "kind": "dir",
+   "last_ts": "2026-06-10T00:07:02Z",
+   "names": [
+    "tempo-runtime"
+   ],
+   "paths": {
+    "omen-e": [
+     "World of Warcraft/Tempo-runtime"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 28,
+    "file_update": 107
+   },
+   "first_ts": "2017-07-19T10:01:30Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:World of Warcraft/Tempo-worktrees",
+   "kind": "dir",
+   "last_ts": "2026-04-20T04:48:03Z",
+   "names": [
+    "tempo-worktrees"
+   ],
+   "paths": {
+    "omen-e": [
+     "World of Warcraft/Tempo-worktrees"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-04-25T05:34:37Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:World of Warcraft/docs",
+   "kind": "dir",
+   "last_ts": "2026-04-25T05:34:37Z",
+   "names": [
+    "docs"
+   ],
+   "paths": {
+    "omen-e": [
+     "World of Warcraft/docs"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 243,
+    "file_update": 113
+   },
+   "first_ts": "2021-07-28T04:45:11Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:_migration",
+   "kind": "dir",
+   "last_ts": "2026-06-23T06:56:35Z",
+   "names": [
+    "_migration"
+   ],
+   "paths": {
+    "omen-e": [
+     "_migration"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1,
+    "file_update": 1
+   },
+   "first_ts": "2026-09-13T14:32:58Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:cold-storage",
+   "kind": "dir",
+   "last_ts": "2026-09-21T04:44:11Z",
+   "names": [
+    "cold-storage"
+   ],
+   "paths": {
+    "omen-e": [
+     "cold-storage"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 125,
+    "file_update": 33
+   },
+   "first_ts": "2026-06-27T06:41:36Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:continuity-evidence",
+   "kind": "dir",
+   "last_ts": "2026-09-27T07:31:41Z",
+   "names": [
+    "continuity-evidence"
+   ],
+   "paths": {
+    "omen-e": [
+     "continuity-evidence"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 187,
+    "chat_session": 1,
+    "file_birth": 1
+   },
+   "first_ts": "2026-06-17T17:16:00Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:helloworld",
+   "kind": "dir",
+   "last_ts": "2026-06-18T00:31:00Z",
+   "names": [
+    "helloworld"
+   ],
+   "paths": {
+    "omen-e": [
+     "helloworld"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-05-24T15:44:04Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:hiking",
+   "kind": "dir",
+   "last_ts": "2026-05-24T15:44:04Z",
+   "names": [
+    "hiking"
+   ],
+   "paths": {
+    "omen-e": [
+     "hiking"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 245,
+    "chat_session": 5,
+    "file_birth": 3
+   },
+   "first_ts": "2026-09-23T11:30:00Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:linux",
+   "kind": "dir",
+   "last_ts": "2026-09-27T08:18:25Z",
+   "names": [
+    "linux"
+   ],
+   "paths": {
+    "omen-e": [
+     "linux"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 2
+   },
+   "first_ts": "2026-09-06T18:15:36Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:omen/DMos-orchestration",
+   "kind": "dir",
+   "last_ts": "2026-09-06T23:38:25Z",
+   "names": [
+    "dmos-orchestration"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/DMos-orchestration"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 2,
+    "file_update": 11
+   },
+   "first_ts": "2026-06-23T20:46:28Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:omen/am4-offload",
+   "kind": "dir",
+   "last_ts": "2026-09-11T22:32:46Z",
+   "names": [
+    "am4-offload"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/am4-offload"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 3161,
+    "chat_session": 21,
+    "file_birth": 2,
+    "file_update": 1
+   },
+   "first_ts": "2026-08-21T12:12:40Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:omen/benchmarks",
+   "kind": "dir",
+   "last_ts": "2026-08-28T12:52:00Z",
+   "names": [
+    "benchmarks"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/benchmarks"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 445,
+    "chat_session": 6,
+    "file_birth": 14,
+    "file_update": 58
+   },
+   "first_ts": "2018-08-25T19:54:14Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:omen/bmc",
+   "kind": "dir",
+   "last_ts": "2026-08-22T19:25:00Z",
+   "names": [
+    "bmc"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/bmc"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 8,
+    "file_update": 2
+   },
+   "first_ts": "2026-09-12T10:17:28Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:omen/camera-kit-release",
+   "kind": "dir",
+   "last_ts": "2026-09-15T07:58:29Z",
+   "names": [
+    "camera-kit-release"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/camera-kit-release"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 2
+   },
+   "first_ts": "2026-09-12T10:10:19Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:omen/camera-kit-test",
+   "kind": "dir",
+   "last_ts": "2026-09-12T10:15:14Z",
+   "names": [
+    "camera-kit-test"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/camera-kit-test"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 3
+   },
+   "first_ts": "2026-09-10T16:57:50Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:omen/chronicles-portraits",
+   "kind": "dir",
+   "last_ts": "2026-09-10T17:05:20Z",
+   "names": [
+    "chronicles-portraits"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/chronicles-portraits"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-08-27T14:04:50Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:omen/codex-zdo-coords-lap",
+   "kind": "dir",
+   "last_ts": "2026-08-27T14:04:50Z",
+   "names": [
+    "codex-zdo-coords-lap"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/codex-zdo-coords-lap"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 38,
+    "file_update": 37
+   },
+   "first_ts": "2026-09-10T10:47:33Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:omen/design-exports",
+   "kind": "dir",
+   "last_ts": "2026-09-11T06:30:42Z",
+   "names": [
+    "design-exports"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/design-exports"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 6
+   },
+   "first_ts": "2026-10-09T13:33:18Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:omen/discengine",
+   "kind": "dir",
+   "last_ts": "2026-10-09T13:33:18Z",
+   "names": [
+    "discengine"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/discengine"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1,
+    "file_update": 1
+   },
+   "first_ts": "2026-07-18T19:04:28Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:omen/era17",
+   "kind": "dir",
+   "last_ts": "2026-08-22T14:54:44Z",
+   "names": [
+    "era17"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/era17"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 17,
+    "file_update": 17
+   },
+   "first_ts": "2021-04-30T04:04:34Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:omen/gallery",
+   "kind": "dir",
+   "last_ts": "2026-09-15T01:23:16Z",
+   "names": [
+    "gallery"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/gallery"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-09-23T20:41:18Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:omen/linux-migration",
+   "kind": "dir",
+   "last_ts": "2026-09-23T20:41:18Z",
+   "names": [
+    "linux-migration"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/linux-migration"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 3
+   },
+   "first_ts": "2026-08-27T12:53:34Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:omen/session-export-1787835214413",
+   "kind": "dir",
+   "last_ts": "2026-08-27T12:53:34Z",
+   "names": [
+    "session-export-1787835214413"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/session-export-1787835214413"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 3
+   },
+   "first_ts": "2026-08-27T13:05:48Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:omen/session-export-1787835949994",
+   "kind": "dir",
+   "last_ts": "2026-08-27T13:05:48Z",
+   "names": [
+    "session-export-1787835949994"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/session-export-1787835949994"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 3
+   },
+   "first_ts": "2026-08-22T15:53:27Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:omen/steward-era17",
+   "kind": "dir",
+   "last_ts": "2026-08-22T15:59:03Z",
+   "names": [
+    "steward-era17"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/steward-era17"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-08-27T11:55:55Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:omen/steward-era17-arch",
+   "kind": "dir",
+   "last_ts": "2026-08-27T11:55:55Z",
+   "names": [
+    "steward-era17-arch"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/steward-era17-arch"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 4
+   },
+   "first_ts": "2026-08-22T15:47:53Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:omen/steward-era17-dry",
+   "kind": "dir",
+   "last_ts": "2026-08-22T15:49:14Z",
+   "names": [
+    "steward-era17-dry"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/steward-era17-dry"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 1558,
+    "chat_session": 14,
+    "file_birth": 549,
+    "file_update": 176
+   },
+   "first_ts": "2021-02-28T07:57:05Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:omen/steward-multi-era",
+   "kind": "dir",
+   "last_ts": "2026-09-17T07:37:00Z",
+   "names": [
+    "steward-multi-era"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/steward-multi-era"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 48,
+    "file_update": 11
+   },
+   "first_ts": "2026-03-24T07:44:04Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:repo-audit",
+   "kind": "dir",
+   "last_ts": "2026-05-08T08:11:26Z",
+   "names": [
+    "repo-audit"
+   ],
+   "paths": {
+    "omen-e": [
+     "repo-audit"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 33,
+    "file_update": 89
+   },
+   "first_ts": "2018-08-25T19:54:14Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:tmp",
+   "kind": "dir",
+   "last_ts": "2026-09-10T14:25:07Z",
+   "names": [
+    "tmp"
+   ],
+   "paths": {
+    "omen-e": [
+     "tmp"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 135,
+    "chat_session": 3,
+    "file_birth": 6
+   },
+   "first_ts": "2026-09-23T11:53:35Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:wool",
+   "kind": "dir",
+   "last_ts": "2026-09-26T08:12:00Z",
+   "names": [
+    "wool"
+   ],
+   "paths": {
+    "omen-e": [
+     "wool"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
     "chat_msg": 60,
     "chat_session": 5,
     "file_birth": 14,
@@ -6522,6 +7939,53 @@
    "paths": {
     "omen-e": [
      "work/website"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-05-15T14:26:25Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:writing",
+   "kind": "dir",
+   "last_ts": "2026-05-15T14:26:25Z",
+   "names": [
+    "writing"
+   ],
+   "paths": {
+    "omen-e": [
+     "writing"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 10,
+    "file_update": 11
+   },
+   "first_ts": "2013-08-07T13:33:38Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:wtviewer-skin-previewshots",
+   "kind": "dir",
+   "last_ts": "2026-09-10T11:53:27Z",
+   "names": [
+    "wtviewer-skin-previewshots"
+   ],
+   "paths": {
+    "omen-e": [
+     "wtviewer-skin-previewshots"
     ]
    },
    "region": null,
@@ -7711,32 +9175,40 @@
     "claude": 10,
     "human": 10
    },
-   "commit_copies": 20,
+   "commit_copies": 52,
    "commits": 20,
    "derek_share": 1.0,
    "events": {
     "branch": 1,
+    "chat_msg": 1538,
+    "chat_session": 9,
     "commit": 20,
     "repo_born": 2
    },
    "first_ts": "2026-08-25T05:05:12Z",
    "foreign_org": false,
    "hosts": [
-    "omen-linux"
+    "omen-linux",
+    "omen-e"
    ],
    "id": "e6fa603a4463fc18d711d8acc897fccd17921763",
    "kind": "git",
    "last_ts": "2026-09-04T18:35:21Z",
-   "members": 1,
+   "members": 3,
    "names": [
+    "bf6-highlights-retired-20260828",
     "clippy"
    ],
    "paths": {
+    "omen-e": [
+     "omen/bf6-highlights-retired-20260828",
+     "omen/clippy"
+    ],
     "omen-linux": [
      "~/work/known-world/cache/clones/clippy.git"
     ]
    },
-   "refs": 3,
+   "refs": 5,
    "region": null,
    "remotes": [
     "github.com/djcdevelopment/clippy"
@@ -8021,6 +9493,48 @@
    "rooted": true,
    "roots": [
     "f69a5b1a96e95fb6881af3028af39ecbd9df099a"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 2
+   },
+   "commit_copies": 2,
+   "commits": 2,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 492,
+    "chat_session": 2,
+    "commit": 2,
+    "repo_born": 1
+   },
+   "first_ts": "2026-09-09T07:05:53Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "fc1c3946dbf3e3daf889c95a4d5447d86b19829c",
+   "kind": "git",
+   "last_ts": "2026-09-09T07:26:57Z",
+   "members": 1,
+   "names": [
+    "tensor"
+   ],
+   "paths": {
+    "omen-e": [
+     "omen/tensor"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "fc1c3946dbf3e3daf889c95a4d5447d86b19829c"
    ],
    "shallow_only": false,
    "third_party": false,
@@ -8408,46 +9922,6 @@
     "commit": 1,
     "repo_born": 1
    },
-   "first_ts": "2025-02-27T17:35:41Z",
-   "foreign_org": true,
-   "hosts": [
-    "omen-c"
-   ],
-   "id": "github:electronicarts/cnc_generals_zero_hour",
-   "kind": "git",
-   "last_ts": "2025-02-27T17:35:41Z",
-   "members": 1,
-   "names": [
-    "cnc-generals"
-   ],
-   "paths": {
-    "omen-c": [
-     "work/research/cnc-generals"
-    ]
-   },
-   "refs": 3,
-   "region": null,
-   "remotes": [
-    "github.com/electronicarts/cnc_generals_zero_hour"
-   ],
-   "rooted": false,
-   "roots": [],
-   "shallow_only": true,
-   "third_party": true,
-   "worktree_records": 0
-  },
-  {
-   "authors": {
-    "third_party": 1
-   },
-   "commit_copies": 1,
-   "commits": 1,
-   "derek_share": 0.0,
-   "events": {
-    "branch": 1,
-    "commit": 1,
-    "repo_born": 1
-   },
    "first_ts": "2026-07-17T09:33:29Z",
    "foreign_org": true,
    "hosts": [
@@ -8599,9 +10073,9 @@
   }
  ],
  "link_basis": {
-  "root": 30,
-  "sha_overlap": 3,
-  "worktree": 16
+  "root": 37,
+  "sha_overlap": 4,
+  "worktree": 42
  },
  "version": 1
 }

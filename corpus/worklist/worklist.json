@@ -126,6 +126,42 @@
   "shard": "0/1"
  },
  {
+  "id": "e-root-git-a",
+  "source_type": "git_repo",
+  "host": "omen-e",
+  "mount": "e",
+  "timeout_s": 1800,
+  "file": "/home/derek/work/known-world/corpus/worklist/e-root-git-a.json",
+  "shard": "0/2"
+ },
+ {
+  "id": "e-root-git-b",
+  "source_type": "git_repo",
+  "host": "omen-e",
+  "mount": "e",
+  "timeout_s": 1800,
+  "file": "/home/derek/work/known-world/corpus/worklist/e-root-git-b.json",
+  "shard": "1/2"
+ },
+ {
+  "id": "c-root-git",
+  "source_type": "git_repo",
+  "host": "omen-c",
+  "mount": "c",
+  "timeout_s": 900,
+  "file": "/home/derek/work/known-world/corpus/worklist/c-root-git.json",
+  "shard": "0/1"
+ },
+ {
+  "id": "e-root-births",
+  "source_type": "fs_births",
+  "host": "omen-e",
+  "mount": "e",
+  "timeout_s": 2400,
+  "file": "/home/derek/work/known-world/corpus/worklist/e-root-births.json",
+  "shard": "0/1"
+ },
+ {
   "id": "linux-births",
   "source_type": "fs_births",
   "host": "omen-linux",

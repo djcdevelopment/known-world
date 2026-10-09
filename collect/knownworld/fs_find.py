@@ -10,7 +10,7 @@ import sys
 
 PRUNE_NAMES = [".git", "node_modules", "models", "checkpoints", "venvs", ".venv", ".cache"]
 EXCLUDE_NAMES = [".credentials.json", "auth.json", "callers.json*", "*.pfx", "*.secret", "*.key", ".env*", "*.caddy",
-                 ".git-credentials", "*.safetensors", "*.gguf", "*.pem"]
+                 ".git-credentials", "*.safetensors", "*.gguf", "*.pem", "*.pcm"]
 
 
 def find_argv(path, loose):

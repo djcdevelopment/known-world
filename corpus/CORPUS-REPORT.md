@@ -689,3 +689,110 @@ linux`, which is never auto-merged; `tensor` has no clone.
 Conversations with a lineage match: 14; distinct lineages matched: 5 (ai-dev-system, ai-systems-research, liveview, stars-app, writing). Artifacts by type: code 3512, execution_output 367. Activity calendar: 189 days as the `chatgpt_activity` series.
 Only drive-letter paths count (D: maps to omen-e); relative, `/mnt/data`, `C:/Users` and `C:/Python312` paths are dropped. All 14 conversations with projects date from 2026; SURVEY's 2025 drive-path claim (from the graph nodes) is not in these projections, so 2023-25 attribute by time only.
 
+
+
+## 14. Repositories outside the work trees (task 1c)
+
+Work items `e-root-git-a`, `e-root-git-b` (shards 0/2 and 1/2 of 41 E: repository paths), `c-root-git` and `e-root-births`, all `complete`, no skipped sources, privacy scan exit 0 on each and on `corpus/merged`. Repository paths come from a bounded find (maxdepth 5 below the E: root, `work` and the skip list excluded; C: `assessment` and `tuning` maxdepth 4) and are listed in `make_worklist.py` (`E_ROOT_REPOS`) so nested repositories are found. The find matched SURVEY 1g and added five repositories it did not name: `HANDOFF/_backup_staging/projects/meal-planner`, `omen/CC/GeneralsReplays` (a submodule of `omen/CC`), five `omen/steward-multi-era/deploy-worktree-creator-*` worktrees, `omen/CC` and `Tempo-worktrees/{agent-a, agent-b, agent-c, stream-f-gamma}`. `C:\Users\derek` holds no repositories at depth 4.
+
+### 14a. Repositories found, by root
+
+| Root | Repository | Commits (rev-list --all) | Notes |
+|---|---|---|---|
+| E: | gemini | 1 | |
+| E: | HANDOFF/_backup_staging/projects/meal-planner | 3 | |
+| E: | helloworld/old-goat-new-tricks | 17 | = llmquest |
+| E: | omen/bf6-highlights-retired-20260828 | 12 | shares a root commit with omen/clippy |
+| E: | omen/CC | 1754 | |
+| E: | omen/CC/GeneralsReplays | 4 | submodule of omen/CC |
+| E: | omen/clippy | 20 | |
+| E: | omen/DMos | 72 | 7 linked worktrees (DMos-actor-controls, -chronicle, -chronicle-salience, -command-freshness, -rc1, -rehearsal, -secrets) |
+| E: | omen/imagegen | 10 | |
+| E: | omen/menu | 126 | |
+| E: | omen/tensor | 2 | |
+| E: | resume | 24 | 3 linked worktrees (resume-wt: claude-seat-receipts, gemini-proof-snapshot, linux-proof-review-20261006) |
+| E: | World of Warcraft/code | 2 | = manifest wow-code |
+| E: | World of Warcraft/Tempo | 295 | 11 linked worktrees (Tempo-wt-A, -A-1b9, -B..-F, Tempo-worktrees/{agent-a, agent-b, agent-c, stream-f-gamma}) |
+| E: | World of Warcraft/tempo-viewer | 8 | |
+| E: | omen/steward-multi-era/deploy-worktree-creator-{carousel, compact, explorer, guide, heatmap} | 0 (worktree records) | 5 linked worktrees of ComfyStewardView |
+| C: | assessment | 5 | the work/assessment copy has 6 |
+| C: | tuning | 1 | |
+
+Totals: E: 41 repository records (15 repositories with their own history, 26 linked-worktree records); C: 2. Raw events: e-root-git-a 2134, e-root-git-b 318, c-root-git 10. Commit counts of the 15 E: repositories and 2 C: repositories equal `git rev-list --count --all` run by a second path; the 26 worktree records carry 0 commits by design (the `.git` file points at a Windows path; the toolkit resolves them through the parent's `.git/worktrees`, all 26 resolved).
+
+### 14b. Duplicate lineages against existing records
+
+| New record(s) | Lineage after merge | Joined with | Basis |
+|---|---|---|---|
+| omen/DMos and its 7 worktrees | 1 lineage, 72 commits | nothing else (no DMos copy under work/) | worktree |
+| World of Warcraft/Tempo and its 11 worktrees | 1 lineage, 295 commits | nothing else | worktree |
+| World of Warcraft/tempo-viewer, code | 1 lineage each | nothing else | root |
+| resume and its 3 worktrees | 1 lineage, 26 commits | omen-linux `~/work/resume-linux.git` | root |
+| omen/steward-multi-era/deploy-worktree-creator-* (5) | ComfyStewardView lineage, 303 commits | work/ComfyStewardView, gallery-stage-steward-20260915, steward-spatial-lab, E work/temp | worktree |
+| omen/clippy, omen/bf6-highlights-retired-20260828 | one lineage, 20 commits | the clippy.git mirror clone; no clippy copy under work/ | root |
+| omen/imagegen | 1 lineage, 10 commits | E work/img | root |
+| omen/CC | 1 lineage, 1754 commits | C work/research/cnc-generals | root |
+| helloworld/old-goat-new-tricks | 1 lineage, 17 commits | the llmquest.git mirror clone | root |
+| omen/CC/GeneralsReplays, omen/menu, omen/tensor, gemini, meal-planner | new, 1 lineage each | none | |
+| C assessment, tuning | existing git lineages | the work/ copies (same lineage; commits 6 and 1) | root |
+
+`omen/menu` did not join the fx99 `~/menu` record (no shared history; no candidate record was produced). The births lineages `dir:omen-c:assessment` and `dir:omen-c:tuning` (from `c-births`) remain separate `dir` lineages from the git lineages of the same directories.
+
+### 14c. Births and updates (e-root-births)
+
+51 sources, 0 skipped. 1946 events: `file_birth` 1243 records covering 491,667 files, `file_update` 703 records covering 30,172 files (58 files had a null mtime).
+
+| Top directory | Births (files) | Updates (files) |
+|---|---|---|
+| omen (non-repo children, e.g. steward-multi-era) | 464,167 | 22,594 |
+| World of Warcraft (non-repo children) | 4,748 | 2,964 |
+| repo-audit | 9,363 | 755 |
+| _migration | 6,639 | 1,049 |
+| continuity-evidence | 2,826 | 319 |
+| HANDOFF | 1,262 | 1,240 |
+| tmp | 1,258 | 1,172 |
+| BF6-Highlights | 776 | 7 |
+| wtviewer-skin-previewshots | 524 | 48 |
+| wool | 37 | 0 |
+| New folder | 22 | 22 |
+| cold-storage | 15 | 1 |
+| linux | 12 | 0 |
+| loose files at the E: root (`.`) | 8 | 1 |
+| IndexCard, hiking | 3 each | 0 |
+| helloworld (loose), .claude, writing | 2, 1, 1 | 0 |
+| wsl, wt, msdownld.tmp | no files | |
+
+Recount by `find -type f` with the same prunes: 491,673 against 491,667 (difference 6, not isolated).
+
+### 14d. Merged totals and relations
+
+| Measure | Before | After |
+|---|---|---|
+| events_loaded | 217,377 | 221,785 |
+| events_out (merged) | 212,498 | 216,753 |
+| repo records | 170 | 213 |
+| lineages | 258 (git 121, dir 135, github_only 2) | 309 (git 130, dir 177, github_only 2) |
+| multi-record components | 21 | 30 |
+| link basis (root / sha_overlap / worktree) | 30 / 3 / 16 | 37 / 4 / 42 |
+| actors | 2,272 | 2,334 |
+| name/root_tree candidates | 6 | 6 |
+| null-ts events dropped | 710 | 760 |
+| commit copies folded | 3,865 | 3,953 |
+
+| Relations coverage | Before | After |
+|---|---|---|
+| manifest repos | 88 | 88 |
+| joined | 83 | 88 |
+| unjoined | 5 (resume, tempo, tempo-viewer, tensor, wow-code) | 0 |
+| joined by github / dirname | 72 / 11 | 75 / 13 |
+| lineages with no manifest entry | 179 | 226 |
+| edges with `since: null` | 24 | 7 |
+| edges | 223 | 223 |
+
+resume, tensor and wow-code joined by directory name; tempo and tempo-viewer joined by GitHub slug. ChatGPT links are unchanged (380 conversations, 14 with lineages).
+
+### 14e. Skipped and caveats
+
+- Not walked for births: `work`, ComfyUI, SteamLibrary, pip-cache, .pnpm-store, Comfy-Desktop, Program Files, Recovery, $RECYCLE.BIN, System Volume Information, msdownld.tmp, Audacity, ISO, `World of Warcraft/_retail_` (game client), models; `*.pcm` files excluded in `fs_find.py`.
+- No git repositories were found below maxdepth 5 or inside `World of Warcraft/_retail_`; `Comfy-Desktop`, `ComfyUI` and `SteamLibrary` were not searched for repositories.
+- Toolkit changes made for this task: `git_repo.py` reads a submodule (`.git` file with a relative `gitdir` into a parent `.git/modules`) as a full repository; `fs_births.py` keys E: root loose files as `dir:<host>:.`; `fs_find.py` excludes `*.pcm`; `relations.py` and `chatgpt_links.py` write through a temporary file and `os.replace`; `make_worklist.py` takes optional id prefixes so a run writes only the named items. `pyyaml` is now installed in `.venv` (`uv pip install --python .venv/bin/python pyyaml`), so `relations.py` runs under the venv. Merge outputs were written to `corpus/.merge-tmp` and moved into `corpus/merged` with `os.replace` file by file.

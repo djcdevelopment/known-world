@@ -5,16 +5,16 @@
     "automation": 1095,
     "claude": 33851,
     "codex": 7817,
-    "human": 1858,
+    "human": 1852,
     "local_model": 507,
     "opencode": 209,
     "third_party": 9
    },
-   "events": 45346,
+   "events": 45340,
    "first_ts": "2015-08-11T05:23:44Z",
    "host": "omen-linux",
    "kinds": {
-    "branch": 41,
+    "branch": 38,
     "chat_msg": 14474,
     "chat_session": 570,
     "commit": 2562,
@@ -22,7 +22,7 @@
     "file_update": 146,
     "offload_call": 26351,
     "receipt": 229,
-    "repo_born": 20,
+    "repo_born": 17,
     "run": 232,
     "worktree": 121
    },
@@ -34,7 +34,7 @@
     "continuity": 328,
     "deepagents_runs": 534,
     "fs_births": 746,
-    "git_repo": 2744,
+    "git_repo": 2738,
     "hearth_ledger": 25950,
     "opencode_db": 209
    }
@@ -44,10 +44,10 @@
     "automation": 3,
     "claude": 38797,
     "codex": 50253,
-    "human": 3288,
+    "human": 3287,
     "third_party": 1386
    },
-   "events": 93727,
+   "events": 93726,
    "first_ts": "2016-06-05T16:16:52Z",
    "host": "omen-c",
    "kinds": {
@@ -57,7 +57,7 @@
     "commit": 5109,
     "file_birth": 607,
     "file_update": 508,
-    "repo_born": 38,
+    "repo_born": 37,
     "run": 3,
     "worktree": 49
    },
@@ -68,36 +68,36 @@
     "codex_jsonl": 50253,
     "deepagents_runs": 3,
     "fs_births": 1115,
-    "git_repo": 5390
+    "git_repo": 5389
    }
   },
   {
    "classes": {
-    "claude": 23021,
+    "claude": 23456,
     "codex": 13772,
-    "human": 3541,
-    "third_party": 21268
+    "human": 5612,
+    "third_party": 23024
    },
-   "events": 61602,
-   "first_ts": "2014-05-13T09:45:57Z",
+   "events": 65864,
+   "first_ts": "2013-08-07T13:33:38Z",
    "host": "omen-e",
    "kinds": {
-    "branch": 543,
+    "branch": 557,
     "chat_msg": 35165,
     "chat_session": 555,
-    "commit": 24372,
-    "file_birth": 662,
-    "file_update": 228,
-    "repo_born": 43,
-    "worktree": 34
+    "commit": 26640,
+    "file_birth": 1905,
+    "file_update": 931,
+    "repo_born": 56,
+    "worktree": 55
    },
-   "last_ts": "2026-10-07T06:56:00Z",
-   "lineages": 93,
+   "last_ts": "2026-10-09T13:33:18Z",
+   "lineages": 148,
    "srcs": {
     "claude_jsonl": 21951,
     "codex_jsonl": 13769,
-    "fs_births": 890,
-    "git_repo": 24992
+    "fs_births": 2836,
+    "git_repo": 27308
    }
   },
   {

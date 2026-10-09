@@ -1,0 +1,692 @@
+{
+ "cut": {
+  "audio_expected": 4320000,
+  "audio_samples": 4320000,
+  "audio_sha256": "9eb4df43b6c416e7f64c43700ab41b6dccbcdc53b6f853a8164140f45b7dc66a",
+  "audio_stats": {
+   "bells": 269,
+   "collapse_bins": 286,
+   "collapsed_frames": 1533,
+   "offload_clicks": 170,
+   "offload_roar_frames": 173,
+   "pips": 102,
+   "roll_bins": 111,
+   "tones": 183
+  },
+  "chatgpt_links": "present",
+  "clock": {
+   "boundary_out_s": [
+    6.863,
+    17.759
+   ],
+   "coda_s": 6.0,
+   "era_len_s": [
+    5.863,
+    10.896,
+    66.241
+   ],
+   "frames": 2700,
+   "intro_s": 1.0,
+   "m": 8.0521,
+   "story_s": 83.0,
+   "total_s": 90.0
+  },
+  "code": {
+   "compile/audio.py": "1f0749040b551ec8bace3411afff9f72be3483d0d7fd44e642aa0ec18f87c79b",
+   "compile/audit.py": "162b67a0a21a56247f76f5316643a0752371ef45f4b19b0ae4a422d3eb3a7686",
+   "compile/build.py": "8cc0648230a55355c57b46224b033a4d15b7bf4458270a176deae80f52786fcd",
+   "compile/build_cli.py": "90629f257626772ab330baadec81b3a5cc0f737ccabae554043f2019612ad908",
+   "compile/build_data.py": "2ec6e771cc18224d01dc9bfbe6cafe3cdc685b50bee80d10d845f02ba991ed12",
+   "compile/camera.py": "da271356e79ce01cb870b73900a627b6ecb71f1f7fadaff1b832bca2965fa915",
+   "compile/clock.py": "857d13ec3e7b7aceee4f770e72fa2c01926a9c8e546d41f73fa080cd84e6327a",
+   "compile/common.py": "50eee918f0b114c0416d9c97e982f85935ef2cc7e13bbd4d5727cedf7d363f2b",
+   "compile/corpus.py": "9c93b83d6628d807cd953c701855a05a0bcbf1a564fced17f478c0b7d47e3b1b",
+   "compile/launches.py": "959c1fd8f6bbe80f50e313bdf05ec8b6eb8a48a699403f6205f3282a5f6a56fb",
+   "compile/layout.py": "307b78425e2659133ca5453dad31fcd82aea27dc1945eff8df1ad68abd38bddd",
+   "compile/names.py": "164cd6e3da9bbedb523b6109697ca8f254312bf93c90cc56b999b36a7a9622a0",
+   "compile/nations.py": "5bc7946b7223725904b47b0194ff9b2b899a914aa31458170c8b14eda1af6bdf",
+   "compile/params.json": "c835e6e974d480df0a9b7191e034d9bda87b49252ef1ae92af040d7227ec6bdf",
+   "compile/series.py": "e05d24c0cf15a50c3f4875650a965759852d2e141b33719db3f4cdf96d8f8396",
+   "compile/strip.py": "7e9a2a1c0ba5754e6f7e51db7dd4afc7b10ae0c283abe63442c6fd4bccf4180e",
+   "compile/synth.py": "b13f2d3a62ddb15af7484066f926128a0546abcce978471c2db7ed16966e9286",
+   "compile/tiles.py": "0972d0b86bac1574a8da904b0a836bc7c7e6af78e31282b8cb55912f35de7ebf",
+   "export/encode.py": "c038b7019d335d86d31f955eec2d071a1a998eff4e4d532d31dff23fac63e90e",
+   "export/frames.mjs": "db4f48eafa87b696ffcca3d1d4c4c9ab143a0e66f9410ce4bfad38a9b762cff4",
+   "export/lapkit.py": "32585a6be8051a0da56bf068b97c7a6880c76bb06c505d86ba7c40d49cd154df",
+   "export/probe.py": "f7f5ea59faa37777b1c4d542e0d9fac74bdc30c47585b87d04ab9f9595abd07f",
+   "export/rehash.mjs": "0fe27fd68a1031a9917d5d55286ffb68e016a02e79d809768e4b2da92307ead6",
+   "export/run.py": "348f311acdd7636be8c8b31d3cf3260adf4fbb0e62a2b018814572e31fa45110",
+   "export/state_node.mjs": "da650c99a61f7e1f6e3d0854c6bd5b85f015c4adbdf41544fd0aaa8de6d1aad8",
+   "export/still.mjs": "71d5124da523653cb92fa3525b024369e143029e13397ae35bb1a13a4254714f",
+   "export/verify.mjs": "38518d0a12ae4d890040b4c651d3b91a3c3d4b15b2bc31234733bf868fbebc29",
+   "render/border.js": "4a369267a12d62a5af3455a3fb527f4914f6c3a5fe5e3c962b3c0a3e1aa72aea",
+   "render/card.js": "13f2a7fc66d69ade4c166851a226416623f537570c343b91bd4c704e7459bba4",
+   "render/data.js": "9a96df27588d009ae1f4f45b3c442e9e259e9c433c79ee979c677d264a295a3d",
+   "render/fields.js": "1017a9ac27b54f2e4471d4469b4fd50252e2ce5031a85f9f884d2c18bd07f780",
+   "render/index.html": "e4703c8f694db1dde52d37690453258c282b216281d51ae71c1e47412761691f",
+   "render/launch.js": "75374f2395cdf915d31e5c0fbc6365d0fa4d24c4eba8a8bec55225d4d5325a6a",
+   "render/main.js": "b53c828017fe33c4a6d74f64f62296c3f2c777a5db543a2a34fd7c5bdbd70cec",
+   "render/palette.js": "fbcd345567e1af55e6ab5618b98d5e975a580f2fe9dd18733fff24f0ba979b7e",
+   "render/panels.js": "4466d461777a0696feee4268a9eb0f69855df74a5a20f9b1662d612fd168c62d",
+   "render/radio.js": "c4fbcac64e6ffb1b96753f68dfcc98301a98734d19b888bd2e32bfe780d19837",
+   "render/state.js": "2962c6ed5c9c96e7c68896736522a343ddc9002351fee55bec1de29aaf36b042"
+  },
+  "collapsed_share_pct": 56.78,
+  "compile_s": 4.7,
+  "compile_twice": {
+   "audio_equal": true,
+   "kw_data_equal": true,
+   "second": {
+    "audio_sha256": "9eb4df43b6c416e7f64c43700ab41b6dccbcdc53b6f853a8164140f45b7dc66a",
+    "frames": 2700,
+    "kw_data_sha256": "86ec11cf84699af862528f477746aea1dac0cd0c72d7093fd24505321f0e3e9a"
+   }
+  },
+  "counts": {
+   "beams": 1225,
+   "cells": 16117,
+   "checkpoints": 3,
+   "chips": 34,
+   "collapsed_frames": 1533,
+   "deltas": 17018,
+   "launch_counts": {
+    "bands": {
+     "1": 71,
+     "2": 268,
+     "3": 363,
+     "4": 205,
+     "5": 35,
+     "6": 9
+    },
+    "bands_git": {
+     "1": 30,
+     "2": 182,
+     "3": 279,
+     "4": 140,
+     "5": 8,
+     "6": 1
+    },
+    "capped_commits": 87,
+    "episodes_git": 1054,
+    "first_of_generation": 19,
+    "first_of_nation": 5,
+    "first_tests": 215,
+    "launches": 951,
+    "launches_git": 640,
+    "launches_nongit": 311,
+    "max_warheads": 58,
+    "mirv": 171,
+    "nations": {
+     "automation": 9,
+     "chatgpt": 37,
+     "claude": 453,
+     "codex": 82,
+     "human": 370
+    },
+    "nations_git": {
+     "automation": 9,
+     "claude": 442,
+     "codex": 74,
+     "human": 115
+    },
+    "nongit_nations": {
+     "chatgpt:time": 37,
+     "claude": 11,
+     "codex": 8,
+     "human": 255
+    },
+    "single": 769,
+    "single_git": 458,
+    "tests_git": 954,
+    "tests_nongit": 311,
+    "unified": 11,
+    "warheads_hist": {
+     "2": 98,
+     "3": 33,
+     "4": 14,
+     "5": 10,
+     "6": 2,
+     "7": 3,
+     "8": 3,
+     "9": 3,
+     "10": 5
+    }
+   },
+   "launches": 951,
+   "launches_skipped_no_region": 0,
+   "layout": {
+    "bridges": 29,
+    "constellations": 13,
+    "harbours": 46,
+    "islands": 54,
+    "joined_lineages": 83,
+    "notches": 316,
+    "spurs": 224
+   },
+   "nations": [
+    "human",
+    "chatgpt",
+    "claude",
+    "codex",
+    "automation",
+    "local_model",
+    "opencode"
+   ],
+   "peak_launches_per_frame": 7,
+   "regions": 320,
+   "rings": 25,
+   "tiles": 6224,
+   "tiles_by_kind": {
+    "dir": 2283,
+    "git": 2925,
+    "third": 1016
+   },
+   "tiles_counts": {
+    "cells": 16117,
+    "regions": 320,
+    "regions_by_host": {
+     "am4": 13,
+     "fx99": 8,
+     "omen-c": 74,
+     "omen-e": 148,
+     "omen-linux": 77
+    },
+    "regions_dir": 177,
+    "regions_git": 130,
+    "regions_third": 13,
+    "tiles": 6224,
+    "tiles_never_touched": 284,
+    "touches": 147061
+   },
+   "tiles_never_touched": 284,
+   "tiles_stats": {
+    "copies_revealed": 20,
+    "copy_tiles_revealed": 41,
+    "ruin_clone_event": 1,
+    "ruin_clone_last_ts": 12
+   },
+   "touches": 147061
+  },
+  "cut_s": 90,
+  "hq": {
+   "changes": [
+    [
+     1137,
+     "omen-e"
+    ],
+    [
+     1602,
+     "omen-c"
+    ],
+    [
+     2353,
+     "omen-e"
+    ],
+    [
+     2416,
+     "omen-linux"
+    ]
+   ],
+   "first_linux_day_iso": "2026-09-28T00:00:00Z"
+  },
+  "inputs": {
+   "actors.json": "713180f2fcbb771031a254faef47495e5e1d30f32e577e705760bfb29d5f3e36",
+   "chatgpt_links.json": "63ed4b48fd2f88c177f8f839edcc9ed0de22ec81e16b5e711e3f12a8511c5843",
+   "events.ndjson": "4e1e1c9715e8224d862ca6c85ce8a82731db6d21b8e618861ddac8361dd0e7b7",
+   "hosts.json": "51d3a68e524e44719f65cfb85907e319617903d29dc5a53d82867db621a7c6d6",
+   "relations.json": "fd545c9d7ebaf970204c6b0b35338dc5feeace49b20b08473f1ae773ce45f621",
+   "repos.json": "2baef2a516dd6c5e98a753d2fac007ae78d1f4eded7b8b26c2255377bef4bc56",
+   "sessions.json": "4730a2c30885067400725e10b97cdf10d535f3913687408882e996c12f002157",
+   "stats.json": "6e9d7cf2cc668badefe81ab3f1f426b0105cdad646acf54aa426571d97f646ee"
+  },
+  "kw_data_bytes": 2752417,
+  "kw_data_sha256": "86ec11cf84699af862528f477746aea1dac0cd0c72d7093fd24505321f0e3e9a",
+  "params_hash": "a2669caf13fb3dbf7a217bd5fdf9e3bb854ca8b4a9104aca9e8c6af77e8ad4a2",
+  "peak_launches_per_film_second": 43,
+  "relations": "present",
+  "running_totals": {
+   "bulk_copy_excluded": {
+    "file_birth": 680125,
+    "file_update": 62411
+   },
+   "nation": {
+    "automation": {
+     "commits": 644,
+     "files_changed": 1120,
+     "lines_added": 86797,
+     "lines_removed": 7628
+    },
+    "chatgpt": {
+     "commits": 0,
+     "files_changed": 0,
+     "lines_added": 0,
+     "lines_removed": 0
+    },
+    "claude": {
+     "commits": 4391,
+     "files_changed": 30354,
+     "lines_added": 5005288,
+     "lines_removed": 273092
+    },
+    "codex": {
+     "commits": 46,
+     "files_changed": 1057,
+     "lines_added": 169966,
+     "lines_removed": 669
+    },
+    "human": {
+     "commits": 4706,
+     "files_changed": 56316,
+     "lines_added": 10671511,
+     "lines_removed": 2234792
+    },
+    "local_model": {
+     "commits": 0,
+     "files_changed": 0,
+     "lines_added": 0,
+     "lines_removed": 0
+    },
+    "opencode": {
+     "commits": 0,
+     "files_changed": 0,
+     "lines_added": 0,
+     "lines_removed": 0
+    }
+   },
+   "no_numstat_counted": 0,
+   "surface": {
+    "am4": {
+     "commits": 28,
+     "files_created": 5523,
+     "files_updated": 325
+    },
+    "fx99": {
+     "commits": 43,
+     "files_created": 1157,
+     "files_updated": 965
+    },
+    "github": {
+     "commits": 0,
+     "files_created": 0,
+     "files_updated": 0
+    },
+    "omen-c": {
+     "commits": 3722,
+     "files_created": 25962,
+     "files_updated": 3543
+    },
+    "omen-e": {
+     "commits": 3441,
+     "files_created": 72790,
+     "files_updated": 21491
+    },
+    "omen-linux": {
+     "commits": 2553,
+     "files_created": 13030,
+     "files_updated": 141
+    }
+   },
+   "third": {
+    "clone_commits": 23451,
+    "clone_files": 122495,
+    "clone_lines": 17227908,
+    "clone_no_numstat": 11164,
+    "own_third_class_commits": 1151,
+    "own_third_class_files": 11923,
+    "own_third_class_lines": 2586053,
+    "own_third_class_no_numstat": 0
+   },
+   "world": {
+    "commits": 9787,
+    "files": 233774,
+    "lines": 18449743
+   }
+  },
+  "world_sha256": "2f58574ea73891cf4e817143ff6f9b94533a4f1ccdab158f2bb3c1041f0231da"
+ },
+ "full": {
+  "audio_expected": 33040000,
+  "audio_samples": 33040000,
+  "audio_sha256": "a51f3ec2690d2f8a11ffefbbce3be20e8b3454e5b83fea7c2e6f68aba05078fa",
+  "audio_stats": {
+   "bells": 269,
+   "collapse_bins": 41,
+   "collapsed_frames": 295,
+   "offload_clicks": 301,
+   "offload_roar_frames": 204,
+   "pips": 517,
+   "roll_bins": 2,
+   "tones": 879
+  },
+  "chatgpt_links": "present",
+  "clock": {
+   "boundary_out_s": [
+    49.207,
+    136.942
+   ],
+   "coda_s": 18.0,
+   "era_len_s": [
+    47.207,
+    87.735,
+    533.38
+   ],
+   "frames": 20650,
+   "intro_s": 2.0,
+   "m": 1.0,
+   "story_s": 668.322,
+   "total_s": 688.322
+  },
+  "code": {
+   "compile/audio.py": "1f0749040b551ec8bace3411afff9f72be3483d0d7fd44e642aa0ec18f87c79b",
+   "compile/audit.py": "162b67a0a21a56247f76f5316643a0752371ef45f4b19b0ae4a422d3eb3a7686",
+   "compile/build.py": "8cc0648230a55355c57b46224b033a4d15b7bf4458270a176deae80f52786fcd",
+   "compile/build_cli.py": "90629f257626772ab330baadec81b3a5cc0f737ccabae554043f2019612ad908",
+   "compile/build_data.py": "2ec6e771cc18224d01dc9bfbe6cafe3cdc685b50bee80d10d845f02ba991ed12",
+   "compile/camera.py": "da271356e79ce01cb870b73900a627b6ecb71f1f7fadaff1b832bca2965fa915",
+   "compile/clock.py": "857d13ec3e7b7aceee4f770e72fa2c01926a9c8e546d41f73fa080cd84e6327a",
+   "compile/common.py": "50eee918f0b114c0416d9c97e982f85935ef2cc7e13bbd4d5727cedf7d363f2b",
+   "compile/corpus.py": "9c93b83d6628d807cd953c701855a05a0bcbf1a564fced17f478c0b7d47e3b1b",
+   "compile/launches.py": "959c1fd8f6bbe80f50e313bdf05ec8b6eb8a48a699403f6205f3282a5f6a56fb",
+   "compile/layout.py": "307b78425e2659133ca5453dad31fcd82aea27dc1945eff8df1ad68abd38bddd",
+   "compile/names.py": "164cd6e3da9bbedb523b6109697ca8f254312bf93c90cc56b999b36a7a9622a0",
+   "compile/nations.py": "5bc7946b7223725904b47b0194ff9b2b899a914aa31458170c8b14eda1af6bdf",
+   "compile/params.json": "c835e6e974d480df0a9b7191e034d9bda87b49252ef1ae92af040d7227ec6bdf",
+   "compile/series.py": "e05d24c0cf15a50c3f4875650a965759852d2e141b33719db3f4cdf96d8f8396",
+   "compile/strip.py": "7e9a2a1c0ba5754e6f7e51db7dd4afc7b10ae0c283abe63442c6fd4bccf4180e",
+   "compile/synth.py": "b13f2d3a62ddb15af7484066f926128a0546abcce978471c2db7ed16966e9286",
+   "compile/tiles.py": "0972d0b86bac1574a8da904b0a836bc7c7e6af78e31282b8cb55912f35de7ebf",
+   "export/encode.py": "c038b7019d335d86d31f955eec2d071a1a998eff4e4d532d31dff23fac63e90e",
+   "export/frames.mjs": "db4f48eafa87b696ffcca3d1d4c4c9ab143a0e66f9410ce4bfad38a9b762cff4",
+   "export/lapkit.py": "32585a6be8051a0da56bf068b97c7a6880c76bb06c505d86ba7c40d49cd154df",
+   "export/probe.py": "f7f5ea59faa37777b1c4d542e0d9fac74bdc30c47585b87d04ab9f9595abd07f",
+   "export/rehash.mjs": "0fe27fd68a1031a9917d5d55286ffb68e016a02e79d809768e4b2da92307ead6",
+   "export/run.py": "348f311acdd7636be8c8b31d3cf3260adf4fbb0e62a2b018814572e31fa45110",
+   "export/state_node.mjs": "da650c99a61f7e1f6e3d0854c6bd5b85f015c4adbdf41544fd0aaa8de6d1aad8",
+   "export/still.mjs": "71d5124da523653cb92fa3525b024369e143029e13397ae35bb1a13a4254714f",
+   "export/verify.mjs": "38518d0a12ae4d890040b4c651d3b91a3c3d4b15b2bc31234733bf868fbebc29",
+   "render/border.js": "4a369267a12d62a5af3455a3fb527f4914f6c3a5fe5e3c962b3c0a3e1aa72aea",
+   "render/card.js": "13f2a7fc66d69ade4c166851a226416623f537570c343b91bd4c704e7459bba4",
+   "render/data.js": "9a96df27588d009ae1f4f45b3c442e9e259e9c433c79ee979c677d264a295a3d",
+   "render/fields.js": "1017a9ac27b54f2e4471d4469b4fd50252e2ce5031a85f9f884d2c18bd07f780",
+   "render/index.html": "e4703c8f694db1dde52d37690453258c282b216281d51ae71c1e47412761691f",
+   "render/launch.js": "75374f2395cdf915d31e5c0fbc6365d0fa4d24c4eba8a8bec55225d4d5325a6a",
+   "render/main.js": "b53c828017fe33c4a6d74f64f62296c3f2c777a5db543a2a34fd7c5bdbd70cec",
+   "render/palette.js": "fbcd345567e1af55e6ab5618b98d5e975a580f2fe9dd18733fff24f0ba979b7e",
+   "render/panels.js": "4466d461777a0696feee4268a9eb0f69855df74a5a20f9b1662d612fd168c62d",
+   "render/radio.js": "c4fbcac64e6ffb1b96753f68dfcc98301a98734d19b888bd2e32bfe780d19837",
+   "render/state.js": "2962c6ed5c9c96e7c68896736522a343ddc9002351fee55bec1de29aaf36b042"
+  },
+  "collapsed_share_pct": 1.43,
+  "compile_s": 18.1,
+  "compile_twice": {
+   "audio_equal": true,
+   "kw_data_equal": true,
+   "second": {
+    "audio_sha256": "a51f3ec2690d2f8a11ffefbbce3be20e8b3454e5b83fea7c2e6f68aba05078fa",
+    "frames": 20650,
+    "kw_data_sha256": "ed9d5481ed004805b0ffded69bbc691f5437fd2c33102add6005733121a644de"
+   }
+  },
+  "counts": {
+   "beams": 4953,
+   "cells": 16117,
+   "checkpoints": 23,
+   "chips": 34,
+   "collapsed_frames": 295,
+   "deltas": 26272,
+   "launch_counts": {
+    "bands": {
+     "1": 71,
+     "2": 268,
+     "3": 363,
+     "4": 205,
+     "5": 35,
+     "6": 9
+    },
+    "bands_git": {
+     "1": 30,
+     "2": 182,
+     "3": 279,
+     "4": 140,
+     "5": 8,
+     "6": 1
+    },
+    "capped_commits": 87,
+    "episodes_git": 1054,
+    "first_of_generation": 19,
+    "first_of_nation": 5,
+    "first_tests": 215,
+    "launches": 951,
+    "launches_git": 640,
+    "launches_nongit": 311,
+    "max_warheads": 58,
+    "mirv": 171,
+    "nations": {
+     "automation": 9,
+     "chatgpt": 37,
+     "claude": 453,
+     "codex": 82,
+     "human": 370
+    },
+    "nations_git": {
+     "automation": 9,
+     "claude": 442,
+     "codex": 74,
+     "human": 115
+    },
+    "nongit_nations": {
+     "chatgpt:time": 37,
+     "claude": 11,
+     "codex": 8,
+     "human": 255
+    },
+    "single": 769,
+    "single_git": 458,
+    "tests_git": 954,
+    "tests_nongit": 311,
+    "unified": 11,
+    "warheads_hist": {
+     "2": 98,
+     "3": 33,
+     "4": 14,
+     "5": 10,
+     "6": 2,
+     "7": 3,
+     "8": 3,
+     "9": 3,
+     "10": 5
+    }
+   },
+   "launches": 951,
+   "launches_skipped_no_region": 0,
+   "layout": {
+    "bridges": 29,
+    "constellations": 13,
+    "harbours": 46,
+    "islands": 54,
+    "joined_lineages": 83,
+    "notches": 316,
+    "spurs": 224
+   },
+   "nations": [
+    "human",
+    "chatgpt",
+    "claude",
+    "codex",
+    "automation",
+    "local_model",
+    "opencode"
+   ],
+   "peak_launches_per_frame": 3,
+   "regions": 320,
+   "rings": 103,
+   "tiles": 6224,
+   "tiles_by_kind": {
+    "dir": 2283,
+    "git": 2925,
+    "third": 1016
+   },
+   "tiles_counts": {
+    "cells": 16117,
+    "regions": 320,
+    "regions_by_host": {
+     "am4": 13,
+     "fx99": 8,
+     "omen-c": 74,
+     "omen-e": 148,
+     "omen-linux": 77
+    },
+    "regions_dir": 177,
+    "regions_git": 130,
+    "regions_third": 13,
+    "tiles": 6224,
+    "tiles_never_touched": 284,
+    "touches": 147061
+   },
+   "tiles_never_touched": 284,
+   "tiles_stats": {
+    "copies_revealed": 20,
+    "copy_tiles_revealed": 41,
+    "ruin_clone_event": 1,
+    "ruin_clone_last_ts": 12
+   },
+   "touches": 147061
+  },
+  "cut_s": null,
+  "hq": {
+   "changes": [
+    [
+     8980,
+     "omen-e"
+    ],
+    [
+     12724,
+     "omen-c"
+    ],
+    [
+     18772,
+     "omen-e"
+    ],
+    [
+     19276,
+     "omen-linux"
+    ]
+   ],
+   "first_linux_day_iso": "2026-09-28T00:00:00Z"
+  },
+  "inputs": {
+   "actors.json": "713180f2fcbb771031a254faef47495e5e1d30f32e577e705760bfb29d5f3e36",
+   "chatgpt_links.json": "63ed4b48fd2f88c177f8f839edcc9ed0de22ec81e16b5e711e3f12a8511c5843",
+   "events.ndjson": "4e1e1c9715e8224d862ca6c85ce8a82731db6d21b8e618861ddac8361dd0e7b7",
+   "hosts.json": "51d3a68e524e44719f65cfb85907e319617903d29dc5a53d82867db621a7c6d6",
+   "relations.json": "fd545c9d7ebaf970204c6b0b35338dc5feeace49b20b08473f1ae773ce45f621",
+   "repos.json": "2baef2a516dd6c5e98a753d2fac007ae78d1f4eded7b8b26c2255377bef4bc56",
+   "sessions.json": "4730a2c30885067400725e10b97cdf10d535f3913687408882e996c12f002157",
+   "stats.json": "6e9d7cf2cc668badefe81ab3f1f426b0105cdad646acf54aa426571d97f646ee"
+  },
+  "kw_data_bytes": 17271161,
+  "kw_data_sha256": "ed9d5481ed004805b0ffded69bbc691f5437fd2c33102add6005733121a644de",
+  "params_hash": "a2669caf13fb3dbf7a217bd5fdf9e3bb854ca8b4a9104aca9e8c6af77e8ad4a2",
+  "peak_launches_per_film_second": 19,
+  "relations": "present",
+  "running_totals": {
+   "bulk_copy_excluded": {
+    "file_birth": 680125,
+    "file_update": 62411
+   },
+   "nation": {
+    "automation": {
+     "commits": 644,
+     "files_changed": 1120,
+     "lines_added": 86797,
+     "lines_removed": 7628
+    },
+    "chatgpt": {
+     "commits": 0,
+     "files_changed": 0,
+     "lines_added": 0,
+     "lines_removed": 0
+    },
+    "claude": {
+     "commits": 4391,
+     "files_changed": 30354,
+     "lines_added": 5005288,
+     "lines_removed": 273092
+    },
+    "codex": {
+     "commits": 46,
+     "files_changed": 1057,
+     "lines_added": 169966,
+     "lines_removed": 669
+    },
+    "human": {
+     "commits": 4706,
+     "files_changed": 56316,
+     "lines_added": 10671511,
+     "lines_removed": 2234792
+    },
+    "local_model": {
+     "commits": 0,
+     "files_changed": 0,
+     "lines_added": 0,
+     "lines_removed": 0
+    },
+    "opencode": {
+     "commits": 0,
+     "files_changed": 0,
+     "lines_added": 0,
+     "lines_removed": 0
+    }
+   },
+   "no_numstat_counted": 0,
+   "surface": {
+    "am4": {
+     "commits": 28,
+     "files_created": 5523,
+     "files_updated": 325
+    },
+    "fx99": {
+     "commits": 43,
+     "files_created": 1157,
+     "files_updated": 965
+    },
+    "github": {
+     "commits": 0,
+     "files_created": 0,
+     "files_updated": 0
+    },
+    "omen-c": {
+     "commits": 3722,
+     "files_created": 25962,
+     "files_updated": 3543
+    },
+    "omen-e": {
+     "commits": 3441,
+     "files_created": 72790,
+     "files_updated": 21491
+    },
+    "omen-linux": {
+     "commits": 2553,
+     "files_created": 13030,
+     "files_updated": 141
+    }
+   },
+   "third": {
+    "clone_commits": 23451,
+    "clone_files": 122495,
+    "clone_lines": 17227908,
+    "clone_no_numstat": 11164,
+    "own_third_class_commits": 1151,
+    "own_third_class_files": 11923,
+    "own_third_class_lines": 2586053,
+    "own_third_class_no_numstat": 0
+   },
+   "world": {
+    "commits": 9787,
+    "files": 233774,
+    "lines": 18449743
+   }
+  },
+  "world_sha256": "2f58574ea73891cf4e817143ff6f9b94533a4f1ccdab158f2bb3c1041f0231da"
+ }
+}

@@ -49,6 +49,9 @@ def load(params):
     third_paths = collections.defaultdict(collections.Counter)
     third_hosts = collections.defaultdict(set)
     chat_all = []
+    tot_commits = []  # running totals: (t, class, host, files, ins, del, no_numstat) for counted commits
+    fs_rows = []  # running totals: (t, host, kind, n, bulk, lineage) every file_birth / file_update record
+    tp = collections.Counter()  # commits not counted in any nation, for the receipt
     sess_events = []
     gh_born = []
     dir_touch = collections.defaultdict(list)
@@ -78,6 +81,13 @@ def load(params):
             if e["host"] not in hf or t < hf[e["host"]]:
                 hf[e["host"]] = t
         if k == "commit":
+            _m, _nn = e["magnitude"], bool((e.get("meta") or {}).get("no_numstat"))
+            if r in c.third:
+                tp["clone_commits"] += 1; tp["clone_no_numstat"] += int(_nn)
+                tp["clone_files"] += _m.get("files") or 0; tp["clone_lines"] += (_m.get("ins") or 0) + (_m.get("del") or 0)
+            elif cls == "third_party" and r in c.own:
+                tp["own_third_class_commits"] += 1; tp["own_third_class_no_numstat"] += int(_nn)
+                tp["own_third_class_files"] += _m.get("files") or 0; tp["own_third_class_lines"] += (_m.get("ins") or 0) + (_m.get("del") or 0)
             if r in c.third:
                 for pth in (e.get("files") or ()):
                     third_paths[r][pth] += 1
@@ -89,6 +99,7 @@ def load(params):
                 raw = (m.get("ins") or 0) + (m.get("del") or 0)
                 mh = tuple(sorted(set((e.get("meta") or {}).get("hosts") or ()) | {e["host"]}))
                 commits[r].append((t, e["ref"], cls, a["name"], raw, m.get("files") or 0, tuple(e.get("files") or ()), e["host"], bool((e.get("meta") or {}).get("no_numstat")), mh))
+                tot_commits.append((t, cls, e["host"], m.get("files") or 0, m.get("ins") or 0, m.get("del") or 0, bool((e.get("meta") or {}).get("no_numstat"))))
                 if cls != "third_party":
                     key = (cls, a["name"])
                     if key not in gen_first or t < gen_first[key]:
@@ -127,6 +138,7 @@ def load(params):
         elif k == "repo_born" and e["host"] == "github":
             gh_born.append((t, r, int(e["magnitude"].get("kb") or 0), bool((e.get("meta") or {}).get("fork"))))
         elif k in ("file_birth", "file_update"):
+            fs_rows.append((t, e["host"], k, e["magnitude"]["n"], bool((e.get("meta") or {}).get("bulk_copy")), r))
             if r in c.dirs:
                 day = t // 86400
                 m = e["magnitude"]
@@ -144,6 +156,7 @@ def load(params):
                 d["t1"] = t if d["t1"] is None else max(d["t1"], t)
                 d["nrec"] += 1
     c.n_events = n_events
+    c.tot_commits, c.fs_rows, c.third_totals = sorted(tot_commits), sorted(fs_rows, key=lambda x: (x[0], x[1], x[2], str(x[5]))), dict(tp)
     c.third_paths, c.third_hosts, c.chat_all, c.sess_events, c.gh_born, c.dir_touch, c.nc_first = third_paths, third_hosts, sorted(chat_all), sorted(sess_events), sorted(gh_born, key=lambda x: (x[0], str(x[1]))), dir_touch, nc_first
     for r in dir_touch:
         dir_touch[r].sort()

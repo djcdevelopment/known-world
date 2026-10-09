@@ -222,3 +222,96 @@ def ring_births(series_chatgpt, fps, min_gap_s=0.3):
         if f - last >= gap:
             out.append(int(f)); last = int(f)
     return np.array(out, dtype=np.int32)
+
+
+ERA_UNIT_DAYS = (365.2425, 30.436875, 7.0)  # year in A, month in B, week in C
+ERA_UNIT_NAMES = ("yr", "mo", "wk")
+
+
+def running_totals(c, params, clock, nat_index, surfaces, hosts_fs, launches=None):
+    """Running totals (DIRECTION 'Running totals'): cumulative per nation (commits, files changed, lines added, lines
+    removed), per surface (files created, files updated, commits) and for the world, plus the per-nation commit rate per
+    era unit. Counted commits only: third-party-class commits in Derek's lineages and every commit in a third-party
+    clone are outside every total and are tallied once in `third` for the receipt."""
+    F = clock.F
+    nN = len(nat_index)
+    tau = clock.tau_frames()
+    era = clock.era_frames().astype(np.int64)
+    cm = c.tot_commits
+    t = np.array([x[0] for x in cm], dtype=np.int64)
+    fr = clock.frame(t)
+    ni = np.array([nat_index[x[1]] for x in cm], dtype=np.int64)
+    cnt = np.zeros((nN, F)); fil = np.zeros((nN, F)); ins = np.zeros((nN, F)); dele = np.zeros((nN, F))
+    np.add.at(cnt, (ni, fr), 1.0)
+    np.add.at(fil, (ni, fr), np.array([x[3] for x in cm], dtype=np.float64))
+    np.add.at(ins, (ni, fr), np.array([x[4] for x in cm], dtype=np.float64))
+    np.add.at(dele, (ni, fr), np.array([x[5] for x in cm], dtype=np.float64))
+    cum = lambda a: np.cumsum(a, axis=-1)
+    ccum, fcum, icum, dcum = cum(cnt), cum(fil), cum(ins), cum(dele)
+    # surfaces: commits by host, files created / updated by host (bulk copies excluded unless births_exclude_bulk is false)
+    nS = len(surfaces)
+    sc_commits = np.zeros((nS, F)); sc_created = np.zeros((nS, F)); sc_updated = np.zeros((nS, F))
+    sidx = {s: i for i, s in enumerate(surfaces)}
+    hh = np.array([sidx.get(x[2], -1) for x in cm], dtype=np.int64)
+    m = hh >= 0
+    np.add.at(sc_commits, (hh[m], fr[m]), 1.0)
+    fs = c.fs_rows
+    excl = bool(params["births_exclude_bulk"])
+    bulk_n = {"file_birth": 0, "file_update": 0}
+    fs_world = np.zeros(F)
+    for (tt, host, kind, n, bulk, r) in fs:
+        if bulk:
+            bulk_n[kind] += n
+            if excl:
+                continue
+        f = int(clock.frame(np.array([tt], dtype=np.int64))[0])
+        if host in sidx:
+            (sc_created if kind == "file_birth" else sc_updated)[sidx[host], f] += n
+        fs_world[f] += n
+    sc_commits, sc_created, sc_updated = cum(sc_commits), cum(sc_created), cum(sc_updated)
+    # world totals: commits; files = files changed in commits + files created + updated outside git; lines = ins + del
+    w_commits = cum(cnt.sum(0)); w_lines = cum(ins.sum(0) + dele.sum(0))
+    w_files = cum(fil.sum(0) + fs_world)
+    # rate: commits per era unit, trailing, one value per frame per nation
+    rate = np.zeros((nN, F))
+    mode = params["rate_window"]
+    unit = np.array(ERA_UNIT_DAYS)[era]
+    if mode == "era_unit":
+        g0 = np.searchsorted(tau, tau - unit, side="left")
+    elif mode == "rolling_10s":
+        g0 = np.maximum(0, np.arange(F) - int(round(10 * clock.fps)))
+    else:
+        raise ValueError("rate_window")
+    ar = np.arange(F)
+    for i in range(nN):
+        prev = np.where(g0 > 0, ccum[i][np.maximum(g0 - 1, 0)], 0.0)
+        n = ccum[i] - prev
+        if mode == "era_unit":
+            rate[i] = n
+        else:
+            days = tau - tau[g0]
+            rate[i] = np.where(days > 1e-9, n / np.maximum(days, 1e-9) * unit, 0.0)
+    # births_to_nation arm: files created inside a launch window and lineage go to the launch's nation (inferred)
+    created_nat = None
+    if params["births_to_nation"] == "launch_window":
+        created_nat = np.zeros((nN, F))
+        by_lin = collections.defaultdict(list)
+        for l in launches or []:
+            by_lin[l["lineage"]].append((l["ts_start"], l["ts_end"], l["nation"]))
+        for (tt, host, kind, n, bulk, r) in fs:
+            if kind != "file_birth" or (bulk and excl):
+                continue
+            for (a, b, nat) in by_lin.get(r, ()):
+                if a - 86400 <= tt <= b + 86400:
+                    created_nat[nat_index[nat], int(clock.frame(np.array([tt], dtype=np.int64))[0])] += n
+                    break
+        created_nat = cum(created_nat)
+    totals = {
+        "nation": {k: {"commits": int(ccum[i, -1]), "files_changed": int(fcum[i, -1]), "lines_added": int(icum[i, -1]), "lines_removed": int(dcum[i, -1])} for k, i in nat_index.items()},
+        "surface": {s: {"commits": int(sc_commits[i, -1]), "files_created": int(sc_created[i, -1]), "files_updated": int(sc_updated[i, -1])} for s, i in sidx.items()},
+        "world": {"commits": int(w_commits[-1]), "files": int(w_files[-1]), "lines": int(w_lines[-1])},
+        "bulk_copy_excluded": bulk_n if excl else {}, "no_numstat_counted": int(sum(1 for x in cm if x[6])),
+        "third": c.third_totals,
+    }
+    return {"ccum": ccum, "fcum": fcum, "icum": icum, "dcum": dcum, "sc_commits": sc_commits, "sc_created": sc_created,
+            "sc_updated": sc_updated, "w": np.stack([w_commits, w_files, w_lines]), "rate": rate, "created_nat": created_nat, "totals": totals}

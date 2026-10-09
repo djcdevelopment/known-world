@@ -93,6 +93,8 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
     series = ser.class_series(c, params, clock, nat_index)
     ccum, fcum = ser.commit_capacity(c, clock, nat_index)
     pcum = ser.participations(c, clock, nat_index)
+    rt = ser.running_totals(c, params, clock, nat_index, SURFACES, HOSTS, launches)
+    assert np.array_equal(rt["ccum"].astype(np.float32), ccum) and np.array_equal(rt["fcum"].astype(np.float32), fcum)
     band_names, band_arr = ser.band_series(series, F, fps)
     hq_host, hq_hosts, hq_day_host = ser.hq_track(c, params, clock, tau)
     anchors = dict(Wd.anchor)
@@ -295,8 +297,22 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
         card.append({"name": DISPLAY[r["nation"]], "first": ft[:10] if ft else "", "tests": r["tests"], "yield": ys,
                      "shapes": "%d / %d / %d" % tuple(int(v) for v in shape_cnt[i]), "tiles": "%d / %d" % (len(touched[i]), nT),
                      "parts": r["participations"]})
+    tp = rt["totals"]["third"]
+    n_nonum_all = tp.get("clone_no_numstat", 0) + tp.get("own_third_class_no_numstat", 0) + rt["totals"]["no_numstat_counted"]
+    n_in = rt["totals"]["no_numstat_counted"]
+    if n_in:
+        f3 = "%s commits without line counts count as commits and files, 0 lines; %s more sit in third-party clones and in no total" % (format(n_in, ","), format(n_nonum_all - n_in, ","))
+    else:
+        f3 = "%s commits without line counts, all in third-party clones, are in no total: commits, files and lines here are Derek's lineages only" % format(n_nonum_all, ",")
     footer = ["no chat source covers 2026-04",
-              "no Claude Code transcript before 2026-05-08 survives: Claude is known from commit trailers only, 2026-01 to 2026-04"]
+              "no Claude Code transcript before 2026-05-08 survives: Claude is known from commit trailers only, 2026-01 to 2026-04", f3]
+    for i, r in enumerate(card):
+        k = nat_rows[i]["nation"]; tn = rt["totals"]["nation"][k]
+        r["commits"] = format(tn["commits"], ","); r["files"] = format(tn["files_changed"], ",")
+        r["lines"] = "+%s / \u2212%s" % (compact(tn["lines_added"]), compact(tn["lines_removed"]))
+    wt = rt["totals"]["world"]
+    card_world = {"name": "world", "tests": int(sum(r["tests"] for r in card)), "commits": format(wt["commits"], ","), "files": format(wt["files"], ","),
+                  "lines": "%s" % compact(wt["lines"])}
     # ---- data block ----------------------------------------------------------------------------------------------------------
     blk = bd.clock_block(clock, probe_f)
     f32 = lambda a: bd.b64(np.asarray(a).astype("<f4"))
@@ -339,6 +355,10 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
         "tests_cum": bd.b64(np.cumsum(tests_cum, axis=1).astype("<u2")), "lines_cum": bd.b64(np.cumsum(lines_cum, axis=1).astype("<f4")),
         "files_cum": bd.b64(np.cumsum(files_cum, axis=1).astype("<f4")), "commits_cum": bd.b64(ccum.astype("<f4")), "capfiles_cum": bd.b64(fcum.astype("<f4")),
         "parts_cum": bd.b64(pcum.astype("<f4")),
+        "ins_cum": f32(rt["icum"]), "del_cum": f32(rt["dcum"]), "rate_nat": f32(rt["rate"]), "w_cum": f32(rt["w"]),
+        "sc_created": f32(rt["sc_created"]), "sc_updated": f32(rt["sc_updated"]),
+        "created_nat": f32(rt["created_nat"]) if rt["created_nat"] is not None else None,
+        "rate_unit_names": list(ser.ERA_UNIT_NAMES), "rate_window": params["rate_window"],
         "chips": [{"n": a, "g": b, "label": lb, "short": s, "f": f_} for (a, b, lb, s, f_) in chips],
         "chip_max": params["chip_max_visible"], "chip_named_f": max(6, int(round(params["chip_named_s"] * fps * env))),
         "sc_tests": bd.b64(sc_tests.astype("<u2")), "sc_commits": bd.b64(sc_commits.astype("<f4")), "sc_files": bd.b64(sc_files.astype("<f4")),
@@ -349,7 +369,7 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
         "bs": bd.b64(bs.astype("<i4")), "br": bd.b64(br.astype("<u2")), "bw": bd.b64(bw), "bcn_n": bd.b64(bcn),
         "ring_f": bd.b64(rings.astype("<i4")),
         "seat": {h: bd.b64(np.minimum(255, series["seat_" + h]).astype("u1")) for h in ser.SEAT_HOSTS},
-        "card": card, "card_footer": footer,
+        "card": card, "card_world": card_world, "card_footer": footer,
         "terrain_L": params["terrain_L"], "terrain_C": params["terrain_C"], "collapse_thr": params["collapse_events_per_s"], "labels": params["labels"],
     })
     os.makedirs(outdir, exist_ok=True)
@@ -362,6 +382,7 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
     rec["audio_samples"] = int(len(audio)); rec["audio_expected"] = F * 1600
     rec["audio_stats"] = astats
     rec["clock"] = clock.summary()
+    rec["running_totals"] = rt["totals"]
     if write_world:
         rec["world_sha256"] = write_world_json(os.path.join(outdir, "world.json"), Tl, Wd, tfirst, rfirst, params)
     hq_cross = None

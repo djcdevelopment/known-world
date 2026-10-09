@@ -1,0 +1,20 @@
+{
+ "coda_f": 20110,
+ "errors": [],
+ "frames": {
+  "running-2023-08-01": 1761,
+  "running-2026-03-15": 5129,
+  "running-2026-07-05": 13193,
+  "running-2026-09-27": 19241,
+  "running-2026-10-03": 19673,
+  "tally-card": 20530
+ },
+ "sha256": {
+  "running-2023-08-01.png": "9e3f63ef3a3e1067d32a0dac08ab6e0cda4868b3d74e5b601b91a54b9477434f",
+  "running-2026-03-15.png": "bf0ed57c6d7ce160efd6e16b91fc678e42a7e85134f139ec0e2a5c1c2c922cf1",
+  "running-2026-07-05.png": "582ed4b8d8292c3aaec91ae239eee40650c02b028e1566ffcf025e7817883666",
+  "running-2026-09-27.png": "8619f0f0e1b533c7def9659dbbf89032e0d884f31b479b26e36de6ebaca16e10",
+  "running-2026-10-03.png": "77fca37c1bfe3e2ee4bc9d86b250a27af2822654549dff647ace5b2d7c13a3a5",
+  "tally-card.png": "6b16949565e9299c663eacd146e2617aa0ab4eebfd29ec766771c7550cc1e982"
+ }
+}

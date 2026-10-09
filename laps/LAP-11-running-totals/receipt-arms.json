@@ -1,0 +1,22 @@
+{
+ "launch_window": {
+  "audio_sha256": "a51f3ec2690d2f8a11ffefbbce3be20e8b3454e5b83fea7c2e6f68aba05078fa",
+  "frames": 20650,
+  "kw_data_sha256": "8f2280fc4b0357d9d726da8254551acf29861a07c8ba89e48b6a8643e336b369",
+  "running_totals_world": {
+   "commits": 9787,
+   "files": 233774,
+   "lines": 18449743
+  }
+ },
+ "rolling_10s": {
+  "audio_sha256": "a51f3ec2690d2f8a11ffefbbce3be20e8b3454e5b83fea7c2e6f68aba05078fa",
+  "frames": 20650,
+  "kw_data_sha256": "e752f41a9b93af022d4d50d717a6eaaf3baf9fef434ce6eb48dd427d73d15c2c",
+  "running_totals_world": {
+   "commits": 9787,
+   "files": 233774,
+   "lines": 18449743
+  }
+ }
+}

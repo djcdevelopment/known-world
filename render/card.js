@@ -12,10 +12,10 @@
     const fin = Math.min(1, (u - 9 / 18) / (1 / 18)), fout = u > 17 / 18 ? Math.min(1, (u - 17 / 18) / (1 / 18)) : 0;
     ctx.fillStyle = 'rgba(7,9,14,' + (0.96 * fin).toFixed(3) + ')'; ctx.fillRect(0, 0, 1920, 1080);
     ctx.globalAlpha = fin;
-    const x0 = 160, cols = [x0, x0 + 360, x0 + 560, x0 + 700, x0 + 930, x0 + 1250], y0 = 150, rowH = 62;
+    const x0 = 160, cols = [x0, x0 + 250, x0 + 410, x0 + 500, x0 + 690, x0 + 920, x0 + 1110, x0 + 1220, x0 + 1370], y0 = 150, rowH = 62;
     ctx.textBaseline = 'alphabetic'; ctx.textAlign = 'left';
-    ctx.font = '18px ' + FONT; ctx.fillStyle = '#8b93a6';
-    ['', 'first test', 'tests', 'yield', 'single / MIRV / unified', 'tiles explored / laid out'].forEach((h, i) => { if (h) ctx.fillText(h, cols[i], y0 - 16); });
+    ctx.font = '16px ' + FONT; ctx.fillStyle = '#8b93a6';
+    ['', 'first test', 'tests', 'yield', 'single/MIRV/unified', 'tiles / laid out', 'commits', 'files changed', '+lines / \u2212lines'].forEach((h, i) => { if (h) ctx.fillText(h, cols[i], y0 - 16); });
     ctx.fillStyle = '#1b2230'; ctx.fillRect(x0, y0 - 6, 1600, 1);
     for (let i = 0; i < D.card.length; i++) {
       const r = D.card[i], y = y0 + 40 + i * rowH;
@@ -26,6 +26,15 @@
       ctx.font = '30px ' + FONT; ctx.fillStyle = '#e8e0c0'; ctx.fillText(String(r.tests), cols[2], y);
       ctx.font = '24px ' + FONT; ctx.fillStyle = '#c9c3a8'; ctx.fillText(r.yield, cols[3], y);
       ctx.fillText(r.shapes, cols[4], y); ctx.fillText(r.tiles, cols[5], y);
+      ctx.fillText(r.commits, cols[6], y); ctx.fillText(r.files, cols[7], y); ctx.fillText(r.lines, cols[8], y);
+    }
+    { // the world row: totals over every nation
+      const r = D.card_world, y = y0 + 40 + D.card.length * rowH;
+      ctx.fillStyle = '#1b2230'; ctx.fillRect(x0, y - 44, 1600, 1);
+      ctx.font = '28px ' + FONT; ctx.fillStyle = '#e8e0c0'; ctx.fillText(r.name, cols[0] + 34, y);
+      ctx.font = '30px ' + FONT; ctx.fillText(String(r.tests), cols[2], y);
+      ctx.font = '24px ' + FONT; ctx.fillStyle = '#c9c3a8';
+      ctx.fillText(r.commits, cols[6], y); ctx.fillText(r.files, cols[7], y); ctx.fillText(r.lines + ' lines', cols[8], y);
     }
     ctx.font = '20px ' + FONT; ctx.fillStyle = '#8b93a6';
     D.card_footer.forEach((t, i) => ctx.fillText(t, x0, 950 + i * 30));

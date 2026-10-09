@@ -1,7 +1,36 @@
 # CONTRACT.md: the corpus data contract (v1, 2026-10-09)
 
 This file is the one agreement between the collection layer, the compile layer and the renderer. Extractors emit
-exactly this; everything downstream reads exactly this. Change it by revision, with a note in `## Revisions`.
+exactly this; everything downstream reads exactly this. Change it by revision, with a note in `
+## 8. Derived at compile time: launches (`compile/launches.json`)
+
+Not collected; computed deterministically by `compile/launches.py` from `corpus/merged/events.ndjson` and
+`sessions.json` under the payload model in DIRECTION.md. One record per intentional work episode:
+
+```
+{"launch_id": sha1(lineage + ts_start)[:12], "lineage": <repo id>, "ts_start", "ts_end",
+ "nation": <actor class that conducted it: the dominant class of the episode's commits, else the session class, else human>,
+ "sessions": [<session ids whose cwd maps to the lineage and overlap the window ± session_overlap_min>],
+ "commits": n, "hosts": [...], "seats": [<offload backends called during the window>],
+ "yield": {"lines": ins + del, "files": distinct files, "integrations": distinct lineages + hosts + seats touched,
+           "moving_pieces": distinct depth-2 dirs + branches/worktrees created + distinct agent classes, "class": <band>},
+ "shape": "single" | "mirv" | "unified", "warheads": n, "targets": [<lineage or worktree ids the commits landed on>],
+ "unifies": [<launch_ids of the warheads this episode consolidated>] | [],
+ "first_test": bool, "first_of_nation": <nation or model generation whose first appearance this launch is> | null}
+```
+
+Also derived: `compile/nations.json`, one record per nation (actor class) and per model generation inside it:
+`{"nation", "generation", "first_ts", "first_launch_id", "tests", "yield_total", "last_ts"}`, ordered by first
+appearance; the border's growing legend reads it. Sources for first appearance: `actor.name` on commits (trailers) and
+`models` on sessions; offload_call `backend`/`model` for local seats.
+
+Parameters (`compile/params.json`, lap variables): `episode_gap_h` (default 2), `session_overlap_min` (30),
+`min_yield` (`lines` 50 or `files` 3; smaller episodes stay infrastructure), `yield_bands` (log10 of lines, tuned),
+`mirv_min_targets` (2), `unify_window_h` (24), `generation_shades` (true).
+Commits below the threshold and every chat_msg, file_birth, branch and worktree event remain infrastructure and are
+rendered as fields, never as flashes. Two runs over the same corpus and parameters give byte-identical output.
+
+## Revisions`.
 
 ## 1. Event records: `corpus/raw/<item>/events.ndjson`, one JSON object per line
 
@@ -110,4 +139,5 @@ Work item (input to a collector): `{"id", "source_type", "host", "roots": [paths
   `other_role`. `dropped.null_ts` counts records the extractor could not bucket (no usable timestamp); events with a null
   `ts` that are still emitted (a commit with a bad date) are counted in `coverage.null_ts_emitted`. `third_party` counts only
   third_party-class authors against `derek_share` (agents and automation in Derek's repos are Derek's).
-
+- v1.2 2026-10-09: section 8, derived launches under the payload model (Derek: commits are infrastructure; payloads are intentional interactions with a yield).
+- v1.3 2026-10-09: launches carry shape (single, MIRV, unified), warheads and targets; derived nations.json for first appearances (Derek: watch the operator and the industry evolve at once).

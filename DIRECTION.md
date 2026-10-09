@@ -21,6 +21,64 @@ through HEARTH), as one time-lapse with two substitutions:
 2. **Radio chatter as a signal layer.** Conversations are comms traffic rendered against the volume, size, scope and
    frequency of the territory, over time, via size, scale, colour, intensity and opacity.
 
+## The payload model (Derek's call, 2026-10-09; this is the event model)
+
+Derek's correction, taken as the design: commit volume is not the detonations. In the correlation to the original,
+the commit spam is the investment in and prioritization of the nation's scientific and industrial infrastructure,
+the capacity that makes a test possible. The payloads are the focused, intentional developer/creator/operator
+interactions that generate a project of a particular size; yield is what that interaction produced: lines of code,
+number of files, number of integrations, amount of moving pieces.
+
+So the piece has two layers with different physics:
+
+- **Infrastructure** (continuous, cumulative, rendered as fields): commits, files, directories, branches, worktrees
+  and routine chatter. They reveal and grow the territory (fog, tile brightness, region size) and hum on the radio
+  band. They never flash and never beep. Their rate is the industrial tempo; the border carries them as capacity
+  (commits, files), in a smaller second line under the test tallies.
+- **Launches** (discrete, rendered as detonations): an intentional work episode on one lineage. The operator engages
+  (a Claude Code, Codex or OpenCode session whose cwd maps to the lineage, or a human-only burst) and a cluster of
+  commits follows within a gap window. One episode = one test. Flash radius, bloom duration and tone length scale with
+  yield; pitch by nation (the actor class that conducted it); the border tallies **tests and cumulative yield per
+  nation**, like the original's per-country counters.
+- **Yield** (per episode, from metadata only): lines = insertions + deletions; files = distinct files touched;
+  integrations = distinct lineages, hosts and seats touched (a commit that lands on two surfaces, an offload to a local
+  seat, a push to GitHub each count); moving pieces = distinct depth-2 directories plus branches and worktrees created
+  plus distinct agent classes involved. A yield class on a log scale (bands tuned in a lap) sets the visual size, as
+  kiloton to megaton did.
+- A new lineage's first episode is its first test (the bloom and the bell stay). ChatGPT sessions (no cwd, 2023-04 to
+  2026-03) are the research program before any test: radio only.
+- **Episode detection** (compile layer; lap variables): a gap over 2 h between commits on one lineage closes an
+  episode; a session joins an episode when its cwd maps to the lineage and overlaps the window by 30 min either side;
+  the minimum yield to count as a test is 50 lines or 3 files (below that it is infrastructure maintenance); an episode
+  with no session is a human-only test (nation human).
+- **Shape** (Derek, 2026-10-09): tests change shape over the piece. Early tests are single blips (a PoC), then bigger
+  and bigger single blips for larger tests. Later, projects start as **MIRVs** (cluster bombs): one operator
+  engagement whose commits land across several lineages, worktrees or hosts inside the same window, drawn as one beam
+  from HQ that splits into N smaller warheads scattered over their targets, "scatter-bomb effective". Some of those
+  later consolidate into **one large unified blip** when the worktree branches merge back or the migration copies
+  unify on the parent lineage. Detection, from metadata: an episode whose commits touch ≥ 2 lineages or linked
+  worktrees within the gap window is a MIRV with that many warheads (the 94 Linux worktrees, 57 of them on
+  commandcenter, are the fleet era); a unification is a large-yield episode on a parent lineage within a day of ≥ 2
+  warheads on its worktrees or components (signals available: worktree and branch events, lineage components with
+  several records, commits present on several hosts). Thresholds are lap variables.
+
+## Two evolutions at once (Derek, 2026-10-09)
+
+The viewer is watching Derek's evolution and the industry's evolution at the same time, and the piece must read as
+both without narration:
+
+- **The operator's curve** is the shape and yield of the tests: blip, larger blips, MIRVs, unified blips; the
+  cadence of launches against the industrial base underneath them; the move from one surface to several.
+- **The industry's curve** is who is conducting the tests. Each agent class, and each model generation inside a
+  class, enters the corpus at a date: the first ChatGPT conversation (2023-04), the first Claude Code session, the first
+  Codex session, the first builder automation, the first offload to a local seat, the first Opus 5, Fable 5, Sonnet 5.5
+  trailer. Each first appearance is **a new nation's first test**: a new colour and a new tone enter, and the nation's
+  name appears in the border from that moment. The original's legend was fixed; ours grows as the club grows. Model
+  generations within a class are shades of the class hue (lap variable: shade per generation vs one hue per class).
+- The two curves are read against each other: the industrial base and the chatter (research) rise first; nations
+  enter; tests grow and change shape; the mix of nations shifts from ChatGPT alone to Claude, Codex, fleets and local
+  seats. The honesty rule holds: nothing is annotated; the data carries it or it is not there.
+
 ## Visual grammar
 
 | Element | Rule |
@@ -31,20 +89,22 @@ through HEARTH), as one time-lapse with two substitutions:
 | Third-party clones | Another civilisation's land: grey, hatched, never counted as built. Lap variable: hidden vs shown. |
 | Camera | Fits the bounding box of explored tiles with padding and slow easing; the world grows, early tiles shrink. |
 | Hue = who | human warm white · ChatGPT green · Claude coral · Codex cyan · OpenCode violet · local models ember red · automation/builders amber · third-party grey. Surfaces carry only a subtle terrain tint. Lap variable: actor vs surface. |
-| Commit | A flash on the touched tiles, intensity by log(lines), one tone. |
-| Repo born | A slow bloom and a low bell. |
-| Branch / worktree | A short spur off the region. |
-| Chat message | A tick on the radio band. Sessions with a cwd draw a faint comms beam from the operator's HQ to the region. ChatGPT (no cwd) broadcasts rings into the dark. |
-| HEARTH offload | A spark between HQ and a seat marker (frontier → local chatter). |
-| Border | Right: tallies per actor class (commits, files, messages). Left: tallies per surface. Bottom: the radio band, a scrolling density trace coloured by class. Top: the date ticker with the current rate shown. |
+| Commit | Infrastructure: reveals and brightens the touched tiles, grows the region; no flash, no tone. |
+| Launch | The detonation: a flash whose radius, bloom duration and tone length scale with yield; pitch by nation (actor class). |
+| Repo born | A slow bloom and a low bell (the lineage's first test). |
+| Branch / worktree | A short spur off the region (infrastructure). |
+| Chat message | A tick on the radio band (density). A session whose cwd maps to a region draws a faint comms beam from the operator's HQ to it: the countdown before a launch. ChatGPT (no cwd) broadcasts rings into the dark. |
+| HEARTH offload | A spark between HQ and a seat marker (frontier → local chatter); counts as an integration in the episode's yield. |
+| Border | Right: per nation (actor class), tests and cumulative yield, with capacity (commits, files) as a smaller second line. Left: tallies per surface. Bottom: the radio band, a scrolling density trace coloured by class. Top: the date ticker with the current rate shown. |
 | Ending | Camera pulls back to the whole known world. The unknown stays dark. Tallies settle. Silence. A final tally card. |
 
 ## Sound
 
-One tone per commit, pitch by actor class (human A3, Claude E4, Codex G4, OpenCode B4, local models C3, automation D4,
-third-party muted), gain by log(lines). Above about 8 events per second, events collapse into a roll or chord so the
-ear is not flooded (lap variable). Chatter is band-passed static whose amplitude follows message rate, with a class
-colour on the band. Repo births are bells. The ChatGPT years are static with no tones: radio before territory.
+One tone per launch, pitch by nation (human A3, Claude E4, Codex G4, OpenCode B4, local models C3, automation D4,
+third-party muted), length and gain by yield class. Infrastructure is a hum whose level follows the commit rate;
+chatter is band-passed static whose amplitude follows message rate, with a class colour on the band. Repo births are
+bells. Above about 8 launches per second (unlikely after episode detection; the collapse rule stays as a safety)
+launches collapse into a roll or chord. The ChatGPT years are static with no tones: radio before territory.
 
 ## Pacing (initial; lap 3 varies it)
 
@@ -70,6 +130,8 @@ half years of radio into the dark before any territory appears. Then the Windows
 fog_half_life_days: 30        hue_axis: actor        geography: surfaces
 collapse_events_per_s: 8      camera: fit_known      third_party: ruins
 era_rates: {A: 4/yr, B: 2.5/mo, C: 2.4/day}          cut_90s_multiple: auto
+episode_gap_h: 2              session_overlap_min: 30
+min_yield: {lines: 50, files: 3}                      yield_bands: log10 (tuned in a lap)
 ```
 
 Records use laboratory language (Workflow, Run, Lap, Candidate, Receipt, Verdict); steppe lore only at render time.

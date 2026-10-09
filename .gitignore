@@ -1,0 +1,12 @@
+.venv/
+cache/
+corpus/raw/
+corpus/merged/*.ndjson
+export/frames/
+laps/*/frames/
+*.wav
+*.mp4
+*.webm
+__pycache__/
+*.pyc
+node_modules/

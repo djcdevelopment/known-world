@@ -1,0 +1,13 @@
+[project]
+name = "knownworld"
+version = "0.1.0"
+description = "Known World: a fog-of-war time-lapse of everything built on the lab's surfaces, repos and chats"
+requires-python = ">=3.12"
+dependencies = ["numpy>=2", "imageio-ffmpeg>=0.5"]
+
+[tool.uv]
+package = false
+
+[tool.knownworld]
+# All collectors run with these; see CONTRACT.md "Operating rules".
+env = { PYTHONDONTWRITEBYTECODE = "1", GIT_OPTIONAL_LOCKS = "0" }

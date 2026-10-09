@@ -44,23 +44,23 @@
  "chat_session_records": 2810,
  "components_multi": 30,
  "deduped": {
-  "branch": 185,
+  "branch": 187,
   "chat_msg": 90,
   "chat_session": 3,
-  "commit": 3953,
-  "repo_born": 41
+  "commit": 3994,
+  "repo_born": 43
  },
  "dropped_null_ts": {
   "git_repo/branch": 752,
-  "git_repo/repo_born": 8
+  "git_repo/repo_born": 9
  },
- "dropped_null_ts_total": 760,
+ "dropped_null_ts_total": 761,
  "dup_items": {
   "chat_msg:claude-linux>claude-linux": 90,
   "chat_session:claude-linux>claude-linux": 3
  },
- "events_loaded": 221785,
- "events_out": 216753,
+ "events_loaded": 221874,
+ "events_out": 216796,
  "file_activity": {
   "per_host_ym": {
    "am4": {
@@ -894,7 +894,7 @@
  "first_ts": "2011-08-25T19:45:52Z",
  "github_event_match": {
   "github_only": 2,
-  "remote_url": 52
+  "remote_url": 91
  },
  "identity_fixes": {},
  "items": {
@@ -1055,8 +1055,8 @@
    "status": "complete"
   },
   "github-list": {
-   "events_loaded": 54,
-   "manifest_events": 54,
+   "events_loaded": 93,
+   "manifest_events": 93,
    "src": "github_api",
    "status": "complete"
   },
@@ -1087,6 +1087,12 @@
   "mirror-1": {
    "events_loaded": 10,
    "manifest_events": 10,
+   "src": "git_repo",
+   "status": "complete"
+  },
+  "mirror-2": {
+   "events_loaded": 50,
+   "manifest_events": 50,
    "src": "git_repo",
    "status": "complete"
   },
@@ -1130,6 +1136,7 @@
   "linux-git",
   "mirror-0",
   "mirror-1",
+  "mirror-2",
   "opencode"
  ],
  "join": {
@@ -1176,11 +1183,11 @@
  "last_ts": "2026-10-09T13:33:18Z",
  "lineages": {
   "dir": 177,
-  "git": 130,
+  "git": 132,
   "github_only": 2
  },
  "link_basis": {
-  "root": 37,
+  "root": 39,
   "sha_overlap": 4,
   "worktree": 42
  },
@@ -1774,14 +1781,12 @@
     "null_ts": 0,
     "polling": 0
    },
-   "events": 54,
-   "raw_sum": 54,
+   "events": 93,
+   "raw_sum": 93,
    "repos": 0,
    "src": "github_api",
    "status": "complete",
-   "warnings": [
-    "pending auth: private repos not listed"
-   ]
+   "warnings": []
   },
   "hearth-ledger": {
    "coverage": {
@@ -1894,6 +1899,28 @@
    "status": "complete",
    "warnings": []
   },
+  "mirror-2": {
+   "coverage": {
+    "excluded": 0,
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 1,
+    "out_of_range": 0,
+    "sources_seen": 4,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 50,
+   "raw_sum": 43,
+   "repos": 4,
+   "src": "git_repo",
+   "status": "complete",
+   "warnings": []
+  },
   "opencode": {
    "coverage": {
     "invalid_remote_records": 0,
@@ -1923,7 +1950,7 @@
   "chatgpt": 11259,
   "claude": 96158,
   "codex": 71842,
-  "human": 11205,
+  "human": 11248,
   "local_model": 542,
   "opencode": 209,
   "third_party": 24426
@@ -1932,21 +1959,21 @@
   "am4": 209,
   "cloud": 11259,
   "fx99": 301,
-  "github": 54,
+  "github": 93,
   "omen-c": 93726,
   "omen-e": 65864,
-  "omen-linux": 45340
+  "omen-linux": 45344
  },
  "per_kind": {
-  "branch": 801,
+  "branch": 802,
   "chat_msg": 146432,
   "chat_session": 2810,
-  "commit": 34389,
+  "commit": 34391,
   "file_birth": 3273,
   "file_update": 1793,
   "offload_call": 26386,
   "receipt": 233,
-  "repo_born": 176,
+  "repo_born": 216,
   "run": 235,
   "worktree": 225
  },
@@ -1963,11 +1990,11 @@
   "deepagents_runs/run": 136,
   "fs_births/file_birth": 3273,
   "fs_births/file_update": 1793,
-  "git_repo/branch": 801,
-  "git_repo/commit": 34389,
-  "git_repo/repo_born": 122,
+  "git_repo/branch": 802,
+  "git_repo/commit": 34391,
+  "git_repo/repo_born": 123,
   "git_repo/worktree": 225,
-  "github_api/repo_born": 54,
+  "github_api/repo_born": 93,
   "hearth_ledger/offload_call": 25985,
   "opencode_db/chat_msg": 185,
   "opencode_db/chat_session": 24
@@ -2431,7 +2458,7 @@
    "commit": 721,
    "file_birth": 14,
    "file_update": 22,
-   "repo_born": 1
+   "repo_born": 2
   },
   "2026-02": {
    "branch": 35,
@@ -2442,20 +2469,20 @@
    "file_update": 22
   },
   "2026-03": {
-   "branch": 51,
+   "branch": 52,
    "chat_msg": 1299,
    "chat_session": 25,
-   "commit": 2701,
+   "commit": 2702,
    "file_birth": 205,
    "file_update": 104,
-   "repo_born": 20
+   "repo_born": 28
   },
   "2026-04": {
    "branch": 20,
-   "commit": 1207,
+   "commit": 1208,
    "file_birth": 203,
    "file_update": 64,
-   "repo_born": 21,
+   "repo_born": 31,
    "worktree": 33
   },
   "2026-05": {
@@ -2465,7 +2492,7 @@
    "commit": 1349,
    "file_birth": 172,
    "file_update": 120,
-   "repo_born": 21,
+   "repo_born": 27,
    "worktree": 11
   },
   "2026-06": {
@@ -2475,7 +2502,7 @@
    "commit": 1192,
    "file_birth": 170,
    "file_update": 84,
-   "repo_born": 15
+   "repo_born": 24
   },
   "2026-07": {
    "branch": 141,
@@ -2485,7 +2512,7 @@
    "file_birth": 255,
    "file_update": 100,
    "offload_call": 1264,
-   "repo_born": 21,
+   "repo_born": 23,
    "worktree": 6
   },
   "2026-08": {
@@ -2496,7 +2523,7 @@
    "file_birth": 345,
    "file_update": 57,
    "offload_call": 108,
-   "repo_born": 18,
+   "repo_born": 19,
    "run": 3,
    "worktree": 16
   },
@@ -2509,7 +2536,7 @@
    "file_update": 455,
    "offload_call": 1873,
    "receipt": 224,
-   "repo_born": 32,
+   "repo_born": 35,
    "run": 164,
    "worktree": 73
   },
@@ -2656,7 +2683,7 @@
    "repo_born": 4
   },
   "github-list": {
-   "repo_born": 54
+   "repo_born": 93
   },
   "hearth-ledger": {
    "offload_call": 25985
@@ -2681,6 +2708,11 @@
    "commit": 3,
    "repo_born": 4
   },
+  "mirror-2": {
+   "branch": 3,
+   "commit": 43,
+   "repo_born": 4
+  },
   "opencode": {
    "chat_msg": 185,
    "chat_session": 24
@@ -2699,11 +2731,11 @@
   "deepagents_runs/run": 136,
   "fs_births/file_birth": 3273,
   "fs_births/file_update": 1793,
-  "git_repo/branch": 1738,
-  "git_repo/commit": 38342,
-  "git_repo/repo_born": 171,
+  "git_repo/branch": 1741,
+  "git_repo/commit": 38385,
+  "git_repo/repo_born": 175,
   "git_repo/worktree": 225,
-  "github_api/repo_born": 54,
+  "github_api/repo_born": 93,
   "hearth_ledger/offload_call": 25985,
   "opencode_db/chat_msg": 185,
   "opencode_db/chat_session": 24
@@ -5431,6 +5463,62 @@
    "commits": 0,
    "empty": true,
    "host": "omen-linux",
+   "item": "mirror-2",
+   "lineage": "github:djcdevelopment/claudefarm",
+   "path": "~/work/known-world/cache/clones/djcdevelopment__claudefarm.git",
+   "refs": 0,
+   "repo_local": "omen-linux:~/work/known-world/cache/clones/djcdevelopment__claudefarm.git",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": true,
+   "commit_events": 36,
+   "commits": 36,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "mirror-2",
+   "lineage": "0a2dd31e35fa9ce6ee6518316bcc728a5feea44d",
+   "path": "~/work/known-world/cache/clones/djcdevelopment__conductor.git",
+   "refs": 1,
+   "repo_local": "omen-linux:~/work/known-world/cache/clones/djcdevelopment__conductor.git",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": true,
+   "commit_events": 2,
+   "commits": 2,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "mirror-2",
+   "lineage": "e798eebf8ed12467eb710753cf57ab13333bcaa8",
+   "path": "~/work/known-world/cache/clones/djcdevelopment__contextforge-contracts.git",
+   "refs": 1,
+   "repo_local": "omen-linux:~/work/known-world/cache/clones/djcdevelopment__contextforge-contracts.git",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": true,
+   "commit_events": 5,
+   "commits": 5,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "mirror-2",
+   "lineage": "91653aae293206f6e6f599238097dd2467b0b716",
+   "path": "~/work/known-world/cache/clones/djcdevelopment__continuity.git",
+   "refs": 1,
+   "repo_local": "omen-linux:~/work/known-world/cache/clones/djcdevelopment__continuity.git",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": true,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": true,
+   "host": "omen-linux",
    "item": "mirror-0",
    "lineage": "github:djcdevelopment/farm",
    "path": "~/work/known-world/cache/clones/farm.git",
@@ -5692,7 +5780,7 @@
    "worktree": true
   }
  ],
- "repo_records": 213,
+ "repo_records": 217,
  "repo_records_duplicate_skipped": 0,
  "sessions": 1155,
  "sessions_by_class": {

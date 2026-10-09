@@ -226,7 +226,7 @@
     "chat_msg": 453,
     "chat_session": 2,
     "commit": 26,
-    "repo_born": 1,
+    "repo_born": 2,
     "worktree": 4
    },
    "first_ts": "2026-07-20T07:14:30Z",
@@ -326,13 +326,13 @@
     "claude": 34,
     "third_party": 2
    },
-   "commit_copies": 72,
+   "commit_copies": 108,
    "commits": 36,
    "derek_share": 0.9444,
    "events": {
     "branch": 1,
     "commit": 36,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-07-01T17:39:34Z",
    "foreign_org": false,
@@ -343,22 +343,25 @@
    "id": "0a2dd31e35fa9ce6ee6518316bcc728a5feea44d",
    "kind": "git",
    "last_ts": "2026-07-03T02:03:14Z",
-   "members": 2,
+   "members": 3,
    "names": [
-    "conductor-mirror"
+    "conductor-mirror",
+    "djcdevelopment__conductor"
    ],
    "paths": {
     "omen-c": [
      "work/conductor-mirror.git"
     ],
     "omen-linux": [
-     "~/private-migration-20260923/conductor-mirror.git"
+     "~/private-migration-20260923/conductor-mirror.git",
+     "~/work/known-world/cache/clones/djcdevelopment__conductor.git"
     ]
    },
    "refs": 1,
    "region": null,
    "remotes": [
-    "100.74.110.91/home/claude/work/commandcenter"
+    "100.74.110.91/home/claude/work/commandcenter",
+    "github.com/djcdevelopment/conductor"
    ],
    "rooted": true,
    "roots": [
@@ -617,7 +620,7 @@
     "chat_msg": 996,
     "chat_session": 5,
     "commit": 10,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-05-17T18:03:32Z",
    "foreign_org": false,
@@ -665,7 +668,7 @@
     "chat_msg": 205,
     "chat_session": 6,
     "commit": 8,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-05-31T12:06:01Z",
    "foreign_org": false,
@@ -806,7 +809,7 @@
     "chat_msg": 202,
     "chat_session": 6,
     "commit": 6,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-06-04T08:09:46Z",
    "foreign_org": false,
@@ -849,7 +852,7 @@
    "events": {
     "branch": 1,
     "commit": 8,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-04-21T19:52:35Z",
    "foreign_org": false,
@@ -956,7 +959,7 @@
    "events": {
     "branch": 1,
     "commit": 1,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-06-23T06:02:10Z",
    "foreign_org": false,
@@ -1336,7 +1339,7 @@
    "events": {
     "branch": 2,
     "commit": 8,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-05-15T17:31:02Z",
    "foreign_org": false,
@@ -1379,7 +1382,7 @@
    "events": {
     "branch": 2,
     "commit": 42,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-03-24T07:44:19Z",
    "foreign_org": false,
@@ -1516,7 +1519,7 @@
     "chat_msg": 892,
     "chat_session": 23,
     "commit": 36,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-05-28T10:04:14Z",
    "foreign_org": false,
@@ -1645,7 +1648,7 @@
    "events": {
     "branch": 1,
     "commit": 1,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-04-04T15:01:30Z",
    "foreign_org": false,
@@ -1733,7 +1736,7 @@
     "chat_msg": 17,
     "chat_session": 1,
     "commit": 40,
-    "repo_born": 1,
+    "repo_born": 2,
     "worktree": 1
    },
    "first_ts": "2026-05-14T05:38:49Z",
@@ -1778,7 +1781,7 @@
     "chat_msg": 162,
     "chat_session": 1,
     "commit": 12,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-03-13T06:06:22Z",
    "foreign_org": false,
@@ -2257,7 +2260,7 @@
    "events": {
     "branch": 1,
     "commit": 2,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-05-15T17:32:11Z",
    "foreign_org": false,
@@ -2299,7 +2302,7 @@
    "events": {
     "branch": 1,
     "commit": 6,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-03-07T03:08:21Z",
    "foreign_org": false,
@@ -2386,7 +2389,7 @@
    "events": {
     "branch": 2,
     "commit": 48,
-    "repo_born": 1
+    "repo_born": 3
    },
    "first_ts": "2018-08-22T16:50:01Z",
    "foreign_org": false,
@@ -2586,7 +2589,7 @@
    "events": {
     "branch": 1,
     "commit": 2,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-04-09T06:50:37Z",
    "foreign_org": false,
@@ -2671,7 +2674,7 @@
     "chat_msg": 3228,
     "chat_session": 51,
     "commit": 56,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-05-17T18:44:07Z",
    "foreign_org": false,
@@ -2931,7 +2934,7 @@
     "chat_msg": 2944,
     "chat_session": 67,
     "commit": 295,
-    "repo_born": 1,
+    "repo_born": 2,
     "worktree": 11
    },
    "first_ts": "2026-04-18T18:11:51Z",
@@ -2996,7 +2999,7 @@
    "events": {
     "branch": 2,
     "commit": 6,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-04-06T07:05:50Z",
    "foreign_org": false,
@@ -3335,7 +3338,7 @@
     "claude": 71,
     "human": 9
    },
-   "commit_copies": 154,
+   "commit_copies": 159,
    "commits": 80,
    "derek_share": 1.0,
    "events": {
@@ -3343,7 +3346,7 @@
     "chat_msg": 68,
     "chat_session": 11,
     "commit": 80,
-    "repo_born": 1,
+    "repo_born": 2,
     "worktree": 11
    },
    "first_ts": "2026-09-27T09:37:06Z",
@@ -3356,9 +3359,10 @@
    "id": "91653aae293206f6e6f599238097dd2467b0b716",
    "kind": "git",
    "last_ts": "2026-10-03T02:41:20Z",
-   "members": 3,
+   "members": 4,
    "names": [
-    "continuity"
+    "continuity",
+    "djcdevelopment__continuity"
    ],
    "paths": {
     "am4": [
@@ -3368,14 +3372,16 @@
      "~/continuity"
     ],
     "omen-linux": [
-     "~/work/continuity"
+     "~/work/continuity",
+     "~/work/known-world/cache/clones/djcdevelopment__continuity.git"
     ]
    },
    "refs": 14,
    "region": null,
    "remotes": [
     "/home/derek/continuity-host/repos/continuity",
-    "192.168.12.220/home/derek/continuity-host/repos/continuity"
+    "192.168.12.220/home/derek/continuity-host/repos/continuity",
+    "github.com/djcdevelopment/continuity"
    ],
    "rooted": true,
    "roots": [
@@ -3526,7 +3532,7 @@
     "chat_msg": 20,
     "chat_session": 1,
     "commit": 136,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-04-25T09:03:11Z",
    "foreign_org": false,
@@ -3807,7 +3813,7 @@
     "chat_msg": 3887,
     "chat_session": 19,
     "commit": 72,
-    "repo_born": 1,
+    "repo_born": 2,
     "worktree": 7
    },
    "first_ts": "2026-09-04T05:12:09Z",
@@ -3954,7 +3960,7 @@
     "chat_msg": 23,
     "chat_session": 2,
     "commit": 4,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-06-04T05:06:53Z",
    "foreign_org": false,
@@ -3996,7 +4002,7 @@
    "events": {
     "branch": 1,
     "commit": 43,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-09-17T09:39:53Z",
    "foreign_org": false,
@@ -4133,7 +4139,7 @@
     "chat_msg": 156,
     "chat_session": 6,
     "commit": 88,
-    "repo_born": 1,
+    "repo_born": 2,
     "worktree": 1
    },
    "first_ts": "2026-04-09T09:55:57Z",
@@ -4226,7 +4232,7 @@
    "events": {
     "branch": 1,
     "commit": 27,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-01-17T04:37:47Z",
    "foreign_org": false,
@@ -4439,7 +4445,7 @@
    "derek_share": 1.0,
    "events": {
     "commit": 5,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-03-07T00:45:42Z",
    "foreign_org": false,
@@ -4481,7 +4487,7 @@
    "events": {
     "branch": 1,
     "commit": 10,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-03-07T03:09:08Z",
    "foreign_org": false,
@@ -4524,7 +4530,7 @@
    "events": {
     "branch": 1,
     "commit": 1660,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-03-17T07:52:49Z",
    "foreign_org": false,
@@ -4567,7 +4573,7 @@
    "events": {
     "branch": 1,
     "commit": 20,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-04-03T06:02:14Z",
    "foreign_org": false,
@@ -9138,7 +9144,7 @@
    "events": {
     "branch": 1,
     "commit": 1,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-06-22T10:35:08Z",
    "foreign_org": false,
@@ -9268,6 +9274,48 @@
   },
   {
    "authors": {
+    "human": 2
+   },
+   "commit_copies": 2,
+   "commits": 2,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 2,
+    "repo_born": 2
+   },
+   "first_ts": "2026-03-21T13:16:57Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "e798eebf8ed12467eb710753cf57ab13333bcaa8",
+   "kind": "git",
+   "last_ts": "2026-04-09T05:58:02Z",
+   "members": 1,
+   "names": [
+    "djcdevelopment__contextforge-contracts"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/known-world/cache/clones/djcdevelopment__contextforge-contracts.git"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/contextforge-contracts"
+   ],
+   "rooted": true,
+   "roots": [
+    "e798eebf8ed12467eb710753cf57ab13333bcaa8"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
     "claude": 8,
     "human": 3
    },
@@ -9373,7 +9421,7 @@
     "chat_msg": 13,
     "chat_session": 1,
     "commit": 20,
-    "repo_born": 1,
+    "repo_born": 2,
     "worktree": 1
    },
    "first_ts": "2026-08-07T15:25:59Z",
@@ -9419,7 +9467,7 @@
     "chat_msg": 705,
     "chat_session": 59,
     "commit": 35,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-04-09T09:09:14Z",
    "foreign_org": false,
@@ -9461,7 +9509,7 @@
    "events": {
     "branch": 1,
     "commit": 13,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-03-07T03:08:43Z",
    "foreign_org": false,
@@ -9550,7 +9598,7 @@
    "events": {
     "branch": 1,
     "commit": 29,
-    "repo_born": 1
+    "repo_born": 2
    },
    "first_ts": "2026-04-06T19:50:37Z",
    "foreign_org": false,
@@ -9651,6 +9699,42 @@
    "region": null,
    "remotes": [
     "github.com/djcdevelopment/battlemage"
+   ],
+   "rooted": false,
+   "roots": [],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {},
+   "commit_copies": 0,
+   "commits": 0,
+   "derek_share": 0.0,
+   "events": {
+    "repo_born": 1
+   },
+   "first_ts": null,
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "github:djcdevelopment/claudefarm",
+   "kind": "git",
+   "last_ts": null,
+   "members": 1,
+   "names": [
+    "djcdevelopment__claudefarm"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/known-world/cache/clones/djcdevelopment__claudefarm.git"
+    ]
+   },
+   "refs": 0,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/claudefarm"
    ],
    "rooted": false,
    "roots": [],
@@ -10073,7 +10157,7 @@
   }
  ],
  "link_basis": {
-  "root": 37,
+  "root": 39,
   "sha_overlap": 4,
   "worktree": 42
  },

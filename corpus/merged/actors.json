@@ -756,7 +756,7 @@
   },
   {
    "class": "human",
-   "events": 11205,
+   "events": 11248,
    "first_ts": "2011-08-25T19:45:52Z",
    "hosts": [
     "omen-linux",
@@ -767,12 +767,12 @@
     "github"
    ],
    "kinds": {
-    "branch": 801,
-    "commit": 4714,
+    "branch": 802,
+    "commit": 4716,
     "file_birth": 3273,
     "file_update": 1793,
     "offload_call": 223,
-    "repo_born": 176,
+    "repo_born": 216,
     "worktree": 225
    },
    "last_ts": "2026-10-09T13:33:18Z",

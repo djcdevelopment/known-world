@@ -1,9 +1,8 @@
 # Strategy: cartographer (Known World, 2026-10-09)
 
-Angle: lay the world out first, and lay it out so it can be read. The world is computed once from the final corpus, it
-never moves while the film runs, and it grows outward from its oldest ground. Everything else (fog, launches, sound,
-the border) is drawn as state on top of that fixed map. Every number below comes from `corpus/merged/` (prototype
-counts run against `events.ndjson` and `repos.json` for this strategy) or from `spikes/01-canvas-budget/RESULT.md`.
+Angle: the world is laid out once from the final corpus, never moves, and grows outward from its oldest ground; fog,
+launches, sound and the border are state drawn on that fixed map. Numbers come from prototype counts over
+`corpus/merged/` run for this strategy, or from `spikes/01-canvas-budget/RESULT.md`.
 
 ## 0. What the corpus gives the map
 
@@ -19,10 +18,10 @@ counts run against `events.ndjson` and `repos.json` for this strategy) or from `
 | Third-party commits | about 22,800, mostly 2023 to 2026 upstream history |
 | Tile reveals per month, 2026-03 to 2026-10 | 360, 295, 316, 174, 356, 427, 744, 284 (37 before 2025-11) |
 
-Two findings shape the layout. First, third-party history must not be replayed: about 16,000 upstream commits dated
-2023 to 2025 would light grey ground in era B that Derek never touched then. Second, era A is almost empty of own work
-(one own commit in 2017, 45 commits in own lineages from 2018 to 2022 classed `third_party` by actor, probably
-identity-map gaps). Era A's 46 seconds belong to the GitHub archipelago rising from `created_at` dates.
+Two findings shape the layout. Third-party history must not be replayed: about 16,000 upstream commits dated 2023
+to 2025 would light ground Derek never touched then. And era A is nearly empty of own work (one own commit in 2017; 45
+commits in own lineages 2018 to 2022 classed `third_party` by actor, likely identity-map gaps), so era A belongs to
+the GitHub archipelago rising from `created_at` dates.
 
 ## 1. World layout
 
@@ -34,12 +33,11 @@ From `repos.json` per lineage: `id`, `kind`, `hosts`, `paths` (per host), `first
 comes from `meta.hosts` on commits (a commit on two hosts touches the tile in both regions) and from `host` on
 `file_birth`; the tile's first-touch time; and a tile weight `w` that stands in for file count.
 
-`w` per tile = sum of `file_birth.magnitude.n` + sum over commits of `magnitude.files / len(files)` (a commit's file
-count apportioned across the depth-2 directories it touched). Measured distribution: p50 2, p90 26, top 37,041 (a
-model or vendor directory). Data request for collection v1.4: a tip-tree file count per depth-2 directory, read with
-`cat-file` tree walks and emitted as counts only; the proxy holds until then. Second request: Merge drops which
-worktree record a commit came from; keep `meta.records` (hashed `repo_local` list) so MIRV warheads can target
-worktree spurs exactly. Until then warheads target the distinct depth-2 tiles and hosts of the episode.
+`w` = sum of `file_birth.magnitude.n` + sum over commits of `magnitude.files / len(files)` (file count apportioned
+over the depth-2 directories touched); measured p50 2, p90 26, max 37,041. Data requests for collection v1.4: a
+tip-tree file count per depth-2 directory (`cat-file` tree walk, counts only) to replace the proxy; and `meta.records`
+(hashed `repo_local` list) on merged commits, so MIRV warheads can target worktree spurs exactly (until then they
+target the episode's distinct depth-2 tiles and hosts).
 
 Names are read for joins only and never drawn: no region label appears on screen (privacy, and the honesty rule).
 
@@ -51,22 +49,19 @@ The measured weights give about 1.7 cells per tile, about 7,500 cells for 4,387 
 
 ### 1.3 Regions (repos and `dir:` lineages, one per lineage × host)
 
-Each region is a contiguous blob grown in **spiral order from its seed**, and tiles take consecutive runs of that
-spiral **sorted by first-touch time**. So a region's oldest tiles sit at its core and its newest at its rim: when a
-region is explored it visibly grows outward, and the final map reads as tree rings. A one-hex coast gap separates
-regions, so each one is a legible island of colour inside its continent.
+Each region is a contiguous blob grown in **spiral order from its seed**; tiles take consecutive runs of the spiral
+**sorted by first-touch time**, so the oldest tiles are the core and the newest the rim. Exploration visibly grows a
+region outward and the final map reads as tree rings. A one-hex coast gap keeps each region a legible island.
 
 Region footprint radius `R_reg = ceil(sqrt(cells / 2.6)) + 1` (in hexes). Third-party regions (the ruins) take a seed
 on the outer ring of their continent, so foreign ground never sits in the core.
 
 ### 1.4 Continents (surfaces) by first-fit spiral disc packing
 
-For each surface, regions are sorted by `(first_ts, id)` and placed one at a time: the seed search walks a hex spiral
-outward from an anchor and takes the first position where the region's disc does not overlap a placed disc.
-The anchor is the continent centre, except for regions with a bridge: their anchor is offset `0.6 · R_cont` toward
-the partner continent, so bridge-carrying regions (commandcenter, llama.cpp, continuity, the gallery lineages) settle
-on the facing coasts and bridges stay short. Sorting by first touch puts the oldest regions near the centre. A new
-corpus run that only adds later lineages appends them at the rim and leaves the earlier positions alone.
+Per surface, regions sorted by `(first_ts, id)` are placed in turn: a hex spiral walks outward from an anchor to the
+first seed whose disc overlaps no placed disc. The anchor is the continent centre, or for a bridged region a point
+`0.6 · R_cont` toward the partner continent, so bridged regions settle on facing coasts and bridges stay short. Old
+regions sit central; a later corpus run that adds lineages appends them at the rim without moving earlier ones.
 
 ### 1.5 Macro geography (fixed slots, scaled by final area)
 
@@ -76,31 +71,25 @@ corpus run that only adds later lineages appends them at the rim and leaves the 
                                                              AM4 (SE), FX99 (NE)
 ```
 
-The Windows continents sit west and touch across a narrow strait (E: and C: share 6 lineages). omen-linux sits east
-across open sea, so the migration (2026-09) is a lit bridge crossing water while the west dims. AM4 and FX99 are
-smaller landmasses off the Linux coast (305 and 15 tiles). Continent radius `R_cont` comes from its final cell count.
-The terrain tint per surface is the only surface colour: a cold, low-chroma tint 4 to 6 OKLCH lightness points above
-the background.
+The Windows continents share a strait (6 lineages span E: and C:); omen-linux lies across open sea, so the migration
+is a bridge lighting over water while the west dims; AM4 (305 tiles) and FX99 (15) lie off the Linux coast. `R_cont`
+follows final cell count. Surfaces carry only a low-chroma terrain tint 4 to 6 OKLCH lightness points above the
+background.
 
 ### 1.6 Lineage bridges, the archipelago, spurs, seats and HQ
 
-- **Bridges**: one quadratic arc per pair of regions of a lineage, centroid to centroid, bowed northward by 0.15 of
-  its length; dark until both regions have a revealed tile, then a thin line in the lineage's last-touch hue, whose
-  brightness follows the lower activity of its two ends.
-- **GitHub archipelago**: all 54 listed repositories are islands in the north sea band, `cells = clamp(1 +
-  floor(log10(1 + kb)), 1, 5)`, ordered west to east by `created_at`. An island rises (fades in over 1 s of output
-  time) at its `created_at`; this is all of era A. When the matching local region appears, a **harbour mark** (a small
-  notch glyph) appears on that region's coast, and a hairline links it to the island. Forks are grey islands; the 2
-  GitHub-only lineages stay islands without a harbour.
-- **Worktree spurs**: each worktree is a 2-to-5-hex line out of its region's rim at angle `djb2(ref) mod 360`, length
-  `2 + log2(1 + commits)`; lit while active and decaying to a dim stub. Commandcenter's 107 spurs make the fleet era a
-  visible hedgehog. Branches are 1-hex rim notches (790 of them), never lines.
-- **Seat beacons**: a small diamond at the capital of each continent that serves models (omen-linux B70 seats, AM4,
-  FX99). Offload sparks end there.
-- **Operator HQ**: a ring marker at the capital of the surface with the most chat minutes over the trailing 7 story
-  days, eased between capitals over 3 s of output time. It sits at the future omen-c capital during the ChatGPT years
-  (rings broadcast into a void where a continent will later rise) and moves to omen-linux during the migration. The
-  move is shown without a caption.
+- **Bridges**: a quadratic arc per region pair of a lineage, bowed 0.15 of its length; dark until both ends are
+  revealed, then a hairline in the last-touch hue at the lower activity of its two ends.
+- **GitHub archipelago**: all 54 listed repositories are islands in the north band, `cells = clamp(1 + floor(log10(1
+  + kb)), 1, 5)`, west to east by `created_at`, each rising at that date (most of era A). When the local region
+  appears, a **harbour mark** lands on its coast with a hairline to the island. Forks are grey; the 2 GitHub-only
+  lineages stay harbourless.
+- **Worktree spurs**: a line off the rim at angle `djb2(ref) mod 360`, length `2 + log2(1 + commits)` hexes, lit
+  while active, decaying to a stub; commandcenter's 107 make the fleet era a hedgehog. Branches (790) are rim notches.
+- **Seat beacons**: a diamond at the capital of each model-serving continent (omen-linux, AM4, FX99); sparks end there.
+- **Operator HQ**: a ring at the capital of the surface with the most chat minutes over the trailing 7 story days,
+  eased over 3 s. Through the ChatGPT years it broadcasts rings into the void where omen-c will rise; it crosses to
+  omen-linux with the migration, uncaptioned.
 
 ### 1.7 Final size at 1080p
 
@@ -115,56 +104,52 @@ bounding box. That gives a hex radius of about 6 px on the final pull-back (a te
 
 A piecewise map `film(ts)` from story time to film seconds: era A 2011-08-25 to 2023-04-01 at 4 s per year (46.4 s),
 era B to 2026-03-01 at 2.5 s per month (87.5 s), era C to 2026-10-09T12:45Z at 2.4 s per day (533 s). Total 667 s,
-plus a 6 s settle and an 8 s tally card: 681 s, 20,430 frames at 30 fps. Era joins blend log-rate across 2 s of output
-so the speed changes without a jerk. The ticker shows the date (UTC; lap switch `ticker_tz`) and the current rate
-("1 day = 2.4 s").
+plus a 6 s settle and an 8 s tally card: 681 s, 20,430 frames at 30 fps. Era joins blend log-rate over 2 s. The ticker
+shows the date (UTC, `ticker_tz`) and the rate.
 
 ### 2.2 Event to tile touches (infrastructure field)
 
-Each commit (own, or own work inside a third-party lineage), `file_birth`, joined `chat_msg`, branch and worktree
-event yields touches `(tile, t_film, weight, class)`: commit weight `1 + log2(1 + lines)/4` per touched depth-2 tile,
-file_birth `0.5 + log10(1 + n)/2`, chat minute 0.15 (chat lights ground faintly; it does not build it). Third-party
-upstream history yields no touches. A third-party region is revealed whole, as found land, at its clone time (its
-earliest local `repo_born`, or the first own event in it).
+Own commits (including own work inside a third-party lineage), `file_birth`, `file_update` (contract v1.4), joined
+`chat_msg`, branch and worktree events yield touches `(tile, t_film, weight, class)`: commit `1 + log2(1 + lines)/4`
+per depth-2 tile, file_birth and file_update `0.5 + log10(1 + n)/2`, chat minute 0.15. Upstream history yields none;
+a third-party region appears whole, as found land, at its clone time. A lineage's tiles touched only by births and
+updates before its first commit are revealed by them, so pre-git ground exists before the repo does.
 
-**Decay**, pure and closed-form: per tile, the touch times `t_k` are sorted and the activity just after each touch is
-precomputed, `A_k = A_{k-1} · 2^(-(t_k - t_{k-1})/h) + w_k`, with `h = fog_half_life_days` in story time converted per
-era. At render time a binary search finds the last `k` with `t_k ≤ t`, then `A(t) = A_k · 2^(-(t - t_k)/h)`, with a
-0.3 s output-time attack ramp so no tile pops. Fog state: unknown if `t < t_first`; explored lightness `L_floor`;
+**Decay**, pure and closed-form: per tile, sorted touches `t_k` carry precomputed `A_k = A_{k-1} · 2^(-(t_k -
+t_{k-1})/h) + w_k` (`h = fog_half_life_days`, story time). Render binary-searches the last `t_k ≤ t` and takes `A(t) =
+A_k · 2^(-(t - t_k)/h)`, with a 0.3 s attack ramp so no tile pops. Fog state: unknown if `t < t_first`; explored lightness `L_floor`;
 active lightness `L_floor + (1 - L_floor) · (1 - e^(-A/A0))`, hue from the class of the most recent touch.
 
-**Readability (criterion 2)**: measured in 0.8-story-hour bins (one era C frame), at most 98 tiles are touched in a
-frame and the p99 is 31, against 1,000+ explored tiles after 2026-04 and 3,000+ by 2026-09. With the attack ramp that
-is under 10% of tiles changing per frame after the first fortnight of era C. Infrastructure peaks (342 own commits per
-film-second on 2026-03-17; 730 chat ticks per film-second as August's mean) land only in tile brightness, the hum and
-the radio band. Nothing is drawn per event.
+**Readability**: in 0.8-story-hour bins (one era C frame) at most 98 tiles are touched per frame (p99 31), against
+1,000+ explored tiles after 2026-04 and 3,000+ by 2026-09: under 10% changing per frame after era C's first fortnight.
+Infrastructure peaks (342 own commits per film-second on 2026-03-17; August's 730 chat ticks per film-second) reach
+only tile brightness, the hum and the radio band; nothing is drawn per event.
 
 ### 2.3 Launches (`launches.json`, CONTRACT section 8)
 
-Episodes per lineage close on a gap over `episode_gap_h`. Sessions join on cwd and an overlap of
-`session_overlap_min`, and episodes below `min_yield` stay infrastructure. A prototype of this rule over the corpus
-finds **1,001 episodes and 902 tests**: 1 in 2023-11, 1 in 2025-07, then 12, 56, 59, 93, 71, 171, 175, 209, 54 per
-month from 2026-01 to 2026-10, with a peak of 15 tests on one story-day. In log10 lines the counts run 1, 79, 317, 370,
-110, 21, 4 for bands 0 to 6.
+Episodes per lineage close on `episode_gap_h`; sessions join on cwd ± `session_overlap_min`; below `min_yield` stays
+infrastructure. The reference counts are PROBE-00's (`laps/PROBE-00-launches/RESULT.md`): 1,047 tests, **415
+launches**, 215 single and 200 MIRV, MIRVs from 2026-03, at parity in May, dominant July and August. My own prototype
+(third-party-actor commits also dropped) gives 902 tests, 12 to 209 per month in 2026, peak 15 on one story-day.
+**Non-git episodes** (v1.4): a day with ≥ `min_yield.files` births plus updates in a `dir:` region, or in a lineage
+before its first commit, opens an episode (`episode_gap_days` 1); yield in files, bytes and moving pieces. These are
+the early tests, and they land on `dir:` regions and on pre-git cores.
 
-**Shape**: an *engagement* joins tests on different lineages (or hosts) whose windows fall within `episode_gap_h` of
-each other and that share a session class, capped at a 12-story-hour span so the busy months do not chain into one
-blob (the uncapped prototype chained up to 30 h). An engagement with `≥ mirv_min_targets` targets is one MIRV with N
-warheads. The prototype found 356 engagements, 186 of them on two or more lineages, first in 2026-03 (11), peaking
-2026-07 (46). A unification is a test on a parent lineage with yield class ≥ 4 within `unify_window_h` after ≥ 2
-warheads hit its worktrees or components.
+**Shape**: a launch joins tests on different lineages or hosts whose starts fall within `episode_gap_h`, capped at
+`engagement_max_span_h` 12 so busy months do not chain (uncapped, my prototype chained to 30 h). `≥ mirv_min_targets`
+targets make a MIRV of N warheads; a unification is a class ≥ 4 test on a parent lineage within `unify_window_h` of
+≥ 2 warheads on its worktrees or components.
 
-**Peak launch density, designed for**: 14 tests (warheads) in the busiest film-second of era C (a 10-story-hour
-window) and 4 engagements (beams) in that second; 6.3 per second over the peak day. 14 is above
-`collapse_events_per_s = 8`, but the warheads of one MIRV share one beam, one tone and one landing burst, so the
-collapse rule fires only when separate engagements overlap. In the 90 s cut (×7.6) that peak becomes about 30 beams
-per second, and the collapse rule is what keeps the cut legible.
+**Peak launch density, designed for**: 14 tests (warheads) and 4 launches (beams) in the busiest era C film-second
+(10 story-hours); 6.3 tests per second across the peak day; mean one launch per 1.3 s. Warheads of a MIRV share a
+beam, a tone and a landing burst, so `collapse_events_per_s = 8` fires only when launches overlap; in the 90 s cut
+(×7.6) the peak is about 30 beams per second and collapse carries it.
 
-**Nation**: the contract orders commits, then session, then human. The prototype assigns 523 tests to Claude, 362 to
-human, 14 to automation and only 3 to Codex, against 71,842 Codex events. Commits without a trailer read as human
-even when a Codex session conducted them. Lap switch `nation_rule: commits_first | sessions_first`. Under
-sessions_first, a test whose commits are human without a trailer takes the class of the joined session with the most
-messages in its window. The industry curve depends on this switch.
+**Nation**: under the contract order PROBE-00 gives human 165, Claude 236, Codex 10, automation 4 against 71,842
+Codex events: trailerless commits read as human when a Codex session did the work. Lap switch `nation_rule:
+commits_first | sessions_first` (trailerless commits take the class of the joined session with most messages); the
+industry curve depends on it. Non-git episodes may carry `chatgpt` with `nation_inferred: true`: drawn with a hollow
+flash core and an open ring, never a solid one (`inferred_nation_render: marked | human`).
 
 **Yield class**: `class = clamp(floor(log10(lines)), 1, 6)` by default (`yield_basis: lines | composite`, composite =
 lines + 40·files + 400·integrations + 100·moving pieces, the bands re-cut on quantiles). Episodes of more than 20,000
@@ -172,26 +157,23 @@ lines per commit are vendored imports or migration copies: lap switch `yield_cap
 
 ### 2.4 Nations (`nations.json`)
 
-Ordered by first appearance, per class and per model generation (from commit trailers, session `models` and offload
-`backend`/`model`). The hue is fixed per class (DIRECTION), and generations are OKLCH lightness and chroma steps of
-that hue (`generation_shades`). ChatGPT enters at 2023-04 with zero tests: its entry is its first broadcast ring and it
-has no tone.
+Ordered by first appearance, per class and per canonicalised generation (PROBE-00 counts about sixty in a year:
+`opus-4-7` = `opus-4.7`, seats mapped to models). The border lists the eight classes; each class row grows a strip of
+generation chips, one OKLCH shade step per generation, added at that generation's first test. No caption is drawn at
+the flash; the legend carries identity. ChatGPT enters at 2023-04-17 with its first broadcast ring.
 
 ### 2.5 Camera keyframes (`camera.json`)
 
 Computed at compile time, one keyframe per output second, rendered by monotone cubic interpolation:
 
-1. `bbox(t)` = bounds of tiles revealed by `t + lookahead` (lookahead 6 s of output), plus visible islands and the HQ.
-   Because reveal is monotone, `bbox` only grows.
-2. Target scale `s* = min(Wv/bw, Hv/bh) · (1 - 2·camera_pad)`, capped so a hex is ≤ 40 px.
-3. **No zoom-in** after era C begins (`zoom_in_allowed: false`): `s(t) = min(s(t-1), s*(t))`. The camera only ever
-   pulls back, so it cannot jitter.
-4. A forward-backward exponential smoother (τ = 4 s) on centre and log-scale, then a clamp so the eased frame still
-   holds every revealed tile.
-5. The last keyframes frame the whole final world: the pull-back of the ending.
+1. `bbox(t)` = tiles revealed by `t + 6 s` lookahead, plus visible islands and HQ; reveal is monotone, so it only grows.
+2. Target scale `s* = min(Wv/bw, Hv/bh) · (1 - 2·camera_pad)`, capped at 40 px per hex.
+3. **No zoom-in** in era C (`zoom_in_allowed: false`): `s(t) = min(s(t-1), s*(t))`; a camera that only pulls back
+   cannot jitter.
+4. A forward-backward exponential smoother (τ = 4 s) on centre and log-scale, clamped to keep every revealed tile in.
+5. The final keyframes frame the whole world: the ending's pull-back.
 
-The lookahead means the camera starts making room before the Linux continent appears, so a new landmass never
-arrives off screen. Before 2026, the frame holds the archipelago and the HQ point at the 40 px cap.
+The lookahead makes room before the Linux continent rises, so no landmass arrives off screen.
 
 ### 2.6 Field series (`fields.bin`)
 
@@ -203,9 +185,8 @@ count per seat, cumulative tallies per surface and per nation. The 90 s cut samp
 Offline numpy, 48 kHz stereo, written as WAV, from the same `timeline.json` and `launches.json` (sample index =
 `round(t_out · 48000)`), so the sound is aligned by construction.
 
-- **Launch tone**: pitch by nation (human A3, Claude E4, Codex G4, OpenCode B4, local C3, automation D4). Sine plus
-  two partials whose balance shifts per generation, so a generation changes the timbre, not the pitch. Length
-  `0.18 · 1.45^class` s, gain `-24 + 3·class` dB, exponential release.
+- **Launch tone**: pitch by nation (human A3, Claude E4, Codex G4, OpenCode B4, local C3, automation D4); sine plus two
+  partials whose balance marks the generation; length `0.18 · 1.45^class` s, gain `-24 + 3·class` dB.
 - **MIRV**: one rising 120 ms chirp for the beam, then N ticks an octave up, spread over 300 ms and panned to their
   warheads.
 - **Unified**: the nation's tone with a fifth below, twice the length.
@@ -226,13 +207,13 @@ One HTML page, Canvas 2D, `render(t_out, profile)` pure: no `Date`, no `Math.ran
 
 | Module | From RaidUI | Role |
 |---|---|---|
-| `clock.js` | playback-controller `_tick` | preview playback; export calls `render(t)` directly |
-| `state.js` | render-state pattern | (data, t) → scratch Float32Arrays: tile activity, camera, active launches |
-| `index.js` | new | sorted Float64Array event indices with upper-bound search; per-tile touch slices |
-| `layout.js` | new | Path2D per tile and region coast in world units, built once from `layout.json` |
-| `palette.js` | palette.js OKLCH | class hues, generation shades, terrain tints |
-| `layers/*.js` | registry compositor | ordered layers, save/restore, per-layer try/catch |
-| `border.js` | Transport readout idea | ticker, legend, tallies, radio band in screen space |
+| `clock.js` | playback-controller `_tick` | preview; export calls `render(t)` directly |
+| `state.js` | render-state | (data, t) → scratch Float32Arrays: activity, camera, live launches |
+| `index.js` | new | sorted Float64Array indices, upper-bound search, per-tile touch slices |
+| `layout.js` | new | Path2D per tile and coast in world units, built once |
+| `palette.js` | palette.js | OKLCH class hues, generation shades, terrain tints |
+| `layers/*.js` | registry | ordered layers, save/restore, per-layer try/catch |
+| `border.js` | Transport readout | ticker, legend, tallies, radio band |
 
 **Draw order**:
 
@@ -311,8 +292,7 @@ story time compresses.
 
 ## 8. Open risks
 
-See the structured output; the essentials: identity-map gaps empty era A; the Codex nation is undercounted under
-commits_first; the file-count proxy for tile area; worktree attribution lost at merge; engagement chaining in the busy
-months; vendored imports inflating yield; the export estimate is extrapolated from a single-page spike; GitHub private
-repositories pending auth (the archipelago is the public view only); the 2026-04 chat hole leaves no session beams that
-month.
+Identity-map gaps empty era A; Codex is undercounted under commits_first; tile area rests on a file-count proxy;
+worktree attribution is lost at merge; engagements chain in busy months; vendored imports inflate yield; the export
+estimate extrapolates a single-page spike; the archipelago is the public view until `gh` auth; the 2026-04 chat hole
+leaves that month without beams.

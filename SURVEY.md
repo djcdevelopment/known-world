@@ -281,3 +281,47 @@ aggregation design exists; sparse events are only timeline pips).
 **Ideas to keep:** stateless renderer and a separate ref-based clock; allocation-free hot path; loud schema-version
 check with unknown enums dropped; interpolation in the renderer, not at parse time; alpha from real frame times so
 irregular spacing is tolerated. Tests are Node's built-in runner on `*.test.cjs` (no browser tests).
+
+## 4c. manifest: Derek's relationship graph between projects (surveyed 2026-10-09)
+
+`E:\work\manifest` (`/mnt/omen-e-read/work/manifest`, 36 commits 2026-05-28 → 09-23, newest copy; the C:
+`am4-harvest/manifest` copy is stale at 2026-06-05) is the constellation-manifest framework (Python 3.11+, pydantic 2,
+PyYAML; `framework load --json <constellation.yaml>` validates and dumps; needs pydantic, which this host lacks, so a
+PyYAML `safe_load` is the pragmatic read, skipping validation and defaults against ADR-011's advice). The manifest
+repo holds no constellation files: the **12 live `constellation.yaml` files sit in the member repos' roots** and
+`fleet.yaml` (generated 2026-09-23) only indexes them with Windows paths.
+
+| Constellation | File | Repos | depends_on | contracts |
+|---|---|---|---|---|
+| GAD | `E:\work\gad` | 20 | 21 | 1 |
+| ai-systems-research | `E:\work\ai-systems-research` (mtime 2026-09-26, post-commit edits) | 8 | 5 (+2 parent) | 6 |
+| planning-spine | `E:\work\planning` | 10 | 3 | 3 |
+| creator-os | `C:\work\baseline` | 20 | 23 | 5 |
+| omen-core | `C:\work\commandcenter` | 12 | 8 | 4 |
+| steppe | `C:\work\steppeintegrations-site` | 11 | 3 | 1 |
+| p2p-inference, lumberjacks | `C:\work\irc`, `C:\work\lumberjacks-platform` | 2 each | 1 each | 1 each |
+| career-proof, 404-mesh, open-notebook, contextlandscape | `E:\resume`, `C:\work\404`, `C:\work\notebook`, `C:\work\contextlandscape` | 1 each | 0 | intra-repo only |
+
+Schema (`framework/src/constellation_manifest/models.py`, 645 lines): a `RepoEntry` node has `name`, `kind`
+(git | filesystem | monorepo-package), `github` (`org/repo` slug, not a URL), `local_path` (Windows), `aliases`, `role`,
+`producer_type`, `lifecycle`, `primary`, `surfaces`, and the edges `depends_on` (untyped, directed, by name) and
+`parent`; `Contract` is producer → consumers (`scope` cross-repo | intra-repo); `DataSource` → `consumed_by`;
+`PipelineTool` is constellation-wide. **No dates in the YAML.** 87 unique repo names, 74 github slugs (`sealcompanion`
+and `deepnorthtesting` share one); ~13 filesystem-only repos join by directory name. Name differences from remotes:
+old-goat-new-tricks = llmquest, guild = goatsafterdark, img = tempo-imagegen, reader = indexcard, planner = start-planner.
+
+The typed graph: `exports/jepa-graph.v1.json` (181 KB, plain JSON; a 2026-06-01 snapshot beside it): 88 nodes, 134
+directed edges typed consumes 78, produces_data_for 36, verifies 7, leases_hardware_to 3, describes_topology_for 3,
+extracted_from 2, replaces 2, hosts_awareness_for, control_plane_for, bridges_traffic_to 1 each; `valid_from` dates are
+compiler-inferred (hard-coded or latest-commit fallbacks: rough ordering only, never truth); 8 self-edges to filter;
+names lower-cased (`selfiestick`, `chatgpt_parser`). 358 `important_artifacts` (ADRs, handoffs, benchmarks) carry a
+real `created_at`. `/home/derek/work/jepa-temporal-lineage-20260925/` (immutable; read only) already resolved these
+edges: `relationships-resolved.json`, `entity-resolution.json`, `git-history.json`.
+
+Reuse: constellation = hex cluster with its `primary` repo at the centre; `depends_on`, `parent`, `consumes`,
+`extracted_from`, `replaces` = adjacency; cross-constellation edges and `bridges_traffic_to`, `leases_hardware_to`,
+`control_plane_for`, `describes_topology_for` = bridges; integrations per repo = cross-repo contracts produced or
+consumed + data_sources + depends_on in and out (intra-repo contracts excluded). Join to lineages by github slug, then
+directory basename and aliases. Relationship dates come from our own corpus (an edge cannot predate either endpoint's
+first commit); only GAD and ai-systems-research have a real YAML history (first commit 2026-05-24), the other ten were
+batch-committed 2026-09-23.

@@ -27,7 +27,7 @@ Videos (git-ignored): `out/full/final.mp4` 83.1 MB, `out/cut/final.mp4` 16.7 MB.
 | FX99 | 43 | 1,157 | 965 |
 | GitHub | 0 | 0 | 0 |
 
-World `files` (ticker and card) = files changed in commits (100,770) + files created (118,462) + files updated (26,465) outside git, bulk copies excluded.
+World `files` (ticker and card) = files changed in counted commits (88,847) + files created (118,462) + files updated (26,465) outside git, bulk copies excluded.
 Not in any total: 1,151 third-party-class commits in Derek's lineages (11,923 files, 2,586,053 lines) and 23,451 commits in third-party clones (122,495 files, 17,227,908 lines).
 Excluded bulk-copy records: 680,125 births and 62,411 updates.
 
@@ -79,7 +79,7 @@ LAP-07 was 196.2 / 242.4 s: the panels add 3 percent. Compile 18 s full, 5 s cut
 - **The 11,164 commits without numstat are not in any displayed total.** All of them sit in third-party clones (11,138 third-party class, 26 other), which launches and totals exclude. The
   footer's third line therefore says so instead of "count as commits and files, 0 lines" (the code writes that sentence if any counted commit lacks numstat; today it is 0).
 - Lines are the corpus numbers uncapped (launch yield keeps its 20,000 lines per commit cap), so human 10.7M added is larger than the launch yield figure beside it (1.9M); two kinds of number on one panel.
-- Bulk copies are left out of files created (742,536 records' files); counting them would put E: at about 573k created. Created and updated are per surface only; per nation only under the inferred arm.
+- Bulk copies are left out of files created (742,536 files); counting them would put E: at about 573k created. Created and updated are per surface only; per nation only under the inferred arm.
 - The world row on the tally card and the `files` definition (commit files + non-git creations + updates) are builder choices.
 - The old `c / f` capacity line stays under the yield line (duplicating the new rows) to keep the existing look; it can go if Derek wants the panel quieter.
 

@@ -196,6 +196,29 @@ Rules:
   and never appear in the export; the export's ruler carries the marks faintly.
 - **Eye path:** top-left, centre, right, bottom. Mobile stacks the same four zones in that order.
 
+## Iteration 2 (Derek's brief, 2026-10-10): geography revised, the start, the score, honesty rules
+
+Binding, and recorded with their reasons in `DECISIONS.md`; the reveal rules in `HISTORY.md`.
+
+- **Projects are the land, machines are the weather.** Continents are the constellations from the manifest
+  (GAD, creator-os, omen-core, planning-spine, ai-systems-research, steppe, and the smaller ones), packed from the
+  world's centre in order of first touch; loose lineages form an archipelago. A region carries a host badge and a faint
+  tint for where its bytes are evidenced to be; the tint changes when a copy or a session appears on a new host, so the
+  Windows-to-Linux move reads as the tint sweeping the map in September. GitHub is a harbour mark on a pushed lineage,
+  never land. Bridges are cross-constellation relationships and MIRV connectors only.
+- **The start is 2026-01-01**, one rate (2.4 s per day; 2.0 is the arm), a three-second prologue card before the first
+  frame: what came before, in one line. Long-lived lineages first-touch in 2026 for that reason, said on the card.
+- **The timeline is a short score** in the export: one stave per nation; a test is a note at its yield band; a MIRV a
+  chord; a unified launch a tied note; the commit rate a dynamics wedge; chatter a stipple; bars are days; hashmarks
+  are rehearsal letters. The full score (lineage lanes) is one key away in the player.
+- **Nothing reveals the future.** Geometry is retrospective, visibility never: a thing appears at its first evidence;
+  the camera reacts after land appears; coast edges follow revealed neighbours; regime marks are confirmed with a lag.
+- **Geometry is computed, not assumed.** Nation rows are `clamp(floor((panel − 16) / N), 96, 136)` with slots reserved
+  from the final count; nothing reflows during playback.
+- **The story must read without names.** Before any density is added, two grammar fixes: bridges get a static double
+  hairline that brightens once when they light; the host tint uses two visibly different tints (Windows-era drives,
+  Linux-era hosts) and a quiet ruler mark when a region's tint changes.
+
 ## Sound
 
 One tone per launch, pitch by nation (human A3, Claude E4, Codex G4, OpenCode B4, local models C3, automation D4,

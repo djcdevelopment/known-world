@@ -1,0 +1,19 @@
+{
+ "errors": [],
+ "frames": {
+  "mirv-a": 6910,
+  "mirv-b": 6919,
+  "mirv-c": 6937,
+  "unified-a": 5020,
+  "unified-b": 5029,
+  "unified-c": 5035
+ },
+ "sha256": {
+  "mirv-a.png": "84cca77bdadd8801e6058a5cf1e890808072ed2d0c4fa8054c4932920ecbcb75",
+  "mirv-b.png": "5cf3621e4dc1dd6dcf999cfb7b522aefe47ca9cb7178b65e9ec6a70951b394a1",
+  "mirv-c.png": "91c989188fa3deb88c13ae90af2ddb3bea43625d41e37b5de819e77111fcc13b",
+  "unified-a.png": "a60267429e83943b1112fe183eca25c78d4b4a0b912ff5620e6f70054775748e",
+  "unified-b.png": "c8ef3e209e2437afae25c3edd89ffe399f4af01e422a8835a058c78dc4c93eff",
+  "unified-c.png": "6bf5f264a1a9d37c56be849f557c3fc0af577a42507eef4b76394eb526b9423c"
+ }
+}

@@ -354,3 +354,17 @@ Drive-letter paths start 2025-08-23 and name about 8 projects: `D:/work/liveView
 `D:/work/ai-dev-system` (35, 6), `D:/work/stars-app` (20, 5), `D:/work/ai-systems-research` (11, 3), `D:/work/writing`,
 `D:/valhiem`, plus `C:/Users/derek`, `C:/Python312`. Drop relative paths and `/mnt/data` sandbox paths (85). Paths are
 model-written text: intent, not proof. Nothing from 2023–24 carries a path; those years attribute by time only.
+
+## 1g. Repositories outside the work trees (found 2026-10-09 after task 1b)
+
+The `work` trees were not the whole territory. Bounded finds (maxdepth 3, excluding ComfyUI, SteamLibrary, node_modules)
+found on **E: root**: `omen/{CC, clippy, DMos, DMos-actor-controls, DMos-chronicle, DMos-chronicle-salience,
+DMos-command-freshness, DMos-rc1, DMos-rehearsal, DMos-secrets, imagegen, menu, tensor, bf6-highlights-retired-20260828}`
+(the omen-core constellation's clippy, img/imagegen, menu and tensor live here), `World of Warcraft/{code, Tempo,
+tempo-viewer, Tempo-wt-A, Tempo-wt-A-1b9, Tempo-wt-B..F}` (GAD's tempo, tempo-viewer, wow-code; the Claude archive's
+`D--World-of-Warcraft-tempo` project dir, 186 entries, points here), `gemini`, `helloworld/old-goat-new-tricks`
+(= llmquest), `resume`, `resume-wt/{claude-seat-receipts, gemini-proof-snapshot, linux-proof-review-20261006}`. Non-git
+E: root dirs to walk for births and updates: `linux, wool, writing, wt, cold-storage, continuity-evidence, repo-audit,
+_migration, hiking, HANDOFF, gemini, wsl, tmp, IndexCard, BF6-Highlights, wtviewer-skin-previewshots`. On **C: root**:
+`assessment` and `tuning` are git repos (births were walked; commits were not). `C:\Users\derek` holds no repos at depth 3.
+A maxdepth-4 pass over E: root (excluding `work`) is part of task 1c.

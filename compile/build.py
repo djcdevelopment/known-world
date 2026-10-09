@@ -24,6 +24,7 @@ import marks as mk
 import layout as lay
 import names as nm
 import nations as nat
+import score as scr
 import series as ser
 import stream as stm
 import synth
@@ -74,23 +75,10 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
     tfirst = np.full(nT, F, dtype=np.int64)
     fin = np.isfinite(Tl.first_t)
     tfirst[fin] = frames_of(clock, Tl.first_t[fin].astype(np.int64))
-    spread = max(2, int(round(params["copy_reveal_spread_s"] * fps * env)))
-    i = 0
-    while i < nT:
-        if not fin[i] or not Tl.reveal[i]:
-            i += 1
-            continue
-        j = i
-        while j < nT and fin[j] and Tl.reveal[j] and Tl.first_t[j] == Tl.first_t[i] and Tl.region[j] == Tl.region[i]:
-            j += 1
-        n = j - i
-        for k in range(i, j):
-            tfirst[k] = min(F - 1, tfirst[k] + ((k - i) * spread) // max(1, n))
-        i = j
     tregion = Tl.region.astype(np.int64)
     rfirst = np.full(nRg, F, dtype=np.int64)
     np.minimum.at(rfirst, tregion, tfirst)
-    thost = np.array([HOSTS.index(Tl.regions[r][1]) for r in tregion], dtype=np.uint8)
+    thost = np.array([HOSTS.index(fh if fh in HOSTS else Tl.regions[r][1]) for r, fh in zip(tregion, Tl.first_host)], dtype=np.uint8)
     tkind = np.array([KIND[Tl.regions[r][2]] for r in tregion], dtype=np.uint8)
     # ---- fields: deltas, checkpoints ----------------------------------------------------------------------------------
     Tt, Rt, Gt, Wt = Tl.touch_T, Tl.touch_tile, Tl.touch_g, Tl.touch_w
@@ -112,9 +100,13 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
     rings = ser.ring_births(series["chatgpt"], fps)
     # ---- islands, harbours, spurs, notches ---------------------------------------------------------------------------------
     isl_f = frames_of(clock, np.array([i["t"] for i in Wd.islands], dtype=np.int64)) if Wd.islands else np.zeros(0, dtype=np.int64)
-    ic_x = np.array([x for i in Wd.islands for (x, y) in i["cells"]], dtype=np.float32)
-    ic_y = np.array([y for i in Wd.islands for (x, y) in i["cells"]], dtype=np.float32)
-    ic_s = np.cumsum([0] + [len(i["cells"]) for i in Wd.islands]).astype(np.int32)
+    hfirst = np.array([max(int(isl_f[h["island"]]), int(tfirst[h["tile"]])) for h in Wd.harbours], dtype=np.int64)
+    ev_f = {}
+    for b in Wd.bridges:
+        ev = params["reveal"]["manifest_dates"].get(b["con"], params["reveal"]["manifest_dates"]["default"])
+        b["batch"] = ev == params["reveal"]["manifest_dates"]["default"]
+        b["evf"] = int(frames_of(clock, [common.day_epoch(ev)])[0])
+    bfirst = np.array([max(int(rfirst[b["a"]]), int(rfirst[b["b"]]), b["evf"]) for b in Wd.bridges], dtype=np.int64)
     spur_f = frames_of(clock, np.array([s["t"] for s in Wd.spurs], dtype=np.int64)) if Wd.spurs else np.zeros(0, dtype=np.int64)
     notch_f = frames_of(clock, np.array([s["t"] for s in Wd.notches], dtype=np.int64)) if Wd.notches else np.zeros(0, dtype=np.int64)
     # ---- camera -------------------------------------------------------------------------------------------------------------
@@ -122,10 +114,7 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
     for t in range(nT):
         a, b = Wd.tile_start[t], Wd.tile_start[t + 1]
         tbx[t] = (Wd.cell_x[a:b].min() - 0.87, Wd.cell_y[a:b].min() - 1.0, Wd.cell_x[a:b].max() + 0.87, Wd.cell_y[a:b].max() + 1.0)
-    items = []
-    for k, isl in enumerate(Wd.islands):
-        xs = [p[0] for p in isl["cells"]]; ys = [p[1] for p in isl["cells"]]
-        items.append((int(isl_f[k]), min(xs) - 1, min(ys) - 1, max(xs) + 1, max(ys) + 1))
+    items = []   # harbours never steer the camera (reveal.camera_harbours_in_box false)
     coda_f = F - int(round(clock.coda_s * fps))
     # launch targets are placed further down (rows); the camera needs them now, so they are located here from the same position maths
     cam_launch_pts = []
@@ -139,7 +128,7 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
     cam_beacons = []
     for h in ser.SEAT_HOSTS:
         sv = series["seat_" + h]
-        if h in Wd.beacon and (sv > 0).any():
+        if params["camera_beacons_in_box"] and h in Wd.beacon and (sv > 0).any():
             cam_beacons.append((int(np.argmax(sv > 0)), float(Wd.beacon[h][0]), float(Wd.beacon[h][1])))
     cam_report = {}
     camera, cam_box = cam.build(params, clock, tfirst, tbx, items, np.stack([hq_x, hq_y], 1), Wd.bbox, coda_f, F,
@@ -278,7 +267,7 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
                         "gen": (r["gi"] + 1) if r["gen"] else None, "first_test": r["first_test"], "first_nat": r["first_nat"],
                         "shape": ("single", "mirv", "unified")[r["shape"]], "inferred": r["inferred"], "warheads": whs})
     # repo-born bells (GitHub islands rising; lineage's own first test already carries its bell)
-    bells = [(int(isl_f[k]), float(screen_x(isl["x"], int(min(F - 1, isl_f[k]))))) for k, isl in enumerate(Wd.islands)]
+    bells = [(int(isl_f[k]), float(screen_x(isl["x"] if isl["x"] is not None else Wd.anchor["cloud"][0], int(min(F - 1, isl_f[k]))))) for k, isl in enumerate(Wd.islands)]
     # ---- chips, legend ------------------------------------------------------------------------------------------------------
     chips = []
     for r in nrows:
@@ -290,9 +279,11 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
     entry_f = np.array([int(frames_of(clock, [common.parse_ts(r["first_ts"])])[0]) for r in nat_rows], dtype=np.int32)
     # ---- surfaces ------------------------------------------------------------------------------------------------------------
     sf_first = {}
-    for h in HOSTS:
-        m = np.array([Tl.regions[r][1] == h for r in tregion])
-        sf_first[h] = int(tfirst[m].min()) if m.any() and (tfirst[m] < F).any() else F
+    hs_rows, hq_first = ser.host_evidence(c, clock, Tl, list(HOSTS))
+    for h in HOSTS:   # a surface's first evidence: a session, a non-bulk file event, or a commit on it
+        fs = [r[0] for r in hs_rows if HOSTS[r[2]] == h]
+        cf = [int(frames_of(clock, [x[0]])[0]) for cs in c.commits.values() for x in cs[:1] if x[7] == h]
+        sf_first[h] = min(fs + cf) if (fs or cf) else F
     sf_first["github"] = int(isl_f.min()) if len(isl_f) else F
     commits_host = {h: np.zeros(F) for h in HOSTS}
     files_host = {h: np.zeros(F) for h in HOSTS}
@@ -358,6 +349,25 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
         rec["marks_diag"] = marks_diag
     # ---- the stream ---------------------------------------------------------------------------------------------------------
     st = stm.build(params, c, clock, launches, Wd, Tl, rfirst, nat_index) if params["stream"] == "on" else None
+    # ---- constellation labels (from the second visible member) and bridge promotion (a MIRV that touches both ends) ------------------------
+    con_label_f = []
+    for (cid, ms) in Wd.con_members:
+        if cid == 255:
+            continue
+        fs_ = sorted(int(rfirst[i]) for i in ms if rfirst[i] < F)
+        con_label_f.append(fs_[1] if len(fs_) >= 2 else F)
+    bprom = np.full(len(Wd.bridges), F, dtype=np.int64)
+    for k_, b in enumerate(Wd.bridges):
+        for r in rows:
+            if r["shape"] == 1 and r["f"] >= bfirst[k_]:
+                regs = {r["ri"]} | {w_[1] for w_ in r["whs"]}
+                if b["a"] in regs and b["b"] in regs:
+                    bprom[k_] = r["f"]; break
+    for k_, (cid, ms) in enumerate(m_ for m_ in Wd.con_members if m_[0] != 255):
+        if con_label_f[k_] < F:
+            marks.append({"kind": "constellation", "frame": int(con_label_f[k_]), "label": "a constellation forms"})
+    marks.sort(key=lambda m: (m["frame"], m["kind"], m["label"]))
+    sco = scr.build(rows, series, classes, F, fps)
     # ---- data block ----------------------------------------------------------------------------------------------------------
     blk = bd.clock_block(clock, probe_f)
     f32 = lambda a: bd.b64(np.asarray(a).astype("<f4"))
@@ -370,14 +380,16 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
         "tx": f32(Wd.tile_x), "ty": f32(Wd.tile_y),
         "rx": f32(Wd.reg_x), "ry": f32(Wd.reg_y), "rfirst": bd.b64(rfirst.astype("<i4")),
         "ds": bd.b64(ds.astype("<i4")), "dr": bd.b64(dr.astype("<u2")), "dg": bd.b64(dg.astype("u1")), "dw": f32(dw), "cpts": f32(cps),
-        "ni": len(Wd.islands), "ifirst": bd.b64(isl_f.astype("<i4")), "ix": f32([i["x"] for i in Wd.islands]), "iy": f32([i["y"] for i in Wd.islands]),
-        "icx": bd.b64(ic_x.astype("<f4")), "icy": bd.b64(ic_y.astype("<f4")), "istart": bd.b64(ic_s), "ifork": bd.b64(np.array([1 if i["fork"] else 0 for i in Wd.islands], dtype="u1")),
-        "nh": len(Wd.harbours), "hx": f32([h["x"] for h in Wd.harbours]), "hy": f32([h["y"] for h in Wd.harbours]),
-        "hisl": bd.b64(np.array([h["island"] for h in Wd.harbours], dtype="<u2")), "hreg": bd.b64(np.array([h["region"] for h in Wd.harbours], dtype="<u2")),
+        "ni": len(Wd.islands), "ifirst": bd.b64(isl_f.astype("<i4")),
+        "nh": len(Wd.harbours), "hx": f32([h["x"] for h in Wd.harbours]), "hy": f32([h["y"] for h in Wd.harbours]), "hdx": f32([h["dx"] for h in Wd.harbours]), "hdy": f32([h["dy"] for h in Wd.harbours]),
+        "hfirst": bd.b64(hfirst.astype("<i4")), "hreg": bd.b64(np.array([h["region"] for h in Wd.harbours], dtype="<u2")),
+        "ncon": len(Wd.con_names), "con_names": [common_name(n, params) for n in Wd.con_names], "rcon": bd.b64(Wd.reg_con.astype("u1")), "con_label_f": bd.b64(np.array(con_label_f, dtype="<i4")),
+        "nhs": len(hs_rows), "hs_f": bd.b64(np.array([r[0] for r in hs_rows], dtype="<i4")), "hs_r": bd.b64(np.array([r[1] for r in hs_rows], dtype="<u2")), "hs_h": bd.b64(np.array([r[2] for r in hs_rows], dtype="u1")),
+        "hq_first": int(hq_first), "bfirst": bd.b64(bfirst.astype("<i4")), "bprom": bd.b64(bprom.astype("<i4")),
         "nb": len(Wd.bridges), "b0x": f32([b["p0"][0] for b in Wd.bridges]), "b0y": f32([b["p0"][1] for b in Wd.bridges]),
         "b1x": f32([b["p1"][0] for b in Wd.bridges]), "b1y": f32([b["p1"][1] for b in Wd.bridges]),
         "bra": bd.b64(np.array([b["a"] for b in Wd.bridges], dtype="<u2")), "brb": bd.b64(np.array([b["b"] for b in Wd.bridges], dtype="<u2")),
-        "bkind": bd.b64(np.array([0 if b["kind"] == "host" else 1 for b in Wd.bridges], dtype="u1")),
+        "bkind": bd.b64(np.array([0 if b["batch"] else 1 for b in Wd.bridges], dtype="u1")),
         "nsp": len(Wd.spurs), "spf": bd.b64(spur_f.astype("<i4")), "spx0": f32([s["x0"] for s in Wd.spurs]), "spy0": f32([s["y0"] for s in Wd.spurs]),
         "spx1": f32([s["x1"] for s in Wd.spurs]), "spy1": f32([s["y1"] for s in Wd.spurs]), "spreg": bd.b64(np.array([s["region"] for s in Wd.spurs], dtype="<u2")),
         "nn": len(Wd.notches), "nof": bd.b64(notch_f.astype("<i4")), "nx": f32([s["x"] for s in Wd.notches]), "ny": f32([s["y"] for s in Wd.notches]),
@@ -414,14 +426,15 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
         "bs": bd.b64(bs.astype("<i4")), "br": bd.b64(br.astype("<u2")), "bw": bd.b64(bw), "bcn_n": bd.b64(bcn),
         "ring_f": bd.b64(rings.astype("<i4")),
         "seat": {h: bd.b64(np.minimum(255, series["seat_" + h]).astype("u1")) for h in ser.SEAT_HOSTS},
-        "marks": marks,
+        "marks": marks, "timeline_form": params["timeline_form"],
+        "score": {"hs": bd.b64(sco["hs"]), "hb": bd.b64(sco["hb"]), "more": bd.b64(sco["more"]), "chat": bd.b64(sco["chat"])},
         "intro_f": int(round(clock.intro_s * fps)), "prologue": prologue_block(c, params),
         "card": card, "card_world": card_world, "card_footer": footer, "card_third": card_third,
         "layout": {"W": int(params["frame_w"]), "H": int(params["frame_h"]), "kind": params["layout"], "hud": params["hud"], "alpha": params["hud_alpha"] if params["hud"] == "plates" else 1.0,
                    "left": int(params["hud_left"]), "top": int(params["hud_top"]), "right": int(params["hud_right"]), "bottom": int(params["hud_bottom"]),
                    "safe": list(cam.safe_area(params))},
         "layout_portrait": params["hud_portrait"],
-        "ia": ia_block(params, fps) if params["layout"] == "ia" else None,
+        "ia": ia_block(params, fps, nN) if params["layout"] == "ia" else None,
         "coast": bool(params["layout"] == "ia" and params["ia_coast_labels"] == "on"),
         "terrain_L": params["terrain_L"], "terrain_C": params["terrain_C"], "collapse_thr": params["collapse_events_per_s"], "labels": params["labels"],
     })
@@ -464,7 +477,7 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
     return rec, audio, data_path, clock, extra
 
 
-def ia_block(params, fps):
+def ia_block(params, fps, nN=7):
     """The information-architecture zones (DIRECTION rev 5): pixel rects of the landscape frame and the portrait recipe. The page lays out
     from these; nothing in the page names 1920 or 1080."""
     W, H = int(params["frame_w"]), int(params["frame_h"])
@@ -477,7 +490,7 @@ def ia_block(params, fps):
             "timeline": [0, ty, W, tl], "ruler": [0, ty, W, rh], "band": [0, ty + rh, W, bh], "lanes": [0, ty + rh + bh + 3, W, nl * pitch],
             "ax0": ax0, "ax1": ax1, "name_w": int(params["ia_name_w"]), "pitch": pitch, "nl": nl, "window_f": int(round(params["stream_window_s"] * fps)),
             "nation_fade_f": max(2, int(round(float(params["ia_nation_fade_s"]) * fps))), "portrait": params["ia_portrait"],
-            "nation_row": int(params["ia_nation_row_fit"]), "design": params["design_system"] == "on"}
+            "nation_row": max(int(params["nation_row_min"]), min(int(params["nation_row_max"]), (ty - 16) // max(1, nN))), "counters_min_row": int(params["counters_min_row"]), "nN": nN, "design": params["design_system"] == "on"}
 
 
 def stream_block(st, params, fps):
@@ -504,6 +517,11 @@ def stream_block(st, params, fps):
             "nt": len(tk["f"]), "tf": i32(tk["f"]), "tl": u8(tk["level"]), "tlab": tk["label"]}
 
 
+def common_name(n, params):
+    import hashlib
+    return "h" + hashlib.sha1(("kw-con:" + n).encode()).hexdigest()[:6] if params.get("naming") == "hashed" or params.get("stream_labels") == "hashed" else n
+
+
 def prologue_block(c, params):
     """The prologue card's one line (counts and months only; nothing named): what the corpus holds from before the story's first day."""
     p = getattr(c, "prologue", None)
@@ -527,7 +545,7 @@ def write_world_json(path, Tl, Wd, tfirst, rfirst, params):
                   "reveal": Tl.reveal.astype(int).tolist(), "start": Wd.tile_start.tolist()},
         "lattice": {"q": q, "r": r},
         "continents": {h: {k: round(v, 3) for k, v in d.items()} for h, d in sorted(Wd.cont.items())},
-        "islands": [{"t": i["t"], "x": round(i["x"], 3), "y": round(i["y"], 3), "cells": len(i["cells"]), "fork": i["fork"]} for i in Wd.islands],
+        "islands": [{"t": i["t"], "cells": 0, "fork": i["fork"]} for i in Wd.islands],
         "harbours": [{"island": h["island"], "region": h["region"]} for h in Wd.harbours],
         "bridges": [{"a": b["a"], "b": b["b"], "kind": b["kind"]} for b in Wd.bridges],
         "spurs": len(Wd.spurs), "notches": len(Wd.notches), "bbox": [round(v, 3) for v in Wd.bbox],

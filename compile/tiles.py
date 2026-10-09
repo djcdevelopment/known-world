@@ -1,10 +1,10 @@
-"""compile/tiles.py: regions (lineage x host), tiles (depth-2 directory per region) and the weighted touches that
-drive the fog fields (STRATEGY sections 3 and 4.3, slice 4).
+"""compile/tiles.py: regions (one per lineage), tiles (depth-2 directory per region) and the weighted touches that
+drive the fog fields (STRATEGY sections 3 and 4.3; iteration 2: projects are the land, machines are the weather).
 
-A tile exists on every surface its lineage lives on; it is explored from its first touch there. A copy reveals the
-tiles that already existed on another surface at the moment its own first event appears (clone or migration), so the
-Linux continent rises as a copy of the explored west, not as a fresh walk. Tiles never touched on a surface stay unknown
-(void forever); the tally card counts explored against laid out. Names serve joins only and never leave this module.
+A region is a lineage, wherever its bytes lived: `reg_index[(lineage, host)]` and `tile_of[(lineage, host, path)]` are aliases for
+every host of the lineage (the old (lineage x host) keys keep resolving), a shared tile is touched once, and a tile carries the host of
+its first touch (`first_host`). A copy no longer reveals anything: a tile is explored from its own first touch, nothing else. Tiles
+never touched stay unknown (void forever); the tally card counts explored against laid out. Names serve joins only.
 """
 import collections
 import math
@@ -81,31 +81,37 @@ def collect(c, params, nat_index):
         for p, n in c.third_paths[L].items():
             pw[L][p] += n
     # ---- tile table ----------------------------------------------------------------------------------------------
-    regions = []  # (lineage, host, kind)
+    regions = []  # (lineage, home host = the first evidenced host, kind)
     reg_index = {}
-    for L in own + dirs + third:
-        kind = "third" if L in c.third else ("dir" if L in c.dirs else "git")
-        for h in hosts_of[L]:
-            reg_index[(L, h)] = len(regions)
-            regions.append((L, h, kind))
     tile_of = {}
     t_region, t_path, t_w = [], [], []
-    for (L, h), ri in sorted(reg_index.items(), key=lambda kv: kv[1]):
+    for L in own + dirs + third:
+        if not hosts_of[L]:
+            continue
+        kind = "third" if L in c.third else ("dir" if L in c.dirs else "git")
+        ri = len(regions)
+        regions.append((L, hosts_of[L][0], kind))
+        for h in hosts_of[L]:
+            reg_index[(L, h)] = ri
         for p in sorted(pw[L]):
-            tile_of[(L, h, p)] = len(t_region)
+            tid = len(t_region)
+            for h in hosts_of[L]:
+                tile_of[(L, h, p)] = tid
             t_region.append(ri); t_path.append(p); t_w.append(pw[L][p])
     nT = len(t_region)
     first_touch = np.full(nT, np.inf)
+    first_host = [None] * nT      # the host of the earliest touch of the tile
     reveal = np.zeros(nT, dtype=bool)
     # ---- touches ---------------------------------------------------------------------------------------------------
     T, TI, G, W, BU = [], [], [], [], []
     burst_min = int(params["nongit_min_files"])
     excl_bulk = bool(params["nongit_exclude_bulk_copy"])
 
-    def touch(t, tile, g, w, burst=False):
+    def touch(t, tile, g, w, burst=False, host=None):
         T.append(t); TI.append(tile); G.append(g); W.append(w); BU.append(burst)
-        if t < first_touch[tile]:
+        if t < first_touch[tile] or (t == first_touch[tile] and host is not None and first_host[tile] is None):
             first_touch[tile] = t
+            first_host[tile] = host
 
     for L in own:
         hf = c.host_first.get(L, {})
@@ -116,52 +122,31 @@ def collect(c, params, nat_index):
                 continue
             ps = ds or (".",)
             w = w_commit(min(raw, cap), nfiles)
-            hit = [h for h in hs if h in mh and hf.get(h, 1 << 60) <= t]
-            if not hit:
-                hit = [host if host in hs else hs[0]]
+            h = host if host in hs else hs[0]
+            if host not in hs:
                 stats["commit_host_fallback"] += 1
-            for h in hit:
-                for p in ps:
-                    touch(t, tile_of[(L, h, p)], g, w)
+            for p in ps:   # one touch per tile, whatever number of surfaces carry the commit
+                touch(t, tile_of[(L, hs[0], p)], g, w, host=h)
         for (t, sid, cls, n, path, host) in c.chat.get(L, ()):
             g = nat_index.get(cls)
             if g is None:
                 continue
             h = host if host in hs else hs[0]
             p = path if (L, h, path) in tile_of else "."
-            touch(t, tile_of[(L, h, p)], g, w_chat(n))
+            touch(t, tile_of[(L, h, p)], g, w_chat(n), host=h)
     for L in dirs:
         h = hosts_of[L][0]
         gate = c.dir_git_first.get(L)
         for (t, host, p, kind, n, by, bulk, cls) in c.dir_touch.get(L, ()):
             g = nat_index.get(cls, nat_index.get("human"))
             # a births burst (n >= nongit_min_files, not a bulk copy) steers the camera on its own (DIRECTION 'What steers the camera')
-            touch(t, tile_of[(L, h, p)], g, w_birth(n) * (0.5 if bulk else 1.0), burst=(kind == "file_birth" and n >= burst_min and not (bulk and excl_bulk)))
+            touch(t, tile_of[(L, h, p)], g, w_birth(n) * (0.5 if bulk else 1.0), burst=(kind == "file_birth" and n >= burst_min and not (bulk and excl_bulk)), host=host if host in hosts_of[L] else h)
         for (t, sid, cls, n, path, host) in c.chat.get(L, ()):
             g = nat_index.get(cls)
             if g is None:
                 continue
             p = path if (L, h, path) in tile_of else "."
-            touch(t, tile_of[(L, h, p)], g, w_chat(n))
-    # ---- copies reveal what already exists --------------------------------------------------------------------------
-    copy_events = []
-    for L in own:
-        hs = hosts_of[L]
-        if len(hs) < 2:
-            continue
-        hf = c.host_first[L]
-        for h in hs[1:]:
-            tf = hf[h]
-            paths = sorted((pfirst[L].get(p, np.inf), p) for p in pw[L])
-            vis = [(ft, p) for (ft, p) in paths if ft < tf or p == "."]
-            for rank, (ft, p) in enumerate(vis):
-                ti = tile_of[(L, h, p)]
-                if tf < first_touch[ti]:
-                    first_touch[ti] = tf
-                reveal[ti] = True
-            copy_events.append((tf, L, h, len(vis)))
-            stats["copies_revealed"] += 1
-            stats["copy_tiles_revealed"] += len(vis)
+            touch(t, tile_of[(L, h, p)], g, w_chat(n), host=h)
     # ---- ruins: whole, explored, at clone time ------------------------------------------------------------------------
     clone = {}
     for L in third:
@@ -177,7 +162,6 @@ def collect(c, params, nat_index):
                 ti = tile_of[(L, h, p)]
                 first_touch[ti] = t
                 reveal[ti] = True
-    # ---- the root tile of a lineage with a touch anywhere but none on this host stays dark; root tile of a copy reveals ---
     # ---- area ---------------------------------------------------------------------------------------------------------
     w = np.array(t_w, dtype=np.float64)
     cells = np.clip(1 + np.floor(k_area * np.log10(1 + w)), 1, 7).astype(np.int32)
@@ -204,7 +188,7 @@ def collect(c, params, nat_index):
     Tl.tile_of = {k: int(newid[v]) for k, v in tile_of.items()}
     Tl.hosts_of = hosts_of
     Tl.clone = clone
-    Tl.copy_events = sorted(copy_events)
+    Tl.first_host = [first_host[i] for i in order]
     Tl.stats = dict(stats)
     Tl.counts = {"regions": len(regions), "tiles": nT, "cells": int(cells.sum()),
                  "tiles_never_touched": int(np.isinf(first_touch).sum()), "touches": len(T),

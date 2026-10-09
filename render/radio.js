@@ -8,6 +8,7 @@
   const hqx = U.f32(D.hqx), hqy = U.f32(D.hqy), bs = U.i32(D.bs), br = U.u16(D.br), bw = U.u8(D.bw), bcn = U.u8(D.bcn_n), ringF = U.i32(D.ring_f);
   const seatNames = ['omen-linux', 'am4', 'fx99'], seat = seatNames.map(h => U.u8(D.seat[h]));
   const LOOK = 12;
+  const seatFirst = seat.map(a => { for (let g = 0; g < a.length; g++) if (a[g] > 0) return g; return 1e9; });   // a beacon exists from its seat's first offload
   function beams(ctx, f) {
     const v = KW.view(f), hx = KW.sx(hqx[f], v), hy = KW.sy(hqy[f], v), ck = KW.codaK(f);
     ctx.lineWidth = 1;
@@ -38,7 +39,7 @@
     const v = KW.view(f), hx = KW.sx(hqx[f], v), hy = KW.sy(hqy[f], v), ni = D.nat_classes.indexOf('local_model');
     ctx.globalCompositeOperation = 'lighter';
     for (let s = 0; s < 3; s++) {
-      const b = D.bcn[seatNames[s]]; if (!b) continue;
+      const b = D.bcn[seatNames[s]]; if (!b || f < seatFirst[s]) continue;
       const bx = KW.sx(b[0], v), by = KW.sy(b[1], v);
       let act = 0;
       for (let g = Math.max(0, f - 14); g <= f; g++) act += seat[s][g] * (1 - (f - g) / 15);
@@ -65,5 +66,5 @@
   KW.registerLayer({ id: 'beams', z: 50, map: true, render: beams });
   KW.registerLayer({ id: 'rings', z: 51, map: true, render: rings });
   KW.registerLayer({ id: 'sparks', z: 52, map: true, render: sparks });
-  KW.registerLayer({ id: 'hq', z: 65, map: true, render: (ctx, f) => { if (f >= D.intro_s * D.fps * 0 + 0) hq(ctx, f); } });
+  KW.registerLayer({ id: 'hq', z: 65, map: true, render: (ctx, f) => { if (f >= D.hq_first) hq(ctx, f); } });
 })();

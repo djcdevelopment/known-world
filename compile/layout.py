@@ -1,14 +1,14 @@
 """compile/layout.py: the world (STRATEGY section 3 with section 12 amendment 1). Pure geometry from the tile table.
 
 Axial pointy-top hex lattice, world unit = hex circumradius: x = sqrt(3)(q + r/2), y = 1.5 r.
- - A region (lineage x host) is a blob of spiral cells; its tiles take consecutive spiral runs in first-touch order,
-   oldest at the core (tree rings).
- - Constellation discs (relations.json): members of one constellation on one surface pack into a rigid disc with the
-   primary at the centre; discs and loose lineages order by earliest first touch and pack first-fit from the centre of the
-   continent outwards; edges pull partners adjacent; a bridged region anchors 0.6 R toward its partner's surface; ruins
-   sit on the outer ring.
- - Surfaces: omen-e and omen-c share a 3-hex strait; omen-linux lies across an 8-hex sea; AM4 and FX99 off its coast;
-   GitHub is a band of islands in the north sea (rising at created_at); harbours, spurs, notches, beacons, HQ anchors.
+ - A region (one lineage) is a blob of spiral cells; its tiles take consecutive spiral runs in first-touch order, oldest at the
+   core (tree rings).
+ - geography `constellations` (iteration 2): the continents are the constellation discs of relations.json (members pack into a
+   rigid disc, primary at the centre, intra edges pull partners adjacent) plus one archipelago disc of loose lineages (and the
+   ruins when shown). Discs pack first-fit from the world centre in order of earliest first touch with a `geography_gap` sea
+   between them. Machines are not land: anchors for the HQ and the seat beacons come from the regions whose first evidenced host
+   they are; GitHub repositories are harbour glyphs on their own region's coast (islands are no longer land); bridges are the
+   cross-constellation edges only.
 Deterministic: no set iteration order, no randomness (positions from sha1 of ids).
 """
 import hashlib
@@ -193,16 +193,13 @@ def build(T, c, params):
     W = type("World", (), {})()
     nT, nR = len(T.path), len(T.regions)
     gap = int(params["coast_gap"])
-    # --- per-region tiles in first-touch order (tile ids are already globally ordered) --------------------------------
+    dgap = int(params.get("geography_gap", 2))
     reg_tiles = [[] for _ in range(nR)]
     for t in range(nT):
         reg_tiles[T.region[t]].append(t)
     reg_cells = np.array([int(T.cells[ts].sum()) if ts else 0 for ts in reg_tiles], dtype=np.int64)
     first_t_reg = np.array([min([T.first_t[t] for t in ts] or [np.inf]) for ts in reg_tiles])
-    # --- relations: constellation of a lineage, primary, pull partners ---------------------------------------------------
-    group_of, prim = {}, {}
-    pull = {}
-    bridges_rel = []
+    group_of, prim, pull, cross = {}, {}, {}, []
     rel = c.relations
     if rel:
         node = {n["name"]: n for n in rel["nodes"]}
@@ -221,144 +218,64 @@ def build(T, c, params):
             if e["type"] in PULL_TYPES and e["scope"] == "intra":
                 pull.setdefault(la, []).append(lb)
                 pull.setdefault(lb, []).append(la)
-            if e["type"] in BRIDGE_TYPES or e["scope"] == "cross-constellation":
-                bridges_rel.append((la, lb, e["type"]))
-    # --- continents -----------------------------------------------------------------------------------------------------
-    host_regions = {h: [i for i, r in enumerate(T.regions) if r[1] == h] for h in HOST_ORDER}
-    rpos = np.zeros((nR, 2), dtype=np.int64)  # region seed cell in world lattice coordinates
-    cont_cells = {}
-    R_est = {h: math.sqrt(max(1, sum(reg_cells[i] for i in host_regions[h])) / 3.0 / 0.6) for h in HOST_ORDER}
-    # partner hosts per lineage (for bridged-region anchors)
-    lin_hosts = {}
-    for i, (L, h, k) in enumerate(T.regions):
-        lin_hosts.setdefault(L, []).append(h)
-    for h in HOST_ORDER:
-        ids = host_regions[h]
-        if not ids:
-            continue
-        pk = Packer(max(120, int(R_est[h] * 2.6)))
-        # group into discs
-        ruin_ids = [i for i in ids if T.regions[i][2] == "third"]
-        live = [i for i in ids if T.regions[i][2] != "third"]
-        by_con = {}
-        for i in live:
-            con = group_of.get(T.regions[i][0])
-            by_con.setdefault(con if con else ("loose", i), []).append(i)
-        discs = []  # (earliest first_t, key, members)
-        for key, ms in by_con.items():
-            ms.sort(key=lambda i: (first_t_reg[i], T.regions[i][0]))
-            discs.append((min(first_t_reg[i] for i in ms), str(key), key, ms))
-        discs.sort(key=lambda d: (d[0], d[1]))
-        for (_, _, key, ms) in discs:
-            # --- internal layout of the disc (local lattice), primary at the centre -----------------------------------
-            if len(ms) == 1:
-                fp = blob(int(reg_cells[ms[0]]))
-                rel_pos = {ms[0]: (0, 0)}
-                disc_fp = fp
-            else:
-                p = prim.get(key)
-                order = [i for i in ms if T.regions[i][0] == p] + [i for i in ms if T.regions[i][0] != p]
-                lk = Packer(60)
-                rel_pos = {}
-                for j, i in enumerate(order):
-                    fpi = blob(int(reg_cells[i]))
-                    anchor = (0, 0)
-                    L = T.regions[i][0]
-                    for pl in pull.get(L, []):
-                        for i2 in order[:j]:
-                            if T.regions[i2][0] == pl:
-                                anchor = rel_pos[i2]
-                                break
-                        else:
-                            continue
-                        break
-                    q, r = lk.first_fit(fpi, anchor)
-                    lk.place(fpi, q, r, gap)
-                    rel_pos[i] = (q, r)
-                disc_fp = np.concatenate([blob(int(reg_cells[i])) + np.array(rel_pos[i]) for i in order])
-            # --- anchor toward the partner surfaces of its bridged members ---------------------------------------------
-            vx = vy = 0.0
-            for i in ms:
-                for h2 in lin_hosts.get(T.regions[i][0], []):
-                    if h2 != h and h2 in PARTNER_DIR[h]:
-                        d = PARTNER_DIR[h][h2]
-                        vx += d[0]; vy += d[1]
-            anchor = (0, 0)
-            nrm = math.hypot(vx, vy)
-            if nrm > 1e-9:
-                f = 0.6 * R_est[h]
-                ax, ay = vx / nrm * f, vy / nrm * f
-                r_ = ay / 1.5
-                anchor = (int(round(ax / S3 - r_ / 2.0)), int(round(r_)))
-            q, r = pk.first_fit(disc_fp, anchor)
-            pk.place(disc_fp, q, r, gap)
-            for i in ms:
-                rpos[i] = (q + rel_pos[i][0], r + rel_pos[i][1])
-        cont_cells[h] = np.concatenate([blob(int(reg_cells[i])) + rpos[i] for i in live])
-    # --- arrange continents: strait, sea, coast ----------------------------------------------------------------------------
-    shift = {}
-    placed_cells = {}
-
-    def cen_of(a):
-        return a[:, 0].mean(), a[:, 1].mean()
-
-    def put(h, anchor_of, direction, gap_hex):
-        """Overlap continent h on anchor_of's centroid, then slide it along `direction` until `gap_hex` empty hexes remain."""
-        a = cont_cells[h]
-        c0, c1 = cen_of(a), cen_of(placed_cells[anchor_of])
-        target = (int(round(c1[0] - c0[0])), int(round(c1[1] - c0[1])))
-        s = slide(a, [placed_cells[k] for k in placed_cells], target, direction, gap_hex)
-        shift[h] = s
-        placed_cells[h] = a + np.array(s)
-
-    if "omen-e" in cont_cells:
-        shift["omen-e"] = (0, 0)
-        placed_cells["omen-e"] = cont_cells["omen-e"]
-    if "omen-c" in cont_cells and "omen-e" in placed_cells:
-        put("omen-c", "omen-e", (1.0, 0.0), 3)
-    if "omen-linux" in cont_cells and "omen-c" in placed_cells:
-        # across the open sea to the south, nested under the strait between the two Windows surfaces (8 empty hexes)
-        a = cont_cells["omen-linux"]
-        c0 = cen_of(a)
-        ce, cc = cen_of(placed_cells["omen-e"]), cen_of(placed_cells["omen-c"])
-        mx = (ce[0] + ce[1] / 2.0 + cc[0] + cc[1] / 2.0) / 2.0  # world x (in q units) of the strait
-        far_r = int(max(placed_cells["omen-e"][:, 1].max(), placed_cells["omen-c"][:, 1].max()) + 140)
-        tq = int(round(mx - far_r / 2.0 - (c0[0] + (c0[1] - 0) / 2.0 - c0[1] / 2.0)))
-        target = (int(round(mx - c0[0] - c0[1] / 2.0 + c0[1] / 2.0 - (far_r - c0[1]) / 2.0)), int(far_r - c0[1]))
-        s = slide(a, [placed_cells[k] for k in placed_cells], target, (0.5, -1.0), 8, approach=True)
-        shift["omen-linux"] = s
-        placed_cells["omen-linux"] = a + np.array(s)
-    if "am4" in cont_cells and "omen-linux" in placed_cells:
-        put("am4", "omen-linux", (-1.0, 0.0), 6)
-    if "fx99" in cont_cells and "am4" in placed_cells:
-        put("fx99", "am4", (-1.0, 0.0), 5)
+            if e["scope"] == "cross-constellation":
+                cross.append((la, lb, e["type"], group_of.get(la)))
+    # --- discs: constellations plus one archipelago -------------------------------------------------------------------------
+    by_con = {}
     for i in range(nR):
-        h = T.regions[i][1]
-        if T.regions[i][2] != "third":
-            rpos[i] = rpos[i] + np.array(shift[h])
-    # --- ruins on the outer ring of their surface, packed against everything already laid ------------------------------------
-    allpk = Packer(420)
-    for i in range(nR):
-        if T.regions[i][2] != "third":
-            allpk.place(blob(int(reg_cells[i])), int(rpos[i][0]), int(rpos[i][1]), gap)
-    for h in HOST_ORDER:
-        ruin_ids = sorted((i for i in host_regions[h] if T.regions[i][2] == "third"), key=lambda i: (first_t_reg[i], T.regions[i][0]))
-        if not ruin_ids or h not in placed_cells:
+        if not reg_tiles[i]:
             continue
-        pc = placed_cells[h]
-        cq, cr = int(round(pc[:, 0].mean())), int(round(pc[:, 1].mean()))
-        rad = int(max(hdist(cq, cr, int(a), int(b)) for a, b in pc[::max(1, len(pc) // 400)])) + 3
-        for i in ruin_ids:
-            fpi = blob(int(reg_cells[i]))
-            ang = sha_unit(T.regions[i][0], h) * 2 * math.pi
-            ax, ay = rad * S3 * math.cos(ang), rad * 1.5 * math.sin(ang)
-            r_ = ay / 1.5
-            aq, ar = cq + int(round(ax / S3 - r_ / 2.0)), cr + int(round(r_))
-            q, r = allpk.first_fit(fpi, (aq, ar), min_radius=rad, centre=(cq, cr))
-            allpk.place(fpi, q, r, gap)
-            rpos[i] = (q, r)
-            placed_cells[h] = np.concatenate([placed_cells[h], fpi + np.array([q, r])])
-    # --- cells of every tile (world lattice), runs of the region's spiral in first-touch order ------------------------------
+        by_con.setdefault(group_of.get(T.regions[i][0]) if T.regions[i][2] != "third" else None, []).append(i)
+    discs = []
+    for key, ms in by_con.items():
+        ms.sort(key=lambda i: (first_t_reg[i], T.regions[i][0]))
+        discs.append((min(first_t_reg[i] for i in ms), str(key), key, ms))
+    discs.sort(key=lambda d: (d[0], d[1]))
+    tot_all = int(reg_cells.sum())
+    pk = Packer(int(2.0 * math.sqrt(tot_all)) + 90)
+    rpos = np.zeros((nR, 2), dtype=np.int64)
+    W.con_names, W.reg_con, W.con_members = [], np.full(nR, 255, dtype=np.int64), []
+    disc_cells = []
+    for (_, _, key, ms) in discs:
+        tot = int(sum(reg_cells[i] for i in ms))
+        rad = int(2.2 * math.sqrt(tot)) + 24
+        if len(ms) == 1:
+            rel_pos = {ms[0]: (0, 0)}
+            order = ms
+        else:
+            p = prim.get(key)
+            order = [i for i in ms if T.regions[i][0] == p] + [i for i in ms if T.regions[i][0] != p]
+            lk = Packer(rad)
+            rel_pos = {}
+            for j, i in enumerate(order):
+                fpi = blob(int(reg_cells[i]))
+                anchor = (0, 0)
+                L = T.regions[i][0]
+                for pl in pull.get(L, []):
+                    for i2 in order[:j]:
+                        if T.regions[i2][0] == pl:
+                            anchor = rel_pos[i2]
+                            break
+                    else:
+                        continue
+                    break
+                q, r = lk.first_fit(fpi, anchor, max_ring=rad)
+                lk.place(fpi, q, r, gap)
+                rel_pos[i] = (q, r)
+        disc_fp = np.concatenate([blob(int(reg_cells[i])) + np.array(rel_pos[i]) for i in order])
+        q, r = pk.first_fit(disc_fp, (0, 0), max_ring=pk.rad - 2)
+        pk.place(disc_fp, q, r, dgap)
+        for i in ms:
+            rpos[i] = (q + rel_pos[i][0], r + rel_pos[i][1])
+        if key is not None:
+            cid = len(W.con_names); W.con_names.append(key)
+        else:
+            cid = 255
+        for i in ms:
+            W.reg_con[i] = cid
+        W.con_members.append((cid, list(ms)))
+        disc_cells.append(disc_fp + np.array([q, r]))
+    # --- cells of every tile (world lattice) ------------------------------------------------------------------------------------
     cell_q = np.zeros(int(T.cells.sum()), dtype=np.int32)
     cell_r = np.zeros_like(cell_q)
     tile_start = np.zeros(nT + 1, dtype=np.int64)
@@ -373,118 +290,106 @@ def build(T, c, params):
             cell_r[k:k + n] = sp[off:off + n, 1]
             off += n
             k += n
-    # tile order is global (first touch); cells above were written region by region, so index by tile start explicitly
-    order_cells_q = np.zeros_like(cell_q)
-    order_cells_r = np.zeros_like(cell_r)
+    oq = np.zeros_like(cell_q); orr = np.zeros_like(cell_r)
     new_start = np.zeros(nT + 1, dtype=np.int64)
     p = 0
     for t in range(nT):
-        n = int(T.cells[t])
-        a = tile_start[t]
-        order_cells_q[p:p + n] = cell_q[a:a + n]
-        order_cells_r[p:p + n] = cell_r[a:a + n]
-        new_start[t] = p
-        p += n
+        n = int(T.cells[t]); a = tile_start[t]
+        oq[p:p + n] = cell_q[a:a + n]; orr[p:p + n] = cell_r[a:a + n]
+        new_start[t] = p; p += n
     new_start[nT] = p
-    W.cell_q, W.cell_r, W.tile_start = order_cells_q, order_cells_r, new_start
-    cx_ = S3 * (order_cells_q + order_cells_r / 2.0)
-    cy_ = 1.5 * order_cells_r.astype(np.float64)
+    W.cell_q, W.cell_r, W.tile_start = oq, orr, new_start
+    cx_ = S3 * (oq + orr / 2.0)
+    cy_ = 1.5 * orr.astype(np.float64)
     W.cell_x, W.cell_y = cx_, cy_
     tx = np.zeros(nT); ty = np.zeros(nT)
     for t in range(nT):
         a, b = new_start[t], new_start[t + 1]
         tx[t], ty[t] = cx_[a:b].mean(), cy_[a:b].mean()
     W.tile_x, W.tile_y = tx, ty
-    W.reg_tiles = reg_tiles
-    W.rpos = rpos
+    W.reg_tiles, W.rpos, W.reg_cells, W.first_t_reg = reg_tiles, rpos, reg_cells, first_t_reg
     W.reg_x = S3 * (rpos[:, 0] + rpos[:, 1] / 2.0)
     W.reg_y = 1.5 * rpos[:, 1].astype(np.float64)
-    W.reg_cells = reg_cells
-    W.first_t_reg = first_t_reg
-    # region cell sets for coast marching
-    reg_set = []
+    reg_set, reg_cxy = [], np.zeros((nR, 2))
     for i in range(nR):
-        a = np.concatenate([np.stack([order_cells_q[new_start[t]:new_start[t + 1]], order_cells_r[new_start[t]:new_start[t + 1]]], 1) for t in reg_tiles[i]]) if reg_tiles[i] else np.zeros((0, 2), dtype=np.int32)
+        if reg_tiles[i]:
+            a = np.concatenate([np.stack([oq[new_start[t]:new_start[t + 1]], orr[new_start[t]:new_start[t + 1]]], 1) for t in reg_tiles[i]])
+            reg_cxy[i] = (cx_[new_start[reg_tiles[i][0]]:new_start[reg_tiles[i][-1] + 1]].mean(), 0)
+        else:
+            a = np.zeros((0, 2), dtype=np.int32)
         reg_set.append({(int(x), int(y)) for x, y in a})
+        if len(a):
+            reg_cxy[i] = (float((S3 * (a[:, 0] + a[:, 1] / 2.0)).mean()), float((1.5 * a[:, 1]).mean()))
     W.reg_set = reg_set
-    # --- continents' geometry -----------------------------------------------------------------------------------------------
+    # --- constellation discs' geometry ---------------------------------------------------------------------------------------------
     W.cont = {}
-    for h, a in placed_cells.items():
-        x = S3 * (a[:, 0] + a[:, 1] / 2.0)
-        y = 1.5 * a[:, 1].astype(np.float64)
-        W.cont[h] = {"cx": float(x.mean()), "cy": float(y.mean()), "x0": float(x.min()), "x1": float(x.max()), "y0": float(y.min()),
-                     "y1": float(y.max()), "cells": int(len(a)), "r": float(np.sqrt(((x - x.mean()) ** 2 + (y - y.mean()) ** 2).max()))}
-    # --- GitHub archipelago -----------------------------------------------------------------------------------------------
-    W.islands = []  # dict(lineage, t, x, y, cells[(x, y)...], fork)
-    gh = [g for g in c.gh_born]
-    top = min(v["y0"] for v in W.cont.values())
-    ecx = [W.cont[h]["cx"] for h in ("omen-e", "omen-c") if h in W.cont]
-    mid_x = sum(ecx) / len(ecx) if ecx else 0.0
-    rows = 4
-    per_row = int(math.ceil(len(gh) / rows))
-    px_, py_ = 7.5, 6.5  # island pitch in world units
-    x_lo = mid_x - px_ * (per_row - 1) / 2.0
-    for j, (t, L, kb, fork) in enumerate(gh):
-        row, col = divmod(j, per_row)
-        ncell = max(1, min(5, 1 + int(math.floor(math.log10(1 + kb)))))
-        x = x_lo + col * px_ + (px_ / 2.0 if row % 2 else 0.0)
-        y = top - 10.0 - (rows - 1 - row) * py_
-        q0, r0 = xy_to_axial(x, y)
-        sp = spiral(ncell) + np.array([q0, r0])
-        cells = [(float(S3 * (a + b / 2.0)), float(1.5 * b)) for a, b in sp.tolist()]
-        W.islands.append({"lineage": L, "t": t, "x": float(S3 * (q0 + r0 / 2.0)), "y": float(1.5 * r0), "cells": cells, "fork": fork, "kb": kb})
-    gx = [p[0] for i in W.islands for p in i["cells"]]
-    gy = [p[1] for i in W.islands for p in i["cells"]]
-    W.cont["github"] = {"cx": sum(gx) / len(gx), "cy": sum(gy) / len(gy), "x0": min(gx) - 1, "x1": max(gx) + 1, "y0": min(gy) - 1, "y1": max(gy) + 1,
-                        "cells": sum(len(i["cells"]) for i in W.islands), "r": 0.0}
-    # --- anchors: HQ per surface, beacons ------------------------------------------------------------------------------------
-    W.anchor = {}
-    for h, v in W.cont.items():
-        W.anchor[h] = (v["cx"], v["cy"])
-    W.anchor["cloud"] = W.anchor.get("omen-c", W.anchor.get("omen-e", (0.0, 0.0)))  # ChatGPT years: into the void where omen-c will rise
+    for (cid, ms), a in zip(W.con_members, disc_cells):
+        x = S3 * (a[:, 0] + a[:, 1] / 2.0); y = 1.5 * a[:, 1].astype(np.float64)
+        W.cont["arch" if cid == 255 else "c%02d" % cid] = {"cx": float(x.mean()), "cy": float(y.mean()), "x0": float(x.min()), "x1": float(x.max()), "y0": float(y.min()),
+                                                           "y1": float(y.max()), "cells": int(len(a)), "r": float(np.sqrt(((x - x.mean()) ** 2 + (y - y.mean()) ** 2).max()))}
+    # --- anchors: the first land, and the regions whose first evidenced host is h --------------------------------------------------------
+    W.anchor = {"cloud": (W.cont[sorted(W.cont)[0]]["cx"], W.cont[sorted(W.cont)[0]]["cy"]) if False else None}
+    first_disc = W.con_members[0][1]
+    W.anchor["cloud"] = (float(reg_cxy[first_disc[0]][0]), float(reg_cxy[first_disc[0]][1]))
+    wcx, wcy = float(cx_.mean()), float(cy_.mean())
+    wr = float(np.sqrt(((cx_ - wcx) ** 2 + (cy_ - wcy) ** 2).max()))
     W.beacon = {}
+    for h in HOST_ORDER:
+        ids = [i for i in range(nR) if T.regions[i][1] == h and T.regions[i][2] != "third" and reg_tiles[i]]
+        if ids:
+            w_ = np.array([reg_cells[i] for i in ids], dtype=np.float64)
+            W.anchor[h] = (float((reg_cxy[ids, 0] * w_).sum() / w_.sum()), float((reg_cxy[ids, 1] * w_).sum() / w_.sum()))
+        else:
+            ang = sha_unit(h) * 2 * math.pi
+            W.anchor[h] = (wcx + 0.35 * wr * math.cos(ang), wcy + 0.35 * wr * math.sin(ang))
     for h in ("omen-linux", "am4", "fx99"):
-        if h in W.cont:
-            v = W.cont[h]
-            W.beacon[h] = (v["cx"] + 0.45 * v["r"] * 0.7, v["cy"] - 0.45 * v["r"] * 0.7)
-    # --- harbours (home region coast toward the island) -------------------------------------------------------------------------
-    W.harbours = []
+        W.beacon[h] = (W.anchor[h][0] + 4.0, W.anchor[h][1] - 4.0)
+    # --- harbours: a coast glyph on the lineage's own region -------------------------------------------------------------------------
     home = {}
     for L, hs in T.hosts_of.items():
-        if hs:
-            home[L] = T.reg_index.get((L, hs[0]))
-    for j, isl in enumerate(W.islands):
-        ri = home.get(isl["lineage"])
-        if ri is None or not reg_tiles[ri]:
+        if hs and (L, hs[0]) in T.reg_index:
+            home[L] = T.reg_index[(L, hs[0])]
+    W.islands, W.harbours = [], []
+    nth = {}
+    for j, (t, L, kb, fork) in enumerate(c.gh_born):
+        ri = home.get(L)
+        if ri is not None and (not reg_tiles[ri] or T.regions[ri][2] == "third"):
+            ri = None
+        isl = {"lineage": L, "t": t, "x": None, "y": None, "cells": [], "fork": fork, "kb": kb, "region": ri}
+        W.islands.append(isl)
+        if ri is None:
             continue
-        cx, cy = W.reg_x[ri], W.reg_y[ri]
-        dx, dy = isl["x"] - cx, isl["y"] - cy
-        n = math.hypot(dx, dy) or 1.0
+        n = nth.get(ri, 0); nth[ri] = n + 1
+        ang = (sha_unit(str(L), "h") + 0.37 * n) * 2 * math.pi
+        ux, uy = math.cos(ang), math.sin(ang)
+        a0, a1 = new_start[reg_tiles[ri][0]], new_start[reg_tiles[ri][-1] + 1]
+        # cells of this region in tile order: farthest in the direction, whichever tile it belongs to
         best, bd = None, -1e18
-        for (q, r) in sorted(reg_set[ri]):
-            x, y = hxy(q, r)
-            d = (x - cx) * dx / n + (y - cy) * dy / n
-            if d > bd:
-                bd, best = d, (x, y)
-        W.harbours.append({"island": j, "region": int(ri), "x": best[0], "y": best[1]})
-    # --- bridges: a lineage across surfaces, plus relations edges -----------------------------------------------------------------
-    W.bridges = []  # (ra, rb, kind)
-    for L, hs in T.hosts_of.items():
-        ris = [T.reg_index[(L, h)] for h in hs if (L, h) in T.reg_index]
-        for a in range(1, len(ris)):
-            W.bridges.append({"a": int(ris[0]), "b": int(ris[a]), "kind": "host"})
-    for (la, lb, ty) in bridges_rel:
+        for t_ in reg_tiles[ri]:
+            for ci in range(new_start[t_], new_start[t_ + 1]):
+                d = (cx_[ci] - reg_cxy[ri][0]) * ux + (cy_[ci] - reg_cxy[ri][1]) * uy
+                if d > bd:
+                    bd, best = d, (ci, t_)
+        ci, t_ = best
+        isl["x"], isl["y"] = float(cx_[ci]), float(cy_[ci])
+        W.harbours.append({"island": j, "region": int(ri), "tile": int(t_), "x": float(cx_[ci]), "y": float(cy_[ci]), "dx": ux, "dy": uy})
+    # --- bridges: cross-constellation edges only ------------------------------------------------------------------------------------
+    W.bridges = []
+    seen = set()
+    for (la, lb, ty, con) in cross:
         ra, rb = home.get(la), home.get(lb)
-        if ra is not None and rb is not None and ra != rb:
-            W.bridges.append({"a": int(ra), "b": int(rb), "kind": "rel"})
+        if ra is None or rb is None or ra == rb or (min(ra, rb), max(ra, rb)) in seen or not reg_tiles[ra] or not reg_tiles[rb]:
+            continue
+        seen.add((min(ra, rb), max(ra, rb)))
+        W.bridges.append({"a": int(ra), "b": int(rb), "kind": "rel", "type": ty, "con": con})
     for b in W.bridges:
         ia, ib = b["a"], b["b"]
-        ax, ay, bx, by = W.reg_x[ia], W.reg_y[ia], W.reg_x[ib], W.reg_y[ib]
+        ax, ay, bx, by = reg_cxy[ia][0], reg_cxy[ia][1], reg_cxy[ib][0], reg_cxy[ib][1]
         n = math.hypot(bx - ax, by - ay) or 1.0
         ux, uy = (bx - ax) / n, (by - ay) / n
 
         def coast(i, ux, uy):
-            cx, cy = W.reg_x[i], W.reg_y[i]
+            cx, cy = reg_cxy[i]
             best, bd = (cx, cy), -1e18
             for (q, r) in sorted(reg_set[i]):
                 x, y = hxy(q, r)
@@ -493,7 +398,7 @@ def build(T, c, params):
                     bd, best = d, (x, y)
             return best
         b["p0"], b["p1"] = coast(ia, ux, uy), coast(ib, -ux, -uy)
-    # --- spurs (worktrees) and notches (branches) ---------------------------------------------------------------------------------
+    # --- spurs (worktrees) and notches (branches) -------------------------------------------------------------------------------------
     W.spurs, W.notches = [], []
     for L, bl in sorted(c.births.items()):
         hs = T.hosts_of.get(L)
@@ -507,7 +412,7 @@ def build(T, c, params):
                 continue
             a = sha_unit(ref, kind) * 2 * math.pi
             ux, uy = math.cos(a), math.sin(a)
-            cx, cy = W.reg_x[ri], W.reg_y[ri]
+            cx, cy = reg_cxy[ri]
             s = reg_set[ri]
             d = 0.0
             while d < 400:
@@ -522,9 +427,8 @@ def build(T, c, params):
                 W.spurs.append({"region": int(ri), "t": t, "x0": bx, "y0": by, "x1": bx + ux * ln, "y1": by + uy * ln, "ref": ref, "lineage": L, "commits": n})
             else:
                 W.notches.append({"region": int(ri), "t": t, "x": bx, "y": by, "ux": ux, "uy": uy})
-    W.bridges_rel = bridges_rel
-    W.constellations = len({v for v in group_of.values()})
+    W.bridges_rel = cross
+    W.constellations = len(W.con_names)
     W.joined = len(group_of)
-    W.bbox = (min(float(cx_.min()), min(v["x0"] for v in W.cont.values())), min(float(cy_.min()), min(v["y0"] for v in W.cont.values())),
-              max(float(cx_.max()), max(v["x1"] for v in W.cont.values())), max(float(cy_.max()), max(v["y1"] for v in W.cont.values())))
+    W.bbox = (float(cx_.min()) - 1, float(cy_.min()) - 1, float(cx_.max()) + 1, float(cy_.max()) + 1)
     return W

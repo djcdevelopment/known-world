@@ -35,16 +35,20 @@
   const ub = (v) => { let lo = 0, hi = ofirst.length; while (lo < hi) { const m = (lo + hi) >> 1; if (ofirst[m] <= v) lo = m + 1; else hi = m; } return lo; };   // count with first <= v
   KW.exploredOrder = order; KW.exploredCount = f => ub(f);
   // terrain tints by surface (omen-e, omen-c, omen-linux, am4, fx99) and three shades per tile id for texture
-  const HOSTHUE = [255, 275, 165, 310, 60];
+  // host tint: the latest evidenced host of the tile's region (sessions and file events; D.hs_*), neutral (index 5) where there is none
+  const HOSTHUE = [255, 275, 165, 310, 60, 250], HOSTC = [1, 1, 1, 1, 1, 0.3];
   const TL = D.terrain_L, TC = D.terrain_C;
-  const TINT = HOSTHUE.map(h => TL.map(L => P.rgb(L, TC, h)));
-  const TINTA = HOSTHUE.map(h => TL.map(L => (a) => P.rgbaRaw(L, TC, h, a)));
+  const TINT = HOSTHUE.map((h, k) => TL.map(L => P.rgb(L, TC * HOSTC[k], h)));
+  const TINTA = HOSTHUE.map((h, k) => TL.map(L => (a) => P.rgbaRaw(L, TC * HOSTC[k], h, a)));
+  const hsF = U.i32(D.hs_f), hsR = U.u16(D.hs_r), hsH = U.u8(D.hs_h), regHost = new Uint8Array(D.R);
+  const hsCount = f => { let lo = 0, hi = D.nhs; while (lo < hi) { const m = (lo + hi) >> 1; if (hsF[m] <= f) lo = m + 1; else hi = m; } return lo; };
+  function hostState(f) { regHost.fill(5); const n = hsCount(f); for (let i = 0; i < n; i++) regHost[hsR[i]] = hsH[i]; return n; }
   KW.tint = TINT; KW.tintA = TINTA;
-  const land = { n: -1, paths: null };
+  const land = { n: -1, paths: null, nh: -1 };
   function addTiles(paths, a, b) {
     for (let i = a; i < b; i++) {
       const t = order[i], k = KW.tkind[t];
-      const p = k === 2 ? paths[15] : paths[KW.thost[t] * 3 + (t % 3)];
+      const p = k === 2 ? paths[18] : paths[regHost[KW.tregion[t]] * 3 + (t % 3)];
       for (let c = KW.cstart[t]; c < KW.cstart[t + 1]; c++) hexAdd(p, KW.ccx[c], KW.ccy[c], RHO);
     }
   }
@@ -74,22 +78,23 @@
   }
   function drawLand(ctx, f) {
     const v = KW.view(f), n = ub(f), n9 = ub(f - 9);
-    if (!land.paths || land.n > n9) { land.paths = []; for (let i = 0; i < 16; i++) land.paths.push(new Path2D()); land.n = 0; }
+    const nh = hostState(f);
+    if (!land.paths || land.n > n9 || land.nh !== nh) { land.paths = []; for (let i = 0; i < 19; i++) land.paths.push(new Path2D()); land.n = 0; land.nh = nh; }
     if (n9 > land.n) { addTiles(land.paths, land.n, n9); land.n = n9; }
     setWorld(ctx, v);
-    for (let h = 0; h < 5; h++) for (let sh = 0; sh < 3; sh++) { ctx.fillStyle = TINT[h][sh]; ctx.fill(land.paths[h * 3 + sh]); }
+    for (let h = 0; h < 6; h++) for (let sh = 0; sh < 3; sh++) { ctx.fillStyle = TINT[h][sh]; ctx.fill(land.paths[h * 3 + sh]); }
     // tiles revealed within the last 9 frames fade in
     for (let i = n9; i < n; i++) {
       const t = order[i], a = Math.min(1, (f - KW.tfirst[t] + 1) / 9);
       const p = new Path2D();
       for (let c = KW.cstart[t]; c < KW.cstart[t + 1]; c++) hexAdd(p, KW.ccx[c], KW.ccy[c], RHO);
-      if (KW.tkind[t] === 2) { ctx.globalAlpha = a; ctx.fillStyle = 'rgb(66,67,70)'; } else ctx.fillStyle = TINTA[KW.thost[t]][t % 3](a);
+      if (KW.tkind[t] === 2) { ctx.globalAlpha = a; ctx.fillStyle = 'rgb(66,67,70)'; } else ctx.fillStyle = TINTA[regHost[KW.tregion[t]]][t % 3](a);
       ctx.fill(p); ctx.globalAlpha = 1;
     }
     // ruins: grey hatch in screen scale
     const pat = getHatch(ctx);
     if (pat.setTransform) pat.setTransform(new DOMMatrix([1 / (KW.B * v.s), 0, 0, 1 / (KW.B * v.s), 0, 0]));
-    ctx.fillStyle = pat; ctx.fill(land.paths[15]);
+    ctx.fillStyle = pat; ctx.fill(land.paths[18]);
     KW.resetT(ctx);
   }
   // --- activity: lit tiles, last conductor's hue, <= L 0.55 ------------------------------------------------------------------
@@ -119,44 +124,31 @@
     KW.resetT(ctx);
   }
   // --- islands, harbours, bridges, spurs, notches ----------------------------------------------------------------------------
-  const ifirst = U.i32(D.ifirst), icx = U.f32(D.icx), icy = U.f32(D.icy), istart = U.i32(D.istart), ifork = U.u8(D.ifork), ix = U.f32(D.ix), iy = U.f32(D.iy);
-  function drawIslands(ctx, f) {
-    const v = KW.view(f); setWorld(ctx, v);
-    for (let j = 0; j < D.ni; j++) {
-      if (ifirst[j] > f) continue;
-      const u = Math.min(1, (f - ifirst[j]) / 30), e = u * u * (3 - 2 * u), p = new Path2D();
-      for (let c = istart[j]; c < istart[j + 1]; c++) hexAdd(p, icx[c], icy[c], RHO * (0.3 + 0.7 * e));
-      ctx.fillStyle = ifork[j] ? P.rgbaRaw(0.30, 0.008, 250, e) : P.rgbaRaw(0.34, 0.035, 190, e);
-      ctx.fill(p);
-    }
-    KW.resetT(ctx);
-  }
-  const hx = U.f32(D.hx), hy = U.f32(D.hy), hisl = U.u16(D.hisl), hreg = U.u16(D.hreg);
-  const b0x = U.f32(D.b0x), b0y = U.f32(D.b0y), b1x = U.f32(D.b1x), b1y = U.f32(D.b1y), bra = U.u16(D.bra), brb = U.u16(D.brb), bkind = U.u8(D.bkind);
-  KW.bridgeFrame = new Int32Array(D.nb); for (let b = 0; b < D.nb; b++) KW.bridgeFrame[b] = Math.max(KW.rfirst[bra[b]], KW.rfirst[brb[b]]);
+  const hx = U.f32(D.hx), hy = U.f32(D.hy), hdx = U.f32(D.hdx), hdy = U.f32(D.hdy), hfirst = U.i32(D.hfirst), hreg = U.u16(D.hreg);
+  const b0x = U.f32(D.b0x), b0y = U.f32(D.b0y), b1x = U.f32(D.b1x), b1y = U.f32(D.b1y), bra = U.u16(D.bra), brb = U.u16(D.brb), bkind = U.u8(D.bkind), bfirst = U.i32(D.bfirst), bprom = U.i32(D.bprom);
+  KW.bridgeFrame = bfirst;
   function drawLinks(ctx, f) {
     const v = KW.view(f), ck = KW.codaK(f);
     ctx.lineWidth = 1;
-    // harbours: a landing on the coast of the home region, the day both the region and its island exist
+    // harbours: a small pier glyph on the home region's coast from the repository's creation (once its coast tile exists)
     for (let h = 0; h < D.nh; h++) {
-      const af = Math.max(KW.rfirst[hreg[h]], ifirst[hisl[h]]);
-      if (af > f) continue;
-      const x = KW.sx(hx[h], v), y = KW.sy(hy[h], v), x2 = KW.sx(ix[hisl[h]], v), y2 = KW.sy(iy[hisl[h]], v);
-      const a = Math.min(1, (f - af + 1) / 18), dl = Math.hypot(x2 - x, y2 - y) || 1, dk = Math.max(3, Math.min(9, 1.6 * v.s));
-      ctx.strokeStyle = P.rgbaRaw(0.55, 0.05, 185, 0.8 * a); ctx.lineWidth = 1.5; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + (x2 - x) / dl * dk, y + (y2 - y) / dl * dk); ctx.stroke();
-      ctx.fillStyle = P.rgbaRaw(0.55, 0.05, 185, 0.9 * a); const r = Math.max(1, Math.min(2.5, 0.5 * v.s)); ctx.fillRect(x - r, y - r, 2 * r, 2 * r);
+      if (hfirst[h] > f) continue;
+      const x = KW.sx(hx[h], v), y = KW.sy(hy[h], v), a = Math.min(1, (f - hfirst[h] + 1) / 18), dk = Math.max(3, Math.min(8, 1.4 * v.s));
+      ctx.strokeStyle = P.rgbaRaw(0.62, 0.05, 185, 0.85 * a); ctx.lineWidth = 1.5; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + hdx[h] * dk, y + hdy[h] * dk); ctx.stroke();
+      ctx.fillStyle = P.rgbaRaw(0.62, 0.05, 185, 0.9 * a); const r = Math.max(1, Math.min(2.2, 0.45 * v.s)); ctx.fillRect(x - r, y - r, 2 * r, 2 * r);
     }
-    // bridges: dark until both ends exist, then a hairline at the lower activity of the two
+    // bridges: cross-constellation relationships. A thin double hairline that brightens once when it lights, then stays; a batch-dated edge is dashed (candidate)
+    // until a MIRV touched both ends. Static: no motion once lit.
     for (let b = 0; b < D.nb; b++) {
-      const bf = KW.bridgeFrame[b];
+      const bf = bfirst[b];
       if (bf > f || bf >= F) continue;
-      const act = Math.min(KW.regTot[bra[b]], KW.regTot[brb[b]]);
-      const age = f - bf, lit = age < 24 ? 1 - age / 24 : 0;
-      const al = Math.min(0.9, 0.16 + 0.55 * (1 - Math.exp(-act / 6)) + 0.5 * lit);
+      const age = f - bf, lit = age < 24 ? 1 - age / 24 : 0, cand = bkind[b] === 0 && bprom[b] > f;
+      const al = Math.min(0.9, 0.42 + 0.5 * lit);
       const x0 = KW.sx(b0x[b], v), y0 = KW.sy(b0y[b], v), x1 = KW.sx(b1x[b], v), y1 = KW.sy(b1y[b], v);
-      const mx = (x0 + x1) / 2, my = (y0 + y1) / 2, dx = x1 - x0, dy = y1 - y0, sg = (b % 2 ? 1 : -1) * 0.2;
-      ctx.strokeStyle = bkind[b] ? P.rgbaRaw(0.55, 0.06, 85, al) : P.rgbaRaw(0.55, 0.06, 235, al);
-      ctx.beginPath(); ctx.moveTo(x0, y0); ctx.quadraticCurveTo(mx - dy * sg, my + dx * sg, x1, y1); ctx.stroke();
+      const mx = (x0 + x1) / 2, my = (y0 + y1) / 2, dx = x1 - x0, dy = y1 - y0, sg = (b % 2 ? 1 : -1) * 0.2, nl = Math.hypot(dx, dy) || 1, ox = -dy / nl * 1.6, oy = dx / nl * 1.6;
+      ctx.strokeStyle = P.rgbaRaw(0.7, 0.05, 235, al); ctx.lineWidth = 1; ctx.setLineDash(cand ? [4, 4] : []);
+      for (const sgn of [-1, 1]) { ctx.beginPath(); ctx.moveTo(x0 + ox * sgn, y0 + oy * sgn); ctx.quadraticCurveTo(mx - dy * sg + ox * sgn, my + dx * sg + oy * sgn, x1 + ox * sgn, y1 + oy * sgn); ctx.stroke(); }
+      ctx.setLineDash([]);
     }
   }
   const spf = U.i32(D.spf), spx0 = U.f32(D.spx0), spy0 = U.f32(D.spy0), spx1 = U.f32(D.spx1), spy1 = U.f32(D.spy1), spreg = U.u16(D.spreg);
@@ -180,7 +172,6 @@
   }
   KW.registerLayer({ id: 'lattice', z: 5, map: true, render: lattice });
   KW.registerLayer({ id: 'land', z: 10, map: true, render: drawLand });
-  KW.registerLayer({ id: 'islands', z: 20, map: true, render: drawIslands });
   KW.registerLayer({ id: 'activity', z: 30, map: true, render: drawActivity });
   KW.registerLayer({ id: 'links', z: 40, map: true, render: drawLinks });
   KW.registerLayer({ id: 'spurs', z: 41, map: true, render: drawSpurs });

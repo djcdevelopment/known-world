@@ -197,6 +197,7 @@
     else if (k === '[') setSpeed(S.si - 1);
     else if (k === ']') setSpeed(S.si + 1);
     else if (k === 's' || k === 'S') { KW.ui.surfaces = !KW.ui.surfaces; if (KW.ui.surfaces) KW.ui.nations = false; S.shown = -1; }
+    else if (k === 'f' || k === 'F') { KW.ui.lanesForm = !KW.ui.lanesForm; S.shown = -1; }   // the short score <-> the full lineage lanes
     else if (k === 'Home') { seek(0); e.preventDefault(); }
     else if (k === 'End') { seek(F - 1); e.preventDefault(); }
   });

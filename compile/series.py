@@ -327,3 +327,31 @@ def running_totals(c, params, clock, nat_index, surfaces, hosts_fs, launches=Non
     }
     return {"ccum": ccum, "fcum": fcum, "icum": icum, "dcum": dcum, "sc_commits": sc_commits, "sc_created": sc_created,
             "sc_updated": sc_updated, "w": np.stack([w_commits, w_files, w_lines]), "rate": rate, "created_nat": created_nat, "totals": totals}
+
+
+def host_evidence(c, clock, T, hosts):
+    """Per region, the latest evidenced host over time: a Claude/Codex session whose repo is the lineage, or a non-bulk file birth/update of the
+    lineage on a host. Returns change rows (frame, region, host index) sorted by frame (a region with no evidence has no row: neutral), the first
+    evidence frame per region, and the first session frame (the HQ ring's gate)."""
+    ev = []
+    for sid, sx in c.session_info.items():
+        L, h = sx.get("repo"), sx.get("host")
+        hs = T.hosts_of.get(L) if L else None
+        if not hs or h not in hosts or not sx.get("first_ts"):
+            continue
+        ev.append((parse_ts(sx["first_ts"]), T.reg_index[(L, hs[0])], hosts.index(h)))
+    for (t, h, kind, n, bulk, L) in c.fs_rows:
+        hs = T.hosts_of.get(L) if L else None
+        if bulk or not hs or h not in hosts:
+            continue
+        ev.append((t, T.reg_index[(L, hs[0])], hosts.index(h)))
+    ev.sort()
+    cur, rows = {}, []
+    fr = clock.frame(np.array([e[0] for e in ev], dtype=np.int64)) if ev else []
+    for (t, ri, hi), f in zip(ev, fr):
+        if cur.get(ri) != hi:
+            cur[ri] = hi
+            rows.append((int(f), int(ri), int(hi)))
+    sess = [parse_ts(sx["first_ts"]) for sx in c.session_info.values() if sx.get("path") and sx.get("first_ts")]
+    hq_first = int(clock.frame(np.array([min(sess)], dtype=np.int64))[0]) if sess else 0
+    return rows, hq_first

@@ -231,7 +231,9 @@ def build(params, clock, tfirst, tbox, items, hq_xy, world_bbox, coda_f, F, tmas
     # within camera_hq_launch_units world units of it (coordinator 2026-10-09): in eras A and B the box is warm tiles and launch targets.
     era_f = clock.era_frames()
     hq_join = int(np.argmax(era_f == 2)) if (era_f == 2).any() else F
-    if clock.single:   # one era is all "era C": the HQ steers from the first launch that lands near it, else from the first launch
+    if clock.single and not params.get("camera_hq_in_box", True):
+        hq_join = F
+    elif clock.single:   # one era is all "era C": the HQ steers from the first launch that lands near it, else from the first launch
         hq_join = int(min([l[0] for l in launch_pts] or [F]))
     for (lf, lx_, ly_, _t, _b) in launch_pts:
         if lf < hq_join and math.hypot(lx_ - hx[lf], ly_ - hy[lf]) <= float(params["camera_hq_launch_units"]):

@@ -84,7 +84,7 @@
   const fm = KW.fmt, UNIT = D.rate_unit_names;
   const compact = v => v >= 1e6 ? (v / 1e6).toFixed(1) + 'M' : v >= 1e3 ? (v / 1e3).toFixed(v >= 1e4 ? 0 : 1) + 'k' : String(Math.round(v));
   // one nation row at (x, y); cmp = compact (portrait overlay): no chips, bars tighter; mini = one line of figures, no bars
-  function row(ctx, f, i, x, y, cmp, mini, ia) {
+  function row(ctx, f, i, x, y, cmp, mini, ia, noCounters) {
     const age = f - entry[i];
     ctx.font = '20px ' + FONT; ctx.fillStyle = KW.C.fg; ctx.textAlign = 'left';
     const fl = age < 18 && !ia ? 1 - age / 18 : 0;
@@ -129,6 +129,7 @@
     }
     // running totals: log micro-bars on a shared scale (ticks 1k 10k 100k 1M) in the nation's hue, then the rate
     const k = i * F + f, hue = KW.palette.flat(i, 0.62, 0.9), bx = x + 150, bw = 156;
+    if (noCounters) { ctx.textAlign = 'left'; return; }   // a compact row (below counters_min_row): tests, yield and chips only
     if (mini) {
       ctx.font = '12px ' + FONT; ctx.fillStyle = KW.C.fg2;
       ctx.fillText('+' + fm.compact(insC[k]) + ' \u2212' + fm.compact(delC[k]) + '   ' + fm.commas(rateN[k]) + ' c/' + UNIT[KW.era[f]], x + 14, y + 58);
@@ -169,18 +170,18 @@
   KW.natShownF = sigF;
   const iaOrder = [...Array(N).keys()].sort((a, b) => sigF[a] - sigF[b] || a - b);
   function drawLegendIA(ctx, f) {
-    const LY = KW.LAY, I = LY.ia, rowH = D.ia.nation_row;
+    const LY = KW.LAY, I = LY.ia, rowH = D.ia.nation_row, compact = rowH < D.ia.counters_min_row;
     KW.nationRows = [];
     const vis = iaOrder.filter(i => f >= sigF[i]);
     if (!vis.length) return;
     const x0 = I.nat[0], y0 = I.nat[1], w = I.nat[2];
-    KW.plate(ctx, x0, y0, w, Math.min(I.nat[3], 12 + vis.length * rowH + 4));
+    KW.plate(ctx, x0, y0, w, Math.min(I.nat[3], 12 + D.ia.nN * rowH + 4));   // G slots are reserved from the first nation; an empty slot draws nothing
     ctx.textBaseline = 'alphabetic';
     ctx.save(); ctx.beginPath(); ctx.rect(x0 + 1, y0, w - 9, I.nat[3]); ctx.clip();
     vis.forEach((i, r) => {
       const y = y0 + 12 + r * rowH, a = Math.min(1, (f - sigF[i] + 1) / I.fade_f);
       KW.nationRows.push({ i, x: x0, y, h: rowH, w });
-      ctx.globalAlpha = a; row(ctx, f, i, x0, y, false, false, true); ctx.globalAlpha = 1;
+      ctx.globalAlpha = a; row(ctx, f, i, x0, y, false, false, true, compact); ctx.globalAlpha = 1;
     });
     ctx.restore(); ctx.textAlign = 'left';
   }
@@ -208,7 +209,7 @@
   }
   // portrait: a one-line strip of swatches with test counts under the ticker; a tap expands the compact panel over the map
   function portraitNations(ctx, f) {
-    const LY = KW.LAY, y0 = LY.tickerH, h = LY.stripH, cw = LY.ia ? Math.floor((LY.W - 8) / 7) : 54, oy = LY.ia ? 8 : 0, ef = i => LY.ia ? sigF[i] : entry[i];
+    const LY = KW.LAY, y0 = LY.tickerH, h = LY.stripH, cw = LY.ia ? Math.floor((LY.W - 8) / Math.max(1, D.ia.nN)) : 54, oy = LY.ia ? 8 : 0, ef = i => LY.ia ? sigF[i] : entry[i];
     KW.nationRows = []; KW.surfBtn = null;
     if (LY.ia && !iaOrder.some(i => f >= sigF[i])) return;   // signal-gated: no strip until a nation exists
     KW.plate(ctx, 0, y0, LY.W, h);

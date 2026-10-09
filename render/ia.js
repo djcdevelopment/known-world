@@ -68,8 +68,10 @@
     const cw = por ? 5.4 : 6.0;
     for (const m of marks) {
       if (m.frame > f || m.frame < f - WF) continue;
+      if (SCORE_ON && !SCORE_KINDS[m.kind]) continue;
       const x = Math.round(xOf(f, m.frame));
       ctx.fillStyle = KW.markColor(m.kind, 0.85); ctx.fillRect(x, y0 + 11, 1, h - 12);
+      if (SCORE_ON) continue;   // the score writes the letter itself
       const w = m.label.length * cw, a = x - 4 - w, b = x - 3;
       if (occ.some(o => a < o[1] + 4 && b > o[0] - 4)) continue;
       occ.push([a, b]);
@@ -172,8 +174,22 @@
     for (const id of vis) ctx.fillText(clip(S.names[id], NCH), I.nameX + 4, Math.round(yc(slotOf[id])) + Math.round(NP * 0.36));
   }
 
+  const SCORE_KINDS = { nation: 'N', constellation: 'C', migration: 'M', storm: 'S' };
+  KW.iaAxis = { xOf, ub, lb, WF, AX0, AX1, por, I, z: () => ({ RULER_Y, RULER_H, BAND_Y, BAND_H, LANE_Y, TL_Y, TL_H }), letters: SCORE_KINDS };
+  const useScore = () => D.timeline_form === 'score' && !KW.ui.lanesForm && !!KW.drawScore;
+  let SCORE_ON = false;
   function timeline(ctx, f) {
     setZ();
+    SCORE_ON = useScore();
+    if (SCORE_ON) {   // the short score: ruler, then one stave per nation (portrait closed: a condensed score in the band's 60 px)
+      KW.plate(ctx, 0, RULER_Y, W, TL_Y + TL_H - RULER_Y);
+      ruler(ctx, f);
+      ctx.fillStyle = KW.C.rule; ctx.fillRect(1, BAND_Y - 1, W - 2, 1);
+      KW.drawScore(ctx, f, BAND_Y, TL_Y + TL_H - BAND_Y - 1, por && !KW.ui.lanes);
+      ctx.fillStyle = 'rgba(' + KW.C.fgRgb + ',0.30)'; ctx.fillRect(AX1, BAND_Y, 1, TL_Y + TL_H - BAND_Y - 1);
+      ctx.textAlign = 'left';
+      return;
+    }
     const bandOn = f >= bandFirst, lanesOn = S && f >= laneFirst && lanesShown();
     let hOcc = RULER_H;
     if (bandOn) hOcc = BAND_Y + BAND_H - RULER_Y;
@@ -203,70 +219,51 @@
   setZ();
 
 
-  // ---- coast edge (design system: a 1 px edge in the surface colour on the sea-facing sides of a surface's land). The final layout decides which sides face the
-  // sea (no land cell of any surface or island beyond that side); the edge appears with its tile, like the tile itself. Built once from the cell tables.
-  if (D.coast && KW.C.surf) {
+  // ---- coast edge: a 1 px edge on every side of a revealed cell whose neighbour is not revealed yet at f (the neighbour's own first frame decides, not the
+  // final occupancy: early land has its sides until a neighbour rises). One neutral hue. Segments are intervals [start, end); the path is rebuilt when the active set changes.
+  if (D.coast) {
     const SQ3 = 1.7320508075688772, R = 0.96, HXr = [0.8660254037844386, 0, -0.8660254037844386, -0.8660254037844386, 0, 0.8660254037844386], HYr = [0.5, 1, 0.5, -0.5, -1, -0.5];
-    const NB = [[1, 1], [-1, 1], [-2, 0], [-1, -1], [1, -1], [2, 0]];   // the neighbour each edge k (vertex k to k+1) faces, in (a = 2q + r, r) lattice steps
+    const NB = [[1, 1], [-1, 1], [-2, 0], [-1, -1], [1, -1], [2, 0]];
     const key = (a, r) => (a + 4000) * 20000 + (r + 8000), ak = x => Math.round(x / (SQ3 / 2)), rk = y => Math.round(y / 1.5);
-    const occ = new Set();
-    for (let c = 0; c < KW.ccx.length; c++) occ.add(key(ak(KW.ccx[c]), rk(KW.ccy[c])));
-    const icx = U.f32(D.icx), icy = U.f32(D.icy), ist = U.i32(D.istart), ifirst = U.i32(D.ifirst);
-    for (let c = 0; c < icx.length; c++) occ.add(key(ak(icx[c]), rk(icy[c])));
-    const HIs = [1, 0, 2, 3, 4];
-    const segs = []; for (let s = 0; s < 6; s++) segs.push({ f: [], v: [] });
-    function cellEdges(s, fr, x, y) {
-      const a = ak(x), r = rk(y);
-      for (let k = 0; k < 6; k++) {
-        if (occ.has(key(a + NB[k][0], r + NB[k][1]))) continue;
-        const k2 = (k + 1) % 6;
-        segs[s].f.push(fr); segs[s].v.push(x + HXr[k] * R, y + HYr[k] * R, x + HXr[k2] * R, y + HYr[k2] * R);
-      }
-    }
+    const cellFirst = new Map();
+    for (const t of KW.exploredOrder) { if (KW.tkind[t] === 2) continue; for (let c = KW.cstart[t]; c < KW.cstart[t + 1]; c++) cellFirst.set(key(ak(KW.ccx[c]), rk(KW.ccy[c])), KW.tfirst[t]); }
+    const segs = [];   // [start, end, x0, y0, x1, y1]
     for (const t of KW.exploredOrder) {
       if (KW.tkind[t] === 2) continue;
-      const s = HIs.indexOf(KW.thost[t]); if (s < 0) continue;
-      for (let c = KW.cstart[t]; c < KW.cstart[t + 1]; c++) cellEdges(s, KW.tfirst[t], KW.ccx[c], KW.ccy[c]);
+      for (let c = KW.cstart[t]; c < KW.cstart[t + 1]; c++) {
+        const x = KW.ccx[c], y = KW.ccy[c], a = ak(x), r = rk(y);
+        for (let k = 0; k < 6; k++) {
+          const nf = cellFirst.get(key(a + NB[k][0], r + NB[k][1]));
+          const end = nf === undefined ? 1e9 : nf;
+          if (end <= KW.tfirst[t]) continue;
+          const k2 = (k + 1) % 6;
+          segs.push([KW.tfirst[t], end, x + HXr[k] * R, y + HYr[k] * R, x + HXr[k2] * R, y + HYr[k2] * R]);
+        }
+      }
     }
-    const isl = []; for (let k = 0; k < D.ni; k++) isl.push(k); isl.sort((a, b) => ifirst[a] - ifirst[b] || a - b);
-    for (const k of isl) for (let c = ist[k]; c < ist[k + 1]; c++) cellEdges(5, ifirst[k], icx[c], icy[c]);
-    const cache = segs.map(() => ({ n: -1, p: null }));
+    segs.sort((p, q) => p[0] - q[0]);
+    const st = segs.map(q => q[0]), ens = segs.map(q => q[1]).sort((p, q) => p - q);
+    KW.coastSegs = segs;
+    let cache = { key: -1, p: null };
     KW.registerLayer({ id: 'coast-edge', z: 12, map: true, render: function (ctx, f) {
       const v = KW.view(f), ck = KW.codaK(f); if (ck <= 0) return;
-      KW.setWorld(ctx, v); ctx.lineWidth = 1 / v.s; ctx.globalAlpha = 0.85 * ck;
-      for (let s = 0; s < 6; s++) {
-        const S_ = segs[s], n = ub(S_.f, S_.f.length, f - 9), C = cache[s];   // with the tile's own 9-frame fade-in
-        if (!C.p || C.n > n) { C.p = new Path2D(); C.n = 0; }
-        for (let i = C.n; i < n; i++) { C.p.moveTo(S_.v[4 * i], S_.v[4 * i + 1]); C.p.lineTo(S_.v[4 * i + 2], S_.v[4 * i + 3]); }
-        C.n = n;
-        ctx.strokeStyle = KW.C.surf[s]; ctx.stroke(C.p);
-      }
-      ctx.globalAlpha = 1;
+      const n = ub(st, st.length, f - 9), e = ub(ens, ens.length, f), kk = n * 1e6 + e;
+      if (cache.key !== kk) { const p = new Path2D(); for (let i = 0; i < n; i++) if (segs[i][1] > f) { p.moveTo(segs[i][2], segs[i][3]); p.lineTo(segs[i][4], segs[i][5]); } cache = { key: kk, p }; }
+      KW.setWorld(ctx, v); ctx.lineWidth = 1 / v.s; ctx.globalAlpha = 0.6 * ck; ctx.strokeStyle = KW.C.muted; ctx.stroke(cache.p); ctx.globalAlpha = 1;
     } });
   }
 
-  // ---- coast labels: a surface's name sits just below the southern coast of the land revealed so far (the lowest revealed cell), from the surface's
-  // first tile on, 12 px muted mono; they stay. The anchor is a step function of the frame (it moves only when a lower tile is revealed): a lookup built once
-  // from the tile and island tables. Ruins (third-party clones) have no coast label of their own.
-  if (D.coast) {
-    const SF = D.surfaces, HI = [1, 0, 2, 3, 4, -1];   // surface index -> host index of the tile table (omen-c, omen-e, omen-linux, am4, fx99; github = islands)
-    const frames = [], bxs = [], bys = [];
-    for (let s = 0; s < 6; s++) {
+  // ---- coast labels: a constellation's name sits just below the southern coast of the land revealed so far (the lowest revealed cell of its regions), from its
+  // second visible member on (one region is a place, not yet a land). The anchor is a step function of the frame. The archipelago is not named.
+  if (D.coast && D.ncon) {
+    const rcon = U.u8(D.rcon), clf = U.i32(D.con_label_f), frames = [], bxs = [], bys = [];
+    for (let c = 0; c < D.ncon; c++) {
       const ev = [];
-      if (s < 5) {
-        for (let t = 0; t < D.T; t++) {
-          if (KW.thost[t] !== HI[s] || KW.tkind[t] === 2 || KW.tfirst[t] >= F) continue;
-          let by = -1e9, bx = 0;
-          for (let c = KW.cstart[t]; c < KW.cstart[t + 1]; c++) if (KW.ccy[c] > by || (KW.ccy[c] === by && KW.ccx[c] < bx)) { by = KW.ccy[c]; bx = KW.ccx[c]; }
-          ev.push([KW.tfirst[t], by, bx]);
-        }
-      } else {
-        const ifirst = U.i32(D.ifirst), icx = U.f32(D.icx), icy = U.f32(D.icy), ist = U.i32(D.istart);
-        for (let k = 0; k < D.ni; k++) {
-          let by = -1e9, bx = 0;
-          for (let c = ist[k]; c < ist[k + 1]; c++) if (icy[c] > by || (icy[c] === by && icx[c] < bx)) { by = icy[c]; bx = icx[c]; }
-          ev.push([ifirst[k], by, bx]);
-        }
+      for (let t = 0; t < D.T; t++) {
+        if (rcon[KW.tregion[t]] !== c || KW.tkind[t] === 2 || KW.tfirst[t] >= F) continue;
+        let by = -1e9, bx = 0;
+        for (let q = KW.cstart[t]; q < KW.cstart[t + 1]; q++) if (KW.ccy[q] > by || (KW.ccy[q] === by && KW.ccx[q] < bx)) { by = KW.ccy[q]; bx = KW.ccx[q]; }
+        ev.push([KW.tfirst[t], by, bx]);
       }
       ev.sort((a, b) => a[0] - b[0] || a[1] - b[1] || a[2] - b[2]);
       const fr = [], xs = [], ys = []; let cy = -1e9, cx = 0;
@@ -277,13 +274,11 @@
       KW.resetT(ctx);
       const v = KW.view(f), ck = KW.codaK(f);
       if (ck <= 0) return;
-      ctx.font = '12px ' + FONT; ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic';
-      ctx.globalAlpha = 0.9 * ck;
-      for (let s = 0; s < 6; s++) {
-        ctx.fillStyle = KW.C.surf ? KW.C.surf[s] : KW.C.muted;   // design system: the surface's own hue (surface-*), else the film's muted grey
-        const n = ub(frames[s], frames[s].length, f) - 1;   // last event with frame <= f
-        if (n < 0) continue;
-        ctx.fillText(SF.names[s], Math.round(KW.sx(bxs[s][n], v)), Math.round(KW.sy(bys[s][n], v) + v.s * 1.0 + 15));
+      ctx.font = '12px ' + FONT; ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic'; ctx.fillStyle = KW.C.muted; ctx.globalAlpha = 0.9 * ck;
+      for (let c = 0; c < D.ncon; c++) {
+        if (clf[c] > f) continue;
+        const n = ub(frames[c], frames[c].length, f) - 1; if (n < 0) continue;
+        ctx.fillText(D.con_names[c], Math.round(KW.sx(bxs[c][n], v)), Math.round(KW.sy(bys[c][n], v) + v.s * 1.0 + 15));
       }
       ctx.globalAlpha = 1; ctx.textAlign = 'left';
     } });

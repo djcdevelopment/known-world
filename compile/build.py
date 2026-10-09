@@ -20,6 +20,7 @@ import clock as clk
 import common
 import corpus as corp
 import launches as L
+import marks as mk
 import layout as lay
 import names as nm
 import nations as nat
@@ -37,6 +38,12 @@ SURFACES = ("omen-c", "omen-e", "omen-linux", "am4", "fx99", "github")
 SURFACE_LABEL = {"omen-c": "C:", "omen-e": "E:", "omen-linux": "linux", "am4": "AM4", "fx99": "FX99", "github": "GitHub"}
 KIND = {"git": 0, "dir": 1, "third": 2}
 SHAPE = {"single": 0, "mirv": 1, "unified": 2}
+
+
+def region_of_(Tl, lin, host):
+    hs = Tl.hosts_of.get(lin) or []
+    h = host if (lin, host) in Tl.reg_index else (hs[0] if hs else None)
+    return Tl.reg_index.get((lin, h)) if h else None
 
 
 def frames_of(clock, t):
@@ -120,8 +127,25 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
         xs = [p[0] for p in isl["cells"]]; ys = [p[1] for p in isl["cells"]]
         items.append((int(isl_f[k]), min(xs) - 1, min(ys) - 1, max(xs) + 1, max(ys) + 1))
     coda_f = F - int(round(clock.coda_s * fps))
-    camera = cam.build(params, clock, tfirst, tbx, items, np.stack([hq_x, hq_y], 1), Wd.bbox, coda_f, F,
-                       tmask=None if params["camera_ruins_in_box"] else (tkind != 2))
+    # launch targets are placed further down (rows); the camera needs them now, so they are located here from the same position maths
+    cam_launch_pts = []
+    for l in launches:
+        ri_ = region_of_(Tl, l["lineage"], l.get("host"))
+        if ri_ is None:
+            continue
+        tsl = [Tl.tile_of.get((Tl.regions[ri_][0], Tl.regions[ri_][1], d)) for d in l["_dirs"]]
+        tsl = [t for t in tsl if t is not None] or [Tl.tile_of[(Tl.regions[ri_][0], Tl.regions[ri_][1], ".")]]
+        cam_launch_pts.append((int(frames_of(clock, [l["ts_start"]])[0]), float(np.mean(Wd.tile_x[tsl])), float(np.mean(Wd.tile_y[tsl])), int(l["ts_start"]), int(l["yield"]["class"])))
+    cam_beacons = []
+    for h in ser.SEAT_HOSTS:
+        sv = series["seat_" + h]
+        if h in Wd.beacon and (sv > 0).any():
+            cam_beacons.append((int(np.argmax(sv > 0)), float(Wd.beacon[h][0]), float(Wd.beacon[h][1])))
+    cam_report = {}
+    camera, cam_box = cam.build(params, clock, tfirst, tbx, items, np.stack([hq_x, hq_y], 1), Wd.bbox, coda_f, F,
+                       tmask=None if params["camera_ruins_in_box"] else (tkind != 2),
+                       touches=(Tt, Rt, Wt, Tl.touch_burst), launch_pts=cam_launch_pts, beacons=cam_beacons, report=cam_report)
+    rec["camera"] = cam_report
     cam_x, cam_y, cam_s = camera[:, 0].astype(np.float64), camera[:, 1].astype(np.float64), camera[:, 2].astype(np.float64)
 
     cam_cx = cam.centre(params)[0]
@@ -322,6 +346,17 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
     wt = rt["totals"]["world"]
     card_world = {"name": "world", "tests": int(sum(r["tests"] for r in card)), "commits": format(wt["commits"], ","), "files": format(wt["files"], ","),
                   "lines": "%s" % compact(wt["lines"])}
+    # ---- marks (the scrubber's hashmarks, the ticker hairline's ticks) -------------------------------------------------------
+    marks, marks_diag = [], {}
+    if params["marks"] == "on":
+        sw_f = [int(np.argmax(clock.era_frames() >= i + 1)) for i in range(2)]
+        hq_lin = hq_hosts.index("omen-linux")
+        hq_cross = int(np.argmax(hq_host == hq_lin)) if (hq_host == hq_lin).any() else None
+        marks, marks_diag = mk.build(params, clock, sw_f, [(SURFACE_LABEL[s_], int(sf_first[s_])) for s_ in SURFACES],
+                                     [(DISPLAY[r_["nation"]], int(entry_f[i_])) for i_, r_ in enumerate(nat_rows)], hq_cross, series["local_model"],
+                                     {"commits": rt["w"][0], "files": rt["w"][1], "launches": np.cumsum(tests_cum.sum(0))})
+        rec["marks_counts"] = {k_: sum(1 for m_ in marks if m_["kind"] == k_) for k_ in ("era", "surface", "nation", "migration", "storm", "regime")}
+        rec["marks_diag"] = marks_diag
     # ---- the stream ---------------------------------------------------------------------------------------------------------
     st = stm.build(params, c, clock, launches, Wd, Tl, rfirst, nat_index) if params["stream"] == "on" else None
     # ---- data block ----------------------------------------------------------------------------------------------------------
@@ -350,7 +385,7 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
         "nux": f32([s["ux"] for s in Wd.notches]), "nuy": f32([s["uy"] for s in Wd.notches]), "nreg": bd.b64(np.array([s["region"] for s in Wd.notches], dtype="<u2")),
         "bcn": {h: [round(Wd.beacon[h][0], 3), round(Wd.beacon[h][1], 3)] for h in Wd.beacon},
         "ring_xy": [round(Wd.anchor["cloud"][0], 3), round(Wd.anchor["cloud"][1], 3)],
-        "hqx": f32(hq_x), "hqy": f32(hq_y), "hqh": bd.b64(hq_host.astype("u1")), "camera": f32(camera.reshape(-1)),
+        "hqx": f32(hq_x), "hqy": f32(hq_y), "hqh": bd.b64(hq_host.astype("u1")), "camera": f32(camera.reshape(-1)), "camera_box": f32(cam_box.reshape(-1)),
         # launches
         "nl": nl, "lf": bd.b64(lf.astype("<i4")), "lx": f32([r["x"] for r in rows]), "ly": f32([r["y"] for r in rows]),
         "lreg": bd.b64(np.array([r["ri"] for r in rows], dtype="<u2")), "lband": bd.b64(np.array([r["band"] for r in rows], dtype="u1")),
@@ -380,16 +415,19 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
         "bs": bd.b64(bs.astype("<i4")), "br": bd.b64(br.astype("<u2")), "bw": bd.b64(bw), "bcn_n": bd.b64(bcn),
         "ring_f": bd.b64(rings.astype("<i4")),
         "seat": {h: bd.b64(np.minimum(255, series["seat_" + h]).astype("u1")) for h in ser.SEAT_HOSTS},
+        "marks": marks,
         "card": card, "card_world": card_world, "card_footer": footer, "card_third": card_third,
         "layout": {"W": int(params["frame_w"]), "H": int(params["frame_h"]), "hud": params["hud"], "alpha": params["hud_alpha"] if params["hud"] == "plates" else 1.0,
                    "left": int(params["hud_left"]), "top": int(params["hud_top"]), "right": int(params["hud_right"]), "bottom": int(params["hud_bottom"]),
                    "safe": list(cam.safe_area(params))},
+        "layout_portrait": params["hud_portrait"],
         "terrain_L": params["terrain_L"], "terrain_C": params["terrain_C"], "collapse_thr": params["collapse_events_per_s"], "labels": params["labels"],
     })
     if st is not None:
         blk["stream"] = stream_block(st, params, fps)
     os.makedirs(outdir, exist_ok=True)
     data_path = os.path.join(outdir, "kw-data.js")
+    rec["marks_sha256"] = common.write_json(os.path.join(outdir, "marks.json"), marks)
     rec["kw_data_sha256"] = bd.write_data_js(data_path, blk)
     rec["kw_data_bytes"] = os.path.getsize(data_path)
     audio, astats = synth.synthesize(F, fps, seed, probe_f, synth_l, None, nat_rows, series, params, env, gen_idx,

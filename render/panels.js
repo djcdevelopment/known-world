@@ -10,19 +10,22 @@
   const HOSTIDX = { 'omen-e': 0, 'omen-c': 1, 'omen-linux': 2, 'am4': 3, 'fx99': 4 };
   const KEYS = ['omen-c', 'omen-e', 'omen-linux', 'am4', 'fx99', 'github'];
   function tallies(ctx, f) {
-    const x0 = 0, rowH = 96;
-    const LY = KW.LAY, PH = LY.H - LY.top - LY.bottom;
-    KW.plate(ctx, x0, LY.top, LY.left, PH);
+    const x0 = 0, LY = KW.LAY, por = LY.mode === 'portrait';
+    if (por && !KW.ui.surfaces) return;   // portrait: the tallies sit behind a tap
+    const PW = por ? 240 : LY.left, PH = por ? LY.bandY - LY.top : LY.H - LY.top - LY.bottom;
+    KW.plate(ctx, x0, LY.top, PW, PH);
     ctx.textBaseline = 'alphabetic';
-    ctx.save(); ctx.beginPath(); ctx.rect(0, LY.top, LY.left - 8, PH); ctx.clip();
+    ctx.save(); ctx.beginPath(); ctx.rect(0, LY.top, PW - 8, PH); ctx.clip();
     // rows in entry order
     const idx = []; for (let i = 0; i < nS; i++) if (S.entry[i] < F) idx.push(i);
     idx.sort((a, b) => S.entry[a] - S.entry[b] || a - b);
+    const rowH = por ? Math.min(96, Math.floor((PH - 12) / Math.max(1, idx.length))) : 96;
+    KW.tallyRows = idx.map((i, r) => ({ i, y: LY.top + 12 + r * rowH, h: rowH, name: S.names[i] }));
     for (let r = 0; r < idx.length; r++) {
       const i = idx[r], age = f - S.entry[i];
       if (age < 0) continue;
       const u = Math.min(1, age / 12), s = u * u * (3 - 2 * u), dx = -Math.round(200 * (1 - s));
-      const y = 64 + 12 + r * rowH, x = x0 + dx, k = KEYS[i];
+      const y = LY.top + 12 + r * rowH, x = x0 + dx, k = KEYS[i];
       ctx.globalAlpha = s;
       const gh = k === 'github';
       ctx.fillStyle = P.rgbaRaw(0.45, 0.05, 190, 0.9);
@@ -52,7 +55,7 @@
   const band = U.u8(D.band), names = D.band_names, BW = D.band_window_f;
   const col = names.map(n => D.nat_classes.indexOf(n));
   function drawBand(ctx, f) {
-    const LY = KW.LAY, x0 = LY.left, w = LY.W - LY.left - LY.right, y0 = LY.H - LY.bottom, h = LY.bottom, mid = y0 + h / 2;
+    const LY = KW.LAY, x0 = LY.left, w = LY.W - LY.left - LY.right, y0 = LY.bandY, h = LY.bandH, mid = y0 + h / 2, K = h === 120 ? 1 : h / 120;
     KW.plate(ctx, x0, y0, w, h);
     ctx.fillStyle = '#222b3b'; ctx.fillRect(x0 + 1, mid, w - 2, 1);
     const ncol = Math.floor(w / 2), ck = KW.codaK(f);
@@ -63,12 +66,12 @@
       let y = mid - 2;
       // chatter above by class, log-scaled, stacked
       for (let c = 0; c < 4; c++) {
-        const a = band[c * F + g] / 255 * 22 * ck;
+        const a = band[c * F + g] / 255 * 22 * ck * K;
         if (a < 0.5) continue;
         ctx.fillStyle = P.rgba(col[c], 0.62, 0.85); ctx.fillRect(x, y - a, 2, a); y -= a;
       }
       // commits below, warm grey
-      const cm = band[4 * F + g] / 255 * 50 * ck;
+      const cm = band[4 * F + g] / 255 * 50 * ck * K;
       if (cm >= 0.5) { ctx.fillStyle = 'rgba(150,135,112,0.8)'; ctx.fillRect(x, mid + 2, 2, cm); }
       // offloads: an ember hairline on the centre line
       const o = band[5 * F + g] / 255;

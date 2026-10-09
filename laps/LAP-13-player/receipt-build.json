@@ -1,0 +1,1406 @@
+{
+ "cut": {
+  "audio_expected": 4320000,
+  "audio_samples": 4320000,
+  "audio_sha256": "43e72d2eee829c87d67bacab8b7d85eb7ccb5805881a3632945e927898c7ec4d",
+  "audio_stats": {
+   "bells": 310,
+   "collapse_bins": 248,
+   "collapsed_frames": 1366,
+   "offload_clicks": 150,
+   "offload_roar_frames": 175,
+   "pips": 132,
+   "roll_bins": 102,
+   "tones": 173
+  },
+  "camera": {
+   "beacons": 3,
+   "hq_join_frame": 533,
+   "launch_targets": 870,
+   "tile_intervals": 1713
+  },
+  "camera_numbers": {
+   "frames": 2700,
+   "scale_end": 1.65,
+   "scale_f0": 36.08,
+   "scale_f394": 2.38,
+   "scale_f543": 2.14,
+   "tight_start_25pct_frame": 102,
+   "tight_start_25pct_s": 3.4,
+   "tight_start_50pct_frame": 68,
+   "tight_start_50pct_s": 2.27,
+   "tight_start_90pct_frame": 12,
+   "tight_start_90pct_s": 0.4
+  },
+  "chatgpt_links": "present",
+  "clock": {
+   "boundary_out_s": [
+    6.861,
+    17.753
+   ],
+   "coda_s": 6.0,
+   "era_len_s": [
+    5.861,
+    10.892,
+    66.247
+   ],
+   "frames": 2700,
+   "intro_s": 1.0,
+   "m": 8.0546,
+   "story_s": 83.0,
+   "total_s": 90.0
+  },
+  "code": {
+   "compile/audio.py": "1f0749040b551ec8bace3411afff9f72be3483d0d7fd44e642aa0ec18f87c79b",
+   "compile/audit.py": "162b67a0a21a56247f76f5316643a0752371ef45f4b19b0ae4a422d3eb3a7686",
+   "compile/build.py": "755a7308e2395a4fc10d68b08c67d2a416fc8225cbfbc2d87e8c0df0f71189f8",
+   "compile/build_cli.py": "90629f257626772ab330baadec81b3a5cc0f737ccabae554043f2019612ad908",
+   "compile/build_data.py": "2ec6e771cc18224d01dc9bfbe6cafe3cdc685b50bee80d10d845f02ba991ed12",
+   "compile/camera.py": "e431a45bd74167c39554e22b15c80fb95a3bc117a47d40dfa403ac66911de4d4",
+   "compile/clock.py": "857d13ec3e7b7aceee4f770e72fa2c01926a9c8e546d41f73fa080cd84e6327a",
+   "compile/common.py": "50eee918f0b114c0416d9c97e982f85935ef2cc7e13bbd4d5727cedf7d363f2b",
+   "compile/corpus.py": "e545303d69d8eadc8cc23a2c26788eec7da237f4c37c7ff5593b389e571a56b0",
+   "compile/launches.py": "959c1fd8f6bbe80f50e313bdf05ec8b6eb8a48a699403f6205f3282a5f6a56fb",
+   "compile/layout.py": "307b78425e2659133ca5453dad31fcd82aea27dc1945eff8df1ad68abd38bddd",
+   "compile/marks.py": "55024a753b97cfbd91ef8e6dac8757a266279cc4632831eeca6b3aae82a9f73f",
+   "compile/names.py": "164cd6e3da9bbedb523b6109697ca8f254312bf93c90cc56b999b36a7a9622a0",
+   "compile/nations.py": "5bc7946b7223725904b47b0194ff9b2b899a914aa31458170c8b14eda1af6bdf",
+   "compile/params.json": "fa338fa6632a802dcde4636f9ec861ee421f4d2083c1aeca2a0ad9aed112624d",
+   "compile/series.py": "7f00172dabc0df99be06db7d86a25e1d6c6d718c5a36e411fa492e63447ce0bd",
+   "compile/stream.py": "b7ccfddf98cf4fdcf0a6a3be5ec8a34184184482dfa01c18e667663f5d8100e6",
+   "compile/strip.py": "7e9a2a1c0ba5754e6f7e51db7dd4afc7b10ae0c283abe63442c6fd4bccf4180e",
+   "compile/synth.py": "b13f2d3a62ddb15af7484066f926128a0546abcce978471c2db7ed16966e9286",
+   "compile/tiles.py": "fc66df0c7a57b6c8d886bffe634e95d87e34f64d1b71cf6eaf699e4e2713fb1c",
+   "export/edgecheck.mjs": "ba310f454353af488f901b66b5a497352699ef5d8cfff3c4c1ee2cabff6b57e8",
+   "export/encode.py": "c038b7019d335d86d31f955eec2d071a1a998eff4e4d532d31dff23fac63e90e",
+   "export/frames.mjs": "db4f48eafa87b696ffcca3d1d4c4c9ab143a0e66f9410ce4bfad38a9b762cff4",
+   "export/hashpage.mjs": "d8f844891637028d25f307236ef3d1e21d6a6f0f9d6e35060a6b6e6a46bbc8dc",
+   "export/lapkit.py": "32585a6be8051a0da56bf068b97c7a6880c76bb06c505d86ba7c40d49cd154df",
+   "export/perf.mjs": "677ee60f4272100e306d45ae6ec4413eea4a3e80a2d7e5694c8db7a48e24c8ea",
+   "export/probe.py": "f7f5ea59faa37777b1c4d542e0d9fac74bdc30c47585b87d04ab9f9595abd07f",
+   "export/rehash.mjs": "0fe27fd68a1031a9917d5d55286ffb68e016a02e79d809768e4b2da92307ead6",
+   "export/run.py": "348f311acdd7636be8c8b31d3cf3260adf4fbb0e62a2b018814572e31fa45110",
+   "export/serve.py": "983ad09041fde91610e46bebfb827cee699ff54454e0a136806a88f91e7046f3",
+   "export/state_node.mjs": "da650c99a61f7e1f6e3d0854c6bd5b85f015c4adbdf41544fd0aaa8de6d1aad8",
+   "export/still.mjs": "7fb384682286c5c742a46b2701a92a46b4d4a6311bb1a1ed76c857db30f3d2a9",
+   "export/verify.mjs": "f43e5a37c042bb607c252771598faf05c3ce800fd3fc04636d3bfea666053c67",
+   "render/border.js": "4f05b0af472ac42d2676362f25a0b956eefe9cb7987746f6fe1fbdf277e1ab05",
+   "render/card.js": "d502dfbb5fa4745c8e46493e2eab27ddfdd3338af8c351cc6bc198de7b822c4e",
+   "render/data.js": "3827d9895d3a415b56e58297ad7017f334977b3cc5cae7a86e430d9320589d7d",
+   "render/fields.js": "6ce871a8589d50d0cd6142c77e11ff974d782aa78793de9dcdc6408731da0ed8",
+   "render/index.html": "787c423fc6e4f0036f35ad24d580d7a1f2115f3a213d94a47537ea6a8f677b93",
+   "render/launch.js": "75374f2395cdf915d31e5c0fbc6365d0fa4d24c4eba8a8bec55225d4d5325a6a",
+   "render/main.js": "fc2077274dc319cf16b4689864fa96ccd4e5c582bd0db8eff6c89bc8fa6acfdc",
+   "render/palette.js": "fbcd345567e1af55e6ab5618b98d5e975a580f2fe9dd18733fff24f0ba979b7e",
+   "render/panels.js": "3b0186b135d94026d1b023279dcc75e532b9afa6799ef13c1b5a42d7012c8d47",
+   "render/player.js": "a7284622ed84bed49d5cbcb27dbf7f2ec7bbdbbc87ede4226d06001184b8be8b",
+   "render/radio.js": "c4fbcac64e6ffb1b96753f68dfcc98301a98734d19b888bd2e32bfe780d19837",
+   "render/state.js": "2962c6ed5c9c96e7c68896736522a343ddc9002351fee55bec1de29aaf36b042",
+   "render/stream.js": "1b7c076c428264a0b87e1acf47725cd5490b8dc37e20d73c78280d0c4d77dd09"
+  },
+  "compile_s": 4.9,
+  "compile_twice": {
+   "audio_equal": true,
+   "kw_data_equal": true,
+   "second": {
+    "audio_sha256": "43e72d2eee829c87d67bacab8b7d85eb7ccb5805881a3632945e927898c7ec4d",
+    "frames": 2700,
+    "kw_data_sha256": "eb2994c0d2bf30e89899cc9052b50180a3ec399e6707850cfb1f4b3433db65c3"
+   }
+  },
+  "counts": {
+   "beams": 1211,
+   "cells": 15943,
+   "checkpoints": 3,
+   "chips": 34,
+   "collapsed_frames": 1366,
+   "deltas": 15927,
+   "launch_counts": {
+    "bands": {
+     "1": 61,
+     "2": 232,
+     "3": 343,
+     "4": 194,
+     "5": 31,
+     "6": 9
+    },
+    "bands_git": {
+     "1": 30,
+     "2": 183,
+     "3": 279,
+     "4": 140,
+     "5": 8,
+     "6": 1
+    },
+    "capped_commits": 87,
+    "episodes_git": 1056,
+    "first_of_generation": 19,
+    "first_of_nation": 5,
+    "first_tests": 217,
+    "launches": 870,
+    "launches_git": 641,
+    "launches_nongit": 229,
+    "max_warheads": 58,
+    "mirv": 171,
+    "nations": {
+     "automation": 9,
+     "chatgpt": 18,
+     "claude": 453,
+     "codex": 82,
+     "human": 308
+    },
+    "nations_git": {
+     "automation": 9,
+     "claude": 442,
+     "codex": 74,
+     "human": 116
+    },
+    "nongit_nations": {
+     "chatgpt:time": 18,
+     "claude": 11,
+     "codex": 8,
+     "human": 192
+    },
+    "single": 688,
+    "single_git": 459,
+    "tests_git": 955,
+    "tests_nongit": 229,
+    "unified": 11,
+    "warheads_hist": {
+     "2": 98,
+     "3": 33,
+     "4": 14,
+     "5": 10,
+     "6": 2,
+     "7": 3,
+     "8": 3,
+     "9": 3,
+     "10": 5
+    }
+   },
+   "launches": 870,
+   "launches_skipped_no_region": 0,
+   "layout": {
+    "bridges": 29,
+    "constellations": 13,
+    "harbours": 84,
+    "islands": 93,
+    "joined_lineages": 83,
+    "notches": 317,
+    "spurs": 224
+   },
+   "nations": [
+    "human",
+    "chatgpt",
+    "claude",
+    "codex",
+    "automation",
+    "local_model",
+    "opencode"
+   ],
+   "peak_launches_per_frame": 7,
+   "regions": 322,
+   "rings": 25,
+   "tiles": 6244,
+   "tiles_by_kind": {
+    "dir": 2300,
+    "git": 2928,
+    "third": 1016
+   },
+   "tiles_counts": {
+    "cells": 15943,
+    "regions": 322,
+    "regions_by_host": {
+     "am4": 13,
+     "fx99": 8,
+     "omen-c": 74,
+     "omen-e": 148,
+     "omen-linux": 79
+    },
+    "regions_dir": 178,
+    "regions_git": 131,
+    "regions_third": 13,
+    "tiles": 6244,
+    "tiles_never_touched": 284,
+    "touches": 145687
+   },
+   "tiles_never_touched": 284,
+   "tiles_stats": {
+    "copies_revealed": 20,
+    "copy_tiles_revealed": 41,
+    "ruin_clone_event": 1,
+    "ruin_clone_last_ts": 12
+   },
+   "touches": 145687
+  },
+  "cut_s": 90,
+  "hq": {
+   "changes": [
+    [
+     1137,
+     "omen-e"
+    ],
+    [
+     1602,
+     "omen-c"
+    ],
+    [
+     2353,
+     "omen-e"
+    ],
+    [
+     2415,
+     "omen-linux"
+    ]
+   ],
+   "first_linux_day_iso": "2026-09-28T00:00:00Z"
+  },
+  "inputs": {
+   "actors.json": "dea212abcda1303143e10fd6cc6fb8f47a3a152d3be62353bfa49e58a33e95d8",
+   "chatgpt_links.json": "63ed4b48fd2f88c177f8f839edcc9ed0de22ec81e16b5e711e3f12a8511c5843",
+   "events.ndjson": "b1ee0cf8fbb072732d3c262db1608425e66eb7c943aa125b7cee618c1a05f034",
+   "hosts.json": "494c1012961cf4923f9b1a7afbc2c3871ef57305268fa473afafd9d32b924d21",
+   "relations.json": "9e7c60ce24a0ebca2d1bf16da2f4fad3f7fadcb7f29a9ad2d1634d2319fe7622",
+   "repos.json": "20640180b13007e000ffeed2efdeb7709e28379066f5f96f811c7c3c2dfac975",
+   "sessions.json": "4730a2c30885067400725e10b97cdf10d535f3913687408882e996c12f002157",
+   "stats.json": "0ecbe4bf30ec4a5be077063f69150c68891092b5094a1807611c21335a698c58"
+  },
+  "kw_data_bytes": 3555456,
+  "kw_data_sha256": "eb2994c0d2bf30e89899cc9052b50180a3ec399e6707850cfb1f4b3433db65c3",
+  "marks_counts": {
+   "era": 2,
+   "migration": 1,
+   "nation": 7,
+   "regime": 15,
+   "storm": 1,
+   "surface": 6
+  },
+  "marks_diag": {
+   "regime_breaks": [
+    {
+     "day": 4985,
+     "frame": 425,
+     "label": "launches: accelerating \u2192 accelerating (steeper)",
+     "series": "launches"
+    },
+    {
+     "day": 5058,
+     "frame": 447,
+     "label": "files: accelerating \u2192 slowing",
+     "series": "files"
+    },
+    {
+     "day": 5089,
+     "frame": 457,
+     "label": "files: slowing \u2192 linear",
+     "series": "files"
+    },
+    {
+     "day": 5218,
+     "frame": 496,
+     "label": "files: linear \u2192 linear (steeper)",
+     "series": "files"
+    },
+    {
+     "day": 5282,
+     "frame": 515,
+     "label": "commits: accelerating \u2192 accelerating (steeper)",
+     "series": "commits"
+    },
+    {
+     "day": 5311,
+     "frame": 524,
+     "label": "files: linear \u2192 accelerating",
+     "series": "files"
+    },
+    {
+     "day": 5342,
+     "frame": 672,
+     "label": "commits: accelerating \u2192 accelerating (shallower)",
+     "series": "commits"
+    },
+    {
+     "day": 5342,
+     "frame": 672,
+     "label": "files: accelerating \u2192 slowing",
+     "series": "files"
+    },
+    {
+     "day": 5342,
+     "frame": 672,
+     "label": "launches: accelerating \u2192 linear",
+     "series": "launches"
+    },
+    {
+     "day": 5372,
+     "frame": 940,
+     "label": "files: slowing \u2192 linear",
+     "series": "files"
+    },
+    {
+     "day": 5372,
+     "frame": 940,
+     "label": "launches: linear \u2192 linear (shallower)",
+     "series": "launches"
+    },
+    {
+     "day": 5403,
+     "frame": 1218,
+     "label": "launches: linear \u2192 accelerating",
+     "series": "launches"
+    },
+    {
+     "day": 5407,
+     "frame": 1253,
+     "label": "files: linear \u2192 slowing",
+     "series": "files"
+    },
+    {
+     "day": 5437,
+     "frame": 1521,
+     "label": "files: slowing \u2192 accelerating",
+     "series": "files"
+    },
+    {
+     "day": 5518,
+     "frame": 2245,
+     "label": "files: accelerating \u2192 slowing",
+     "series": "files"
+    }
+   ],
+   "storm_peak_7d_calls": 21919
+  },
+  "marks_sha256": "6048b8cce27911dbac3447204452211ed9e3a69f07073ad898ecc505a32f832b",
+  "marks_table": [
+   {
+    "date": "2011-08-01",
+    "frame": 30,
+    "kind": "nation",
+    "label": "human enters"
+   },
+   {
+    "date": "2011-08-01",
+    "frame": 30,
+    "kind": "surface",
+    "label": "new continent: GitHub"
+   },
+   {
+    "date": "2015-08-11",
+    "frame": 90,
+    "kind": "surface",
+    "label": "new continent: linux"
+   },
+   {
+    "date": "2020-11-29",
+    "frame": 169,
+    "kind": "surface",
+    "label": "new continent: E:"
+   },
+   {
+    "date": "2023-04-02",
+    "frame": 206,
+    "kind": "era",
+    "label": "era B begins"
+   },
+   {
+    "date": "2023-04-13",
+    "frame": 208,
+    "kind": "nation",
+    "label": "ChatGPT enters"
+   },
+   {
+    "date": "2024-10-26",
+    "frame": 379,
+    "kind": "surface",
+    "label": "new continent: C:"
+   },
+   {
+    "date": "2025-03-24",
+    "frame": 425,
+    "kind": "regime",
+    "label": "launches: accelerating \u2192 accelerating (steeper)"
+   },
+   {
+    "date": "2025-06-04",
+    "frame": 447,
+    "kind": "regime",
+    "label": "files: accelerating \u2192 slowing"
+   },
+   {
+    "date": "2025-06-30",
+    "frame": 455,
+    "kind": "surface",
+    "label": "new continent: AM4"
+   },
+   {
+    "date": "2025-07-06",
+    "frame": 457,
+    "kind": "regime",
+    "label": "files: slowing \u2192 linear"
+   },
+   {
+    "date": "2025-11-12",
+    "frame": 496,
+    "kind": "regime",
+    "label": "files: linear \u2192 linear (steeper)"
+   },
+   {
+    "date": "2026-01-14",
+    "frame": 515,
+    "kind": "regime",
+    "label": "commits: accelerating \u2192 accelerating (steeper)"
+   },
+   {
+    "date": "2026-01-20",
+    "frame": 517,
+    "kind": "nation",
+    "label": "Claude enters"
+   },
+   {
+    "date": "2026-02-11",
+    "frame": 524,
+    "kind": "regime",
+    "label": "files: linear \u2192 accelerating"
+   },
+   {
+    "date": "2026-03-01",
+    "frame": 533,
+    "kind": "era",
+    "label": "era C begins"
+   },
+   {
+    "date": "2026-03-16",
+    "frame": 672,
+    "kind": "regime",
+    "label": "commits: accelerating \u2192 accelerating (shallower)"
+   },
+   {
+    "date": "2026-03-16",
+    "frame": 672,
+    "kind": "regime",
+    "label": "files: accelerating \u2192 slowing"
+   },
+   {
+    "date": "2026-03-16",
+    "frame": 672,
+    "kind": "regime",
+    "label": "launches: accelerating \u2192 linear"
+   },
+   {
+    "date": "2026-04-15",
+    "frame": 940,
+    "kind": "regime",
+    "label": "files: slowing \u2192 linear"
+   },
+   {
+    "date": "2026-04-15",
+    "frame": 940,
+    "kind": "regime",
+    "label": "launches: linear \u2192 linear (shallower)"
+   },
+   {
+    "date": "2026-05-16",
+    "frame": 1218,
+    "kind": "regime",
+    "label": "launches: linear \u2192 accelerating"
+   },
+   {
+    "date": "2026-05-20",
+    "frame": 1253,
+    "kind": "regime",
+    "label": "files: linear \u2192 slowing"
+   },
+   {
+    "date": "2026-06-19",
+    "frame": 1521,
+    "kind": "regime",
+    "label": "files: slowing \u2192 accelerating"
+   },
+   {
+    "date": "2026-06-22",
+    "frame": 1545,
+    "kind": "surface",
+    "label": "new continent: FX99"
+   },
+   {
+    "date": "2026-06-29",
+    "frame": 1605,
+    "kind": "nation",
+    "label": "Codex enters"
+   },
+   {
+    "date": "2026-07-02",
+    "frame": 1638,
+    "kind": "nation",
+    "label": "automation enters"
+   },
+   {
+    "date": "2026-07-18",
+    "frame": 1773,
+    "kind": "nation",
+    "label": "local enters"
+   },
+   {
+    "date": "2026-09-08",
+    "frame": 2245,
+    "kind": "regime",
+    "label": "files: accelerating \u2192 slowing"
+   },
+   {
+    "date": "2026-09-27",
+    "frame": 2411,
+    "kind": "nation",
+    "label": "OpenCode enters"
+   },
+   {
+    "date": "2026-09-28",
+    "frame": 2416,
+    "kind": "migration",
+    "label": "the migration: HQ crosses to linux"
+   },
+   {
+    "date": "2026-10-03",
+    "frame": 2461,
+    "kind": "storm",
+    "label": "the offload storm begins"
+   }
+  ],
+  "params_hash": "01f0184775c5e16300d0edce0521b1ec110bbe1e5b4ad0d9edf48d19accbfb59",
+  "relations": "present",
+  "running_totals": {
+   "bulk_copy_excluded": {
+    "file_birth": 680125,
+    "file_update": 959
+   },
+   "lines_uncapped": {
+    "added": 15934153,
+    "cap": 20000,
+    "commits_capped": 87,
+    "removed": 2516181,
+    "total": 18450334
+   },
+   "nation": {
+    "automation": {
+     "commits": 644,
+     "files_changed": 1120,
+     "lines_added": 86398,
+     "lines_removed": 7628
+    },
+    "chatgpt": {
+     "commits": 0,
+     "files_changed": 0,
+     "lines_added": 0,
+     "lines_removed": 0
+    },
+    "claude": {
+     "commits": 4391,
+     "files_changed": 30354,
+     "lines_added": 2551755,
+     "lines_removed": 210941
+    },
+    "codex": {
+     "commits": 46,
+     "files_changed": 1057,
+     "lines_added": 47784,
+     "lines_removed": 662
+    },
+    "human": {
+     "commits": 4708,
+     "files_changed": 56330,
+     "lines_added": 4745778,
+     "lines_removed": 289501
+    },
+    "local_model": {
+     "commits": 0,
+     "files_changed": 0,
+     "lines_added": 0,
+     "lines_removed": 0
+    },
+    "opencode": {
+     "commits": 0,
+     "files_changed": 0,
+     "lines_added": 0,
+     "lines_removed": 0
+    }
+   },
+   "no_numstat_counted": 0,
+   "surface": {
+    "am4": {
+     "commits": 28,
+     "files_created": 5523,
+     "files_updated": 268
+    },
+    "fx99": {
+     "commits": 43,
+     "files_created": 1157,
+     "files_updated": 8
+    },
+    "github": {
+     "commits": 0,
+     "files_created": 0,
+     "files_updated": 0
+    },
+    "omen-c": {
+     "commits": 3722,
+     "files_created": 25962,
+     "files_updated": 2185
+    },
+    "omen-e": {
+     "commits": 3441,
+     "files_created": 72790,
+     "files_updated": 2578
+    },
+    "omen-linux": {
+     "commits": 2555,
+     "files_created": 13063,
+     "files_updated": 15
+    }
+   },
+   "third": {
+    "clone_commits": 23451,
+    "clone_files": 122495,
+    "clone_lines": 17227908,
+    "clone_lines_capped": 4643214,
+    "clone_no_numstat": 11164,
+    "own_third_class_commits": 1151,
+    "own_third_class_files": 11923,
+    "own_third_class_lines": 2586053,
+    "own_third_class_no_numstat": 0
+   },
+   "world": {
+    "commits": 9789,
+    "files": 212410,
+    "lines": 7940450
+   }
+  },
+  "stream": {
+   "commits": 9789,
+   "constellations_with_lanes": 13,
+   "contract_edges_cross": 4,
+   "contract_edges_drawn": 1,
+   "edge_types": {
+    "consumes": 3,
+    "contract": 1
+   },
+   "frames_at_cap": 1987,
+   "frames_with_lanes": 2575,
+   "lanes_ever_visible": 58,
+   "lanes_total": 111,
+   "loose_lanes": 32,
+   "max_concurrent": 14,
+   "max_quiet": 49,
+   "mean_visible": 11.067,
+   "mirv_connectors": 144,
+   "mirv_lanes_touched_max": 10,
+   "paired_lineages": 20,
+   "rails": 541,
+   "rails_joined": 75,
+   "slot_overflow": 0,
+   "swaps": 71,
+   "ticks": 1007
+  },
+  "world_sha256": "01406a013233a44658fa00534585cb04853db325c79fab09329b7f4b6be065f9"
+ },
+ "full": {
+  "audio_expected": 33049600,
+  "audio_samples": 33049600,
+  "audio_sha256": "cb78b84b9aad799654320322653e7a3e0c44ea329bfb42e04609aa434ac3f62a",
+  "audio_stats": {
+   "bells": 310,
+   "collapse_bins": 32,
+   "collapsed_frames": 236,
+   "offload_clicks": 301,
+   "offload_roar_frames": 204,
+   "pips": 519,
+   "roll_bins": 2,
+   "tones": 813
+  },
+  "camera": {
+   "beacons": 3,
+   "hq_join_frame": 4109,
+   "launch_targets": 870,
+   "tile_intervals": 1713
+  },
+  "camera_numbers": {
+   "frames": 20656,
+   "scale_end": 1.65,
+   "scale_f0": 109.99,
+   "scale_f394": 109.86,
+   "scale_f543": 109.52,
+   "tight_start_25pct_frame": 1770,
+   "tight_start_25pct_s": 59.0,
+   "tight_start_50pct_frame": 1186,
+   "tight_start_50pct_s": 39.53,
+   "tight_start_90pct_frame": 925,
+   "tight_start_90pct_s": 30.83
+  },
+  "chatgpt_links": "present",
+  "clock": {
+   "boundary_out_s": [
+    49.207,
+    136.942
+   ],
+   "coda_s": 18.0,
+   "era_len_s": [
+    47.207,
+    87.735,
+    533.593
+   ],
+   "frames": 20656,
+   "intro_s": 2.0,
+   "m": 1.0,
+   "story_s": 668.535,
+   "total_s": 688.535
+  },
+  "code": {
+   "compile/audio.py": "1f0749040b551ec8bace3411afff9f72be3483d0d7fd44e642aa0ec18f87c79b",
+   "compile/audit.py": "162b67a0a21a56247f76f5316643a0752371ef45f4b19b0ae4a422d3eb3a7686",
+   "compile/build.py": "755a7308e2395a4fc10d68b08c67d2a416fc8225cbfbc2d87e8c0df0f71189f8",
+   "compile/build_cli.py": "90629f257626772ab330baadec81b3a5cc0f737ccabae554043f2019612ad908",
+   "compile/build_data.py": "2ec6e771cc18224d01dc9bfbe6cafe3cdc685b50bee80d10d845f02ba991ed12",
+   "compile/camera.py": "e431a45bd74167c39554e22b15c80fb95a3bc117a47d40dfa403ac66911de4d4",
+   "compile/clock.py": "857d13ec3e7b7aceee4f770e72fa2c01926a9c8e546d41f73fa080cd84e6327a",
+   "compile/common.py": "50eee918f0b114c0416d9c97e982f85935ef2cc7e13bbd4d5727cedf7d363f2b",
+   "compile/corpus.py": "e545303d69d8eadc8cc23a2c26788eec7da237f4c37c7ff5593b389e571a56b0",
+   "compile/launches.py": "959c1fd8f6bbe80f50e313bdf05ec8b6eb8a48a699403f6205f3282a5f6a56fb",
+   "compile/layout.py": "307b78425e2659133ca5453dad31fcd82aea27dc1945eff8df1ad68abd38bddd",
+   "compile/marks.py": "55024a753b97cfbd91ef8e6dac8757a266279cc4632831eeca6b3aae82a9f73f",
+   "compile/names.py": "164cd6e3da9bbedb523b6109697ca8f254312bf93c90cc56b999b36a7a9622a0",
+   "compile/nations.py": "5bc7946b7223725904b47b0194ff9b2b899a914aa31458170c8b14eda1af6bdf",
+   "compile/params.json": "fa338fa6632a802dcde4636f9ec861ee421f4d2083c1aeca2a0ad9aed112624d",
+   "compile/series.py": "7f00172dabc0df99be06db7d86a25e1d6c6d718c5a36e411fa492e63447ce0bd",
+   "compile/stream.py": "b7ccfddf98cf4fdcf0a6a3be5ec8a34184184482dfa01c18e667663f5d8100e6",
+   "compile/strip.py": "7e9a2a1c0ba5754e6f7e51db7dd4afc7b10ae0c283abe63442c6fd4bccf4180e",
+   "compile/synth.py": "b13f2d3a62ddb15af7484066f926128a0546abcce978471c2db7ed16966e9286",
+   "compile/tiles.py": "fc66df0c7a57b6c8d886bffe634e95d87e34f64d1b71cf6eaf699e4e2713fb1c",
+   "export/edgecheck.mjs": "ba310f454353af488f901b66b5a497352699ef5d8cfff3c4c1ee2cabff6b57e8",
+   "export/encode.py": "c038b7019d335d86d31f955eec2d071a1a998eff4e4d532d31dff23fac63e90e",
+   "export/frames.mjs": "db4f48eafa87b696ffcca3d1d4c4c9ab143a0e66f9410ce4bfad38a9b762cff4",
+   "export/hashpage.mjs": "d8f844891637028d25f307236ef3d1e21d6a6f0f9d6e35060a6b6e6a46bbc8dc",
+   "export/lapkit.py": "32585a6be8051a0da56bf068b97c7a6880c76bb06c505d86ba7c40d49cd154df",
+   "export/perf.mjs": "677ee60f4272100e306d45ae6ec4413eea4a3e80a2d7e5694c8db7a48e24c8ea",
+   "export/probe.py": "f7f5ea59faa37777b1c4d542e0d9fac74bdc30c47585b87d04ab9f9595abd07f",
+   "export/rehash.mjs": "0fe27fd68a1031a9917d5d55286ffb68e016a02e79d809768e4b2da92307ead6",
+   "export/run.py": "348f311acdd7636be8c8b31d3cf3260adf4fbb0e62a2b018814572e31fa45110",
+   "export/serve.py": "983ad09041fde91610e46bebfb827cee699ff54454e0a136806a88f91e7046f3",
+   "export/state_node.mjs": "da650c99a61f7e1f6e3d0854c6bd5b85f015c4adbdf41544fd0aaa8de6d1aad8",
+   "export/still.mjs": "7fb384682286c5c742a46b2701a92a46b4d4a6311bb1a1ed76c857db30f3d2a9",
+   "export/verify.mjs": "f43e5a37c042bb607c252771598faf05c3ce800fd3fc04636d3bfea666053c67",
+   "render/border.js": "4f05b0af472ac42d2676362f25a0b956eefe9cb7987746f6fe1fbdf277e1ab05",
+   "render/card.js": "d502dfbb5fa4745c8e46493e2eab27ddfdd3338af8c351cc6bc198de7b822c4e",
+   "render/data.js": "3827d9895d3a415b56e58297ad7017f334977b3cc5cae7a86e430d9320589d7d",
+   "render/fields.js": "6ce871a8589d50d0cd6142c77e11ff974d782aa78793de9dcdc6408731da0ed8",
+   "render/index.html": "787c423fc6e4f0036f35ad24d580d7a1f2115f3a213d94a47537ea6a8f677b93",
+   "render/launch.js": "75374f2395cdf915d31e5c0fbc6365d0fa4d24c4eba8a8bec55225d4d5325a6a",
+   "render/main.js": "fc2077274dc319cf16b4689864fa96ccd4e5c582bd0db8eff6c89bc8fa6acfdc",
+   "render/palette.js": "fbcd345567e1af55e6ab5618b98d5e975a580f2fe9dd18733fff24f0ba979b7e",
+   "render/panels.js": "3b0186b135d94026d1b023279dcc75e532b9afa6799ef13c1b5a42d7012c8d47",
+   "render/player.js": "a7284622ed84bed49d5cbcb27dbf7f2ec7bbdbbc87ede4226d06001184b8be8b",
+   "render/radio.js": "c4fbcac64e6ffb1b96753f68dfcc98301a98734d19b888bd2e32bfe780d19837",
+   "render/state.js": "2962c6ed5c9c96e7c68896736522a343ddc9002351fee55bec1de29aaf36b042",
+   "render/stream.js": "1b7c076c428264a0b87e1acf47725cd5490b8dc37e20d73c78280d0c4d77dd09"
+  },
+  "compile_s": 69.3,
+  "compile_twice": {
+   "audio_equal": true,
+   "kw_data_equal": true,
+   "second": {
+    "audio_sha256": "cb78b84b9aad799654320322653e7a3e0c44ea329bfb42e04609aa434ac3f62a",
+    "frames": 20656,
+    "kw_data_sha256": "1b6b0e4d5d66f05d6e581a61204a599ba10de799efedd2fddb5efe8ace306d65"
+   }
+  },
+  "counts": {
+   "beams": 4953,
+   "cells": 15943,
+   "checkpoints": 23,
+   "chips": 34,
+   "collapsed_frames": 236,
+   "deltas": 24973,
+   "launch_counts": {
+    "bands": {
+     "1": 61,
+     "2": 232,
+     "3": 343,
+     "4": 194,
+     "5": 31,
+     "6": 9
+    },
+    "bands_git": {
+     "1": 30,
+     "2": 183,
+     "3": 279,
+     "4": 140,
+     "5": 8,
+     "6": 1
+    },
+    "capped_commits": 87,
+    "episodes_git": 1056,
+    "first_of_generation": 19,
+    "first_of_nation": 5,
+    "first_tests": 217,
+    "launches": 870,
+    "launches_git": 641,
+    "launches_nongit": 229,
+    "max_warheads": 58,
+    "mirv": 171,
+    "nations": {
+     "automation": 9,
+     "chatgpt": 18,
+     "claude": 453,
+     "codex": 82,
+     "human": 308
+    },
+    "nations_git": {
+     "automation": 9,
+     "claude": 442,
+     "codex": 74,
+     "human": 116
+    },
+    "nongit_nations": {
+     "chatgpt:time": 18,
+     "claude": 11,
+     "codex": 8,
+     "human": 192
+    },
+    "single": 688,
+    "single_git": 459,
+    "tests_git": 955,
+    "tests_nongit": 229,
+    "unified": 11,
+    "warheads_hist": {
+     "2": 98,
+     "3": 33,
+     "4": 14,
+     "5": 10,
+     "6": 2,
+     "7": 3,
+     "8": 3,
+     "9": 3,
+     "10": 5
+    }
+   },
+   "launches": 870,
+   "launches_skipped_no_region": 0,
+   "layout": {
+    "bridges": 29,
+    "constellations": 13,
+    "harbours": 84,
+    "islands": 93,
+    "joined_lineages": 83,
+    "notches": 317,
+    "spurs": 224
+   },
+   "nations": [
+    "human",
+    "chatgpt",
+    "claude",
+    "codex",
+    "automation",
+    "local_model",
+    "opencode"
+   ],
+   "peak_launches_per_frame": 3,
+   "regions": 322,
+   "rings": 103,
+   "tiles": 6244,
+   "tiles_by_kind": {
+    "dir": 2300,
+    "git": 2928,
+    "third": 1016
+   },
+   "tiles_counts": {
+    "cells": 15943,
+    "regions": 322,
+    "regions_by_host": {
+     "am4": 13,
+     "fx99": 8,
+     "omen-c": 74,
+     "omen-e": 148,
+     "omen-linux": 79
+    },
+    "regions_dir": 178,
+    "regions_git": 131,
+    "regions_third": 13,
+    "tiles": 6244,
+    "tiles_never_touched": 284,
+    "touches": 145687
+   },
+   "tiles_never_touched": 284,
+   "tiles_stats": {
+    "copies_revealed": 20,
+    "copy_tiles_revealed": 41,
+    "ruin_clone_event": 1,
+    "ruin_clone_last_ts": 12
+   },
+   "touches": 145687
+  },
+  "cut_s": null,
+  "hq": {
+   "changes": [
+    [
+     8980,
+     "omen-e"
+    ],
+    [
+     12724,
+     "omen-c"
+    ],
+    [
+     18772,
+     "omen-e"
+    ],
+    [
+     19276,
+     "omen-linux"
+    ]
+   ],
+   "first_linux_day_iso": "2026-09-28T00:00:00Z"
+  },
+  "inputs": {
+   "actors.json": "dea212abcda1303143e10fd6cc6fb8f47a3a152d3be62353bfa49e58a33e95d8",
+   "chatgpt_links.json": "63ed4b48fd2f88c177f8f839edcc9ed0de22ec81e16b5e711e3f12a8511c5843",
+   "events.ndjson": "b1ee0cf8fbb072732d3c262db1608425e66eb7c943aa125b7cee618c1a05f034",
+   "hosts.json": "494c1012961cf4923f9b1a7afbc2c3871ef57305268fa473afafd9d32b924d21",
+   "relations.json": "9e7c60ce24a0ebca2d1bf16da2f4fad3f7fadcb7f29a9ad2d1634d2319fe7622",
+   "repos.json": "20640180b13007e000ffeed2efdeb7709e28379066f5f96f811c7c3c2dfac975",
+   "sessions.json": "4730a2c30885067400725e10b97cdf10d535f3913687408882e996c12f002157",
+   "stats.json": "0ecbe4bf30ec4a5be077063f69150c68891092b5094a1807611c21335a698c58"
+  },
+  "kw_data_bytes": 22615516,
+  "kw_data_sha256": "1b6b0e4d5d66f05d6e581a61204a599ba10de799efedd2fddb5efe8ace306d65",
+  "marks_counts": {
+   "era": 2,
+   "migration": 1,
+   "nation": 7,
+   "regime": 15,
+   "storm": 1,
+   "surface": 6
+  },
+  "marks_diag": {
+   "regime_breaks": [
+    {
+     "day": 4993,
+     "frame": 3262,
+     "label": "launches: accelerating \u2192 accelerating (steeper)",
+     "series": "launches"
+    },
+    {
+     "day": 5057,
+     "frame": 3420,
+     "label": "files: accelerating \u2192 slowing",
+     "series": "files"
+    },
+    {
+     "day": 5088,
+     "frame": 3497,
+     "label": "files: slowing \u2192 linear",
+     "series": "files"
+    },
+    {
+     "day": 5223,
+     "frame": 3827,
+     "label": "files: linear \u2192 accelerating",
+     "series": "files"
+    },
+    {
+     "day": 5285,
+     "frame": 3978,
+     "label": "commits: accelerating \u2192 accelerating (steeper)",
+     "series": "commits"
+    },
+    {
+     "day": 5311,
+     "frame": 4044,
+     "label": "files: accelerating \u2192 accelerating (steeper)",
+     "series": "files"
+    },
+    {
+     "day": 5342,
+     "frame": 5237,
+     "label": "commits: accelerating \u2192 accelerating (shallower)",
+     "series": "commits"
+    },
+    {
+     "day": 5342,
+     "frame": 5237,
+     "label": "files: accelerating \u2192 slowing",
+     "series": "files"
+    },
+    {
+     "day": 5342,
+     "frame": 5237,
+     "label": "launches: accelerating \u2192 linear",
+     "series": "launches"
+    },
+    {
+     "day": 5372,
+     "frame": 7397,
+     "label": "files: slowing \u2192 linear",
+     "series": "files"
+    },
+    {
+     "day": 5372,
+     "frame": 7397,
+     "label": "launches: linear \u2192 linear (shallower)",
+     "series": "launches"
+    },
+    {
+     "day": 5403,
+     "frame": 9629,
+     "label": "launches: linear \u2192 accelerating",
+     "series": "launches"
+    },
+    {
+     "day": 5408,
+     "frame": 9989,
+     "label": "files: linear \u2192 slowing",
+     "series": "files"
+    },
+    {
+     "day": 5438,
+     "frame": 12149,
+     "label": "files: slowing \u2192 accelerating",
+     "series": "files"
+    },
+    {
+     "day": 5519,
+     "frame": 17981,
+     "label": "files: accelerating \u2192 linear",
+     "series": "files"
+    }
+   ],
+   "storm_peak_7d_calls": 21923
+  },
+  "marks_sha256": "beacf60aa1183c9f0937de6c48b647a1f9151e41343ffb9c440f41d6f0f04221",
+  "marks_table": [
+   {
+    "date": "2011-08-25",
+    "frame": 68,
+    "kind": "nation",
+    "label": "human enters"
+   },
+   {
+    "date": "2011-08-25",
+    "frame": 68,
+    "kind": "surface",
+    "label": "new continent: GitHub"
+   },
+   {
+    "date": "2015-08-10",
+    "frame": 543,
+    "kind": "surface",
+    "label": "new continent: linux"
+   },
+   {
+    "date": "2020-12-22",
+    "frame": 1187,
+    "kind": "surface",
+    "label": "new continent: E:"
+   },
+   {
+    "date": "2023-04-01",
+    "frame": 1477,
+    "kind": "era",
+    "label": "era B begins"
+   },
+   {
+    "date": "2023-04-17",
+    "frame": 1501,
+    "kind": "nation",
+    "label": "ChatGPT enters"
+   },
+   {
+    "date": "2024-10-26",
+    "frame": 2872,
+    "kind": "surface",
+    "label": "new continent: C:"
+   },
+   {
+    "date": "2025-04-01",
+    "frame": 3262,
+    "kind": "regime",
+    "label": "launches: accelerating \u2192 accelerating (steeper)"
+   },
+   {
+    "date": "2025-06-05",
+    "frame": 3420,
+    "kind": "regime",
+    "label": "files: accelerating \u2192 slowing"
+   },
+   {
+    "date": "2025-07-01",
+    "frame": 3487,
+    "kind": "surface",
+    "label": "new continent: AM4"
+   },
+   {
+    "date": "2025-07-05",
+    "frame": 3497,
+    "kind": "regime",
+    "label": "files: slowing \u2192 linear"
+   },
+   {
+    "date": "2025-11-17",
+    "frame": 3827,
+    "kind": "regime",
+    "label": "files: linear \u2192 accelerating"
+   },
+   {
+    "date": "2026-01-18",
+    "frame": 3978,
+    "kind": "regime",
+    "label": "commits: accelerating \u2192 accelerating (steeper)"
+   },
+   {
+    "date": "2026-01-20",
+    "frame": 3983,
+    "kind": "nation",
+    "label": "Claude enters"
+   },
+   {
+    "date": "2026-02-13",
+    "frame": 4044,
+    "kind": "regime",
+    "label": "files: accelerating \u2192 accelerating (steeper)"
+   },
+   {
+    "date": "2026-03-01",
+    "frame": 4109,
+    "kind": "era",
+    "label": "era C begins"
+   },
+   {
+    "date": "2026-03-17",
+    "frame": 5237,
+    "kind": "regime",
+    "label": "commits: accelerating \u2192 accelerating (shallower)"
+   },
+   {
+    "date": "2026-03-17",
+    "frame": 5237,
+    "kind": "regime",
+    "label": "files: accelerating \u2192 slowing"
+   },
+   {
+    "date": "2026-03-17",
+    "frame": 5237,
+    "kind": "regime",
+    "label": "launches: accelerating \u2192 linear"
+   },
+   {
+    "date": "2026-04-16",
+    "frame": 7397,
+    "kind": "regime",
+    "label": "files: slowing \u2192 linear"
+   },
+   {
+    "date": "2026-04-16",
+    "frame": 7397,
+    "kind": "regime",
+    "label": "launches: linear \u2192 linear (shallower)"
+   },
+   {
+    "date": "2026-05-17",
+    "frame": 9629,
+    "kind": "regime",
+    "label": "launches: linear \u2192 accelerating"
+   },
+   {
+    "date": "2026-05-22",
+    "frame": 9989,
+    "kind": "regime",
+    "label": "files: linear \u2192 slowing"
+   },
+   {
+    "date": "2026-06-21",
+    "frame": 12149,
+    "kind": "regime",
+    "label": "files: slowing \u2192 accelerating"
+   },
+   {
+    "date": "2026-06-22",
+    "frame": 12265,
+    "kind": "surface",
+    "label": "new continent: FX99"
+   },
+   {
+    "date": "2026-06-29",
+    "frame": 12753,
+    "kind": "nation",
+    "label": "Codex enters"
+   },
+   {
+    "date": "2026-07-03",
+    "frame": 13018,
+    "kind": "nation",
+    "label": "automation enters"
+   },
+   {
+    "date": "2026-07-18",
+    "frame": 14099,
+    "kind": "nation",
+    "label": "local enters"
+   },
+   {
+    "date": "2026-09-10",
+    "frame": 17981,
+    "kind": "regime",
+    "label": "files: accelerating \u2192 linear"
+   },
+   {
+    "date": "2026-09-27",
+    "frame": 19239,
+    "kind": "nation",
+    "label": "OpenCode enters"
+   },
+   {
+    "date": "2026-09-28",
+    "frame": 19277,
+    "kind": "migration",
+    "label": "the migration: HQ crosses to linux"
+   },
+   {
+    "date": "2026-10-03",
+    "frame": 19637,
+    "kind": "storm",
+    "label": "the offload storm begins"
+   }
+  ],
+  "params_hash": "01f0184775c5e16300d0edce0521b1ec110bbe1e5b4ad0d9edf48d19accbfb59",
+  "relations": "present",
+  "running_totals": {
+   "bulk_copy_excluded": {
+    "file_birth": 680125,
+    "file_update": 959
+   },
+   "lines_uncapped": {
+    "added": 15934153,
+    "cap": 20000,
+    "commits_capped": 87,
+    "removed": 2516181,
+    "total": 18450334
+   },
+   "nation": {
+    "automation": {
+     "commits": 644,
+     "files_changed": 1120,
+     "lines_added": 86398,
+     "lines_removed": 7628
+    },
+    "chatgpt": {
+     "commits": 0,
+     "files_changed": 0,
+     "lines_added": 0,
+     "lines_removed": 0
+    },
+    "claude": {
+     "commits": 4391,
+     "files_changed": 30354,
+     "lines_added": 2551755,
+     "lines_removed": 210941
+    },
+    "codex": {
+     "commits": 46,
+     "files_changed": 1057,
+     "lines_added": 47784,
+     "lines_removed": 662
+    },
+    "human": {
+     "commits": 4708,
+     "files_changed": 56330,
+     "lines_added": 4745778,
+     "lines_removed": 289501
+    },
+    "local_model": {
+     "commits": 0,
+     "files_changed": 0,
+     "lines_added": 0,
+     "lines_removed": 0
+    },
+    "opencode": {
+     "commits": 0,
+     "files_changed": 0,
+     "lines_added": 0,
+     "lines_removed": 0
+    }
+   },
+   "no_numstat_counted": 0,
+   "surface": {
+    "am4": {
+     "commits": 28,
+     "files_created": 5523,
+     "files_updated": 268
+    },
+    "fx99": {
+     "commits": 43,
+     "files_created": 1157,
+     "files_updated": 8
+    },
+    "github": {
+     "commits": 0,
+     "files_created": 0,
+     "files_updated": 0
+    },
+    "omen-c": {
+     "commits": 3722,
+     "files_created": 25962,
+     "files_updated": 2185
+    },
+    "omen-e": {
+     "commits": 3441,
+     "files_created": 72790,
+     "files_updated": 2578
+    },
+    "omen-linux": {
+     "commits": 2555,
+     "files_created": 13063,
+     "files_updated": 15
+    }
+   },
+   "third": {
+    "clone_commits": 23451,
+    "clone_files": 122495,
+    "clone_lines": 17227908,
+    "clone_lines_capped": 4643214,
+    "clone_no_numstat": 11164,
+    "own_third_class_commits": 1151,
+    "own_third_class_files": 11923,
+    "own_third_class_lines": 2586053,
+    "own_third_class_no_numstat": 0
+   },
+   "world": {
+    "commits": 9789,
+    "files": 212410,
+    "lines": 7940450
+   }
+  },
+  "stream": {
+   "commits": 9789,
+   "constellations_with_lanes": 13,
+   "contract_edges_cross": 4,
+   "contract_edges_drawn": 4,
+   "edge_types": {
+    "consumes": 3,
+    "contract": 1
+   },
+   "frames_at_cap": 12585,
+   "frames_with_lanes": 18358,
+   "lanes_ever_visible": 109,
+   "lanes_total": 111,
+   "loose_lanes": 32,
+   "max_concurrent": 14,
+   "max_quiet": 37,
+   "mean_visible": 10.397,
+   "mirv_connectors": 144,
+   "mirv_lanes_touched_max": 10,
+   "paired_lineages": 20,
+   "rails": 541,
+   "rails_joined": 75,
+   "slot_overflow": 0,
+   "swaps": 144,
+   "ticks": 1007
+  },
+  "world_sha256": "01406a013233a44658fa00534585cb04853db325c79fab09329b7f4b6be065f9"
+ }
+}

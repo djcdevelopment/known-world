@@ -12,6 +12,7 @@
     const fin = Math.min(1, (u - 9 / 18) / (1 / 18)), fout = u > 17 / 18 ? Math.min(1, (u - 17 / 18) / (1 / 18)) : 0;
     ctx.fillStyle = 'rgba(7,9,14,' + (0.96 * fin).toFixed(3) + ')'; ctx.fillRect(0, 0, KW.LAY.W, KW.LAY.H);
     ctx.globalAlpha = fin;
+    if (KW.LAY.mode === 'portrait') { portrait(ctx, fin, fout); return; }
     const x0 = 160, cols = [x0, x0 + 250, x0 + 410, x0 + 500, x0 + 690, x0 + 920, x0 + 1110, x0 + 1220, x0 + 1370], y0 = 150, rowH = 62;
     ctx.textBaseline = 'alphabetic'; ctx.textAlign = 'left';
     ctx.font = '16px ' + FONT; ctx.fillStyle = '#8b93a6';
@@ -41,6 +42,39 @@
     D.card_footer.forEach((t, i) => ctx.fillText(t, x0, 950 + i * 30));
     ctx.globalAlpha = 1;
     if (fout > 0) { ctx.fillStyle = 'rgba(0,0,0,' + fout.toFixed(3) + ')'; ctx.fillRect(0, 0, KW.LAY.W, KW.LAY.H); }
+  }
+  // portrait: one block of three lines per nation, the world row, then the footer wrapped to the frame
+  function wrap(ctx, text, w) {
+    const words = text.split(' '), out = []; let cur = '';
+    for (const t of words) { const nx = cur ? cur + ' ' + t : t; if (ctx.measureText(nx).width > w && cur) { out.push(cur); cur = t; } else cur = nx; }
+    if (cur) out.push(cur); return out;
+  }
+  function portrait(ctx, fin, fout) {
+    const LY = KW.LAY, x0 = 14, rowH = Math.min(62, Math.floor((LY.H - 330) / (D.card.length + 1)));
+    let y = 44;
+    ctx.textBaseline = 'alphabetic'; ctx.textAlign = 'left';
+    const lines = r => r.commits + ' commits \u00b7 ' + r.files + ' files \u00b7 ' + r.lines;
+    for (let i = 0; i < D.card.length; i++) {
+      const r = D.card[i];
+      ctx.fillStyle = P.rgba(i, 0.62, 1); ctx.fillRect(x0, y - 14, 14, 14);
+      ctx.font = '20px ' + FONT; ctx.fillStyle = '#e8e0c0'; ctx.fillText(r.name, x0 + 24, y);
+      ctx.textAlign = 'right'; ctx.font = '22px ' + FONT; ctx.fillText(String(r.tests), LY.W - x0, y); ctx.textAlign = 'left';
+      ctx.font = '12px ' + FONT; ctx.fillStyle = '#c9c3a8';
+      ctx.fillText((r.first || '\u2014') + '  \u00b7  ' + r.yield + '  \u00b7  ' + r.shapes, x0 + 24, y + 18);
+      ctx.fillStyle = '#8b93a6'; ctx.fillText(lines(r), x0 + 24, y + 34);
+      y += rowH;
+    }
+    const w = D.card_world;
+    ctx.fillStyle = '#1b2230'; ctx.fillRect(x0, y - 22, LY.W - 2 * x0, 1);
+    ctx.font = '20px ' + FONT; ctx.fillStyle = '#e8e0c0'; ctx.fillText(w.name, x0 + 24, y);
+    ctx.textAlign = 'right'; ctx.font = '22px ' + FONT; ctx.fillText(String(w.tests), LY.W - x0, y); ctx.textAlign = 'left';
+    ctx.font = '12px ' + FONT; ctx.fillStyle = '#8b93a6'; ctx.fillText(lines(w).replace(/ \u00b7 ([^ ]+)$/, ' \u00b7 $1 lines'), x0 + 24, y + 18);
+    y += 44;
+    ctx.font = '11px ' + FONT; ctx.fillStyle = '#5f6779';
+    const foot = (D.card_third ? [D.card_third] : []).concat(D.card_footer);
+    for (const t of foot) { for (const ln of wrap(ctx, t, LY.W - 2 * x0)) { ctx.fillText(ln, x0, y); y += 15; } y += 4; }
+    ctx.globalAlpha = 1;
+    if (fout > 0) { ctx.fillStyle = 'rgba(0,0,0,' + fout.toFixed(3) + ')'; ctx.fillRect(0, 0, LY.W, LY.H); }
   }
   KW.registerLayer({ id: 'card', z: 90, render: card });
 })();

@@ -3,7 +3,7 @@
 // flashes and nothing sounds. Repo names are printed here only (the map's labels stay off); the hashed arm swaps them at compile.
 (function () {
   const KW = window.KW, D = KW.D, S = D.stream;
-  if (!S) return;
+  if (!S || !KW.LAY.stream) return;   // portrait hides the stream (hud_portrait: hidden)
   const U = KW.util, F = D.F, K = S.K, L = S.L, FONT = '"JetBrains Mono", monospace';
   const LY = KW.LAY, X0 = LY.W - LY.right - S.col_w, W = S.col_w, TOP = LY.top, PHT = LY.H - LY.top - LY.bottom, YQ = TOP + 20, YH = YQ + 104, YB = LY.H - LY.bottom, H = YB - YH, Wf = S.window_f, PPF = H / Wf;
   const sid = U.u8(S.sid), sx = U.f32(S.sx), sa = U.u8(S.sa), ss = U.i32(S.ss), sq = U.u8(S.sq);
@@ -17,7 +17,8 @@
   const lx = new Float32Array(L), la = new Float32Array(L), ls = new Int32Array(L);
   const lb = (arr, n, v) => { let lo = 0, hi = n; while (lo < hi) { const m = (lo + hi) >> 1; if (arr[m] < v) lo = m + 1; else hi = m; } return lo; };   // first index with arr[i] >= v
   const ub = (arr, n, v) => { let lo = 0, hi = n; while (lo < hi) { const m = (lo + hi) >> 1; if (arr[m] <= v) lo = m + 1; else hi = m; } return lo; };   // first index with arr[i] > v
-  const clip = t => t.length > MAXCH ? t.slice(0, MAXCH - 1) + '…' : t;
+  const clip = (t, n) => { n = n || MAXCH; return t.length > n ? t.slice(0, n - 1) + '…' : t; };
+  const NAME_MIN_PX = 18, NAME_WIDE_PX = 30;
   const nat = []; for (let i = 0; i < N; i++) nat.push(P.rgba(i, 0.74, 0.62));
   let fadeG = null;
   function draw(ctx, f) {
@@ -123,12 +124,22 @@
     ctx.fillStyle = '#1b2230'; ctx.fillRect(X0 + 1, YH - 1, W - 2, 1);
     ctx.font = '12px ' + FONT;
     if (sq[f] > 0) { ctx.textAlign = 'right'; ctx.fillStyle = '#8b93a6'; ctx.fillText('+' + sq[f] + ' quiet', X0 + W - 8, TOP + 15); ctx.textAlign = 'left'; }
-    let prev = -2;
-    for (const id of vis) {
-      const a = la[id];
+    // header names follow the legibility rule (DIRECTION 'Stream header legibility'): a lane is named only when its pitch (the gap to its
+    // nearer neighbour) is at least 18 px; named lanes alternate between two staggered rows of 7 characters, or stand alone in one row
+    // of 14 once the pitch is 30 px or more. The rest keep their entry label and show their name on hover in the player.
+    let prev = -2, nn = 0;
+    for (let q = 0; q < vis.length; q++) {
+      const id = vis[q], a = la[id];
       if (prev >= 0 && con[prev] !== con[id] && Math.min(la[prev], a) > 0.5) { const xm = Math.round((lx[prev] + lx[id]) / 2) + 0.5; ctx.fillStyle = 'rgba(139,147,166,0.30)'; ctx.fillRect(xm, YQ + 18, 1, YH - YQ - 24); }
-      ctx.globalAlpha = 0.9 * a; ctx.fillStyle = '#e8e0c0';
-      ctx.save(); ctx.translate(Math.round(lx[id]) + 4, YH - 6); ctx.rotate(-Math.PI / 2); ctx.fillText(clip(S.names[id]), 0, 0); ctx.restore();
+      const dl = q > 0 ? lx[id] - lx[vis[q - 1]] : 1e9, dr = q + 1 < vis.length ? lx[vis[q + 1]] - lx[id] : 1e9, pitch = Math.min(dl, dr);
+      if (KW.compat) {
+        ctx.globalAlpha = 0.9 * a; ctx.fillStyle = '#e8e0c0';
+        ctx.save(); ctx.translate(Math.round(lx[id]) + 4, YH - 6); ctx.rotate(-Math.PI / 2); ctx.fillText(clip(S.names[id]), 0, 0); ctx.restore();
+      } else if (pitch >= NAME_MIN_PX) {
+        const wide = pitch >= NAME_WIDE_PX, row = wide ? 0 : (nn++ & 1);
+        ctx.globalAlpha = 0.9 * a; ctx.fillStyle = '#e8e0c0';
+        ctx.save(); ctx.translate(Math.round(lx[id]) + 4, YH - 6 - row * 50); ctx.rotate(-Math.PI / 2); ctx.fillText(wide ? clip(S.names[id]) : clip(S.names[id], 7), 0, 0); ctx.restore();
+      }
       prev = id;
     }
     ctx.globalAlpha = 1;
@@ -136,5 +147,16 @@
     ctx.restore();
     ctx.textAlign = 'left';
   }
+  // hover: the lane under a logical point at frame f (the player shows its name)
+  KW.streamLaneAt = function (f, px, py) {
+    if (px < X0 || px > X0 + W || py < YQ || py > YB) return null;
+    const base = f * K; let best = null, bd = 1e9;
+    for (let k = 0; k < K; k++) {
+      const id = sid[base + k]; if (id === 255) break;
+      const d = Math.abs(sx[base + k] + X0 - px);
+      if (d < bd && sa[base + k] > 0) { bd = d; best = id; }
+    }
+    return best !== null && bd <= 9 ? { id: best, name: S.names[best] } : null;
+  };
   KW.registerLayer({ id: 'stream', z: 73, render: draw });
 })();

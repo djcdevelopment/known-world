@@ -98,10 +98,12 @@ def collect(c, params, nat_index):
     first_touch = np.full(nT, np.inf)
     reveal = np.zeros(nT, dtype=bool)
     # ---- touches ---------------------------------------------------------------------------------------------------
-    T, TI, G, W = [], [], [], []
+    T, TI, G, W, BU = [], [], [], [], []
+    burst_min = int(params["nongit_min_files"])
+    excl_bulk = bool(params["nongit_exclude_bulk_copy"])
 
-    def touch(t, tile, g, w):
-        T.append(t); TI.append(tile); G.append(g); W.append(w)
+    def touch(t, tile, g, w, burst=False):
+        T.append(t); TI.append(tile); G.append(g); W.append(w); BU.append(burst)
         if t < first_touch[tile]:
             first_touch[tile] = t
 
@@ -133,7 +135,8 @@ def collect(c, params, nat_index):
         gate = c.dir_git_first.get(L)
         for (t, host, p, kind, n, by, bulk, cls) in c.dir_touch.get(L, ()):
             g = nat_index.get(cls, nat_index.get("human"))
-            touch(t, tile_of[(L, h, p)], g, w_birth(n) * (0.5 if bulk else 1.0))
+            # a births burst (n >= nongit_min_files, not a bulk copy) steers the camera on its own (DIRECTION 'What steers the camera')
+            touch(t, tile_of[(L, h, p)], g, w_birth(n) * (0.5 if bulk else 1.0), burst=(kind == "file_birth" and n >= burst_min and not (bulk and excl_bulk)))
         for (t, sid, cls, n, path, host) in c.chat.get(L, ()):
             g = nat_index.get(cls)
             if g is None:
@@ -197,6 +200,7 @@ def collect(c, params, nat_index):
     Tl.touch_tile = newid[np.array(TI, dtype=np.int64)] if TI else np.zeros(0, dtype=np.int64)
     Tl.touch_g = np.array(G, dtype=np.int64)
     Tl.touch_w = np.array(W, dtype=np.float64)
+    Tl.touch_burst = np.array(BU, dtype=bool)
     Tl.tile_of = {k: int(newid[v]) for k, v in tile_of.items()}
     Tl.hosts_of = hosts_of
     Tl.clone = clone

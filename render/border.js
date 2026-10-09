@@ -20,30 +20,45 @@
     const e = KW.era[f];
     return { text: e === 2 ? y + ' · ' + P2(m) + ' · ' + P2(d) : y + ' · ' + P2(m), frac: tau - day, era: e };
   };
+  // hashmarks (marks.json via the data block): one 1 px tick per mark on a hairline over the whole timeline, kind-coloured and muted;
+  // the playhead rides it. The exported ticker carries them faintly; the player's scrubber draws the same marks in the DOM.
+  const MARKC = { era: [232, 224, 192, 0.55], surface: [112, 170, 226, 0.50], nation: [128, 210, 140, 0.50], migration: [240, 160, 96, 0.65], storm: [228, 98, 72, 0.65], regime: [190, 150, 232, 0.50] };
+  KW.markColor = (kind, a) => { const c = MARKC[kind] || [200, 200, 200, 0.5]; return 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ',' + (a === undefined ? c[3] : a) + ')'; };
+  function markLine(ctx, f, x0, x1, y) {
+    const M = D.marks;
+    ctx.fillStyle = '#2a3346'; ctx.fillRect(x0, y, x1 - x0, 1);
+    if (M) for (const m of M) { ctx.fillStyle = KW.markColor(m.kind); ctx.fillRect(x0 + Math.round((x1 - x0 - 1) * m.frame / (KW.F - 1)), y - 4, 1, 5); }
+    ctx.fillStyle = '#e8e0c0'; ctx.fillRect(x0 + Math.round((x1 - x0 - 2) * f / (KW.F - 1)), y - 3, 2, 7);
+  }
   function drawTicker(ctx, f) {
-    const W = ctx.canvas.width, T = KW.tickerText(f);
+    const LY = KW.LAY, W = LY.W, T = KW.tickerText(f), por = LY.mode === 'portrait';
     ctx.save();
-    KW.plate(ctx, 0, 0, W, KW.LAY.top);
+    KW.plate(ctx, 0, 0, W, LY.tickerH);
     ctx.textBaseline = 'alphabetic';
-    ctx.font = '30px ' + FONT; ctx.fillStyle = '#e8e0c0';
-    ctx.fillText(T.text, 24, 42);
     // rate glyph: dim, brightening for 0.6 s (18 frames) after an era switch
     let a = 0.45;
     for (const sf of D.era_switch_f) { const k = f - sf; if (k >= 0 && k < 18) a = 0.45 + 0.55 * (1 - k / 18); }
-    ctx.font = '20px ' + FONT; ctx.fillStyle = 'rgba(232,224,192,' + a.toFixed(3) + ')';
-    ctx.fillText(D.rate_labels[T.era], 330, 40);
-    // world running totals, cumulative, muted
-    if (D.w_cum) {
-      const F = D.F, W3 = KW.wcum || (KW.wcum = KW.util.f32(D.w_cum)), c = KW.fmt.compact;
-      ctx.font = '14px ' + FONT; ctx.fillStyle = '#8b93a6';
-      ctx.fillText('commits ' + c(W3[f]) + ' \u00b7 files ' + c(W3[F + f]) + ' \u00b7 lines ' + c(W3[2 * F + f]), 700, 38);
-    }
-    // 24-hour hairline, era C only: a story hour is 0.1 s at the C rate
-    if (T.era === 2) {
-      const x0 = 24, w = 270;
-      ctx.fillStyle = '#2a3346'; ctx.fillRect(x0, 54, w, 1);
-      for (let h = 0; h <= 24; h += 6) ctx.fillRect(x0 + Math.round(w * h / 24), 51, 1, 7);
-      ctx.fillStyle = '#e8e0c0'; ctx.fillRect(x0 + Math.round(w * T.frac), 49, 2, 11);
+    const tot = D.w_cum ? (() => { const F = D.F, W3 = KW.wcum || (KW.wcum = KW.util.f32(D.w_cum)), c = KW.fmt.compact; return 'commits ' + c(W3[f]) + ' \u00b7 files ' + c(W3[F + f]) + ' \u00b7 lines ' + c(W3[2 * F + f]); })() : '';
+    if (!por) {
+      ctx.font = '30px ' + FONT; ctx.fillStyle = '#e8e0c0';
+      ctx.fillText(T.text, 24, 42);
+      ctx.font = '20px ' + FONT; ctx.fillStyle = 'rgba(232,224,192,' + a.toFixed(3) + ')';
+      ctx.fillText(D.rate_labels[T.era], 330, 40);
+      // world running totals, cumulative, muted
+      if (tot) { ctx.font = '14px ' + FONT; ctx.fillStyle = '#8b93a6'; ctx.fillText(tot, 700, 38); }
+      // 24-hour hairline, era C only: a story hour is 0.1 s at the C rate
+      if (T.era === 2) {
+        const x0 = 24, w = 270;
+        ctx.fillStyle = '#2a3346'; ctx.fillRect(x0, 54, w, 1);
+        for (let h = 0; h <= 24; h += 6) ctx.fillRect(x0 + Math.round(w * h / 24), 51, 1, 7);
+        ctx.fillStyle = '#e8e0c0'; ctx.fillRect(x0 + Math.round(w * T.frac), 49, 2, 11);
+      }
+      if (D.marks && !KW.compat) markLine(ctx, f, 24, W - 24, 62);
+    } else {
+      ctx.font = '24px ' + FONT; ctx.fillStyle = '#e8e0c0'; ctx.fillText(T.text, 12, 25);
+      ctx.font = '12px ' + FONT; ctx.fillStyle = 'rgba(232,224,192,' + a.toFixed(3) + ')'; ctx.fillText(D.rate_labels[T.era], 12, 42);
+      if (tot) { ctx.font = '11px ' + FONT; ctx.fillStyle = '#8b93a6'; ctx.textAlign = 'right'; ctx.fillText(tot, W - 12, 42); ctx.textAlign = 'left'; }
+      if (D.marks && !KW.compat) markLine(ctx, f, 12, W - 12, 51);
     }
     ctx.restore();
   }
@@ -57,25 +72,19 @@
   const insC = U.f32(D.ins_cum), delC = U.f32(D.del_cum), rateN = U.f32(D.rate_nat), crN = D.created_nat ? U.f32(D.created_nat) : null;
   const fm = KW.fmt, UNIT = D.rate_unit_names;
   const compact = v => v >= 1e6 ? (v / 1e6).toFixed(1) + 'M' : v >= 1e3 ? (v / 1e3).toFixed(v >= 1e4 ? 0 : 1) + 'k' : String(Math.round(v));
-  function drawLegend(ctx, f) {
-    const LY = KW.LAY, x0 = LY.W - LY.right, rowH = 136, PH = LY.H - LY.top;
-    KW.plate(ctx, x0, LY.top, LY.right, PH);
-    ctx.textBaseline = 'alphabetic';
-    ctx.save(); ctx.beginPath(); ctx.rect(x0 + 1, LY.top, LY.right - 9, PH); ctx.clip();  // nothing of a row or chip leaves the panel
-    for (let i = 0; i < N; i++) {
-      const age = f - entry[i];
-      if (age < 0) continue;
-      const u = Math.min(1, age / 12), s = u * u * (3 - 2 * u), dx = Math.round(240 * (1 - s));
-      const y = 64 + 12 + i * rowH, x = x0 + dx;
-      ctx.globalAlpha = s;
-      const fl = age < 18 ? 1 - age / 18 : 0;
-      ctx.fillStyle = KW.palette.rgba(i, 0.62 + 0.3 * fl, 1);
-      ctx.fillRect(x + 14, y + 4, 16, 16);
-      ctx.font = '20px ' + FONT; ctx.fillStyle = '#e8e0c0'; ctx.textAlign = 'left';
-      ctx.fillText(D.nat_names[i], x + 40, y + 20);
-      ctx.font = '28px ' + FONT; ctx.textAlign = 'right';
-      ctx.fillText(String(tests[i * F + f]), x + 306, y + 22);
-      ctx.textAlign = 'left';
+  // one nation row at (x, y); cmp = compact (portrait overlay): no chips, bars tighter; mini = one line of figures, no bars
+  function row(ctx, f, i, x, y, cmp, mini) {
+    const age = f - entry[i];
+    ctx.font = '20px ' + FONT; ctx.fillStyle = '#e8e0c0'; ctx.textAlign = 'left';
+    const fl = age < 18 ? 1 - age / 18 : 0;
+    ctx.fillStyle = KW.palette.rgba(i, 0.62 + 0.3 * fl, 1);
+    ctx.fillRect(x + 14, y + 4, 16, 16);
+    ctx.font = '20px ' + FONT; ctx.fillStyle = '#e8e0c0'; ctx.textAlign = 'left';
+    ctx.fillText(D.nat_names[i], x + 40, y + 20);
+    ctx.font = '28px ' + FONT; ctx.textAlign = 'right';
+    ctx.fillText(String(tests[i * F + f]), x + 306, y + 22);
+    ctx.textAlign = 'left';
+    if (!cmp) {
       // chips: the last chip_max entered, a new chip named in words for 3 s (scaled by the cut), then abbreviated; "+n" overflow
       let cx = x + 14; const hold = D.chip_named_f, vis = [];
       for (const c of D.chips) if (c.n === i && c.f <= f) vis.push(c);
@@ -94,31 +103,84 @@
         ctx.fillText(label, cx, y + 38);
         cx += label.length * 7.4 + 10;
       }
-      ctx.font = '14px ' + FONT; ctx.fillStyle = '#8b93a6';
-      const ln = lines[i * F + f], fl2 = files[i * F + f], pc = parts[i * F + f], tc = tests[i * F + f];
-      let yv = ln > 0 ? compact(ln) + ' lines' : (fl2 > 0 ? compact(fl2) + ' files' : '0');
-      if (tc === 0) yv = compact(pc) + (D.nat_classes[i] === 'local_model' ? ' offload calls' : ' sessions');
-      ctx.fillText(yv + '  \u00b7  ' + compact(commits[i * F + f]) + 'c ' + compact(capfiles[i * F + f]) + 'f', x + 14, y + 58);
-      // running totals: log micro-bars on a shared scale (ticks 1k 10k 100k 1M) in the nation's hue, then the rate
-      const k = i * F + f, hue = KW.palette.rgba(i, 0.62, 0.9), bx = x + 150, bw = 156;
-      const rows = [['commits', fm.commas(commits[k]), [commits[k]]], ['files', fm.commas(capfiles[k]), [capfiles[k]]],
-                    ['lines', '+' + fm.compact(insC[k]) + ' \u2212' + fm.compact(delC[k]), [insC[k], delC[k]]]];
-      ctx.font = '12px ' + FONT;
-      for (let r = 0; r < 3; r++) {
-        const by = y + 76 + r * 15;
-        ctx.textAlign = 'left'; ctx.fillStyle = '#8b93a6'; ctx.fillText(rows[r][0], x + 14, by);
-        ctx.textAlign = 'right'; ctx.fillStyle = '#c9c3a8'; ctx.fillText(rows[r][1], x + 142, by);
-        fm.microBar(ctx, bx, by - 8, bw, 8, rows[r][2], hue);
-      }
-      ctx.textAlign = 'left'; ctx.fillStyle = '#8b93a6';
-      ctx.fillText('commits/' + UNIT[KW.era[f]], x + 14, y + 121);
-      ctx.textAlign = 'right'; ctx.fillStyle = '#c9c3a8'; ctx.fillText(fm.commas(rateN[k]), x + 142, y + 121);
-      if (crN) { ctx.textAlign = 'left'; ctx.fillStyle = '#8b93a6'; ctx.fillText('created~ ' + fm.compact(crN[k]), x + 160, y + 121); }
+    }
+    const yy = cmp ? 40 : 58;
+    ctx.font = '14px ' + FONT; ctx.fillStyle = '#8b93a6';
+    const ln = lines[i * F + f], fl2 = files[i * F + f], pc = parts[i * F + f], tc = tests[i * F + f];
+    let yv = ln > 0 ? compact(ln) + ' lines' : (fl2 > 0 ? compact(fl2) + ' files' : '0');
+    if (tc === 0) yv = compact(pc) + (D.nat_classes[i] === 'local_model' ? ' offload calls' : ' sessions');
+    ctx.fillText(yv + '  \u00b7  ' + compact(commits[i * F + f]) + 'c ' + compact(capfiles[i * F + f]) + 'f', x + 14, y + yy);
+    // running totals: log micro-bars on a shared scale (ticks 1k 10k 100k 1M) in the nation's hue, then the rate
+    const k = i * F + f, hue = KW.palette.rgba(i, 0.62, 0.9), bx = x + 150, bw = 156;
+    if (mini) {
+      ctx.font = '12px ' + FONT; ctx.fillStyle = '#c9c3a8';
+      ctx.fillText('+' + fm.compact(insC[k]) + ' \u2212' + fm.compact(delC[k]) + '   ' + fm.commas(rateN[k]) + ' c/' + UNIT[KW.era[f]], x + 14, y + 58);
       ctx.textAlign = 'left';
+      return;
+    }
+    const rows = [['commits', fm.commas(commits[k]), [commits[k]]], ['files', fm.commas(capfiles[k]), [capfiles[k]]],
+                  ['lines', '+' + fm.compact(insC[k]) + ' \u2212' + fm.compact(delC[k]), [insC[k], delC[k]]]];
+    ctx.font = '12px ' + FONT;
+    const b0 = cmp ? 56 : 76, bp = cmp ? 14 : 15;
+    for (let r = 0; r < 3; r++) {
+      const by = y + b0 + r * bp;
+      ctx.textAlign = 'left'; ctx.fillStyle = '#8b93a6'; ctx.fillText(rows[r][0], x + 14, by);
+      ctx.textAlign = 'right'; ctx.fillStyle = '#c9c3a8'; ctx.fillText(rows[r][1], x + 142, by);
+      fm.microBar(ctx, bx, by - 8, bw, 8, rows[r][2], hue);
+    }
+    const ry = y + (cmp ? 100 : 121);
+    ctx.textAlign = 'left'; ctx.fillStyle = '#8b93a6';
+    ctx.fillText('commits/' + UNIT[KW.era[f]], x + 14, ry);
+    ctx.textAlign = 'right'; ctx.fillStyle = '#c9c3a8'; ctx.fillText(fm.commas(rateN[k]), x + 142, ry);
+    if (crN) { ctx.textAlign = 'left'; ctx.fillStyle = '#8b93a6'; ctx.fillText('created~ ' + fm.compact(crN[k]), x + 160, ry); }
+    ctx.textAlign = 'left';
+  }
+  function drawLegend(ctx, f) {
+    const LY = KW.LAY;
+    if (LY.mode === 'portrait') return portraitNations(ctx, f);
+    const x0 = LY.W - LY.right, rowH = 136, PH = LY.H - LY.top;
+    KW.plate(ctx, x0, LY.top, LY.right, PH);
+    ctx.textBaseline = 'alphabetic';
+    ctx.save(); ctx.beginPath(); ctx.rect(x0 + 1, LY.top, LY.right - 9, PH); ctx.clip();  // nothing of a row or chip leaves the panel
+    KW.nationRows = [];
+    for (let i = 0; i < N; i++) {
+      const age = f - entry[i];
+      if (age < 0) continue;
+      const u = Math.min(1, age / 12), s = u * u * (3 - 2 * u), dx = Math.round(240 * (1 - s));
+      const y = LY.top + 12 + i * rowH, x = x0 + dx;
+      KW.nationRows.push({ i, x: x0, y, h: rowH, w: LY.right });
+      ctx.globalAlpha = s;
+      row(ctx, f, i, x, y, false, false);
       ctx.globalAlpha = 1;
     }
     ctx.restore();
     ctx.textAlign = 'left';
+  }
+  // portrait: a one-line strip of swatches with test counts under the ticker; a tap expands the compact panel over the map
+  function portraitNations(ctx, f) {
+    const LY = KW.LAY, y0 = LY.tickerH, h = LY.stripH, cw = 54;
+    KW.plate(ctx, 0, y0, LY.W, h);
+    ctx.textBaseline = 'alphabetic';
+    KW.nationRows = [];
+    let x = 8;
+    ctx.font = '13px ' + FONT;
+    for (let i = 0; i < N; i++) {
+      if (f < entry[i]) continue;
+      ctx.fillStyle = KW.palette.rgba(i, 0.62, 1); ctx.fillRect(x, y0 + 10, 10, 10);
+      ctx.fillStyle = '#e8e0c0'; ctx.textAlign = 'left'; ctx.fillText(String(tests[i * F + f]), x + 14, y0 + 20);
+      KW.nationRows.push({ i, x, y: y0, h, w: cw });
+      x += cw;
+    }
+    ctx.font = '12px ' + FONT; ctx.textAlign = 'right'; ctx.fillStyle = KW.ui.surfaces ? '#e8e0c0' : '#8b93a6';
+    ctx.fillText('surfaces \u25be', LY.W - 8, y0 + 20); ctx.textAlign = 'left';
+    KW.surfBtn = { x: LY.W - 100, y: y0, w: 100, h };
+    if (!KW.ui.nations) return;
+    const nIn = []; for (let i = 0; i < N; i++) if (f >= entry[i]) nIn.push(i);
+    const PWd = 320, PH = LY.bandY - LY.top, px = LY.W - PWd, rowH = Math.min(108, Math.floor((PH - 8) / Math.max(1, nIn.length))), mini = rowH < 92;
+    KW.plate(ctx, px, LY.top, PWd, PH);
+    ctx.save(); ctx.beginPath(); ctx.rect(px + 1, LY.top, PWd - 9, PH); ctx.clip();
+    nIn.forEach((i, r) => row(ctx, f, i, px, LY.top + 8 + r * rowH, true, mini));
+    ctx.restore(); ctx.textAlign = 'left';
   }
   KW.registerLayer({ id: 'legend', z: 70, render: drawLegend });
 })();

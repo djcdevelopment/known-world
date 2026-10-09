@@ -10,7 +10,16 @@
   KW.tregion = U.u16(D.tregion); KW.tx = U.f32(D.tx); KW.ty = U.f32(D.ty);
   KW.rx = U.f32(D.rx); KW.ry = U.f32(D.ry); KW.rfirst = U.i32(D.rfirst);
   KW.cam = U.f32(D.camera);
-  KW.view = f => { const i = f * 3; return { cx: KW.cam[i], cy: KW.cam[i + 1], s: KW.cam[i + 2] }; };
+  // The camera is compiled for the landscape safe area. Another safe area (portrait, a wider window) refits the same box: the compile's
+  // box dimensions (camera_box) and fill ratio r = s / min(Wv0 / bw, Hv0 / bh) give s' = r * min(Wv / bw, Hv / bh).
+  KW.camBox = D.camera_box ? U.f32(D.camera_box) : null;
+  const L0s = D.layout.safe;
+  KW.view = f => {
+    const i = f * 3; let s = KW.cam[i + 2];
+    if (KW.camK !== 1 && KW.camBox) { const bw = KW.camBox[2 * f], bh = KW.camBox[2 * f + 1]; s = s / Math.min(L0s[2] / bw, L0s[3] / bh) * Math.min(V.w / bw, V.h / bh); }
+    else if (KW.camK !== 1) s *= KW.camK;
+    return { cx: KW.cam[i], cy: KW.cam[i + 1], s };
+  };
   KW.codaK = f => f < D.coda_f ? 1 : Math.max(0, 1 - (f - D.coda_f) / ((3 / 18) * (D.F - D.coda_f)));   // decay over the first 3/18 of the coda
   KW.sx = (x, v) => V.cx + (x - v.cx) * v.s;
   KW.sy = (y, v) => V.cy + (y - v.cy) * v.s;
@@ -47,7 +56,7 @@
     o.strokeStyle = P.rgb(0.40, 0.004, 250); o.lineWidth = 1; o.beginPath(); o.moveTo(0, 8); o.lineTo(8, 0); o.moveTo(-2, 2); o.lineTo(2, -2); o.moveTo(6, 10); o.lineTo(10, 6); o.stroke();
     hatch = ctx.createPattern(oc, 'repeat'); return hatch;
   }
-  function setWorld(ctx, v) { ctx.setTransform(v.s, 0, 0, v.s, V.cx - v.cx * v.s, V.cy - v.cy * v.s); }
+  function setWorld(ctx, v) { const b = KW.B; ctx.setTransform(b * v.s, 0, 0, b * v.s, b * (V.cx - v.cx * v.s), b * (V.cy - v.cy * v.s)); }
   KW.setWorld = setWorld;
   function lattice(ctx, f) {
     const v = KW.view(f); if (v.s < 6) return;
@@ -78,9 +87,9 @@
     }
     // ruins: grey hatch in screen scale
     const pat = getHatch(ctx);
-    if (pat.setTransform) pat.setTransform(new DOMMatrix([1 / v.s, 0, 0, 1 / v.s, 0, 0]));
+    if (pat.setTransform) pat.setTransform(new DOMMatrix([1 / (KW.B * v.s), 0, 0, 1 / (KW.B * v.s), 0, 0]));
     ctx.fillStyle = pat; ctx.fill(land.paths[15]);
-    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    KW.resetT(ctx);
   }
   // --- activity: lit tiles, last conductor's hue, <= L 0.55 ------------------------------------------------------------------
   KW.tileTot = new Float64Array(T); KW.regTot = new Float64Array(D.R);
@@ -106,7 +115,7 @@
       const g = Math.floor(key / 32), q = (key % 32) / 31, L = 0.20 + 0.35 * q;
       ctx.fillStyle = P.rgba(g, L, 0.30 + 0.62 * q); ctx.fill(buckets.get(key));
     }
-    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    KW.resetT(ctx);
   }
   // --- islands, harbours, bridges, spurs, notches ----------------------------------------------------------------------------
   const ifirst = U.i32(D.ifirst), icx = U.f32(D.icx), icy = U.f32(D.icy), istart = U.i32(D.istart), ifork = U.u8(D.ifork), ix = U.f32(D.ix), iy = U.f32(D.iy);
@@ -119,7 +128,7 @@
       ctx.fillStyle = ifork[j] ? P.rgbaRaw(0.30, 0.008, 250, e) : P.rgbaRaw(0.34, 0.035, 190, e);
       ctx.fill(p);
     }
-    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    KW.resetT(ctx);
   }
   const hx = U.f32(D.hx), hy = U.f32(D.hy), hisl = U.u16(D.hisl), hreg = U.u16(D.hreg);
   const b0x = U.f32(D.b0x), b0y = U.f32(D.b0y), b1x = U.f32(D.b1x), b1y = U.f32(D.b1y), bra = U.u16(D.bra), brb = U.u16(D.brb), bkind = U.u8(D.bkind);

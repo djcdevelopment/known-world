@@ -1,0 +1,165 @@
+{
+ "launch_none": {
+  "camera_numbers": {
+   "frames": 20656,
+   "scale_end": 1.65,
+   "scale_f0": 110.0,
+   "scale_f394": 109.87,
+   "scale_f543": 109.54,
+   "tight_start_25pct_frame": 2639,
+   "tight_start_25pct_s": 87.97,
+   "tight_start_50pct_frame": 1205,
+   "tight_start_50pct_s": 40.17,
+   "tight_start_90pct_frame": 930,
+   "tight_start_90pct_s": 31.0
+  },
+  "camera_report": {
+   "beacons": 3,
+   "hq_join_frame": 4109,
+   "launch_targets": 870,
+   "tile_intervals": 1713
+  },
+  "kw_data_sha256": "a1e71787669123cb417183c7f9dc14da5b21d8bd7d6582a5554848959016c2b5",
+  "marks_counts": {
+   "era": 2,
+   "migration": 1,
+   "nation": 7,
+   "regime": 15,
+   "storm": 1,
+   "surface": 6
+  },
+  "sets": [
+   "camera_launch_steer=none"
+  ]
+ },
+ "revealed_all": {
+  "camera_numbers": {
+   "frames": 20656,
+   "scale_end": 1.65,
+   "scale_f0": 109.95,
+   "scale_f394": 108.68,
+   "scale_f543": 105.5,
+   "tight_start_25pct_frame": 964,
+   "tight_start_25pct_s": 32.13,
+   "tight_start_50pct_frame": 881,
+   "tight_start_50pct_s": 29.37,
+   "tight_start_90pct_frame": 655,
+   "tight_start_90pct_s": 21.83
+  },
+  "camera_report": {
+   "hq_join_frame": 4109
+  },
+  "kw_data_sha256": "e5bddd3b3df90a29fa27cb62e4945738bf3be301557cace5332676cffaefba1f",
+  "marks_counts": {
+   "era": 2,
+   "migration": 1,
+   "nation": 7,
+   "regime": 15,
+   "storm": 1,
+   "surface": 6
+  },
+  "sets": [
+   "camera_steer=revealed"
+  ]
+ },
+ "slope_threshold_0.25_era": {
+  "camera_numbers": {
+   "frames": 20656,
+   "scale_end": 1.65,
+   "scale_f0": 109.99,
+   "scale_f394": 109.86,
+   "scale_f543": 109.52,
+   "tight_start_25pct_frame": 1770,
+   "tight_start_25pct_s": 59.0,
+   "tight_start_50pct_frame": 1186,
+   "tight_start_50pct_s": 39.53,
+   "tight_start_90pct_frame": 925,
+   "tight_start_90pct_s": 30.83
+  },
+  "camera_report": {
+   "beacons": 3,
+   "hq_join_frame": 4109,
+   "launch_targets": 870,
+   "tile_intervals": 1713
+  },
+  "kw_data_sha256": "ebef62e53014d84a86757f53ef61e4a1b761fc64b0a582f1698efec1c8fed0e8",
+  "marks_counts": {
+   "era": 2,
+   "migration": 1,
+   "nation": 7,
+   "regime": 1,
+   "storm": 1,
+   "surface": 6
+  },
+  "sets": [
+   "marks_slope_unit=era",
+   "marks_slope_threshold=0.25"
+  ]
+ },
+ "slope_unit_era": {
+  "camera_numbers": {
+   "frames": 20656,
+   "scale_end": 1.65,
+   "scale_f0": 109.99,
+   "scale_f394": 109.86,
+   "scale_f543": 109.52,
+   "tight_start_25pct_frame": 1770,
+   "tight_start_25pct_s": 59.0,
+   "tight_start_50pct_frame": 1186,
+   "tight_start_50pct_s": 39.53,
+   "tight_start_90pct_frame": 925,
+   "tight_start_90pct_s": 30.83
+  },
+  "camera_report": {
+   "beacons": 3,
+   "hq_join_frame": 4109,
+   "launch_targets": 870,
+   "tile_intervals": 1713
+  },
+  "kw_data_sha256": "1d783e7c62e6ef5c32ec60374fb3556919224207825beb3217b41c96788f0178",
+  "marks_counts": {
+   "era": 2,
+   "migration": 1,
+   "nation": 7,
+   "regime": 0,
+   "storm": 1,
+   "surface": 6
+  },
+  "sets": [
+   "marks_slope_unit=era"
+  ]
+ },
+ "weight_min_6": {
+  "camera_numbers": {
+   "frames": 20656,
+   "scale_end": 1.65,
+   "scale_f0": 110.0,
+   "scale_f394": 110.0,
+   "scale_f543": 110.0,
+   "tight_start_25pct_frame": 1868,
+   "tight_start_25pct_s": 62.27,
+   "tight_start_50pct_frame": 1785,
+   "tight_start_50pct_s": 59.5,
+   "tight_start_90pct_frame": 1559,
+   "tight_start_90pct_s": 51.97
+  },
+  "camera_report": {
+   "beacons": 3,
+   "hq_join_frame": 4109,
+   "launch_targets": 870,
+   "tile_intervals": 1658
+  },
+  "kw_data_sha256": "a2a81c438736fb4b4b53227023162f4d10d6328dd594e931ddc52ac69e0789f2",
+  "marks_counts": {
+   "era": 2,
+   "migration": 1,
+   "nation": 7,
+   "regime": 15,
+   "storm": 1,
+   "surface": 6
+  },
+  "sets": [
+   "camera_tile_weight_min=6.0"
+  ]
+ }
+}

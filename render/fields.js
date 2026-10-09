@@ -11,7 +11,7 @@
   KW.rx = U.f32(D.rx); KW.ry = U.f32(D.ry); KW.rfirst = U.i32(D.rfirst);
   KW.cam = U.f32(D.camera);
   KW.view = f => { const i = f * 3; return { cx: KW.cam[i], cy: KW.cam[i + 1], s: KW.cam[i + 2] }; };
-  KW.codaK = f => f < D.coda_f ? 1 : Math.max(0, 1 - (f - D.coda_f) / (4 * D.fps));
+  KW.codaK = f => f < D.coda_f ? 1 : Math.max(0, 1 - (f - D.coda_f) / ((3 / 18) * (D.F - D.coda_f)));   // decay over the first 3/18 of the coda
   KW.sx = (x, v) => V.cx + (x - v.cx) * v.s;
   KW.sy = (y, v) => V.cy + (y - v.cy) * v.s;
   const TAU = 6.283185307179586, RHO = 0.96;

@@ -296,7 +296,7 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
                      "shapes": "%d / %d / %d" % tuple(int(v) for v in shape_cnt[i]), "tiles": "%d / %d" % (len(touched[i]), nT),
                      "parts": r["participations"]})
     footer = ["no chat source covers 2026-04",
-              "no Claude Code transcript before 2026-05-09 survives: Claude is known from commit trailers only, 2026-01 to 2026-04"]
+              "no Claude Code transcript before 2026-05-08 survives: Claude is known from commit trailers only, 2026-01 to 2026-04"]
     # ---- data block ----------------------------------------------------------------------------------------------------------
     blk = bd.clock_block(clock, probe_f)
     f32 = lambda a: bd.b64(np.asarray(a).astype("<f4"))

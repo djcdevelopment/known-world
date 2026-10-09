@@ -184,7 +184,7 @@ def synthesize(F, fps, seed, probe_f, launches, wh, nations, series, params, env
         mix(out, bell(3.0 * env_scale if env_scale < 1 else 3.0, gain_db=-26 - 12), bf * spf, gl, gr); stats["bells"] += 1
     fade = np.ones(F)
     if coda_f is not None:
-        n = int(round(3.0 * fps))
+        n = int(round((F - coda_f) * 3 / 18))
         fade[coda_f:] = 0.0
         fade[coda_f:coda_f + n] = np.linspace(1.0, 0.0, min(n, F - coda_f))
     fade_s = np.interp(sample_t, fr, fade).astype(np.float32)

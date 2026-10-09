@@ -106,8 +106,9 @@ def build(params, clock, tfirst, tbox, items, hq_xy, world_bbox, coda_f, F, tmas
     out = np.stack([cxs, cys, s], axis=1)
     # coda: after the decay (3 s) pull to the whole world over 4 s (smoothstep on log-scale and centre)
     if coda_f is not None:
-        a = coda_f + int(round(3.0 * fps))
-        n = int(round(4.0 * fps))
+        clen = F - coda_f
+        a = coda_f + int(round(clen * 3 / 18))
+        n = int(round(clen * 4 / 18))
         base = out[min(a, F - 1)].copy()
         for f in range(a, F):
             u = min(1.0, (f - a) / max(1, n))

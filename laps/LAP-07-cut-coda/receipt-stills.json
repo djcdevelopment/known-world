@@ -1,0 +1,20 @@
+{
+ "coda_f": 20110,
+ "errors": [],
+ "frames": {
+  "coda-black": 20646,
+  "coda-card": 20530,
+  "coda-decay": 20155,
+  "coda-pull": 20260,
+  "coda-whole-world": 20350,
+  "intro": 20
+ },
+ "sha256": {
+  "coda-black.png": "0f9f7a53367dd79744ddd0cbdf33ff6ab7dabe09e1b23b6dbef15a14c1318078",
+  "coda-card.png": "5b40975ab63d831c30b54547c03788e2656eda9700918e87db2ff58f0c745b34",
+  "coda-decay.png": "8ea33677b760482bf04bf8e23fcb584f2397e91eec70a48a29d12095a0793818",
+  "coda-pull.png": "70dd3eb4efc44cad34175b23bdbfa85db36b1f163a6c23e89cdd9a3e4e58c83b",
+  "coda-whole-world.png": "14d4e6d4bfe06eeb64aaa78b264c65bfc323596308a787e18ac28df732a41152",
+  "intro.png": "f79686cc90933e3a65643bd149a456d8c281a4658bf42d3bb34bf699df30ba69"
+ }
+}

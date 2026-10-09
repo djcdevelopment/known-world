@@ -143,3 +143,20 @@ def montage(frames_dir, frames, out_png, cols=6, rows=4, thumb=(480, 270)):
 
 def sha_tree(here, names):
     return {n: common.sha256_file(os.path.join(here, n)) for n in names if os.path.exists(os.path.join(here, n))}
+
+
+def rehash(datajs, outdir, f0, f1, n=30):
+    """Re-render n frames of an export in a fresh Chromium (reverse order) and compare with the export's per-frame hashes."""
+    hs = {}
+    for line in open(os.path.join(outdir, "frame-hashes.txt")):
+        if line.strip():
+            f, h = line.split()
+            hs[int(f)] = h
+    frames = [f0 + int((i + 0.5) * (f1 - f0) / n) for i in range(n)]
+    r = subprocess.run(["node", os.path.join(ROOT, "export", "rehash.mjs"), "--data", rel_render(datajs), "--frames", ",".join(map(str, frames))],
+                       capture_output=True, text=True, env=NODE_ENV, stdin=subprocess.DEVNULL)
+    if r.returncode:
+        raise SystemExit(r.stderr[-2000:])
+    got = json.loads(r.stdout)
+    eq = sum(1 for f in frames if got[str(f)] == hs[f])
+    return {"frames": n, "equal": eq, "mismatched": [f for f in frames if got[str(f)] != hs[f]]}

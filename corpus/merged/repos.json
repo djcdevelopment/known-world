@@ -4436,6 +4436,196 @@
   },
   {
    "events": {
+    "file_birth": 105,
+    "file_update": 7
+   },
+   "first_ts": "2026-01-22T03:22:33Z",
+   "hosts": [
+    "am4"
+   ],
+   "id": "dir:am4:~/work/am4-dual-nvidia-poc",
+   "kind": "dir",
+   "last_ts": "2026-09-23T19:07:33Z",
+   "names": [
+    "am4-dual-nvidia-poc"
+   ],
+   "paths": {
+    "am4": [
+     "~/work/am4-dual-nvidia-poc"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 4,
+    "file_update": 4
+   },
+   "first_ts": "2026-02-20T19:35:21Z",
+   "hosts": [
+    "am4"
+   ],
+   "id": "dir:am4:~/work/vllm-e3-20260923",
+   "kind": "dir",
+   "last_ts": "2026-09-23T10:28:32Z",
+   "names": [
+    "vllm-e3-20260923"
+   ],
+   "paths": {
+    "am4": [
+     "~/work/vllm-e3-20260923"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-06-22T14:57:53Z",
+   "hosts": [
+    "fx99"
+   ],
+   "id": "dir:fx99:~/ai-bench",
+   "kind": "dir",
+   "last_ts": "2026-06-22T14:57:53Z",
+   "names": [
+    "ai-bench"
+   ],
+   "paths": {
+    "fx99": [
+     "~/ai-bench"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 3,
+    "file_update": 14
+   },
+   "first_ts": "2025-03-26T16:02:06Z",
+   "hosts": [
+    "fx99"
+   ],
+   "id": "dir:fx99:~/apps",
+   "kind": "dir",
+   "last_ts": "2026-10-09T12:20:12Z",
+   "names": [
+    "apps"
+   ],
+   "paths": {
+    "fx99": [
+     "~/apps"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-09-21T02:03:55Z",
+   "hosts": [
+    "fx99"
+   ],
+   "id": "dir:fx99:~/cookbook",
+   "kind": "dir",
+   "last_ts": "2026-09-21T02:03:55Z",
+   "names": [
+    "cookbook"
+   ],
+   "paths": {
+    "fx99": [
+     "~/cookbook"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 13,
+    "file_update": 6
+   },
+   "first_ts": "2026-09-03T18:03:56Z",
+   "hosts": [
+    "fx99"
+   ],
+   "id": "dir:fx99:~/dmos",
+   "kind": "dir",
+   "last_ts": "2026-10-01T06:33:02Z",
+   "names": [
+    "dmos"
+   ],
+   "paths": {
+    "fx99": [
+     "~/dmos"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1,
+    "file_update": 152
+   },
+   "first_ts": "2018-05-23T00:22:26Z",
+   "hosts": [
+    "fx99"
+   ],
+   "id": "dir:fx99:~/liferaft",
+   "kind": "dir",
+   "last_ts": "2026-08-27T13:34:20Z",
+   "names": [
+    "liferaft"
+   ],
+   "paths": {
+    "fx99": [
+     "~/liferaft"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 33,
+    "file_update": 25
+   },
+   "first_ts": "2026-09-21T01:43:59Z",
+   "hosts": [
+    "fx99"
+   ],
+   "id": "dir:fx99:~/menu",
+   "kind": "dir",
+   "last_ts": "2026-10-09T04:15:28Z",
+   "names": [
+    "menu"
+   ],
+   "paths": {
+    "fx99": [
+     "~/menu"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
     "file_birth": 15
    },
    "first_ts": "2026-08-22T14:32:27Z",
@@ -4626,7 +4816,8 @@
    "events": {
     "chat_msg": 53,
     "chat_session": 1,
-    "file_birth": 25
+    "file_birth": 25,
+    "file_update": 2
    },
    "first_ts": "2026-09-22T12:23:00Z",
    "hosts": [
@@ -4634,7 +4825,7 @@
    ],
    "id": "dir:omen-c:work/JEPA",
    "kind": "dir",
-   "last_ts": "2026-09-23T13:45:05Z",
+   "last_ts": "2026-09-23T13:56:11Z",
    "names": [
     "jepa"
    ],
@@ -4649,7 +4840,8 @@
   },
   {
    "events": {
-    "file_birth": 11
+    "file_birth": 11,
+    "file_update": 4
    },
    "first_ts": "2026-07-21T06:33:31Z",
    "hosts": [
@@ -4672,9 +4864,10 @@
   },
   {
    "events": {
-    "file_birth": 22
+    "file_birth": 22,
+    "file_update": 38
    },
-   "first_ts": "2026-08-12T07:59:09Z",
+   "first_ts": "2018-05-15T13:29:44Z",
    "hosts": [
     "omen-c"
    ],
@@ -4695,9 +4888,10 @@
   },
   {
    "events": {
-    "file_birth": 158
+    "file_birth": 158,
+    "file_update": 200
    },
-   "first_ts": "2024-10-26T19:02:00Z",
+   "first_ts": "2017-05-01T03:57:28Z",
    "hosts": [
     "omen-c"
    ],
@@ -4766,9 +4960,10 @@
   },
   {
    "events": {
-    "file_birth": 26
+    "file_birth": 26,
+    "file_update": 67
    },
-   "first_ts": "2026-07-16T08:45:55Z",
+   "first_ts": "2026-05-15T11:49:16Z",
    "hosts": [
     "omen-c"
    ],
@@ -4835,9 +5030,10 @@
   },
   {
    "events": {
-    "file_birth": 42
+    "file_birth": 42,
+    "file_update": 99
    },
-   "first_ts": "2026-08-12T08:15:01Z",
+   "first_ts": "2016-11-05T04:57:34Z",
    "hosts": [
     "omen-c"
    ],
@@ -4858,9 +5054,10 @@
   },
   {
    "events": {
-    "file_birth": 12
+    "file_birth": 12,
+    "file_update": 2
    },
-   "first_ts": "2026-09-07T01:51:44Z",
+   "first_ts": "2026-07-01T10:23:59Z",
    "hosts": [
     "omen-c"
    ],
@@ -4881,15 +5078,16 @@
   },
   {
    "events": {
-    "file_birth": 40
+    "file_birth": 40,
+    "file_update": 53
    },
-   "first_ts": "2026-09-20T22:34:01Z",
+   "first_ts": "2016-06-05T16:16:52Z",
    "hosts": [
     "omen-c"
    ],
    "id": "dir:omen-c:work/github-runner-deepnorthtesting",
    "kind": "dir",
-   "last_ts": "2026-10-08T19:16:36Z",
+   "last_ts": "2026-10-09T06:31:56Z",
    "names": [
     "github-runner-deepnorthtesting"
    ],
@@ -4906,7 +5104,8 @@
    "events": {
     "chat_msg": 35,
     "chat_session": 1,
-    "file_birth": 6
+    "file_birth": 6,
+    "file_update": 1
    },
    "first_ts": "2026-07-19T04:09:40Z",
    "hosts": [
@@ -4914,7 +5113,7 @@
    ],
    "id": "dir:omen-c:work/handoffs",
    "kind": "dir",
-   "last_ts": "2026-09-06T23:24:00Z",
+   "last_ts": "2026-09-09T16:13:49Z",
    "names": [
     "handoffs"
    ],
@@ -4929,7 +5128,8 @@
   },
   {
    "events": {
-    "file_birth": 3
+    "file_birth": 3,
+    "file_update": 1
    },
    "first_ts": "2026-07-04T18:48:29Z",
    "hosts": [
@@ -4937,7 +5137,7 @@
    ],
    "id": "dir:omen-c:work/imagegen",
    "kind": "dir",
-   "last_ts": "2026-07-04T18:49:16Z",
+   "last_ts": "2026-07-05T01:43:04Z",
    "names": [
     "imagegen"
    ],
@@ -4979,7 +5179,8 @@
    "events": {
     "chat_msg": 117,
     "chat_session": 1,
-    "file_birth": 20
+    "file_birth": 20,
+    "file_update": 1
    },
    "first_ts": "2026-08-12T12:47:02Z",
    "hosts": [
@@ -5002,9 +5203,10 @@
   },
   {
    "events": {
-    "file_birth": 8
+    "file_birth": 8,
+    "file_update": 1
    },
-   "first_ts": "2026-07-22T13:32:16Z",
+   "first_ts": "2026-07-21T06:32:25Z",
    "hosts": [
     "omen-c"
    ],
@@ -5025,15 +5227,16 @@
   },
   {
    "events": {
-    "file_birth": 33
+    "file_birth": 33,
+    "file_update": 10
    },
-   "first_ts": "2026-06-27T21:55:45Z",
+   "first_ts": "2026-06-25T04:03:49Z",
    "hosts": [
     "omen-c"
    ],
    "id": "dir:omen-c:work/omen-perception",
    "kind": "dir",
-   "last_ts": "2026-08-19T09:58:02Z",
+   "last_ts": "2026-10-09T06:32:03Z",
    "names": [
     "omen-perception"
    ],
@@ -5050,7 +5253,8 @@
    "events": {
     "chat_msg": 6,
     "chat_session": 3,
-    "file_birth": 41
+    "file_birth": 41,
+    "file_update": 12
    },
    "first_ts": "2026-09-06T23:02:00Z",
    "hosts": [
@@ -5151,9 +5355,10 @@
   },
   {
    "events": {
-    "file_birth": 2
+    "file_birth": 2,
+    "file_update": 1
    },
-   "first_ts": "2026-07-04T13:43:58Z",
+   "first_ts": "2026-06-11T15:27:00Z",
    "hosts": [
     "omen-c"
    ],
@@ -5174,9 +5379,10 @@
   },
   {
    "events": {
-    "file_birth": 9
+    "file_birth": 9,
+    "file_update": 4
    },
-   "first_ts": "2026-09-10T02:12:42Z",
+   "first_ts": "2026-09-03T17:23:45Z",
    "hosts": [
     "omen-c"
    ],
@@ -5197,9 +5403,10 @@
   },
   {
    "events": {
-    "file_birth": 6
+    "file_birth": 6,
+    "file_update": 6
    },
-   "first_ts": "2026-09-10T01:22:58Z",
+   "first_ts": "2026-08-28T05:57:32Z",
    "hosts": [
     "omen-c"
    ],
@@ -5245,9 +5452,10 @@
    "events": {
     "chat_msg": 25,
     "chat_session": 12,
-    "file_birth": 8
+    "file_birth": 8,
+    "file_update": 3
    },
-   "first_ts": "2026-09-17T13:35:46Z",
+   "first_ts": "2026-09-12T12:04:14Z",
    "hosts": [
     "omen-c"
    ],
@@ -5270,7 +5478,8 @@
    "events": {
     "chat_msg": 756,
     "chat_session": 19,
-    "file_birth": 32
+    "file_birth": 32,
+    "file_update": 3
    },
    "first_ts": "2026-07-04T07:28:14Z",
    "hosts": [
@@ -5295,7 +5504,8 @@
    "events": {
     "chat_msg": 60,
     "chat_session": 5,
-    "file_birth": 14
+    "file_birth": 14,
+    "file_update": 1
    },
    "first_ts": "2025-03-18T15:23:47Z",
    "hosts": [
@@ -5412,9 +5622,10 @@
    "events": {
     "chat_msg": 587,
     "chat_session": 2,
-    "file_birth": 8
+    "file_birth": 8,
+    "file_update": 5
    },
-   "first_ts": "2026-06-22T08:35:00Z",
+   "first_ts": "2014-05-13T09:45:57Z",
    "hosts": [
     "omen-e"
    ],
@@ -5435,7 +5646,8 @@
   },
   {
    "events": {
-    "file_birth": 6
+    "file_birth": 6,
+    "file_update": 6
    },
    "first_ts": "2026-03-19T22:11:54Z",
    "hosts": [
@@ -5443,7 +5655,7 @@
    ],
    "id": "dir:omen-e:work/Antigravity",
    "kind": "dir",
-   "last_ts": "2026-04-03T07:41:17Z",
+   "last_ts": "2026-04-03T09:48:16Z",
    "names": [
     "antigravity"
    ],
@@ -5458,9 +5670,10 @@
   },
   {
    "events": {
-    "file_birth": 3
+    "file_birth": 3,
+    "file_update": 1
    },
-   "first_ts": "2026-02-13T21:57:44Z",
+   "first_ts": "2025-12-25T03:42:54Z",
    "hosts": [
     "omen-e"
    ],
@@ -5481,7 +5694,8 @@
   },
   {
    "events": {
-    "file_birth": 13
+    "file_birth": 13,
+    "file_update": 4
    },
    "first_ts": "2025-08-01T23:30:12Z",
    "hosts": [
@@ -5527,9 +5741,10 @@
   },
   {
    "events": {
-    "file_birth": 5
+    "file_birth": 5,
+    "file_update": 1
    },
-   "first_ts": "2026-03-14T03:48:10Z",
+   "first_ts": "2026-03-09T02:22:35Z",
    "hosts": [
     "omen-e"
    ],
@@ -5575,15 +5790,16 @@
    "events": {
     "chat_msg": 118,
     "chat_session": 4,
-    "file_birth": 92
+    "file_birth": 92,
+    "file_update": 17
    },
-   "first_ts": "2026-05-22T09:59:03Z",
+   "first_ts": "2025-02-14T20:16:32Z",
    "hosts": [
     "omen-e"
    ],
    "id": "dir:omen-e:work/battlemage",
    "kind": "dir",
-   "last_ts": "2026-09-22T10:14:58Z",
+   "last_ts": "2026-09-23T14:12:18Z",
    "names": [
     "battlemage"
    ],
@@ -5598,9 +5814,10 @@
   },
   {
    "events": {
-    "file_birth": 2
+    "file_birth": 2,
+    "file_update": 2
    },
-   "first_ts": "2026-03-21T12:04:28Z",
+   "first_ts": "2026-03-09T19:47:46Z",
    "hosts": [
     "omen-e"
    ],
@@ -5646,9 +5863,10 @@
    "events": {
     "chat_msg": 824,
     "chat_session": 12,
-    "file_birth": 38
+    "file_birth": 38,
+    "file_update": 9
    },
-   "first_ts": "2026-05-26T04:06:55Z",
+   "first_ts": "2023-09-18T19:01:12Z",
    "hosts": [
     "omen-e"
    ],
@@ -5671,9 +5889,10 @@
    "events": {
     "chat_msg": 101,
     "chat_session": 6,
-    "file_birth": 6
+    "file_birth": 6,
+    "file_update": 4
    },
-   "first_ts": "2026-06-19T11:24:45Z",
+   "first_ts": "2026-06-17T18:09:50Z",
    "hosts": [
     "omen-e"
    ],
@@ -5717,9 +5936,10 @@
   },
   {
    "events": {
-    "file_birth": 3
+    "file_birth": 3,
+    "file_update": 2
    },
-   "first_ts": "2025-02-01T23:14:14Z",
+   "first_ts": "2024-12-10T21:04:30Z",
    "hosts": [
     "omen-e"
    ],
@@ -5763,9 +5983,10 @@
   },
   {
    "events": {
-    "file_birth": 22
+    "file_birth": 22,
+    "file_update": 22
    },
-   "first_ts": "2026-03-13T00:20:41Z",
+   "first_ts": "2026-03-12T07:17:10Z",
    "hosts": [
     "omen-e"
    ],
@@ -5836,9 +6057,10 @@
    "events": {
     "chat_msg": 1346,
     "chat_session": 1,
-    "file_birth": 9
+    "file_birth": 9,
+    "file_update": 2
    },
-   "first_ts": "2026-09-19T11:40:00Z",
+   "first_ts": "2026-04-01T16:58:56Z",
    "hosts": [
     "omen-e"
    ],
@@ -5884,7 +6106,8 @@
    "events": {
     "chat_msg": 2267,
     "chat_session": 55,
-    "file_birth": 2
+    "file_birth": 2,
+    "file_update": 1
    },
    "first_ts": "2026-06-19T10:33:00Z",
    "hosts": [
@@ -5907,9 +6130,10 @@
   },
   {
    "events": {
-    "file_birth": 1
+    "file_birth": 1,
+    "file_update": 1
    },
-   "first_ts": "2026-08-28T05:46:41Z",
+   "first_ts": "2026-08-23T14:02:18Z",
    "hosts": [
     "omen-e"
    ],
@@ -5953,9 +6177,10 @@
   },
   {
    "events": {
-    "file_birth": 1
+    "file_birth": 1,
+    "file_update": 1
    },
-   "first_ts": "2026-05-22T10:09:43Z",
+   "first_ts": "2026-05-11T05:47:52Z",
    "hosts": [
     "omen-e"
    ],
@@ -5999,9 +6224,10 @@
   },
   {
    "events": {
-    "file_birth": 6
+    "file_birth": 6,
+    "file_update": 10
    },
-   "first_ts": "2024-08-17T23:05:22Z",
+   "first_ts": "2021-03-30T19:39:30Z",
    "hosts": [
     "omen-e"
    ],
@@ -6091,9 +6317,10 @@
   },
   {
    "events": {
-    "file_birth": 1
+    "file_birth": 1,
+    "file_update": 1
    },
-   "first_ts": "2026-01-19T02:33:13Z",
+   "first_ts": "2025-10-09T06:43:14Z",
    "hosts": [
     "omen-e"
    ],
@@ -6160,9 +6387,10 @@
   },
   {
    "events": {
-    "file_birth": 300
+    "file_birth": 300,
+    "file_update": 135
    },
-   "first_ts": "2026-03-17T04:52:30Z",
+   "first_ts": "2021-10-22T23:47:46Z",
    "hosts": [
     "omen-e"
    ],
@@ -6229,9 +6457,10 @@
   },
   {
    "events": {
-    "file_birth": 1
+    "file_birth": 1,
+    "file_update": 1
    },
-   "first_ts": "2026-03-21T14:26:39Z",
+   "first_ts": "2024-04-10T16:12:20Z",
    "hosts": [
     "omen-e"
    ],
@@ -6254,9 +6483,10 @@
    "events": {
     "chat_msg": 235,
     "chat_session": 1,
-    "file_birth": 45
+    "file_birth": 45,
+    "file_update": 2
    },
-   "first_ts": "2026-09-20T04:46:55Z",
+   "first_ts": "2026-08-26T22:22:14Z",
    "hosts": [
     "omen-e"
    ],
@@ -6292,6 +6522,1142 @@
    "paths": {
     "omen-e": [
      "work/website"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 3,
+    "file_update": 1
+   },
+   "first_ts": "2026-09-27T17:13:14Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/research",
+   "kind": "dir",
+   "last_ts": "2026-09-28T02:31:07Z",
+   "names": [
+    "research"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/research"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 8,
+    "file_update": 2
+   },
+   "first_ts": "2026-09-23T17:57:39Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work",
+   "kind": "dir",
+   "last_ts": "2026-10-09T12:22:31Z",
+   "names": [
+    "work"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-10-07T13:20:01Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/.agents",
+   "kind": "dir",
+   "last_ts": "2026-10-07T13:20:01Z",
+   "names": [
+    ".agents"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/.agents"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-10-03T04:48:12Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/b70-stress",
+   "kind": "dir",
+   "last_ts": "2026-10-03T04:48:12Z",
+   "names": [
+    "b70-stress"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/b70-stress"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 2
+   },
+   "first_ts": "2026-10-05T08:49:53Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/bench27-night-prep-20261005",
+   "kind": "dir",
+   "last_ts": "2026-10-05T08:49:53Z",
+   "names": [
+    "bench27-night-prep-20261005"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/bench27-night-prep-20261005"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 3
+   },
+   "first_ts": "2026-10-05T06:22:49Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/bench27-plan",
+   "kind": "dir",
+   "last_ts": "2026-10-05T13:18:14Z",
+   "names": [
+    "bench27-plan"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/bench27-plan"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-09-30T22:53:12Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/closeout-20260930",
+   "kind": "dir",
+   "last_ts": "2026-09-30T22:53:12Z",
+   "names": [
+    "closeout-20260930"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/closeout-20260930"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 118,
+    "file_update": 116
+   },
+   "first_ts": "2026-09-22T12:52:31Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/commandcenter-public",
+   "kind": "dir",
+   "last_ts": "2026-09-23T18:56:49Z",
+   "names": [
+    "commandcenter-public"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/commandcenter-public"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 5
+   },
+   "first_ts": "2026-10-01T12:58:16Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/daily-night-work-prep",
+   "kind": "dir",
+   "last_ts": "2026-10-02T20:08:31Z",
+   "names": [
+    "daily-night-work-prep"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/daily-night-work-prep"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 3
+   },
+   "first_ts": "2026-10-01T12:47:07Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/daily-perception-prep",
+   "kind": "dir",
+   "last_ts": "2026-10-01T12:47:55Z",
+   "names": [
+    "daily-perception-prep"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/daily-perception-prep"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 2
+   },
+   "first_ts": "2026-10-01T12:52:56Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/daily-variation-question",
+   "kind": "dir",
+   "last_ts": "2026-10-01T12:53:18Z",
+   "names": [
+    "daily-variation-question"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/daily-variation-question"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 47,
+    "file_update": 2
+   },
+   "first_ts": "2026-10-02T20:58:53Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/delivery-plan",
+   "kind": "dir",
+   "last_ts": "2026-10-05T02:54:24Z",
+   "names": [
+    "delivery-plan"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/delivery-plan"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 4
+   },
+   "first_ts": "2026-10-02T19:38:52Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/devmode-plan",
+   "kind": "dir",
+   "last_ts": "2026-10-02T20:36:52Z",
+   "names": [
+    "devmode-plan"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/devmode-plan"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 7,
+    "file_update": 5
+   },
+   "first_ts": "2026-09-11T07:50:23Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/evidence-resume-20260928",
+   "kind": "dir",
+   "last_ts": "2026-09-30T23:07:40Z",
+   "names": [
+    "evidence-resume-20260928"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/evidence-resume-20260928"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 29,
+    "file_update": 17
+   },
+   "first_ts": "2022-10-11T10:59:35Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/hybrid-context-trial",
+   "kind": "dir",
+   "last_ts": "2026-09-25T14:33:37Z",
+   "names": [
+    "hybrid-context-trial"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/hybrid-context-trial"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 4,
+    "file_update": 1
+   },
+   "first_ts": "2026-10-02T22:48:56Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/intent-plan",
+   "kind": "dir",
+   "last_ts": "2026-10-03T02:51:28Z",
+   "names": [
+    "intent-plan"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/intent-plan"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 5
+   },
+   "first_ts": "2026-09-25T12:19:55Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-action-signal-20260925",
+   "kind": "dir",
+   "last_ts": "2026-09-25T12:39:18Z",
+   "names": [
+    "jepa-action-signal-20260925"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-action-signal-20260925"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 11
+   },
+   "first_ts": "2026-09-25T07:23:19Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-broader-training-20260925",
+   "kind": "dir",
+   "last_ts": "2026-09-25T07:30:33Z",
+   "names": [
+    "jepa-broader-training-20260925"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-broader-training-20260925"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 27
+   },
+   "first_ts": "2026-09-25T01:32:34Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-confirmation-20260924",
+   "kind": "dir",
+   "last_ts": "2026-09-25T02:14:14Z",
+   "names": [
+    "jepa-confirmation-20260924"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-confirmation-20260924"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 5
+   },
+   "first_ts": "2026-09-25T08:44:44Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-context-binding-20260925",
+   "kind": "dir",
+   "last_ts": "2026-09-25T08:57:38Z",
+   "names": [
+    "jepa-context-binding-20260925"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-context-binding-20260925"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 4
+   },
+   "first_ts": "2026-09-25T13:36:16Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-episode-availability-20260925",
+   "kind": "dir",
+   "last_ts": "2026-09-25T13:47:06Z",
+   "names": [
+    "jepa-episode-availability-20260925"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-episode-availability-20260925"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 17
+   },
+   "first_ts": "2026-09-25T06:39:17Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-evidence-units-20260925",
+   "kind": "dir",
+   "last_ts": "2026-09-25T07:10:54Z",
+   "names": [
+    "jepa-evidence-units-20260925"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-evidence-units-20260925"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 18
+   },
+   "first_ts": "2026-09-25T12:49:54Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-factor-supervision-20260925",
+   "kind": "dir",
+   "last_ts": "2026-09-25T13:04:33Z",
+   "names": [
+    "jepa-factor-supervision-20260925"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-factor-supervision-20260925"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 8
+   },
+   "first_ts": "2026-09-25T09:05:18Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-family-conditioning-20260925",
+   "kind": "dir",
+   "last_ts": "2026-09-25T09:31:14Z",
+   "names": [
+    "jepa-family-conditioning-20260925"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-family-conditioning-20260925"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 12
+   },
+   "first_ts": "2026-09-25T07:39:55Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-internal-validation-20260925",
+   "kind": "dir",
+   "last_ts": "2026-09-25T07:50:10Z",
+   "names": [
+    "jepa-internal-validation-20260925"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-internal-validation-20260925"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 4
+   },
+   "first_ts": "2026-09-25T11:32:01Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-near-miss-audit-20260925",
+   "kind": "dir",
+   "last_ts": "2026-09-25T11:43:06Z",
+   "names": [
+    "jepa-near-miss-audit-20260925"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-near-miss-audit-20260925"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 6
+   },
+   "first_ts": "2026-09-25T10:42:48Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-operation-representations-20260925",
+   "kind": "dir",
+   "last_ts": "2026-09-25T11:02:22Z",
+   "names": [
+    "jepa-operation-representations-20260925"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-operation-representations-20260925"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-09-25T07:15:51Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-owner-methodology-20260925",
+   "kind": "dir",
+   "last_ts": "2026-09-25T07:15:51Z",
+   "names": [
+    "jepa-owner-methodology-20260925"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-owner-methodology-20260925"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 17
+   },
+   "first_ts": "2026-09-25T06:11:44Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-project-holdout-20260925",
+   "kind": "dir",
+   "last_ts": "2026-09-25T06:29:35Z",
+   "names": [
+    "jepa-project-holdout-20260925"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-project-holdout-20260925"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 13
+   },
+   "first_ts": "2026-09-25T13:59:52Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-recorded-actions-20260925",
+   "kind": "dir",
+   "last_ts": "2026-09-25T14:35:10Z",
+   "names": [
+    "jepa-recorded-actions-20260925"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-recorded-actions-20260925"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 18
+   },
+   "first_ts": "2026-09-25T11:55:41Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-reviewed-supervision-20260925",
+   "kind": "dir",
+   "last_ts": "2026-09-25T12:09:42Z",
+   "names": [
+    "jepa-reviewed-supervision-20260925"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-reviewed-supervision-20260925"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 6
+   },
+   "first_ts": "2026-09-25T09:39:22Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-same-role-actions-20260925",
+   "kind": "dir",
+   "last_ts": "2026-09-25T10:00:03Z",
+   "names": [
+    "jepa-same-role-actions-20260925"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-same-role-actions-20260925"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 24
+   },
+   "first_ts": "2026-09-24T14:38:12Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-semantic-predictor-20260924",
+   "kind": "dir",
+   "last_ts": "2026-09-25T01:51:00Z",
+   "names": [
+    "jepa-semantic-predictor-20260924"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-semantic-predictor-20260924"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 8
+   },
+   "first_ts": "2026-09-25T10:11:56Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-state-action-predictor-20260925",
+   "kind": "dir",
+   "last_ts": "2026-09-25T10:32:49Z",
+   "names": [
+    "jepa-state-action-predictor-20260925"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-state-action-predictor-20260925"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 9
+   },
+   "first_ts": "2026-09-26T01:16:21Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-strategy-20260925",
+   "kind": "dir",
+   "last_ts": "2026-09-26T02:53:21Z",
+   "names": [
+    "jepa-strategy-20260925"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-strategy-20260925"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 13
+   },
+   "first_ts": "2026-09-25T11:10:50Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-target-space-learning-20260925",
+   "kind": "dir",
+   "last_ts": "2026-09-25T11:27:23Z",
+   "names": [
+    "jepa-target-space-learning-20260925"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-target-space-learning-20260925"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 9
+   },
+   "first_ts": "2026-09-25T08:00:58Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-temporal-lineage-20260925",
+   "kind": "dir",
+   "last_ts": "2026-09-25T08:11:27Z",
+   "names": [
+    "jepa-temporal-lineage-20260925"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-temporal-lineage-20260925"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 16
+   },
+   "first_ts": "2026-09-25T13:11:01Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-uniform-factors-20260925",
+   "kind": "dir",
+   "last_ts": "2026-09-25T13:24:01Z",
+   "names": [
+    "jepa-uniform-factors-20260925"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-uniform-factors-20260925"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 6
+   },
+   "first_ts": "2026-09-25T08:16:40Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/jepa-work-episodes-20260925",
+   "kind": "dir",
+   "last_ts": "2026-09-25T08:39:26Z",
+   "names": [
+    "jepa-work-episodes-20260925"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-work-episodes-20260925"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-10-09T12:12:03Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/known-world-plan",
+   "kind": "dir",
+   "last_ts": "2026-10-09T12:12:03Z",
+   "names": [
+    "known-world-plan"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/known-world-plan"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-10-01T05:46:47Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/lab-rnd-checkpoints",
+   "kind": "dir",
+   "last_ts": "2026-10-01T05:46:47Z",
+   "names": [
+    "lab-rnd-checkpoints"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/lab-rnd-checkpoints"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 8
+   },
+   "first_ts": "2026-09-23T16:40:35Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/linux-evidence-20261007",
+   "kind": "dir",
+   "last_ts": "2026-10-07T07:19:33Z",
+   "names": [
+    "linux-evidence-20261007"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/linux-evidence-20261007"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 4
+   },
+   "first_ts": "2026-09-24T12:12:29Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/liveview-review-20260924",
+   "kind": "dir",
+   "last_ts": "2026-10-07T18:25:03Z",
+   "names": [
+    "liveview-review-20260924"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/liveview-review-20260924"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 3
+   },
+   "first_ts": "2026-10-01T05:51:27Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/mechsuit-plan",
+   "kind": "dir",
+   "last_ts": "2026-10-01T07:27:21Z",
+   "names": [
+    "mechsuit-plan"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/mechsuit-plan"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 2
+   },
+   "first_ts": "2026-09-28T03:38:43Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/npu-sizer-20260928",
+   "kind": "dir",
+   "last_ts": "2026-09-28T03:38:51Z",
+   "names": [
+    "npu-sizer-20260928"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/npu-sizer-20260928"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-09-28T05:22:13Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/npu-sizer-agent-final-20260928",
+   "kind": "dir",
+   "last_ts": "2026-09-28T05:22:13Z",
+   "names": [
+    "npu-sizer-agent-final-20260928"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/npu-sizer-agent-final-20260928"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 7,
+    "file_update": 1
+   },
+   "first_ts": "2026-09-27T19:09:46Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/npu-sizer-recovery-20260928",
+   "kind": "dir",
+   "last_ts": "2026-09-28T04:16:24Z",
+   "names": [
+    "npu-sizer-recovery-20260928"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/npu-sizer-recovery-20260928"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 25
+   },
+   "first_ts": "2026-10-07T07:51:45Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/public-evidence-20261007",
+   "kind": "dir",
+   "last_ts": "2026-10-09T06:36:45Z",
+   "names": [
+    "public-evidence-20261007"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/public-evidence-20261007"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 53,
+    "file_update": 1
+   },
+   "first_ts": "2026-09-27T10:27:42Z",
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dir:omen-linux:~/work/trial",
+   "kind": "dir",
+   "last_ts": "2026-09-30T23:07:57Z",
+   "names": [
+    "trial"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/trial"
     ]
    },
    "region": null,

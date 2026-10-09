@@ -183,12 +183,12 @@ cov.append(["1c Linux repositories (~25 + ~/work/worktrees 94)", "covered", "lin
 cov.append(["1d AM4 git repositories (11)", "covered", "am4-git", fmt(ev("am4-git")),
             "over ssh, read-only; 4 shallow clones (ComfyUI, level-zero-tests, libpng, llama.cpp) and a partial clone "
             "(quest-build, numstat missing)"])
-cov.append(["1d AM4 non-git dirs (am4-dual-nvidia-poc, vllm-e3)", "absent", "-", "0",
-            "no births collector over ssh in v1; not in the work-list"])
+cov.append(["1d AM4 non-git dirs (am4-dual-nvidia-poc, vllm-e3)", "covered", "am4-births", fmt(ev("am4-births")),
+            "v1.4: births and updates over ssh (section 12)"])
 cov.append(["1e FX99 git repositories (4)", "covered", "fx99-git", fmt(ev("fx99-git")),
             "continuity, fleet, fleet.git (bare), ledger"])
-cov.append(["1e FX99 non-git dirs (dmos, menu, liferaft, ai-bench, apps, cookbook)", "absent", "-", "0",
-            "no births collector over ssh in v1; not in the work-list"])
+cov.append(["1e FX99 non-git dirs (dmos, menu, liferaft, ai-bench, apps, cookbook)", "covered", "fx99-births",
+            fmt(ev("fx99-births")), "v1.4: births and updates over ssh (section 12)"])
 cov.append(["1f GitHub: 50 public repos (djcdevelopment) + steppe-integrations", "partial", "github-list, mirror-0, "
             "mirror-1", fmt(evs("github-list", "mirror-0", "mirror-1")),
             "public view only (gh not authenticated): 54 repo_born events, 12 repos mirrored; 2 forks skipped; "
@@ -198,7 +198,7 @@ cov.append(["2 C:\\work non-git dirs (omen-perception, _retired, orchestration, 
             "model, venvs)"])
 cov.append(["2 C: root dirs (hearth-var, dirty-diffs, omen-perception-authored, tuning, assessment, AM4-provision, "
             "OMEN_prep)", "partial", "c-births", "(in c-births)",
-            "file births only. Bulk-copied dirs are flagged `bulk_copy` (173 records) but their in-record timestamps "
+            "births and (v1.4) updates. Bulk-copied dirs are flagged `bulk_copy` (173 records) but their in-record timestamps "
             "(cycle.log lines, dirty-diffs content) were not read; hearth-var/execution/events.ndjson (573 events) "
             "is not in any item"])
 cov.append(["2 E:\\work non-git dirs (comfy, vllm-xpu-win, start, battlemage, 8350, dump, ...)", "covered",
@@ -507,10 +507,67 @@ for t in (
     "since then (this one included).",
     "Windows `hearth-var/execution/events.ndjson` (573 events) and the in-record timestamps of the bulk-copied "
     "C: directories are not collected (section 2).",
-    "AM4 and FX99 non-git directories have no collector.",
+    "AM4 and FX99 non-git directories are collected from v1.4 (`am4-births`, `fx99-births`, section 12); "
+    "non-git omen-linux directories likewise (`linux-births`).",
     "GitHub private repositories and fork metadata are pending authentication (section 8)."):
     A("- " + t)
 A("")
+# ---- 12 file activity (v1.4)
+FA = S.get("file_activity", {})
+A("## 12. File activity extension (v1.4)")
+A("")
+A("Section 7 of the v1.4 request; numbered 12 here because sections 7 to 11 already exist. Source `fs_births` now "
+  "emits `file_update` beside `file_birth`: one record per (depth-2 directory, day), counted only when the file's "
+  "last-modified day differs from its birth day. Items: `c-births`, `e-births`, `linux-births`, `am4-births`, "
+  "`fx99-births`. Counts only.")
+A("")
+rows, tot_ = [], Counter()
+for it, c in FA.get("per_item", {}).items():
+    rows.append([it, M[it]["status"], fmt(c.get("birth_records", 0)), fmt(c.get("birth_files", 0)),
+                 fmt(c.get("birth_bulk_records", 0)), fmt(c.get("update_records", 0)), fmt(c.get("update_files", 0)),
+                 fmt(c.get("update_bulk_records", 0)), fmt(M[it]["coverage"].get("sources_seen") or 0),
+                 fmt(len(M[it]["coverage"].get("sources_skipped") or [])),
+                 fmt(M[it]["coverage"].get("update_null_mtime", 0))])
+    tot_.update(c)
+rows.append(["total", "", fmt(tot_["birth_records"]), fmt(tot_["birth_files"]), fmt(tot_["birth_bulk_records"]),
+             fmt(tot_["update_records"]), fmt(tot_["update_files"]), fmt(tot_["update_bulk_records"]), "", "", ""])
+A(*table(["Item", "Status", "file_birth records", "Files folded (births)", "Bulk-copy births", "file_update records",
+          "Files folded (updates)", "Bulk-copy updates", "Sources", "Skipped", "Files with null mtime"], rows))
+A("")
+A("Per host and year-month, file activity = files folded into births + updates (merged corpus, after dedupe):")
+A("")
+hy = FA.get("per_host_ym", {})
+yms = sorted({ym for h in hy.values() for ym in h})
+hs = sorted(hy)
+rows = []
+for ym in yms:
+    r = [ym]
+    for h in hs:
+        c = hy[h].get(ym, {})
+        r.append(fmt(c.get("file_birth_files", 0) + c.get("file_update_files", 0)))
+    rows.append(r)
+rows.append(["total"] + [fmt(sum(c.get("file_birth_files", 0) + c.get("file_update_files", 0) for c in hy[h].values()))
+                         for h in hs])
+A(*table(["Year-month"] + hs, rows))
+A("")
+for t in (
+    "**Lower bound.** A filesystem keeps one last-modified time per file, so a file edited on ten days counts as one "
+    "update day; update frequency and density are floors. A file whose mtime day equals its birth day is a birth only.",
+    "**Null rule.** Births use the birth time (mtime if the filesystem has none); a mtime before 2005 (the 1970 and "
+    "1980 placeholders) or in the future yields no update and is counted in the manifest as `update_null_mtime` "
+    "(column above). Copied files can carry an mtime earlier than their birth: those count as updates on the mtime day.",
+    "**Bulk copies.** A record is flagged `bulk_copy` when 80 percent or more of its files share birth seconds "
+    "that hold 100 or more files; the flagged counts are in the table. They are kept, not removed.",
+    "**Skipped.** Nothing in these five items was skipped (no timeouts); never-walk directories (models, checkpoints, "
+    "venvs, .venv, node_modules, .cache, .git, ComfyUI/models), credential-bearing files and symlinked roots are "
+    "pruned inside the walk. `~/work/worktrees`, `~/work/amux` and `~/work/known-world` (this corpus) are excluded "
+    "from `linux-births`; git repositories with commits stay with `*-git`.",
+    "**Overlap.** Non-git directories can hold nested git repositories (for example under `trial`): their files "
+    "count here and their commits in `linux-git`. Compile should treat file activity inside a directory that is also "
+    "a lineage as density, not as new work."):
+    A("- " + t)
+A("")
+
 A("Reproduce: `.venv/bin/python -I collect/knownworld/merge.py && .venv/bin/python -I "
   "collect/knownworld/report.py && .venv/bin/python -I collect/knownworld/privacy_scan.py corpus/merged` from "
   "`~/work/known-world` with `PYTHONDONTWRITEBYTECODE=1 GIT_OPTIONAL_LOCKS=0 GIT_TERMINAL_PROMPT=0`.")

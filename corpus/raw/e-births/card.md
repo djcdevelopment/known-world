@@ -46,3 +46,7 @@ All birth times extracted with nanosecond precision via ntfs3 mount.
 - No errors, no decode issues
 - Dropped counts all zero: no null timestamps, no polling artifacts, no decoding errors
 - Ready for analysis or comparison against prior runs
+
+## v1.4 re-run
+
+Re-run with --fresh on 2026-10-09: the same walk now also emits file_update records (mtime day differs from birth day); counts are in CORPUS-REPORT.md section 12. The file_birth records are unchanged by the re-run.

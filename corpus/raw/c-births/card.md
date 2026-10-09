@@ -32,3 +32,7 @@ None. Execution clean, no warnings, no errors. Coverage complete.
 
 ## For the next run
 - No changes needed. Source is stable and coverage complete.
+
+## v1.4 re-run
+
+Re-run with --fresh on 2026-10-09: the same walk now also emits file_update records (mtime day differs from birth day); counts are in CORPUS-REPORT.md section 12. The file_birth records are unchanged by the re-run.

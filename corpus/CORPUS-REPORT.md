@@ -9,12 +9,12 @@ byte-identical output).
 
 | Measure | Value |
 |---|---|
-| Raw events collected (26 items) | 215,526 |
-| Merged events (`corpus/merged/events.ndjson`) | 210,647 |
+| Raw events collected (26 items) | 217,377 |
+| Merged events (`corpus/merged/events.ndjson`) | 212,498 |
 | Span, first to last event | 2011-08-25T19:45:52Z to 2026-10-09T12:45:04Z |
 | Git lineages (repository components) | 121 |
 | Local repository records walked (all hosts, mirrors included) | 170 |
-| Non-git directory lineages (file births) | 78 |
+| Non-git directory lineages (file births) | 135 |
 | GitHub-only lineages (listed on GitHub, no clone) | 2 |
 | Sessions (distinct class + session id, `sessions.json`) | 1,155 |
 | chat_session records (one per transcript file or conversation) | 2,810 |
@@ -41,13 +41,13 @@ reason. Event counts are raw item totals before Merge folding.
 | 1b E: nested repos (16) | covered | e-git-nested | 11,182 | all 16 SURVEY-listed nested repos found; the 18 missing roots are globs that match nothing |
 | 1c Linux repositories (~25 + ~/work/worktrees 94) | covered | linux-git | 4,811 | 31 records; worktree branches read from the parents with `--all` (121 worktree events); zero-commit repos (jepa-*, hybrid-context-trial, git-local-probe) are not walked (immutable rule, 8 excluded); commandcenter-public is a tarball snapshot, not a repo |
 | 1d AM4 git repositories (11) | covered | am4-git | 389 | over ssh, read-only; 4 shallow clones (ComfyUI, level-zero-tests, libpng, llama.cpp) and a partial clone (quest-build, numstat missing) |
-| 1d AM4 non-git dirs (am4-dual-nvidia-poc, vllm-e3) | absent | - | 0 | no births collector over ssh in v1; not in the work-list |
+| 1d AM4 non-git dirs (am4-dual-nvidia-poc, vllm-e3) | covered | am4-births | 120 | v1.4: births and updates over ssh (section 12) |
 | 1e FX99 git repositories (4) | covered | fx99-git | 110 | continuity, fleet, fleet.git (bare), ledger |
-| 1e FX99 non-git dirs (dmos, menu, liferaft, ai-bench, apps, cookbook) | absent | - | 0 | no births collector over ssh in v1; not in the work-list |
+| 1e FX99 non-git dirs (dmos, menu, liferaft, ai-bench, apps, cookbook) | covered | fx99-births | 249 | v1.4: births and updates over ssh (section 12) |
 | 1f GitHub: 50 public repos (djcdevelopment) + steppe-integrations | partial | github-list, mirror-0, mirror-1 | 115 | public view only (gh not authenticated): 54 repo_born events, 12 repos mirrored; 2 forks skipped; private repos pending auth (section 8) |
-| 2 C:\work non-git dirs (omen-perception, _retired, orchestration, tools, ...) | covered | c-births | 607 | 38 sources; skip list honoured (dotnet9, jdk17, godot, fieldlab-postgres-data, model, venvs) |
-| 2 C: root dirs (hearth-var, dirty-diffs, omen-perception-authored, tuning, assessment, AM4-provision, OMEN_prep) | partial | c-births | (in c-births) | file births only. Bulk-copied dirs are flagged `bulk_copy` (173 records) but their in-record timestamps (cycle.log lines, dirty-diffs content) were not read; hearth-var/execution/events.ndjson (573 events) is not in any item |
-| 2 E:\work non-git dirs (comfy, vllm-xpu-win, start, battlemage, 8350, dump, ...) | covered | e-births | 662 | 49 sources plus loose files; models skipped |
+| 2 C:\work non-git dirs (omen-perception, _retired, orchestration, tools, ...) | covered | c-births | 1,115 | 38 sources; skip list honoured (dotnet9, jdk17, godot, fieldlab-postgres-data, model, venvs) |
+| 2 C: root dirs (hearth-var, dirty-diffs, omen-perception-authored, tuning, assessment, AM4-provision, OMEN_prep) | partial | c-births | (in c-births) | births and (v1.4) updates. Bulk-copied dirs are flagged `bulk_copy` (173 records) but their in-record timestamps (cycle.log lines, dirty-diffs content) were not read; hearth-var/execution/events.ndjson (573 events) is not in any item |
+| 2 E:\work non-git dirs (comfy, vllm-xpu-win, start, battlemage, 8350, dump, ...) | covered | e-births | 890 | 49 sources plus loose files; models skipped |
 | 3 ChatGPT export, normalized (380 conversations, 19,045 messages) | covered | chatgpt | 11,259 | metadata only; 4,932 system-role messages and 12 undated records dropped and counted; titles and text never read |
 | 3 Claude Code, Windows archive zip (413 jsonl) | covered | claude-zip | 17,623 | `unzip -p` of allowlisted members only; archive never extracted; 412 members seen |
 | 3 Claude Code, Windows live (1,042 jsonl) | covered | claude-win | 41,294 | history.jsonl (454 lines) not read: its fields are prompt text (contract section 2) |
@@ -115,7 +115,8 @@ Nothing in the corpus is short of a SURVEY figure without a reason listed above.
 | commit | 32,121 |
 | offload_call | 26,386 |
 | chat_session | 2,810 |
-| file_birth | 1,269 |
+| file_birth | 2,030 |
+| file_update | 1,090 |
 | branch | 790 |
 | run | 235 |
 | receipt | 233 |
@@ -126,13 +127,13 @@ Nothing in the corpus is short of a SURVEY figure without a reason listed above.
 
 | Host | Events |
 |---|---|
-| omen-c | 93,219 |
-| omen-e | 61,374 |
-| omen-linux | 44,600 |
+| omen-c | 93,727 |
+| omen-e | 61,602 |
+| omen-linux | 45,346 |
 | cloud | 11,259 |
-| am4 | 89 |
+| fx99 | 301 |
+| am4 | 209 |
 | github | 54 |
-| fx99 | 52 |
 
 ### Per actor class
 
@@ -142,7 +143,7 @@ Nothing in the corpus is short of a SURVEY figure without a reason listed above.
 | codex | 71,842 |
 | third_party | 22,670 |
 | chatgpt | 11,259 |
-| human | 7,290 |
+| human | 9,141 |
 | automation | 1,112 |
 | local_model | 542 |
 | opencode | 209 |
@@ -161,7 +162,8 @@ Nothing in the corpus is short of a SURVEY figure without a reason listed above.
 | continuity/run | 99 | 99 |
 | deepagents_runs/offload_call | 401 | 401 |
 | deepagents_runs/run | 136 | 136 |
-| fs_births/file_birth | 1,269 | 1,269 |
+| fs_births/file_birth | 2,030 | 2,030 |
+| fs_births/file_update | 1,090 | 1,090 |
 | git_repo/branch | 790 | 1,670 |
 | git_repo/commit | 32,121 | 35,986 |
 | git_repo/repo_born | 113 | 154 |
@@ -176,87 +178,113 @@ Nothing in the corpus is short of a SURVEY figure without a reason listed above.
 | Year-month | Total | commit | chat_msg | chat_session | offload_call | other |
 |---|---|---|---|---|---|---|
 | 2011-08 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 2014-05 | 2 | 0 | 0 | 0 | 0 | 2 |
 | 2015-08 | 5 | 2 | 0 | 0 | 0 | 3 |
-| 2017-12 | 4 | 1 | 0 | 0 | 0 | 3 |
-| 2018-08 | 12 | 11 | 0 | 0 | 0 | 1 |
-| 2019-05 | 1 | 1 | 0 | 0 | 0 | 0 |
-| 2019-07 | 2 | 2 | 0 | 0 | 0 | 0 |
+| 2016-06 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 2016-11 | 2 | 0 | 0 | 0 | 0 | 2 |
+| 2017-05 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 2017-12 | 5 | 1 | 0 | 0 | 0 | 4 |
+| 2018-01 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 2018-04 | 3 | 0 | 0 | 0 | 0 | 3 |
+| 2018-05 | 6 | 0 | 0 | 0 | 0 | 6 |
+| 2018-06 | 9 | 0 | 0 | 0 | 0 | 9 |
+| 2018-07 | 12 | 0 | 0 | 0 | 0 | 12 |
+| 2018-08 | 40 | 11 | 0 | 0 | 0 | 29 |
+| 2018-09 | 17 | 0 | 0 | 0 | 0 | 17 |
+| 2018-10 | 11 | 0 | 0 | 0 | 0 | 11 |
+| 2018-11 | 3 | 0 | 0 | 0 | 0 | 3 |
+| 2018-12 | 19 | 0 | 0 | 0 | 0 | 19 |
+| 2019-01 | 5 | 0 | 0 | 0 | 0 | 5 |
+| 2019-02 | 8 | 0 | 0 | 0 | 0 | 8 |
+| 2019-03 | 11 | 0 | 0 | 0 | 0 | 11 |
+| 2019-04 | 12 | 0 | 0 | 0 | 0 | 12 |
+| 2019-05 | 14 | 1 | 0 | 0 | 0 | 13 |
+| 2019-06 | 19 | 0 | 0 | 0 | 0 | 19 |
+| 2019-07 | 6 | 2 | 0 | 0 | 0 | 4 |
+| 2019-08 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 2019-09 | 1 | 0 | 0 | 0 | 0 | 1 |
 | 2019-10 | 2 | 2 | 0 | 0 | 0 | 0 |
 | 2019-11 | 2 | 2 | 0 | 0 | 0 | 0 |
+| 2020-02 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 2020-03 | 1 | 0 | 0 | 0 | 0 | 1 |
 | 2020-05 | 2 | 2 | 0 | 0 | 0 | 0 |
+| 2020-06 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 2020-07 | 1 | 0 | 0 | 0 | 0 | 1 |
 | 2020-11 | 16 | 15 | 0 | 0 | 0 | 1 |
 | 2020-12 | 2 | 0 | 0 | 0 | 0 | 2 |
+| 2021-03 | 10 | 0 | 0 | 0 | 0 | 10 |
 | 2021-05 | 19 | 18 | 0 | 0 | 0 | 1 |
 | 2021-06 | 21 | 20 | 0 | 0 | 0 | 1 |
 | 2021-07 | 20 | 20 | 0 | 0 | 0 | 0 |
 | 2021-08 | 35 | 35 | 0 | 0 | 0 | 0 |
 | 2021-09 | 30 | 30 | 0 | 0 | 0 | 0 |
-| 2021-10 | 20 | 20 | 0 | 0 | 0 | 0 |
+| 2021-10 | 25 | 20 | 0 | 0 | 0 | 5 |
 | 2021-11 | 12 | 12 | 0 | 0 | 0 | 0 |
 | 2021-12 | 13 | 13 | 0 | 0 | 0 | 0 |
-| 2022-01 | 23 | 23 | 0 | 0 | 0 | 0 |
+| 2022-01 | 26 | 23 | 0 | 0 | 0 | 3 |
 | 2022-02 | 14 | 14 | 0 | 0 | 0 | 0 |
-| 2022-03 | 8 | 8 | 0 | 0 | 0 | 0 |
+| 2022-03 | 11 | 8 | 0 | 0 | 0 | 3 |
 | 2022-04 | 4 | 4 | 0 | 0 | 0 | 0 |
-| 2022-05 | 39 | 39 | 0 | 0 | 0 | 0 |
+| 2022-05 | 42 | 39 | 0 | 0 | 0 | 3 |
 | 2022-06 | 37 | 37 | 0 | 0 | 0 | 0 |
 | 2022-07 | 48 | 48 | 0 | 0 | 0 | 0 |
 | 2022-08 | 23 | 23 | 0 | 0 | 0 | 0 |
 | 2022-09 | 12 | 12 | 0 | 0 | 0 | 0 |
-| 2022-10 | 38 | 38 | 0 | 0 | 0 | 0 |
-| 2022-11 | 18 | 18 | 0 | 0 | 0 | 0 |
+| 2022-10 | 43 | 38 | 0 | 0 | 0 | 5 |
+| 2022-11 | 20 | 18 | 0 | 0 | 0 | 2 |
 | 2022-12 | 49 | 49 | 0 | 0 | 0 | 0 |
 | 2023-01 | 29 | 29 | 0 | 0 | 0 | 0 |
-| 2023-02 | 20 | 20 | 0 | 0 | 0 | 0 |
-| 2023-03 | 309 | 308 | 0 | 0 | 0 | 1 |
-| 2023-04 | 212 | 204 | 6 | 2 | 0 | 0 |
+| 2023-02 | 21 | 20 | 0 | 0 | 0 | 1 |
+| 2023-03 | 318 | 308 | 0 | 0 | 0 | 10 |
+| 2023-04 | 217 | 204 | 6 | 2 | 0 | 5 |
 | 2023-05 | 266 | 265 | 0 | 0 | 0 | 1 |
-| 2023-06 | 264 | 264 | 0 | 0 | 0 | 0 |
+| 2023-06 | 266 | 264 | 0 | 0 | 0 | 2 |
 | 2023-07 | 248 | 248 | 0 | 0 | 0 | 0 |
-| 2023-08 | 269 | 269 | 0 | 0 | 0 | 0 |
-| 2023-09 | 357 | 357 | 0 | 0 | 0 | 0 |
-| 2023-10 | 345 | 335 | 6 | 3 | 0 | 1 |
-| 2023-11 | 358 | 351 | 2 | 1 | 0 | 4 |
-| 2023-12 | 340 | 339 | 0 | 0 | 0 | 1 |
-| 2024-01 | 533 | 532 | 0 | 0 | 0 | 1 |
-| 2024-02 | 462 | 461 | 0 | 0 | 0 | 1 |
-| 2024-03 | 438 | 438 | 0 | 0 | 0 | 0 |
-| 2024-04 | 525 | 522 | 0 | 0 | 0 | 3 |
-| 2024-05 | 513 | 508 | 0 | 0 | 0 | 5 |
-| 2024-06 | 416 | 415 | 0 | 0 | 0 | 1 |
-| 2024-07 | 477 | 472 | 0 | 0 | 0 | 5 |
-| 2024-08 | 398 | 389 | 0 | 0 | 0 | 9 |
-| 2024-09 | 353 | 348 | 0 | 0 | 0 | 5 |
-| 2024-10 | 425 | 417 | 0 | 0 | 0 | 8 |
-| 2024-11 | 560 | 549 | 6 | 1 | 0 | 4 |
-| 2024-12 | 413 | 371 | 34 | 5 | 0 | 3 |
-| 2025-01 | 586 | 467 | 98 | 12 | 0 | 9 |
-| 2025-02 | 432 | 411 | 10 | 3 | 0 | 8 |
-| 2025-03 | 546 | 502 | 20 | 5 | 0 | 19 |
+| 2023-08 | 270 | 269 | 0 | 0 | 0 | 1 |
+| 2023-09 | 362 | 357 | 0 | 0 | 0 | 5 |
+| 2023-10 | 351 | 335 | 6 | 3 | 0 | 7 |
+| 2023-11 | 362 | 351 | 2 | 1 | 0 | 8 |
+| 2023-12 | 345 | 339 | 0 | 0 | 0 | 6 |
+| 2024-01 | 536 | 532 | 0 | 0 | 0 | 4 |
+| 2024-02 | 464 | 461 | 0 | 0 | 0 | 3 |
+| 2024-03 | 443 | 438 | 0 | 0 | 0 | 5 |
+| 2024-04 | 526 | 522 | 0 | 0 | 0 | 4 |
+| 2024-05 | 514 | 508 | 0 | 0 | 0 | 6 |
+| 2024-06 | 421 | 415 | 0 | 0 | 0 | 6 |
+| 2024-07 | 479 | 472 | 0 | 0 | 0 | 7 |
+| 2024-08 | 415 | 389 | 0 | 0 | 0 | 26 |
+| 2024-09 | 370 | 348 | 0 | 0 | 0 | 22 |
+| 2024-10 | 441 | 417 | 0 | 0 | 0 | 24 |
+| 2024-11 | 596 | 549 | 6 | 1 | 0 | 40 |
+| 2024-12 | 431 | 371 | 34 | 5 | 0 | 21 |
+| 2025-01 | 608 | 467 | 98 | 12 | 0 | 31 |
+| 2025-02 | 463 | 411 | 10 | 3 | 0 | 39 |
+| 2025-03 | 560 | 502 | 20 | 5 | 0 | 33 |
 | 2025-04 | 419 | 394 | 17 | 3 | 0 | 5 |
-| 2025-05 | 689 | 600 | 63 | 6 | 0 | 20 |
-| 2025-06 | 586 | 531 | 33 | 4 | 0 | 18 |
-| 2025-07 | 1,023 | 803 | 145 | 29 | 0 | 46 |
-| 2025-08 | 940 | 788 | 100 | 16 | 0 | 36 |
+| 2025-05 | 695 | 600 | 63 | 6 | 0 | 26 |
+| 2025-06 | 587 | 531 | 33 | 4 | 0 | 19 |
+| 2025-07 | 1,029 | 803 | 145 | 29 | 0 | 52 |
+| 2025-08 | 946 | 788 | 100 | 16 | 0 | 42 |
 | 2025-09 | 796 | 651 | 91 | 22 | 0 | 32 |
-| 2025-10 | 781 | 666 | 73 | 17 | 0 | 25 |
-| 2025-11 | 1,660 | 804 | 784 | 43 | 0 | 29 |
-| 2025-12 | 3,374 | 763 | 2,535 | 51 | 0 | 25 |
-| 2026-01 | 3,809 | 578 | 3,137 | 67 | 0 | 27 |
-| 2026-02 | 3,208 | 684 | 2,420 | 65 | 0 | 39 |
-| 2026-03 | 4,190 | 2,616 | 1,299 | 25 | 0 | 250 |
-| 2026-04 | 1,104 | 928 | 0 | 0 | 0 | 176 |
-| 2026-05 | 10,165 | 1,193 | 8,597 | 185 | 0 | 190 |
-| 2026-06 | 10,354 | 1,139 | 8,838 | 222 | 0 | 155 |
-| 2026-07 | 24,488 | 2,827 | 19,641 | 380 | 1,264 | 376 |
-| 2026-08 | 56,454 | 2,583 | 52,833 | 580 | 108 | 350 |
-| 2026-09 | 38,651 | 2,401 | 33,031 | 557 | 1,873 | 789 |
-| 2026-10 | 37,330 | 862 | 12,613 | 506 | 23,141 | 208 |
+| 2025-10 | 790 | 666 | 73 | 17 | 0 | 34 |
+| 2025-11 | 1,669 | 804 | 784 | 43 | 0 | 38 |
+| 2025-12 | 3,376 | 763 | 2,535 | 51 | 0 | 27 |
+| 2026-01 | 3,816 | 578 | 3,137 | 67 | 0 | 34 |
+| 2026-02 | 3,211 | 684 | 2,420 | 65 | 0 | 42 |
+| 2026-03 | 4,266 | 2,616 | 1,299 | 25 | 0 | 326 |
+| 2026-04 | 1,122 | 928 | 0 | 0 | 0 | 194 |
+| 2026-05 | 10,245 | 1,193 | 8,597 | 185 | 0 | 270 |
+| 2026-06 | 10,421 | 1,139 | 8,838 | 222 | 0 | 222 |
+| 2026-07 | 24,576 | 2,827 | 19,641 | 380 | 1,264 | 464 |
+| 2026-08 | 56,492 | 2,583 | 52,833 | 580 | 108 | 388 |
+| 2026-09 | 39,496 | 2,401 | 33,031 | 557 | 1,873 | 1,634 |
+| 2026-10 | 37,467 | 862 | 12,613 | 506 | 23,141 | 345 |
 
 ## 5. Dropped counters
 
 | Item | null_ts | polling | decode_errors | other_role | null_ts_emitted | deduped in item | Warnings |
 |---|---|---|---|---|---|---|---|
+| am4-births | 0 | 0 | 0 | 0 | 0 | 0 | - |
 | am4-git | 0 | 0 | 0 | 0 | 0 | 0 | roots_missing:93; numstat_failed:partial_clone_missing_blobs |
 | c-births | 0 | 0 | 0 | 0 | 0 | 0 | - |
 | c-git-a | 0 | 0 | 0 | 0 | 9 | 0 | - |
@@ -276,9 +304,11 @@ Nothing in the corpus is short of a SURVEY figure without a reason listed above.
 | e-git-b | 0 | 0 | 0 | 0 | 74 | 0 | numstat_failed:partial_clone_missing_blobs |
 | e-git-c | 0 | 0 | 0 | 0 | 16 | 0 | - |
 | e-git-nested | 0 | 0 | 0 | 0 | 79 | 0 | roots_missing:18 |
+| fx99-births | 0 | 0 | 0 | 0 | 0 | 0 | - |
 | fx99-git | 0 | 0 | 0 | 0 | 0 | 0 | roots_missing:6 |
 | github-list | 0 | 0 | 0 | 0 | 0 | 0 | pending auth: private repos not listed |
 | hearth-ledger | 0 | 535,587 | 0 | 0 | 0 | 1,293 | - |
+| linux-births | 0 | 0 | 0 | 0 | 0 | 0 | - |
 | linux-git | 0 | 0 | 0 | 0 | 297 | 0 | roots_missing:12 |
 | mirror-0 | 0 | 0 | 0 | 0 | 4 | 0 | - |
 | mirror-1 | 0 | 0 | 0 | 0 | 4 | 0 | - |
@@ -299,10 +329,10 @@ Merge-level drops and folds:
 | Duplicates folded, chat_session | 3 |
 | Duplicates folded, commit | 3,865 |
 | Duplicates folded, repo_born | 33 |
-| Events loaded | 215,526 |
-| Events written | 210,647 |
+| Events loaded | 217,377 |
+| Events written | 212,498 |
 
-Check: loaded 215,526 - duplicates 4,169 - null-ts 710 = written 210,647.
+Check: loaded 217,377 - duplicates 4,169 - null-ts 710 = written 212,498.
 
 Claude zip against the live tree: 0 sessions overlap (the zip ends 2026-06-22, the live tree starts 2026-07-10). Three
 `chat_session` and 90 `chat_msg` duplicates were found inside the Linux tree (three transcript file names occur twice
@@ -458,8 +488,124 @@ records make 498 distinct sessions in `sessions.json` (`segments` says how many 
   then (this one included).
 - Windows `hearth-var/execution/events.ndjson` (573 events) and the in-record timestamps of the bulk-copied C:
   directories are not collected (section 2).
-- AM4 and FX99 non-git directories have no collector.
+- AM4 and FX99 non-git directories are collected from v1.4 (`am4-births`, `fx99-births`, section 12); non-git
+  omen-linux directories likewise (`linux-births`).
 - GitHub private repositories and fork metadata are pending authentication (section 8).
+
+## 12. File activity extension (v1.4)
+
+Section 7 of the v1.4 request; numbered 12 here because sections 7 to 11 already exist. Source `fs_births` now emits
+`file_update` beside `file_birth`: one record per (depth-2 directory, day), counted only when the file's last-modified
+day differs from its birth day. Items: `c-births`, `e-births`, `linux-births`, `am4-births`, `fx99-births`. Counts
+only.
+
+| Item | Status | file_birth records | Files folded (births) | Bulk-copy births | file_update records | Files folded (updates) | Bulk-copy updates | Sources | Skipped | Files with null mtime |
+|---|---|---|---|---|---|---|---|---|---|---|
+| am4-births | complete | 109 | 18,372 | 59 | 11 | 2,393 | 2 | 2 | 0 | 0 |
+| c-births | complete | 607 | 174,498 | 107 | 508 | 34,863 | 146 | 38 | 0 | 28,661 |
+| e-births | complete | 662 | 81,408 | 66 | 228 | 12,499 | 28 | 49 | 0 | 0 |
+| fx99-births | complete | 52 | 3,873 | 14 | 197 | 3,475 | 31 | 6 | 0 | 0 |
+| linux-births | complete | 600 | 28,769 | 101 | 146 | 5,474 | 82 | 49 | 0 | 0 |
+| total |  | 2,030 | 306,920 | 347 | 1,090 | 58,704 | 289 |  |  |  |
+
+Per host and year-month, file activity = files folded into births + updates (merged corpus, after dedupe):
+
+| Year-month | am4 | fx99 | omen-c | omen-e | omen-linux |
+|---|---|---|---|---|---|
+| 2014-05 | 0 | 0 | 0 | 2 | 0 |
+| 2016-06 | 0 | 0 | 1 | 0 | 0 |
+| 2016-11 | 0 | 0 | 10 | 0 | 0 |
+| 2017-05 | 0 | 0 | 3 | 0 | 0 |
+| 2017-12 | 0 | 0 | 115 | 0 | 0 |
+| 2018-01 | 0 | 0 | 2 | 0 | 0 |
+| 2018-04 | 0 | 0 | 240 | 0 | 0 |
+| 2018-05 | 0 | 4 | 48 | 0 | 0 |
+| 2018-06 | 0 | 21 | 0 | 0 | 0 |
+| 2018-07 | 0 | 182 | 0 | 0 | 0 |
+| 2018-08 | 0 | 68 | 41 | 0 | 0 |
+| 2018-09 | 0 | 216 | 0 | 0 | 0 |
+| 2018-10 | 0 | 18 | 0 | 0 | 0 |
+| 2018-11 | 0 | 3 | 1 | 0 | 0 |
+| 2018-12 | 0 | 26 | 8 | 0 | 0 |
+| 2019-01 | 0 | 6 | 0 | 0 | 0 |
+| 2019-02 | 0 | 17 | 0 | 0 | 0 |
+| 2019-03 | 0 | 158 | 0 | 0 | 0 |
+| 2019-04 | 0 | 15 | 0 | 0 | 0 |
+| 2019-05 | 0 | 49 | 0 | 0 | 0 |
+| 2019-06 | 0 | 135 | 0 | 0 | 0 |
+| 2019-07 | 0 | 9 | 0 | 0 | 0 |
+| 2019-08 | 0 | 0 | 1 | 0 | 0 |
+| 2019-09 | 0 | 0 | 123 | 0 | 0 |
+| 2020-02 | 0 | 0 | 15 | 0 | 0 |
+| 2020-03 | 0 | 0 | 0 | 5 | 0 |
+| 2020-06 | 0 | 0 | 2 | 0 | 0 |
+| 2020-07 | 0 | 0 | 3 | 0 | 0 |
+| 2020-12 | 0 | 0 | 0 | 19 | 0 |
+| 2021-03 | 0 | 0 | 65 | 6 | 0 |
+| 2021-10 | 0 | 0 | 14 | 4 | 0 |
+| 2022-01 | 0 | 0 | 6 | 2 | 0 |
+| 2022-03 | 0 | 0 | 9 | 0 | 0 |
+| 2022-05 | 0 | 0 | 11 | 28 | 0 |
+| 2022-10 | 0 | 0 | 26 | 12 | 1,683 |
+| 2022-11 | 0 | 0 | 0 | 0 | 57 |
+| 2023-02 | 0 | 0 | 0 | 0 | 57 |
+| 2023-03 | 0 | 0 | 75 | 1 | 0 |
+| 2023-04 | 0 | 0 | 18 | 0 | 0 |
+| 2023-06 | 0 | 0 | 0 | 12 | 60 |
+| 2023-08 | 0 | 0 | 0 | 0 | 58 |
+| 2023-09 | 0 | 0 | 156 | 1 | 0 |
+| 2023-10 | 0 | 0 | 14 | 3 | 58 |
+| 2023-11 | 0 | 0 | 285 | 142 | 0 |
+| 2023-12 | 0 | 0 | 1 | 73 | 0 |
+| 2024-01 | 0 | 0 | 6 | 0 | 0 |
+| 2024-02 | 0 | 0 | 0 | 0 | 61 |
+| 2024-03 | 0 | 0 | 4 | 18 | 0 |
+| 2024-04 | 0 | 0 | 0 | 1 | 0 |
+| 2024-05 | 0 | 0 | 0 | 1 | 0 |
+| 2024-06 | 0 | 0 | 61 | 7 | 0 |
+| 2024-07 | 0 | 0 | 5 | 10 | 0 |
+| 2024-08 | 0 | 0 | 21 | 178 | 0 |
+| 2024-09 | 0 | 0 | 152 | 95 | 0 |
+| 2024-10 | 0 | 0 | 124 | 33 | 0 |
+| 2024-11 | 0 | 0 | 1,311 | 60 | 0 |
+| 2024-12 | 0 | 0 | 205 | 32 | 0 |
+| 2025-01 | 0 | 0 | 204 | 45 | 0 |
+| 2025-02 | 0 | 0 | 73 | 89 | 0 |
+| 2025-03 | 0 | 6 | 63 | 20 | 10 |
+| 2025-05 | 0 | 0 | 0 | 27 | 330 |
+| 2025-06 | 0 | 0 | 0 | 21 | 0 |
+| 2025-07 | 0 | 0 | 75 | 19 | 0 |
+| 2025-08 | 0 | 0 | 430 | 109 | 0 |
+| 2025-09 | 0 | 0 | 0 | 12 | 0 |
+| 2025-10 | 0 | 0 | 18 | 118 | 0 |
+| 2025-11 | 0 | 6 | 193 | 22 | 0 |
+| 2025-12 | 0 | 0 | 0 | 6 | 0 |
+| 2026-01 | 1,930 | 0 | 540 | 61 | 0 |
+| 2026-02 | 38 | 0 | 2 | 6 | 0 |
+| 2026-03 | 141 | 0 | 258 | 24,576 | 0 |
+| 2026-04 | 0 | 0 | 6 | 4,389 | 0 |
+| 2026-05 | 16 | 6 | 4,456 | 31,297 | 13 |
+| 2026-06 | 0 | 8 | 60,249 | 5,059 | 0 |
+| 2026-07 | 0 | 24 | 66,347 | 0 | 0 |
+| 2026-08 | 0 | 2,961 | 16,083 | 6,542 | 0 |
+| 2026-09 | 18,640 | 937 | 56,899 | 20,744 | 18,679 |
+| 2026-10 | 0 | 2,473 | 283 | 0 | 13,177 |
+| total | 20,765 | 7,348 | 209,361 | 93,907 | 34,243 |
+
+- **Lower bound.** A filesystem keeps one last-modified time per file, so a file edited on ten days counts as one
+  update day; update frequency and density are floors. A file whose mtime day equals its birth day is a birth only.
+- **Null rule.** Births use the birth time (mtime if the filesystem has none); a mtime before 2005 (the 1970 and 1980
+  placeholders) or in the future yields no update and is counted in the manifest as `update_null_mtime` (column
+  above). Copied files can carry an mtime earlier than their birth: those count as updates on the mtime day.
+- **Bulk copies.** A record is flagged `bulk_copy` when 80 percent or more of its files share birth seconds that hold
+  100 or more files; the flagged counts are in the table. They are kept, not removed.
+- **Skipped.** Nothing in these five items was skipped (no timeouts); never-walk directories (models, checkpoints,
+  venvs, .venv, node_modules, .cache, .git, ComfyUI/models), credential-bearing files and symlinked roots are pruned
+  inside the walk. `~/work/worktrees`, `~/work/amux` and `~/work/known-world` (this corpus) are excluded from
+  `linux-births`; git repositories with commits stay with `*-git`.
+- **Overlap.** Non-git directories can hold nested git repositories (for example under `trial`): their files count
+  here and their commits in `linux-git`. Compile should treat file activity inside a directory that is also a lineage
+  as density, not as new work.
 
 Reproduce: `.venv/bin/python -I collect/knownworld/merge.py && .venv/bin/python -I collect/knownworld/report.py &&
 .venv/bin/python -I collect/knownworld/privacy_scan.py corpus/merged` from `~/work/known-world` with

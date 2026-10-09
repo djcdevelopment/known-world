@@ -703,6 +703,25 @@ def merge(raw_dir=RAW, out_dir=OUT):
         if e["kind"] == "chat_session":
             chat_per_item[it]["chat_session_records"] += 1
             chat_per_item[it]["messages"] += e["magnitude"].get("n", 0)
+    fa_item = defaultdict(Counter)
+    for it, e in evs:
+        if e["kind"] in ("file_birth", "file_update"):
+            k = "birth" if e["kind"] == "file_birth" else "update"
+            fa_item[it][k + "_records"] += 1
+            fa_item[it][k + "_files"] += e["magnitude"].get("n", 0)
+            fa_item[it][k + "_bytes"] += e["magnitude"].get("bytes", 0) or 0
+            if (e.get("meta") or {}).get("bulk_copy"):
+                fa_item[it][k + "_bulk_records"] += 1
+    fa_hym = defaultdict(lambda: defaultdict(Counter))
+    for e in out_events:
+        if e["kind"] in ("file_birth", "file_update"):
+            c = fa_hym[e["host"]][e["ts"][:7]]
+            c[e["kind"] + "_files"] += e["magnitude"].get("n", 0)
+            c[e["kind"] + "_records"] += 1
+    stats["file_activity"] = {
+        "per_item": {i: dict(sorted(c.items())) for i, c in sorted(fa_item.items())},
+        "per_host_ym": {h: {ym: dict(sorted(c.items())) for ym, c in sorted(v.items())}
+                        for h, v in sorted(fa_hym.items())}}
     stats.update({
         "items_order": items,
         "events_out": len(out_events),

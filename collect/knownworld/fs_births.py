@@ -171,6 +171,10 @@ def process_source(ctx, src, cursor):
         u[1] += size
         u[2] = min(u[2], me)
         u[3][be] += 1
+    try:
+        st.p.wait(timeout=20)
+    except Exception:
+        pass
     st.close()
     if st.timed_out or (rh and st.rc == 124):
         if reduced and ctx.sources_this_slice:

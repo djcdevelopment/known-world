@@ -756,7 +756,7 @@
   },
   {
    "class": "human",
-   "events": 7290,
+   "events": 9141,
    "first_ts": "2011-08-25T19:45:52Z",
    "hosts": [
     "omen-linux",
@@ -769,12 +769,13 @@
    "kinds": {
     "branch": 790,
     "commit": 4637,
-    "file_birth": 1269,
+    "file_birth": 2030,
+    "file_update": 1090,
     "offload_call": 223,
     "repo_born": 167,
     "worktree": 204
    },
-   "last_ts": "2026-10-09T12:09:59Z",
+   "last_ts": "2026-10-09T12:22:31Z",
    "name": "derek"
   },
   {

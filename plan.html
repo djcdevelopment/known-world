@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Known World: living plan</title>
+<style>
+  :root {
+    --bg-base: #07090e; --bg-surface: #0e131d; --bg-card: #131a29; --border: #1e283d; --border-bright: #2d3d5c;
+    --cyan: #00f2fe; --coral: #ff7a59; --emerald: #00ff87; --amber: #ffb300; --purple: #b388ff; --ember: #ff3b2f;
+    --text: #f0f4fc; --text-2: #94a3b8; --muted: #64748b;
+    --mono: 'JetBrains Mono', 'Fira Code', ui-monospace, Menlo, Consolas, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg-base); color: var(--text); font-family: var(--sans); line-height: 1.5; padding: 0 16px 64px; }
+  header { max-width: 1200px; margin: 0 auto; padding: 28px 0 18px; border-bottom: 1px solid var(--border); }
+  h1 { font-family: var(--mono); font-size: 22px; letter-spacing: -0.3px; }
+  h1 span { color: var(--cyan); }
+  header p { color: var(--text-2); font-size: 13px; font-family: var(--mono); margin-top: 6px; }
+  main { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; padding-top: 18px; }
+  section { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 16px 18px; }
+  .c12 { grid-column: span 12; } .c6 { grid-column: span 6; } .c4 { grid-column: span 4; }
+  @media (max-width: 900px) { .c6, .c4 { grid-column: span 12; } }
+  h2 { font-family: var(--mono); font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-2); margin-bottom: 10px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-family: var(--mono); font-size: 11px; text-transform: uppercase; }
+  code { font-family: var(--mono); font-size: 12px; color: var(--cyan); }
+  .pill { display: inline-block; padding: 1px 8px; border-radius: 10px; font-family: var(--mono); font-size: 11px; border: 1px solid var(--border-bright); }
+  .done { color: var(--emerald); border-color: var(--emerald); } .running { color: var(--amber); border-color: var(--amber); }
+  .pending { color: var(--muted); } .deferred { color: var(--purple); border-color: var(--purple); } .open { color: var(--coral); border-color: var(--coral); }
+  ul { padding-left: 18px; font-size: 13px; } li { margin: 4px 0; }
+  .kv { display: grid; grid-template-columns: 140px 1fr; gap: 4px 12px; font-size: 13px; }
+  .kv dt { color: var(--muted); font-family: var(--mono); font-size: 11px; text-transform: uppercase; padding-top: 2px; }
+  .legend span { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
+  footer { max-width: 1200px; margin: 24px auto 0; color: var(--muted); font-size: 12px; font-family: var(--mono); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Known World <span>· living plan</span></h1>
+  <p>A fog-of-war time-lapse of everything built on the lab's surfaces, repos and chats · goal G-known-world · updated 2026-10-09 12:45Z</p>
+</header>
+<main>
+  <section class="c12">
+    <h2>Where things stand</h2>
+    <table>
+      <thead><tr><th>#</th><th>Task</th><th>State</th><th>What it produces</th><th>Record</th></tr></thead>
+      <tbody>
+        <tr><td>0</td><td>Scaffold, goal, access</td><td><span class="pill done">done</span></td><td>Repo, contract v1, direction, survey, venv (numpy, static ffmpeg), gh installed, goal rev 20, ct item</td><td><code>known-world-plan/0-index.md</code></td></tr>
+        <tr><td>1</td><td>Corpus run (Sonnet manager, Haiku fleet)</td><td><span class="pill running">running</span></td><td><code>corpus/merged/*</code>, <code>corpus/CORPUS-REPORT.md</code></td><td>Workflow <code>wf_6e7b2cbe-dfc</code>, started 12:16Z</td></tr>
+        <tr><td>2</td><td>Implementation strategy (Opus panel, Sonnet judges)</td><td><span class="pill pending">pending</span></td><td><code>STRATEGY.md</code></td><td>after 1</td></tr>
+        <tr><td>3</td><td>Thin slice (one Sonnet builder)</td><td><span class="pill pending">pending</span></td><td>Windows A and B plus a density fixture, exported to mp4 with audio</td><td>after 2</td></tr>
+        <tr><td>4</td><td>Laps (eight one-variable experiments)</td><td><span class="pill pending">pending</span></td><td><code>laps/LAP-NN/RESULT.md</code>, then the full render</td><td>after 3</td></tr>
+        <tr><td>—</td><td>Export budget spike</td><td><span class="pill done">done</span></td><td>PNG capture ≈ 250 ms per 1080p frame at 5k, 20k and 80k tiles (canvas draw 3 to 57 ms); a 60-frame H.264 + AAC mp4 verified. Full piece: 1.4 to 1.9 h offline unless frames are piped raw, pages run in parallel, or 24 fps</td><td><code>spikes/01-canvas-budget/RESULT.md</code></td></tr>
+        <tr><td>—</td><td>RaidUI reuse (Derek's prior time player)</td><td><span class="pill done">done</span></td><td>Playback core vendored: pure render-state, playback controller with deterministic tick, density grid, overlay compositor, decay trail, scrubber. Missing parts named for the strategists</td><td><code>SURVEY.md §4b</code>, <code>render/vendor/raidui/</code></td></tr>
+        <tr><td>—</td><td>Local-seat repo-card arm</td><td><span class="pill deferred">deferred</span></td><td>Capability record per seat</td><td>30B and AM4 tool seats absent under the bench27 all-27B hold; door: default lane not live</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="c6">
+    <h2>Derek's decisions (2026-10-09)</h2>
+    <ul>
+      <li><b>Chat privacy: metadata only.</b> Timestamps, roles, project, model, token counts, tool names. No text, titles or previews leave the machine; cloud agents see counts.</li>
+      <li><b>Time span: full record, compressed prologue.</b> Chat from 2023-04, code from 2026-01, the burst from 2026-03; quiet years stay visibly quiet.</li>
+      <li><b>Lab record: a new goal</b> (G-known-world) beside the focus G-bench27.</li>
+      <li><b>GitHub:</b> about half the repo volume is private; collectors need authenticated read access.</li>
+    </ul>
+  </section>
+
+  <section class="c6">
+    <h2>Open for Derek</h2>
+    <ul>
+      <li><span class="pill open">access</span> Mint a fine-grained personal access token, read-only (Contents, Metadata; all repositories; 90 days) and run <code>gh auth login --with-token</code> in your own terminal. Private https clones already work through the stored git credential; the token is only for listing private repos and their dates.</li>
+      <li><span class="pill open">intent</span> The intent hot/capsule budget rule was already over before rev 20 (2121/2048); it reads 2166/2048 now. Trim or raise is yours.</li>
+    </ul>
+  </section>
+
+  <section class="c4">
+    <h2>Corpus at a glance (survey)</h2>
+    <dl class="kv">
+      <dt>repos</dt><dd>~36 C:, ~38 E:, ~30 nested, ~25 Linux, 11 AM4, 3 FX99, 50 public + private GitHub</dd>
+      <dt>chat span</dt><dd>2023-04 → today, continuous</dd>
+      <dt>code span</dt><dd>2026-01-17 → today; burst from 2026-03</dd>
+      <dt>biggest walk</dt><dd>Windows Codex sessions, 10.6 GB over FUSE</dd>
+      <dt>ledger</dt><dd>HEARTH 472k events (75% polling, dropped)</dd>
+    </dl>
+  </section>
+
+  <section class="c4">
+    <h2>Visual grammar</h2>
+    <p class="legend" style="font-size:13px; line-height:2">
+      <span style="background:#f0f4fc"></span>human&nbsp;&nbsp;
+      <span style="background:var(--emerald)"></span>ChatGPT&nbsp;&nbsp;
+      <span style="background:var(--coral)"></span>Claude&nbsp;&nbsp;
+      <span style="background:var(--cyan)"></span>Codex&nbsp;&nbsp;
+      <span style="background:var(--purple)"></span>OpenCode&nbsp;&nbsp;
+      <span style="background:var(--ember)"></span>local models&nbsp;&nbsp;
+      <span style="background:var(--amber)"></span>automation&nbsp;&nbsp;
+      <span style="background:#64748b"></span>third-party
+    </p>
+    <p style="font-size:13px; color:var(--text-2)">Continents are surfaces; regions are repos; tiles are directories. Unknown is void, explored is dim, active is lit. Hue is who did the work.</p>
+  </section>
+
+  <section class="c4">
+    <h2>Pacing (initial)</h2>
+    <table>
+      <tr><th>Era</th><th>Span</th><th>Rate</th></tr>
+      <tr><td>A</td><td>2011-08 → 2023-03</td><td>1 year = 4 s</td></tr>
+      <tr><td>B</td><td>2023-04 → 2026-02</td><td>1 month = 2.5 s</td></tr>
+      <tr><td>C</td><td>2026-03 → now</td><td>1 day = 2.4 s</td></tr>
+    </table>
+    <p style="font-size:13px; color:var(--text-2); margin-top:8px">About 11 minutes; a 90-second cut at a uniform multiple. Lap 3 varies it.</p>
+  </section>
+
+  <section class="c12">
+    <h2>Laps</h2>
+    <table>
+      <thead><tr><th>Lap</th><th>Variable</th><th>Arms</th><th>Verdict</th><th>Preview</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>geography</td><td>surfaces as continents vs repos as continents</td><td class="pending">—</td><td>—</td></tr>
+        <tr><td>2</td><td>hue axis</td><td>actor class vs surface</td><td class="pending">—</td><td>—</td></tr>
+        <tr><td>3</td><td>rate schedule</td><td>three-rate vs two-rate; era C 1.6 / 2.4 / 3.2 s per day</td><td class="pending">—</td><td>—</td></tr>
+        <tr><td>4</td><td>fog half-life</td><td>7 / 30 / 90 story-days</td><td class="pending">—</td><td>—</td></tr>
+        <tr><td>5</td><td>chatter rendering</td><td>beams vs rings vs band only</td><td class="pending">—</td><td>—</td></tr>
+        <tr><td>6</td><td>audio mapping</td><td>per-event tones vs density hum; collapse 4 / 8 / 16 per s</td><td class="pending">—</td><td>—</td></tr>
+        <tr><td>7</td><td>camera</td><td>fit-known-world vs fixed final frame under fog</td><td class="pending">—</td><td>—</td></tr>
+        <tr><td>8</td><td>third-party territory</td><td>hidden vs grey ruins</td><td class="pending">—</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+<footer>plan: ~/.claude/plans/moonlit-wandering-sunbeam.md · briefs: ~/work/known-world-plan/ · state: STATE.json · approvals: ~/work/CLAUDE-APPROVED.md · ct w-26069fe96149</footer>
+</body>
+</html>

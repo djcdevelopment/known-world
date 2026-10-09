@@ -1,0 +1,37 @@
+VERIFICATION REPORT: c-git-b
+Verified: 2026-10-09
+
+PRIVACY SCAN (collect/knownworld/privacy_scan.py)
+  Status: CLEAN
+  Scanned files: 6
+  Records scanned: 1735
+  Text lines: 67
+  Violations: 0
+  Result: PASS
+
+GIT REPOSITORY RECOUNT (git rev-list --count --all)
+  Method: Direct git rev-list count on each repository path
+  Repositories verified: 14/14
+  Total commits (manifest): 1648
+  Total commits (git recount): 1648
+  Deltas: 0
+  Result: PASS (perfect match)
+
+EVENTS FILE VERIFICATION
+  File: events.ndjson
+  Line count: 1719
+  Manifest events count: 1719
+  Result: PASS
+
+DROPPED COUNTS
+  null_ts: 0
+  polling: 0
+  decode_errors: 0
+  Result: PASS (no data loss recorded)
+
+OVERALL VERIFICATION
+  Privacy scan: CLEAN
+  Recount deltas: 0 (matches manifest exactly)
+  All repositories: accounted for
+  Status: OK=true
+

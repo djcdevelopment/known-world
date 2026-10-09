@@ -246,3 +246,38 @@ Claude + Codex (2026-06-29 → 10-08), Linux Claude + Codex + OpenCode (2026-09-
 `~/.claude/.credentials.json` (and inside the E: zip), `~/.codex/auth.json` (both hosts),
 `~/hearth-production/var/callers.json*`, `bf6-dispatcher.key`, `/mnt/omen-c-read/hearth-var/*.secret`,
 `caddy-funnel-secret.caddy`, `/mnt/omen-e-read/work/dev2.pfx`, `.env*` in repos, `~/.git-credentials`.
+
+## 4b. RaidUI: Derek's prior animation-over-time player (surveyed 2026-10-09)
+
+`E:\work\RaidUI` (`/mnt/omen-e-read/work/RaidUI`, 333 commits 2026-04-21 → 05-16, Node ≥20 ESM, DuckDB; three UI
+generations: `src/viewer`+`src/shell` v1 "raid replay" (React 18 UMD, globals), `app/` analysis app, `NewUI/app`
+Vite 8 + React 19 + TS 6; on disk the directory is `NewUI/`, git tracks `newui/`). Contract-first: JSON Schemas in
+`contracts/session/` (session, encounter, pull, entity, event, frame); the replay file is dense fixed-step frames
+(`frameStepMs`, flat normalized positions index-aligned to `entities[]`) plus a sparse `events[]`. Rule: "the contract
+absorbs optionality; the surface rejects it"; unknown enum values are dropped, wrong `schemaVersion` is refused.
+
+**The playback core (lift as-is; copies in `render/vendor/raidui/`, see PROVENANCE.md):**
+
+| Module | Lines | What it gives Known World |
+|---|---|---|
+| `src/overlay/render-state.js` | 128 | `buildRenderState({data, currentTimeMs, …}, out?)`: pure (data, t) → state with preallocated `Float32Array` scratch; O(1) frame lookup `fi = floor(t / step)` with lerp alpha from real frame times; runs under Node |
+| `src/compare/playback-controller.js` | 179 | shared clock `{timeMs, playing, speed, subscribe, setTime, togglePlay, setSpeed, _tick(dtMs)}`; rAF loop starts lazily and stops with the last subscriber; `_tick` is the deterministic frame-stepper for headless export |
+| `src/shape/density.js` | 53 | 200×200 point-density grid (a fog or heat mask) |
+| `src/shape/palette.js` | 80 | OKLCH palette by role with djb2 hue jitter ±10° per id: stable colour per entity |
+| `src/overlay/registry.js` + `builtins/trails-2s.overlay.jsx` | 82 + 113 | overlay descriptors `{id, zIndex, render(ctx, state)}` composited in z order with save/restore and per-overlay try/catch; the trail overlay is the decay template (resample `frameLookup(t − k·step)`, alpha by age) |
+| `useRafPlayback` (.js 142 / .ts 147), `Transport.tsx` | 166 | the single-rAF clock (`t += dt·speed`, draws every tick even when paused so scrubbing is free; React sees time only through a ~100 ms throttle, ADR-016); scrubber, play/pause, ±5 s, 0.5/1/2×, keyboard; the clock readout written with `textContent` straight from the rAF loop |
+
+**Adapt:** drop React from the clock; add a fixed-step export mode and a speed list far beyond 2×; keep the
+compositor loop (clear, base layer, overlays by zIndex) and replace the arena with fog; keep the direct-DOM readout
+and replace `m:ss` with the date ticker and rate; turn the 2-second trail into day-scale decay keyed by event age;
+reuse the `shape-raster.js` offscreen-layer-plus-cache-key pattern for a persistent fog mask.
+
+**Missing (the strategists design these):** a sparse timestamped event index (sorted array with upper-bound search
+or per-frame buckets; RaidUI only has dense frames), cumulative monotonic state for fog (per-frame reveal snapshots
+or an incremental accumulator rebuilt on scrub), running tallies, a calendar ticker, legend, tooltips, camera
+(zoom/pan), audio (no Web Audio anywhere), seeded RNG, any frame export or headless tooling, and burst handling (no
+aggregation design exists; sparse events are only timeline pips).
+
+**Ideas to keep:** stateless renderer and a separate ref-based clock; allocation-free hot path; loud schema-version
+check with unknown enums dropped; interpolation in the renderer, not at parse time; alpha from real frame times so
+irregular spacing is tolerated. Tests are Node's built-in runner on `*.test.cjs` (no browser tests).

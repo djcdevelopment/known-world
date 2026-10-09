@@ -1,0 +1,101 @@
+/* Known World components. CSS only; reads tokens.css custom properties. Prefix: kw-
+   Mobile first: the base rules are the phone layout. Two enhancements:
+   @media (min-width: 640px)  = bp-sm, roomier tables and rows
+   @media (min-width: 900px)  = bp-lg, side-by-side board
+   @media (pointer: fine)     = compact controls for mouse users only (touch keeps 44px) */
+body { background: var(--bg); color: var(--fg); font-family: var(--font-sans); }
+
+/* Page shell */
+.kw-page { max-width: var(--page-max); margin: 0 auto; padding: var(--space-20) var(--space-16) var(--space-64); }
+.kw-board { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-18); align-items: start; }
+@media (min-width: 640px) { .kw-page { padding-inline: var(--space-20); padding-top: var(--space-28); } }
+@media (min-width: 900px) { .kw-board { grid-template-columns: minmax(0, 1fr) var(--legend-width); } }
+
+/* Panel */
+.kw-panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-md); padding: var(--space-12); color: var(--fg); min-width: 0; }
+.kw-panel--canvas { background: var(--canvas); border-radius: var(--radius-sm); }
+
+/* Segmented control: touch first. Groups scroll inside themselves, never the page. */
+.kw-controls { display: flex; flex-direction: column; align-items: stretch; gap: var(--space-6); min-width: 0; }
+.kw-controls__label { font-family: var(--font-mono); font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+.kw-seg { display: flex; gap: var(--space-4); border: 1px solid var(--line); border-radius: var(--radius-md); padding: var(--space-3); overflow-x: auto; scrollbar-width: none; min-width: 0; }
+.kw-seg::-webkit-scrollbar { display: none; }
+.kw-seg button, .kw-btn { flex: none; min-height: var(--touch-target); font-family: var(--font-mono); font-size: 13px; background: transparent; color: var(--fg-2); border: 1px solid transparent; border-radius: var(--radius-sm); padding: 0 var(--space-12); cursor: pointer; white-space: nowrap; -webkit-tap-highlight-color: transparent; }
+.kw-btn { border-color: var(--line); }
+.kw-seg button[aria-pressed="true"], .kw-btn[aria-pressed="true"] { background: var(--line); color: var(--fg); }
+.kw-seg button:focus-visible, .kw-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.kw-btnrow { display: flex; flex-wrap: wrap; gap: var(--space-6); }
+@media (min-width: 640px) {
+  .kw-controls { flex-direction: row; flex-wrap: wrap; align-items: center; gap: var(--space-8); }
+  .kw-controls__label { margin-right: var(--space-4); }
+}
+@media (pointer: fine) {
+  .kw-seg button, .kw-btn { min-height: 0; font-size: 12px; padding: 5px var(--space-10); }
+}
+
+/* Section head */
+.kw-h2 { font-family: var(--font-mono); font-size: 13px; letter-spacing: 1px; text-transform: uppercase; color: var(--fg-2); margin: var(--space-36) 0 var(--space-12); font-weight: 400; }
+
+/* Data table: rows stack as labelled blocks on phones (cells carry data-label), a table from bp-sm */
+.kw-table { border-collapse: collapse; width: 100%; font-size: 15px; font-family: var(--font-sans); color: var(--fg); }
+.kw-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.kw-table tr { display: block; padding: var(--space-10) 0; border-bottom: 1px solid var(--line); }
+.kw-table td { display: block; position: relative; padding: 2px 0 2px 106px; }
+.kw-table td::before { content: attr(data-label); position: absolute; left: 0; top: 5px; font-family: var(--font-mono); font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+.kw-table td.kw-n { display: block; padding-left: 0; font-family: var(--font-mono); color: var(--accent); }
+.kw-table td.kw-n::before { content: none; }
+.kw-rec { color: var(--accent); font-family: var(--font-mono); font-size: 12px; }
+@media (min-width: 640px) {
+  .kw-table thead { position: static; width: auto; height: auto; overflow: visible; clip: auto; display: table-header-group; }
+  .kw-table tr { display: table-row; padding: 0; }
+  .kw-table th, .kw-table td { display: table-cell; position: static; text-align: left; padding: var(--space-8) var(--space-10); border-bottom: 1px solid var(--line); vertical-align: top; }
+  .kw-table td::before { content: none; }
+  .kw-table td.kw-n { display: table-cell; width: 36px; padding-left: var(--space-10); }
+  .kw-table th { color: var(--muted); font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 500; }
+}
+
+/* Zone legend: full width under the stage on phones, legend-width beside it from bp-lg (via .kw-board) */
+.kw-legend { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-md); padding: var(--space-14); font-size: 14px; color: var(--fg); min-width: 0; }
+.kw-legend h3 { font-family: var(--font-mono); font-size: 13px; margin: 0 0 var(--space-6); color: var(--accent); }
+.kw-legend p { margin: 0 0 var(--space-10); color: var(--fg-2); }
+.kw-legend dl { display: grid; grid-template-columns: 70px 1fr; gap: var(--space-4) var(--space-10); margin: 0; }
+.kw-legend dt { font-family: var(--font-mono); font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; padding-top: 3px; }
+.kw-legend dd { margin: 0; }
+
+/* Nation hue modifiers, shared by NationStrip and NationRow */
+.kw-nation, .kw-chip { --n: var(--nation-human); }
+.kw-nation--chatgpt { --n: var(--nation-chatgpt); }
+.kw-nation--claude { --n: var(--nation-claude); }
+.kw-nation--codex { --n: var(--nation-codex); }
+.kw-nation--auto { --n: var(--nation-auto); }
+.kw-nation--local { --n: var(--nation-local); }
+.kw-nation--oc { --n: var(--nation-oc); }
+
+/* Nation strip: the portrait nation zone. One row of swatch + count chips (p-strip-h);
+   tapping opens the full rows below it. A <details> keeps it script-free. */
+.kw-strip { background: var(--canvas); font-family: var(--font-mono); color: var(--fg); border-bottom: 1px solid var(--line); }
+.kw-strip > summary { list-style: none; display: flex; align-items: center; gap: var(--space-14); min-height: var(--p-strip-h); padding: 0 var(--space-16); overflow-x: auto; scrollbar-width: none; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.kw-strip > summary::-webkit-details-marker { display: none; }
+.kw-strip > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.kw-chip { flex: none; display: inline-flex; align-items: center; gap: var(--space-6); font-size: 13px; }
+.kw-chip::before { content: ""; width: 10px; height: 10px; background: var(--n); }
+.kw-strip__more { margin-left: auto; flex: none; font-size: 11px; color: var(--frame-muted); text-transform: uppercase; letter-spacing: 1px; }
+.kw-strip[open] .kw-strip__more { color: var(--fg); }
+.kw-strip__rows { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1px; background: var(--line); }
+@media (min-width: 640px) { .kw-strip__rows { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Nation row: fluid; fills its column. In the landscape frame the column is nations-w (320). */
+.kw-nation { width: 100%; max-width: var(--nations-w); padding: var(--space-12) var(--space-14); background: var(--canvas); font-family: var(--font-mono); color: var(--fg); box-sizing: border-box; }
+.kw-strip__rows .kw-nation { max-width: none; }
+.kw-nation__head { display: flex; align-items: baseline; gap: var(--space-10); }
+.kw-nation__swatch { width: 14px; height: 14px; background: var(--n); flex: none; align-self: center; }
+.kw-nation__name { font-size: 20px; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.kw-nation__count { font-size: 28px; }
+.kw-nation__chips { font-size: 12px; color: var(--n); margin-top: var(--space-4); }
+.kw-nation__sub { font-size: 14px; color: var(--frame-muted); margin: var(--space-6) 0 var(--space-4); }
+.kw-nation__ctr { display: grid; grid-template-columns: 76px 84px minmax(0, 1fr); gap: 2px var(--space-8); align-items: center; font-size: 11px; color: var(--frame-muted); line-height: 1.35; }
+.kw-nation__ctr b { white-space: nowrap; font-weight: 400; color: var(--fg); text-align: right; }
+.kw-bar { height: 6px; background: var(--dim); position: relative;
+  background-image: linear-gradient(90deg, transparent 24.5%, var(--line-strong) 24.5%, var(--line-strong) 25%, transparent 25%, transparent 49.5%, var(--line-strong) 49.5%, var(--line-strong) 50%, transparent 50%, transparent 74.5%, var(--line-strong) 74.5%, var(--line-strong) 75%, transparent 75%); }
+.kw-bar > i { position: absolute; inset: 0 auto 0 0; background: var(--n); }
+@media (min-width: 640px) { .kw-nation__name { font-size: 22px; } .kw-nation__count { font-size: 30px; } }

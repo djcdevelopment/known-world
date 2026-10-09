@@ -1,0 +1,42 @@
+{
+  "v": 3,
+  "assetGroups": {
+    "Reference": {
+      "files": {
+        "wip-2026-04-27.png": {
+          "blob": "28bdcd1a71d6cab3e9b784f8e649bb4b",
+          "name": "wip-2026-04-27.png",
+          "size": 658480,
+          "type": "image/png"
+        }
+      },
+      "name": "Reference",
+      "order": [
+        "wip-2026-04-27.png"
+      ],
+      "tile": "l"
+    }
+  },
+  "blobs": {},
+  "createdOnFiles": {
+    "at": "2026-10-09T18:30:14Z",
+    "v": 1
+  },
+  "docs": {
+    "sections": []
+  },
+  "groups": [
+    "Reference"
+  ],
+  "lastChange": {
+    "at": "2026-10-09T18:58:00Z",
+    "by": "Derek",
+    "via": "Claude",
+    "note": "Settled the six layout decisions from the wireframes board."
+  },
+  "layout": "files",
+  "libraries": [],
+  "namespace": "KnownWorld",
+  "sections": {},
+  "title": "Known World"
+}

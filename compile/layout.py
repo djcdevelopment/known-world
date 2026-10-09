@@ -130,6 +130,25 @@ class Packer:
                     return q, r
         raise RuntimeError("no room")
 
+    def first_fit_wide(self, fp, aspect=1.0, max_ring=160):
+        """Like first_fit from the origin, but candidates are tried in order of elliptical distance
+        (x/aspect)^2 + y^2 in world units, so the packed world grows to the frame's aspect, not a circle."""
+        if not hasattr(self, "_wide") or self._wide[0] != (aspect, max_ring):
+            R = min(max_ring, self.rad - 1)
+            qs, rs = np.meshgrid(np.arange(-R, R + 1), np.arange(-R, R + 1), indexing="ij")
+            qs = qs.ravel(); rs = rs.ravel()
+            x = S3 * (qs + rs / 2.0); y = 1.5 * rs
+            d = (x / aspect) ** 2 + y ** 2
+            order = np.lexsort((rs, qs, d))
+            self._wide = ((aspect, max_ring), qs[order], rs[order])
+        _, qs, rs = self._wide
+        for q, r in zip(qs.tolist(), rs.tolist()):
+            if self.occ[q + self.rad, r + self.rad]:
+                continue
+            if self.fits(fp, q, r):
+                return q, r
+        raise RuntimeError("no room")
+
 
 def blob(n):
     """Footprint of a region of n cells: the first n spiral cells (compact, round)."""
@@ -263,7 +282,8 @@ def build(T, c, params):
                 lk.place(fpi, q, r, gap)
                 rel_pos[i] = (q, r)
         disc_fp = np.concatenate([blob(int(reg_cells[i])) + np.array(rel_pos[i]) for i in order])
-        q, r = pk.first_fit(disc_fp, (0, 0), max_ring=pk.rad - 2)
+        aspect = float(params.get("layout_aspect", 1.0))
+        q, r = (pk.first_fit_wide(disc_fp, aspect, max_ring=pk.rad - 2) if aspect != 1.0 else pk.first_fit(disc_fp, (0, 0), max_ring=pk.rad - 2))
         pk.place(disc_fp, q, r, dgap)
         for i in ms:
             rpos[i] = (q + rel_pos[i][0], r + rel_pos[i][1])

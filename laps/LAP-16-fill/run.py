@@ -3,7 +3,7 @@ import os, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 sys.path.insert(0, os.path.join(ROOT, "export"))
 import lapkit as K
-SETS = ["camera_start_fill=0.85", "camera_end_fill=0.96", "camera_pad=0.03"]
+SETS = ["camera_start_fill=0.85", "camera_end_fill=0.96", "camera_pad=0.03", "layout_aspect=2.0"]
 d = os.path.join(HERE, "build-cut")
 K.cli_build(90, d, SETS, hash_only=False)
 audio = K.read_wav(os.path.join(d, "audio.wav")); F = len(audio) // 1600

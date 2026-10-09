@@ -1,0 +1,27 @@
+{
+ "id": "e-git-nested",
+ "source_type": "git_repo",
+ "host": "omen-e",
+ "roots": [
+  "/mnt/omen-e-read/work/start/*",
+  "/mnt/omen-e-read/work/liveView/*",
+  "/mnt/omen-e-read/work/vllm-xpu-win/*",
+  "/mnt/omen-e-read/work/comfy/seer",
+  "/mnt/omen-e-read/work/battlemage/tempo-workbench",
+  "/mnt/omen-e-read/work/repos/*"
+ ],
+ "shard": {
+  "k": 0,
+  "n": 1,
+  "rule": "sha1(path) % n"
+ },
+ "since": null,
+ "until": null,
+ "out_dir": "/home/derek/work/known-world/corpus/raw/e-git-nested",
+ "timeout_s": 1200,
+ "mount": "e",
+ "options": {
+  "scan_depth": 0,
+  "log_timeout_s": 600
+ }
+}

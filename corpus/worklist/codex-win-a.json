@@ -1,0 +1,19 @@
+{
+ "id": "codex-win-a",
+ "source_type": "codex_jsonl",
+ "host": "omen-c",
+ "roots": [
+  "/mnt/omen-c-read/Users/derek/.codex/sessions"
+ ],
+ "shard": {
+  "k": 0,
+  "n": 2,
+  "rule": "sha1(path) % n"
+ },
+ "since": null,
+ "until": null,
+ "out_dir": "/home/derek/work/known-world/corpus/raw/codex-win-a",
+ "timeout_s": 3600,
+ "mount": "c",
+ "options": {}
+}

@@ -98,3 +98,16 @@ Work item (input to a collector): `{"id", "source_type", "host", "roots": [paths
 ## Revisions
 
 - v1 2026-10-09: initial, from the approved plan `~/.claude/plans/moonlit-wandering-sunbeam.md` and the executability review.
+- v1.1 2026-10-09 (toolkit, Sonnet manager): additions made while building `collect/knownworld/`, none loosening §2.
+  Claude jsonl: `requestId` is read as an in-memory dedupe key only (a streamed reply is logged as several lines that repeat
+  one `usage`), never emitted; content item `type` is read to tell tool results from prompts. Codex: `payload.model` of a
+  `turn_context` is read as the model name and `payload.id` as a session-id fallback. `chat_msg.magnitude` may carry
+  `tokens_cache` (cache reads) and `tool_calls`; `meta.session` links a record to its session. Git events carry
+  `repo_local` (`<host>:<path>`, `~/`-relative on Linux hosts, drive-relative on the mounts); mirror clones set host
+  `github` and `repo_local` `github:<owner>/<name>`. Birth times come from GNU `stat %W` through `find -exec` (GNU find has no
+  birth directive). `github_repos.json` is a plain list. Manifest adds `sources` (`label`, `kind`, `raw`: commits, lines or
+  rows) and `slices`; `coverage` adds `not_repos`, `excluded`, `null_ts_emitted`, `out_of_range`, `deduped`; `dropped` may add
+  `other_role`. `dropped.null_ts` counts records the extractor could not bucket (no usable timestamp); events with a null
+  `ts` that are still emitted (a commit with a bad date) are counted in `coverage.null_ts_emitted`. `third_party` counts only
+  third_party-class authors against `derek_share` (agents and automation in Derek's repos are Derek's).
+

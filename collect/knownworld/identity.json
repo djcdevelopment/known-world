@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "human_names": ["derek", "dciula", "Derek Ciula", "DjcDevelopment", "djcdevelopment", "Derek"],
+  "rules": [
+    {"id": "codex", "regex": "^codex\\b", "class": "codex", "name": "codex"},
+    {"id": "opencode", "regex": "^opencode\\b", "class": "opencode", "name": "opencode"},
+    {"id": "claude", "regex": "^(claude|fable|opus|sonnet|haiku)\\b", "class": "claude", "name": "slug"},
+    {"id": "builder", "regex": "^(cc-builder|am4-worker|omen-worker|fx99-worker|builder)-", "class": "automation", "name": "slug"},
+    {"id": "ct", "regex": "^ct\\b", "class": "automation", "name": "ct"},
+    {"id": "local", "regex": "^(qwen|devstral|gemma|llama|mistral|deepseek|phi)[-\\d. ]", "class": "local_model", "name": "slug"}
+  ],
+  "derek_orgs": ["djcdevelopment", "steppe-integrations"],
+  "notes": "CONTRACT.md section 4. Humans map to derek. Trailers: only agent classes count as actors. Everyone else is third_party with sha1(name)[:12]."
+}

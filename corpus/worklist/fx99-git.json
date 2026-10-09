@@ -1,0 +1,23 @@
+{
+ "id": "fx99-git",
+ "source_type": "git_repo",
+ "host": "fx99",
+ "roots": [
+  "~/*",
+  "~/.continuity/ledger"
+ ],
+ "shard": {
+  "k": 0,
+  "n": 1,
+  "rule": "sha1(path) % n"
+ },
+ "since": null,
+ "until": null,
+ "out_dir": "/home/derek/work/known-world/corpus/raw/fx99-git",
+ "timeout_s": 600,
+ "mount": null,
+ "options": {
+  "scan_depth": 0,
+  "log_timeout_s": 300
+ }
+}

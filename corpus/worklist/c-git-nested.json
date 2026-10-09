@@ -1,0 +1,29 @@
+{
+ "id": "c-git-nested",
+ "source_type": "git_repo",
+ "host": "omen-c",
+ "roots": [
+  "/mnt/omen-c-read/work/am4-harvest/*",
+  "/mnt/omen-c-read/work/Diana/*",
+  "/mnt/omen-c-read/work/_extract/*",
+  "/mnt/omen-c-read/work/_retired/*",
+  "/mnt/omen-c-read/work/orchestration/*",
+  "/mnt/omen-c-read/work/research/*",
+  "/mnt/omen-c-read/work/deepagents-poc/target",
+  "/mnt/omen-c-read/work/overview/episodes"
+ ],
+ "shard": {
+  "k": 0,
+  "n": 1,
+  "rule": "sha1(path) % n"
+ },
+ "since": null,
+ "until": null,
+ "out_dir": "/home/derek/work/known-world/corpus/raw/c-git-nested",
+ "timeout_s": 1200,
+ "mount": "c",
+ "options": {
+  "scan_depth": 0,
+  "log_timeout_s": 600
+ }
+}

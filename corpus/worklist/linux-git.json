@@ -1,0 +1,39 @@
+{
+ "id": "linux-git",
+ "source_type": "git_repo",
+ "host": "omen-linux",
+ "roots": [
+  "/home/derek/work/*",
+  "/home/derek/work/trial/notebook*",
+  "/home/derek/work/clm-pilot/upstream",
+  "/home/derek/private-migration-20260923/*",
+  "/home/derek/git/*",
+  "/home/derek/.continuity/ledger",
+  "/home/derek/continuity-triage/*"
+ ],
+ "shard": {
+  "k": 0,
+  "n": 1,
+  "rule": "sha1(path) % n"
+ },
+ "since": null,
+ "until": null,
+ "out_dir": "/home/derek/work/known-world/corpus/raw/linux-git",
+ "timeout_s": 1200,
+ "mount": null,
+ "options": {
+  "scan_depth": 0,
+  "log_timeout_s": 600,
+  "exclude": [
+   "*/hybrid-context-trial",
+   "*/jepa-evidence-units-2026*",
+   "*/jepa-confirmation-2026*",
+   "*/jepa-project-holdout-2026*",
+   "*/jepa-recorded-actions-2026*",
+   "*/jepa-same-role-actions-2026*",
+   "*/jepa-operation-representations-2026*",
+   "*/known-world",
+   "*/git-local-probe"
+  ]
+ }
+}

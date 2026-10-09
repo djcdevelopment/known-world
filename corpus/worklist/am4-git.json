@@ -1,0 +1,26 @@
+{
+ "id": "am4-git",
+ "source_type": "git_repo",
+ "host": "am4",
+ "roots": [
+  "~/*",
+  "~/.continuity/ledger",
+  "~/o1/*",
+  "~/baseline/*",
+  "~/work/*"
+ ],
+ "shard": {
+  "k": 0,
+  "n": 1,
+  "rule": "sha1(path) % n"
+ },
+ "since": null,
+ "until": null,
+ "out_dir": "/home/derek/work/known-world/corpus/raw/am4-git",
+ "timeout_s": 900,
+ "mount": null,
+ "options": {
+  "scan_depth": 0,
+  "log_timeout_s": 400
+ }
+}

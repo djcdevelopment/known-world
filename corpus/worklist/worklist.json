@@ -1,0 +1,218 @@
+[
+ {
+  "id": "c-git-a",
+  "source_type": "git_repo",
+  "host": "omen-c",
+  "mount": "c",
+  "timeout_s": 1800,
+  "file": "/home/derek/work/known-world/corpus/worklist/c-git-a.json",
+  "shard": "0/3"
+ },
+ {
+  "id": "c-git-b",
+  "source_type": "git_repo",
+  "host": "omen-c",
+  "mount": "c",
+  "timeout_s": 1800,
+  "file": "/home/derek/work/known-world/corpus/worklist/c-git-b.json",
+  "shard": "1/3"
+ },
+ {
+  "id": "c-git-c",
+  "source_type": "git_repo",
+  "host": "omen-c",
+  "mount": "c",
+  "timeout_s": 1800,
+  "file": "/home/derek/work/known-world/corpus/worklist/c-git-c.json",
+  "shard": "2/3"
+ },
+ {
+  "id": "c-git-nested",
+  "source_type": "git_repo",
+  "host": "omen-c",
+  "mount": "c",
+  "timeout_s": 1200,
+  "file": "/home/derek/work/known-world/corpus/worklist/c-git-nested.json",
+  "shard": "0/1"
+ },
+ {
+  "id": "e-git-a",
+  "source_type": "git_repo",
+  "host": "omen-e",
+  "mount": "e",
+  "timeout_s": 1800,
+  "file": "/home/derek/work/known-world/corpus/worklist/e-git-a.json",
+  "shard": "0/3"
+ },
+ {
+  "id": "e-git-b",
+  "source_type": "git_repo",
+  "host": "omen-e",
+  "mount": "e",
+  "timeout_s": 1800,
+  "file": "/home/derek/work/known-world/corpus/worklist/e-git-b.json",
+  "shard": "1/3"
+ },
+ {
+  "id": "e-git-c",
+  "source_type": "git_repo",
+  "host": "omen-e",
+  "mount": "e",
+  "timeout_s": 1800,
+  "file": "/home/derek/work/known-world/corpus/worklist/e-git-c.json",
+  "shard": "2/3"
+ },
+ {
+  "id": "e-git-nested",
+  "source_type": "git_repo",
+  "host": "omen-e",
+  "mount": "e",
+  "timeout_s": 1200,
+  "file": "/home/derek/work/known-world/corpus/worklist/e-git-nested.json",
+  "shard": "0/1"
+ },
+ {
+  "id": "linux-git",
+  "source_type": "git_repo",
+  "host": "omen-linux",
+  "mount": "none",
+  "timeout_s": 1200,
+  "file": "/home/derek/work/known-world/corpus/worklist/linux-git.json",
+  "shard": "0/1"
+ },
+ {
+  "id": "am4-git",
+  "source_type": "git_repo",
+  "host": "am4",
+  "mount": "none",
+  "timeout_s": 900,
+  "file": "/home/derek/work/known-world/corpus/worklist/am4-git.json",
+  "shard": "0/1"
+ },
+ {
+  "id": "fx99-git",
+  "source_type": "git_repo",
+  "host": "fx99",
+  "mount": "none",
+  "timeout_s": 600,
+  "file": "/home/derek/work/known-world/corpus/worklist/fx99-git.json",
+  "shard": "0/1"
+ },
+ {
+  "id": "github-list",
+  "source_type": "github_api",
+  "host": "github",
+  "mount": "none",
+  "timeout_s": 300,
+  "file": "/home/derek/work/known-world/corpus/worklist/github-list.json",
+  "shard": "0/1"
+ },
+ {
+  "id": "c-births",
+  "source_type": "fs_births",
+  "host": "omen-c",
+  "mount": "c",
+  "timeout_s": 2400,
+  "file": "/home/derek/work/known-world/corpus/worklist/c-births.json",
+  "shard": "0/1"
+ },
+ {
+  "id": "e-births",
+  "source_type": "fs_births",
+  "host": "omen-e",
+  "mount": "e",
+  "timeout_s": 2400,
+  "file": "/home/derek/work/known-world/corpus/worklist/e-births.json",
+  "shard": "0/1"
+ },
+ {
+  "id": "chatgpt",
+  "source_type": "chatgpt_export",
+  "host": "cloud",
+  "mount": "e",
+  "timeout_s": 600,
+  "file": "/home/derek/work/known-world/corpus/worklist/chatgpt.json",
+  "shard": "0/1"
+ },
+ {
+  "id": "claude-zip",
+  "source_type": "claude_jsonl",
+  "host": "omen-e",
+  "mount": "e",
+  "timeout_s": 1800,
+  "file": "/home/derek/work/known-world/corpus/worklist/claude-zip.json",
+  "shard": "0/1"
+ },
+ {
+  "id": "claude-win",
+  "source_type": "claude_jsonl",
+  "host": "omen-c",
+  "mount": "c",
+  "timeout_s": 2400,
+  "file": "/home/derek/work/known-world/corpus/worklist/claude-win.json",
+  "shard": "0/1"
+ },
+ {
+  "id": "codex-win-a",
+  "source_type": "codex_jsonl",
+  "host": "omen-c",
+  "mount": "c",
+  "timeout_s": 3600,
+  "file": "/home/derek/work/known-world/corpus/worklist/codex-win-a.json",
+  "shard": "0/2"
+ },
+ {
+  "id": "codex-win-b",
+  "source_type": "codex_jsonl",
+  "host": "omen-c",
+  "mount": "c",
+  "timeout_s": 3600,
+  "file": "/home/derek/work/known-world/corpus/worklist/codex-win-b.json",
+  "shard": "1/2"
+ },
+ {
+  "id": "claude-linux",
+  "source_type": "claude_jsonl",
+  "host": "omen-linux",
+  "mount": "none",
+  "timeout_s": 900,
+  "file": "/home/derek/work/known-world/corpus/worklist/claude-linux.json",
+  "shard": "0/1"
+ },
+ {
+  "id": "codex-linux",
+  "source_type": "codex_jsonl",
+  "host": "omen-linux",
+  "mount": "none",
+  "timeout_s": 900,
+  "file": "/home/derek/work/known-world/corpus/worklist/codex-linux.json",
+  "shard": "0/1"
+ },
+ {
+  "id": "opencode",
+  "source_type": "opencode_db",
+  "host": "omen-linux",
+  "mount": "none",
+  "timeout_s": 300,
+  "file": "/home/derek/work/known-world/corpus/worklist/opencode.json",
+  "shard": "0/1"
+ },
+ {
+  "id": "hearth-ledger",
+  "source_type": "hearth_ledger",
+  "host": "omen-linux",
+  "mount": "c",
+  "timeout_s": 1800,
+  "file": "/home/derek/work/known-world/corpus/worklist/hearth-ledger.json",
+  "shard": "0/1"
+ },
+ {
+  "id": "continuity-runs",
+  "source_type": "continuity",
+  "host": "omen-linux",
+  "mount": "c",
+  "timeout_s": 900,
+  "file": "/home/derek/work/known-world/corpus/worklist/continuity-runs.json",
+  "shard": "0/1"
+ }
+]

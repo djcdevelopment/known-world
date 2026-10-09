@@ -1,0 +1,38 @@
+{
+ "id": "c-births",
+ "source_type": "fs_births",
+ "host": "omen-c",
+ "roots": [
+  "/mnt/omen-c-read/hearth-var",
+  "/mnt/omen-c-read/dirty-diffs",
+  "/mnt/omen-c-read/omen-perception-authored",
+  "/mnt/omen-c-read/tuning",
+  "/mnt/omen-c-read/assessment",
+  "/mnt/omen-c-read/AM4-provision",
+  "/mnt/omen-c-read/OMEN_prep"
+ ],
+ "shard": {
+  "k": 0,
+  "n": 1,
+  "rule": "sha1(path) % n"
+ },
+ "since": null,
+ "until": null,
+ "out_dir": "/home/derek/work/known-world/corpus/raw/c-births",
+ "timeout_s": 2400,
+ "mount": "c",
+ "options": {
+  "children_of": [
+   "/mnt/omen-c-read/work"
+  ],
+  "exclude_children": [
+   "dotnet9",
+   "jdk17",
+   "godot-4.6.1",
+   "fieldlab-postgres-data",
+   "model",
+   "venvs"
+  ],
+  "find_timeout_s": 900
+ }
+}

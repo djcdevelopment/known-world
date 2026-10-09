@@ -1,0 +1,19 @@
+{
+ "id": "claude-win",
+ "source_type": "claude_jsonl",
+ "host": "omen-c",
+ "roots": [
+  "/mnt/omen-c-read/Users/derek/.claude/projects"
+ ],
+ "shard": {
+  "k": 0,
+  "n": 1,
+  "rule": "sha1(path) % n"
+ },
+ "since": null,
+ "until": null,
+ "out_dir": "/home/derek/work/known-world/corpus/raw/claude-win",
+ "timeout_s": 2400,
+ "mount": "c",
+ "options": {}
+}

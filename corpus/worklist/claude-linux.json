@@ -1,0 +1,19 @@
+{
+ "id": "claude-linux",
+ "source_type": "claude_jsonl",
+ "host": "omen-linux",
+ "roots": [
+  "/home/derek/.claude/projects"
+ ],
+ "shard": {
+  "k": 0,
+  "n": 1,
+  "rule": "sha1(path) % n"
+ },
+ "since": null,
+ "until": null,
+ "out_dir": "/home/derek/work/known-world/corpus/raw/claude-linux",
+ "timeout_s": 900,
+ "mount": null,
+ "options": {}
+}

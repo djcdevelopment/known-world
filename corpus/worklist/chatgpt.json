@@ -1,0 +1,19 @@
+{
+ "id": "chatgpt",
+ "source_type": "chatgpt_export",
+ "host": "cloud",
+ "roots": [
+  "/mnt/omen-e-read/work/chatGPT_parser/data/normalized"
+ ],
+ "shard": {
+  "k": 0,
+  "n": 1,
+  "rule": "sha1(path) % n"
+ },
+ "since": null,
+ "until": null,
+ "out_dir": "/home/derek/work/known-world/corpus/raw/chatgpt",
+ "timeout_s": 600,
+ "mount": "e",
+ "options": {}
+}

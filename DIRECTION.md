@@ -170,6 +170,32 @@ film seconds visible (lap variable `stream_window_s`).
   growth turns quadratic or logarithmic. Marks are a compile output (`marks.json`, each with a kind, a frame and a
   short label shown on hover); the exported video's ticker hairline carries them faintly.
 
+## Information architecture (Derek, 2026-10-10, third viewing: "break down first why we want to show something, then where")
+
+The screen had six zones competing, several of them empty for whole eras, with motion in three places at once. Every
+element now answers one question, in the order the eye asks them, and lives in one place:
+
+| Order | Question | Zone | Content | Motion allowed |
+|---|---|---|---|---|
+| 1 | When are we? | top-left | the ticker (date, rate glyphs); the world totals line beneath it, shown once commits exist | none (text changes) |
+| 2 | What is happening? | centre, the safe area | the map: the known land **always centred**; flashes, fog, beams | the only per-frame motion |
+| 3 | Who, and how much? | right panel | nations: tests, yield, the base counters with log bars, generation chips | numbers tick, bars grow slowly; one deliberate fade-in at a nation's first event |
+| 4 | When, in context? | bottom, one shared time axis | the **timeline**: a marks ruler (the scrubber in the player), the chatter and commit band, and the lineage lanes (the stream turned horizontal, flowing left to right at the band's scale) | a steady scroll, nothing else |
+| 5 | Where is it? | the map itself | continent labels at the coast from a surface's first tile; surface tallies in the tally card and behind a player toggle | none |
+
+Rules:
+
+- **Signal-gated.** A zone renders only when it has signal: no empty panels, no zero rows, no bare lane column in 2019.
+  Era A shows the ticker, the one centred spot, the ruler with its marks, and a nation row only once one exists.
+- **Centred land.** The camera box is the warm, weighty land plus launch targets; islands, HQ, beacons and third-party
+  ruins never widen it before they matter; the box is centred in the safe area, never pushed to a corner.
+- **Motion budget.** The map moves. The timeline scrolls at a constant rate. Everything else changes without animation
+  except the one fade-in above. Lanes keep fixed vertical positions while visible; no entry or exit slides.
+- **The left edge is empty by design**, as in the original; negative space is the medium.
+- **Player chrome is not content.** Transport and scrubber overlay the timeline zone, auto-hide after 3 s without input,
+  and never appear in the export; the export's ruler carries the marks faintly.
+- **Eye path:** top-left, centre, right, bottom. Mobile stacks the same four zones in that order.
+
 ## Sound
 
 One tone per launch, pitch by nation (human A3, Claude E4, Codex G4, OpenCode B4, local models C3, automation D4,

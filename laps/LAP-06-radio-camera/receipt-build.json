@@ -1,0 +1,274 @@
+{
+ "audio_expected": 33040000,
+ "audio_samples": 33040000,
+ "audio_sha256": "a51f3ec2690d2f8a11ffefbbce3be20e8b3454e5b83fea7c2e6f68aba05078fa",
+ "audio_stats": {
+  "bells": 269,
+  "collapse_bins": 41,
+  "collapsed_frames": 295,
+  "offload_clicks": 301,
+  "offload_roar_frames": 204,
+  "pips": 517,
+  "roll_bins": 2,
+  "tones": 879
+ },
+ "camera_stats": {
+  "era_c_scale_nonincreasing_until_coda": true,
+  "hex_px_at_era_c_start": 2.1082348823547363,
+  "hex_px_before_coda": 1.7991728782653809,
+  "max_hex_px": 40,
+  "revealed_tile_centres_outside_view_share_pct": 0.0,
+  "scale_final_coda": 1.8038675785064697,
+  "scale_max": 3.8823115825653076,
+  "scale_min": 1.7991350889205933
+ },
+ "chatgpt_links": "present",
+ "clock": {
+  "boundary_out_s": [
+   49.207,
+   136.942
+  ],
+  "coda_s": 18.0,
+  "era_len_s": [
+   47.207,
+   87.735,
+   533.38
+  ],
+  "frames": 20650,
+  "intro_s": 2.0,
+  "m": 1.0,
+  "story_s": 668.322,
+  "total_s": 688.322
+ },
+ "code": {
+  "compile/audio.py": "1f0749040b551ec8bace3411afff9f72be3483d0d7fd44e642aa0ec18f87c79b",
+  "compile/audit.py": "162b67a0a21a56247f76f5316643a0752371ef45f4b19b0ae4a422d3eb3a7686",
+  "compile/build.py": "06e35794915ec62625256ec543f593863f84648d0dff7a9af050e1708cbac73a",
+  "compile/build_cli.py": "90629f257626772ab330baadec81b3a5cc0f737ccabae554043f2019612ad908",
+  "compile/build_data.py": "2ec6e771cc18224d01dc9bfbe6cafe3cdc685b50bee80d10d845f02ba991ed12",
+  "compile/camera.py": "a8761e8b85a88eb95029101d9c33efb9482f2a41bd4de4d744ca11dfd291a5da",
+  "compile/clock.py": "857d13ec3e7b7aceee4f770e72fa2c01926a9c8e546d41f73fa080cd84e6327a",
+  "compile/common.py": "50eee918f0b114c0416d9c97e982f85935ef2cc7e13bbd4d5727cedf7d363f2b",
+  "compile/corpus.py": "69f941cb3daeb4a5ca2a8e71c79613290cd47b007a45cb0898a0c92195b18329",
+  "compile/launches.py": "959c1fd8f6bbe80f50e313bdf05ec8b6eb8a48a699403f6205f3282a5f6a56fb",
+  "compile/layout.py": "307b78425e2659133ca5453dad31fcd82aea27dc1945eff8df1ad68abd38bddd",
+  "compile/names.py": "164cd6e3da9bbedb523b6109697ca8f254312bf93c90cc56b999b36a7a9622a0",
+  "compile/nations.py": "5bc7946b7223725904b47b0194ff9b2b899a914aa31458170c8b14eda1af6bdf",
+  "compile/params.json": "3913a3db4d47c057599414d361c0a3fc3554c1ae86f54917666420c7328c0bb9",
+  "compile/series.py": "42f639826d4653c4b5b344785ab4a1dc8102bf268e62b9753784c657298fc514",
+  "compile/strip.py": "7e9a2a1c0ba5754e6f7e51db7dd4afc7b10ae0c283abe63442c6fd4bccf4180e",
+  "compile/synth.py": "0942cde1d42ed45a66da93dc326608e44b86fa9453af02f3483810361d603429",
+  "compile/tiles.py": "0972d0b86bac1574a8da904b0a836bc7c7e6af78e31282b8cb55912f35de7ebf",
+  "export/encode.py": "c038b7019d335d86d31f955eec2d071a1a998eff4e4d532d31dff23fac63e90e",
+  "export/frames.mjs": "db4f48eafa87b696ffcca3d1d4c4c9ab143a0e66f9410ce4bfad38a9b762cff4",
+  "export/lapkit.py": "a53001acbace6bd2eb488bd9bfd1cd2a5493ba83512c5fa76942b8f4132f31a7",
+  "export/probe.py": "f7f5ea59faa37777b1c4d542e0d9fac74bdc30c47585b87d04ab9f9595abd07f",
+  "export/run.py": "348f311acdd7636be8c8b31d3cf3260adf4fbb0e62a2b018814572e31fa45110",
+  "export/state_node.mjs": "da650c99a61f7e1f6e3d0854c6bd5b85f015c4adbdf41544fd0aaa8de6d1aad8",
+  "export/still.mjs": "71d5124da523653cb92fa3525b024369e143029e13397ae35bb1a13a4254714f",
+  "export/verify.mjs": "38518d0a12ae4d890040b4c651d3b91a3c3d4b15b2bc31234733bf868fbebc29",
+  "render/border.js": "860cae3119cfa20dd7f2c70d9093948e5280192d9d8fe8d7cd756e04b9240dbf",
+  "render/data.js": "e23e2b51a820f2a08cefa21de47c5c4dfaec1e0298630e46987f3d2a270c4880",
+  "render/fields.js": "bc5f9bbb0c281e8c1edc708307bc7445864b777fa182ccb72766b0ddf46f814c",
+  "render/index.html": "dc281876950bc163a4421e819813422bbd737ff65ef431f07894a208c0611e13",
+  "render/launch.js": "75374f2395cdf915d31e5c0fbc6365d0fa4d24c4eba8a8bec55225d4d5325a6a",
+  "render/main.js": "b53c828017fe33c4a6d74f64f62296c3f2c777a5db543a2a34fd7c5bdbd70cec",
+  "render/palette.js": "fbcd345567e1af55e6ab5618b98d5e975a580f2fe9dd18733fff24f0ba979b7e",
+  "render/panels.js": "de2017bf815827c6c38b2603d473270e055600ab4fce03cf55e7c7e2608cc797",
+  "render/radio.js": "c4fbcac64e6ffb1b96753f68dfcc98301a98734d19b888bd2e32bfe780d19837",
+  "render/state.js": "2962c6ed5c9c96e7c68896736522a343ddc9002351fee55bec1de29aaf36b042"
+ },
+ "compile_s": 18.4,
+ "compile_twice": {
+  "audio_equal": true,
+  "kw_data_equal": true,
+  "second": {
+   "audio_sha256": "a51f3ec2690d2f8a11ffefbbce3be20e8b3454e5b83fea7c2e6f68aba05078fa",
+   "frames": 20650,
+   "kw_data_sha256": "4a05140bf76654c206c679d7881f0d864f25182921a62031d2bb0ae523054c8b"
+  }
+ },
+ "counts": {
+  "beams": 4953,
+  "cells": 16117,
+  "checkpoints": 23,
+  "chips": 34,
+  "collapsed_frames": 295,
+  "deltas": 26272,
+  "launch_counts": {
+   "bands": {
+    "1": 71,
+    "2": 268,
+    "3": 363,
+    "4": 205,
+    "5": 35,
+    "6": 9
+   },
+   "bands_git": {
+    "1": 30,
+    "2": 182,
+    "3": 279,
+    "4": 140,
+    "5": 8,
+    "6": 1
+   },
+   "capped_commits": 87,
+   "episodes_git": 1054,
+   "first_of_generation": 19,
+   "first_of_nation": 5,
+   "first_tests": 215,
+   "launches": 951,
+   "launches_git": 640,
+   "launches_nongit": 311,
+   "max_warheads": 58,
+   "mirv": 171,
+   "nations": {
+    "automation": 9,
+    "chatgpt": 37,
+    "claude": 453,
+    "codex": 82,
+    "human": 370
+   },
+   "nations_git": {
+    "automation": 9,
+    "claude": 442,
+    "codex": 74,
+    "human": 115
+   },
+   "nongit_nations": {
+    "chatgpt:time": 37,
+    "claude": 11,
+    "codex": 8,
+    "human": 255
+   },
+   "single": 769,
+   "single_git": 458,
+   "tests_git": 954,
+   "tests_nongit": 311,
+   "unified": 11,
+   "warheads_hist": {
+    "2": 98,
+    "3": 33,
+    "4": 14,
+    "5": 10,
+    "6": 2,
+    "7": 3,
+    "8": 3,
+    "9": 3,
+    "10": 5
+   }
+  },
+  "launches": 951,
+  "launches_skipped_no_region": 0,
+  "layout": {
+   "bridges": 29,
+   "constellations": 13,
+   "harbours": 46,
+   "islands": 54,
+   "joined_lineages": 83,
+   "notches": 316,
+   "spurs": 224
+  },
+  "nations": [
+   "human",
+   "chatgpt",
+   "claude",
+   "codex",
+   "automation",
+   "local_model",
+   "opencode"
+  ],
+  "peak_launches_per_frame": 3,
+  "regions": 320,
+  "rings": 103,
+  "tiles": 6224,
+  "tiles_by_kind": {
+   "dir": 2283,
+   "git": 2925,
+   "third": 1016
+  },
+  "tiles_counts": {
+   "cells": 16117,
+   "regions": 320,
+   "regions_by_host": {
+    "am4": 13,
+    "fx99": 8,
+    "omen-c": 74,
+    "omen-e": 148,
+    "omen-linux": 77
+   },
+   "regions_dir": 177,
+   "regions_git": 130,
+   "regions_third": 13,
+   "tiles": 6224,
+   "tiles_never_touched": 284,
+   "touches": 147061
+  },
+  "tiles_never_touched": 284,
+  "tiles_stats": {
+   "copies_revealed": 20,
+   "copy_tiles_revealed": 41,
+   "ruin_clone_event": 1,
+   "ruin_clone_last_ts": 12
+  },
+  "touches": 147061
+ },
+ "cut_s": null,
+ "hq": {
+  "changes": [
+   [
+    8980,
+    "omen-e"
+   ],
+   [
+    12724,
+    "omen-c"
+   ],
+   [
+    18772,
+    "omen-e"
+   ],
+   [
+    19276,
+    "omen-linux"
+   ]
+  ],
+  "first_linux_day_iso": "2026-09-28T00:00:00Z"
+ },
+ "hq_crossing": {
+  "first_omen_linux_frame": 19277,
+  "hq_changes": [
+   [
+    8980,
+    "omen-e"
+   ],
+   [
+    12724,
+    "omen-c"
+   ],
+   [
+    18772,
+    "omen-e"
+   ],
+   [
+    19276,
+    "omen-linux"
+   ]
+  ]
+ },
+ "inputs": {
+  "actors.json": "713180f2fcbb771031a254faef47495e5e1d30f32e577e705760bfb29d5f3e36",
+  "chatgpt_links.json": "63ed4b48fd2f88c177f8f839edcc9ed0de22ec81e16b5e711e3f12a8511c5843",
+  "events.ndjson": "4e1e1c9715e8224d862ca6c85ce8a82731db6d21b8e618861ddac8361dd0e7b7",
+  "hosts.json": "51d3a68e524e44719f65cfb85907e319617903d29dc5a53d82867db621a7c6d6",
+  "relations.json": "fd545c9d7ebaf970204c6b0b35338dc5feeace49b20b08473f1ae773ce45f621",
+  "repos.json": "2baef2a516dd6c5e98a753d2fac007ae78d1f4eded7b8b26c2255377bef4bc56",
+  "sessions.json": "4730a2c30885067400725e10b97cdf10d535f3913687408882e996c12f002157",
+  "stats.json": "6e9d7cf2cc668badefe81ab3f1f426b0105cdad646acf54aa426571d97f646ee"
+ },
+ "kw_data_bytes": 13305558,
+ "kw_data_sha256": "4a05140bf76654c206c679d7881f0d864f25182921a62031d2bb0ae523054c8b",
+ "params_hash": "7b7a12a3bce83baeebf1c8240c38d4ec0ff25ca1fc1c7d918340f486978e367e",
+ "relations": "present",
+ "world_sha256": "2f58574ea73891cf4e817143ff6f9b94533a4f1ccdab158f2bb3c1041f0231da"
+}

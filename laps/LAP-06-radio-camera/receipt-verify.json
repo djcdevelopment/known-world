@@ -1,0 +1,57 @@
+{
+ "luminance_cut": {
+  "all_max_L": 0.936,
+  "field_max_L": 0.5484,
+  "rows": [
+   {
+    "all_max_L": 0.873,
+    "f": 2401,
+    "field_max_L": 0.5459,
+    "nlive": 145
+   },
+   {
+    "all_max_L": 0.8663,
+    "f": 2394,
+    "field_max_L": 0.5484,
+    "nlive": 140
+   },
+   {
+    "all_max_L": 0.913,
+    "f": 2415,
+    "field_max_L": 0.5484,
+    "nlive": 138
+   },
+   {
+    "all_max_L": 0.8601,
+    "f": 810,
+    "field_max_L": 0.5383,
+    "nlive": 36
+   },
+   {
+    "all_max_L": 0.8601,
+    "f": 1620,
+    "field_max_L": 0.5434,
+    "nlive": 45
+   },
+   {
+    "all_max_L": 0.936,
+    "f": 2160,
+    "field_max_L": 0.5484,
+    "nlive": 109
+   }
+  ]
+ },
+ "order_check_cut": {
+  "equal": 30,
+  "frames": 30,
+  "mismatched": [],
+  "order": [
+   2025,
+   495,
+   855,
+   1755,
+   2565,
+   945
+  ]
+ }
+}

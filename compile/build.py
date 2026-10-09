@@ -93,7 +93,7 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
     series = ser.class_series(c, params, clock, nat_index)
     ccum, fcum = ser.commit_capacity(c, clock, nat_index)
     pcum = ser.participations(c, clock, nat_index)
-    band_names, band = ser.band_series(series, F, fps)
+    band_names, band_arr = ser.band_series(series, F, fps)
     hq_host, hq_hosts, hq_day_host = ser.hq_track(c, params, clock, tau)
     anchors = dict(Wd.anchor)
     hq_x, hq_y = ser.hq_positions(hq_host, hq_hosts, anchors, fps, max(2, int(round(params["hq_glide_s"] * fps * env))))
@@ -345,7 +345,7 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
         "isl_cum": bd.b64(isl_cum.astype("<u2")),
         "radius_px": RADIUS_PX, "env_scale": round(env, 6),
         # radio
-        "band_names": band_names, "band": bd.b64(band), "band_window_f": int(round(params["band_window_s"] * fps)),
+        "band_names": band_names, "band": bd.b64(band_arr), "band_window_f": int(round(params["band_window_s"] * fps)),
         "bs": bd.b64(bs.astype("<i4")), "br": bd.b64(br.astype("<u2")), "bw": bd.b64(bw), "bcn_n": bd.b64(bcn),
         "ring_f": bd.b64(rings.astype("<i4")),
         "seat": {h: bd.b64(np.minimum(255, series["seat_" + h]).astype("u1")) for h in ser.SEAT_HOSTS},

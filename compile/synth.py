@@ -90,6 +90,17 @@ def collapse_mask(onset_frames, F, thr, fps=30):
     return mask
 
 
+def started(a, fps, ramp_s=0.5):
+    """0 before the first nonzero frame of a series, a 0.5 s ramp to 1 after it."""
+    nz = np.nonzero(a > 0)[0]
+    out = np.zeros(len(a))
+    if len(nz):
+        n = int(ramp_s * fps)
+        out[nz[0]:] = 1.0
+        out[nz[0]:nz[0] + n] = np.linspace(0, 1, min(n, len(a) - nz[0]))
+    return out
+
+
 def rolling(a, n):
     cs = np.concatenate([[0], np.cumsum(a)])
     idx = np.arange(len(a))
@@ -180,7 +191,7 @@ def synthesize(F, fps, seed, probe_f, launches, wh, nations, series, params, env
     # hum 55 + 110 Hz from the commit rate (per output second over a 1 s window), gated at zero
     r = rolling(series["commits"], fps)
     lvl = np.minimum(-24.0, -36.0 + 6.0 * np.log10(1 + r))
-    amp = db(lvl) * np.minimum(1.0, r / 2.0)
+    amp = db(lvl) * started(series["commits"], fps)  # as specified: -36 dBFS floor once the first commit exists, ceiling -24
     a_s = np.interp(sample_t, fr, amp).astype(np.float32)
     t = np.arange(N, dtype=np.float64) / SR
     hum = (np.sin(2 * math.pi * 55 * t) + 0.5 * np.sin(2 * math.pi * 110 * t)).astype(np.float32) / 1.5
@@ -190,7 +201,7 @@ def synthesize(F, fps, seed, probe_f, launches, wh, nations, series, params, env
     for k, (cls, fc) in enumerate(STATIC_HZ.items()):
         r = rolling(series[cls], fps)
         lvl = np.minimum(-18.0, -52.0 + 8.0 * np.log10(1 + r))
-        amp = db(lvl) * np.minimum(1.0, r / 3.0)
+        amp = db(lvl) * started(series[cls], fps)
         if amp.max() <= 0:
             continue
         a_s = np.interp(sample_t, fr, amp).astype(np.float32)

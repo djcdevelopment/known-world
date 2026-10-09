@@ -154,6 +154,14 @@ film seconds visible (lap variable `stream_window_s`).
 - **Start tight.** When the known world is one region it fills about 60% of the safe area (`camera_start_fill` 0.6;
   `max_hex_px` raised accordingly); the camera only ever pulls back, as before, so the growth of scale is experienced
   as zoom. The first Windows continent and the Linux crossing are pull-back moments, uncaptioned.
+- **What steers the camera (2026-10-10, from the slice-9 stills).** The camera box follows the *warm, weighty* known
+  world, not every tile ever touched: tiles whose activity in a memory window (`camera_memory_days`, 365 in eras A and
+  B, 120 in C) reaches `camera_tile_weight_min` (about three commits' worth, or a births burst above
+  `nongit_min_files`), plus every launch target, plus HQ and the islands once the span passes the threshold already
+  built. A lone file still renders, dim, and still counts in the tallies; it just does not pull the view back. Pull
+  back only, as before. The seat beacons join the box at their first offload.
+- **Stream header legibility.** The pinned header names only lanes wider than 18 px, staggered in two rows; the rest
+  keep their entry label and show on hover in the player.
 - **The player.** Transport: play/pause and speed steps `--  -  ▶  +  ++` over 1, 1.5, 2, 3, 4 (`++` to 4, `--` to 1),
   keyboard too; speed never changes the export. The status bar is a scrubber with **hashmarks** at: era boundaries,
   each surface's first appearance (a new continent), each nation's entry, the migration, the offload storm, and

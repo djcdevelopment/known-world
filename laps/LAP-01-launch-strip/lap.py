@@ -7,8 +7,10 @@ import os
 import subprocess
 import sys
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
+HERE0 = os.path.dirname(os.path.abspath(__file__))
+HERE = os.path.join(HERE0, "merge-pin") if os.environ.get("KW_CORPUS") else HERE0  # a pinned later merge writes beside the first results
+os.makedirs(HERE, exist_ok=True)
+ROOT = os.path.abspath(os.path.join(HERE0, "..", ".."))
 sys.path.insert(0, os.path.join(ROOT, "compile"))
 import clock as clk
 import common
@@ -27,6 +29,8 @@ def run_cli(outdir, sets):
     for s in sets:
         cmd += ["--set", s]
     env = {"PYTHONDONTWRITEBYTECODE": "1", "PATH": os.environ.get("PATH", "")}
+    if os.environ.get("KW_CORPUS"):
+        env["KW_CORPUS"] = os.environ["KW_CORPUS"]
     r = subprocess.run(["nice"] + cmd, capture_output=True, text=True, env=env, cwd=ROOT, stdin=subprocess.DEVNULL)
     if r.returncode:
         raise SystemExit(r.stderr[-2000:])

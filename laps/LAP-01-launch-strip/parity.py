@@ -33,4 +33,6 @@ for name, ch in steps:
     rows.append({"step": name, "episodes": st["git_episodes"], "tests": st["git_tests"], "launches": len(git),
                  "single": sh["single"], "mirv": sh["mirv"], "unified": sh["unified"]})
     print(json.dumps(rows[-1]))
-json.dump(rows, open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "waterfall.json"), "w"), indent=1)
+d = os.path.join(os.path.dirname(os.path.abspath(__file__)), "merge-pin" if os.environ.get("KW_CORPUS") else "")
+os.makedirs(d, exist_ok=True)
+json.dump(rows, open(os.path.join(d, "waterfall.json"), "w"), indent=1)

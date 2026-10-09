@@ -73,3 +73,25 @@ Input hashes (events, repos, sessions, hosts, actors, stats, relations, chatgpt_
 `ad9f2f0f...` (default; arms add one key), code hashes, output hashes (launches.json and nations.json per arm) and
 the PNG hashes are in `receipt.json`. Compile twice, separate processes with randomised hash seeds
 (`python -I`): byte-identical for all three arms. Whole lap runtime 5.5 s.
+
+## Addendum: re-run on the later merge (pinned `cache/corpus-pin-0653`, task 1 re-merge of 06:53Z)
+
+The collection worker re-merged the corpus while this lap was running (events 217k to 220k+, more non-git births from
+the E: and C: roots). The numbers above are on the earlier merge, whose input files were overwritten (the receipt keeps
+its hashes, the bytes are gone). Slice 3 therefore pins a copy of the new merge (`KW_CORPUS`), and slice 1 was re-run on
+it: results in `merge-pin/` (same code, same switches; PNGs, receipts, `waterfall.json`).
+
+| Measure | session (default) | time_window (control) | session_or_nation |
+|---|---|---|---|
+| Git episodes / tests | 1,054 / 954 | 1,054 / 954 | 1,054 / 954 |
+| Non-git launches | 574 | 574 | 574 |
+| Git launches | 938 | 390 | 560 |
+| All launches | 1,512 | 964 | 1,134 |
+| single / MIRV / unified | 1,458 / 47 / 7 | 749 / 209 / 6 | 921 / 204 / 9 |
+| Bands 1..6 | 307/482/476/205/32/10 | 243/241/255/174/41/10 | 253/307/342/186/36/10 |
+| Nations (human, chatgpt, claude, codex, automation) | 716 / 76 / 616 / 88 / 16 | 555 / 76 / 294 / 34 / 5 | 620 / 76 / 345 / 79 / 14 |
+| Git tests with a joined session | 294 of 954 | same | same |
+
+PROBE-00 parity on this merge is 429 launches (it was exactly 415 on the earlier one), so the same implementation holds;
+the waterfall now runs 429, 372, 372, 390, 390, 938. The grouping gap (390 against 938 git launches) and the session
+blindness before Claude chat begins (2026-05-08) are unchanged; compile twice is byte-identical for all three arms.

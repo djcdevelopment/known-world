@@ -1,0 +1,360 @@
+{
+ "arms": {
+  "session": {
+   "compile_twice_identical": true,
+   "counts": {
+    "bands": {
+     "1": 307,
+     "2": 482,
+     "3": 476,
+     "4": 205,
+     "5": 32,
+     "6": 10
+    },
+    "bands_git": {
+     "1": 79,
+     "2": 326,
+     "3": 385,
+     "4": 141,
+     "5": 6,
+     "6": 1
+    },
+    "capped_commits": 87,
+    "episodes_git": 1054,
+    "first_of_generation": 13,
+    "first_of_nation": 5,
+    "first_tests": 267,
+    "launches": 1512,
+    "launches_git": 938,
+    "launches_nongit": 574,
+    "max_warheads": 58,
+    "mirv": 47,
+    "nations": {
+     "automation": 16,
+     "chatgpt": 76,
+     "claude": 616,
+     "codex": 88,
+     "human": 716
+    },
+    "nations_git": {
+     "automation": 16,
+     "claude": 602,
+     "codex": 76,
+     "human": 244
+    },
+    "nongit_nations": {
+     "chatgpt:time": 76,
+     "claude": 14,
+     "codex": 12,
+     "human": 472
+    },
+    "single": 1458,
+    "single_git": 884,
+    "tests_git": 954,
+    "tests_nongit": 574,
+    "unified": 7,
+    "warheads_hist": {
+     "10": 1,
+     "2": 22,
+     "3": 14,
+     "4": 1,
+     "5": 4,
+     "6": 1,
+     "7": 1,
+     "8": 1,
+     "9": 2
+    }
+   },
+   "launches_sha256": "c6430310310bce24abb4b45066eb570e566826de17421b046b1f7d99787872c2",
+   "nations_sha256": "fa872687ff6a555744719aae86f78fe5d2410ce8035bddf201560753b05b114d",
+   "params_hash": "c2379139fa4f377d0cf9eb3f64df5a4af72d383d29359eaad1952e264ea767b7",
+   "stats": {
+    "capped_commits": 87,
+    "episodes_below_min": 100,
+    "git_episodes": 1054,
+    "git_tests": 954,
+    "git_tests_by_ym": {
+     "2023-11": 1,
+     "2025-07": 1,
+     "2026-01": 12,
+     "2026-03": 56,
+     "2026-04": 76,
+     "2026-05": 109,
+     "2026-06": 73,
+     "2026-07": 171,
+     "2026-08": 175,
+     "2026-09": 226,
+     "2026-10": 54
+    },
+    "git_tests_with_session": 294,
+    "git_tests_with_session_by_ym": {
+     "2026-05": 25,
+     "2026-06": 36,
+     "2026-07": 36,
+     "2026-08": 101,
+     "2026-09": 75,
+     "2026-10": 21
+    },
+    "lineages_with_commits": 110,
+    "nongit_days_bulk_excluded": 742536,
+    "nongit_tests": 574,
+    "sessions_multi_lineage": 6
+   }
+  },
+  "session_or_nation": {
+   "compile_twice_identical": true,
+   "counts": {
+    "bands": {
+     "1": 253,
+     "2": 307,
+     "3": 342,
+     "4": 186,
+     "5": 36,
+     "6": 10
+    },
+    "bands_git": {
+     "1": 25,
+     "2": 151,
+     "3": 251,
+     "4": 122,
+     "5": 10,
+     "6": 1
+    },
+    "capped_commits": 87,
+    "episodes_git": 1054,
+    "first_of_generation": 12,
+    "first_of_nation": 5,
+    "first_tests": 254,
+    "launches": 1134,
+    "launches_git": 560,
+    "launches_nongit": 574,
+    "max_warheads": 59,
+    "mirv": 204,
+    "nations": {
+     "automation": 14,
+     "chatgpt": 76,
+     "claude": 345,
+     "codex": 79,
+     "human": 620
+    },
+    "nations_git": {
+     "automation": 14,
+     "claude": 331,
+     "codex": 67,
+     "human": 148
+    },
+    "nongit_nations": {
+     "chatgpt:time": 76,
+     "claude": 14,
+     "codex": 12,
+     "human": 472
+    },
+    "single": 921,
+    "single_git": 347,
+    "tests_git": 954,
+    "tests_nongit": 574,
+    "unified": 9,
+    "warheads_hist": {
+     "10": 6,
+     "2": 119,
+     "3": 41,
+     "4": 13,
+     "5": 12,
+     "6": 6,
+     "7": 1,
+     "8": 5,
+     "9": 1
+    }
+   },
+   "launches_sha256": "5b757ec90209d25e4ccdc1f6196d060710398914410fc2f83b080013cc80b694",
+   "nations_sha256": "dbc62e5ee977657f99c2703e29d5b503d554fb05ec07236d32f52f58a2286e18",
+   "params_hash": "09a6d549f57abf3e4089276ff26d6854dc1dd07e46db663895941d52d95d942d",
+   "stats": {
+    "capped_commits": 87,
+    "episodes_below_min": 100,
+    "git_episodes": 1054,
+    "git_tests": 954,
+    "git_tests_by_ym": {
+     "2023-11": 1,
+     "2025-07": 1,
+     "2026-01": 12,
+     "2026-03": 56,
+     "2026-04": 76,
+     "2026-05": 109,
+     "2026-06": 73,
+     "2026-07": 171,
+     "2026-08": 175,
+     "2026-09": 226,
+     "2026-10": 54
+    },
+    "git_tests_with_session": 294,
+    "git_tests_with_session_by_ym": {
+     "2026-05": 25,
+     "2026-06": 36,
+     "2026-07": 36,
+     "2026-08": 101,
+     "2026-09": 75,
+     "2026-10": 21
+    },
+    "lineages_with_commits": 110,
+    "nongit_days_bulk_excluded": 742536,
+    "nongit_tests": 574,
+    "sessions_multi_lineage": 6
+   }
+  },
+  "time_window": {
+   "compile_twice_identical": true,
+   "counts": {
+    "bands": {
+     "1": 243,
+     "2": 241,
+     "3": 255,
+     "4": 174,
+     "5": 41,
+     "6": 10
+    },
+    "bands_git": {
+     "1": 15,
+     "2": 85,
+     "3": 164,
+     "4": 110,
+     "5": 15,
+     "6": 1
+    },
+    "capped_commits": 87,
+    "episodes_git": 1054,
+    "first_of_generation": 11,
+    "first_of_nation": 5,
+    "first_tests": 240,
+    "launches": 964,
+    "launches_git": 390,
+    "launches_nongit": 574,
+    "max_warheads": 29,
+    "mirv": 209,
+    "nations": {
+     "automation": 5,
+     "chatgpt": 76,
+     "claude": 294,
+     "codex": 34,
+     "human": 555
+    },
+    "nations_git": {
+     "automation": 5,
+     "claude": 280,
+     "codex": 22,
+     "human": 83
+    },
+    "nongit_nations": {
+     "chatgpt:time": 76,
+     "claude": 14,
+     "codex": 12,
+     "human": 472
+    },
+    "single": 749,
+    "single_git": 175,
+    "tests_git": 954,
+    "tests_nongit": 574,
+    "unified": 6,
+    "warheads_hist": {
+     "10": 13,
+     "2": 94,
+     "3": 43,
+     "4": 20,
+     "5": 18,
+     "6": 12,
+     "7": 2,
+     "8": 3,
+     "9": 4
+    }
+   },
+   "launches_sha256": "e74823b9274e5b36b66b1132088590d991850b4b95baaff1a9edff7d6e548e43",
+   "nations_sha256": "8e1812a6afac5e9b6ff7f3788b2e8b8e2aaf3760cd98a0d604c5a0716acd315d",
+   "params_hash": "4e2c30bddb9ff2fd21aa6c553fd73fb12e6f6ae99324c084615f6e5efccf2ca4",
+   "stats": {
+    "capped_commits": 87,
+    "episodes_below_min": 100,
+    "git_episodes": 1054,
+    "git_tests": 954,
+    "git_tests_by_ym": {
+     "2023-11": 1,
+     "2025-07": 1,
+     "2026-01": 12,
+     "2026-03": 56,
+     "2026-04": 76,
+     "2026-05": 109,
+     "2026-06": 73,
+     "2026-07": 171,
+     "2026-08": 175,
+     "2026-09": 226,
+     "2026-10": 54
+    },
+    "git_tests_with_session": 294,
+    "git_tests_with_session_by_ym": {
+     "2026-05": 25,
+     "2026-06": 36,
+     "2026-07": 36,
+     "2026-08": 101,
+     "2026-09": 75,
+     "2026-10": 21
+    },
+    "lineages_with_commits": 110,
+    "nongit_days_bulk_excluded": 742536,
+    "nongit_tests": 574,
+    "sessions_multi_lineage": 6
+   }
+  }
+ },
+ "chatgpt_links": "present",
+ "clock": {
+  "boundary_out_s": [
+   49.207,
+   136.942
+  ],
+  "coda_s": 18.0,
+  "era_len_s": [
+   47.207,
+   87.735,
+   533.38
+  ],
+  "frames": 20650,
+  "intro_s": 2.0,
+  "m": 1.0,
+  "story_s": 668.322,
+  "total_s": 688.322
+ },
+ "code": {
+  "clock.py": "857d13ec3e7b7aceee4f770e72fa2c01926a9c8e546d41f73fa080cd84e6327a",
+  "common.py": "50eee918f0b114c0416d9c97e982f85935ef2cc7e13bbd4d5727cedf7d363f2b",
+  "corpus.py": "6cf25d4fc5e6f7a35af7ff40ed6c6fc22ebdcb86c682862915e3266130b99e8f",
+  "launches.py": "6b2c4ed21184adab9a15ac01d8b7d8f54032d0c9991d9d145e206bb1345e4d64",
+  "names.py": "109b89c471cbc34a14d5be4ebe3d97e0d8e2d1414ce39e76b8cef4b738153b14",
+  "nations.py": "50cc063d76de01c652306cadd60dd8503840a72273100efdab46e37086301034",
+  "params.json": "8537a8564100e933e5f422c621d9d9b3e68c9ae4efd5c1f8476d988bfaced3c8",
+  "strip.py": "4128ecd1d6630e87861d8a2ca6b76b0a7a81c93dc4d4562c83bbb749fed9112f"
+ },
+ "inputs": {
+  "actors.json": "713180f2fcbb771031a254faef47495e5e1d30f32e577e705760bfb29d5f3e36",
+  "chatgpt_links.json": "63ed4b48fd2f88c177f8f839edcc9ed0de22ec81e16b5e711e3f12a8511c5843",
+  "events.ndjson": "4e1e1c9715e8224d862ca6c85ce8a82731db6d21b8e618861ddac8361dd0e7b7",
+  "hosts.json": "51d3a68e524e44719f65cfb85907e319617903d29dc5a53d82867db621a7c6d6",
+  "relations.json": "fd545c9d7ebaf970204c6b0b35338dc5feeace49b20b08473f1ae773ce45f621",
+  "repos.json": "2baef2a516dd6c5e98a753d2fac007ae78d1f4eded7b8b26c2255377bef4bc56",
+  "sessions.json": "4730a2c30885067400725e10b97cdf10d535f3913687408882e996c12f002157",
+  "stats.json": "6e9d7cf2cc668badefe81ab3f1f426b0105cdad646acf54aa426571d97f646ee"
+ },
+ "lap": "LAP-01-launch-strip",
+ "outputs": {
+  "session/launches.json": "c6430310310bce24abb4b45066eb570e566826de17421b046b1f7d99787872c2",
+  "session/nations.json": "fa872687ff6a555744719aae86f78fe5d2410ce8035bddf201560753b05b114d",
+  "session_or_nation/launches.json": "5b757ec90209d25e4ccdc1f6196d060710398914410fc2f83b080013cc80b694",
+  "session_or_nation/nations.json": "dbc62e5ee977657f99c2703e29d5b503d554fb05ec07236d32f52f58a2286e18",
+  "time_window/launches.json": "e74823b9274e5b36b66b1132088590d991850b4b95baaff1a9edff7d6e548e43",
+  "time_window/nations.json": "8e1812a6afac5e9b6ff7f3788b2e8b8e2aaf3760cd98a0d604c5a0716acd315d"
+ },
+ "relations": "present",
+ "strip_sha256": {
+  "strip-compare.png": "30970768079a1cc925467cfeb0be7c82b783ce4e6188e20432dd86c4cff0c0c6",
+  "strip-session.png": "91874cb2d4f57b64f862c4d21e4e30ebcf22ed9dbd9c186b74897654e02d20d8",
+  "strip-time_window.png": "91148266597bf36035be06d3ae7851b05deb5386594ebbb8289cae7fcb52d8a7"
+ }
+}

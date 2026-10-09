@@ -52,9 +52,12 @@ def probe(path, F, fps, first_frame, probe_f, spf=1600):
     a = subprocess.run([FFMPEG, "-v", "error", "-i", path, "-map", "0:a:0", "-f", "f32le", "-ac", "2", "-ar", "48000", "-"],
                        capture_output=True, stdin=subprocess.DEVNULL).stdout
     s = np.frombuffer(a, dtype="<f4").reshape(-1, 2)
-    peak = int(np.argmax(np.abs(s[:, 0])))
-    # the click's first strong sample: first |x| above half the peak (AAC smears the attack by a few samples)
-    onset = int(np.argmax(np.abs(s[:, 0]) > 0.5 * np.abs(s[:, 0]).max()))
+    exp = (probe_f - first_frame) * spf
+    lo, hi = max(0, exp - 4800), min(len(s), exp + 4800)  # search +-100 ms around the expected click, the page may be loud elsewhere
+    seg = np.abs(s[lo:hi, 0])
+    peak = lo + int(np.argmax(seg))
+    # the click's first strong sample: first |x| above half the window peak (AAC smears the attack by a few samples)
+    onset = lo + int(np.argmax(seg > 0.5 * seg.max()))
     t_white = float(white[0]) / fps if len(white) else None
     out = {
         "container_duration_s": dur_s, "expected_duration_s": F / fps, "video_frames": int(len(frames)), "expected_frames": F,

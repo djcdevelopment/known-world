@@ -10,6 +10,7 @@
     ctx.globalCompositeOperation = 'source-over';
     ctx.fillStyle = '#07090e'; ctx.fillRect(0, 0, cv.width, cv.height);
     for (const l of KW.layers) {
+      if (KW.off && KW.off.has(l.id)) continue;
       ctx.save();
       try { l.render(ctx, f); } catch (e) { KW.errors.push(l.id + '@' + f + ':' + e.message); }
       ctx.restore();
@@ -17,6 +18,7 @@
   }
   window.renderFrame = renderFrame;
   window.kwErrors = () => KW.errors;
+  window.kwOff = list => { KW.off = new Set(list); };
   window.kwInfo = () => ({ F: KW.F, fps: KW.fps, font: ctx.font, layers: KW.layers.map(l => l.id) });
   const ready = (document.fonts && document.fonts.ready) ? document.fonts.ready : Promise.resolve();
   ready.then(() => {

@@ -32,7 +32,7 @@ def density(c, clock):
     for lin, v in c.chat.items():
         for (t, sid, cls, n) in v:
             tm.append(t); wm.append(n)
-    for (t, sid) in c.gpt:
+    for (t, sid, n) in c.gpt:
         tm.append(t); wm.append(1)
     return (np.array(tc, dtype=np.float64), np.ones(len(tc))), (np.array(tm, dtype=np.float64), np.array(wm, dtype=np.float64))
 

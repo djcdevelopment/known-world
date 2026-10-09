@@ -1,0 +1,286 @@
+{
+ "cut": {
+  "audio_expected": 4320000,
+  "audio_samples": 4320000,
+  "audio_sha256": "530d1ef6f4d7b9fd599232ffc32b9b40d8b7b3fa8f1f083d259729d15cf5f938",
+  "audio_stats": {
+   "bells": 267,
+   "collapse_bins": 399,
+   "collapsed_frames": 2043,
+   "pips": 0,
+   "roll_bins": 193,
+   "tones": 111
+  },
+  "chatgpt_links": "present",
+  "clock": {
+   "boundary_out_s": [
+    6.863,
+    17.759
+   ],
+   "coda_s": 6.0,
+   "era_len_s": [
+    5.863,
+    10.896,
+    66.241
+   ],
+   "frames": 2700,
+   "intro_s": 1.0,
+   "m": 8.0521,
+   "story_s": 83.0,
+   "total_s": 90.0
+  },
+  "compile_s": 2.8,
+  "compile_twice": {
+   "audio_equal": true,
+   "kw_data_equal": true,
+   "second": {
+    "audio_sha256": "530d1ef6f4d7b9fd599232ffc32b9b40d8b7b3fa8f1f083d259729d15cf5f938",
+    "frames": 2700,
+    "kw_data_sha256": "d9590c3a6b7eb820ea06f1ff25d0ed1eef3ee7be61592daa2daadb659e1ec79e"
+   }
+  },
+  "counts": {
+   "checkpoints": 3,
+   "chips": 13,
+   "deltas": 3897,
+   "launch_counts": {
+    "bands": {
+     "1": 307,
+     "2": 482,
+     "3": 476,
+     "4": 205,
+     "5": 32,
+     "6": 10
+    },
+    "bands_git": {
+     "1": 79,
+     "2": 326,
+     "3": 385,
+     "4": 141,
+     "5": 6,
+     "6": 1
+    },
+    "capped_commits": 87,
+    "episodes_git": 1054,
+    "first_of_generation": 13,
+    "first_of_nation": 5,
+    "first_tests": 267,
+    "launches": 1512,
+    "launches_git": 938,
+    "launches_nongit": 574,
+    "max_warheads": 58,
+    "mirv": 47,
+    "nations": {
+     "automation": 16,
+     "chatgpt": 76,
+     "claude": 616,
+     "codex": 88,
+     "human": 716
+    },
+    "nations_git": {
+     "automation": 16,
+     "claude": 602,
+     "codex": 76,
+     "human": 244
+    },
+    "nongit_nations": {
+     "chatgpt:time": 76,
+     "claude": 14,
+     "codex": 12,
+     "human": 472
+    },
+    "single": 1458,
+    "single_git": 884,
+    "tests_git": 954,
+    "tests_nongit": 574,
+    "unified": 7,
+    "warheads_hist": {
+     "2": 22,
+     "3": 14,
+     "4": 1,
+     "5": 4,
+     "6": 1,
+     "7": 1,
+     "8": 1,
+     "9": 2,
+     "10": 1
+    }
+   },
+   "launches": 1512,
+   "launches_skipped_no_region": 0,
+   "layout": {
+    "constellations": 13,
+    "joined": 79,
+    "loose": 208
+   },
+   "nations": [
+    "human",
+    "chatgpt",
+    "claude",
+    "codex",
+    "automation",
+    "local_model",
+    "opencode"
+   ],
+   "peak_launches_per_frame": 11,
+   "regions": 287
+  },
+  "cut_s": 90,
+  "inputs": {
+   "actors.json": "713180f2fcbb771031a254faef47495e5e1d30f32e577e705760bfb29d5f3e36",
+   "chatgpt_links.json": "63ed4b48fd2f88c177f8f839edcc9ed0de22ec81e16b5e711e3f12a8511c5843",
+   "events.ndjson": "4e1e1c9715e8224d862ca6c85ce8a82731db6d21b8e618861ddac8361dd0e7b7",
+   "hosts.json": "51d3a68e524e44719f65cfb85907e319617903d29dc5a53d82867db621a7c6d6",
+   "relations.json": "fd545c9d7ebaf970204c6b0b35338dc5feeace49b20b08473f1ae773ce45f621",
+   "repos.json": "2baef2a516dd6c5e98a753d2fac007ae78d1f4eded7b8b26c2255377bef4bc56",
+   "sessions.json": "4730a2c30885067400725e10b97cdf10d535f3913687408882e996c12f002157",
+   "stats.json": "6e9d7cf2cc668badefe81ab3f1f426b0105cdad646acf54aa426571d97f646ee"
+  },
+  "kw_data_bytes": 610787,
+  "kw_data_sha256": "d9590c3a6b7eb820ea06f1ff25d0ed1eef3ee7be61592daa2daadb659e1ec79e",
+  "params_hash": "c2379139fa4f377d0cf9eb3f64df5a4af72d383d29359eaad1952e264ea767b7",
+  "relations": "present"
+ },
+ "full": {
+  "audio_expected": 33040000,
+  "audio_samples": 33040000,
+  "audio_sha256": "88d49e600b0eef61c9bf4b307bbd9a82d095e017fb9a38da2738e1243cbf8f9c",
+  "audio_stats": {
+   "bells": 267,
+   "collapse_bins": 122,
+   "collapsed_frames": 927,
+   "pips": 134,
+   "roll_bins": 5,
+   "tones": 1247
+  },
+  "chatgpt_links": "present",
+  "clock": {
+   "boundary_out_s": [
+    49.207,
+    136.942
+   ],
+   "coda_s": 18.0,
+   "era_len_s": [
+    47.207,
+    87.735,
+    533.38
+   ],
+   "frames": 20650,
+   "intro_s": 2.0,
+   "m": 1.0,
+   "story_s": 668.322,
+   "total_s": 688.322
+  },
+  "compile_s": 14.2,
+  "compile_twice": {
+   "audio_equal": true,
+   "kw_data_equal": true,
+   "second": {
+    "audio_sha256": "88d49e600b0eef61c9bf4b307bbd9a82d095e017fb9a38da2738e1243cbf8f9c",
+    "frames": 20650,
+    "kw_data_sha256": "cff0c80dc60ef21d2af677847f01dcc2bc8cc70bc00a2642e629aa6405e94fdd"
+   }
+  },
+  "counts": {
+   "checkpoints": 23,
+   "chips": 13,
+   "deltas": 9511,
+   "launch_counts": {
+    "bands": {
+     "1": 307,
+     "2": 482,
+     "3": 476,
+     "4": 205,
+     "5": 32,
+     "6": 10
+    },
+    "bands_git": {
+     "1": 79,
+     "2": 326,
+     "3": 385,
+     "4": 141,
+     "5": 6,
+     "6": 1
+    },
+    "capped_commits": 87,
+    "episodes_git": 1054,
+    "first_of_generation": 13,
+    "first_of_nation": 5,
+    "first_tests": 267,
+    "launches": 1512,
+    "launches_git": 938,
+    "launches_nongit": 574,
+    "max_warheads": 58,
+    "mirv": 47,
+    "nations": {
+     "automation": 16,
+     "chatgpt": 76,
+     "claude": 616,
+     "codex": 88,
+     "human": 716
+    },
+    "nations_git": {
+     "automation": 16,
+     "claude": 602,
+     "codex": 76,
+     "human": 244
+    },
+    "nongit_nations": {
+     "chatgpt:time": 76,
+     "claude": 14,
+     "codex": 12,
+     "human": 472
+    },
+    "single": 1458,
+    "single_git": 884,
+    "tests_git": 954,
+    "tests_nongit": 574,
+    "unified": 7,
+    "warheads_hist": {
+     "2": 22,
+     "3": 14,
+     "4": 1,
+     "5": 4,
+     "6": 1,
+     "7": 1,
+     "8": 1,
+     "9": 2,
+     "10": 1
+    }
+   },
+   "launches": 1512,
+   "launches_skipped_no_region": 0,
+   "layout": {
+    "constellations": 13,
+    "joined": 79,
+    "loose": 208
+   },
+   "nations": [
+    "human",
+    "chatgpt",
+    "claude",
+    "codex",
+    "automation",
+    "local_model",
+    "opencode"
+   ],
+   "peak_launches_per_frame": 8,
+   "regions": 287
+  },
+  "cut_s": null,
+  "inputs": {
+   "actors.json": "713180f2fcbb771031a254faef47495e5e1d30f32e577e705760bfb29d5f3e36",
+   "chatgpt_links.json": "63ed4b48fd2f88c177f8f839edcc9ed0de22ec81e16b5e711e3f12a8511c5843",
+   "events.ndjson": "4e1e1c9715e8224d862ca6c85ce8a82731db6d21b8e618861ddac8361dd0e7b7",
+   "hosts.json": "51d3a68e524e44719f65cfb85907e319617903d29dc5a53d82867db621a7c6d6",
+   "relations.json": "fd545c9d7ebaf970204c6b0b35338dc5feeace49b20b08473f1ae773ce45f621",
+   "repos.json": "2baef2a516dd6c5e98a753d2fac007ae78d1f4eded7b8b26c2255377bef4bc56",
+   "sessions.json": "4730a2c30885067400725e10b97cdf10d535f3913687408882e996c12f002157",
+   "stats.json": "6e9d7cf2cc668badefe81ab3f1f426b0105cdad646acf54aa426571d97f646ee"
+  },
+  "kw_data_bytes": 4204189,
+  "kw_data_sha256": "cff0c80dc60ef21d2af677847f01dcc2bc8cc70bc00a2642e629aa6405e94fdd",
+  "params_hash": "c2379139fa4f377d0cf9eb3f64df5a4af72d383d29359eaad1952e264ea767b7",
+  "relations": "present"
+ }
+}

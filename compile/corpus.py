@@ -84,7 +84,7 @@ def load(params):
             n = e["magnitude"]["n"]
             sid = e["meta"].get("session")
             if cls == "chatgpt":
-                gpt.append((t, sid))
+                gpt.append((t, sid, n))
             elif cls in SESSION_CLASSES and (r in c.own or r in c.dirs):
                 chat[r].append((t, sid, cls, n))
         elif k == "chat_session":
@@ -125,8 +125,8 @@ def load(params):
     for r in commits:
         commits[r].sort(key=lambda x: (x[0], x[1]))
     for r in chat:
-        chat[r].sort()
-    gpt.sort()
+        chat[r].sort(key=lambda x: (x[0], str(x[1])))
+    gpt.sort(key=lambda x: (x[0], str(x[1])))
     offloads.sort()
     for r in births:
         births[r].sort()

@@ -1,0 +1,86 @@
+{
+ "buildState_node_vs_python": {
+  "events": 126937,
+  "frames": [
+   {
+    "frame": 7721,
+    "max_A": 2810.5659934704,
+    "max_abs_err": 4.2597046103765024e-05,
+    "nonzero": 85,
+    "rel_err": 1.515603839323748e-08
+   },
+   {
+    "frame": 14273,
+    "max_A": 574.2131306627119,
+    "max_abs_err": 1.960132556177996e-05,
+    "nonzero": 195,
+    "rel_err": 3.413597585126213e-08
+   },
+   {
+    "frame": 19457,
+    "max_A": 5482.65949807462,
+    "max_abs_err": 0.0001546571884318837,
+    "nonzero": 372,
+    "rel_err": 2.820842485042079e-08
+   }
+  ],
+  "groups": 7,
+  "node": "v24.21.0",
+  "regions": 287
+ },
+ "luminance": {
+  "all_max_L": 0.8715,
+  "field_max_L": 0.5284,
+  "rows": [
+   {
+    "all_max_L": 0.8147,
+    "f": 2415,
+    "field_max_L": 0.5254,
+    "nlive": 162
+   },
+   {
+    "all_max_L": 0.6363,
+    "f": 2422,
+    "field_max_L": 0.5254,
+    "nlive": 160
+   },
+   {
+    "all_max_L": 0.5254,
+    "f": 2394,
+    "field_max_L": 0.5254,
+    "nlive": 159
+   },
+   {
+    "all_max_L": 0.6918,
+    "f": 810,
+    "field_max_L": 0.5112,
+    "nlive": 43
+   },
+   {
+    "all_max_L": 0.5139,
+    "f": 1620,
+    "field_max_L": 0.5139,
+    "nlive": 37
+   },
+   {
+    "all_max_L": 0.8715,
+    "f": 2160,
+    "field_max_L": 0.5284,
+    "nlive": 122
+   }
+  ]
+ },
+ "order_check": {
+  "equal": 30,
+  "frames": 30,
+  "mismatched": [],
+  "order": [
+   2025,
+   495,
+   855,
+   1755,
+   2565,
+   945
+  ]
+ }
+}

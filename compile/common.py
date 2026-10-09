@@ -7,7 +7,7 @@ import re
 import time
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MERGED = os.path.join(ROOT, "corpus", "merged")
+MERGED = os.environ.get("KW_CORPUS") or os.path.join(ROOT, "corpus", "merged")  # KW_CORPUS pins a copy of the merge
 DEFAULT_PARAMS = os.path.join(ROOT, "compile", "params.json")
 
 

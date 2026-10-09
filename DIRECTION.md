@@ -102,6 +102,24 @@ both without narration:
 | Border | Right: per nation (actor class), tests and cumulative yield, with capacity (commits, files) as a smaller second line. Left: tallies per surface. Bottom: the radio band, a scrolling density trace coloured by class. Top: the date ticker with the current rate shown. |
 | Ending | Camera pulls back to the whole known world. The unknown stays dark. Tallies settle. Silence. A final tally card. |
 
+## Running totals (Derek, 2026-10-10, after watching the full piece)
+
+The industrial base must be countable on screen, not only visible as fields: running totals of lines of code, files
+created, files changed and commits, per nation and cumulative, with a rate per timeframe, and a scale that reads as
+the numbers climb.
+
+- **Per nation (right panel, under each nation's test tally):** cumulative commits, files changed, lines added and
+  lines removed (`+ins / −del`), each with a micro-bar on a shared log scale (ticks 1k, 10k, 100k, 1M) in the
+  nation's hue; and a rate: commits per story unit tied to the era so it never flickers: per year in era A, per month
+  in era B, per week in era C, the unit shown beside the ticker's rate. A fixed rolling window in film seconds is the
+  lap arm (`rate_window: era_unit | rolling_10s`).
+- **Files created (left panel, per surface):** a filesystem birth has no author, so created files are counted per
+  drive and host with the same log bars; inside a launch window they may be attributed to the launch's nation as the
+  inferred arm (`births_to_nation: off | launch_window`).
+- **Totals line in the ticker row:** cumulative commits · files · lines for the whole world, always visible.
+- **Honesty:** numbers are the corpus's (numstat where present; 11,164 commits without numstat count as commits and
+  files but 0 lines, stated once in the tally card footer). Nothing is smoothed except the rate.
+
 ## Sound
 
 One tone per launch, pitch by nation (human A3, Claude E4, Codex G4, OpenCode B4, local models C3, automation D4,

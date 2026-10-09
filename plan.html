@@ -40,7 +40,7 @@
 <body>
 <header>
   <h1>Known World <span>· living plan</span></h1>
-  <p>A fog-of-war time-lapse of everything built on the lab's surfaces, repos and chats · goal G-known-world · updated 2026-10-10 10:05Z</p>
+  <p>A fog-of-war time-lapse of everything built on the lab's surfaces, repos and chats · goal G-known-world · updated 2026-10-10 11:30Z</p>
 </header>
 <main>
   <section class="c12">
@@ -57,7 +57,8 @@
         <tr><td>—</td><td>RaidUI reuse (Derek's prior time player)</td><td><span class="pill done">done</span></td><td>Playback core vendored: pure render-state, playback controller with deterministic tick, density grid, overlay compositor, decay trail, scrubber. Missing parts named for the strategists</td><td><code>SURVEY.md §4b</code>, <code>render/vendor/raidui/</code></td></tr>
         <tr><td>—</td><td>Launch probe (payload model on real data)</td><td><span class="pill done">done</span></td><td>415 launches on Derek's lineages at the default thresholds (215 single, 200 MIRV); MIRVs rise from 0 in January to 47 of 70 in July 2026; yields span five orders of magnitude; nations enter 2017 (human), 2023-04 (ChatGPT), 2025-10 (Claude), 2026-06 (Codex), 2026-07 (builders, local seats), 2026-09 (OpenCode)</td><td><code>laps/PROBE-00-launches/RESULT.md</code></td></tr>
         <tr><td>—</td><td>Running totals (slice 8) and private GitHub repos (task 1d)</td><td><span class="pill done">done</span></td><td>Totals on screen; 93 GitHub repos listed (39 private), 4 mirrored, merge swapped (216,796 events)</td><td><code>laps/LAP-11-running-totals/</code>, CORPUS-REPORT §15</td></tr>
-        <tr><td>—</td><td>The stream (slice 9)</td><td><span class="pill running">running</span></td><td>Scrolling lane diagram of lineages: ticks, branching rails, MIRV connectors, constellation order; full re-export on the final corpus</td><td>DIRECTION.md "The stream"</td></tr>
+        <tr><td>—</td><td>The stream (slice 9) and full-bleed HUD</td><td><span class="pill done">done</span></td><td>Lanes, rails, connectors; HUD plates; tight-start camera; full re-export 4.4 min</td><td><code>laps/LAP-12-stream/</code></td></tr>
+        <tr><td>—</td><td>The player (slice 10) + update-rule fix (1e)</td><td><span class="pill running">running</span></td><td>Speed steps 1 to 4, scrubber hashmarks (eras, continents, nations, migration, storm, regime changes), portrait layout, camera steered by the warm world; corpus v1.6 drops preserved-timestamp updates</td><td>DIRECTION.md rev 4; CONTRACT v1.6</td></tr>
         <tr><td>—</td><td>Local-seat repo-card arm</td><td><span class="pill deferred">deferred</span></td><td>Capability record per seat</td><td>30B and AM4 tool seats absent under the bench27 all-27B hold; door: default lane not live</td></tr>
       </tbody>
     </table>
@@ -173,6 +174,15 @@
         <tr><td>Files created attributed to a nation inside a launch window</td><td>off (a birth has no author); inferred arm exists</td></tr>
       </tbody>
     </table>
+  </section>
+  <section class="c12">
+    <h2>Slice 9: the stream and the full-bleed layout (2026-10-10)</h2>
+    <p style="font-size:13px; color:var(--text-2); margin-bottom:10px">The map now owns the whole frame; the ticker, tallies, nation panel, stream and band are translucent HUD plates. The stream column shows lineages as lanes with commit ticks, branch and worktree rails, MIRV connectors and association edges in constellation order (109 of 111 lineages appear; 541 rails; 144 MIRV connectors). Full piece re-exported on the final corpus in 4.4 min: <code>laps/LAP-12-stream/out/full/final.mp4</code>. Found in the stills and queued: preserved modification times counted as early updates (contract v1.6), stray files steering the camera (camera rule), a crowded stream header (legibility rule).</p>
+    <p style="display:grid; grid-template-columns: repeat(3, 1fr); gap:8px">
+      <img src="laps/LAP-12-stream/stills/stream-2023-11.png" alt="2023-11" style="width:100%; border:1px solid var(--border); border-radius:4px">
+      <img src="laps/LAP-12-stream/stills/stream-2026-03-05.png" alt="2026-03-05" style="width:100%; border:1px solid var(--border); border-radius:4px">
+      <img src="laps/LAP-12-stream/stills/stream-2026-09-27.png" alt="2026-09-27" style="width:100%; border:1px solid var(--border); border-radius:4px">
+    </p>
   </section>
   <section class="c12">
     <h2>Laps</h2>

@@ -1,0 +1,131 @@
+{
+ "audio": {
+  "cut_expected": 4320000,
+  "cut_samples": 4320000,
+  "cut_sha256": "aa32af6d96e4cf025896893cd2335af6937467f8b690939ce24599bea308a1ab",
+  "full_expected": 33035200,
+  "full_samples": 33035200,
+  "full_sha256": "404a9814407348cda748d899ea520784ba02715bc38c395ac6ffa9c754106c62"
+ },
+ "code": {
+  "compile/audio.py": "1f0749040b551ec8bace3411afff9f72be3483d0d7fd44e642aa0ec18f87c79b",
+  "compile/build_data.py": "2ec6e771cc18224d01dc9bfbe6cafe3cdc685b50bee80d10d845f02ba991ed12",
+  "compile/clock.py": "857d13ec3e7b7aceee4f770e72fa2c01926a9c8e546d41f73fa080cd84e6327a",
+  "export/encode.py": "c038b7019d335d86d31f955eec2d071a1a998eff4e4d532d31dff23fac63e90e",
+  "export/frames.mjs": "db4f48eafa87b696ffcca3d1d4c4c9ab143a0e66f9410ce4bfad38a9b762cff4",
+  "export/probe.py": "62f85f09e9d2dfe546ec8ead1740f35d82c4789e4f6320a544c6ea7b07b55ca8",
+  "export/run.py": "348f311acdd7636be8c8b31d3cf3260adf4fbb0e62a2b018814572e31fa45110",
+  "render/border.js": "9b6b7525600d39672d061e63c3c281579925129890892ef954be37c9497b20a7",
+  "render/data.js": "dbf5650aabf2b3a878d7eb99da386f2e18b14469ce2fe82fcbe0d7cee5a670a9",
+  "render/index.html": "7785d967149bb3b155030df1384f6853ceac10ad780c22a3473c8942508e8a3d",
+  "render/main.js": "04154a5cd39b843a8c6949c915838bd9fe0230c6b842e5a15109b1542b184ae4"
+ },
+ "cut_clock": {
+  "boundary_out_s": [
+   6.863,
+   17.761
+  ],
+  "coda_s": 6.0,
+  "era_len_s": [
+   5.863,
+   10.897,
+   66.239
+  ],
+  "frames": 2700,
+  "intro_s": 1.0,
+  "m": 8.0511,
+  "story_s": 83.0,
+  "total_s": 90.0
+ },
+ "data": {
+  "cut": "5d7b8a46be5c44d7f8cf9efed2d2fd077abfa0ec1cbe43f96ecab98e4071f559",
+  "full": "dc937e1e39a95ded0a597e2dcb652765e86645b0f447cae18d10e8356d5b5966"
+ },
+ "full_clock": {
+  "boundary_out_s": [
+   49.207,
+   136.942
+  ],
+  "coda_s": 18.0,
+  "era_len_s": [
+   47.207,
+   87.735,
+   533.3
+  ],
+  "frames": 20647,
+  "intro_s": 2.0,
+  "m": 1.0,
+  "story_s": 668.242,
+  "total_s": 688.242
+ },
+ "inputs": {
+  "repos.json": "17ee03325efeb80fb3ec0a4c80a945747c3047e208a66edd050a3a90005ef7b4"
+ },
+ "params_hash": "c2379139fa4f377d0cf9eb3f64df5a4af72d383d29359eaad1952e264ea767b7",
+ "probe10": {
+  "capture_ms_per_frame_per_worker_median": 33.755733633333335,
+  "final_bytes": 372580,
+  "frame_hashes_sha256": "cfcd404ce2df9378f11e6214b561f21ab8c8d49f9484e24c41eb324536ada880",
+  "frames": 300,
+  "frames_wall_s": 1.81,
+  "from": 0,
+  "ms_per_frame_effective": 5.24,
+  "page_errors": [],
+  "probe": {
+   "audio_samples": 480256,
+   "audio_tail_padding_samples": 256,
+   "click_onset_sample": 24000,
+   "click_peak_sample": 24000,
+   "container_duration_s": 10.0,
+   "delta_ms_onset": 0.0,
+   "delta_ms_peak": 0.0,
+   "elst": [
+    [
+     [
+      10000,
+      1024
+     ]
+    ],
+    [
+     [
+      10000,
+      1024
+     ]
+    ]
+   ],
+   "expected_click_sample": 24000,
+   "expected_duration_s": 10.0,
+   "expected_frames": 300,
+   "expected_probe_frame": 15,
+   "expected_samples": 480000,
+   "pass": true,
+   "stream_start_times": [
+    "0.000000"
+   ],
+   "t_click_onset_s": 0.5,
+   "t_click_peak_s": 0.5,
+   "t_white_s": 0.5,
+   "video_frames": 300,
+   "white_frames": [
+    15
+   ]
+  },
+  "to": 300,
+  "wav_sha256": "da071abae21f49ce8c4d3f836bac9874d9932f8e2be2d4378e1cb281052d6fe9",
+  "workers": 10
+ },
+ "rate_labels_cut": [
+  "1 yr = 0.50 s \u00b7 \u00d78.05",
+  "1 mo = 0.31 s \u00b7 \u00d78.05",
+  "1 day = 0.30 s \u00b7 \u00d78.05"
+ ],
+ "rate_labels_full": [
+  "1 yr = 4 s",
+  "1 mo = 2.5 s",
+  "1 day = 2.4 s"
+ ],
+ "tables": {
+  "cut_tau_sha256": "cde26d13b5f20f7b18db49e11f75802b716cc16575f0e34e69b17b04272b1cf3",
+  "full_tau_sha256": "8c1678452eb71533f384b537af1bc7a1cdb0f986263d1f6aedf4750b5e89c38f"
+ }
+}

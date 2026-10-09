@@ -1,0 +1,12 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>kw</title>
+<style>html,body{margin:0;padding:0;background:#07090e;overflow:hidden}canvas{display:block}</style></head>
+<body><canvas id="c" width="1920" height="1080"></canvas>
+<script>
+// The data script is chosen by ?data=<path> (default kw-data.js) so one page serves the cut, the full piece and tests.
+document.write('<script src="' + (new URLSearchParams(location.search).get('data') || 'kw-data.js') + '"><\/script>');
+</script>
+<script src="data.js"></script>
+<script src="border.js"></script>
+<script src="main.js"></script>
+</body></html>

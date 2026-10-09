@@ -35,7 +35,7 @@ def _months(start_days, end_days):
 
 
 class Clock:
-    def __init__(self, params, snapshot_epoch):
+    def __init__(self, params, snapshot_epoch, cut_s=None):
         self.p = params
         self.fps = params["fps"]
         e0 = _epoch_days(params["era_bounds"]["A"])
@@ -114,6 +114,15 @@ class Clock:
         self.story_s = float(self.s_k[-1])
         self.intro_s = float(params["intro_s"])
         self.coda_s = float(params["coda_s"])
+        self.m = 1.0
+        if cut_s:
+            # 90 s cut: story state compresses by m = story / (cut - intro - coda); intro 1 s, coda 6 s (STRATEGY 8)
+            self.intro_s, self.coda_s = 1.0, 6.0
+            m = params["cut_90s_multiple"]
+            self.m = self.story_s / (cut_s - self.intro_s - self.coda_s) if m == "auto" else float(m)
+            self.s_k = self.s_k / self.m
+            self.glide_out = [tuple(x / self.m for x in g) for g in self.glide_out]
+            self.story_s = float(self.s_k[-1])
         self.total_s = self.intro_s + self.story_s + self.coda_s
         self.F = int(round(self.total_s * self.fps))
 
@@ -153,6 +162,10 @@ class Clock:
         return (b - a) / h
 
     def rate_labels(self):
+        if self.m != 1.0:
+            return ["1 yr = %.2f s \u00b7 \u00d7%.2f" % (self.p["era_rates"]["A"]["seconds"] / self.m, self.m),
+                    "1 mo = %.2f s \u00b7 \u00d7%.2f" % (self.p["era_rates"]["B"]["seconds"] / self.m, self.m),
+                    "1 day = %.2f s \u00b7 \u00d7%.2f" % (self.p["era_rates"]["C"]["seconds"] / self.m, self.m)]
         return ["1 yr = %g s" % self.p["era_rates"]["A"]["seconds"],
                 "1 mo = %g s" % self.p["era_rates"]["B"]["seconds"],
                 "1 day = %g s" % self.p["era_rates"]["C"]["seconds"]]
@@ -163,7 +176,7 @@ class Clock:
 
     def summary(self):
         return {"frames": self.F, "total_s": round(self.total_s, 3), "story_s": round(self.story_s, 3),
-                "intro_s": self.intro_s, "coda_s": self.coda_s,
+                "intro_s": self.intro_s, "coda_s": self.coda_s, "m": round(self.m, 4),
                 "boundary_out_s": [round(x, 3) for x in self.era_edges_s()],
                 "era_len_s": [round(self.era_edges_s()[0] - self.intro_s, 3),
                               round(self.era_edges_s()[1] - self.era_edges_s()[0], 3),

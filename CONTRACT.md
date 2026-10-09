@@ -27,8 +27,14 @@ appearance; the border's growing legend reads it. Sources for first appearance: 
 Parameters (`compile/params.json`, lap variables): `episode_gap_h` (default 2), `session_overlap_min` (30),
 `min_yield` (`lines` 50 or `files` 3; smaller episodes stay infrastructure), `yield_bands` (log10 of lines, tuned),
 `mirv_min_targets` (2), `unify_window_h` (24), `generation_shades` (true).
-Commits below the threshold and every chat_msg, file_birth, branch and worktree event remain infrastructure and are
-rendered as fields, never as flashes. Two runs over the same corpus and parameters give byte-identical output.
+Non-git episodes (v1.4): in a non-git top-level directory, or a lineage before its first commit, a day with at least
+`min_yield.files` births or updates opens an episode; active days within `episode_gap_days` (default 1) merge. Yield:
+`files` = births + updates, `bytes`, `moving_pieces` = distinct depth-2 dirs, `lines` = null (size renders from files and
+bytes). Nation: a Claude, Codex or OpenCode session whose cwd lies under the directory and overlaps the window → that
+class; else a ChatGPT conversation active within ± 2 h of the burst → `chatgpt` with `nation_inferred: true`; else human.
+
+Commits below the threshold and every chat_msg, file_birth, file_update, branch and worktree event remain infrastructure
+and are rendered as fields, never as flashes. Two runs over the same corpus and parameters give byte-identical output.
 
 ## Revisions`.
 
@@ -38,7 +44,7 @@ rendered as fields, never as flashes. Two runs over the same corpus and paramete
 |---|---|---|
 | `ts` | string or null | UTC ISO-8601 (`2026-07-04T00:20:11Z`). Null when the source gives none, or the value is before 2005-01-01, after now, or a placeholder (1970-01-01, 1980-01-01). Merge drops null-ts events and counts them in the report. |
 | `ts_author`, `ts_commit` | string | Commits only; `ts` = `ts_author`. |
-| `kind` | enum | `commit` `repo_born` `branch` `worktree` `file_birth` `chat_msg` `chat_session` `offload_call` `receipt` `run` |
+| `kind` | enum | `commit` `repo_born` `branch` `worktree` `file_birth` `file_update` `chat_msg` `chat_session` `offload_call` `receipt` `run` |
 | `actor` | object | `{"class": <class>, "name": <string>}`; class ∈ `human` `chatgpt` `claude` `codex` `opencode` `local_model` `automation` `third_party`. `name` is a model name, a builder id, or `derek`; never an email; unknown humans get `sha1(name)[:12]`. |
 | `role` | enum or absent | Chat only: `user` `assistant` `tool`. `actor.class` is the agent for every role; `role` says who spoke. |
 | `host` | enum | `omen-c` `omen-e` `omen-linux` `am4` `fx99` `github` `cloud` |
@@ -54,6 +60,7 @@ Folding rules (so the corpus stays tractable and private):
 - `chat_msg`: one record per `(session, role, minute bucket)` with `n` = messages in that minute. Never one per message.
 - `chat_session`: one record per session: `ts` = first message, `magnitude.n` = messages, `magnitude.duration_s`, `meta.sidechain` (Claude subagent transcripts), `meta.model` (assistant model names seen, list).
 - `file_birth`: one record per `(depth-2 directory, day)` with `n` files and `bytes`. Birth time from `stat %w` (ntfs3 exposes it); mtime when birth is missing. Directories whose files share one birth second with their siblings (bulk copies) emit `meta.bulk_copy: true`.
+- `file_update` (v1.4, Derek 2026-10-09: early work left no commits, so file creation and update volume, frequency and density stand in): one record per `(depth-2 directory, day)` of last-modified days, `n` files and `bytes`, counted only when the mtime day differs from the birth day. A filesystem keeps only the last modification per file, so update frequency is a lower bound; say so in the report. Collected over non-git directories on every host (omen-c, omen-e, omen-linux, am4, fx99) and over zero-commit repositories; git-tracked history stays with commits.
 - `commit`: one record per `(sha, host)`. Merge keeps the earliest `ts` and records the host set. Binary numstat (`-`) and merge commits emit 0.
 - `branch`: `ts` = earliest commit unique to that branch; null if none.
 - `worktree`: one record per linked worktree, `ts` = the worktree's first commit on its branch or the directory birth; Windows worktrees whose gitdir cannot be followed emit `meta.unresolved: true`.
@@ -141,3 +148,4 @@ Work item (input to a collector): `{"id", "source_type", "host", "roots": [paths
   third_party-class authors against `derek_share` (agents and automation in Derek's repos are Derek's).
 - v1.2 2026-10-09: section 8, derived launches under the payload model (Derek: commits are infrastructure; payloads are intentional interactions with a yield).
 - v1.3 2026-10-09: launches carry shape (single, MIRV, unified), warheads and targets; derived nations.json for first appearances (Derek: watch the operator and the industry evolve at once).
+- v1.4 2026-10-09: `file_update` kind over non-git directories on every host; non-git episodes in section 8 (Derek: early tests had no repos or commits).

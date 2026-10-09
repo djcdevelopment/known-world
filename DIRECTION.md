@@ -45,6 +45,10 @@ So the piece has two layers with different physics:
   seat, a push to GitHub each count); moving pieces = distinct depth-2 directories plus branches and worktrees created
   plus distinct agent classes involved. A yield class on a log scale (bands tuned in a lap) sets the visual size, as
   kiloton to megaton did.
+- **Before git** (Derek, 2026-10-09): he was historically terrible about even making repos or committing in early
+  tests, so file creation and update volume, frequency and density stand in for commits there. A burst of file births
+  and updates in a directory is an episode like any other, with yield in files, bytes and moving pieces; the ChatGPT
+  conversations active around it give the nation (inferred, and marked so). The early tests are real tests.
 - A new lineage's first episode is its first test (the bloom and the bell stay). ChatGPT sessions (no cwd, 2023-04 to
   2026-03) are the research program before any test: radio only.
 - **Episode detection** (compile layer; lap variables): a gap over 2 h between commits on one lineage closes an

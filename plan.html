@@ -40,7 +40,7 @@
 <body>
 <header>
   <h1>Known World <span>· living plan</span></h1>
-  <p>A fog-of-war time-lapse of everything built on the lab's surfaces, repos and chats · goal G-known-world · updated 2026-10-10 13:10Z</p>
+  <p>A fog-of-war time-lapse of everything built on the lab's surfaces, repos and chats · goal G-known-world · updated 2026-10-10 19:45Z</p>
 </header>
 <main>
   <section class="c12">
@@ -199,6 +199,28 @@
         <tr><td>Tile weight to steer</td><td>3 · 6 commits' worth</td><td>3 (tight start 30.8 s; 6 gives 52 s)</td></tr>
         <tr><td>Regime-change slope unit</td><td>year · era unit; threshold 0.5</td><td>year (the era-unit reading finds no marks at 0.5)</td></tr>
         <tr><td>Portrait stream</td><td>hidden · thin strip</td><td>hidden</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="c12">
+    <h2>Slice 11: the information architecture and the design system (2026-10-10)</h2>
+    <p style="font-size:13px; color:var(--text-2); margin-bottom:10px">Four zones in the order the eye asks: ticker with the totals line, the map with the land centred (94.9% of frames within 2 px), nations on the right in the system's hues, one time axis at the bottom (ruler, band, ten lanes). Signal-gated: 2019 is the ticker, one hexagon and the ruler. Motion outside the map and timeline measured at 0.26% of pixels per second. Design system adopted from one module (<code>render/system.js</code>); the old layout stays as <code>layout: v4</code>. Portrait laid out at 360×640 and rendered at 3×. Exports: landscape full (4.1 min) and cut, portrait full (5.4 min) and cut, all in <code>laps/LAP-14-ia/out/</code>. Seven structural questions are open for Derek (table below).</p>
+    <p style="display:grid; grid-template-columns: 2fr 2fr 2fr 1fr; gap:8px; align-items:start">
+      <img src="laps/LAP-14-ia/stills/2019-05.png" alt="2019-05" style="width:100%; border:1px solid var(--border); border-radius:4px">
+      <img src="laps/LAP-14-ia/stills/landscape-full-2026-04-27.png" alt="2026-04-27 landscape" style="width:100%; border:1px solid var(--border); border-radius:4px">
+      <img src="laps/LAP-14-ia/stills/2026-09-27.png" alt="2026-09-27" style="width:100%; border:1px solid var(--border); border-radius:4px">
+      <img src="laps/LAP-14-ia/stills/portrait-full-2026-04-27.png" alt="2026-04-27 portrait" style="width:100%; border:1px solid var(--border); border-radius:4px">
+    </p>
+    <table>
+      <thead><tr><th>Open question (Derek's call)</th><th>System says</th><th>Film has</th><th>Fable's recommendation</th></tr></thead>
+      <tbody>
+        <tr><td>Nation row height</td><td>136 px (96 from the eighth)</td><td>120 px: seven rows at 136 need 952 of 880 px</td><td>update the system to 120</td></tr>
+        <tr><td>Land colour</td><td>one colour</td><td>tinted per surface and fog state</td><td>keep the tint; it is how continents read</td></tr>
+        <tr><td>Bloom and beam alphas</td><td>discs at 0.18 / 0.6</td><td>gradient blooms under the luminance budget</td><td>keep the film's; the system's were board placeholders</td></tr>
+        <tr><td>Lane order</td><td>constellation order</td><td>fixed slots while visible, about half adjacent</td><td>keep fixed slots (motion budget)</td></tr>
+        <tr><td>GitHub islands in the camera box</td><td>land centred</td><td>islands join at span 120 and push land 127 to 183 px below centre</td><td>islands never steer the box</td></tr>
+        <tr><td>Migration mark colour</td><td>no amber in the frame</td><td>amber-like</td><td>recolour to the linux surface hue</td></tr>
+        <tr><td>Band commits and card labels</td><td>nation hue; 11 px uppercase labels</td><td>one aggregate commit series; card labels not in the style</td><td>split the commit half by nation; apply the label style</td></tr>
       </tbody>
     </table>
   </section>

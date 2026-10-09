@@ -1,6 +1,6 @@
 """github_api.py: the GitHub repository list (names, flags, sizes, dates) -> repo_born events + github_repos.json.
 
-Authenticated (`gh auth status` succeeds): `gh repo list <owner> --limit 300 --json ...` for the owner and the
+Authenticated (`gh auth status` succeeds): `gh repo list <owner> --limit 400 --json ...` for the owner and the
 configured orgs. Otherwise the unauthenticated public list through curl, at most 2 requests, with the warning
 'pending auth: private repos not listed'. Tokens are never read or printed; gh and curl use their own stores.
 """
@@ -47,7 +47,7 @@ def process_source(ctx, src, cursor):
         authed = rc == 0 and not to
     if authed:
         for who in [owner] + list(orgs):
-            rc, out, _, to = core.run([gh, "repo", "list", who, "--limit", "300", "--json", GH_FIELDS], 120, env=_env())
+            rc, out, _, to = core.run([gh, "repo", "list", who, "--limit", "400", "--json", GH_FIELDS], 120, env=_env())
             if rc != 0 or to:
                 ctx.warn("gh_list_failed:" + core.clip(who, 30))
                 continue

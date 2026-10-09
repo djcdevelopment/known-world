@@ -35,8 +35,11 @@ def lst(v):
     return [str(x).lower() for x in (v if isinstance(v, list) else [v])]
 
 
-def main():
-    repos = json.load(open(os.path.join(ROOT, "corpus/merged/repos.json")))
+def main(argv=None):
+    argv = sys.argv[1:] if argv is None else argv
+    # --out DIR: read repos.json from and write relations.json to DIR (default corpus/merged)
+    outdir = os.path.abspath(argv[argv.index("--out") + 1]) if "--out" in argv else os.path.join(ROOT, "corpus/merged")
+    repos = json.load(open(os.path.join(outdir, "repos.json")))
     L = {l["id"]: l for l in repos["lineages"]}
     by_slug, by_name = defaultdict(list), defaultdict(list)
     for l in repos["lineages"]:
@@ -191,7 +194,7 @@ def main():
                         "jepa_self_edges_dropped": jself,
                         "edges_by_type": dict(sorted(Counter(e["type"] for e in out).items())),
                         "edges_by_scope": dict(sorted(Counter(e["scope"] for e in out).items()))}}
-    _dst = os.path.join(ROOT, "corpus/merged/relations.json")
+    _dst = os.path.join(outdir, "relations.json")
     with open(_dst + ".tmp", "w") as f:
         json.dump(res, f, indent=1, sort_keys=True)
         f.write("\n")

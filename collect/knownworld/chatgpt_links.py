@@ -53,8 +53,11 @@ def project_of(p):
     return DRIVE[m.group(1).upper()], "/".join(top)
 
 
-def main():
-    repos = json.load(open(os.path.join(ROOT, "corpus/merged/repos.json")))
+def main(argv=None):
+    argv = sys.argv[1:] if argv is None else argv
+    # --out DIR: read repos.json from and write chatgpt_links.json to DIR (default corpus/merged)
+    outdir = os.path.abspath(argv[argv.index("--out") + 1]) if "--out" in argv else os.path.join(ROOT, "corpus/merged")
+    repos = json.load(open(os.path.join(outdir, "repos.json")))
     by_name = defaultdict(list)
     for l in repos["lineages"]:
         for n in l.get("names", []):
@@ -130,7 +133,7 @@ def main():
                         "by_year": dict(sorted(year.items())), "with_projects_by_year": dict(sorted(year_p.items())),
                         "artifacts_by_type": dict(sorted((k or "none", v) for k, v in art.items())),
                         "calendar_days": len(cal)}}
-    _dst = os.path.join(ROOT, "corpus/merged/chatgpt_links.json")
+    _dst = os.path.join(outdir, "chatgpt_links.json")
     with open(_dst + ".tmp", "w") as f:
         json.dump(res, f, indent=1, sort_keys=True)
         f.write("\n")

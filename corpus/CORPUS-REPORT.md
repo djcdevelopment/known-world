@@ -796,3 +796,36 @@ resume, tensor and wow-code joined by directory name; tempo and tempo-viewer joi
 - Not walked for births: `work`, ComfyUI, SteamLibrary, pip-cache, .pnpm-store, Comfy-Desktop, Program Files, Recovery, $RECYCLE.BIN, System Volume Information, msdownld.tmp, Audacity, ISO, `World of Warcraft/_retail_` (game client), models; `*.pcm` files excluded in `fs_find.py`.
 - No git repositories were found below maxdepth 5 or inside `World of Warcraft/_retail_`; `Comfy-Desktop`, `ComfyUI` and `SteamLibrary` were not searched for repositories.
 - Toolkit changes made for this task: `git_repo.py` reads a submodule (`.git` file with a relative `gitdir` into a parent `.git/modules`) as a full repository; `fs_births.py` keys E: root loose files as `dir:<host>:.`; `fs_find.py` excludes `*.pcm`; `relations.py` and `chatgpt_links.py` write through a temporary file and `os.replace`; `make_worklist.py` takes optional id prefixes so a run writes only the named items. `pyyaml` is now installed in `.venv` (`uv pip install --python .venv/bin/python pyyaml`), so `relations.py` runs under the venv. Merge outputs were written to `corpus/.merge-tmp` and moved into `corpus/merged` with `os.replace` file by file.
+
+## 15. Private GitHub repositories (task 1d)
+
+`gh` is authenticated (account djcdevelopment). `github-list` was re-run with `--fresh` (limit 400 per owner); the manifest is `complete` with no warnings (the 'pending auth' warning is gone). 93 `repo_born` events equal the 93 repositories listed; `github_repos.json` carries the private flag. `missing_repos.py` ran against `corpus/raw/*/repos.ndjson` only (213 local records). Mirrors cloned with `git clone --mirror` (300 s timeout each) into `cache/clones/`; `mirror-2` is `complete`, privacy scan exit 0, commit counts equal `git rev-list --count --all`.
+
+### 15a. Repositories listed
+
+| Owner | Listed | Public | Private | Forks |
+|---|---|---|---|---|
+| djcdevelopment | 89 | 50 | 39 | 4 |
+| steppe-integrations (org) | 4 | 4 | 0 | 0 |
+| Total | 93 | 54 | 39 | 4 |
+
+### 15b. Local presence, mirrored now, skipped
+
+| Class | Repos | Notes |
+|---|---|---|
+| Already named by a local remote | 87 | 35 of the 39 private repos |
+| Missing, mirrored now (mirror-2) | 4 | all private: continuity (5 commits), conductor (36), contextforge-contracts (2), claudefarm (0, empty repository) |
+| Missing, skipped | 2 | forks: open-notebook, personal_website (third-party history). Nothing exceeded 200,000 KB. |
+
+Commits added: 43 mirrored commits in total, but continuity and conductor already existed as local lineages (matched by root commit, not by remote URL, which is why `missing_repos.py` reported them). Net new commits: 2 (contextforge-contracts). Merged event total rises by 43 (repo_born and mirror events), not by 43 commits.
+
+### 15c. Planned merged totals (corpus/.merge-tmp/MERGE-READY.md)
+
+| Total | corpus/merged now | planned |
+|---|---|---|
+| events | 216,753 | 216,796 |
+| lineages git / dir / github_only | 130 / 177 / 2 | 132 / 177 / 2 |
+| repo records | 213 | 217 |
+| relations nodes joined / edges | 88 / 223 | 88 / 223 (no delta) |
+
+The merge, relations and chatgpt_links outputs were built into `corpus/.merge-tmp` (privacy scan exit 0). The swap into `corpus/merged` is pending the running builder; the exact command is in MERGE-READY.md. `relations.py` and `chatgpt_links.py` gained `--out DIR`.

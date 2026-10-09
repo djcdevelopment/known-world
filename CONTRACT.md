@@ -24,6 +24,14 @@ Also derived: `compile/nations.json`, one record per nation (actor class) and pe
 appearance; the border's growing legend reads it. Sources for first appearance: `actor.name` on commits (trailers) and
 `models` on sessions; offload_call `backend`/`model` for local seats.
 
+Nation (v1.5, from STRATEGY.md §4.2.3): `nation_rule: session_over_human` is the default: the dominant **non-human**
+commit class of the episode, else the class of the joined session with the most messages, else human (Codex writes no
+trailer, so the contract's first wording gave it 2 tests); `commit_dominant` is the arm. A nation's legend row enters at
+the class's first event of any kind; a generation's chip enters at its first test. Sessions join by activity: a session
+joins when one of its `chat_msg` minute buckets on the lineage falls inside the window ± `session_overlap_min` (a span
+join chains weeks). Pre-git nations come from `chatgpt_links.json` (path+time before time-only). Integrations add the
+lineage's counts from `relations.json`.
+
 Parameters (`compile/params.json`, lap variables): `episode_gap_h` (default 2), `session_overlap_min` (30),
 `min_yield` (`lines` 50 or `files` 3; smaller episodes stay infrastructure), `yield_bands` (log10 of lines, tuned),
 `mirv_min_targets` (2), `unify_window_h` (24), `generation_shades` (true).
@@ -149,3 +157,4 @@ Work item (input to a collector): `{"id", "source_type", "host", "roots": [paths
 - v1.2 2026-10-09: section 8, derived launches under the payload model (Derek: commits are infrastructure; payloads are intentional interactions with a yield).
 - v1.3 2026-10-09: launches carry shape (single, MIRV, unified), warheads and targets; derived nations.json for first appearances (Derek: watch the operator and the industry evolve at once).
 - v1.4 2026-10-09: `file_update` kind over non-git directories on every host; non-git episodes in section 8 (Derek: early tests had no repos or commits).
+- v1.5 2026-10-09: nation rule `session_over_human`, legend entry at first event, activity-based session join, relations and chatgpt_links as inputs to §8 (STRATEGY.md accepted with amendments).

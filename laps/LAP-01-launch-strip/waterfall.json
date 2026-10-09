@@ -1,0 +1,56 @@
+[
+ {
+  "step": "PROBE-00 parity (time_window, no span cap, third-party commits kept, no lines cap, lineage targets only)",
+  "episodes": 1207,
+  "tests": 1047,
+  "launches": 415,
+  "single": 208,
+  "mirv": 200,
+  "unified": 7
+ },
+ {
+  "step": "+ exclude third-party-class commits in own lineages",
+  "episodes": 1001,
+  "tests": 902,
+  "launches": 356,
+  "single": 165,
+  "mirv": 186,
+  "unified": 5
+ },
+ {
+  "step": "+ lines cap 20,000 per commit",
+  "episodes": 1001,
+  "tests": 902,
+  "launches": 356,
+  "single": 165,
+  "mirv": 186,
+  "unified": 5
+ },
+ {
+  "step": "+ engagement_max_span_h 12 (control arm minus worktree targets)",
+  "episodes": 1001,
+  "tests": 902,
+  "launches": 374,
+  "single": 174,
+  "mirv": 195,
+  "unified": 5
+ },
+ {
+  "step": "+ worktree births as targets (= control arm: time_window)",
+  "episodes": 1001,
+  "tests": 902,
+  "launches": 374,
+  "single": 171,
+  "mirv": 197,
+  "unified": 6
+ },
+ {
+  "step": "engagement_union: session (= default arm)",
+  "episodes": 1001,
+  "tests": 902,
+  "launches": 886,
+  "single": 838,
+  "mirv": 41,
+  "unified": 7
+ }
+]

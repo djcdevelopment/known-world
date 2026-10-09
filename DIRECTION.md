@@ -120,6 +120,26 @@ the numbers climb.
 - **Honesty:** numbers are the corpus's (numstat where present; 11,164 commits without numstat count as commits and
   files but 0 lines, stated once in the tally card footer). Nothing is smoothed except the rate.
 
+## The stream (Derek, 2026-10-10: a scrolling view of commits and repos as another reading of periodization, branching, volume and association)
+
+A vertical lane diagram on the right, between the map and the nation panel (about 260 px; the map viewport narrows),
+scrolling upward at film speed with the newest story time at the bottom, era ticks on its left edge, the last ~20
+film seconds visible (lap variable `stream_window_s`).
+
+- **Lanes** are lineages. A lane enters at the lineage's first commit with its name and leaves when dormant beyond
+  `stream_dormant_days` (fold away with a short fade; it returns when touched). At most `stream_max_lanes` (14) show,
+  chosen by activity in the trailing window; the rest are a count on the edge ("+23 quiet").
+- **Ticks** on a lane are commits: dot area by log(lines), hue by the nation that made the commit. Volume reads as tick
+  density; periodization as the vertical rhythm against the era ticks.
+- **Branching:** branches and worktrees fork off the lane as short parallel rails and rejoin at a unified launch or
+  fade when abandoned; MIRV warheads are horizontal connectors between the lanes they touched (association); a
+  lineage living on two surfaces runs as two paired rails that join at the migration bridge.
+- **Association:** lanes order by constellation (relations.json), so related repos sit together; a cross-constellation
+  contract edge draws a faint connector once when it first lights.
+- **Names:** repo names are Derek's and this is the only panel that prints them (`labels` stays off on the map).
+  Default `stream_labels: names` for his own viewing; `hashed` is the arm for any public cut.
+- The stream never flashes or sounds: it is the ledger scrolling past, the industrial base read as lineage.
+
 ## Sound
 
 One tone per launch, pitch by nation (human A3, Claude E4, Codex G4, OpenCode B4, local models C3, automation D4,

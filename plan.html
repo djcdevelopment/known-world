@@ -40,7 +40,7 @@
 <body>
 <header>
   <h1>Known World <span>· living plan</span></h1>
-  <p>A fog-of-war time-lapse of everything built on the lab's surfaces, repos and chats · goal G-known-world · updated 2026-10-09 15:10Z</p>
+  <p>A fog-of-war time-lapse of everything built on the lab's surfaces, repos and chats · goal G-known-world · updated 2026-10-10 07:40Z</p>
 </header>
 <main>
   <section class="c12">
@@ -51,7 +51,7 @@
         <tr><td>0</td><td>Scaffold, goal, access</td><td><span class="pill done">done</span></td><td>Repo, contract v1, direction, survey, venv (numpy, static ffmpeg), gh installed, goal rev 20, ct item</td><td><code>known-world-plan/0-index.md</code></td></tr>
         <tr><td>1</td><td>Corpus run (Sonnet manager, Haiku fleet)</td><td><span class="pill done">done</span></td><td>210,647 merged events, 121 lineages, 1,155 sessions, 2011-08 → 2026-10-09; privacy scan 0 violations; GitHub private repos pending auth; chat hole 2026-04</td><td>Workflow <code>wf_6e7b2cbe-dfc</code>: 55 agents, 50 min; <code>corpus/CORPUS-REPORT.md</code></td></tr>
         <tr><td>2</td><td>Implementation strategy (Opus panel, Sonnet judges)</td><td><span class="pill done">done</span></td><td><code>STRATEGY.md</code>: one integer clock, two physics (fields capped at L 0.55, launches in lighter above); launches by session grouping (816 at defaults; time-window control arm reproduces the probe's 415); tree-ring regions, constellation discs, migration bridge over open sea; measured export ≈ 9 min via CDP capture; accepted with four amendments (§12)</td><td>engineer 106 · composer 98 · cartographer 94</td></tr>
-        <tr><td>3</td><td>Thin slice (one Sonnet builder)</td><td><span class="pill running">running</span></td><td>Slice 1 launch strip (the event model, both grouping arms, for Derek's verdict); slice 2 clock and sync probe; slice 3 blooms, tones, bells, legend, hum and static with a timed export</td><td>STRATEGY §10</td></tr>
+        <tr><td>3</td><td>Thin slice (one Sonnet builder)</td><td><span class="pill done">done</span></td><td>Slices 1–3 with receipts: launch strip (both arms), clock + sync probe (0.0 ms), thin slice with blooms, tones, bells, legend, hum, static, collapse; full piece exported in 3.1 min; two defects caught by receipts and fixed</td><td>commits 3930307, c6e4f83, 19d45d1</td></tr>
         <tr><td>4</td><td>Laps (eight one-variable experiments)</td><td><span class="pill pending">pending</span></td><td><code>laps/LAP-NN/RESULT.md</code>, then the full render</td><td>after 3</td></tr>
         <tr><td>—</td><td>Export budget spike</td><td><span class="pill done">done</span></td><td>PNG capture ≈ 250 ms per 1080p frame at 5k, 20k and 80k tiles (canvas draw 3 to 57 ms); a 60-frame H.264 + AAC mp4 verified. Full piece: 1.4 to 1.9 h offline unless frames are piped raw, pages run in parallel, or 24 fps</td><td><code>spikes/01-canvas-budget/RESULT.md</code></td></tr>
         <tr><td>—</td><td>RaidUI reuse (Derek's prior time player)</td><td><span class="pill done">done</span></td><td>Playback core vendored: pure render-state, playback controller with deterministic tick, density grid, overlay compositor, decay trail, scrubber. Missing parts named for the strategists</td><td><code>SURVEY.md §4b</code>, <code>render/vendor/raidui/</code></td></tr>
@@ -117,6 +117,28 @@
     <p style="font-size:13px; color:var(--text-2); margin-top:8px">About 11 minutes; a 90-second cut at a uniform multiple. Lap 3 varies it.</p>
   </section>
 
+  <section class="c12">
+    <h2>Verdict pack 1: the event model and the thin slice (2026-10-09)</h2>
+    <p style="font-size:13px; color:var(--text-2); margin-bottom:10px">Slices 1 to 3 are built with receipts. The full 11-minute piece exported with audio in 3.1 minutes (measured, 10 workers, under bench27 load); frames hash-identical across browsers; sync probe 0.0 ms. Videos: <code>laps/LAP-03-thin-slice/out/{full,cut,excerpt}/final.mp4</code>. Strip: <code>laps/LAP-01-launch-strip/merge-pin/strip-compare.png</code>.</p>
+    <p style="margin:8px 0"><img src="laps/LAP-01-launch-strip/merge-pin/strip-compare.png" alt="Launch strip, session arm above, time-window arm below" style="width:100%; border:1px solid var(--border); border-radius:6px"></p>
+    <p style="display:grid; grid-template-columns: repeat(4, 1fr); gap:8px">
+      <img src="laps/LAP-03-thin-slice/stills/2023-08.png" alt="2023-08" style="width:100%; border:1px solid var(--border); border-radius:4px">
+      <img src="laps/LAP-03-thin-slice/stills/2026-07-05.png" alt="2026-07-05" style="width:100%; border:1px solid var(--border); border-radius:4px">
+      <img src="laps/LAP-03-thin-slice/stills/2026-09-28.png" alt="2026-09-28" style="width:100%; border:1px solid var(--border); border-radius:4px">
+      <img src="laps/LAP-03-thin-slice/stills/2026-10-09.png" alt="2026-10-09" style="width:100%; border:1px solid var(--border); border-radius:4px">
+    </p>
+    <table>
+      <thead><tr><th>Question (Derek's call)</th><th>Arms</th><th>Fable's provisional default</th></tr></thead>
+      <tbody>
+        <tr><td>Grouping of tests into launches</td><td>session (938 git launches, 47 MIRV) · time_window (390, 209 MIRV) · combined</td><td><b>combined</b>: session where a session is observed (294 of 954 tests, mostly after 2026-05), time_window with a 12 h cap otherwise; the time-window strip shows the MIRV cascade from 2026-03 you described</td></tr>
+        <tr><td>Collapse threshold</td><td>8 / 12 / 16 launches per second</td><td>lap after the grouping call; 31 s of chords at 8 with 1,512 launches, less under combined</td></tr>
+        <tr><td>Non-git launches (574 at ≥ 3 files/day)</td><td>min files 3 / 10 / 20; bulk copies excluded</td><td>audit by directory and year in slice 4; raise to 10 if generated pipelines dominate</td></tr>
+        <tr><td>Claude's legend entry</td><td>2026-01-20 (own commits) · 2025-10 (trailer on a third-party lineage)</td><td><b>2026-01-20</b>; footer notes no Claude transcript survives before 2026-05-09</td></tr>
+        <tr><td>Generation chips</td><td>major (opus 4) · minor (opus 4.5, 4.6, 4.7, 4.8)</td><td><b>minor</b>, named in words, last four shown with +n; unversioned trailers get no chip</td></tr>
+        <tr><td>ChatGPT inference for git episodes 2023-11 to 2026-02</td><td>off · time-only · path+time</td><td>path+time only (the 2025 paths need the message graph streamed)</td></tr>
+      </tbody>
+    </table>
+  </section>
   <section class="c12">
     <h2>Laps</h2>
     <table>

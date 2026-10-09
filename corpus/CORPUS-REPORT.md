@@ -611,3 +611,81 @@ Reproduce: `.venv/bin/python -I collect/knownworld/merge.py && .venv/bin/python 
 .venv/bin/python -I collect/knownworld/privacy_scan.py corpus/merged` from `~/work/known-world` with
 `PYTHONDONTWRITEBYTECODE=1 GIT_OPTIONAL_LOCKS=0 GIT_TERMINAL_PROMPT=0`.
 
+
+## 13. Relations and ChatGPT links (task 1b)
+
+`corpus/merged/relations.json` (`collect/knownworld/relations.py`) and `corpus/merged/chatgpt_links.json` (`collect/knownworld/chatgpt_links.py`). Both run with the system `python3 -I` (PyYAML is absent from `.venv`) from the repo root; output is deterministic and `privacy_scan.py corpus/merged` exits 0 with new validators in `allowlists.py`.
+
+### 13a. Manifest repos joined to lineages
+
+| Measure | Count |
+|---|---|
+| manifest repos (12 yaml files plus the jepa graph, lower-cased) | 88 |
+| joined to a lineage | 83 |
+| joined by dirname | 11 |
+| joined by github | 72 |
+| unjoined | 5 |
+| lineages with no manifest entry | 179 |
+
+Join order: github slug (basis `github`; the scanner forbids a key named `slug`), directory basename of `local_path`,
+repo name, aliases, known renames. The name, alias and rename steps matched nothing new: the five renames join by
+slug. Unjoined: resume, tempo, tempo-viewer, tensor, wow-code. `tempo` (the GAD centrepiece), `tempo-viewer` and `wow-
+code` sit outside the collected roots (`E:\World of Warcraft`); `resume` has only the name-only candidate `resume-
+linux`, which is never auto-merged; `tensor` has no clone.
+
+### 13b. Edges
+
+| Type | Edges |
+|---|---|
+| bridges_traffic_to | 1 |
+| consumes | 73 |
+| contract | 32 |
+| control_plane_for | 1 |
+| data_source | 1 |
+| depends_on | 64 |
+| describes_topology_for | 3 |
+| extracted_from | 2 |
+| hosts_awareness_for | 1 |
+| leases_hardware_to | 3 |
+| parent | 2 |
+| produces_data_for | 31 |
+| replaces | 2 |
+| verifies | 7 |
+
+| Scope | Edges |
+|---|---|
+| cross-constellation | 10 |
+| intra | 213 |
+
+10 self-edges dropped from the jepa graph (SURVEY said 8; 10 after lower-casing). 5 jepa edges target a constellation name, not a repo (`dst_kind: constellation`). 24 edges have `since: null` because an endpoint is unjoined. `since` is the later endpoint first_ts from this corpus; the jepa `valid_from` is kept only as `inferred_valid_from`.
+
+### 13c. Integrations, top 10 lineages by count
+
+| Lineage | Total | contracts out/in | data_sources | depends out/in | cross-constellation |
+|---|---|---|---|---|---|
+| baseline | 20 | 1/4 | 0 | 1/13 | 1 |
+| b70tools | 12 | 3/0 | 0 | 1/8 | 0 |
+| comfy-quest | 9 | 2/2 | 0 | 2/3 | 0 |
+| commandcenter | 9 | 2/1 | 0 | 0/4 | 2 |
+| manifest | 7 | 2/0 | 0 | 0/0 | 5 |
+| selfiestick | 7 | 2/1 | 0 | 1/3 | 0 |
+| isolate | 6 | 2/0 | 0 | 1/2 | 1 |
+| comfystewardview | 5 | 0/1 | 0 | 3/1 | 0 |
+| img | 5 | 0/3 | 0 | 2/0 | 0 |
+| ingest | 5 | 1/1 | 0 | 2/1 | 0 |
+
+59 lineages carry at least one integration. Intra-repo contracts are excluded.
+
+### 13d. ChatGPT conversations
+
+| Year | Conversations | With projects |
+|---|---|---|
+| 2023 | 6 | 0 |
+| 2024 | 6 | 0 |
+| 2025 | 211 | 0 |
+| 2026 | 157 | 14 |
+| total | 380 | 14 |
+
+Conversations with a lineage match: 14; distinct lineages matched: 5 (ai-dev-system, ai-systems-research, liveview, stars-app, writing). Artifacts by type: code 3512, execution_output 367. Activity calendar: 189 days as the `chatgpt_activity` series.
+Only drive-letter paths count (D: maps to omen-e); relative, `/mnt/data`, `C:/Users` and `C:/Python312` paths are dropped. All 14 conversations with projects date from 2026; SURVEY's 2025 drive-path claim (from the graph nodes) is not in these projections, so 2023-25 attribute by time only.
+

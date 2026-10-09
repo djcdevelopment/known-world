@@ -1,0 +1,3942 @@
+{
+ "as_of": "2026-10-09T12:45:04Z",
+ "constellations": [
+  {
+   "archetype": "engineering-only",
+   "members": [
+    "404"
+   ],
+   "name": "404-mesh",
+   "primary": "404",
+   "topology": "centered"
+  },
+  {
+   "archetype": "presence",
+   "members": [
+    "b70tools",
+    "battlemage",
+    "campfire",
+    "denning",
+    "discoverlay",
+    "ember",
+    "gad-bot",
+    "guild",
+    "hearth",
+    "lantern",
+    "leopard",
+    "old-goat-new-tricks",
+    "raidui",
+    "tempo",
+    "tempo-viewer",
+    "tempo-workbench",
+    "vllama",
+    "workbench",
+    "wow-code",
+    "xpu-train"
+   ],
+   "name": "GAD",
+   "primary": "tempo",
+   "topology": "centered"
+  },
+  {
+   "archetype": "research-only",
+   "members": [
+    "ai-dev-system",
+    "ai-systems-research",
+    "chatgpt_parser",
+    "liveview",
+    "liveview-ingest",
+    "liveview-ui",
+    "reader",
+    "work-visuals"
+   ],
+   "name": "ai-systems-research",
+   "primary": null,
+   "topology": "peer"
+  },
+  {
+   "archetype": "engineering-only",
+   "members": [
+    "resume"
+   ],
+   "name": "career-proof",
+   "primary": "resume",
+   "topology": "centered"
+  },
+  {
+   "archetype": "engineering-only",
+   "members": [
+    "contextlandscape"
+   ],
+   "name": "contextlandscape",
+   "primary": "contextlandscape",
+   "topology": "centered"
+  },
+  {
+   "archetype": "engineering-only",
+   "members": [
+    "assessment",
+    "baseline",
+    "comfy-quest",
+    "comfymods",
+    "comfystewardview",
+    "deepagents-poc",
+    "deepagents-shot-director",
+    "deepnorthtesting",
+    "dmos",
+    "ismodded",
+    "isolate",
+    "networksense",
+    "sealcompanion",
+    "seer",
+    "selfiestick",
+    "sovereign-shards",
+    "steward-spatial-lab",
+    "totemalert",
+    "unfaded",
+    "valheim-profile-engine"
+   ],
+   "name": "creator-os",
+   "primary": "baseline",
+   "topology": "centered"
+  },
+  {
+   "archetype": "engineering-only",
+   "members": [
+    "game",
+    "lumberjacks-platform"
+   ],
+   "name": "lumberjacks",
+   "primary": "lumberjacks-platform",
+   "topology": "centered"
+  },
+  {
+   "archetype": "engineering-only",
+   "members": [
+    "b70tools",
+    "clippy",
+    "commandcenter",
+    "imagegen",
+    "img",
+    "memsplice",
+    "menu",
+    "tensor",
+    "tuning",
+    "vllama",
+    "vulkancliff",
+    "windtunnel"
+   ],
+   "name": "omen-core",
+   "primary": "commandcenter",
+   "topology": "centered"
+  },
+  {
+   "archetype": "engineering-only",
+   "members": [
+    "notebook"
+   ],
+   "name": "open-notebook",
+   "primary": "notebook",
+   "topology": "centered"
+  },
+  {
+   "archetype": "engineering-only",
+   "members": [
+    "irc",
+    "nightshift"
+   ],
+   "name": "p2p-inference",
+   "primary": "irc",
+   "topology": "centered"
+  },
+  {
+   "archetype": "engineering-only",
+   "members": [
+    "ashley",
+    "contextforge",
+    "farmer",
+    "langfuse",
+    "planner",
+    "planning",
+    "portmap",
+    "precheck",
+    "precheckv2",
+    "scarecrow"
+   ],
+   "name": "planning-spine",
+   "primary": "planning",
+   "topology": "centered"
+  },
+  {
+   "archetype": "engineering-only",
+   "members": [
+    "archify",
+    "articleblitz",
+    "bring-your-own-ollama",
+    "desire-trace",
+    "djcdevelopment",
+    "multi-agent-build-blueprint",
+    "oddlittlebird",
+    "showcase-site",
+    "stars-app",
+    "steppeintegrations-site",
+    "threat-trace"
+   ],
+   "name": "steppe",
+   "primary": "steppeintegrations-site",
+   "topology": "centered"
+  }
+ ],
+ "coverage": {
+  "edges_by_scope": {
+   "cross-constellation": 10,
+   "intra": 213
+  },
+  "edges_by_type": {
+   "bridges_traffic_to": 1,
+   "consumes": 73,
+   "contract": 32,
+   "control_plane_for": 1,
+   "data_source": 1,
+   "depends_on": 64,
+   "describes_topology_for": 3,
+   "extracted_from": 2,
+   "hosts_awareness_for": 1,
+   "leases_hardware_to": 3,
+   "parent": 2,
+   "produces_data_for": 31,
+   "replaces": 2,
+   "verifies": 7
+  },
+  "jepa_self_edges_dropped": 10,
+  "joined": 83,
+  "joined_by_basis": {
+   "dirname": 11,
+   "github": 72
+  },
+  "lineages_without_manifest": 179,
+  "manifest_repos": 88,
+  "unjoined": [
+   "resume",
+   "tempo",
+   "tempo-viewer",
+   "tensor",
+   "wow-code"
+  ]
+ },
+ "edges": [
+  {
+   "dst": "nightshift",
+   "inferred_valid_from": "2026-08-01T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-09-13T02:02:07Z",
+   "source": "jepa",
+   "src": "irc",
+   "type": "bridges_traffic_to"
+  },
+  {
+   "dst": "isolate",
+   "inferred_valid_from": "2026-07-01T00:00:00Z",
+   "scope": "cross-constellation",
+   "since": "2026-09-17T09:39:53Z",
+   "source": "jepa",
+   "src": "404",
+   "type": "consumes"
+  },
+  {
+   "dst": "lumberjacks-platform",
+   "inferred_valid_from": "2026-07-01T00:00:00Z",
+   "scope": "cross-constellation",
+   "since": "2026-09-17T09:39:53Z",
+   "source": "jepa",
+   "src": "404",
+   "type": "consumes"
+  },
+  {
+   "dst": "ai-dev-system",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-03-07T11:14:46Z",
+   "source": "jepa",
+   "src": "ai-systems-research",
+   "type": "consumes"
+  },
+  {
+   "dst": "contextforge",
+   "inferred_valid_from": "2026-04-08T22:58:02-07:00",
+   "scope": "intra",
+   "since": "2026-04-03T06:02:14Z",
+   "source": "jepa",
+   "src": "ashley",
+   "type": "consumes"
+  },
+  {
+   "dst": "comfy-quest",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-07-02T06:55:09Z",
+   "source": "jepa",
+   "src": "baseline",
+   "type": "consumes"
+  },
+  {
+   "dst": "isolate",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-08-07T15:25:59Z",
+   "source": "jepa",
+   "src": "baseline",
+   "type": "consumes"
+  },
+  {
+   "dst": "networksense",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-07-03T23:49:06Z",
+   "source": "jepa",
+   "src": "baseline",
+   "type": "consumes"
+  },
+  {
+   "dst": "b70tools",
+   "inferred_valid_from": "2026-09-04T11:35:21-07:00",
+   "scope": "intra",
+   "since": "2026-08-25T05:05:12Z",
+   "source": "jepa",
+   "src": "clippy",
+   "type": "consumes"
+  },
+  {
+   "dst": "commandcenter",
+   "inferred_valid_from": "2026-09-04T11:35:21-07:00",
+   "scope": "intra",
+   "since": "2026-08-25T05:05:12Z",
+   "source": "jepa",
+   "src": "clippy",
+   "type": "consumes"
+  },
+  {
+   "dst": "baseline",
+   "inferred_valid_from": "2026-09-15T14:23:10-07:00",
+   "scope": "intra",
+   "since": "2026-07-02T06:55:09Z",
+   "source": "jepa",
+   "src": "comfy-quest",
+   "type": "consumes"
+  },
+  {
+   "dst": "isolate",
+   "inferred_valid_from": "2026-09-15T14:23:10-07:00",
+   "scope": "intra",
+   "since": "2026-08-07T15:25:59Z",
+   "source": "jepa",
+   "src": "comfy-quest",
+   "type": "consumes"
+  },
+  {
+   "dst": "networksense",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-07-03T23:49:06Z",
+   "source": "jepa",
+   "src": "comfy-quest",
+   "type": "consumes"
+  },
+  {
+   "dst": "valheim-profile-engine",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-09-16T07:52:20Z",
+   "source": "jepa",
+   "src": "comfy-quest",
+   "type": "consumes"
+  },
+  {
+   "dst": "baseline",
+   "inferred_valid_from": "2026-09-15T17:11:44-07:00",
+   "scope": "intra",
+   "since": "2026-03-24T13:10:06Z",
+   "source": "jepa",
+   "src": "comfystewardview",
+   "type": "consumes"
+  },
+  {
+   "dst": "selfiestick",
+   "inferred_valid_from": "2026-09-15T17:11:44-07:00",
+   "scope": "intra",
+   "since": "2026-09-15T07:42:36Z",
+   "source": "jepa",
+   "src": "comfystewardview",
+   "type": "consumes"
+  },
+  {
+   "dst": "b70tools",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-07-03T01:41:29Z",
+   "source": "jepa",
+   "src": "commandcenter",
+   "type": "consumes"
+  },
+  {
+   "dst": "dmos",
+   "inferred_valid_from": "2026-09-12T23:08:35-07:00",
+   "scope": "intra",
+   "since": "2026-09-12T10:43:29Z",
+   "source": "jepa",
+   "src": "deepagents-shot-director",
+   "type": "consumes"
+  },
+  {
+   "dst": "selfiestick",
+   "inferred_valid_from": "2026-09-12T23:08:35-07:00",
+   "scope": "intra",
+   "since": "2026-09-15T07:42:36Z",
+   "source": "jepa",
+   "src": "deepagents-shot-director",
+   "type": "consumes"
+  },
+  {
+   "dst": "xpu-train",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-06-22T10:35:08Z",
+   "source": "jepa",
+   "src": "denning",
+   "type": "consumes"
+  },
+  {
+   "dst": "steppeintegrations-site",
+   "inferred_valid_from": "2026-06-16T06:36:33-07:00",
+   "scope": "intra",
+   "since": "2026-04-09T09:55:57Z",
+   "source": "jepa",
+   "src": "desire-trace",
+   "type": "consumes"
+  },
+  {
+   "dst": "b70tools",
+   "inferred_valid_from": "2026-06-09T19:37:17-07:00",
+   "scope": "intra",
+   "since": "2026-05-31T12:06:01Z",
+   "source": "jepa",
+   "src": "discoverlay",
+   "type": "consumes"
+  },
+  {
+   "dst": "leopard",
+   "inferred_valid_from": "2026-06-09T19:37:17-07:00",
+   "scope": "intra",
+   "since": "2026-06-04T04:53:56Z",
+   "source": "jepa",
+   "src": "discoverlay",
+   "type": "consumes"
+  },
+  {
+   "dst": "tempo",
+   "inferred_valid_from": "2026-06-09T19:37:17-07:00",
+   "scope": "intra",
+   "since": null,
+   "source": "jepa",
+   "src": "discoverlay",
+   "type": "consumes"
+  },
+  {
+   "dst": "comfy-quest",
+   "inferred_valid_from": "2026-09-09T01:44:37-07:00",
+   "scope": "intra",
+   "since": "2026-09-03T18:03:56Z",
+   "source": "jepa",
+   "src": "dmos",
+   "type": "consumes"
+  },
+  {
+   "dst": "selfiestick",
+   "inferred_valid_from": "2026-09-09T01:44:37-07:00",
+   "scope": "intra",
+   "since": "2026-09-15T07:42:36Z",
+   "source": "jepa",
+   "src": "dmos",
+   "type": "consumes"
+  },
+  {
+   "dst": "b70tools",
+   "inferred_valid_from": "2026-09-22T23:16:42-07:00",
+   "scope": "intra",
+   "since": "2026-05-29T06:28:08Z",
+   "source": "jepa",
+   "src": "ember",
+   "type": "consumes"
+  },
+  {
+   "dst": "manifest",
+   "inferred_valid_from": "2026-06-11T00:00:00Z",
+   "scope": "cross-constellation",
+   "since": "2026-05-28T10:04:14Z",
+   "source": "jepa",
+   "src": "ember",
+   "type": "consumes"
+  },
+  {
+   "dst": "vllama",
+   "inferred_valid_from": "2026-09-22T23:16:42-07:00",
+   "scope": "intra",
+   "since": "2026-06-04T08:09:46Z",
+   "source": "jepa",
+   "src": "ember",
+   "type": "consumes"
+  },
+  {
+   "dst": "planning",
+   "inferred_valid_from": "2026-05-07T01:25:37-07:00",
+   "scope": "intra",
+   "since": "2026-04-07T04:01:24Z",
+   "source": "jepa",
+   "src": "farmer",
+   "type": "consumes"
+  },
+  {
+   "dst": "portmap",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-04-06T19:50:37Z",
+   "source": "jepa",
+   "src": "farmer",
+   "type": "consumes"
+  },
+  {
+   "dst": "lumberjacks-platform",
+   "inferred_valid_from": "2026-05-07T01:29:02-07:00",
+   "scope": "intra",
+   "since": "2026-03-24T13:10:06Z",
+   "source": "jepa",
+   "src": "game",
+   "type": "consumes"
+  },
+  {
+   "dst": "campfire",
+   "inferred_valid_from": "2026-05-16T16:24:23-07:00",
+   "scope": "intra",
+   "since": "2026-05-15T17:31:02Z",
+   "source": "jepa",
+   "src": "hearth",
+   "type": "consumes"
+  },
+  {
+   "dst": "lantern",
+   "inferred_valid_from": "2026-05-16T16:24:23-07:00",
+   "scope": "intra",
+   "since": "2026-05-17T12:20:42Z",
+   "source": "jepa",
+   "src": "hearth",
+   "type": "consumes"
+  },
+  {
+   "dst": "raidui",
+   "inferred_valid_from": "2026-05-16T16:24:23-07:00",
+   "scope": "intra",
+   "since": "2026-05-15T17:31:02Z",
+   "source": "jepa",
+   "src": "hearth",
+   "type": "consumes"
+  },
+  {
+   "dst": "commandcenter",
+   "inferred_valid_from": "2026-01-01T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-07-04T18:48:29Z",
+   "source": "jepa",
+   "src": "imagegen",
+   "type": "consumes"
+  },
+  {
+   "dst": "b70tools",
+   "inferred_valid_from": "2026-09-03T11:54:43-07:00",
+   "scope": "intra",
+   "since": "2026-05-29T06:28:08Z",
+   "source": "jepa",
+   "src": "img",
+   "type": "consumes"
+  },
+  {
+   "dst": "clippy",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-08-25T05:05:12Z",
+   "source": "jepa",
+   "src": "img",
+   "type": "consumes"
+  },
+  {
+   "dst": "commandcenter",
+   "inferred_valid_from": "2026-09-03T11:54:43-07:00",
+   "scope": "intra",
+   "since": "2026-07-03T01:41:29Z",
+   "source": "jepa",
+   "src": "img",
+   "type": "consumes"
+  },
+  {
+   "dst": "baseline",
+   "inferred_valid_from": "2026-09-20T15:22:39-07:00",
+   "scope": "intra",
+   "since": "2026-09-13T04:38:59Z",
+   "source": "jepa",
+   "src": "ismodded",
+   "type": "consumes"
+  },
+  {
+   "dst": "baseline",
+   "inferred_valid_from": "2026-09-16T02:02:34-07:00",
+   "scope": "intra",
+   "since": "2026-08-07T15:25:59Z",
+   "source": "jepa",
+   "src": "isolate",
+   "type": "consumes"
+  },
+  {
+   "dst": "tempo",
+   "inferred_valid_from": "2026-05-22T00:03:19-07:00",
+   "scope": "intra",
+   "since": null,
+   "source": "jepa",
+   "src": "lantern",
+   "type": "consumes"
+  },
+  {
+   "dst": "tempo",
+   "inferred_valid_from": "2026-06-16T07:44:40-07:00",
+   "scope": "intra",
+   "since": null,
+   "source": "jepa",
+   "src": "leopard",
+   "type": "consumes"
+  },
+  {
+   "dst": "ai-dev-system",
+   "inferred_valid_from": "2026-03-11T06:44:53-07:00",
+   "scope": "intra",
+   "since": "2026-03-07T03:08:21Z",
+   "source": "jepa",
+   "src": "liveview-ingest",
+   "type": "consumes"
+  },
+  {
+   "dst": "chatgpt_parser",
+   "inferred_valid_from": "2026-03-11T06:44:53-07:00",
+   "scope": "intra",
+   "since": "2026-03-13T06:06:22Z",
+   "source": "jepa",
+   "src": "liveview-ingest",
+   "type": "consumes"
+  },
+  {
+   "dst": "chatgpt_parser",
+   "inferred_valid_from": "2026-04-08T22:59:35-07:00",
+   "scope": "intra",
+   "since": "2026-03-13T06:06:22Z",
+   "source": "jepa",
+   "src": "liveview-ui",
+   "type": "consumes"
+  },
+  {
+   "dst": "liveview-ingest",
+   "inferred_valid_from": "2026-04-08T22:59:35-07:00",
+   "scope": "intra",
+   "since": "2026-03-07T03:08:43Z",
+   "source": "jepa",
+   "src": "liveview-ui",
+   "type": "consumes"
+  },
+  {
+   "dst": "commandcenter",
+   "inferred_valid_from": "2026-09-21T21:33:14-07:00",
+   "scope": "intra",
+   "since": "2026-09-21T01:43:59Z",
+   "source": "jepa",
+   "src": "menu",
+   "type": "consumes"
+  },
+  {
+   "dst": "baseline",
+   "inferred_valid_from": "2026-09-14T20:23:21-07:00",
+   "scope": "intra",
+   "since": "2026-07-03T23:49:06Z",
+   "source": "jepa",
+   "src": "networksense",
+   "type": "consumes"
+  },
+  {
+   "dst": "irc",
+   "inferred_valid_from": "2026-09-13T06:33:08-07:00",
+   "scope": "intra",
+   "since": "2026-09-13T02:02:07Z",
+   "source": "jepa",
+   "src": "nightshift",
+   "type": "consumes"
+  },
+  {
+   "dst": "portmap",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-04-07T04:01:24Z",
+   "source": "jepa",
+   "src": "planning",
+   "type": "consumes"
+  },
+  {
+   "dst": "planning",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-04-07T04:01:24Z",
+   "source": "jepa",
+   "src": "precheck",
+   "type": "consumes"
+  },
+  {
+   "dst": "precheck",
+   "inferred_valid_from": "2026-04-04T08:01:30-07:00",
+   "scope": "intra",
+   "since": "2026-04-04T15:01:30Z",
+   "source": "jepa",
+   "src": "precheckv2",
+   "type": "consumes"
+  },
+  {
+   "dst": "baseline",
+   "inferred_valid_from": "2026-09-16T23:40:07-07:00",
+   "scope": "intra",
+   "since": "2026-09-12T08:01:28Z",
+   "source": "jepa",
+   "src": "sealcompanion",
+   "type": "consumes"
+  },
+  {
+   "dst": "baseline",
+   "inferred_valid_from": "2026-05-26T00:07:22-07:00",
+   "scope": "intra",
+   "since": "2026-05-26T07:07:22Z",
+   "source": "jepa",
+   "src": "seer",
+   "type": "consumes"
+  },
+  {
+   "dst": "baseline",
+   "inferred_valid_from": "2026-09-20T15:24:35-07:00",
+   "scope": "intra",
+   "since": "2026-09-15T07:42:36Z",
+   "source": "jepa",
+   "src": "selfiestick",
+   "type": "consumes"
+  },
+  {
+   "dst": "valheim-profile-engine",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-09-16T07:52:20Z",
+   "source": "jepa",
+   "src": "selfiestick",
+   "type": "consumes"
+  },
+  {
+   "dst": "oddlittlebird",
+   "inferred_valid_from": "2026-07-20T16:20:21Z",
+   "scope": "intra",
+   "since": "2026-07-21T00:12:24Z",
+   "source": "jepa",
+   "src": "showcase-site",
+   "type": "consumes"
+  },
+  {
+   "dst": "comfy-quest",
+   "inferred_valid_from": "2026-09-08T15:06:52-07:00",
+   "scope": "intra",
+   "since": "2026-08-12T06:33:45Z",
+   "source": "jepa",
+   "src": "sovereign-shards",
+   "type": "consumes"
+  },
+  {
+   "dst": "isolate",
+   "inferred_valid_from": "2026-09-08T15:06:52-07:00",
+   "scope": "intra",
+   "since": "2026-08-12T06:33:45Z",
+   "source": "jepa",
+   "src": "sovereign-shards",
+   "type": "consumes"
+  },
+  {
+   "dst": "tempo",
+   "inferred_valid_from": "2026-04-23T17:34:50-07:00",
+   "scope": "intra",
+   "since": null,
+   "source": "jepa",
+   "src": "tempo-viewer",
+   "type": "consumes"
+  },
+  {
+   "dst": "b70tools",
+   "inferred_valid_from": "2026-06-22T23:02:10-07:00",
+   "scope": "intra",
+   "since": "2026-06-23T06:02:10Z",
+   "source": "jepa",
+   "src": "tempo-workbench",
+   "type": "consumes"
+  },
+  {
+   "dst": "tempo",
+   "inferred_valid_from": "2026-06-22T23:02:10-07:00",
+   "scope": "intra",
+   "since": null,
+   "source": "jepa",
+   "src": "tempo-workbench",
+   "type": "consumes"
+  },
+  {
+   "dst": "b70tools",
+   "inferred_valid_from": "2026-09-09T00:26:57-07:00",
+   "scope": "intra",
+   "since": null,
+   "source": "jepa",
+   "src": "tensor",
+   "type": "consumes"
+  },
+  {
+   "dst": "steppeintegrations-site",
+   "inferred_valid_from": "2026-04-30T02:10:29-07:00",
+   "scope": "intra",
+   "since": "2026-04-30T04:28:44Z",
+   "source": "jepa",
+   "src": "threat-trace",
+   "type": "consumes"
+  },
+  {
+   "dst": "baseline",
+   "inferred_valid_from": "2026-09-20T15:22:39-07:00",
+   "scope": "intra",
+   "since": "2026-08-13T05:37:47Z",
+   "source": "jepa",
+   "src": "totemalert",
+   "type": "consumes"
+  },
+  {
+   "dst": "baseline",
+   "inferred_valid_from": "2026-09-20T15:22:39-07:00",
+   "scope": "intra",
+   "since": "2026-09-13T12:19:03Z",
+   "source": "jepa",
+   "src": "unfaded",
+   "type": "consumes"
+  },
+  {
+   "dst": "baseline",
+   "inferred_valid_from": "2026-09-20T15:24:11-07:00",
+   "scope": "intra",
+   "since": "2026-09-16T07:52:20Z",
+   "source": "jepa",
+   "src": "valheim-profile-engine",
+   "type": "consumes"
+  },
+  {
+   "dst": "b70tools",
+   "inferred_valid_from": "2026-06-17T07:11:08-07:00",
+   "scope": "intra",
+   "since": "2026-06-04T08:09:46Z",
+   "source": "jepa",
+   "src": "vllama",
+   "type": "consumes"
+  },
+  {
+   "dst": "liveview",
+   "inferred_valid_from": "2026-04-08T23:58:21-07:00",
+   "scope": "intra",
+   "since": "2026-04-09T06:50:37Z",
+   "source": "jepa",
+   "src": "work-visuals",
+   "type": "consumes"
+  },
+  {
+   "dst": "campfire",
+   "inferred_valid_from": "2026-06-05T13:39:52-07:00",
+   "scope": "intra",
+   "since": "2026-06-04T05:06:53Z",
+   "source": "jepa",
+   "src": "workbench",
+   "type": "consumes"
+  },
+  {
+   "dst": "tempo",
+   "inferred_valid_from": "2026-06-05T13:39:52-07:00",
+   "scope": "intra",
+   "since": null,
+   "source": "jepa",
+   "src": "workbench",
+   "type": "consumes"
+  },
+  {
+   "dst": "tempo",
+   "inferred_valid_from": "2026-04-18T22:27:55-07:00",
+   "scope": "intra",
+   "since": null,
+   "source": "jepa",
+   "src": "wow-code",
+   "type": "consumes"
+  },
+  {
+   "dst": "battlemage",
+   "inferred_valid_from": "2026-06-22T03:35:08-07:00",
+   "scope": "intra",
+   "since": "2026-06-22T10:35:08Z",
+   "source": "jepa",
+   "src": "xpu-train",
+   "type": "consumes"
+  },
+  {
+   "dst": "ai-systems-research",
+   "scope": "intra",
+   "since": "2026-03-07T11:14:46Z",
+   "source": "yaml",
+   "src": "ai-dev-system",
+   "type": "contract"
+  },
+  {
+   "dst": "liveview-ingest",
+   "scope": "intra",
+   "since": "2026-03-07T03:08:21Z",
+   "source": "yaml",
+   "src": "ai-dev-system",
+   "type": "contract"
+  },
+  {
+   "dst": "commandcenter",
+   "scope": "intra",
+   "since": "2026-07-03T01:41:29Z",
+   "source": "yaml",
+   "src": "b70tools",
+   "type": "contract"
+  },
+  {
+   "dst": "img",
+   "scope": "intra",
+   "since": "2026-05-29T06:28:08Z",
+   "source": "yaml",
+   "src": "b70tools",
+   "type": "contract"
+  },
+  {
+   "dst": "vllama",
+   "scope": "intra",
+   "since": "2026-06-04T08:09:46Z",
+   "source": "yaml",
+   "src": "b70tools",
+   "type": "contract"
+  },
+  {
+   "dst": "liveview-ui",
+   "scope": "intra",
+   "since": "2026-03-13T06:06:22Z",
+   "source": "yaml",
+   "src": "chatgpt_parser",
+   "type": "contract"
+  },
+  {
+   "dst": "img",
+   "scope": "intra",
+   "since": "2026-08-25T05:05:12Z",
+   "source": "yaml",
+   "src": "clippy",
+   "type": "contract"
+  },
+  {
+   "dst": "baseline",
+   "scope": "intra",
+   "since": "2026-07-02T06:55:09Z",
+   "source": "yaml",
+   "src": "comfy-quest",
+   "type": "contract"
+  },
+  {
+   "dst": "sovereign-shards",
+   "scope": "intra",
+   "since": "2026-08-12T06:33:45Z",
+   "source": "yaml",
+   "src": "comfy-quest",
+   "type": "contract"
+  },
+  {
+   "dst": "clippy",
+   "scope": "intra",
+   "since": "2026-08-25T05:05:12Z",
+   "source": "yaml",
+   "src": "commandcenter",
+   "type": "contract"
+  },
+  {
+   "dst": "img",
+   "scope": "intra",
+   "since": "2026-07-03T01:41:29Z",
+   "source": "yaml",
+   "src": "commandcenter",
+   "type": "contract"
+  },
+  {
+   "dst": "ashley",
+   "scope": "intra",
+   "since": "2026-04-03T06:02:14Z",
+   "source": "yaml",
+   "src": "contextforge",
+   "type": "contract"
+  },
+  {
+   "dst": "nightshift",
+   "scope": "intra",
+   "since": "2026-09-13T02:02:07Z",
+   "source": "yaml",
+   "src": "irc",
+   "type": "contract"
+  },
+  {
+   "dst": "baseline",
+   "scope": "intra",
+   "since": "2026-08-07T15:25:59Z",
+   "source": "yaml",
+   "src": "isolate",
+   "type": "contract"
+  },
+  {
+   "dst": "sovereign-shards",
+   "scope": "intra",
+   "since": "2026-08-12T06:33:45Z",
+   "source": "yaml",
+   "src": "isolate",
+   "type": "contract"
+  },
+  {
+   "dst": "ai-systems-research",
+   "scope": "intra",
+   "since": null,
+   "source": "yaml",
+   "src": "jepa",
+   "type": "contract"
+  },
+  {
+   "dst": "liveview-ui",
+   "scope": "intra",
+   "since": "2026-03-07T03:08:43Z",
+   "source": "yaml",
+   "src": "liveview-ingest",
+   "type": "contract"
+  },
+  {
+   "dst": "game",
+   "scope": "intra",
+   "since": "2026-03-24T13:10:06Z",
+   "source": "yaml",
+   "src": "lumberjacks-platform",
+   "type": "contract"
+  },
+  {
+   "dst": "ai-systems-research",
+   "scope": "cross-constellation",
+   "since": "2026-05-28T10:04:14Z",
+   "source": "yaml",
+   "src": "manifest",
+   "type": "contract"
+  },
+  {
+   "dst": "jepa",
+   "scope": "intra",
+   "since": null,
+   "source": "yaml",
+   "src": "manifest",
+   "type": "contract"
+  },
+  {
+   "dst": "baseline",
+   "scope": "intra",
+   "since": "2026-07-03T23:49:06Z",
+   "source": "yaml",
+   "src": "networksense",
+   "type": "contract"
+  },
+  {
+   "dst": "comfy-quest",
+   "scope": "intra",
+   "since": "2026-07-03T23:49:06Z",
+   "source": "yaml",
+   "src": "networksense",
+   "type": "contract"
+  },
+  {
+   "dst": "precheck",
+   "scope": "intra",
+   "since": "2026-04-07T04:01:24Z",
+   "source": "yaml",
+   "src": "planning",
+   "type": "contract"
+  },
+  {
+   "dst": "farmer",
+   "scope": "intra",
+   "since": "2026-04-06T19:50:37Z",
+   "source": "yaml",
+   "src": "portmap",
+   "type": "contract"
+  },
+  {
+   "dst": "planning",
+   "scope": "intra",
+   "since": "2026-04-07T04:01:24Z",
+   "source": "yaml",
+   "src": "portmap",
+   "type": "contract"
+  },
+  {
+   "dst": "comfystewardview",
+   "scope": "intra",
+   "since": "2026-09-15T07:42:36Z",
+   "source": "yaml",
+   "src": "selfiestick",
+   "type": "contract"
+  },
+  {
+   "dst": "dmos",
+   "scope": "intra",
+   "since": "2026-09-15T07:42:36Z",
+   "source": "yaml",
+   "src": "selfiestick",
+   "type": "contract"
+  },
+  {
+   "dst": "desire-trace",
+   "scope": "intra",
+   "since": "2026-04-09T09:55:57Z",
+   "source": "yaml",
+   "src": "steppeintegrations-site",
+   "type": "contract"
+  },
+  {
+   "dst": "threat-trace",
+   "scope": "intra",
+   "since": "2026-04-30T04:28:44Z",
+   "source": "yaml",
+   "src": "steppeintegrations-site",
+   "type": "contract"
+  },
+  {
+   "dst": "comfy-quest",
+   "scope": "intra",
+   "since": "2026-09-16T07:52:20Z",
+   "source": "yaml",
+   "src": "valheim-profile-engine",
+   "type": "contract"
+  },
+  {
+   "dst": "selfiestick",
+   "scope": "intra",
+   "since": "2026-09-16T07:52:20Z",
+   "source": "yaml",
+   "src": "valheim-profile-engine",
+   "type": "contract"
+  },
+  {
+   "dst": "denning",
+   "scope": "intra",
+   "since": "2026-06-22T10:35:08Z",
+   "source": "yaml",
+   "src": "xpu-train",
+   "type": "contract"
+  },
+  {
+   "dst": "omen-core",
+   "dst_kind": "constellation",
+   "inferred_valid_from": "2026-06-01T00:00:00Z",
+   "scope": "cross-constellation",
+   "since": null,
+   "source": "jepa",
+   "src": "commandcenter",
+   "type": "control_plane_for"
+  },
+  {
+   "dst": "chatgpt_parser",
+   "scope": "intra",
+   "since": "2026-03-13T06:06:22Z",
+   "source": "yaml",
+   "src": "data_source:chatgpt_export",
+   "src_kind": "data_source",
+   "type": "data_source"
+  },
+  {
+   "dst": "contextforge",
+   "scope": "intra",
+   "since": "2026-04-03T06:02:14Z",
+   "source": "yaml",
+   "src": "ashley",
+   "type": "depends_on"
+  },
+  {
+   "dst": "comfy-quest",
+   "scope": "intra",
+   "since": "2026-08-19T05:42:53Z",
+   "source": "yaml",
+   "src": "assessment",
+   "type": "depends_on"
+  },
+  {
+   "dst": "battlemage",
+   "scope": "intra",
+   "since": "2026-05-29T06:28:08Z",
+   "source": "yaml",
+   "src": "b70tools",
+   "type": "depends_on"
+  },
+  {
+   "dst": "b70tools",
+   "scope": "intra",
+   "since": "2026-08-25T05:05:12Z",
+   "source": "yaml",
+   "src": "clippy",
+   "type": "depends_on"
+  },
+  {
+   "dst": "commandcenter",
+   "scope": "intra",
+   "since": "2026-08-25T05:05:12Z",
+   "source": "yaml",
+   "src": "clippy",
+   "type": "depends_on"
+  },
+  {
+   "dst": "baseline",
+   "scope": "intra",
+   "since": "2026-07-02T06:55:09Z",
+   "source": "yaml",
+   "src": "comfy-quest",
+   "type": "depends_on"
+  },
+  {
+   "dst": "isolate",
+   "scope": "intra",
+   "since": "2026-08-07T15:25:59Z",
+   "source": "yaml",
+   "src": "comfy-quest",
+   "type": "depends_on"
+  },
+  {
+   "dst": "baseline",
+   "scope": "intra",
+   "since": "2026-03-24T13:10:06Z",
+   "source": "yaml",
+   "src": "comfystewardview",
+   "type": "depends_on"
+  },
+  {
+   "dst": "selfiestick",
+   "scope": "intra",
+   "since": "2026-09-15T07:42:36Z",
+   "source": "yaml",
+   "src": "comfystewardview",
+   "type": "depends_on"
+  },
+  {
+   "dst": "deepagents-shot-director",
+   "scope": "intra",
+   "since": "2026-09-17T13:43:37Z",
+   "source": "yaml",
+   "src": "deepagents-poc",
+   "type": "depends_on"
+  },
+  {
+   "dst": "dmos",
+   "scope": "intra",
+   "since": "2026-09-12T10:43:29Z",
+   "source": "yaml",
+   "src": "deepagents-shot-director",
+   "type": "depends_on"
+  },
+  {
+   "dst": "selfiestick",
+   "scope": "intra",
+   "since": "2026-09-15T07:42:36Z",
+   "source": "yaml",
+   "src": "deepagents-shot-director",
+   "type": "depends_on"
+  },
+  {
+   "dst": "baseline",
+   "scope": "intra",
+   "since": "2026-09-12T08:01:28Z",
+   "source": "yaml",
+   "src": "deepnorthtesting",
+   "type": "depends_on"
+  },
+  {
+   "dst": "b70tools",
+   "scope": "intra",
+   "since": "2026-06-19T13:08:04Z",
+   "source": "yaml",
+   "src": "denning",
+   "type": "depends_on"
+  },
+  {
+   "dst": "battlemage",
+   "scope": "intra",
+   "since": "2026-06-19T13:08:04Z",
+   "source": "yaml",
+   "src": "denning",
+   "type": "depends_on"
+  },
+  {
+   "dst": "steppeintegrations-site",
+   "scope": "intra",
+   "since": "2026-04-09T09:55:57Z",
+   "source": "yaml",
+   "src": "desire-trace",
+   "type": "depends_on"
+  },
+  {
+   "dst": "b70tools",
+   "scope": "intra",
+   "since": "2026-05-31T12:06:01Z",
+   "source": "yaml",
+   "src": "discoverlay",
+   "type": "depends_on"
+  },
+  {
+   "dst": "leopard",
+   "scope": "intra",
+   "since": "2026-06-04T04:53:56Z",
+   "source": "yaml",
+   "src": "discoverlay",
+   "type": "depends_on"
+  },
+  {
+   "dst": "tempo",
+   "scope": "intra",
+   "since": null,
+   "source": "yaml",
+   "src": "discoverlay",
+   "type": "depends_on"
+  },
+  {
+   "dst": "comfy-quest",
+   "scope": "intra",
+   "since": "2026-09-03T18:03:56Z",
+   "source": "yaml",
+   "src": "dmos",
+   "type": "depends_on"
+  },
+  {
+   "dst": "selfiestick",
+   "scope": "intra",
+   "since": "2026-09-15T07:42:36Z",
+   "source": "yaml",
+   "src": "dmos",
+   "type": "depends_on"
+  },
+  {
+   "dst": "b70tools",
+   "scope": "intra",
+   "since": "2026-05-29T06:28:08Z",
+   "source": "yaml",
+   "src": "ember",
+   "type": "depends_on"
+  },
+  {
+   "dst": "vllama",
+   "scope": "intra",
+   "since": "2026-06-04T08:09:46Z",
+   "source": "yaml",
+   "src": "ember",
+   "type": "depends_on"
+  },
+  {
+   "dst": "planning",
+   "scope": "intra",
+   "since": "2026-04-07T04:01:24Z",
+   "source": "yaml",
+   "src": "farmer",
+   "type": "depends_on"
+  },
+  {
+   "dst": "lumberjacks-platform",
+   "scope": "intra",
+   "since": "2026-03-24T13:10:06Z",
+   "source": "yaml",
+   "src": "game",
+   "type": "depends_on"
+  },
+  {
+   "dst": "campfire",
+   "scope": "intra",
+   "since": "2026-05-15T17:31:02Z",
+   "source": "yaml",
+   "src": "hearth",
+   "type": "depends_on"
+  },
+  {
+   "dst": "lantern",
+   "scope": "intra",
+   "since": "2026-05-17T12:20:42Z",
+   "source": "yaml",
+   "src": "hearth",
+   "type": "depends_on"
+  },
+  {
+   "dst": "raidui",
+   "scope": "intra",
+   "since": "2026-05-15T17:31:02Z",
+   "source": "yaml",
+   "src": "hearth",
+   "type": "depends_on"
+  },
+  {
+   "dst": "commandcenter",
+   "scope": "intra",
+   "since": "2026-07-04T18:48:29Z",
+   "source": "yaml",
+   "src": "imagegen",
+   "type": "depends_on"
+  },
+  {
+   "dst": "b70tools",
+   "scope": "intra",
+   "since": "2026-05-29T06:28:08Z",
+   "source": "yaml",
+   "src": "img",
+   "type": "depends_on"
+  },
+  {
+   "dst": "commandcenter",
+   "scope": "intra",
+   "since": "2026-07-03T01:41:29Z",
+   "source": "yaml",
+   "src": "img",
+   "type": "depends_on"
+  },
+  {
+   "dst": "baseline",
+   "scope": "intra",
+   "since": "2026-09-13T04:38:59Z",
+   "source": "yaml",
+   "src": "ismodded",
+   "type": "depends_on"
+  },
+  {
+   "dst": "baseline",
+   "scope": "intra",
+   "since": "2026-08-07T15:25:59Z",
+   "source": "yaml",
+   "src": "isolate",
+   "type": "depends_on"
+  },
+  {
+   "dst": "tempo",
+   "scope": "intra",
+   "since": null,
+   "source": "yaml",
+   "src": "lantern",
+   "type": "depends_on"
+  },
+  {
+   "dst": "tempo",
+   "scope": "intra",
+   "since": null,
+   "source": "yaml",
+   "src": "leopard",
+   "type": "depends_on"
+  },
+  {
+   "dst": "ai-dev-system",
+   "scope": "intra",
+   "since": "2026-03-07T03:08:21Z",
+   "source": "yaml",
+   "src": "liveview-ingest",
+   "type": "depends_on"
+  },
+  {
+   "dst": "chatgpt_parser",
+   "scope": "intra",
+   "since": "2026-03-13T06:06:22Z",
+   "source": "yaml",
+   "src": "liveview-ingest",
+   "type": "depends_on"
+  },
+  {
+   "dst": "chatgpt_parser",
+   "scope": "intra",
+   "since": "2026-03-13T06:06:22Z",
+   "source": "yaml",
+   "src": "liveview-ui",
+   "type": "depends_on"
+  },
+  {
+   "dst": "liveview-ingest",
+   "scope": "intra",
+   "since": "2026-03-07T03:08:43Z",
+   "source": "yaml",
+   "src": "liveview-ui",
+   "type": "depends_on"
+  },
+  {
+   "dst": "commandcenter",
+   "scope": "intra",
+   "since": "2026-09-21T01:43:59Z",
+   "source": "yaml",
+   "src": "menu",
+   "type": "depends_on"
+  },
+  {
+   "dst": "baseline",
+   "scope": "intra",
+   "since": "2026-07-03T23:49:06Z",
+   "source": "yaml",
+   "src": "networksense",
+   "type": "depends_on"
+  },
+  {
+   "dst": "irc",
+   "scope": "intra",
+   "since": "2026-09-13T02:02:07Z",
+   "source": "yaml",
+   "src": "nightshift",
+   "type": "depends_on"
+  },
+  {
+   "dst": "precheck",
+   "scope": "intra",
+   "since": "2026-04-04T15:01:30Z",
+   "source": "yaml",
+   "src": "precheckv2",
+   "type": "depends_on"
+  },
+  {
+   "dst": "baseline",
+   "scope": "intra",
+   "since": "2026-09-12T08:01:28Z",
+   "source": "yaml",
+   "src": "sealcompanion",
+   "type": "depends_on"
+  },
+  {
+   "dst": "baseline",
+   "scope": "intra",
+   "since": "2026-05-26T07:07:22Z",
+   "source": "yaml",
+   "src": "seer",
+   "type": "depends_on"
+  },
+  {
+   "dst": "baseline",
+   "scope": "intra",
+   "since": "2026-09-15T07:42:36Z",
+   "source": "yaml",
+   "src": "selfiestick",
+   "type": "depends_on"
+  },
+  {
+   "dst": "oddlittlebird",
+   "scope": "intra",
+   "since": "2026-07-21T00:12:24Z",
+   "source": "yaml",
+   "src": "showcase-site",
+   "type": "depends_on"
+  },
+  {
+   "dst": "comfy-quest",
+   "scope": "intra",
+   "since": "2026-08-12T06:33:45Z",
+   "source": "yaml",
+   "src": "sovereign-shards",
+   "type": "depends_on"
+  },
+  {
+   "dst": "isolate",
+   "scope": "intra",
+   "since": "2026-08-12T06:33:45Z",
+   "source": "yaml",
+   "src": "sovereign-shards",
+   "type": "depends_on"
+  },
+  {
+   "dst": "comfystewardview",
+   "scope": "intra",
+   "since": "2026-03-19T17:57:37Z",
+   "source": "yaml",
+   "src": "steward-spatial-lab",
+   "type": "depends_on"
+  },
+  {
+   "dst": "tempo",
+   "scope": "intra",
+   "since": null,
+   "source": "yaml",
+   "src": "tempo-viewer",
+   "type": "depends_on"
+  },
+  {
+   "dst": "b70tools",
+   "scope": "intra",
+   "since": "2026-06-23T06:02:10Z",
+   "source": "yaml",
+   "src": "tempo-workbench",
+   "type": "depends_on"
+  },
+  {
+   "dst": "tempo",
+   "scope": "intra",
+   "since": null,
+   "source": "yaml",
+   "src": "tempo-workbench",
+   "type": "depends_on"
+  },
+  {
+   "dst": "b70tools",
+   "scope": "intra",
+   "since": null,
+   "source": "yaml",
+   "src": "tensor",
+   "type": "depends_on"
+  },
+  {
+   "dst": "steppeintegrations-site",
+   "scope": "intra",
+   "since": "2026-04-30T04:28:44Z",
+   "source": "yaml",
+   "src": "threat-trace",
+   "type": "depends_on"
+  },
+  {
+   "dst": "baseline",
+   "scope": "intra",
+   "since": "2026-08-13T05:37:47Z",
+   "source": "yaml",
+   "src": "totemalert",
+   "type": "depends_on"
+  },
+  {
+   "dst": "baseline",
+   "scope": "intra",
+   "since": "2026-09-13T12:19:03Z",
+   "source": "yaml",
+   "src": "unfaded",
+   "type": "depends_on"
+  },
+  {
+   "dst": "baseline",
+   "scope": "intra",
+   "since": "2026-09-16T07:52:20Z",
+   "source": "yaml",
+   "src": "valheim-profile-engine",
+   "type": "depends_on"
+  },
+  {
+   "dst": "b70tools",
+   "scope": "intra",
+   "since": "2026-06-04T08:09:46Z",
+   "source": "yaml",
+   "src": "vllama",
+   "type": "depends_on"
+  },
+  {
+   "dst": "liveview",
+   "scope": "intra",
+   "since": "2026-04-09T06:50:37Z",
+   "source": "yaml",
+   "src": "work-visuals",
+   "type": "depends_on"
+  },
+  {
+   "dst": "campfire",
+   "scope": "intra",
+   "since": "2026-06-04T05:06:53Z",
+   "source": "yaml",
+   "src": "workbench",
+   "type": "depends_on"
+  },
+  {
+   "dst": "tempo",
+   "scope": "intra",
+   "since": null,
+   "source": "yaml",
+   "src": "workbench",
+   "type": "depends_on"
+  },
+  {
+   "dst": "tempo",
+   "scope": "intra",
+   "since": null,
+   "source": "yaml",
+   "src": "wow-code",
+   "type": "depends_on"
+  },
+  {
+   "dst": "battlemage",
+   "scope": "intra",
+   "since": "2026-06-22T10:35:08Z",
+   "source": "yaml",
+   "src": "xpu-train",
+   "type": "depends_on"
+  },
+  {
+   "dst": "creator-os",
+   "dst_kind": "constellation",
+   "inferred_valid_from": "2026-06-01T00:00:00Z",
+   "scope": "cross-constellation",
+   "since": null,
+   "source": "jepa",
+   "src": "manifest",
+   "type": "describes_topology_for"
+  },
+  {
+   "dst": "gad",
+   "dst_kind": "constellation",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "cross-constellation",
+   "since": null,
+   "source": "jepa",
+   "src": "manifest",
+   "type": "describes_topology_for"
+  },
+  {
+   "dst": "omen-core",
+   "dst_kind": "constellation",
+   "inferred_valid_from": "2026-06-01T00:00:00Z",
+   "scope": "cross-constellation",
+   "since": null,
+   "source": "jepa",
+   "src": "manifest",
+   "type": "describes_topology_for"
+  },
+  {
+   "dst": "hearth",
+   "inferred_valid_from": "2026-05-30T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-05-15T17:32:11Z",
+   "source": "jepa",
+   "src": "gad-bot",
+   "type": "extracted_from"
+  },
+  {
+   "dst": "guild",
+   "inferred_valid_from": "2026-05-30T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-05-15T17:31:02Z",
+   "source": "jepa",
+   "src": "hearth",
+   "type": "extracted_from"
+  },
+  {
+   "dst": "gad",
+   "dst_kind": "constellation",
+   "inferred_valid_from": "2026-06-11T00:00:00Z",
+   "scope": "cross-constellation",
+   "since": null,
+   "source": "jepa",
+   "src": "ember",
+   "type": "hosts_awareness_for"
+  },
+  {
+   "dst": "battlemage",
+   "inferred_valid_from": "2026-06-01T00:00:00Z",
+   "scope": "cross-constellation",
+   "since": "2026-07-03T01:41:29Z",
+   "source": "jepa",
+   "src": "commandcenter",
+   "type": "leases_hardware_to"
+  },
+  {
+   "dst": "tensor",
+   "inferred_valid_from": "2026-06-01T00:00:00Z",
+   "scope": "intra",
+   "since": null,
+   "source": "jepa",
+   "src": "commandcenter",
+   "type": "leases_hardware_to"
+  },
+  {
+   "dst": "vllama",
+   "inferred_valid_from": "2026-06-01T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-07-03T01:41:29Z",
+   "source": "jepa",
+   "src": "commandcenter",
+   "type": "leases_hardware_to"
+  },
+  {
+   "dst": "liveview",
+   "scope": "intra",
+   "since": "2026-03-07T03:09:08Z",
+   "source": "yaml",
+   "src": "liveview-ingest",
+   "type": "parent"
+  },
+  {
+   "dst": "liveview",
+   "scope": "intra",
+   "since": "2026-03-07T03:09:08Z",
+   "source": "yaml",
+   "src": "liveview-ui",
+   "type": "parent"
+  },
+  {
+   "dst": "ai-systems-research",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-03-07T11:14:46Z",
+   "source": "jepa",
+   "src": "ai-dev-system",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "liveview-ingest",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-03-07T03:08:21Z",
+   "source": "jepa",
+   "src": "ai-dev-system",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "commandcenter",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-07-03T01:41:29Z",
+   "source": "jepa",
+   "src": "b70tools",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "img",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-05-29T06:28:08Z",
+   "source": "jepa",
+   "src": "b70tools",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "vllama",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-06-04T08:09:46Z",
+   "source": "jepa",
+   "src": "b70tools",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "liveview-ui",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-03-13T06:06:22Z",
+   "source": "jepa",
+   "src": "chatgpt_parser",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "commandcenter",
+   "inferred_valid_from": "2026-06-01T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-08-25T05:05:12Z",
+   "source": "jepa",
+   "src": "clippy",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "img",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-08-25T05:05:12Z",
+   "source": "jepa",
+   "src": "clippy",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "baseline",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-07-02T06:55:09Z",
+   "source": "jepa",
+   "src": "comfy-quest",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "sovereign-shards",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-08-12T06:33:45Z",
+   "source": "jepa",
+   "src": "comfy-quest",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "clippy",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-08-25T05:05:12Z",
+   "source": "jepa",
+   "src": "commandcenter",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "img",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-07-03T01:41:29Z",
+   "source": "jepa",
+   "src": "commandcenter",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "ashley",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-04-03T06:02:14Z",
+   "source": "jepa",
+   "src": "contextforge",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "nightshift",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-09-13T02:02:07Z",
+   "source": "jepa",
+   "src": "irc",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "baseline",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-08-07T15:25:59Z",
+   "source": "jepa",
+   "src": "isolate",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "sovereign-shards",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-08-12T06:33:45Z",
+   "source": "jepa",
+   "src": "isolate",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "liveview-ui",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-03-07T03:08:43Z",
+   "source": "jepa",
+   "src": "liveview-ingest",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "game",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-03-24T13:10:06Z",
+   "source": "jepa",
+   "src": "lumberjacks-platform",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "baseline",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-07-03T23:49:06Z",
+   "source": "jepa",
+   "src": "networksense",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "comfy-quest",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-07-03T23:49:06Z",
+   "source": "jepa",
+   "src": "networksense",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "precheck",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-04-07T04:01:24Z",
+   "source": "jepa",
+   "src": "planning",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "farmer",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-04-06T19:50:37Z",
+   "source": "jepa",
+   "src": "portmap",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "planning",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-04-07T04:01:24Z",
+   "source": "jepa",
+   "src": "portmap",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "comfy-quest",
+   "inferred_valid_from": "2026-08-01T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-09-15T07:42:36Z",
+   "source": "jepa",
+   "src": "selfiestick",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "comfystewardview",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-09-15T07:42:36Z",
+   "source": "jepa",
+   "src": "selfiestick",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "dmos",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-09-15T07:42:36Z",
+   "source": "jepa",
+   "src": "selfiestick",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "desire-trace",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-04-09T09:55:57Z",
+   "source": "jepa",
+   "src": "steppeintegrations-site",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "threat-trace",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-04-30T04:28:44Z",
+   "source": "jepa",
+   "src": "steppeintegrations-site",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "comfy-quest",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-09-16T07:52:20Z",
+   "source": "jepa",
+   "src": "valheim-profile-engine",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "selfiestick",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-09-16T07:52:20Z",
+   "source": "jepa",
+   "src": "valheim-profile-engine",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "denning",
+   "inferred_valid_from": "2026-05-24T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-06-22T10:35:08Z",
+   "source": "jepa",
+   "src": "xpu-train",
+   "type": "produces_data_for"
+  },
+  {
+   "dst": "guild",
+   "inferred_valid_from": "2026-05-30T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-05-15T17:31:02Z",
+   "source": "jepa",
+   "src": "hearth",
+   "type": "replaces"
+  },
+  {
+   "dst": "baseline",
+   "inferred_valid_from": "2026-08-01T00:00:00Z",
+   "scope": "intra",
+   "since": "2026-09-13T12:19:03Z",
+   "source": "jepa",
+   "src": "unfaded",
+   "type": "replaces"
+  },
+  {
+   "dst": "comfy-quest",
+   "inferred_valid_from": "2026-08-19T18:54:34-07:00",
+   "scope": "intra",
+   "since": "2026-08-19T05:42:53Z",
+   "source": "jepa",
+   "src": "assessment",
+   "type": "verifies"
+  },
+  {
+   "dst": "battlemage",
+   "inferred_valid_from": "2026-09-02T15:51:57-07:00",
+   "scope": "intra",
+   "since": "2026-05-29T06:28:08Z",
+   "source": "jepa",
+   "src": "b70tools",
+   "type": "verifies"
+  },
+  {
+   "dst": "deepagents-shot-director",
+   "inferred_valid_from": "2026-09-17T06:43:37-07:00",
+   "scope": "intra",
+   "since": "2026-09-17T13:43:37Z",
+   "source": "jepa",
+   "src": "deepagents-poc",
+   "type": "verifies"
+  },
+  {
+   "dst": "baseline",
+   "inferred_valid_from": "2026-09-20T15:46:14-07:00",
+   "scope": "intra",
+   "since": "2026-09-12T08:01:28Z",
+   "source": "jepa",
+   "src": "deepnorthtesting",
+   "type": "verifies"
+  },
+  {
+   "dst": "b70tools",
+   "inferred_valid_from": "2026-06-22T04:07:13-07:00",
+   "scope": "intra",
+   "since": "2026-06-19T13:08:04Z",
+   "source": "jepa",
+   "src": "denning",
+   "type": "verifies"
+  },
+  {
+   "dst": "battlemage",
+   "inferred_valid_from": "2026-06-22T04:07:13-07:00",
+   "scope": "intra",
+   "since": "2026-06-19T13:08:04Z",
+   "source": "jepa",
+   "src": "denning",
+   "type": "verifies"
+  },
+  {
+   "dst": "comfystewardview",
+   "inferred_valid_from": "2026-09-03T05:42:51-07:00",
+   "scope": "intra",
+   "since": "2026-03-19T17:57:37Z",
+   "source": "jepa",
+   "src": "steward-spatial-lab",
+   "type": "verifies"
+  }
+ ],
+ "integrations": {
+  "033ee49e907f1f97655a3cf606d14cd43c60bbb4": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 1
+  },
+  "05287b8ef8695014c00e9278b0ba1240c93b527a": {
+   "contracts_in": 1,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 2
+  },
+  "0b15ed22f266effd95bd93b3fdf962c69314ed7d": {
+   "contracts_in": 0,
+   "contracts_out": 1,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 1,
+   "depends_out": 0
+  },
+  "168915c9674722417bfd3fcfadcc0883976da6db": {
+   "contracts_in": 1,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 1,
+   "depends_out": 3
+  },
+  "17b6526bb7f520061ed56eef0eb5846d524e30d8": {
+   "contracts_in": 3,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 2
+  },
+  "1b448d5e90cc1a2088d19a118632506176cf09d0": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 3
+  },
+  "1bad53cadff5f6b4e4c36e9afbdf81f8667e807c": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 1
+  },
+  "1bbfcf404219b2421739acf8a827224fa2e2b2bd": {
+   "contracts_in": 1,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 1,
+   "depends_out": 1
+  },
+  "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de": {
+   "contracts_in": 4,
+   "contracts_out": 1,
+   "cross_constellation": 1,
+   "data_sources": 0,
+   "depends_in": 13,
+   "depends_out": 1
+  },
+  "207f79d2cf4fdc9ae3307bc318ed81d0fd04868d": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 2
+  },
+  "25227eda8d35d74b6047f5f4df95a8201c0fadc3": {
+   "contracts_in": 2,
+   "contracts_out": 2,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 3,
+   "depends_out": 2
+  },
+  "299eddc49aa7aa7c8fe606995611dfa6c1b319f1": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 1,
+   "depends_out": 0
+  },
+  "32768eab5b3677a4d8d9e6079092142553c372fc": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 3
+  },
+  "341f7bba31ffb9fc49ed74aa2d0efbea2aa2870a": {
+   "contracts_in": 1,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 1,
+   "depends_out": 0
+  },
+  "3450a4ea59351a65290880b5d134866353e98d32": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 2,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 2
+  },
+  "352eb10ef4d4f2a489c55024f097fd2bf4819da8": {
+   "contracts_in": 0,
+   "contracts_out": 2,
+   "cross_constellation": 5,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 0
+  },
+  "36db256ae1de45fdd9cf6f8cbc2c617b6e9c0278": {
+   "contracts_in": 1,
+   "contracts_out": 1,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 1,
+   "depends_out": 0
+  },
+  "37fa64b96d703d0a52fe532abb6551302587a19c": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 1
+  },
+  "401ef9dfefef6fe91c22e42871780963338f0b1c": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 1
+  },
+  "42df0b8a97c00b9f68231e314a847d5985c9d434": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 2,
+   "depends_out": 0
+  },
+  "447e150d1c2e1ae1c65bec01f7663c7d7dada6aa": {
+   "contracts_in": 0,
+   "contracts_out": 1,
+   "cross_constellation": 0,
+   "data_sources": 1,
+   "depends_in": 2,
+   "depends_out": 0
+  },
+  "4bb4fbce65994f88ff045be36c1f6ad7f1da7a9e": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 1,
+   "depends_out": 2
+  },
+  "5c8d35feb646ea17b0121b1426eca79f18c695df": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 1
+  },
+  "5e8e19c01d520f3cc0c73b6a3e9b9d721ac96927": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 1,
+   "depends_out": 1
+  },
+  "6196894d720f4647e8d94adcdb41f6ff74bd2e89": {
+   "contracts_in": 1,
+   "contracts_out": 1,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 1,
+   "depends_out": 2
+  },
+  "6a0d30840c0d974b5780231a0df9e0868b908c8e": {
+   "contracts_in": 1,
+   "contracts_out": 2,
+   "cross_constellation": 2,
+   "data_sources": 0,
+   "depends_in": 4,
+   "depends_out": 0
+  },
+  "6e064f8b3ef9e0bc33f53d75f7b3d6113d128e8e": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 1,
+   "depends_out": 0
+  },
+  "6ef50f10dd4507093f02c11357bf4b20fd40675e": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 1
+  },
+  "7862f447633880878ff1e98e22e0ee9d33072e84": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 1
+  },
+  "78e1cf00a3961efeec707cdb7bdedf3334d305e8": {
+   "contracts_in": 1,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 1
+  },
+  "798dc04719c64e6c2292673a0d89667c258c7f61": {
+   "contracts_in": 0,
+   "contracts_out": 2,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 1
+  },
+  "8379428a79e7d1e6f7055641be18a4e6d75fcf76": {
+   "contracts_in": 0,
+   "contracts_out": 2,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 1
+  },
+  "9028819e8ddacf4ff73e196f0dbb210fa4358ffd": {
+   "contracts_in": 0,
+   "contracts_out": 1,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 1,
+   "depends_out": 0
+  },
+  "aeec44ac6aa0df4feed092f1354be134ae81be83": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 2
+  },
+  "aff20eee73dd981936187c09c06ca24aeb2bb566": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 2,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 0
+  },
+  "b386bddfef108f92f66c2b9c368cbf82a64b697f": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 1
+  },
+  "b54645d264aa7db05e82a752e4c116b5336591c4": {
+   "contracts_in": 0,
+   "contracts_out": 2,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 2,
+   "depends_out": 0
+  },
+  "b996d387a033215a4701c029c5f324e807f921c7": {
+   "contracts_in": 1,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 1
+  },
+  "ba4c3f28125b7e8fcd7e6f901aa758c7f18dadbd": {
+   "contracts_in": 1,
+   "contracts_out": 2,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 3,
+   "depends_out": 1
+  },
+  "c7dec46462fb0a86197442142ab14e1fb943b6b2": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 1
+  },
+  "ce3d5749af6bec1f7c7d924500ba622ab0bc4046": {
+   "contracts_in": 0,
+   "contracts_out": 2,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 1,
+   "depends_out": 0
+  },
+  "cfc185cf98c49d276293cb64eeb3a0a49f842720": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 1,
+   "depends_out": 0
+  },
+  "d10adf11626c2078930a467b06c72c400db531ed": {
+   "contracts_in": 1,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 1
+  },
+  "da0a8476e842c97b423808376aed58ada91f7a2f": {
+   "contracts_in": 0,
+   "contracts_out": 2,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 0
+  },
+  "dc00626718981a7fb78734bd61f6e8f77f0511e9": {
+   "contracts_in": 3,
+   "contracts_out": 0,
+   "cross_constellation": 1,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 0
+  },
+  "dee5f19b9655bcd1ee4f16352ba7deadb6a9c30e": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 1,
+   "depends_out": 1
+  },
+  "dir:fx99:~/dmos": {
+   "contracts_in": 1,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 1,
+   "depends_out": 2
+  },
+  "dir:fx99:~/menu": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 1
+  },
+  "dir:omen-c:work/imagegen": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 1
+  },
+  "e580a2ef24acb12c5b90f5dc7264938d2eee28c1": {
+   "contracts_in": 0,
+   "contracts_out": 1,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 1
+  },
+  "e6fa603a4463fc18d711d8acc897fccd17921763": {
+   "contracts_in": 1,
+   "contracts_out": 1,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 2
+  },
+  "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 2
+  },
+  "e827d185663d650b88d3ad2148c8367ed6f2ece7": {
+   "contracts_in": 0,
+   "contracts_out": 3,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 8,
+   "depends_out": 1
+  },
+  "ec52961c5a3f1fbc7b78eb55d035efcdb06c526b": {
+   "contracts_in": 2,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 2
+  },
+  "ec74746c1d44db7e45ac21611d55e1023d2a9818": {
+   "contracts_in": 0,
+   "contracts_out": 2,
+   "cross_constellation": 1,
+   "data_sources": 0,
+   "depends_in": 2,
+   "depends_out": 1
+  },
+  "ecca39f1f37ae199e1a5770bc215fc8dc132f239": {
+   "contracts_in": 1,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 1
+  },
+  "f69a5b1a96e95fb6881af3028af39ecbd9df099a": {
+   "contracts_in": 2,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 2
+  },
+  "fe69bfd7e25a89d285126e23e16d01ef7f0275b1": {
+   "contracts_in": 1,
+   "contracts_out": 0,
+   "cross_constellation": 0,
+   "data_sources": 0,
+   "depends_in": 0,
+   "depends_out": 1
+  },
+  "github:djcdevelopment/battlemage": {
+   "contracts_in": 0,
+   "contracts_out": 0,
+   "cross_constellation": 1,
+   "data_sources": 0,
+   "depends_in": 3,
+   "depends_out": 0
+  }
+ },
+ "nodes": [
+  {
+   "constellation": "404-mesh",
+   "constellations": [
+    "404-mesh"
+   ],
+   "github": "djcdevelopment/404-isolate",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "aff20eee73dd981936187c09c06ca24aeb2bb566",
+   "name": "404",
+   "primary": true,
+   "role": "Standalone privacy isolate appliance, distributed stealth mesh fabric, kernel eBPF egress, and FastM",
+   "source": "yaml"
+  },
+  {
+   "constellation": "ai-systems-research",
+   "constellations": [
+    "ai-systems-research"
+   ],
+   "github": "djcdevelopment/ai-dev-system",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "ce3d5749af6bec1f7c7d924500ba622ab0bc4046",
+   "name": "ai-dev-system",
+   "primary": false,
+   "role": "Runtime evidence producer \u2014 Claude-CLI run harness with structured artifact emission",
+   "source": "yaml"
+  },
+  {
+   "constellation": "ai-systems-research",
+   "constellations": [
+    "ai-systems-research"
+   ],
+   "github": "djcdevelopment/ai-systems-research",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "dc00626718981a7fb78734bd61f6e8f77f0511e9",
+   "name": "ai-systems-research",
+   "primary": false,
+   "role": "Research archive sink \u2014 synthesis + observations + snapshots + the proto-registry",
+   "source": "yaml"
+  },
+  {
+   "constellation": "steppe",
+   "constellations": [
+    "steppe"
+   ],
+   "github": "tt-a1i/archify",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "github:tt-a1i/archify",
+   "name": "archify",
+   "primary": false,
+   "role": "Visual system architecture compiler and interactive HTML diagram generator",
+   "source": "yaml"
+  },
+  {
+   "constellation": "steppe",
+   "constellations": [
+    "steppe"
+   ],
+   "github": "djcdevelopment/articleblitz",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "976459ba63be970a9bf0b9b45d5b765e3addbc9c",
+   "name": "articleblitz",
+   "primary": false,
+   "role": "Article generation, drafting engine, and publication workbench",
+   "source": "yaml"
+  },
+  {
+   "constellation": "planning-spine",
+   "constellations": [
+    "planning-spine"
+   ],
+   "github": "djcdevelopment/ashley",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "d10adf11626c2078930a467b06c72c400db531ed",
+   "name": "ashley",
+   "primary": false,
+   "role": "Task decomposition agent and UI execution harness (.NET 9 + Docker)",
+   "source": "yaml"
+  },
+  {
+   "constellation": "creator-os",
+   "constellations": [
+    "creator-os"
+   ],
+   "github": null,
+   "join_basis": "dirname",
+   "kind": "filesystem",
+   "lifecycle": "active",
+   "lineage": "b386bddfef108f92f66c2b9c368cbf82a64b697f",
+   "name": "assessment",
+   "primary": false,
+   "role": "Persona-awareness integrity assessment lane and grading benchmark for comfy-quest agent",
+   "source": "yaml"
+  },
+  {
+   "constellation": "GAD",
+   "constellations": [
+    "GAD",
+    "omen-core"
+   ],
+   "github": "djcdevelopment/b70tools",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "e827d185663d650b88d3ad2148c8367ed6f2ece7",
+   "name": "b70tools",
+   "primary": false,
+   "role": "Windows-native telemetry and observability tool for dual Intel Arc Pro B70 inference",
+   "source": "yaml"
+  },
+  {
+   "constellation": "creator-os",
+   "constellations": [
+    "creator-os"
+   ],
+   "github": "djcdevelopment/baseline",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de",
+   "name": "baseline",
+   "primary": true,
+   "role": "Hub of knowledge, evidence, decision records, and discovery index for the Comfy fleet",
+   "source": "yaml"
+  },
+  {
+   "constellation": "GAD",
+   "constellations": [
+    "GAD"
+   ],
+   "github": null,
+   "join_basis": "dirname",
+   "kind": "filesystem",
+   "lifecycle": "active",
+   "lineage": "github:djcdevelopment/battlemage",
+   "name": "battlemage",
+   "primary": false,
+   "role": "Intel Arc Pro B70 research notebook + inference harness",
+   "source": "yaml"
+  },
+  {
+   "constellation": "steppe",
+   "constellations": [
+    "steppe"
+   ],
+   "github": "steppe-integrations/bring-your-own-ollama",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "4ebe2074fee8587b16bdf34c2f209c629562ea84",
+   "name": "bring-your-own-ollama",
+   "primary": false,
+   "role": "Local-first browser to Ollama bridge with live trace overlay verification",
+   "source": "yaml"
+  },
+  {
+   "constellation": "GAD",
+   "constellations": [
+    "GAD"
+   ],
+   "github": "djcdevelopment/campfire",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "shipped",
+   "lineage": "42df0b8a97c00b9f68231e314a847d5985c9d434",
+   "name": "campfire",
+   "primary": false,
+   "role": "BYOH substrate (guild-data API; 7-package pnpm monorepo)",
+   "source": "yaml"
+  },
+  {
+   "constellation": "ai-systems-research",
+   "constellations": [
+    "ai-systems-research"
+   ],
+   "github": "djcdevelopment/chatGPT_parse",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "447e150d1c2e1ae1c65bec01f7663c7d7dada6aa",
+   "name": "chatgpt_parser",
+   "primary": false,
+   "role": "ChatGPT export \u2192 normalized corpus + projections; Phase 1/2/4 pipeline",
+   "source": "yaml"
+  },
+  {
+   "constellation": "omen-core",
+   "constellations": [
+    "omen-core"
+   ],
+   "github": "djcdevelopment/clippy",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "e6fa603a4463fc18d711d8acc897fccd17921763",
+   "name": "clippy",
+   "primary": false,
+   "role": "Private local-first highlight pipeline with OTel traces and dual-B70 QSV render workers",
+   "source": "yaml"
+  },
+  {
+   "constellation": "creator-os",
+   "constellations": [
+    "creator-os"
+   ],
+   "github": "djcdevelopment/comfy-quest",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "25227eda8d35d74b6047f5f4df95a8201c0fadc3",
+   "name": "comfy-quest",
+   "primary": false,
+   "role": "Core Quest Lab, Runtime, Contracts, Studio, and in-game creator tooling",
+   "source": "yaml"
+  },
+  {
+   "constellation": "creator-os",
+   "constellations": [
+    "creator-os"
+   ],
+   "github": "redseiko/ComfyMods",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "672abc17c9351cb2b0594c79ab774353f2cb8465",
+   "name": "comfymods",
+   "primary": false,
+   "role": "Upstream Valheim mod collection (redseiko/ComfyMods)",
+   "source": "yaml"
+  },
+  {
+   "constellation": "creator-os",
+   "constellations": [
+    "creator-os"
+   ],
+   "github": "djcdevelopment/ComfyStewardView",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "168915c9674722417bfd3fcfadcc0883976da6db",
+   "name": "comfystewardview",
+   "primary": false,
+   "role": "Spatial viewer, multi-perspective steward camera rig, and world snapshot analytics",
+   "source": "yaml"
+  },
+  {
+   "constellation": "omen-core",
+   "constellations": [
+    "omen-core"
+   ],
+   "github": "djcdevelopment/commandcenter",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "6a0d30840c0d974b5780231a0df9e0868b908c8e",
+   "name": "commandcenter",
+   "primary": true,
+   "role": "OMEN execution control plane, agent task routing, and HEARTH authority",
+   "source": "yaml"
+  },
+  {
+   "constellation": "planning-spine",
+   "constellations": [
+    "planning-spine"
+   ],
+   "github": "djcdevelopment/ContextForge",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "0b15ed22f266effd95bd93b3fdf962c69314ed7d",
+   "name": "contextforge",
+   "primary": false,
+   "role": "Context synthesis, association engine, token budgeting, and contract validation",
+   "source": "yaml"
+  },
+  {
+   "constellation": "contextlandscape",
+   "constellations": [
+    "contextlandscape"
+   ],
+   "github": "djcdevelopment/contextlandscape",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "a824a8deb2f17696f9f6807308902b9b6e5748ee",
+   "name": "contextlandscape",
+   "primary": true,
+   "role": "AI-orchestration autobattler, deterministic simulation platform, and systems-engineering game",
+   "source": "yaml"
+  },
+  {
+   "constellation": "creator-os",
+   "constellations": [
+    "creator-os"
+   ],
+   "github": null,
+   "join_basis": "dirname",
+   "kind": "filesystem",
+   "lifecycle": "active",
+   "lineage": "1bad53cadff5f6b4e4c36e9afbdf81f8667e807c",
+   "name": "deepagents-poc",
+   "primary": false,
+   "role": "Initial proof-of-concept for deep-agent camera orchestration and actor control",
+   "source": "yaml"
+  },
+  {
+   "constellation": "creator-os",
+   "constellations": [
+    "creator-os"
+   ],
+   "github": null,
+   "join_basis": "dirname",
+   "kind": "filesystem",
+   "lifecycle": "active",
+   "lineage": "4bb4fbce65994f88ff045be36c1f6ad7f1da7a9e",
+   "name": "deepagents-shot-director",
+   "primary": false,
+   "role": "Autonomous multi-agent architecture for Valheim SelfieStick shot quality, positioning, and compositi",
+   "source": "yaml"
+  },
+  {
+   "constellation": "creator-os",
+   "constellations": [
+    "creator-os"
+   ],
+   "github": "djcdevelopment/deepnorthtesting",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd",
+   "name": "deepnorthtesting",
+   "primary": false,
+   "role": "Fleet compatibility evidence and verification suite for Valheim 1.0.15",
+   "source": "yaml"
+  },
+  {
+   "constellation": "GAD",
+   "constellations": [
+    "GAD"
+   ],
+   "github": "djcdevelopment/denning",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "05287b8ef8695014c00e9278b0ba1240c93b527a",
+   "name": "denning",
+   "primary": false,
+   "role": "KV-residency control plane over an unmodified llama.cpp Vulkan engine -- live-VidMm-budget admission",
+   "source": "yaml"
+  },
+  {
+   "constellation": "steppe",
+   "constellations": [
+    "steppe"
+   ],
+   "github": "djcdevelopment/desire-trace",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "ecca39f1f37ae199e1a5770bc215fc8dc132f239",
+   "name": "desire-trace",
+   "primary": false,
+   "role": "Desire Trace interactive demo with browser-only identity and article writing pipeline",
+   "source": "yaml"
+  },
+  {
+   "constellation": "GAD",
+   "constellations": [
+    "GAD"
+   ],
+   "github": "djcdevelopment/discoverlay",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "1b448d5e90cc1a2088d19a118632506176cf09d0",
+   "name": "discoverlay",
+   "primary": false,
+   "role": "Game overlay and Discord presence bridge for live B70, host, combat, and inference streams",
+   "source": "yaml"
+  },
+  {
+   "constellation": "steppe",
+   "constellations": [
+    "steppe"
+   ],
+   "github": "djcdevelopment/djcdevelopment",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "01053e116889dc3d39c85b28e9b12873ad96c118",
+   "name": "djcdevelopment",
+   "primary": false,
+   "role": "GitHub special profile README and public personal developer landing repository",
+   "source": "yaml"
+  },
+  {
+   "constellation": "creator-os",
+   "constellations": [
+    "creator-os"
+   ],
+   "github": "djcdevelopment/DMos",
+   "join_basis": "dirname",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "dir:fx99:~/dmos",
+   "name": "dmos",
+   "primary": false,
+   "role": "Dungeon Master OS narrative orchestration, world state engine, and chronicle generator",
+   "source": "yaml"
+  },
+  {
+   "constellation": "GAD",
+   "constellations": [
+    "GAD"
+   ],
+   "github": "djcdevelopment/ember",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "3450a4ea59351a65290880b5d134866353e98d32",
+   "name": "ember",
+   "primary": false,
+   "role": "Claude\u2194GPT planning bot (build hand-off) + constellation-awareness host (graph context + nightly Ref",
+   "source": "yaml"
+  },
+  {
+   "constellation": "planning-spine",
+   "constellations": [
+    "planning-spine"
+   ],
+   "github": "djcdevelopment/farmer",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "fe69bfd7e25a89d285126e23e16d01ef7f0275b1",
+   "name": "farmer",
+   "primary": false,
+   "role": "Core Farmer engine, infrastructure setup, and Hyper-V worker runtime",
+   "source": "yaml"
+  },
+  {
+   "constellation": "GAD",
+   "constellations": [
+    "GAD"
+   ],
+   "github": "djcdevelopment/gad-bot",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "61367b8d13d280e08f721db58000690352514a38",
+   "name": "gad-bot",
+   "primary": false,
+   "role": "Goats After Dark Discord bot (/ask, /stats, /compare) extracted from Hearth",
+   "source": "yaml"
+  },
+  {
+   "constellation": "lumberjacks",
+   "constellations": [
+    "lumberjacks"
+   ],
+   "github": "djcdevelopment/Lumberjacks",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de",
+   "name": "game",
+   "primary": false,
+   "role": "Lumberjacks core game implementation and client assets",
+   "source": "yaml"
+  },
+  {
+   "constellation": "GAD",
+   "constellations": [
+    "GAD"
+   ],
+   "github": "djcdevelopment/goatsafterdark",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "maintenance",
+   "lineage": "9fcf5ea49f82d136532628f42126b6b4c2e765b6",
+   "name": "guild",
+   "primary": false,
+   "role": "Legacy combined guild-memory website and bot codebase (goatsafterdark)",
+   "source": "yaml"
+  },
+  {
+   "constellation": "GAD",
+   "constellations": [
+    "GAD"
+   ],
+   "github": "djcdevelopment/hearth",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "32768eab5b3677a4d8d9e6079092142553c372fc",
+   "name": "hearth",
+   "primary": false,
+   "role": "guild-memory website (Next.js + Postgres) + production GoatHerder Discord bot",
+   "source": "yaml"
+  },
+  {
+   "constellation": "omen-core",
+   "constellations": [
+    "omen-core"
+   ],
+   "github": null,
+   "join_basis": "dirname",
+   "kind": "filesystem",
+   "lifecycle": "active",
+   "lineage": "dir:omen-c:work/imagegen",
+   "name": "imagegen",
+   "primary": false,
+   "role": "Guard-dog dream run sequential batch driver and manifest logger",
+   "source": "yaml"
+  },
+  {
+   "constellation": "omen-core",
+   "constellations": [
+    "omen-core"
+   ],
+   "github": "djcdevelopment/tempo-imagegen",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "17b6526bb7f520061ed56eef0eb5846d524e30d8",
+   "name": "img",
+   "primary": false,
+   "role": "On-demand dual-B70 image generation agent controlled by HEARTH (Tempo.ImageGen)",
+   "source": "yaml"
+  },
+  {
+   "constellation": "p2p-inference",
+   "constellations": [
+    "p2p-inference"
+   ],
+   "github": "djcdevelopment/irc",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "9028819e8ddacf4ff73e196f0dbb210fa4358ffd",
+   "name": "irc",
+   "primary": true,
+   "role": "Ergo IRC server, Lounge browser client, BotHerder companion, and remote agent adapter",
+   "source": "yaml"
+  },
+  {
+   "constellation": "creator-os",
+   "constellations": [
+    "creator-os"
+   ],
+   "github": "djcdevelopment/ismodded",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "5c8d35feb646ea17b0121b1426eca79f18c695df",
+   "name": "ismodded",
+   "primary": false,
+   "role": "Steam achievement progression decoupling and runtime verification suite for Valheim",
+   "source": "yaml"
+  },
+  {
+   "constellation": "creator-os",
+   "constellations": [
+    "creator-os"
+   ],
+   "github": "djcdevelopment/isolate",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "ec74746c1d44db7e45ac21611d55e1023d2a9818",
+   "name": "isolate",
+   "primary": false,
+   "role": "Comfy Valheim container infrastructure, Python MCP gateway (:8720), and lab Compose stacks",
+   "source": "yaml"
+  },
+  {
+   "constellation": "planning-spine",
+   "constellations": [
+    "planning-spine"
+   ],
+   "github": "langfuse/langfuse",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "5c8ff5b7646cb15237a5a597a132a51ca3a1a65f",
+   "name": "langfuse",
+   "primary": false,
+   "role": "Local Langfuse tracing, LLM prompt engineering observability, and evaluation",
+   "source": "yaml"
+  },
+  {
+   "constellation": "GAD",
+   "constellations": [
+    "GAD"
+   ],
+   "github": "djcdevelopment/lantern",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "5e8e19c01d520f3cc0c73b6a3e9b9d721ac96927",
+   "name": "lantern",
+   "primary": false,
+   "role": "player-first chronicle viewer \u2014 peer tab inside Tempo + cloud prerender",
+   "source": "yaml"
+  },
+  {
+   "constellation": "GAD",
+   "constellations": [
+    "GAD"
+   ],
+   "github": "djcdevelopment/leopard",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "dee5f19b9655bcd1ee4f16352ba7deadb6a9c30e",
+   "name": "leopard",
+   "primary": false,
+   "role": "Local WoW raid-log reflection product; consumes Tempo parser/projections in-process",
+   "source": "yaml"
+  },
+  {
+   "constellation": "ai-systems-research",
+   "constellations": [
+    "ai-systems-research"
+   ],
+   "github": "djcdevelopment/liveView",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "cfc185cf98c49d276293cb64eeb3a0a49f842720",
+   "name": "liveview",
+   "primary": false,
+   "role": "Umbrella + research-handoff seam for observability stack",
+   "source": "yaml"
+  },
+  {
+   "constellation": "ai-systems-research",
+   "constellations": [
+    "ai-systems-research"
+   ],
+   "github": "djcdevelopment/liveView-ingest",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "6196894d720f4647e8d94adcdb41f6ff74bd2e89",
+   "name": "liveview-ingest",
+   "primary": false,
+   "role": "Folders \u2192 snapshot artifacts; Sonnet-driven",
+   "source": "yaml"
+  },
+  {
+   "constellation": "ai-systems-research",
+   "constellations": [
+    "ai-systems-research"
+   ],
+   "github": "djcdevelopment/liveview-ui",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "f69a5b1a96e95fb6881af3028af39ecbd9df099a",
+   "name": "liveview-ui",
+   "primary": false,
+   "role": "Visualizer: Explorer / Timeline / Inspector / Workbench",
+   "source": "yaml"
+  },
+  {
+   "constellation": "lumberjacks",
+   "constellations": [
+    "lumberjacks"
+   ],
+   "github": "djcdevelopment/lumberjacks-platform",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de",
+   "name": "lumberjacks-platform",
+   "primary": true,
+   "role": "Godot client, gameplay labs, Gateway/services, Companion, transport contracts, P7 infra",
+   "source": "yaml"
+  },
+  {
+   "constellation": "manifest",
+   "constellations": [
+    "manifest"
+   ],
+   "github": null,
+   "join_basis": "dirname",
+   "kind": null,
+   "lifecycle": "active",
+   "lineage": "352eb10ef4d4f2a489c55024f097fd2bf4819da8",
+   "name": "manifest",
+   "primary": false,
+   "role": "Constellation manifest framework, Pydantic validator, cascade scanner, and fleet topology graph",
+   "source": "jepa"
+  },
+  {
+   "constellation": "omen-core",
+   "constellations": [
+    "omen-core"
+   ],
+   "github": "djcdevelopment/memsplice",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "484f54f657f7e1a41232dd5ed012c751e5825bd4",
+   "name": "memsplice",
+   "primary": false,
+   "role": "Memory splicing, context cache, and associative recall substrate",
+   "source": "yaml"
+  },
+  {
+   "constellation": "omen-core",
+   "constellations": [
+    "omen-core"
+   ],
+   "github": null,
+   "join_basis": "dirname",
+   "kind": "filesystem",
+   "lifecycle": "active",
+   "lineage": "dir:fx99:~/menu",
+   "name": "menu",
+   "primary": false,
+   "role": "Nashville private chef menu planning and recipe generation application with HEARTH integration",
+   "source": "yaml"
+  },
+  {
+   "constellation": "steppe",
+   "constellations": [
+    "steppe"
+   ],
+   "github": "steppe-integrations/multi-agent-build-blueprint",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "791109f057b0ff90a38d47433390bd65944f6b43",
+   "name": "multi-agent-build-blueprint",
+   "primary": false,
+   "role": "Five-layer blueprint template and reference architecture for AI-assisted multi-agent build sessions",
+   "source": "yaml"
+  },
+  {
+   "constellation": "creator-os",
+   "constellations": [
+    "creator-os"
+   ],
+   "github": "djcdevelopment/networksense",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "798dc04719c64e6c2292673a0d89667c258c7f61",
+   "name": "networksense",
+   "primary": false,
+   "role": "Standalone Valheim client observability add-on, packet inspection, and network telemetry",
+   "source": "yaml"
+  },
+  {
+   "constellation": "p2p-inference",
+   "constellations": [
+    "p2p-inference"
+   ],
+   "github": null,
+   "join_basis": "dirname",
+   "kind": "filesystem",
+   "lifecycle": "active",
+   "lineage": "78e1cf00a3961efeec707cdb7bdedf3334d305e8",
+   "name": "nightshift",
+   "primary": false,
+   "role": "Guest-facing AI engineering front door: student assignment portal running on local dual Arc Pro B70s",
+   "source": "yaml"
+  },
+  {
+   "constellation": "open-notebook",
+   "constellations": [
+    "open-notebook"
+   ],
+   "github": "djcdevelopment/open-notebook-hearth-integration",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "09f02f354241f165ce1a152bd59f6246d68baf17",
+   "name": "notebook",
+   "primary": true,
+   "role": "Open Notebook local architectural analysis, retrieval, and reasoning layer with HEARTH integration",
+   "source": "yaml"
+  },
+  {
+   "constellation": "steppe",
+   "constellations": [
+    "steppe"
+   ],
+   "github": "steppe-integrations/oddlittlebird",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "6e064f8b3ef9e0bc33f53d75f7b3d6113d128e8e",
+   "name": "oddlittlebird",
+   "primary": false,
+   "role": "OddLittleBird client integration and narrative showcase",
+   "source": "yaml"
+  },
+  {
+   "constellation": "GAD",
+   "constellations": [
+    "GAD"
+   ],
+   "github": "djcdevelopment/llmquest",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "a6b429fa8614dcff502a3df4bfbfeace72b51651",
+   "name": "old-goat-new-tricks",
+   "primary": false,
+   "role": "Local-AI interactive narrative and campfire questing experiment (llmquest)",
+   "source": "yaml"
+  },
+  {
+   "constellation": "planning-spine",
+   "constellations": [
+    "planning-spine"
+   ],
+   "github": "djcdevelopment/start-planner",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "d0cda3f8bc2aa7dabeb6fda28c813f28fa55f1b9",
+   "name": "planner",
+   "primary": false,
+   "role": "Task decomposition, prompt synthesis, backlog expansion, and plan visualization server",
+   "source": "yaml"
+  },
+  {
+   "constellation": "planning-spine",
+   "constellations": [
+    "planning-spine"
+   ],
+   "github": "djcdevelopment/planning",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "36db256ae1de45fdd9cf6f8cbc2c617b6e9c0278",
+   "name": "planning",
+   "primary": true,
+   "role": "Farmer .NET 9 VM-based agent orchestration control plane, NATS JetStream, and MAF retrospective agen",
+   "source": "yaml"
+  },
+  {
+   "constellation": "planning-spine",
+   "constellations": [
+    "planning-spine"
+   ],
+   "github": "djcdevelopment/portmap",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "da0a8476e842c97b423808376aed58ada91f7a2f",
+   "name": "portmap",
+   "primary": false,
+   "role": "Fleet port registry, allocator, conflict detection scanner, and validation service",
+   "source": "yaml"
+  },
+  {
+   "constellation": "planning-spine",
+   "constellations": [
+    "planning-spine"
+   ],
+   "github": "djcdevelopment/precheck",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "341f7bba31ffb9fc49ed74aa2d0efbea2aa2870a",
+   "name": "precheck",
+   "primary": false,
+   "role": "Deterministic preflight verification API and runs inspector (:18100)",
+   "source": "yaml"
+  },
+  {
+   "constellation": "planning-spine",
+   "constellations": [
+    "planning-spine"
+   ],
+   "github": "djcdevelopment/precheckv2",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "37fa64b96d703d0a52fe532abb6551302587a19c",
+   "name": "precheckv2",
+   "primary": false,
+   "role": "Second-generation preflight verification and bundle validation engine",
+   "source": "yaml"
+  },
+  {
+   "constellation": "GAD",
+   "constellations": [
+    "GAD"
+   ],
+   "github": "djcdevelopment/raidui",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "deprecating",
+   "lineage": "299eddc49aa7aa7c8fe606995611dfa6c1b319f1",
+   "name": "raidui",
+   "primary": false,
+   "role": "web viewer \u2014 legacy src/ + active newui/ cloud face",
+   "source": "yaml"
+  },
+  {
+   "constellation": "ai-systems-research",
+   "constellations": [
+    "ai-systems-research"
+   ],
+   "github": "djcdevelopment/indexcard",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "2f501a833fcd934cda80323546967f6bb8495705",
+   "name": "reader",
+   "primary": false,
+   "role": "Digital reading light for deep focus: dims screen except current reading line (IndexCard)",
+   "source": "yaml"
+  },
+  {
+   "constellation": "career-proof",
+   "constellations": [
+    "career-proof"
+   ],
+   "github": null,
+   "join_basis": "unjoined",
+   "kind": "filesystem",
+   "lifecycle": "active",
+   "lineage": null,
+   "name": "resume",
+   "primary": true,
+   "role": "Evidence-controlled resume pipeline, career proof audit, and public capability feed exporter",
+   "source": "yaml"
+  },
+  {
+   "constellation": "planning-spine",
+   "constellations": [
+    "planning-spine"
+   ],
+   "github": "djcdevelopment/scarecrow",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "7cf854e941bc099cd73c0c196ba33514d72b5560",
+   "name": "scarecrow",
+   "primary": false,
+   "role": "Agent guardrails, safety verification harness, and Electron desktop workbench",
+   "source": "yaml"
+  },
+  {
+   "constellation": "creator-os",
+   "constellations": [
+    "creator-os"
+   ],
+   "github": "djcdevelopment/deepnorthtesting",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd",
+   "name": "sealcompanion",
+   "primary": false,
+   "role": "Valheim 1.0 seal taming, companion assist, blubber defense, and boat ride mod",
+   "source": "yaml"
+  },
+  {
+   "constellation": "creator-os",
+   "constellations": [
+    "creator-os"
+   ],
+   "github": "djcdevelopment/chest-seer",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "c7dec46462fb0a86197442142ab14e1fb943b6b2",
+   "name": "seer",
+   "primary": false,
+   "role": "Turn Valheim inventory and chest screenshots into structured item and quantity spreadsheets (chest-s",
+   "source": "yaml"
+  },
+  {
+   "constellation": "creator-os",
+   "constellations": [
+    "creator-os"
+   ],
+   "github": "djcdevelopment/SelfieStick",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "ba4c3f28125b7e8fcd7e6f901aa758c7f18dadbd",
+   "name": "selfiestick",
+   "primary": false,
+   "role": "Automated 4K photographic camera engine for Valheim archives and chronicles (FX99)",
+   "source": "yaml"
+  },
+  {
+   "constellation": "steppe",
+   "constellations": [
+    "steppe"
+   ],
+   "github": "oddlittlebird/showcase-site",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "033ee49e907f1f97655a3cf606d14cd43c60bbb4",
+   "name": "showcase-site",
+   "primary": false,
+   "role": "Client showcase website for OddLittleBird",
+   "source": "yaml"
+  },
+  {
+   "constellation": "creator-os",
+   "constellations": [
+    "creator-os"
+   ],
+   "github": "djcdevelopment/sovereign-shards",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "ec52961c5a3f1fbc7b78eb55d035efcdb06c526b",
+   "name": "sovereign-shards",
+   "primary": false,
+   "role": "On-demand shard manager daemon (:8730), portal router, and armory sidecar",
+   "source": "yaml"
+  },
+  {
+   "constellation": "steppe",
+   "constellations": [
+    "steppe"
+   ],
+   "github": "djcdevelopment/stars-app",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "b7e57a0434db9a7a56eb76b67f409842525c74ef",
+   "name": "stars-app",
+   "primary": false,
+   "role": "Cross-platform Expo / React Native mobile application prototype",
+   "source": "yaml"
+  },
+  {
+   "constellation": "steppe",
+   "constellations": [
+    "steppe"
+   ],
+   "github": "djcdevelopment/steppeintegrations-site",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "b54645d264aa7db05e82a752e4c116b5336591c4",
+   "name": "steppeintegrations-site",
+   "primary": true,
+   "role": "Public systems evidence console and showcase site for Steppe Integrations (steppeintegrations.com)",
+   "source": "yaml"
+  },
+  {
+   "constellation": "creator-os",
+   "constellations": [
+    "creator-os"
+   ],
+   "github": null,
+   "join_basis": "dirname",
+   "kind": "filesystem",
+   "lifecycle": "active",
+   "lineage": "168915c9674722417bfd3fcfadcc0883976da6db",
+   "name": "steward-spatial-lab",
+   "primary": false,
+   "role": "Spatial camera test laboratory and experimental staging environment for ComfyStewardView",
+   "source": "yaml"
+  },
+  {
+   "constellation": "GAD",
+   "constellations": [
+    "GAD"
+   ],
+   "github": "djcdevelopment/tempo",
+   "join_basis": "unjoined",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": null,
+   "name": "tempo",
+   "primary": true,
+   "role": "centerpiece \u2014 Windows-native, local-first WoW raid-leader tool (.NET 9)",
+   "source": "yaml"
+  },
+  {
+   "constellation": "GAD",
+   "constellations": [
+    "GAD"
+   ],
+   "github": "djcdevelopment/tempo-viewer",
+   "join_basis": "unjoined",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": null,
+   "name": "tempo-viewer",
+   "primary": false,
+   "role": "Standalone web viewer consuming raid-replay projections emitted by the Tempo engine",
+   "source": "yaml"
+  },
+  {
+   "constellation": "GAD",
+   "constellations": [
+    "GAD"
+   ],
+   "github": "djcdevelopment/tempo-workbench",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "207f79d2cf4fdc9ae3307bc318ed81d0fd04868d",
+   "name": "tempo-workbench",
+   "primary": false,
+   "role": "Low-impact Windows dashboard for the dual Intel Arc Pro B70 native llama.cpp Vulkan server",
+   "source": "yaml"
+  },
+  {
+   "constellation": "omen-core",
+   "constellations": [
+    "omen-core"
+   ],
+   "github": null,
+   "join_basis": "unjoined",
+   "kind": "filesystem",
+   "lifecycle": "active",
+   "lineage": null,
+   "name": "tensor",
+   "primary": false,
+   "role": "D3D12 expert tensor execution, dual compute queue scheduling witness, and GPU stream supervisor",
+   "source": "yaml"
+  },
+  {
+   "constellation": "steppe",
+   "constellations": [
+    "steppe"
+   ],
+   "github": "steppe-integrations/threat-trace",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "b996d387a033215a4701c029c5f324e807f921c7",
+   "name": "threat-trace",
+   "primary": false,
+   "role": "In-browser agentic threat trace visualizer and defense cards (GasperCards)",
+   "source": "yaml"
+  },
+  {
+   "constellation": "creator-os",
+   "constellations": [
+    "creator-os"
+   ],
+   "github": "djcdevelopment/TotemSentinel",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "401ef9dfefef6fe91c22e42871780963338f0b1c",
+   "name": "totemalert",
+   "primary": false,
+   "role": "TotemSentinel client-side tactical camp-check radar and wide treasure search",
+   "source": "yaml"
+  },
+  {
+   "constellation": "omen-core",
+   "constellations": [
+    "omen-core"
+   ],
+   "github": null,
+   "join_basis": "dirname",
+   "kind": "filesystem",
+   "lifecycle": "active",
+   "lineage": "888fdd4b50af2e274d8162739b70ee335081b38d",
+   "name": "tuning",
+   "primary": false,
+   "role": "Workstation MoE and Ollama local performance evaluation, memory occupancy, and tuning benchmarks",
+   "source": "yaml"
+  },
+  {
+   "constellation": "creator-os",
+   "constellations": [
+    "creator-os"
+   ],
+   "github": "djcdevelopment/Unfaded",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "7862f447633880878ff1e98e22e0ee9d33072e84",
+   "name": "unfaded",
+   "primary": false,
+   "role": "Zero death blackout, 360-degree spectator drone scouting, and tactical camera mod on Thunderstore",
+   "source": "yaml"
+  },
+  {
+   "constellation": "creator-os",
+   "constellations": [
+    "creator-os"
+   ],
+   "github": "djcdevelopment/valheim-profile-engine",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "8379428a79e7d1e6f7055641be18a4e6d75fcf76",
+   "name": "valheim-profile-engine",
+   "primary": false,
+   "role": "Sub-50ms zero-copy BepInEx profile switching via NTFS directory junctions",
+   "source": "yaml"
+  },
+  {
+   "constellation": "GAD",
+   "constellations": [
+    "GAD",
+    "omen-core"
+   ],
+   "github": "djcdevelopment/vllama",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "1bbfcf404219b2421739acf8a827224fa2e2b2bd",
+   "name": "vllama",
+   "primary": false,
+   "role": "Vulkan llama.cpp lifecycle wrapper and OpenAI-compatible facade for resident local models",
+   "source": "yaml"
+  },
+  {
+   "constellation": "omen-core",
+   "constellations": [
+    "omen-core"
+   ],
+   "github": "djcdevelopment/vulkancliff",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "9abac2e4f07bb212493a01813088b7602e1e20b0",
+   "name": "vulkancliff",
+   "primary": false,
+   "role": "Vulkan acceleration tests and GPU fence validation",
+   "source": "yaml"
+  },
+  {
+   "constellation": "omen-core",
+   "constellations": [
+    "omen-core"
+   ],
+   "github": "djcdevelopment/windtunnel",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "34afef42b76b91e0cd524c613c6feb4783957c7b",
+   "name": "windtunnel",
+   "primary": false,
+   "role": "Agent execution harness and performance benchmarking",
+   "source": "yaml"
+  },
+  {
+   "constellation": "ai-systems-research",
+   "constellations": [
+    "ai-systems-research"
+   ],
+   "github": "djcdevelopment/work-visuals",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "6ef50f10dd4507093f02c11357bf4b20fd40675e",
+   "name": "work-visuals",
+   "primary": false,
+   "role": "Local analysis repo for visualizing workspace activity and temporal patterns across directories",
+   "source": "yaml"
+  },
+  {
+   "constellation": "GAD",
+   "constellations": [
+    "GAD"
+   ],
+   "github": "djcdevelopment/workbench",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "aeec44ac6aa0df4feed092f1354be134ae81be83",
+   "name": "workbench",
+   "primary": false,
+   "role": "IDE for prompt building and context assembly from combat logs and raid data",
+   "source": "yaml"
+  },
+  {
+   "constellation": "GAD",
+   "constellations": [
+    "GAD"
+   ],
+   "github": null,
+   "join_basis": "unjoined",
+   "kind": "filesystem",
+   "lifecycle": "active",
+   "lineage": null,
+   "name": "wow-code",
+   "primary": false,
+   "role": "Self-hosted, Windows-first, local-LLM guild intelligence suite and Lua addon codebase",
+   "source": "yaml"
+  },
+  {
+   "constellation": "GAD",
+   "constellations": [
+    "GAD"
+   ],
+   "github": "djcdevelopment/xpu-train",
+   "join_basis": "github",
+   "kind": "git",
+   "lifecycle": "active",
+   "lineage": "e580a2ef24acb12c5b90f5dc7264938d2eee28c1",
+   "name": "xpu-train",
+   "primary": false,
+   "role": "On-rig LoRA fine-tuning of the dev model via torch-xpu on the Arc B70 -- train -> merge -> GGUF -> s",
+   "source": "yaml"
+  }
+ ],
+ "version": 1
+}

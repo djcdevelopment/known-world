@@ -75,6 +75,10 @@ def scan_file(path, viol, stats):
         errs = A.scan_value(data)
         if base == "manifest.json":
             errs += A.validate_manifest(data)
+        elif base == "relations.json":
+            errs += A.validate_relations(data)
+        elif base == "chatgpt_links.json":
+            errs += A.validate_chatgpt_links(data)
         for e in errs:
             viol[(base[:24], e)] += 1
         stats["files"] += 1

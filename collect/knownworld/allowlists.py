@@ -287,3 +287,63 @@ def scan_value(v, path="", errs=None, depth=0):
                 errs.append("%s:secret_shape" % path[:40])
                 break
     return errs
+
+
+# ---- task 1b: corpus/merged/relations.json and chatgpt_links.json (strict key sets, no string over 120, paths <= 2) ----
+REL_NODE_KEYS = {"name", "constellation", "constellations", "primary", "kind", "lifecycle", "role", "github", "lineage",
+                 "join_basis", "source"}
+REL_EDGE_KEYS = {"src", "dst", "type", "scope", "source", "since", "inferred_valid_from", "src_kind", "dst_kind"}
+CONV_KEYS = {"conversation_id", "create_time", "update_time", "duration_s", "messages", "artifacts", "has_code",
+             "phase_label", "strategy_label", "projects", "lineages"}
+
+
+def _short(v):
+    return v is None or (isinstance(v, str) and len(v) <= MAX_STR and not CTRL_RE.search(v) and "@" not in v)
+
+
+def _lin(v):
+    return isinstance(v, str) and bool(REPO_RE.match(v))
+
+
+def validate_relations(d):
+    errs = []
+    if not isinstance(d, dict):
+        return ["relations:not_object"]
+    for n in d.get("nodes", []):
+        if set(n) - REL_NODE_KEYS:
+            errs.append("node:unknown_key")
+        if not all(_short(n.get(k)) for k in ("name", "constellation", "kind", "lifecycle", "role", "github")):
+            errs.append("node:bad_string")
+        if n.get("lineage") is not None and not _lin(n["lineage"]):
+            errs.append("node:bad_lineage")
+    for e in d.get("edges", []):
+        if set(e) - REL_EDGE_KEYS:
+            errs.append("edge:unknown_key")
+        if not all(_short(e.get(k)) for k in ("src", "dst", "type", "scope", "source")) or not v_ts(e.get("since")):
+            errs.append("edge:bad_value")
+    for k in d.get("integrations", {}):
+        if not _lin(k):
+            errs.append("integrations:bad_key")
+    return errs
+
+
+def validate_chatgpt_links(d):
+    errs = []
+    if not isinstance(d, dict):
+        return ["chatgpt_links:not_object"]
+    for c in d.get("conversations", []):
+        if set(c) - CONV_KEYS:
+            errs.append("conversation:unknown_key")
+        if not (isinstance(c.get("conversation_id"), str) and v_session(c["conversation_id"])):
+            errs.append("conversation:bad_id")
+        if not (v_ts(c.get("create_time")) and v_ts(c.get("update_time"))):
+            errs.append("conversation:bad_ts")
+        if not (v_token(c.get("phase_label")) and v_token(c.get("strategy_label"))):
+            errs.append("conversation:bad_label")
+        if not all(is_int(c.get(k)) for k in ("messages", "artifacts")):
+            errs.append("conversation:bad_count")
+        if not (isinstance(c.get("projects"), list) and all(isinstance(p, str) and v_path(p) for p in c["projects"])):
+            errs.append("conversation:bad_project")
+        if not (isinstance(c.get("lineages"), list) and all(_lin(x) for x in c["lineages"])):
+            errs.append("conversation:bad_lineage")
+    return errs

@@ -41,7 +41,9 @@ def build(c, launches, params):
         if key not in seen or t < seen[key]:
             seen[key] = t
     for b, t in c.first_backend.items():
-        gen = nm.seat_model(b, params["seat_models"])
+        gen = nm.canon(nm.seat_model(b, params["seat_models"]), g)
+        if gen is None:
+            continue
         key = ("local_model", gen)
         if key not in seen or t < seen[key]:
             seen[key] = t
@@ -72,6 +74,8 @@ def build(c, launches, params):
             ft = gl[0]["ts_start"] if gl else None
             fs = seen.get((nat, gen))
             entry = ft if params["generation_entry"] == "first_test" else fs
+            if entry is None and not tests.get(nat):
+                entry = fs  # a nation that never tests (local seats, OpenCode): a chip enters at first participation
             rows.append({
                 "nation": nat, "generation": gen, "entered": entry is not None, "first_ts": iso(entry) if entry is not None else None,
                 "first_event_ts": None, "first_seen_ts": iso(fs) if fs is not None else None,

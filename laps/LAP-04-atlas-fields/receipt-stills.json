@@ -1,0 +1,21 @@
+{
+ "alt_tile_area_k1": {
+  "cells": 9830,
+  "tiles": 6224
+ },
+ "default_cells": 16117,
+ "frames": {
+  "2026-03-15": 5129,
+  "2026-07-05": 13193,
+  "2026-09-28": 19313,
+  "final": 20320
+ },
+ "page_errors": [],
+ "sha256": {
+  "2026-03-15.png": "db84bcfb22e0295c6e9ea671496e0746bd61d119736a0bd6920da5792d3953b3",
+  "2026-07-05.png": "a6de83d95d4e99dfd71bffbcdb43877070712f9e293fa83fd401a4f407d2f114",
+  "2026-09-28.png": "e34948fb37bce7400481bcce80adb625518a55064c31e0293b99b9e675094dab",
+  "final-tile_area_k1.png": "c71a8eaf505af025bcbe5cd2153f417ac69096940ba8da8947d38800407f8a9f",
+  "final.png": "2831aaa0b15246169abf7be24fd44ee16a0bd60714ec8482fa80edd616f867de"
+ }
+}

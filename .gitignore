@@ -14,3 +14,6 @@ laps/*/frames/
 __pycache__/
 *.pyc
 node_modules/
+laps/*/build-*/
+laps/*/out/
+laps/*/.twice-*/

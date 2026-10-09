@@ -105,7 +105,7 @@ def mix(out, x, s, gl, gr):
     out[s:e, 1] += seg * gr
 
 
-def synthesize(F, fps, seed, probe_f, launches, wh, nations, series, params, env_scale, gens_index):
+def synthesize(F, fps, seed, probe_f, launches, wh, nations, series, params, env_scale, gens_index, bells=(), coda_f=None, off_series=None):
     """launches: list of dicts {f, px, band, nat (class), gen (int or None), first_test, first_nat, shape, inferred, warheads: [(f, band, px)]}"""
     spf = aud.spf(fps)
     out = aud.render_skeleton(F, fps, seed, probe_f)
@@ -167,6 +167,16 @@ def synthesize(F, fps, seed, probe_f, launches, wh, nations, series, params, env
     N = F * spf
     sample_t = np.arange(N) / spf
     fr = np.arange(F)
+    # repo-born bells (GitHub islands rising, no test): the lineage bell at -12 dB
+    for (bf, bpx) in bells:
+        gl, gr = pan_gains(bpx)
+        mix(out, bell(3.0 * env_scale if env_scale < 1 else 3.0, gain_db=-26 - 12), bf * spf, gl, gr); stats["bells"] += 1
+    fade = np.ones(F)
+    if coda_f is not None:
+        n = int(round(3.0 * fps))
+        fade[coda_f:] = 0.0
+        fade[coda_f:coda_f + n] = np.linspace(1.0, 0.0, min(n, F - coda_f))
+    fade_s = np.interp(sample_t, fr, fade).astype(np.float32)
     # hum 55 + 110 Hz from the commit rate (per output second over a 1 s window), gated at zero
     r = rolling(series["commits"], fps)
     lvl = np.minimum(-24.0, -36.0 + 6.0 * np.log10(1 + r))
@@ -174,7 +184,7 @@ def synthesize(F, fps, seed, probe_f, launches, wh, nations, series, params, env
     a_s = np.interp(sample_t, fr, amp).astype(np.float32)
     t = np.arange(N, dtype=np.float64) / SR
     hum = (np.sin(2 * math.pi * 55 * t) + 0.5 * np.sin(2 * math.pi * 110 * t)).astype(np.float32) / 1.5
-    out[:, 0] += hum * a_s; out[:, 1] += hum * a_s
+    out[:, 0] += hum * a_s * fade_s; out[:, 1] += hum * a_s * fade_s
     del hum
     # static per class from the log message rate, ceiling -18 dBFS
     for k, (cls, fc) in enumerate(STATIC_HZ.items()):
@@ -185,6 +195,29 @@ def synthesize(F, fps, seed, probe_f, launches, wh, nations, series, params, env
             continue
         a_s = np.interp(sample_t, fr, amp).astype(np.float32)
         nz = colored_noise(N, fc, seed + 100 + k)
-        out[:, 0] += nz * a_s; out[:, 1] += nz * a_s
+        out[:, 0] += nz * a_s * fade_s; out[:, 1] += nz * a_s * fade_s
+    # offload crackle: 1 ms clicks below 40/s, a 0.8 kHz roar above
+    if off_series is not None and off_series.sum() > 0:
+        r = rolling(off_series, fps)
+        rng = np.random.default_rng(seed + 7)
+        click = (db(-40.0) * np.exp(-np.arange(48) / 8.0) * np.where(np.arange(48) % 2 == 0, 1.0, -0.8)).astype(np.float32)
+        nclick = 0
+        for f in np.nonzero(off_series > 0)[0]:
+            if coda_f is not None and f >= coda_f:
+                break
+            if r[f] > 40:
+                continue
+            for _ in range(int(min(off_series[f], 6))):
+                st = int(f * spf + rng.integers(0, spf - 48))
+                out[st:st + 48, 0] += click; out[st:st + 48, 1] += click
+                nclick += 1
+        stats["offload_clicks"] = nclick
+        over = np.clip((r - 40.0) / 40.0, 0, 1)
+        if over.max() > 0:
+            amp = db(np.minimum(-24.0, -44.0 + 12.0 * np.log10(1 + np.maximum(r, 1) / 40.0))) * over
+            a_s = np.interp(sample_t, fr, amp).astype(np.float32) * fade_s
+            nz = colored_noise(N, 800.0, seed + 300)
+            out[:, 0] += nz * a_s; out[:, 1] += nz * a_s
+            stats["offload_roar_frames"] = int((over > 0).sum())
     out = aud.soft_limit(out, -1.0).astype(np.float32)
     return out, stats

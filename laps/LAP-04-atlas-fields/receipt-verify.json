@@ -1,0 +1,96 @@
+{
+ "checkpoints": {
+  "count": 23,
+  "deltas": 26272,
+  "every": 900,
+  "touches": 147061
+ },
+ "luminance_cut": {
+  "all_max_L": 0.8956,
+  "field_max_L": 0.5484,
+  "rows": [
+   {
+    "all_max_L": 0.665,
+    "f": 2401,
+    "field_max_L": 0.5459,
+    "nlive": 145
+   },
+   {
+    "all_max_L": 0.5484,
+    "f": 2394,
+    "field_max_L": 0.5484,
+    "nlive": 140
+   },
+   {
+    "all_max_L": 0.7644,
+    "f": 2415,
+    "field_max_L": 0.5484,
+    "nlive": 138
+   },
+   {
+    "all_max_L": 0.661,
+    "f": 810,
+    "field_max_L": 0.5383,
+    "nlive": 36
+   },
+   {
+    "all_max_L": 0.558,
+    "f": 1620,
+    "field_max_L": 0.5434,
+    "nlive": 45
+   },
+   {
+    "all_max_L": 0.8956,
+    "f": 2160,
+    "field_max_L": 0.5484,
+    "nlive": 109
+   }
+  ]
+ },
+ "order_check_cut": {
+  "equal": 30,
+  "frames": 30,
+  "mismatched": [],
+  "order": [
+   2025,
+   495,
+   855,
+   1755,
+   2565,
+   945
+  ]
+ },
+ "state": {
+  "checkpoint_every": 900,
+  "events": 147061,
+  "frames": [
+   {
+    "checkpoint_frame": 7200,
+    "frame": 7721,
+    "max_A": 2247.8008797187063,
+    "max_abs_err": 8.140059117067722e-05,
+    "nonzero": 997,
+    "rel_err": 3.6213435053403764e-08
+   },
+   {
+    "checkpoint_frame": 13500,
+    "frame": 14273,
+    "max_A": 530.9187623964679,
+    "max_abs_err": 2.1962444918699475e-05,
+    "nonzero": 2230,
+    "rel_err": 4.136686528003854e-08
+   },
+   {
+    "checkpoint_frame": 18900,
+    "frame": 19457,
+    "max_A": 4747.322652950128,
+    "max_abs_err": 0.0001815828609323944,
+    "nonzero": 5188,
+    "rel_err": 3.824953014717746e-08
+   }
+  ],
+  "groups": 7,
+  "node": "v24.21.0",
+  "tiles": 6224
+ }
+}

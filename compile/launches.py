@@ -43,7 +43,7 @@ def build_episodes(c, params):
     eps = []
     for lin in sorted(c.commits):
         cur = None
-        for (t, ref, cls, name, raw, nfiles, dirs, host, nonum) in c.commits[lin]:
+        for (t, ref, cls, name, raw, nfiles, dirs, host, nonum, mh) in c.commits[lin]:
             capped = min(raw, params["yield_cap_lines_per_commit"])
             if cur is not None and t - cur["t1"] <= gap:
                 cur["t1"] = t
@@ -52,7 +52,7 @@ def build_episodes(c, params):
                     eps.append(cur)
                 cur = {"lineage": lin, "t0": t, "t1": t, "n": 0, "lines": 0, "lines_raw": 0, "capped": 0, "files": 0,
                        "dirs": set(), "cls": collections.Counter(), "names": collections.defaultdict(collections.Counter),
-                       "hosts": set(), "nonum": 0, "nongit": False}
+                       "hosts": set(), "nonum": 0, "nongit": False, "host_n": collections.Counter()}
             cur["n"] += 1
             cur["lines"] += capped
             cur["lines_raw"] += raw
@@ -62,6 +62,7 @@ def build_episodes(c, params):
             cur["cls"][cls] += 1
             cur["names"][cls][name] += 1
             cur["hosts"].add(host)
+            cur["host_n"][host] += 1
             cur["nonum"] += nonum
         if cur:
             eps.append(cur)
@@ -79,18 +80,20 @@ def attach_context(c, params, ep):
     ts = c.chat_t.get(lin)
     if ts:
         a, b = corp.window(ts, lo, hi)
-        for (t, sid, cls, n) in c.chat[lin][a:b]:
+        for (t, sid, cls, n, _p, _h) in c.chat[lin][a:b]:
             ep["sessions"][sid] += n
             ep["scls"][cls] += n
             ep["smod"][cls][sid] += n
     a, b = corp.window(c.off_t, ep["t0"], ep["t1"])
     ep["seats"] = {x[1] for x in c.offloads[a:b]}
     bt = c.births_t.get(lin)
-    ep["branches"], ep["worktrees"] = set(), set()
+    ep["branches"], ep["worktrees"], ep["wt_host"] = set(), set(), {}
     if bt:
         a, b = corp.window(bt, ep["t0"], ep["t1"])
-        for (t, kind, ref) in c.births[lin][a:b]:
+        for (t, kind, ref, _h, _p) in c.births[lin][a:b]:
             (ep["branches"] if kind == "branch" else ep["worktrees"]).add((t, ref))
+            if kind == "worktree":
+                ep["wt_host"][ref] = _h
     hosts = {h for h, t in c.host_first.get(lin, {}).items() if t <= ep["t1"]}
     ep["hosts"] = set(ep.get("hosts") or ()) | hosts
     return ep
@@ -150,14 +153,15 @@ def passes_min(ep, params):
 
 
 # --- non-git ---------------------------------------------------------------
-def nongit_tests(c, params):
+def nongit_tests(c, params, min_files=None):
     out = []
-    ms = params["min_yield"]["files"]
+    ms = params["nongit_min_files"] if min_files is None else min_files
     gap_days = params["episode_gap_days"]
     ov = params["session_overlap_min"] * 60
     for lin in sorted(c.nongit):
         days = c.nongit[lin]
-        active = sorted(d for d, v in days.items() if v["files"] >= ms)
+        gate = c.dir_git_first.get(lin)  # a directory that later gained a git lineage counts as non-git only before its first commit
+        active = sorted(d for d, v in days.items() if v["files"] >= ms and (gate is None or v["t0"] < gate))
         cur = None
         groups = []
         for d in active:
@@ -176,7 +180,8 @@ def nongit_tests(c, params):
             t1 = max(days[d]["t1"] for d in g)
             ep = {"lineage": lin, "t0": t0, "t1": t1, "n": 0, "lines": None, "lines_raw": None, "capped": 0, "files": files,
                   "bytes": by, "dirs": dirs, "cls": collections.Counter(), "names": collections.defaultdict(collections.Counter),
-                  "hosts": set(), "nonum": 0, "nongit": True, "nrec": sum(days[d]["nrec"] for d in g), "bulk_skipped": sum(days[d]["bulk"] for d in g)}
+                  "hosts": set(), "nonum": 0, "nongit": True, "nrec": sum(days[d]["nrec"] for d in g), "bulk_skipped": sum(days[d]["bulk"] for d in g),
+                  "host_n": collections.Counter()}
             # sessions whose cwd lies under the directory and overlaps the burst
             ep["_win"] = (g[0] * 86400, (g[-1] + 1) * 86400)
             out.append(ep)
@@ -242,6 +247,36 @@ def cluster(tests, params):
                 groups.append(cur)
                 last, start = e["t1"], e["t0"]
         return groups
+    if mode == "combined":
+        # session grouping where a session is observed on the lineage; time_window (12 h cap) among the rest
+        with_s = [i for i in range(n) if tests[i]["sessions"]]
+        without = [i for i in range(n) if not tests[i]["sessions"]]
+        g1 = cluster_sessions([tests[i] for i in with_s], params, "session")
+        g2 = cluster_time([tests[i] for i in without], params)
+        return sorted(([with_s[j] for j in g] for g in g1), key=lambda g: g[0]) + [[without[j] for j in g] for g in g2]
+    return cluster_sessions(tests, params, mode)
+
+
+def cluster_time(tests, params):
+    n = len(tests)
+    order = sorted(range(n), key=lambda i: (tests[i]["t0"], tests[i]["lineage"]))
+    gap = params["episode_gap_h"] * 3600
+    cap = params["engagement_max_span_h"] * 3600 if params["engagement_max_span_h"] is not None else None
+    groups, cur, last, start = [], None, None, None
+    for i in order:
+        e = tests[i]
+        if cur is not None and e["t0"] - last <= gap and (cap is None or e["t0"] - start <= cap):
+            cur.append(i)
+            last = max(last, e["t1"])
+        else:
+            cur = [i]
+            groups.append(cur)
+            last, start = e["t1"], e["t0"]
+    return groups
+
+
+def cluster_sessions(tests, params, mode):
+    n = len(tests)
     uf = UF(n)
     by_sid = collections.defaultdict(list)
     for i, e in enumerate(tests):
@@ -274,9 +309,11 @@ def assemble(c, params, tests, groups):
         eps.sort(key=lambda e: (e["t0"], e["lineage"]))
         lineages = sorted({e["lineage"] for e in eps})
         wt = {}
+        wt_host = {}
         for e in eps:
             for (t, ref) in e["worktrees"]:
                 wt[ref] = (t, e["lineage"])
+                wt_host[ref] = e["wt_host"].get(ref)
         targets = list(lineages)
         if params["mirv_count_worktrees"]:
             targets += sorted(wt)
@@ -312,6 +349,19 @@ def assemble(c, params, tests, groups):
             sessions.update(e["sessions"])
         t0 = min(e["t0"] for e in eps)
         t1 = max(e["t1"] for e in eps)
+        hn = collections.Counter()
+        lin_host = {}
+        lin_dirs = collections.defaultdict(set)
+        for e in eps:
+            if nongit:
+                hn[e["lineage"].split(":")[1]] += 1
+                lin_host.setdefault(e["lineage"], collections.Counter())[e["lineage"].split(":")[1]] += 1
+            else:
+                hn.update(e["host_n"])
+                lin_host.setdefault(e["lineage"], collections.Counter()).update(e["host_n"])
+            lin_dirs[e["lineage"]] |= set(e["dirs"])
+        lin_host = {l: sorted(v.items(), key=lambda kv: (-kv[1], kv[0]))[0][0] for l, v in lin_host.items()}
+        host = sorted(hn.items(), key=lambda kv: (-kv[1], kv[0]))[0][0] if hn else None
         shape = "mirv" if (not nongit and len(targets) >= params["mirv_min_targets"]) else "single"
         wh = []
         if shape == "mirv":
@@ -320,10 +370,10 @@ def assemble(c, params, tests, groups):
                 x = by_lin[e["lineage"]]
                 x[0] = min(x[0], e["t0"]); x[1] += e["lines"] or 0
             for l, (t, ln) in by_lin.items():
-                wh.append({"target": l, "kind": "lineage", "ts": t, "lines": ln})
+                wh.append({"target": l, "kind": "lineage", "ts": t, "lines": ln, "host": lin_host.get(l), "_dirs": sorted(lin_dirs[l])})
             if params["mirv_count_worktrees"]:
                 for ref, (t, l) in wt.items():
-                    wh.append({"target": ref, "kind": "worktree", "ts": t, "lines": 0, "lineage": l})
+                    wh.append({"target": ref, "kind": "worktree", "ts": t, "lines": 0, "lineage": l, "host": wt_host.get(ref) or lin_host.get(l)})
             wh.sort(key=lambda w: (w["ts"], w["target"]))
         L.append({
             "launch_id": hashlib.sha1((prim["lineage"] + iso(t0)).encode()).hexdigest()[:12],
@@ -337,6 +387,7 @@ def assemble(c, params, tests, groups):
             "capped_commits": sum(e["capped"] for e in eps), "lines_raw": None if nongit else sum(e["lines_raw"] for e in eps),
             "commits_no_numstat": sum(e["nonum"] for e in eps),
             "first_test": False, "first_of_nation": None, "first_of_generation": None,
+            "host": host, "_dirs": sorted(lin_dirs[prim["lineage"]]),
             "_lineages": lineages,
         })
     L.sort(key=lambda l: (l["ts_start"], l["launch_id"]))
@@ -441,7 +492,7 @@ def public_launch(l):
     d = {k: v for k, v in l.items() if not k.startswith("_")}
     d["ts_start"] = iso(d["ts_start"])
     d["ts_end"] = iso(d["ts_end"])
-    d["warhead_list"] = [dict(w, ts=iso(w["ts"])) for w in d["warhead_list"]]
+    d["warhead_list"] = [dict({k: v for k, v in w.items() if not k.startswith("_")}, ts=iso(w["ts"])) for w in d["warhead_list"]]
     return d
 
 

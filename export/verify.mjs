@@ -61,7 +61,7 @@ out.luminance = await a.page.evaluate(() => {
   const rows = [];
   let fieldMax = 0, allMax = 0;
   for (const f of busy.concat([Math.floor(F * 0.3), Math.floor(F * 0.6), Math.floor(F * 0.8)])) {
-    kwOff(['launches', 'legend', 'ticker']); renderFrame(f); const lf = lum();
+    kwOnlyBelow(50); renderFrame(f); const lf = lum();
     kwOff([]); renderFrame(f); const la = lum();
     rows.push({f, nlive: KW.getState(f).nlive, field_max_L: +lf.toFixed(4), all_max_L: +la.toFixed(4)});
     fieldMax = Math.max(fieldMax, lf); allMax = Math.max(allMax, la);

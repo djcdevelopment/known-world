@@ -46,6 +46,13 @@ def load(params):
     nongit = collections.defaultdict(lambda: collections.defaultdict(lambda: {"files": 0, "bytes": 0, "dirs": set(), "t0": None, "t1": None, "bulk": 0, "nrec": 0}))
     host_first = collections.defaultdict(dict)
     first_event = {}
+    third_paths = collections.defaultdict(collections.Counter)
+    third_hosts = collections.defaultdict(set)
+    chat_all = []
+    sess_events = []
+    gh_born = []
+    dir_touch = collections.defaultdict(list)
+    nc_first = {}  # (lineage, host) -> first non-commit event, for third-party clone time
     first_local_offload = None
     first_backend = {}
     gen_first = {}  # (class, canon-minor-or-raw) -> (t, source)
@@ -62,37 +69,49 @@ def load(params):
         if cls != "third_party" and k in FIRST_EVENT_KINDS and (r not in c.third or params["first_event_include_third_party"]):
             if cls not in first_event or t < first_event[cls]:
                 first_event[cls] = t
+        if r in c.third and k in ("chat_msg", "chat_session", "file_birth", "file_update", "offload_call", "run", "receipt") and e.get("host"):
+            kk = (r, e["host"])
+            if kk not in nc_first or t < nc_first[kk]:
+                nc_first[kk] = t
         if r is not None and r not in c.third and e.get("host"):
             hf = host_first[r]
             if e["host"] not in hf or t < hf[e["host"]]:
                 hf[e["host"]] = t
         if k == "commit":
+            if r in c.third:
+                for pth in (e.get("files") or ()):
+                    third_paths[r][pth] += 1
+                third_hosts[r].update(set((e.get("meta") or {}).get("hosts") or ()) | {e["host"]})
             if r in c.own:
                 if cls == "third_party" and params["exclude_third_party_commits"]:
                     continue
                 m = e["magnitude"]
                 raw = (m.get("ins") or 0) + (m.get("del") or 0)
-                commits[r].append((t, e["ref"], cls, a["name"], raw, m.get("files") or 0, tuple(e.get("files") or ()), e["host"], bool((e.get("meta") or {}).get("no_numstat"))))
+                mh = tuple(sorted(set((e.get("meta") or {}).get("hosts") or ()) | {e["host"]}))
+                commits[r].append((t, e["ref"], cls, a["name"], raw, m.get("files") or 0, tuple(e.get("files") or ()), e["host"], bool((e.get("meta") or {}).get("no_numstat")), mh))
                 if cls != "third_party":
                     key = (cls, a["name"])
                     if key not in gen_first or t < gen_first[key]:
                         gen_first[key] = t
         elif k in ("branch", "worktree"):
             if r in c.own:
-                births[r].append((t, k, e["ref"][:12]))
+                births[r].append((t, k, e["ref"][:12], e["host"], e.get("path")))
         elif k == "chat_msg":
             n = e["magnitude"]["n"]
             sid = e["meta"].get("session")
             if cls == "chatgpt":
                 gpt.append((t, sid, n))
-            elif cls in SESSION_CLASSES and (r in c.own or r in c.dirs):
-                chat[r].append((t, sid, cls, n))
+            elif cls in SESSION_CLASSES:
+                chat_all.append((t, e["host"], cls, n))
+                if r in c.own or r in c.dirs:
+                    chat[r].append((t, sid, cls, n, e.get("path"), e["host"]))
         elif k == "chat_session":
             sid = e["meta"].get("session")
             mods = e["meta"].get("model")
             if isinstance(mods, str):
                 mods = [mods]
             sess_models[sid] = (cls, list(mods or []), t, int(e["magnitude"].get("n") or 0))
+            sess_events.append((t, cls, e["host"]))
             for mname in mods or []:
                 key = (cls, mname)
                 if key not in gen_first or t < gen_first[key]:
@@ -105,12 +124,15 @@ def load(params):
                     first_backend[b] = t
                 if first_local_offload is None or t < first_local_offload:
                     first_local_offload = t
+        elif k == "repo_born" and e["host"] == "github":
+            gh_born.append((t, r, int(e["magnitude"].get("kb") or 0), bool((e.get("meta") or {}).get("fork"))))
         elif k in ("file_birth", "file_update"):
             if r in c.dirs:
                 day = t // 86400
                 m = e["magnitude"]
                 d = nongit[r][day]
                 bulk = bool((e.get("meta") or {}).get("bulk_copy"))
+                dir_touch[r].append((t, e["host"], e.get("path") or ".", k, m["n"], m.get("bytes") or 0, bulk, cls))
                 if bulk and params["nongit_exclude_bulk_copy"]:
                     d["bulk"] += m["n"]
                     continue
@@ -122,6 +144,21 @@ def load(params):
                 d["t1"] = t if d["t1"] is None else max(d["t1"], t)
                 d["nrec"] += 1
     c.n_events = n_events
+    c.third_paths, c.third_hosts, c.chat_all, c.sess_events, c.gh_born, c.dir_touch, c.nc_first = third_paths, third_hosts, sorted(chat_all), sorted(sess_events), sorted(gh_born, key=lambda x: (x[0], str(x[1]))), dir_touch, nc_first
+    for r in dir_touch:
+        dir_touch[r].sort()
+    # directories that later gain a git lineage (exact path match on the same host): non-git only before its first commit
+    gp = {}
+    for i in c.own:
+        for h, ps in c.lineages[i]["paths"].items():
+            for pth in ps:
+                gp[(h, pth.rstrip("/"))] = i
+    c.dir_git_first = {}
+    for i in c.dirs:
+        _, h, pth = i.split(":", 2)
+        g = gp.get((h, pth.rstrip("/")))
+        if g:
+            c.dir_git_first[i] = parse_ts(c.lineages[g]["first_ts"])
     for r in commits:
         commits[r].sort(key=lambda x: (x[0], x[1]))
     for r in chat:

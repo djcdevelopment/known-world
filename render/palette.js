@@ -25,5 +25,7 @@
     }
     return s + (a < 0 ? 0 : a > 1 ? 1 : a).toFixed(3) + ')';
   }
-  KW.palette = { oklch, rgba, genL: gi => Math.max(0.6, 0.92 - 0.06 * gi) };
+  function rgb(L, C, H) { const c = oklch(L, C, H); return 'rgb(' + Math.round(c[0]) + ',' + Math.round(c[1]) + ',' + Math.round(c[2]) + ')'; }
+  function rgbaRaw(L, C, H, a) { const c = oklch(L, C, H); return 'rgba(' + Math.round(c[0]) + ',' + Math.round(c[1]) + ',' + Math.round(c[2]) + ',' + a.toFixed(3) + ')'; }
+  KW.palette = { oklch, rgba, rgb, rgbaRaw, HUE, genL: gi => Math.max(0.6, 0.92 - 0.06 * gi) };
 })();

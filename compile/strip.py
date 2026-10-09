@@ -30,7 +30,7 @@ def density(c, clock):
         tc += [x[0] for x in v]
     tm, wm = [], []
     for lin, v in c.chat.items():
-        for (t, sid, cls, n) in v:
+        for (t, sid, cls, n, _p, _h) in v:
             tm.append(t); wm.append(n)
     for (t, sid, n) in c.gpt:
         tm.append(t); wm.append(1)

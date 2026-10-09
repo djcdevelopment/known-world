@@ -1,0 +1,3653 @@
+{
+ "arms": {
+  "combined": {
+   "counts": {
+    "bands": {
+     "1": 71,
+     "2": 268,
+     "3": 363,
+     "4": 205,
+     "5": 35,
+     "6": 9
+    },
+    "bands_git": {
+     "1": 30,
+     "2": 182,
+     "3": 279,
+     "4": 140,
+     "5": 8,
+     "6": 1
+    },
+    "capped_commits": 87,
+    "episodes_git": 1054,
+    "first_of_generation": 19,
+    "first_of_nation": 5,
+    "first_tests": 215,
+    "launches": 951,
+    "launches_git": 640,
+    "launches_nongit": 311,
+    "max_warheads": 58,
+    "mirv": 171,
+    "nations": {
+     "automation": 9,
+     "chatgpt": 37,
+     "claude": 453,
+     "codex": 82,
+     "human": 370
+    },
+    "nations_git": {
+     "automation": 9,
+     "claude": 442,
+     "codex": 74,
+     "human": 115
+    },
+    "nongit_nations": {
+     "chatgpt:time": 37,
+     "claude": 11,
+     "codex": 8,
+     "human": 255
+    },
+    "single": 769,
+    "single_git": 458,
+    "tests_git": 954,
+    "tests_nongit": 311,
+    "unified": 11,
+    "warheads_hist": {
+     "2": 98,
+     "3": 33,
+     "4": 14,
+     "5": 10,
+     "6": 2,
+     "7": 3,
+     "8": 3,
+     "9": 3,
+     "10": 5
+    }
+   },
+   "stats": {
+    "git_episodes": 1054,
+    "git_tests": 954,
+    "git_tests_with_session": 294,
+    "nongit_tests": 311
+   }
+  },
+  "session": {
+   "counts": {
+    "bands": {
+     "1": 120,
+     "2": 412,
+     "3": 469,
+     "4": 206,
+     "5": 33,
+     "6": 9
+    },
+    "bands_git": {
+     "1": 79,
+     "2": 326,
+     "3": 385,
+     "4": 141,
+     "5": 6,
+     "6": 1
+    },
+    "capped_commits": 87,
+    "episodes_git": 1054,
+    "first_of_generation": 20,
+    "first_of_nation": 5,
+    "first_tests": 230,
+    "launches": 1249,
+    "launches_git": 938,
+    "launches_nongit": 311,
+    "max_warheads": 58,
+    "mirv": 47,
+    "nations": {
+     "automation": 16,
+     "chatgpt": 37,
+     "claude": 613,
+     "codex": 84,
+     "human": 499
+    },
+    "nations_git": {
+     "automation": 16,
+     "claude": 602,
+     "codex": 76,
+     "human": 244
+    },
+    "nongit_nations": {
+     "chatgpt:time": 37,
+     "claude": 11,
+     "codex": 8,
+     "human": 255
+    },
+    "single": 1195,
+    "single_git": 884,
+    "tests_git": 954,
+    "tests_nongit": 311,
+    "unified": 7,
+    "warheads_hist": {
+     "2": 22,
+     "3": 14,
+     "4": 1,
+     "5": 4,
+     "6": 1,
+     "7": 1,
+     "8": 1,
+     "9": 2,
+     "10": 1
+    }
+   },
+   "stats": {
+    "git_episodes": 1054,
+    "git_tests": 954,
+    "git_tests_with_session": 294,
+    "nongit_tests": 311
+   }
+  },
+  "time_window": {
+   "counts": {
+    "bands": {
+     "1": 56,
+     "2": 171,
+     "3": 248,
+     "4": 175,
+     "5": 42,
+     "6": 9
+    },
+    "bands_git": {
+     "1": 15,
+     "2": 85,
+     "3": 164,
+     "4": 110,
+     "5": 15,
+     "6": 1
+    },
+    "capped_commits": 87,
+    "episodes_git": 1054,
+    "first_of_generation": 18,
+    "first_of_nation": 5,
+    "first_tests": 203,
+    "launches": 701,
+    "launches_git": 390,
+    "launches_nongit": 311,
+    "max_warheads": 29,
+    "mirv": 209,
+    "nations": {
+     "automation": 5,
+     "chatgpt": 37,
+     "claude": 291,
+     "codex": 30,
+     "human": 338
+    },
+    "nations_git": {
+     "automation": 5,
+     "claude": 280,
+     "codex": 22,
+     "human": 83
+    },
+    "nongit_nations": {
+     "chatgpt:time": 37,
+     "claude": 11,
+     "codex": 8,
+     "human": 255
+    },
+    "single": 486,
+    "single_git": 175,
+    "tests_git": 954,
+    "tests_nongit": 311,
+    "unified": 6,
+    "warheads_hist": {
+     "2": 94,
+     "3": 43,
+     "4": 20,
+     "5": 18,
+     "6": 12,
+     "7": 2,
+     "8": 3,
+     "9": 4,
+     "10": 13
+    }
+   },
+   "stats": {
+    "git_episodes": 1054,
+    "git_tests": 954,
+    "git_tests_with_session": 294,
+    "nongit_tests": 311
+   }
+  }
+ },
+ "by_dir_year": {
+  "10": [
+   {
+    "bytes": 2078734191,
+    "dir": "fx99#bd915",
+    "files": 361,
+    "launches": 7,
+    "year": "2018"
+   },
+   {
+    "bytes": 5791176226,
+    "dir": "fx99#bd915",
+    "files": 275,
+    "launches": 6,
+    "year": "2019"
+   },
+   {
+    "bytes": 10898823,
+    "dir": "omen-e#1843c",
+    "files": 19,
+    "launches": 1,
+    "year": "2020"
+   },
+   {
+    "bytes": 8952029,
+    "dir": "omen-c#58afa",
+    "files": 17,
+    "launches": 1,
+    "year": "2021"
+   },
+   {
+    "bytes": 913696,
+    "dir": "omen-e#fdfb7",
+    "files": 28,
+    "launches": 1,
+    "year": "2022"
+   },
+   {
+    "bytes": 76340112,
+    "dir": "omen-e#2b08e",
+    "files": 143,
+    "launches": 2,
+    "year": "2023"
+   },
+   {
+    "bytes": 83302624,
+    "dir": "omen-e#ce4fc",
+    "files": 114,
+    "launches": 4,
+    "year": "2023"
+   },
+   {
+    "bytes": 112530,
+    "dir": "omen-e#c3d26",
+    "files": 85,
+    "launches": 2,
+    "year": "2023"
+   },
+   {
+    "bytes": 20934806,
+    "dir": "omen-c#2f20f",
+    "files": 40,
+    "launches": 1,
+    "year": "2023"
+   },
+   {
+    "bytes": 69925384,
+    "dir": "omen-c#9668c",
+    "files": 515,
+    "launches": 3,
+    "year": "2024"
+   },
+   {
+    "bytes": 14419290,
+    "dir": "omen-e#fdfb7",
+    "files": 179,
+    "launches": 4,
+    "year": "2024"
+   },
+   {
+    "bytes": 7526725,
+    "dir": "omen-e#c3d26",
+    "files": 176,
+    "launches": 1,
+    "year": "2024"
+   },
+   {
+    "bytes": 9988480,
+    "dir": "omen-e#ce4fc",
+    "files": 150,
+    "launches": 3,
+    "year": "2024"
+   },
+   {
+    "bytes": 220567945,
+    "dir": "omen-e#2b08e",
+    "files": 109,
+    "launches": 3,
+    "year": "2024"
+   },
+   {
+    "bytes": 4203724,
+    "dir": "omen-e#c6d3d",
+    "files": 55,
+    "launches": 2,
+    "year": "2024"
+   },
+   {
+    "bytes": 3111936,
+    "dir": "omen-e#818e7",
+    "files": 24,
+    "launches": 1,
+    "year": "2024"
+   },
+   {
+    "bytes": 86836183,
+    "dir": "omen-e#2b08e",
+    "files": 1512,
+    "launches": 12,
+    "year": "2025"
+   },
+   {
+    "bytes": 30339197,
+    "dir": "omen-e#fdfb7",
+    "files": 154,
+    "launches": 3,
+    "year": "2025"
+   },
+   {
+    "bytes": 912626,
+    "dir": "omen-e#3eff0",
+    "files": 70,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 64496920,
+    "dir": "omen-e#95e80",
+    "files": 55,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 4203724,
+    "dir": "omen-e#c6d3d",
+    "files": 55,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 2079203,
+    "dir": "omen-e#b114c",
+    "files": 52,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 1966428,
+    "dir": "omen-e#22597",
+    "files": 34,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 6340288,
+    "dir": "omen-c#9668c",
+    "files": 33,
+    "launches": 2,
+    "year": "2025"
+   },
+   {
+    "bytes": 8974160,
+    "dir": "omen-e#818e7",
+    "files": 30,
+    "launches": 3,
+    "year": "2025"
+   },
+   {
+    "bytes": 1506706,
+    "dir": "omen-e#1843c",
+    "files": 17,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 231232,
+    "dir": "omen-c#d1532",
+    "files": 14,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 16629193,
+    "dir": "omen-e#0a8d0",
+    "files": 14,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 278362992,
+    "dir": "omen-e#c19d2",
+    "files": 14,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 41127,
+    "dir": "omen-e#ed8a6",
+    "files": 11,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 186186459385,
+    "dir": "omen-e#124b4",
+    "files": 43920,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 382696858,
+    "dir": "omen-c#5f827",
+    "files": 15389,
+    "launches": 4,
+    "year": "2026"
+   },
+   {
+    "bytes": 12946089995,
+    "dir": "omen-e#a526d",
+    "files": 8515,
+    "launches": 7,
+    "year": "2026"
+   },
+   {
+    "bytes": 95733418259,
+    "dir": "omen-e#c19d2",
+    "files": 7205,
+    "launches": 8,
+    "year": "2026"
+   },
+   {
+    "bytes": 197126861,
+    "dir": "omen-e#25083",
+    "files": 6185,
+    "launches": 8,
+    "year": "2026"
+   },
+   {
+    "bytes": 3301335359,
+    "dir": "am4#89fcb",
+    "files": 5748,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 10974836315,
+    "dir": "omen-e#fdfb7",
+    "files": 5241,
+    "launches": 9,
+    "year": "2026"
+   },
+   {
+    "bytes": 9199304044,
+    "dir": "omen-c#9668c",
+    "files": 5029,
+    "launches": 12,
+    "year": "2026"
+   },
+   {
+    "bytes": 7567956785,
+    "dir": "omen-c#7a12b",
+    "files": 4728,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 479551411,
+    "dir": "omen-e#e5fe7",
+    "files": 4566,
+    "launches": 3,
+    "year": "2026"
+   },
+   {
+    "bytes": 996017136,
+    "dir": "omen-e#2b08e",
+    "files": 4332,
+    "launches": 19,
+    "year": "2026"
+   },
+   {
+    "bytes": 69949664,
+    "dir": "omen-linux#a7a03",
+    "files": 3444,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 11938072354,
+    "dir": "omen-e#3e5ff",
+    "files": 3047,
+    "launches": 19,
+    "year": "2026"
+   },
+   {
+    "bytes": 1105331313,
+    "dir": "omen-linux#70788",
+    "files": 1741,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 3316487831,
+    "dir": "omen-e#22597",
+    "files": 1505,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 17713183,
+    "dir": "omen-linux#0558b",
+    "files": 1048,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 160707848,
+    "dir": "omen-linux#9d6a7",
+    "files": 1045,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 9528763400,
+    "dir": "fx99#bd915",
+    "files": 927,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 114650060,
+    "dir": "omen-e#ce4fc",
+    "files": 809,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 621491295,
+    "dir": "omen-c#d1532",
+    "files": 797,
+    "launches": 5,
+    "year": "2026"
+   },
+   {
+    "bytes": 566312013196,
+    "dir": "omen-e#10fd2",
+    "files": 756,
+    "launches": 6,
+    "year": "2026"
+   },
+   {
+    "bytes": 125344963,
+    "dir": "omen-e#818e7",
+    "files": 715,
+    "launches": 4,
+    "year": "2026"
+   },
+   {
+    "bytes": 12064714478,
+    "dir": "omen-e#69229",
+    "files": 587,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 12125997,
+    "dir": "omen-c#7e9f7",
+    "files": 550,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 17047835,
+    "dir": "omen-linux#76d6e",
+    "files": 518,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 14661895,
+    "dir": "omen-linux#7be10",
+    "files": 446,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 29163876,
+    "dir": "omen-linux#6e5bd",
+    "files": 445,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 53518214,
+    "dir": "omen-linux#81f50",
+    "files": 443,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 163849381,
+    "dir": "omen-e#95e80",
+    "files": 426,
+    "launches": 7,
+    "year": "2026"
+   },
+   {
+    "bytes": 4347345,
+    "dir": "omen-linux#13fc1",
+    "files": 366,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 454163614,
+    "dir": "omen-c#b1797",
+    "files": 359,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 32939836,
+    "dir": "omen-linux#9fc17",
+    "files": 348,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 6840486,
+    "dir": "omen-linux#a3c62",
+    "files": 326,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 2385651,
+    "dir": "omen-linux#1a091",
+    "files": 304,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 48195744,
+    "dir": "omen-linux#455f0",
+    "files": 292,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 10448787,
+    "dir": "omen-c#8f206",
+    "files": 285,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 37854178,
+    "dir": "omen-linux#661bf",
+    "files": 283,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 19178758,
+    "dir": "omen-linux#696c7",
+    "files": 248,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 249539810,
+    "dir": "omen-e#5e072",
+    "files": 234,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 43248395,
+    "dir": "omen-e#1aa71",
+    "files": 225,
+    "launches": 3,
+    "year": "2026"
+   },
+   {
+    "bytes": 987226,
+    "dir": "omen-linux#426e1",
+    "files": 225,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 15162069,
+    "dir": "omen-c#58afa",
+    "files": 183,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 3199895,
+    "dir": "omen-c#d2089",
+    "files": 176,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 5953861,
+    "dir": "fx99#990ed",
+    "files": 169,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 2323106,
+    "dir": "omen-linux#e00e1",
+    "files": 163,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 126734775,
+    "dir": "omen-linux#361c7",
+    "files": 162,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 49463093,
+    "dir": "omen-c#2f20f",
+    "files": 157,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 696691208,
+    "dir": "omen-e#e236d",
+    "files": 156,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 2871737,
+    "dir": "omen-linux#af6f5",
+    "files": 138,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 1582126912,
+    "dir": "omen-e#37164",
+    "files": 130,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 171459,
+    "dir": "omen-e#a2b2f",
+    "files": 122,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 3419478,
+    "dir": "omen-linux#3798b",
+    "files": 114,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 8433512,
+    "dir": "omen-linux#8b7b7",
+    "files": 113,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 5685605,
+    "dir": "omen-linux#8f1cf",
+    "files": 106,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 14874418,
+    "dir": "omen-linux#eed1a",
+    "files": 93,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 10748139,
+    "dir": "omen-c#4b13d",
+    "files": 88,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 811478523,
+    "dir": "am4#787a7",
+    "files": 85,
+    "launches": 3,
+    "year": "2026"
+   },
+   {
+    "bytes": 678897,
+    "dir": "omen-c#3ffc9",
+    "files": 79,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 29076361,
+    "dir": "omen-e#69d71",
+    "files": 79,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 63309141,
+    "dir": "omen-e#b7016",
+    "files": 75,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 2663597,
+    "dir": "omen-linux#62a24",
+    "files": 75,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 9751890,
+    "dir": "omen-c#2896a",
+    "files": 66,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 4702656,
+    "dir": "omen-c#7aa6e",
+    "files": 65,
+    "launches": 3,
+    "year": "2026"
+   },
+   {
+    "bytes": 115750208,
+    "dir": "omen-e#76000",
+    "files": 63,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 6671802,
+    "dir": "fx99#9962a",
+    "files": 61,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 4137140,
+    "dir": "omen-linux#2d74c",
+    "files": 61,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 2346698,
+    "dir": "omen-linux#fba5c",
+    "files": 60,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 2919635089,
+    "dir": "omen-c#ac3c1",
+    "files": 54,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 9935670,
+    "dir": "omen-linux#6e3b7",
+    "files": 54,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 101938973,
+    "dir": "omen-e#1e264",
+    "files": 53,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 76639205,
+    "dir": "omen-e#9f3a3",
+    "files": 53,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 1749954,
+    "dir": "omen-linux#5976f",
+    "files": 47,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 137487283,
+    "dir": "omen-e#8f459",
+    "files": 46,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 444138,
+    "dir": "omen-linux#a8292",
+    "files": 46,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 146218,
+    "dir": "omen-c#83677",
+    "files": 45,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 15929796,
+    "dir": "omen-e#a2cc3",
+    "files": 43,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 24343917,
+    "dir": "omen-linux#e3ee7",
+    "files": 41,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 6648229,
+    "dir": "omen-e#8024a",
+    "files": 40,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 103263,
+    "dir": "omen-linux#5b53e",
+    "files": 38,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 100271929,
+    "dir": "omen-c#62683",
+    "files": 37,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 792775,
+    "dir": "omen-e#7988e",
+    "files": 37,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 630921,
+    "dir": "omen-linux#988cf",
+    "files": 37,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 100440143,
+    "dir": "omen-c#d319e",
+    "files": 36,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 1353661,
+    "dir": "omen-e#3c94e",
+    "files": 36,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 48138284,
+    "dir": "omen-e#f0cc1",
+    "files": 35,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 207572927,
+    "dir": "omen-linux#0ba5f",
+    "files": 35,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 22563,
+    "dir": "omen-e#8b921",
+    "files": 33,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 179343,
+    "dir": "omen-linux#66448",
+    "files": 33,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 3437794,
+    "dir": "omen-linux#79392",
+    "files": 33,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 131305442,
+    "dir": "omen-e#f1171",
+    "files": 32,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 15846720,
+    "dir": "omen-e#bbaa6",
+    "files": 31,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 14383946192,
+    "dir": "omen-e#a776d",
+    "files": 30,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 171902,
+    "dir": "omen-c#1b9ee",
+    "files": 25,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 27002732,
+    "dir": "omen-c#81c12",
+    "files": 24,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 1461143546,
+    "dir": "omen-e#34f64",
+    "files": 23,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 45712,
+    "dir": "omen-e#e9058",
+    "files": 22,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 185944,
+    "dir": "omen-c#c8122",
+    "files": 21,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 512239,
+    "dir": "omen-e#8e0d3",
+    "files": 21,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 87436,
+    "dir": "omen-linux#0f2e7",
+    "files": 21,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 183048,
+    "dir": "omen-linux#c1356",
+    "files": 21,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 108302,
+    "dir": "omen-linux#85241",
+    "files": 20,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 13203407,
+    "dir": "omen-e#d2f47",
+    "files": 18,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 87545,
+    "dir": "omen-linux#3261d",
+    "files": 18,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 385160008,
+    "dir": "omen-c#3f02b",
+    "files": 17,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 1054753,
+    "dir": "omen-c#cb99d",
+    "files": 16,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 468243,
+    "dir": "omen-e#3eff0",
+    "files": 15,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 75634492815,
+    "dir": "omen-e#8541c",
+    "files": 15,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 16629193,
+    "dir": "omen-e#0a8d0",
+    "files": 14,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 97021,
+    "dir": "omen-e#7a14f",
+    "files": 14,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 37626475,
+    "dir": "omen-e#e4f0d",
+    "files": 14,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 37419502,
+    "dir": "omen-e#e16d8",
+    "files": 13,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 10631246,
+    "dir": "omen-c#663d7",
+    "files": 11,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 298624,
+    "dir": "omen-c#d167f",
+    "files": 11,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 13832727,
+    "dir": "omen-c#5551b",
+    "files": 10,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 1139136,
+    "dir": "omen-e#62a69",
+    "files": 10,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 123304,
+    "dir": "omen-e#a89cf",
+    "files": 10,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 339349,
+    "dir": "omen-linux#25012",
+    "files": 10,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 60332,
+    "dir": "omen-linux#d826e",
+    "files": 10,
+    "launches": 1,
+    "year": "2026"
+   }
+  ],
+  "20": [
+   {
+    "bytes": 1957372325,
+    "dir": "fx99#bd915",
+    "files": 326,
+    "launches": 4,
+    "year": "2018"
+   },
+   {
+    "bytes": 5136100964,
+    "dir": "fx99#bd915",
+    "files": 218,
+    "launches": 5,
+    "year": "2019"
+   },
+   {
+    "bytes": 913696,
+    "dir": "omen-e#fdfb7",
+    "files": 28,
+    "launches": 1,
+    "year": "2022"
+   },
+   {
+    "bytes": 4659727,
+    "dir": "omen-e#2b08e",
+    "files": 124,
+    "launches": 2,
+    "year": "2023"
+   },
+   {
+    "bytes": 53725808,
+    "dir": "omen-e#ce4fc",
+    "files": 92,
+    "launches": 2,
+    "year": "2023"
+   },
+   {
+    "bytes": 99695,
+    "dir": "omen-e#c3d26",
+    "files": 73,
+    "launches": 1,
+    "year": "2023"
+   },
+   {
+    "bytes": 20934806,
+    "dir": "omen-c#2f20f",
+    "files": 40,
+    "launches": 1,
+    "year": "2023"
+   },
+   {
+    "bytes": 69925384,
+    "dir": "omen-c#9668c",
+    "files": 515,
+    "launches": 3,
+    "year": "2024"
+   },
+   {
+    "bytes": 7526725,
+    "dir": "omen-e#c3d26",
+    "files": 176,
+    "launches": 1,
+    "year": "2024"
+   },
+   {
+    "bytes": 10676826,
+    "dir": "omen-e#fdfb7",
+    "files": 169,
+    "launches": 3,
+    "year": "2024"
+   },
+   {
+    "bytes": 9340720,
+    "dir": "omen-e#ce4fc",
+    "files": 140,
+    "launches": 2,
+    "year": "2024"
+   },
+   {
+    "bytes": 201790837,
+    "dir": "omen-e#2b08e",
+    "files": 83,
+    "launches": 2,
+    "year": "2024"
+   },
+   {
+    "bytes": 4203724,
+    "dir": "omen-e#c6d3d",
+    "files": 55,
+    "launches": 2,
+    "year": "2024"
+   },
+   {
+    "bytes": 3111936,
+    "dir": "omen-e#818e7",
+    "files": 24,
+    "launches": 1,
+    "year": "2024"
+   },
+   {
+    "bytes": 81513644,
+    "dir": "omen-e#2b08e",
+    "files": 1431,
+    "launches": 6,
+    "year": "2025"
+   },
+   {
+    "bytes": 30339197,
+    "dir": "omen-e#fdfb7",
+    "files": 154,
+    "launches": 3,
+    "year": "2025"
+   },
+   {
+    "bytes": 912626,
+    "dir": "omen-e#3eff0",
+    "files": 70,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 64496920,
+    "dir": "omen-e#95e80",
+    "files": 55,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 4203724,
+    "dir": "omen-e#c6d3d",
+    "files": 55,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 2079203,
+    "dir": "omen-e#b114c",
+    "files": 52,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 1966428,
+    "dir": "omen-e#22597",
+    "files": 34,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 186181495934,
+    "dir": "omen-e#124b4",
+    "files": 43903,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 382696858,
+    "dir": "omen-c#5f827",
+    "files": 15389,
+    "launches": 4,
+    "year": "2026"
+   },
+   {
+    "bytes": 12913672007,
+    "dir": "omen-e#a526d",
+    "files": 8493,
+    "launches": 5,
+    "year": "2026"
+   },
+   {
+    "bytes": 95733369778,
+    "dir": "omen-e#c19d2",
+    "files": 7192,
+    "launches": 7,
+    "year": "2026"
+   },
+   {
+    "bytes": 197099111,
+    "dir": "omen-e#25083",
+    "files": 6162,
+    "launches": 9,
+    "year": "2026"
+   },
+   {
+    "bytes": 3301335359,
+    "dir": "am4#89fcb",
+    "files": 5748,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 10957905378,
+    "dir": "omen-e#fdfb7",
+    "files": 5190,
+    "launches": 6,
+    "year": "2026"
+   },
+   {
+    "bytes": 9178749273,
+    "dir": "omen-c#9668c",
+    "files": 5003,
+    "launches": 11,
+    "year": "2026"
+   },
+   {
+    "bytes": 7567956785,
+    "dir": "omen-c#7a12b",
+    "files": 4728,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 476560692,
+    "dir": "omen-e#e5fe7",
+    "files": 4548,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 965558212,
+    "dir": "omen-e#2b08e",
+    "files": 4178,
+    "launches": 16,
+    "year": "2026"
+   },
+   {
+    "bytes": 69918519,
+    "dir": "omen-linux#a7a03",
+    "files": 3430,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 11747037269,
+    "dir": "omen-e#3e5ff",
+    "files": 2927,
+    "launches": 17,
+    "year": "2026"
+   },
+   {
+    "bytes": 1105168070,
+    "dir": "omen-linux#70788",
+    "files": 1729,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 3316487831,
+    "dir": "omen-e#22597",
+    "files": 1505,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 17713183,
+    "dir": "omen-linux#0558b",
+    "files": 1048,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 160707848,
+    "dir": "omen-linux#9d6a7",
+    "files": 1045,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 9528763400,
+    "dir": "fx99#bd915",
+    "files": 927,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 112849964,
+    "dir": "omen-e#ce4fc",
+    "files": 791,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 448938570,
+    "dir": "omen-c#d1532",
+    "files": 770,
+    "launches": 3,
+    "year": "2026"
+   },
+   {
+    "bytes": 560476919599,
+    "dir": "omen-e#10fd2",
+    "files": 743,
+    "launches": 6,
+    "year": "2026"
+   },
+   {
+    "bytes": 124634349,
+    "dir": "omen-e#818e7",
+    "files": 676,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 12064714478,
+    "dir": "omen-e#69229",
+    "files": 587,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 12125997,
+    "dir": "omen-c#7e9f7",
+    "files": 550,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 17047835,
+    "dir": "omen-linux#76d6e",
+    "files": 518,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 14661895,
+    "dir": "omen-linux#7be10",
+    "files": 446,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 29163876,
+    "dir": "omen-linux#6e5bd",
+    "files": 445,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 53518214,
+    "dir": "omen-linux#81f50",
+    "files": 443,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 154299045,
+    "dir": "omen-e#95e80",
+    "files": 395,
+    "launches": 5,
+    "year": "2026"
+   },
+   {
+    "bytes": 4347345,
+    "dir": "omen-linux#13fc1",
+    "files": 366,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 454163614,
+    "dir": "omen-c#b1797",
+    "files": 359,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 32939836,
+    "dir": "omen-linux#9fc17",
+    "files": 348,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 6840486,
+    "dir": "omen-linux#a3c62",
+    "files": 326,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 2385651,
+    "dir": "omen-linux#1a091",
+    "files": 304,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 48195744,
+    "dir": "omen-linux#455f0",
+    "files": 292,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 10448787,
+    "dir": "omen-c#8f206",
+    "files": 285,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 37854178,
+    "dir": "omen-linux#661bf",
+    "files": 283,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 19178758,
+    "dir": "omen-linux#696c7",
+    "files": 248,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 249539810,
+    "dir": "omen-e#5e072",
+    "files": 234,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 43248395,
+    "dir": "omen-e#1aa71",
+    "files": 225,
+    "launches": 3,
+    "year": "2026"
+   },
+   {
+    "bytes": 987226,
+    "dir": "omen-linux#426e1",
+    "files": 225,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 15162069,
+    "dir": "omen-c#58afa",
+    "files": 183,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 3015310,
+    "dir": "omen-c#d2089",
+    "files": 163,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 2323106,
+    "dir": "omen-linux#e00e1",
+    "files": 163,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 126734775,
+    "dir": "omen-linux#361c7",
+    "files": 162,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 1776672,
+    "dir": "fx99#990ed",
+    "files": 158,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 49463093,
+    "dir": "omen-c#2f20f",
+    "files": 157,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 696691208,
+    "dir": "omen-e#e236d",
+    "files": 156,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 2871737,
+    "dir": "omen-linux#af6f5",
+    "files": 138,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 1582126912,
+    "dir": "omen-e#37164",
+    "files": 130,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 171459,
+    "dir": "omen-e#a2b2f",
+    "files": 122,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 3419478,
+    "dir": "omen-linux#3798b",
+    "files": 114,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 8433512,
+    "dir": "omen-linux#8b7b7",
+    "files": 113,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 5685605,
+    "dir": "omen-linux#8f1cf",
+    "files": 106,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 14874418,
+    "dir": "omen-linux#eed1a",
+    "files": 93,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 10748139,
+    "dir": "omen-c#4b13d",
+    "files": 88,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 678897,
+    "dir": "omen-c#3ffc9",
+    "files": 79,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 29076361,
+    "dir": "omen-e#69d71",
+    "files": 79,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 63309141,
+    "dir": "omen-e#b7016",
+    "files": 75,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 2663597,
+    "dir": "omen-linux#62a24",
+    "files": 75,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 9751890,
+    "dir": "omen-c#2896a",
+    "files": 66,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 115750208,
+    "dir": "omen-e#76000",
+    "files": 63,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 4137140,
+    "dir": "omen-linux#2d74c",
+    "files": 61,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 2346698,
+    "dir": "omen-linux#fba5c",
+    "files": 60,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 4570069,
+    "dir": "omen-c#7aa6e",
+    "files": 54,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 2919635089,
+    "dir": "omen-c#ac3c1",
+    "files": 54,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 9935670,
+    "dir": "omen-linux#6e3b7",
+    "files": 54,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 101938973,
+    "dir": "omen-e#1e264",
+    "files": 53,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 76639205,
+    "dir": "omen-e#9f3a3",
+    "files": 53,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 455589365,
+    "dir": "am4#787a7",
+    "files": 51,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 1749954,
+    "dir": "omen-linux#5976f",
+    "files": 47,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 137487283,
+    "dir": "omen-e#8f459",
+    "files": 46,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 444138,
+    "dir": "omen-linux#a8292",
+    "files": 46,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 4515270,
+    "dir": "fx99#9962a",
+    "files": 45,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 146218,
+    "dir": "omen-c#83677",
+    "files": 45,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 15929796,
+    "dir": "omen-e#a2cc3",
+    "files": 43,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 24343917,
+    "dir": "omen-linux#e3ee7",
+    "files": 41,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 6648229,
+    "dir": "omen-e#8024a",
+    "files": 40,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 103263,
+    "dir": "omen-linux#5b53e",
+    "files": 38,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 100440143,
+    "dir": "omen-c#d319e",
+    "files": 36,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 48138284,
+    "dir": "omen-e#f0cc1",
+    "files": 35,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 207572927,
+    "dir": "omen-linux#0ba5f",
+    "files": 35,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 22563,
+    "dir": "omen-e#8b921",
+    "files": 33,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 179343,
+    "dir": "omen-linux#66448",
+    "files": 33,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 3437794,
+    "dir": "omen-linux#79392",
+    "files": 33,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 131305442,
+    "dir": "omen-e#f1171",
+    "files": 32,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 15846720,
+    "dir": "omen-e#bbaa6",
+    "files": 31,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 27002732,
+    "dir": "omen-c#81c12",
+    "files": 24,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 417275,
+    "dir": "omen-e#7988e",
+    "files": 24,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 1461143546,
+    "dir": "omen-e#34f64",
+    "files": 23,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 825010,
+    "dir": "omen-e#3c94e",
+    "files": 22,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 45712,
+    "dir": "omen-e#e9058",
+    "files": 22,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 538857,
+    "dir": "omen-linux#988cf",
+    "files": 22,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 185944,
+    "dir": "omen-c#c8122",
+    "files": 21,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 512239,
+    "dir": "omen-e#8e0d3",
+    "files": 21,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 87436,
+    "dir": "omen-linux#0f2e7",
+    "files": 21,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 183048,
+    "dir": "omen-linux#c1356",
+    "files": 21,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 205473,
+    "dir": "omen-c#62683",
+    "files": 20,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 108302,
+    "dir": "omen-linux#85241",
+    "files": 20,
+    "launches": 1,
+    "year": "2026"
+   }
+  ],
+  "3": [
+   {
+    "bytes": 3354,
+    "dir": "omen-c#9668c",
+    "files": 3,
+    "launches": 1,
+    "year": "2017"
+   },
+   {
+    "bytes": 436928,
+    "dir": "omen-e#818e7",
+    "files": 3,
+    "launches": 1,
+    "year": "2017"
+   },
+   {
+    "bytes": 2994580357,
+    "dir": "fx99#bd915",
+    "files": 459,
+    "launches": 19,
+    "year": "2018"
+   },
+   {
+    "bytes": 170350,
+    "dir": "omen-c#2f20f",
+    "files": 10,
+    "launches": 2,
+    "year": "2018"
+   },
+   {
+    "bytes": 270616,
+    "dir": "omen-c#58afa",
+    "files": 9,
+    "launches": 1,
+    "year": "2018"
+   },
+   {
+    "bytes": 197352,
+    "dir": "omen-e#818e7",
+    "files": 9,
+    "launches": 1,
+    "year": "2018"
+   },
+   {
+    "bytes": 109640,
+    "dir": "omen-c#9668c",
+    "files": 5,
+    "launches": 1,
+    "year": "2018"
+   },
+   {
+    "bytes": 5984969863,
+    "dir": "fx99#bd915",
+    "files": 330,
+    "launches": 16,
+    "year": "2019"
+   },
+   {
+    "bytes": 10898823,
+    "dir": "omen-e#1843c",
+    "files": 19,
+    "launches": 1,
+    "year": "2020"
+   },
+   {
+    "bytes": 26644369,
+    "dir": "omen-e#f1171",
+    "files": 5,
+    "launches": 1,
+    "year": "2020"
+   },
+   {
+    "bytes": 1666176,
+    "dir": "omen-c#9668c",
+    "files": 3,
+    "launches": 1,
+    "year": "2020"
+   },
+   {
+    "bytes": 6402024,
+    "dir": "omen-e#818e7",
+    "files": 18,
+    "launches": 2,
+    "year": "2021"
+   },
+   {
+    "bytes": 8952029,
+    "dir": "omen-c#58afa",
+    "files": 17,
+    "launches": 1,
+    "year": "2021"
+   },
+   {
+    "bytes": 32145,
+    "dir": "omen-e#2b08e",
+    "files": 12,
+    "launches": 2,
+    "year": "2021"
+   },
+   {
+    "bytes": 4216456,
+    "dir": "omen-c#9668c",
+    "files": 9,
+    "launches": 2,
+    "year": "2021"
+   },
+   {
+    "bytes": 1200312,
+    "dir": "omen-e#c3d26",
+    "files": 6,
+    "launches": 1,
+    "year": "2021"
+   },
+   {
+    "bytes": 41963750,
+    "dir": "omen-e#124b4",
+    "files": 5,
+    "launches": 1,
+    "year": "2021"
+   },
+   {
+    "bytes": 507360,
+    "dir": "omen-e#fdfb7",
+    "files": 4,
+    "launches": 1,
+    "year": "2021"
+   },
+   {
+    "bytes": 813739,
+    "dir": "omen-e#f0cc1",
+    "files": 3,
+    "launches": 1,
+    "year": "2021"
+   },
+   {
+    "bytes": 913696,
+    "dir": "omen-e#fdfb7",
+    "files": 28,
+    "launches": 1,
+    "year": "2022"
+   },
+   {
+    "bytes": 1363185,
+    "dir": "omen-e#2b08e",
+    "files": 7,
+    "launches": 1,
+    "year": "2022"
+   },
+   {
+    "bytes": 8183184,
+    "dir": "omen-c#2f20f",
+    "files": 6,
+    "launches": 1,
+    "year": "2022"
+   },
+   {
+    "bytes": 2135664,
+    "dir": "omen-c#9668c",
+    "files": 6,
+    "launches": 1,
+    "year": "2022"
+   },
+   {
+    "bytes": 4091592,
+    "dir": "omen-c#58afa",
+    "files": 3,
+    "launches": 1,
+    "year": "2022"
+   },
+   {
+    "bytes": 76380291,
+    "dir": "omen-e#2b08e",
+    "files": 151,
+    "launches": 3,
+    "year": "2023"
+   },
+   {
+    "bytes": 87117584,
+    "dir": "omen-e#ce4fc",
+    "files": 119,
+    "launches": 5,
+    "year": "2023"
+   },
+   {
+    "bytes": 112530,
+    "dir": "omen-e#c3d26",
+    "files": 85,
+    "launches": 2,
+    "year": "2023"
+   },
+   {
+    "bytes": 21518040,
+    "dir": "omen-c#2f20f",
+    "files": 47,
+    "launches": 2,
+    "year": "2023"
+   },
+   {
+    "bytes": 75326534,
+    "dir": "omen-c#9668c",
+    "files": 535,
+    "launches": 8,
+    "year": "2024"
+   },
+   {
+    "bytes": 83803378,
+    "dir": "omen-e#fdfb7",
+    "files": 221,
+    "launches": 10,
+    "year": "2024"
+   },
+   {
+    "bytes": 258087960,
+    "dir": "omen-e#2b08e",
+    "files": 177,
+    "launches": 16,
+    "year": "2024"
+   },
+   {
+    "bytes": 7526725,
+    "dir": "omen-e#c3d26",
+    "files": 176,
+    "launches": 1,
+    "year": "2024"
+   },
+   {
+    "bytes": 10507768,
+    "dir": "omen-e#ce4fc",
+    "files": 153,
+    "launches": 4,
+    "year": "2024"
+   },
+   {
+    "bytes": 74209424,
+    "dir": "omen-e#818e7",
+    "files": 62,
+    "launches": 6,
+    "year": "2024"
+   },
+   {
+    "bytes": 4203724,
+    "dir": "omen-e#c6d3d",
+    "files": 55,
+    "launches": 2,
+    "year": "2024"
+   },
+   {
+    "bytes": 25556020,
+    "dir": "omen-c#2f20f",
+    "files": 32,
+    "launches": 5,
+    "year": "2024"
+   },
+   {
+    "bytes": 9337914,
+    "dir": "omen-c#58afa",
+    "files": 14,
+    "launches": 4,
+    "year": "2024"
+   },
+   {
+    "bytes": 147878789,
+    "dir": "omen-e#2b08e",
+    "files": 1669,
+    "launches": 37,
+    "year": "2025"
+   },
+   {
+    "bytes": 42454143,
+    "dir": "omen-e#fdfb7",
+    "files": 217,
+    "launches": 11,
+    "year": "2025"
+   },
+   {
+    "bytes": 1278026,
+    "dir": "omen-e#3eff0",
+    "files": 75,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 77448128,
+    "dir": "omen-e#95e80",
+    "files": 73,
+    "launches": 6,
+    "year": "2025"
+   },
+   {
+    "bytes": 4203724,
+    "dir": "omen-e#c6d3d",
+    "files": 55,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 2079203,
+    "dir": "omen-e#b114c",
+    "files": 52,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 18554576,
+    "dir": "omen-c#9668c",
+    "files": 44,
+    "launches": 5,
+    "year": "2025"
+   },
+   {
+    "bytes": 19892384,
+    "dir": "omen-e#818e7",
+    "files": 39,
+    "launches": 4,
+    "year": "2025"
+   },
+   {
+    "bytes": 2202319900,
+    "dir": "omen-e#22597",
+    "files": 38,
+    "launches": 2,
+    "year": "2025"
+   },
+   {
+    "bytes": 291772009,
+    "dir": "omen-e#c19d2",
+    "files": 27,
+    "launches": 3,
+    "year": "2025"
+   },
+   {
+    "bytes": 1545570,
+    "dir": "omen-e#1843c",
+    "files": 20,
+    "launches": 2,
+    "year": "2025"
+   },
+   {
+    "bytes": 6801614,
+    "dir": "omen-e#ed8a6",
+    "files": 19,
+    "launches": 3,
+    "year": "2025"
+   },
+   {
+    "bytes": 231232,
+    "dir": "omen-c#d1532",
+    "files": 14,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 16629193,
+    "dir": "omen-e#0a8d0",
+    "files": 14,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 68232,
+    "dir": "omen-c#2f20f",
+    "files": 8,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 457016,
+    "dir": "omen-e#ce4fc",
+    "files": 7,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 2937408,
+    "dir": "fx99#a05b2",
+    "files": 6,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 34116,
+    "dir": "omen-c#58afa",
+    "files": 4,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 122301144,
+    "dir": "omen-linux#70788",
+    "files": 4,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 175127,
+    "dir": "omen-e#ff08e",
+    "files": 3,
+    "launches": 1,
+    "year": "2025"
+   },
+   {
+    "bytes": 186186902288,
+    "dir": "omen-e#124b4",
+    "files": 43927,
+    "launches": 3,
+    "year": "2026"
+   },
+   {
+    "bytes": 382696858,
+    "dir": "omen-c#5f827",
+    "files": 15389,
+    "launches": 4,
+    "year": "2026"
+   },
+   {
+    "bytes": 12955539682,
+    "dir": "omen-e#a526d",
+    "files": 8523,
+    "launches": 6,
+    "year": "2026"
+   },
+   {
+    "bytes": 212355293206,
+    "dir": "omen-e#c19d2",
+    "files": 7222,
+    "launches": 11,
+    "year": "2026"
+   },
+   {
+    "bytes": 197144293,
+    "dir": "omen-e#25083",
+    "files": 6192,
+    "launches": 8,
+    "year": "2026"
+   },
+   {
+    "bytes": 4678168053,
+    "dir": "am4#89fcb",
+    "files": 5757,
+    "launches": 3,
+    "year": "2026"
+   },
+   {
+    "bytes": 10975179017,
+    "dir": "omen-e#fdfb7",
+    "files": 5355,
+    "launches": 22,
+    "year": "2026"
+   },
+   {
+    "bytes": 9331151838,
+    "dir": "omen-c#9668c",
+    "files": 5064,
+    "launches": 13,
+    "year": "2026"
+   },
+   {
+    "bytes": 7572875157,
+    "dir": "omen-c#7a12b",
+    "files": 4733,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 479551411,
+    "dir": "omen-e#e5fe7",
+    "files": 4566,
+    "launches": 3,
+    "year": "2026"
+   },
+   {
+    "bytes": 1032822957,
+    "dir": "omen-e#2b08e",
+    "files": 4478,
+    "launches": 33,
+    "year": "2026"
+   },
+   {
+    "bytes": 69949664,
+    "dir": "omen-linux#a7a03",
+    "files": 3444,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 12995279649,
+    "dir": "omen-e#3e5ff",
+    "files": 3132,
+    "launches": 17,
+    "year": "2026"
+   },
+   {
+    "bytes": 1105406621,
+    "dir": "omen-linux#70788",
+    "files": 1747,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 3318219851,
+    "dir": "omen-e#22597",
+    "files": 1509,
+    "launches": 3,
+    "year": "2026"
+   },
+   {
+    "bytes": 17713183,
+    "dir": "omen-linux#0558b",
+    "files": 1048,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 160707848,
+    "dir": "omen-linux#9d6a7",
+    "files": 1045,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 9528763400,
+    "dir": "fx99#bd915",
+    "files": 927,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 118620030,
+    "dir": "omen-e#ce4fc",
+    "files": 820,
+    "launches": 4,
+    "year": "2026"
+   },
+   {
+    "bytes": 624461976,
+    "dir": "omen-c#d1532",
+    "files": 812,
+    "launches": 10,
+    "year": "2026"
+   },
+   {
+    "bytes": 573971621956,
+    "dir": "omen-e#10fd2",
+    "files": 777,
+    "launches": 9,
+    "year": "2026"
+   },
+   {
+    "bytes": 128897555,
+    "dir": "omen-e#818e7",
+    "files": 723,
+    "launches": 6,
+    "year": "2026"
+   },
+   {
+    "bytes": 12064714478,
+    "dir": "omen-e#69229",
+    "files": 587,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 12185456,
+    "dir": "omen-c#7e9f7",
+    "files": 558,
+    "launches": 3,
+    "year": "2026"
+   },
+   {
+    "bytes": 17047835,
+    "dir": "omen-linux#76d6e",
+    "files": 518,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 183312632,
+    "dir": "omen-e#95e80",
+    "files": 455,
+    "launches": 13,
+    "year": "2026"
+   },
+   {
+    "bytes": 14661895,
+    "dir": "omen-linux#7be10",
+    "files": 446,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 29163876,
+    "dir": "omen-linux#6e5bd",
+    "files": 445,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 53518214,
+    "dir": "omen-linux#81f50",
+    "files": 443,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 4347345,
+    "dir": "omen-linux#13fc1",
+    "files": 366,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 454163614,
+    "dir": "omen-c#b1797",
+    "files": 359,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 32939836,
+    "dir": "omen-linux#9fc17",
+    "files": 348,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 6840486,
+    "dir": "omen-linux#a3c62",
+    "files": 326,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 2385651,
+    "dir": "omen-linux#1a091",
+    "files": 304,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 48195744,
+    "dir": "omen-linux#455f0",
+    "files": 292,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 10448787,
+    "dir": "omen-c#8f206",
+    "files": 285,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 37854178,
+    "dir": "omen-linux#661bf",
+    "files": 283,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 19178758,
+    "dir": "omen-linux#696c7",
+    "files": 248,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 52803949,
+    "dir": "omen-e#1aa71",
+    "files": 241,
+    "launches": 4,
+    "year": "2026"
+   },
+   {
+    "bytes": 249539810,
+    "dir": "omen-e#5e072",
+    "files": 234,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 987226,
+    "dir": "omen-linux#426e1",
+    "files": 225,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 15162069,
+    "dir": "omen-c#58afa",
+    "files": 183,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 3199895,
+    "dir": "omen-c#d2089",
+    "files": 176,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 5953861,
+    "dir": "fx99#990ed",
+    "files": 169,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 49561337,
+    "dir": "omen-c#2f20f",
+    "files": 163,
+    "launches": 3,
+    "year": "2026"
+   },
+   {
+    "bytes": 2323106,
+    "dir": "omen-linux#e00e1",
+    "files": 163,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 126734775,
+    "dir": "omen-linux#361c7",
+    "files": 162,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 696691208,
+    "dir": "omen-e#e236d",
+    "files": 156,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 2871737,
+    "dir": "omen-linux#af6f5",
+    "files": 138,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 1582126912,
+    "dir": "omen-e#37164",
+    "files": 130,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 171459,
+    "dir": "omen-e#a2b2f",
+    "files": 122,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 3419478,
+    "dir": "omen-linux#3798b",
+    "files": 114,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 8433512,
+    "dir": "omen-linux#8b7b7",
+    "files": 113,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 5685605,
+    "dir": "omen-linux#8f1cf",
+    "files": 106,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 151956685,
+    "dir": "omen-c#62683",
+    "files": 94,
+    "launches": 9,
+    "year": "2026"
+   },
+   {
+    "bytes": 14874418,
+    "dir": "omen-linux#eed1a",
+    "files": 93,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 10802502,
+    "dir": "omen-c#4b13d",
+    "files": 91,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 812362103,
+    "dir": "am4#787a7",
+    "files": 88,
+    "launches": 4,
+    "year": "2026"
+   },
+   {
+    "bytes": 678897,
+    "dir": "omen-c#3ffc9",
+    "files": 79,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 29076361,
+    "dir": "omen-e#69d71",
+    "files": 79,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 54372197,
+    "dir": "omen-c#7aa6e",
+    "files": 75,
+    "launches": 4,
+    "year": "2026"
+   },
+   {
+    "bytes": 63309141,
+    "dir": "omen-e#b7016",
+    "files": 75,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 2663597,
+    "dir": "omen-linux#62a24",
+    "files": 75,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 9792652,
+    "dir": "omen-c#2896a",
+    "files": 74,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 753863,
+    "dir": "omen-c#1b9ee",
+    "files": 72,
+    "launches": 10,
+    "year": "2026"
+   },
+   {
+    "bytes": 6992621,
+    "dir": "fx99#9962a",
+    "files": 66,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 115750208,
+    "dir": "omen-e#76000",
+    "files": 63,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 4137140,
+    "dir": "omen-linux#2d74c",
+    "files": 61,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 2346698,
+    "dir": "omen-linux#fba5c",
+    "files": 60,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 2919635089,
+    "dir": "omen-c#ac3c1",
+    "files": 54,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 9935670,
+    "dir": "omen-linux#6e3b7",
+    "files": 54,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 101938973,
+    "dir": "omen-e#1e264",
+    "files": 53,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 76639205,
+    "dir": "omen-e#9f3a3",
+    "files": 53,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 15995750,
+    "dir": "omen-e#a2cc3",
+    "files": 48,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 6666899,
+    "dir": "omen-e#8024a",
+    "files": 47,
+    "launches": 3,
+    "year": "2026"
+   },
+   {
+    "bytes": 1749954,
+    "dir": "omen-linux#5976f",
+    "files": 47,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 137487283,
+    "dir": "omen-e#8f459",
+    "files": 46,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 444138,
+    "dir": "omen-linux#a8292",
+    "files": 46,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 146218,
+    "dir": "omen-c#83677",
+    "files": 45,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 1650020,
+    "dir": "omen-e#3c94e",
+    "files": 44,
+    "launches": 3,
+    "year": "2026"
+   },
+   {
+    "bytes": 56618340,
+    "dir": "omen-linux#66448",
+    "files": 42,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 24343917,
+    "dir": "omen-linux#e3ee7",
+    "files": 41,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 25229,
+    "dir": "omen-e#8b921",
+    "files": 38,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 103263,
+    "dir": "omen-linux#5b53e",
+    "files": 38,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 792775,
+    "dir": "omen-e#7988e",
+    "files": 37,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 630921,
+    "dir": "omen-linux#988cf",
+    "files": 37,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 100440143,
+    "dir": "omen-c#d319e",
+    "files": 36,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 48138284,
+    "dir": "omen-e#f0cc1",
+    "files": 35,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 148475362,
+    "dir": "omen-e#f1171",
+    "files": 35,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 207572927,
+    "dir": "omen-linux#0ba5f",
+    "files": 35,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 3437794,
+    "dir": "omen-linux#79392",
+    "files": 33,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 15846720,
+    "dir": "omen-e#bbaa6",
+    "files": 31,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 14383946192,
+    "dir": "omen-e#a776d",
+    "files": 30,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 274381,
+    "dir": "omen-linux#c1356",
+    "files": 30,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 27002732,
+    "dir": "omen-c#81c12",
+    "files": 24,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 1461143546,
+    "dir": "omen-e#34f64",
+    "files": 23,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 45712,
+    "dir": "omen-e#e9058",
+    "files": 22,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 185944,
+    "dir": "omen-c#c8122",
+    "files": 21,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 512239,
+    "dir": "omen-e#8e0d3",
+    "files": 21,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 87436,
+    "dir": "omen-linux#0f2e7",
+    "files": 21,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 385164830,
+    "dir": "omen-c#3f02b",
+    "files": 20,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 108302,
+    "dir": "omen-linux#85241",
+    "files": 20,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 85700608,
+    "dir": "omen-e#bf818",
+    "files": 18,
+    "launches": 3,
+    "year": "2026"
+   },
+   {
+    "bytes": 13203407,
+    "dir": "omen-e#d2f47",
+    "files": 18,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 87545,
+    "dir": "omen-linux#3261d",
+    "files": 18,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 1054753,
+    "dir": "omen-c#cb99d",
+    "files": 16,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 61455369,
+    "dir": "omen-e#e16d8",
+    "files": 16,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 468243,
+    "dir": "omen-e#3eff0",
+    "files": 15,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 75634492815,
+    "dir": "omen-e#8541c",
+    "files": 15,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 16629193,
+    "dir": "omen-e#0a8d0",
+    "files": 14,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 97021,
+    "dir": "omen-e#7a14f",
+    "files": 14,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 37626475,
+    "dir": "omen-e#e4f0d",
+    "files": 14,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 6484730466,
+    "dir": "omen-e#f5d2d",
+    "files": 12,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 10631246,
+    "dir": "omen-c#663d7",
+    "files": 11,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 298624,
+    "dir": "omen-c#d167f",
+    "files": 11,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 26763,
+    "dir": "omen-linux#ddd56",
+    "files": 11,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 13832727,
+    "dir": "omen-c#5551b",
+    "files": 10,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 1139136,
+    "dir": "omen-e#62a69",
+    "files": 10,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 123304,
+    "dir": "omen-e#a89cf",
+    "files": 10,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 339349,
+    "dir": "omen-linux#25012",
+    "files": 10,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 60332,
+    "dir": "omen-linux#d826e",
+    "files": 10,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 372971,
+    "dir": "omen-c#f3b58",
+    "files": 9,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 3107518,
+    "dir": "omen-e#7061c",
+    "files": 9,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 107445,
+    "dir": "omen-e#ca5dc",
+    "files": 9,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 16542,
+    "dir": "fx99#8297a",
+    "files": 8,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 50820,
+    "dir": "omen-c#198cf",
+    "files": 8,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 230871226,
+    "dir": "omen-e#65357",
+    "files": 8,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 76666111,
+    "dir": "omen-linux#d49d0",
+    "files": 8,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 8260303,
+    "dir": "omen-e#e1eb9",
+    "files": 7,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 334835,
+    "dir": "omen-linux#7dbf5",
+    "files": 7,
+    "launches": 2,
+    "year": "2026"
+   },
+   {
+    "bytes": 5496,
+    "dir": "omen-linux#c7ce1",
+    "files": 7,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 218962320,
+    "dir": "fx99#a05b2",
+    "files": 6,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 129976320,
+    "dir": "omen-c#05ec0",
+    "files": 6,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 23012,
+    "dir": "omen-e#67f8a",
+    "files": 6,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 29436,
+    "dir": "omen-e#a2f9f",
+    "files": 6,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 33848,
+    "dir": "omen-linux#03b70",
+    "files": 6,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 103995,
+    "dir": "omen-linux#325d6",
+    "files": 6,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 4866918,
+    "dir": "omen-e#24c67",
+    "files": 5,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 162727,
+    "dir": "omen-e#48f46",
+    "files": 5,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 44804,
+    "dir": "omen-e#783d0",
+    "files": 5,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 27028,
+    "dir": "omen-e#9ab97",
+    "files": 5,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 5102,
+    "dir": "omen-e#e21fe",
+    "files": 5,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 8323250,
+    "dir": "omen-e#3fa3e",
+    "files": 4,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 192512,
+    "dir": "omen-e#c6d3d",
+    "files": 4,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 206588600,
+    "dir": "omen-e#e7dd8",
+    "files": 4,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 17016,
+    "dir": "omen-linux#72d50",
+    "files": 4,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 753442,
+    "dir": "fx99#d61ef",
+    "files": 3,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 64852,
+    "dir": "omen-c#3d425",
+    "files": 3,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 18454,
+    "dir": "omen-e#4990a",
+    "files": 3,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 4849320,
+    "dir": "omen-e#522f6",
+    "files": 3,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 12188673,
+    "dir": "omen-e#5b38e",
+    "files": 3,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 251282813,
+    "dir": "omen-e#94419",
+    "files": 3,
+    "launches": 1,
+    "year": "2026"
+   },
+   {
+    "bytes": 42965004,
+    "dir": "omen-e#d46e3",
+    "files": 3,
+    "launches": 1,
+    "year": "2026"
+   }
+  ]
+ },
+ "gate": {
+  "active_days_removed_at_default": 2,
+  "dirs_with_git_lineage": 2
+ },
+ "strip_sha256": {
+  "strip-combined.png": "e30168a10ca40a1cef02a0b7b8b4452f964c37057729d30913644ff5da448c9b",
+  "strip-compare.png": "3628d36576a656e9a0eda45accfe32fb6faa57a9677d75407e7d1f69f17bc2ae",
+  "strip-time_window.png": "3445cb1ade1ec72a3779b7f596ed4ebf271efd85499b18d1cae8662ec5c9e5e9"
+ },
+ "thresholds": {
+  "10": {
+   "by_year": {
+    "2018": 7,
+    "2019": 6,
+    "2020": 1,
+    "2021": 1,
+    "2022": 1,
+    "2023": 9,
+    "2024": 17,
+    "2025": 30,
+    "2026": 239
+   },
+   "bytes": 1042954028671,
+   "directories": 123,
+   "files": 142225,
+   "first": "2018-07-07T00:19:35Z",
+   "launches": 311,
+   "nations": {
+    "chatgpt:time": 37,
+    "claude": 11,
+    "codex": 8,
+    "human": 255
+   }
+  },
+  "20": {
+   "by_year": {
+    "2018": 4,
+    "2019": 5,
+    "2022": 1,
+    "2023": 6,
+    "2024": 14,
+    "2025": 14,
+    "2026": 188
+   },
+   "bytes": 944396180728,
+   "directories": 103,
+   "files": 140761,
+   "first": "2018-07-07T00:19:35Z",
+   "launches": 232,
+   "nations": {
+    "chatgpt:time": 23,
+    "claude": 10,
+    "codex": 8,
+    "human": 191
+   }
+  },
+  "3": {
+   "by_year": {
+    "2017": 2,
+    "2018": 24,
+    "2019": 16,
+    "2020": 3,
+    "2021": 11,
+    "2022": 5,
+    "2023": 12,
+    "2024": 56,
+    "2025": 84,
+    "2026": 359
+   },
+   "bytes": 1181757388967,
+   "directories": 158,
+   "files": 144025,
+   "first": "2017-05-01T03:57:28Z",
+   "launches": 572,
+   "nations": {
+    "chatgpt:time": 76,
+    "claude": 14,
+    "codex": 12,
+    "human": 470
+   }
+  }
+ }
+}

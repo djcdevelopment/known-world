@@ -29,6 +29,8 @@ def canon(name, granularity="major"):
     g = canon_minor(name)
     if g is None or granularity == "off":
         return None
+    if not re.search(r"\d", g):
+        return None  # an unversioned trailer (opus, sonnet, ct) names no generation: no chip
     if granularity == "minor":
         return g
     m = re.match(r"^(opus|sonnet|haiku|fable|gpt)-(\d+)", g)
@@ -41,3 +43,16 @@ def seat_model(backend, seat_models):
     if backend in seat_models:
         return seat_models[backend]
     return backend
+
+
+def label_words(g):
+    """A generation in words for the border: opus-4.5 -> 'opus 4.5', qwen3-30b-a3b -> 'qwen3 30b'; gpt keeps its hyphen."""
+    if g.startswith("gpt-"):
+        return g
+    g = re.sub(r"-a\d+b$", "", g)
+    return g.replace("-", " ")
+
+
+def label_short(g):
+    m = re.match(r"^([a-z]+)[- ]?(\d+(?:\.\d+)?)", g)
+    return (m.group(1)[0] + m.group(2)) if m else g[:4]

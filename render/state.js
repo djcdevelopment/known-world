@@ -1,16 +1,19 @@
 // state.js: buildState(f, out): checkpoint plus delta replay into preallocated scratch; live launches by binary search.
+// Activity is per (tile, class group): A(f) = A(c) D(c, f) + sum w_i D(f_i, f), D = 2^-(dtau / half-life), exact.
 (function () {
   const KW = window.KW, D = KW.D, U = KW.util;
-  if (!D.R) return;
-  KW.R = D.R; KW.G = D.G;
+  if (!D.R || D.version < 2) return;
+  KW.R = D.R; KW.T = D.T; KW.G = D.G;
   KW.ds = U.i32(D.ds); KW.dr = U.u16(D.dr); KW.dg = U.u8(D.dg); KW.dw = U.f32(D.dw); KW.cpts = U.f32(D.cpts);
-  KW.rx = U.f32(D.rx); KW.ry = U.f32(D.ry); KW.rrad = U.f32(D.rrad); KW.rfirst = U.i32(D.rfirst);
-  KW.nl = D.nl; KW.lf = U.i32(D.lf); KW.lreg = U.u16(D.lreg); KW.lband = U.u8(D.lband); KW.lnat = U.u8(D.lnat); KW.lgen = U.u8(D.lgen);
-  KW.lflags = U.u8(D.lflags); KW.llife = U.u16(D.llife);
-  KW.wstart = U.i32(D.wstart); KW.wf = U.i32(D.wf); KW.wreg = U.u16(D.wreg); KW.wband = U.u8(D.wband);
-  let maxLife = 0; for (let i = 0; i < KW.nl; i++) if (KW.llife[i] > maxLife) maxLife = KW.llife[i];
-  KW.maxLife = Math.max(maxLife, 90) + 24;
-  const RG = D.R * D.G;
+  KW.nl = D.nl; KW.lf = U.i32(D.lf); KW.lx = U.f32(D.lx); KW.ly = U.f32(D.ly); KW.lreg = U.u16(D.lreg); KW.lband = U.u8(D.lband); KW.lnat = U.u8(D.lnat);
+  KW.lgen = U.u8(D.lgen); KW.lflags = U.u8(D.lflags); KW.llife = U.u16(D.llife); KW.lshape = U.u8(D.lshape); KW.lpre = U.u8(D.lpre);
+  KW.wstart = U.i32(D.wstart); KW.wf = U.i32(D.wf); KW.wreg = U.u16(D.wreg); KW.wband = U.u8(D.wband); KW.wx = U.f32(D.wx); KW.wy = U.f32(D.wy); KW.wkind = U.u8(D.wkind);
+  KW.ustart = U.i32(D.ustart); KW.ux = U.f32(D.ux); KW.uy = U.f32(D.uy);
+  KW.cmask = U.u8(D.cmask);
+  let maxLife = 0, maxPre = 0; for (let i = 0; i < KW.nl; i++) { if (KW.llife[i] > maxLife) maxLife = KW.llife[i]; if (KW.lpre[i] > maxPre) maxPre = KW.lpre[i]; }
+  // warheads land after the departure: the longest tail is beam + spread + life
+  KW.maxLife = Math.max(maxLife, 90) + 24 + D.beam_f + 40; KW.maxPre = maxPre;
+  const RG = D.T * D.G;
   KW.newState = () => ({ exact: new Float64Array(RG), shown: new Float64Array(RG), live: new Int32Array(KW.nl + 1), nlive: 0 });
   const dec = (a, b) => Math.pow(2, -(KW.tau[b] - KW.tau[a]) / D.hl);
   let memoF = -1; const memo = KW.newState();
@@ -29,11 +32,11 @@
       const a = KW.ds[g], b = KW.ds[g + 1];
       if (b > a) { const kk = dec(g, f), ramp = (f - g + 1) / 9; for (let j = a; j < b; j++) sh[KW.dr[j] * D.G + KW.dg[j]] -= KW.dw[j] * kk * (1 - ramp); }
     }
-    // live launches: first launch frame >= f - maxLife by binary search, then scan to f
+    // live launches: first launch frame >= f - maxLife by binary search, then scan while lf - pre <= f
     let lo = 0, hi = KW.nl; const t = f - KW.maxLife;
     while (lo < hi) { const m = (lo + hi) >> 1; if (KW.lf[m] < t) lo = m + 1; else hi = m; }
     let n = 0;
-    for (let i = lo; i < KW.nl && KW.lf[i] <= f; i++) out.live[n++] = i;
+    for (let i = lo; i < KW.nl && KW.lf[i] - KW.maxPre <= f; i++) if (KW.lf[i] - KW.lpre[i] <= f) out.live[n++] = i;
     out.nlive = n;
     return out;
   };

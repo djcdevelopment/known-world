@@ -40,7 +40,7 @@
 <body>
 <header>
   <h1>Known World <span>· living plan</span></h1>
-  <p>A fog-of-war time-lapse of everything built on the lab's surfaces, repos and chats · goal G-known-world · updated 2026-10-10 08:20Z</p>
+  <p>A fog-of-war time-lapse of everything built on the lab's surfaces, repos and chats · goal G-known-world · updated 2026-10-10 10:05Z</p>
 </header>
 <main>
   <section class="c12">
@@ -56,6 +56,8 @@
         <tr><td>—</td><td>Export budget spike</td><td><span class="pill done">done</span></td><td>PNG capture ≈ 250 ms per 1080p frame at 5k, 20k and 80k tiles (canvas draw 3 to 57 ms); a 60-frame H.264 + AAC mp4 verified. Full piece: 1.4 to 1.9 h offline unless frames are piped raw, pages run in parallel, or 24 fps</td><td><code>spikes/01-canvas-budget/RESULT.md</code></td></tr>
         <tr><td>—</td><td>RaidUI reuse (Derek's prior time player)</td><td><span class="pill done">done</span></td><td>Playback core vendored: pure render-state, playback controller with deterministic tick, density grid, overlay compositor, decay trail, scrubber. Missing parts named for the strategists</td><td><code>SURVEY.md §4b</code>, <code>render/vendor/raidui/</code></td></tr>
         <tr><td>—</td><td>Launch probe (payload model on real data)</td><td><span class="pill done">done</span></td><td>415 launches on Derek's lineages at the default thresholds (215 single, 200 MIRV); MIRVs rise from 0 in January to 47 of 70 in July 2026; yields span five orders of magnitude; nations enter 2017 (human), 2023-04 (ChatGPT), 2025-10 (Claude), 2026-06 (Codex), 2026-07 (builders, local seats), 2026-09 (OpenCode)</td><td><code>laps/PROBE-00-launches/RESULT.md</code></td></tr>
+        <tr><td>—</td><td>Running totals (slice 8) and private GitHub repos (task 1d)</td><td><span class="pill done">done</span></td><td>Totals on screen; 93 GitHub repos listed (39 private), 4 mirrored, merge swapped (216,796 events)</td><td><code>laps/LAP-11-running-totals/</code>, CORPUS-REPORT §15</td></tr>
+        <tr><td>—</td><td>The stream (slice 9)</td><td><span class="pill running">running</span></td><td>Scrolling lane diagram of lineages: ticks, branching rails, MIRV connectors, constellation order; full re-export on the final corpus</td><td>DIRECTION.md "The stream"</td></tr>
         <tr><td>—</td><td>Local-seat repo-card arm</td><td><span class="pill deferred">deferred</span></td><td>Capability record per seat</td><td>30B and AM4 tool seats absent under the bench27 all-27B hold; door: default lane not live</td></tr>
       </tbody>
     </table>
@@ -153,6 +155,24 @@
       <li><b>Polish queue:</b> a chip caption overflows the right edge of the nation panel; the final era-C frame is dim by design (everything dormant) and the coda's whole-world pull carries the reveal.</li>
       <li><b>Not run:</b> verdict laps 8 to 10 (grouping arm, collapse threshold, non-git threshold); the builder was stopped before them.</li>
     </ul>
+  </section>
+  <section class="c12">
+    <h2>Slice 8: running totals (2026-10-10, after Derek's first viewing)</h2>
+    <p style="font-size:13px; color:var(--text-2); margin-bottom:10px">Per nation: cumulative commits, files changed, +lines / −lines with log micro-bars (ticks 1k, 10k, 100k, 1M) and a commits-per-era-unit rate (year / month / week). Per surface: files created and updated. A world totals line in the ticker row. Tally card with the new columns and a world row. Full piece re-exported in 4.1 min: <code>laps/LAP-11-running-totals/out/full/final.mp4</code>. The private GitHub repositories were merged in afterwards (35 of 39 were already present through local clones; 4 mirrored); the next export carries them.</p>
+    <p style="display:grid; grid-template-columns: repeat(2, 1fr); gap:8px">
+      <img src="laps/LAP-11-running-totals/stills/running-2026-09-27.png" alt="running totals 2026-09-27" style="width:100%; border:1px solid var(--border); border-radius:4px">
+      <img src="laps/LAP-11-running-totals/stills/tally-card.png" alt="tally card with totals" style="width:100%; border:1px solid var(--border); border-radius:4px">
+    </p>
+    <table>
+      <thead><tr><th>Question (Derek's call)</th><th>Fable's default (one key each)</th></tr></thead>
+      <tbody>
+        <tr><td>Third-party clones in the totals (23,451 commits, 17.2M lines, 11,164 without line counts)</td><td>a muted row in the tally card only; nothing in the live panel</td></tr>
+        <tr><td>Lines uncapped (18.4M, dominated by a few huge commits) vs the yield cap</td><td>displayed lines use the 20k-per-commit cap so "lines" means one thing everywhere; the uncapped total once in the footer</td></tr>
+        <tr><td>Bulk copies (680k births, 62k updates)</td><td>excluded; one footer line with the count</td></tr>
+        <tr><td>Rate window</td><td>era unit (year / month / week); a 10 s rolling arm exists</td></tr>
+        <tr><td>Files created attributed to a nation inside a launch window</td><td>off (a birth has no author); inferred arm exists</td></tr>
+      </tbody>
+    </table>
   </section>
   <section class="c12">
     <h2>Laps</h2>

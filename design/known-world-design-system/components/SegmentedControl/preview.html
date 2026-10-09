@@ -1,0 +1,12 @@
+<!-- @dsCard group="Controls" height=110 -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Source+Sans+3:wght@400;600&display=swap">
+<div style="padding:16px;background:var(--bg)">
+  <div class="kw-controls">
+    <span class="kw-controls__label">Moment</span>
+    <div class="kw-seg"><button type="button" aria-pressed="false">2019 · era A</button><button type="button" aria-pressed="false">2023 · era B</button><button type="button" aria-pressed="true">2026-07 · era C</button><button type="button" aria-pressed="false">coda · tally card</button></div>
+    <span class="kw-controls__label">Layout</span>
+    <div class="kw-seg"><button type="button" aria-pressed="true">proposed</button><button type="button" aria-pressed="false">current</button></div>
+  </div>
+  <div class="kw-btnrow" style="margin-top:12px"><button class="kw-btn" aria-pressed="false">ticker</button><button class="kw-btn" aria-pressed="false">map</button><button class="kw-btn" aria-pressed="true">timeline</button></div>
+</div>
+<script>document.querySelectorAll('.kw-seg').forEach(g=>g.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;g.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));}));</script>

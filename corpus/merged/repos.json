@@ -1,0 +1,7241 @@
+{
+ "as_of": "2026-10-09T12:45:04Z",
+ "candidates": [
+  {
+   "a": "0a29dacd17d4f11b289718412e5861a2bebb5cb3",
+   "b": "6f8bd366c3526916f00b311fd6a90152130f0290",
+   "basis": "name",
+   "key": "ledger",
+   "link": "candidate"
+  },
+  {
+   "a": "0a29dacd17d4f11b289718412e5861a2bebb5cb3",
+   "b": "6f8bd366c3526916f00b311fd6a90152130f0290",
+   "basis": "root_tree",
+   "key": "e0aedfc141fa",
+   "link": "candidate"
+  },
+  {
+   "a": "0a29dacd17d4f11b289718412e5861a2bebb5cb3",
+   "b": "7fb8daa9b73cb78908dcc9a79aedd678043574ac",
+   "basis": "name",
+   "key": "ledger",
+   "link": "candidate"
+  },
+  {
+   "a": "0a29dacd17d4f11b289718412e5861a2bebb5cb3",
+   "b": "7fb8daa9b73cb78908dcc9a79aedd678043574ac",
+   "basis": "root_tree",
+   "key": "e0aedfc141fa",
+   "link": "candidate"
+  },
+  {
+   "a": "6f8bd366c3526916f00b311fd6a90152130f0290",
+   "b": "7fb8daa9b73cb78908dcc9a79aedd678043574ac",
+   "basis": "name",
+   "key": "ledger",
+   "link": "candidate"
+  },
+  {
+   "a": "6f8bd366c3526916f00b311fd6a90152130f0290",
+   "b": "7fb8daa9b73cb78908dcc9a79aedd678043574ac",
+   "basis": "root_tree",
+   "key": "e0aedfc141fa",
+   "link": "candidate"
+  }
+ ],
+ "lineages": [
+  {
+   "authors": {
+    "human": 1
+   },
+   "commit_copies": 1,
+   "commits": 1,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 1,
+    "repo_born": 2
+   },
+   "first_ts": "2026-08-28T10:41:15Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "01053e116889dc3d39c85b28e9b12873ad96c118",
+   "kind": "git",
+   "last_ts": "2026-08-28T10:41:15Z",
+   "members": 1,
+   "names": [
+    "djcdevelopment"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/djcdevelopment"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/djcdevelopment"
+   ],
+   "rooted": true,
+   "roots": [
+    "01053e116889dc3d39c85b28e9b12873ad96c118"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 35,
+    "third_party": 257
+   },
+   "commit_copies": 292,
+   "commits": 292,
+   "derek_share": 0.1199,
+   "events": {
+    "branch": 2,
+    "commit": 292,
+    "repo_born": 1
+   },
+   "first_ts": "2026-04-13T20:00:08Z",
+   "foreign_org": true,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "033ee49e907f1f97655a3cf606d14cd43c60bbb4",
+   "kind": "git",
+   "last_ts": "2026-07-20T16:20:21Z",
+   "members": 1,
+   "names": [
+    "showcase-site"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/Diana/showcase-site"
+    ]
+   },
+   "refs": 4,
+   "region": null,
+   "remotes": [
+    "github.com/oddlittlebird/showcase-site"
+   ],
+   "rooted": true,
+   "roots": [
+    "033ee49e907f1f97655a3cf606d14cd43c60bbb4",
+    "9f3de28ad2b65c2c095195bddda6e7eab98bd384"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 61
+   },
+   "commit_copies": 61,
+   "commits": 61,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 61,
+    "repo_born": 2
+   },
+   "first_ts": "2026-06-19T13:08:04Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "05287b8ef8695014c00e9278b0ba1240c93b527a",
+   "kind": "git",
+   "last_ts": "2026-06-22T11:07:13Z",
+   "members": 1,
+   "names": [
+    "denning"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/denning"
+    ]
+   },
+   "refs": 5,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/denning"
+   ],
+   "rooted": true,
+   "roots": [
+    "05287b8ef8695014c00e9278b0ba1240c93b527a"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 3,
+    "human": 22,
+    "third_party": 1
+   },
+   "commit_copies": 69,
+   "commits": 26,
+   "derek_share": 0.9615,
+   "events": {
+    "branch": 4,
+    "chat_msg": 453,
+    "chat_session": 2,
+    "commit": 26,
+    "repo_born": 1,
+    "worktree": 4
+   },
+   "first_ts": "2026-07-20T07:14:30Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux",
+    "omen-c"
+   ],
+   "id": "09f02f354241f165ce1a152bd59f6246d68baf17",
+   "kind": "git",
+   "last_ts": "2026-09-27T13:47:35Z",
+   "members": 8,
+   "names": [
+    "notebook",
+    "notebook-27b",
+    "notebook-32b",
+    "notebook-cold",
+    "notebook-cold2",
+    "notebook-devstral",
+    "notebook-gemma"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/notebook"
+    ],
+    "omen-linux": [
+     "~/work/trial/notebook",
+     "~/work/trial/notebook-27b",
+     "~/work/trial/notebook-32b",
+     "~/work/trial/notebook-cold",
+     "~/work/trial/notebook-cold2",
+     "~/work/trial/notebook-devstral",
+     "~/work/trial/notebook-gemma"
+    ]
+   },
+   "refs": 15,
+   "region": null,
+   "remotes": [
+    "/home/derek/continuity-host/repos/notebook",
+    "/mnt/omen-c-read/work/notebook",
+    "github.com/djcdevelopment/open-notebook-hearth-integration"
+   ],
+   "rooted": true,
+   "roots": [
+    "09f02f354241f165ce1a152bd59f6246d68baf17",
+    "c1e10f22425011f39de5c715b61b986844ccd11d",
+    "ca541ccf629a6f5b053fe052e5d2e9f493596617",
+    "d1b27a18743c681a638b6f305e5a88f9b5106f10",
+    "f9356f1bee93600ff445d7dc717cbfb538402996"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 4
+  },
+  {
+   "authors": {
+    "automation": 519
+   },
+   "commit_copies": 519,
+   "commits": 519,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 519,
+    "repo_born": 1
+   },
+   "first_ts": "2026-09-27T09:46:00Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "0a29dacd17d4f11b289718412e5861a2bebb5cb3",
+   "kind": "git",
+   "last_ts": "2026-10-09T12:14:11Z",
+   "members": 1,
+   "names": [
+    "ledger"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/.continuity/ledger"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "0a29dacd17d4f11b289718412e5861a2bebb5cb3"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 34,
+    "third_party": 2
+   },
+   "commit_copies": 72,
+   "commits": 36,
+   "derek_share": 0.9444,
+   "events": {
+    "branch": 1,
+    "commit": 36,
+    "repo_born": 1
+   },
+   "first_ts": "2026-07-01T17:39:34Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux",
+    "omen-c"
+   ],
+   "id": "0a2dd31e35fa9ce6ee6518316bcc728a5feea44d",
+   "kind": "git",
+   "last_ts": "2026-07-03T02:03:14Z",
+   "members": 2,
+   "names": [
+    "conductor-mirror"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/conductor-mirror.git"
+    ],
+    "omen-linux": [
+     "~/private-migration-20260923/conductor-mirror.git"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [
+    "100.74.110.91/home/claude/work/commandcenter"
+   ],
+   "rooted": true,
+   "roots": [
+    "0a2dd31e35fa9ce6ee6518316bcc728a5feea44d"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 228,
+    "codex": 3,
+    "third_party": 842
+   },
+   "commit_copies": 1073,
+   "commits": 1073,
+   "derek_share": 0.2153,
+   "events": {
+    "branch": 29,
+    "commit": 1073,
+    "repo_born": 1
+   },
+   "first_ts": "2026-05-26T01:01:26Z",
+   "foreign_org": true,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "0a4af0678afbd984796f319fdec8d4c2da42a3c8",
+   "kind": "git",
+   "last_ts": "2026-09-26T04:06:07Z",
+   "members": 1,
+   "names": [
+    "resonantos"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/resonantOS"
+    ]
+   },
+   "refs": 77,
+   "region": null,
+   "remotes": [
+    "github.com/resonantos/2.0.0-alpha"
+   ],
+   "rooted": true,
+   "roots": [
+    "0a4af0678afbd984796f319fdec8d4c2da42a3c8",
+    "589c6bdec7b43eec387381d23fadcf5b1c810e2a"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 2,
+    "human": 3
+   },
+   "commit_copies": 5,
+   "commits": 5,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 5,
+    "repo_born": 2
+   },
+   "first_ts": "2026-03-21T18:26:42Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "0b15ed22f266effd95bd93b3fdf962c69314ed7d",
+   "kind": "git",
+   "last_ts": "2026-04-09T05:58:02Z",
+   "members": 1,
+   "names": [
+    "contextforge"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/start/contextforge"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/contextforge"
+   ],
+   "rooted": true,
+   "roots": [
+    "0b15ed22f266effd95bd93b3fdf962c69314ed7d"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 14,
+    "human": 4
+   },
+   "commit_copies": 18,
+   "commits": 18,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 18,
+    "repo_born": 1
+   },
+   "first_ts": "2026-06-27T10:31:50Z",
+   "foreign_org": false,
+   "hosts": [
+    "am4"
+   ],
+   "id": "15af9cdabb52320d95d41e721fead9d83c70aedb",
+   "kind": "git",
+   "last_ts": "2026-08-12T10:21:28Z",
+   "members": 1,
+   "names": [
+    "am4bot"
+   ],
+   "paths": {
+    "am4": [
+     "~/am4bot"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "15af9cdabb52320d95d41e721fead9d83c70aedb"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 190,
+    "human": 113
+   },
+   "commit_copies": 331,
+   "commits": 303,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 4,
+    "chat_msg": 7416,
+    "chat_session": 65,
+    "commit": 303,
+    "repo_born": 2,
+    "worktree": 7
+   },
+   "first_ts": "2026-03-19T17:57:37Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c",
+    "omen-e"
+   ],
+   "id": "168915c9674722417bfd3fcfadcc0883976da6db",
+   "kind": "git",
+   "last_ts": "2026-09-16T06:20:31Z",
+   "members": 4,
+   "names": [
+    "comfystewardview",
+    "gallery-stage-steward-20260915",
+    "steward-spatial-lab",
+    "temp"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/ComfyStewardView",
+     "work/gallery-stage-steward-20260915",
+     "work/steward-spatial-lab"
+    ],
+    "omen-e": [
+     "work/temp"
+    ]
+   },
+   "refs": 5,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/comfystewardview"
+   ],
+   "rooted": true,
+   "roots": [
+    "168915c9674722417bfd3fcfadcc0883976da6db",
+    "ddaed0439d4c662795186266f463511d79f491fb"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 1
+  },
+  {
+   "authors": {
+    "third_party": 2
+   },
+   "commit_copies": 2,
+   "commits": 2,
+   "derek_share": 0.0,
+   "events": {
+    "commit": 2,
+    "repo_born": 2
+   },
+   "first_ts": "2015-08-11T05:23:44Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "16d90d5f3ee0de8cb88b05019eeb342ee89731d0",
+   "kind": "git",
+   "last_ts": "2015-08-11T05:26:02Z",
+   "members": 1,
+   "names": [
+    "poe-item-filter-creator"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/known-world/cache/clones/PoE-Item-Filter-Creator.git"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/poe-item-filter-creator"
+   ],
+   "rooted": true,
+   "roots": [
+    "16d90d5f3ee0de8cb88b05019eeb342ee89731d0"
+   ],
+   "shallow_only": false,
+   "third_party": true,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 3,
+    "human": 7
+   },
+   "commit_copies": 10,
+   "commits": 10,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 296,
+    "chat_session": 3,
+    "commit": 10,
+    "repo_born": 1
+   },
+   "first_ts": "2026-05-17T18:03:32Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "17b6526bb7f520061ed56eef0eb5846d524e30d8",
+   "kind": "git",
+   "last_ts": "2026-09-03T18:54:43Z",
+   "members": 1,
+   "names": [
+    "img"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/img"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/tempo-imagegen"
+   ],
+   "rooted": true,
+   "roots": [
+    "17b6526bb7f520061ed56eef0eb5846d524e30d8"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 5,
+    "human": 3
+   },
+   "commit_copies": 8,
+   "commits": 8,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 205,
+    "chat_session": 6,
+    "commit": 8,
+    "repo_born": 1
+   },
+   "first_ts": "2026-05-31T12:06:01Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "1b448d5e90cc1a2088d19a118632506176cf09d0",
+   "kind": "git",
+   "last_ts": "2026-06-10T02:37:17Z",
+   "members": 1,
+   "names": [
+    "discoverlay"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/discoverlay"
+    ]
+   },
+   "refs": 3,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/discoverlay"
+   ],
+   "rooted": true,
+   "roots": [
+    "1b448d5e90cc1a2088d19a118632506176cf09d0"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 1
+   },
+   "commit_copies": 1,
+   "commits": 1,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 22,
+    "chat_session": 5,
+    "commit": 1,
+    "repo_born": 1
+   },
+   "first_ts": "2026-10-09T11:25:01Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "1b618ff95308034977674b53d4d8e356f3810943",
+   "kind": "git",
+   "last_ts": "2026-10-09T11:25:01Z",
+   "members": 1,
+   "names": [
+    "amux"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/amux"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "1b618ff95308034977674b53d4d8e356f3810943"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 9,
+    "codex": 4,
+    "human": 5
+   },
+   "commit_copies": 20,
+   "commits": 18,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 288,
+    "chat_session": 4,
+    "commit": 18,
+    "repo_born": 1,
+    "run": 133,
+    "worktree": 4
+   },
+   "first_ts": "2026-09-17T13:43:37Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux",
+    "omen-c"
+   ],
+   "id": "1bad53cadff5f6b4e4c36e9afbdf81f8667e807c",
+   "kind": "git",
+   "last_ts": "2026-10-03T09:22:42Z",
+   "members": 3,
+   "names": [
+    "deepagents-linux",
+    "deepagents-poc"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/deepagents-poc"
+    ],
+    "omen-linux": [
+     "~/private-migration-20260923/deepagents-poc",
+     "~/work/deepagents-linux"
+    ]
+   },
+   "refs": 6,
+   "region": null,
+   "remotes": [
+    "192.168.12.220/home/derek/continuity-host/repos/deepagents-linux"
+   ],
+   "rooted": true,
+   "roots": [
+    "1bad53cadff5f6b4e4c36e9afbdf81f8667e807c"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 5,
+    "human": 1
+   },
+   "commit_copies": 6,
+   "commits": 6,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 202,
+    "chat_session": 6,
+    "commit": 6,
+    "repo_born": 1
+   },
+   "first_ts": "2026-06-04T08:09:46Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "1bbfcf404219b2421739acf8a827224fa2e2b2bd",
+   "kind": "git",
+   "last_ts": "2026-06-17T14:11:08Z",
+   "members": 1,
+   "names": [
+    "vllama"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/vllama"
+    ]
+   },
+   "refs": 3,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/vllama"
+   ],
+   "rooted": true,
+   "roots": [
+    "1bbfcf404219b2421739acf8a827224fa2e2b2bd"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 1061,
+    "human": 1057
+   },
+   "commit_copies": 2595,
+   "commits": 2118,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 7,
+    "chat_msg": 34466,
+    "chat_session": 397,
+    "commit": 2118,
+    "repo_born": 5,
+    "worktree": 6
+   },
+   "first_ts": "2026-03-24T13:10:06Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c",
+    "omen-e"
+   ],
+   "id": "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de",
+   "kind": "git",
+   "last_ts": "2026-09-23T07:33:39Z",
+   "members": 6,
+   "names": [
+    "baseline",
+    "comfy",
+    "gallery-stage-baseline-20260915",
+    "game",
+    "lumberjacks",
+    "lumberjacks-platform"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/_retired/Lumberjacks",
+     "work/_retired/comfy",
+     "work/baseline",
+     "work/gallery-stage-baseline-20260915",
+     "work/lumberjacks-platform"
+    ],
+    "omen-e": [
+     "work/game"
+    ]
+   },
+   "refs": 34,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/baseline",
+    "github.com/djcdevelopment/comfy",
+    "github.com/djcdevelopment/lumberjacks",
+    "github.com/djcdevelopment/lumberjacks-platform"
+   ],
+   "rooted": true,
+   "roots": [
+    "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de",
+    "a781358e6ad1c7d1fbbec70bd0aabbee5a93daf2",
+    "a8c01d1adaa6fb8989eddaef761d72130a535705",
+    "c06f17bc72e9d6b05c68e8d0ed00ee7adb0060eb"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 1
+  },
+  {
+   "authors": {
+    "human": 1
+   },
+   "commit_copies": 1,
+   "commits": 1,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 1,
+    "repo_born": 1
+   },
+   "first_ts": "2026-06-23T06:02:10Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "207f79d2cf4fdc9ae3307bc318ed81d0fd04868d",
+   "kind": "git",
+   "last_ts": "2026-06-23T06:02:10Z",
+   "members": 1,
+   "names": [
+    "tempo-workbench"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/battlemage/tempo-workbench"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/tempo-workbench"
+   ],
+   "rooted": true,
+   "roots": [
+    "207f79d2cf4fdc9ae3307bc318ed81d0fd04868d"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 162,
+    "human": 211
+   },
+   "commit_copies": 640,
+   "commits": 373,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 2,
+    "chat_msg": 5956,
+    "chat_session": 75,
+    "commit": 373,
+    "repo_born": 2,
+    "worktree": 2
+   },
+   "first_ts": "2026-07-02T06:55:09Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c",
+    "am4"
+   ],
+   "id": "25227eda8d35d74b6047f5f4df95a8201c0fadc3",
+   "kind": "git",
+   "last_ts": "2026-09-16T06:13:15Z",
+   "members": 4,
+   "names": [
+    "comfy-quest",
+    "comfy-quest-incomplete",
+    "gallery-stage-quest-20260915",
+    "quest-build-20260915"
+   ],
+   "paths": {
+    "am4": [
+     "~/quest-build-20260915"
+    ],
+    "omen-c": [
+     "work/_extract/comfy-quest-incomplete",
+     "work/comfy-quest",
+     "work/gallery-stage-quest-20260915"
+    ]
+   },
+   "refs": 6,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/comfy-quest"
+   ],
+   "rooted": true,
+   "roots": [
+    "25227eda8d35d74b6047f5f4df95a8201c0fadc3"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 1
+  },
+  {
+   "authors": {
+    "claude": 28,
+    "human": 4,
+    "third_party": 11650
+   },
+   "commit_copies": 11791,
+   "commits": 11682,
+   "derek_share": 0.0027,
+   "events": {
+    "branch": 59,
+    "commit": 11682,
+    "repo_born": 2,
+    "worktree": 1
+   },
+   "first_ts": "2023-03-10T18:40:58Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e",
+    "am4"
+   ],
+   "id": "26c084662903ddaca19bef982831bfb0856e8257",
+   "kind": "git",
+   "last_ts": "2026-09-19T03:33:16Z",
+   "members": 5,
+   "names": [
+    "llama.cpp",
+    "llama.cpp-src",
+    "llamacpp-knee",
+    "llamacpp-knee-pr",
+    "llamacpp-qwen38"
+   ],
+   "paths": {
+    "am4": [
+     "~/baseline/llama.cpp"
+    ],
+    "omen-e": [
+     "work/llama.cpp-src",
+     "work/llamacpp-knee",
+     "work/llamacpp-knee-pr",
+     "work/llamacpp-qwen38"
+    ]
+   },
+   "refs": 228,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/llama.cpp",
+    "github.com/ggml-org/llama.cpp",
+    "github.com/unslothai/llama.cpp"
+   ],
+   "rooted": true,
+   "roots": [
+    "26c084662903ddaca19bef982831bfb0856e8257"
+   ],
+   "shallow_only": false,
+   "third_party": true,
+   "worktree_records": 1
+  },
+  {
+   "authors": {
+    "claude": 248,
+    "human": 96
+   },
+   "commit_copies": 344,
+   "commits": 344,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 4,
+    "chat_msg": 29,
+    "chat_session": 4,
+    "commit": 344,
+    "repo_born": 2,
+    "worktree": 32
+   },
+   "first_ts": "2026-04-21T21:01:10Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "299eddc49aa7aa7c8fe606995611dfa6c1b319f1",
+   "kind": "git",
+   "last_ts": "2026-05-17T00:18:33Z",
+   "members": 1,
+   "names": [
+    "raidui"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/RaidUI"
+    ]
+   },
+   "refs": 85,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/raidui"
+   ],
+   "rooted": true,
+   "roots": [
+    "299eddc49aa7aa7c8fe606995611dfa6c1b319f1"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 9
+   },
+   "commit_copies": 9,
+   "commits": 9,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 251,
+    "chat_session": 7,
+    "commit": 9,
+    "repo_born": 2
+   },
+   "first_ts": "2026-06-08T07:50:21Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "2f501a833fcd934cda80323546967f6bb8495705",
+   "kind": "git",
+   "last_ts": "2026-06-17T11:51:26Z",
+   "members": 1,
+   "names": [
+    "reader"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/reader"
+    ]
+   },
+   "refs": 3,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/indexcard"
+   ],
+   "rooted": true,
+   "roots": [
+    "2f501a833fcd934cda80323546967f6bb8495705"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 6,
+    "human": 2
+   },
+   "commit_copies": 8,
+   "commits": 8,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 2,
+    "commit": 8,
+    "repo_born": 1
+   },
+   "first_ts": "2026-05-15T17:31:02Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "32768eab5b3677a4d8d9e6079092142553c372fc",
+   "kind": "git",
+   "last_ts": "2026-05-16T23:24:23Z",
+   "members": 1,
+   "names": [
+    "hearth"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/hearth"
+    ]
+   },
+   "refs": 5,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/hearth"
+   ],
+   "rooted": true,
+   "roots": [
+    "32768eab5b3677a4d8d9e6079092142553c372fc"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 12,
+    "human": 30
+   },
+   "commit_copies": 42,
+   "commits": 42,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 2,
+    "commit": 42,
+    "repo_born": 1
+   },
+   "first_ts": "2026-03-24T07:44:19Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "341f7bba31ffb9fc49ed74aa2d0efbea2aa2870a",
+   "kind": "git",
+   "last_ts": "2026-04-09T05:58:02Z",
+   "members": 1,
+   "names": [
+    "precheck"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/start/precheck"
+    ]
+   },
+   "refs": 8,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/precheck"
+   ],
+   "rooted": true,
+   "roots": [
+    "341f7bba31ffb9fc49ed74aa2d0efbea2aa2870a"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 36,
+    "human": 1
+   },
+   "commit_copies": 73,
+   "commits": 37,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 220,
+    "chat_session": 4,
+    "commit": 37,
+    "repo_born": 2
+   },
+   "first_ts": "2026-05-15T19:24:36Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c",
+    "omen-e"
+   ],
+   "id": "3450a4ea59351a65290880b5d134866353e98d32",
+   "kind": "git",
+   "last_ts": "2026-09-23T06:16:42Z",
+   "members": 2,
+   "names": [
+    "ember"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/am4-harvest/ember"
+    ],
+    "omen-e": [
+     "work/ember"
+    ]
+   },
+   "refs": 3,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/ember"
+   ],
+   "rooted": true,
+   "roots": [
+    "3450a4ea59351a65290880b5d134866353e98d32"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 9,
+    "human": 1
+   },
+   "commit_copies": 10,
+   "commits": 10,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 10,
+    "repo_born": 2
+   },
+   "first_ts": "2026-07-10T19:44:15Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "34afef42b76b91e0cd524c613c6feb4783957c7b",
+   "kind": "git",
+   "last_ts": "2026-09-03T08:01:43Z",
+   "members": 1,
+   "names": [
+    "windtunnel"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/windtunnel"
+    ]
+   },
+   "refs": 3,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/windtunnel"
+   ],
+   "rooted": true,
+   "roots": [
+    "34afef42b76b91e0cd524c613c6feb4783957c7b"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 31,
+    "human": 5
+   },
+   "commit_copies": 68,
+   "commits": 36,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 892,
+    "chat_session": 23,
+    "commit": 36,
+    "repo_born": 1
+   },
+   "first_ts": "2026-05-28T10:04:14Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c",
+    "omen-e"
+   ],
+   "id": "352eb10ef4d4f2a489c55024f097fd2bf4819da8",
+   "kind": "git",
+   "last_ts": "2026-09-23T08:00:21Z",
+   "members": 2,
+   "names": [
+    "manifest"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/am4-harvest/manifest"
+    ],
+    "omen-e": [
+     "work/manifest"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/manifest"
+   ],
+   "rooted": true,
+   "roots": [
+    "352eb10ef4d4f2a489c55024f097fd2bf4819da8"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 49,
+    "human": 33
+   },
+   "commit_copies": 82,
+   "commits": 82,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 82,
+    "repo_born": 2
+   },
+   "first_ts": "2026-04-07T04:01:24Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "36db256ae1de45fdd9cf6f8cbc2c617b6e9c0278",
+   "kind": "git",
+   "last_ts": "2026-09-23T07:33:39Z",
+   "members": 1,
+   "names": [
+    "planning"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/planning"
+    ]
+   },
+   "refs": 10,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/planning"
+   ],
+   "rooted": true,
+   "roots": [
+    "36db256ae1de45fdd9cf6f8cbc2c617b6e9c0278"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 1
+   },
+   "commit_copies": 1,
+   "commits": 1,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 1,
+    "repo_born": 1
+   },
+   "first_ts": "2026-09-17T06:40:07Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "3754e8057431d9bef595311fdc962d74d1048b01",
+   "kind": "git",
+   "last_ts": "2026-09-17T06:40:07Z",
+   "members": 1,
+   "names": [
+    "sealcompanion"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/sealcompanion"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "3754e8057431d9bef595311fdc962d74d1048b01"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 1
+   },
+   "commit_copies": 1,
+   "commits": 1,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 1,
+    "repo_born": 1
+   },
+   "first_ts": "2026-04-04T15:01:30Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "37fa64b96d703d0a52fe532abb6551302587a19c",
+   "kind": "git",
+   "last_ts": "2026-04-04T15:01:30Z",
+   "members": 1,
+   "names": [
+    "precheckv2"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/start/precheckv2"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/precheckv2"
+   ],
+   "rooted": true,
+   "roots": [
+    "37fa64b96d703d0a52fe532abb6551302587a19c"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 16
+   },
+   "commit_copies": 16,
+   "commits": 16,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 134,
+    "chat_session": 1,
+    "commit": 16,
+    "repo_born": 2
+   },
+   "first_ts": "2026-08-13T05:37:47Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "401ef9dfefef6fe91c22e42871780963338f0b1c",
+   "kind": "git",
+   "last_ts": "2026-10-08T08:31:05Z",
+   "members": 1,
+   "names": [
+    "totemalert"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/totemalert"
+    ]
+   },
+   "refs": 4,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/totemsentinel"
+   ],
+   "rooted": true,
+   "roots": [
+    "401ef9dfefef6fe91c22e42871780963338f0b1c"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 40
+   },
+   "commit_copies": 40,
+   "commits": 40,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 17,
+    "chat_session": 1,
+    "commit": 40,
+    "repo_born": 1,
+    "worktree": 1
+   },
+   "first_ts": "2026-05-14T05:38:49Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "42df0b8a97c00b9f68231e314a847d5985c9d434",
+   "kind": "git",
+   "last_ts": "2026-05-17T13:10:43Z",
+   "members": 1,
+   "names": [
+    "campfire"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/campfire"
+    ]
+   },
+   "refs": 5,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/campfire"
+   ],
+   "rooted": true,
+   "roots": [
+    "42df0b8a97c00b9f68231e314a847d5985c9d434"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 12
+   },
+   "commit_copies": 23,
+   "commits": 12,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 162,
+    "chat_session": 1,
+    "commit": 12,
+    "repo_born": 1
+   },
+   "first_ts": "2026-03-13T06:06:22Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e",
+    "am4"
+   ],
+   "id": "447e150d1c2e1ae1c65bec01f7663c7d7dada6aa",
+   "kind": "git",
+   "last_ts": "2026-09-23T14:08:05Z",
+   "members": 2,
+   "names": [
+    "chatgpt_parser",
+    "chatgpt_parser_run"
+   ],
+   "paths": {
+    "am4": [
+     "~/chatgpt_parser_run"
+    ],
+    "omen-e": [
+     "work/chatGPT_parser"
+    ]
+   },
+   "refs": 3,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/chatgpt_parse"
+   ],
+   "rooted": true,
+   "roots": [
+    "447e150d1c2e1ae1c65bec01f7663c7d7dada6aa"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 20,
+    "human": 5
+   },
+   "commit_copies": 49,
+   "commits": 25,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 2,
+    "chat_msg": 120,
+    "chat_session": 2,
+    "commit": 25,
+    "repo_born": 2
+   },
+   "first_ts": "2026-09-18T01:55:07Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux",
+    "omen-c"
+   ],
+   "id": "484f54f657f7e1a41232dd5ed012c751e5825bd4",
+   "kind": "git",
+   "last_ts": "2026-09-28T03:26:57Z",
+   "members": 2,
+   "names": [
+    "memsplice"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/memsplice"
+    ],
+    "omen-linux": [
+     "~/work/memsplice"
+    ]
+   },
+   "refs": 6,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/memsplice"
+   ],
+   "rooted": true,
+   "roots": [
+    "484f54f657f7e1a41232dd5ed012c751e5825bd4",
+    "730f4bc23a50376597d1a41b9d9585e8339a8f82"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 1,
+    "human": 2
+   },
+   "commit_copies": 6,
+   "commits": 3,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 3,
+    "repo_born": 1
+   },
+   "first_ts": "2026-09-12T10:43:29Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux",
+    "omen-c"
+   ],
+   "id": "4bb4fbce65994f88ff045be36c1f6ad7f1da7a9e",
+   "kind": "git",
+   "last_ts": "2026-09-13T06:08:35Z",
+   "members": 2,
+   "names": [
+    "deepagents-shot-director"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/deepagents-shot-director"
+    ],
+    "omen-linux": [
+     "~/private-migration-20260923/deepagents-shot-director"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "4bb4fbce65994f88ff045be36c1f6ad7f1da7a9e"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 11
+   },
+   "commit_copies": 11,
+   "commits": 11,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 11,
+    "repo_born": 2
+   },
+   "first_ts": "2026-05-09T07:50:08Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "4ebe2074fee8587b16bdf34c2f209c629562ea84",
+   "kind": "git",
+   "last_ts": "2026-05-09T12:17:51Z",
+   "members": 1,
+   "names": [
+    "bring-your-own-ollama"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/bring-your-own-ollama"
+    ]
+   },
+   "refs": 3,
+   "region": null,
+   "remotes": [
+    "github.com/steppe-integrations/bring-your-own-ollama"
+   ],
+   "rooted": true,
+   "roots": [
+    "4ebe2074fee8587b16bdf34c2f209c629562ea84",
+    "fbe45520c69ffb80a30d5273ba574b849a0b3aab"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 52
+   },
+   "commit_copies": 52,
+   "commits": 52,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 52,
+    "repo_born": 1
+   },
+   "first_ts": "2026-10-07T11:05:55Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "4ec70007a214bcdba31ab6c356a9a5d0241f5e8d",
+   "kind": "git",
+   "last_ts": "2026-10-08T07:08:18Z",
+   "members": 1,
+   "names": [
+    "jepa-add-protocol"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/jepa-add-protocol"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "4ec70007a214bcdba31ab6c356a9a5d0241f5e8d"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 33
+   },
+   "commit_copies": 33,
+   "commits": 33,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 33,
+    "repo_born": 1
+   },
+   "first_ts": "2026-10-07T17:34:12Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "52a0ae9d8f9ac26266b4a1cb3af9f90bd090b2d3",
+   "kind": "git",
+   "last_ts": "2026-10-08T07:28:40Z",
+   "members": 1,
+   "names": [
+    "game-jepa"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/game-jepa"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "52a0ae9d8f9ac26266b4a1cb3af9f90bd090b2d3"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 5
+   },
+   "commit_copies": 5,
+   "commits": 5,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 90,
+    "chat_session": 1,
+    "commit": 5,
+    "repo_born": 1
+   },
+   "first_ts": "2026-10-09T08:59:34Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "588998951cdd908634ba2b2079e8814db5bb258c",
+   "kind": "git",
+   "last_ts": "2026-10-09T10:00:50Z",
+   "members": 1,
+   "names": [
+    "founderos"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/founderOS"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "588998951cdd908634ba2b2079e8814db5bb258c"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 10
+   },
+   "commit_copies": 10,
+   "commits": 10,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 10,
+    "repo_born": 2
+   },
+   "first_ts": "2026-09-13T04:38:59Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "5c8d35feb646ea17b0121b1426eca79f18c695df",
+   "kind": "git",
+   "last_ts": "2026-10-08T08:30:46Z",
+   "members": 1,
+   "names": [
+    "ismodded"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/ismodded"
+    ]
+   },
+   "refs": 3,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/ismodded"
+   ],
+   "rooted": true,
+   "roots": [
+    "5c8d35feb646ea17b0121b1426eca79f18c695df"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 122,
+    "third_party": 8237
+   },
+   "commit_copies": 8359,
+   "commits": 8359,
+   "derek_share": 0.0146,
+   "events": {
+    "branch": 364,
+    "commit": 8359,
+    "repo_born": 1
+   },
+   "first_ts": "2023-05-18T17:47:28Z",
+   "foreign_org": true,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "5c8ff5b7646cb15237a5a597a132a51ca3a1a65f",
+   "kind": "git",
+   "last_ts": "2026-03-17T23:07:22Z",
+   "members": 1,
+   "names": [
+    "langfuse"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/start/langfuse"
+    ]
+   },
+   "refs": 969,
+   "region": null,
+   "remotes": [
+    "github.com/langfuse/langfuse"
+   ],
+   "rooted": true,
+   "roots": [
+    "5c8ff5b7646cb15237a5a597a132a51ca3a1a65f"
+   ],
+   "shallow_only": false,
+   "third_party": true,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 5
+   },
+   "commit_copies": 5,
+   "commits": 5,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 11,
+    "chat_session": 1,
+    "commit": 5,
+    "repo_born": 2
+   },
+   "first_ts": "2026-05-17T12:20:42Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "5e8e19c01d520f3cc0c73b6a3e9b9d721ac96927",
+   "kind": "git",
+   "last_ts": "2026-05-22T07:03:19Z",
+   "members": 1,
+   "names": [
+    "lantern"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/lantern"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/lantern"
+   ],
+   "rooted": true,
+   "roots": [
+    "5e8e19c01d520f3cc0c73b6a3e9b9d721ac96927"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 1,
+    "human": 1
+   },
+   "commit_copies": 2,
+   "commits": 2,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 2,
+    "repo_born": 1
+   },
+   "first_ts": "2026-05-15T17:32:11Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "61367b8d13d280e08f721db58000690352514a38",
+   "kind": "git",
+   "last_ts": "2026-06-23T06:02:14Z",
+   "members": 1,
+   "names": [
+    "gad-bot"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/gad-bot"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/gad-bot"
+   ],
+   "rooted": true,
+   "roots": [
+    "61367b8d13d280e08f721db58000690352514a38"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 6
+   },
+   "commit_copies": 6,
+   "commits": 6,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 6,
+    "repo_born": 1
+   },
+   "first_ts": "2026-03-07T03:08:21Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "6196894d720f4647e8d94adcdb41f6ff74bd2e89",
+   "kind": "git",
+   "last_ts": "2026-03-11T13:44:53Z",
+   "members": 1,
+   "names": [
+    "ingest"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/liveView/ingest"
+    ]
+   },
+   "refs": 4,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/liveview-ingest"
+   ],
+   "rooted": true,
+   "roots": [
+    "6196894d720f4647e8d94adcdb41f6ff74bd2e89"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 1,
+    "third_party": 1127
+   },
+   "commit_copies": 1128,
+   "commits": 1128,
+   "derek_share": 0.0009,
+   "events": {
+    "branch": 15,
+    "commit": 1128,
+    "repo_born": 2
+   },
+   "first_ts": "2021-05-01T21:10:53Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "672abc17c9351cb2b0594c79ab774353f2cb8465",
+   "kind": "git",
+   "last_ts": "2026-09-12T07:28:59Z",
+   "members": 1,
+   "names": [
+    "comfymods"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/ComfyMods"
+    ]
+   },
+   "refs": 87,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/comfymods",
+    "github.com/redseiko/comfymods"
+   ],
+   "rooted": true,
+   "roots": [
+    "672abc17c9351cb2b0594c79ab774353f2cb8465"
+   ],
+   "shallow_only": false,
+   "third_party": true,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 3,
+    "third_party": 45
+   },
+   "commit_copies": 93,
+   "commits": 48,
+   "derek_share": 0.0625,
+   "events": {
+    "branch": 2,
+    "commit": 48,
+    "repo_born": 1
+   },
+   "first_ts": "2018-08-22T16:50:01Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "681d6bdf90d42b07bebbb89cef466b02e342075c",
+   "kind": "git",
+   "last_ts": "2025-07-07T08:27:01Z",
+   "members": 2,
+   "names": [
+    "azure-event-grid-viewer",
+    "event-viewer"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/azure-event-grid-viewer",
+     "work/event-viewer"
+    ]
+   },
+   "refs": 19,
+   "region": null,
+   "remotes": [
+    "github.com/azure-samples/azure-event-grid-viewer",
+    "github.com/djcdevelopment/azure-event-grid-viewer-fork",
+    "github.com/djcdevelopment/event-viewer"
+   ],
+   "rooted": true,
+   "roots": [
+    "681d6bdf90d42b07bebbb89cef466b02e342075c"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "automation": 115,
+    "claude": 898,
+    "codex": 31,
+    "human": 395
+   },
+   "commit_copies": 3980,
+   "commits": 1439,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 146,
+    "chat_msg": 19740,
+    "chat_session": 621,
+    "commit": 1439,
+    "repo_born": 2,
+    "worktree": 107
+   },
+   "first_ts": "2026-07-03T01:41:29Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux",
+    "omen-c"
+   ],
+   "id": "6a0d30840c0d974b5780231a0df9e0868b908c8e",
+   "kind": "git",
+   "last_ts": "2026-10-07T10:46:32Z",
+   "members": 11,
+   "names": [
+    "commandcenter",
+    "commandcenter-d1-guard-9f306fb",
+    "commandcenter-flash-base",
+    "commandcenter-flash-foreman",
+    "commandcenter-hermes-fx99",
+    "commandcenter-jev-scheduler",
+    "commandcenter-linux-flash",
+    "commandcenter-local-work",
+    "hearth-execution-control-plane",
+    "target"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/commandcenter",
+     "work/commandcenter-d1-guard-9f306fb",
+     "work/commandcenter-flash-foreman",
+     "work/commandcenter-hermes-fx99",
+     "work/commandcenter-jev-scheduler",
+     "work/commandcenter-local-work",
+     "work/deepagents-poc/target",
+     "work/hearth-execution-control-plane"
+    ],
+    "omen-linux": [
+     "~/git/commandcenter-flash-base",
+     "~/private-migration-20260923/commandcenter",
+     "~/work/commandcenter-linux-flash"
+    ]
+   },
+   "refs": 257,
+   "region": null,
+   "remotes": [
+    "/home/derek/private-migration-20260923/commandcenter",
+    "github.com/djcdevelopment/commandcenter"
+   ],
+   "rooted": true,
+   "roots": [
+    "6a0d30840c0d974b5780231a0df9e0868b908c8e"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 7
+  },
+  {
+   "authors": {
+    "human": 38
+   },
+   "commit_copies": 38,
+   "commits": 38,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 38,
+    "repo_born": 1
+   },
+   "first_ts": "2026-10-09T06:52:51Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "6c3c49c7de0b97d35642501034b87b81e2eb0695",
+   "kind": "git",
+   "last_ts": "2026-10-09T12:09:59Z",
+   "members": 1,
+   "names": [
+    "discengine"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/discengine"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "6c3c49c7de0b97d35642501034b87b81e2eb0695"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 1,
+    "human": 1
+   },
+   "commit_copies": 2,
+   "commits": 2,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 2,
+    "repo_born": 2
+   },
+   "first_ts": "2026-07-21T00:12:24Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "6e064f8b3ef9e0bc33f53d75f7b3d6113d128e8e",
+   "kind": "git",
+   "last_ts": "2026-07-21T01:41:50Z",
+   "members": 1,
+   "names": [
+    "oddlittlebird"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/Diana/oddlittlebird"
+    ]
+   },
+   "refs": 3,
+   "region": null,
+   "remotes": [
+    "github.com/steppe-integrations/oddlittlebird"
+   ],
+   "rooted": true,
+   "roots": [
+    "6e064f8b3ef9e0bc33f53d75f7b3d6113d128e8e"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 2
+   },
+   "commit_copies": 2,
+   "commits": 2,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 2,
+    "repo_born": 1
+   },
+   "first_ts": "2026-04-09T06:50:37Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "6ef50f10dd4507093f02c11357bf4b20fd40675e",
+   "kind": "git",
+   "last_ts": "2026-04-09T06:58:21Z",
+   "members": 1,
+   "names": [
+    "work-visuals"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/work-visuals"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/work-visuals"
+   ],
+   "rooted": true,
+   "roots": [
+    "6ef50f10dd4507093f02c11357bf4b20fd40675e"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "automation": 5
+   },
+   "commit_copies": 5,
+   "commits": 5,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 5,
+    "repo_born": 1
+   },
+   "first_ts": "2026-09-27T11:51:26Z",
+   "foreign_org": false,
+   "hosts": [
+    "fx99"
+   ],
+   "id": "6f8bd366c3526916f00b311fd6a90152130f0290",
+   "kind": "git",
+   "last_ts": "2026-09-27T12:00:59Z",
+   "members": 1,
+   "names": [
+    "ledger"
+   ],
+   "paths": {
+    "fx99": [
+     "~/.continuity/ledger"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "6f8bd366c3526916f00b311fd6a90152130f0290"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 53,
+    "human": 3
+   },
+   "commit_copies": 109,
+   "commits": 56,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 3228,
+    "chat_session": 51,
+    "commit": 56,
+    "repo_born": 1
+   },
+   "first_ts": "2026-05-17T18:44:07Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c",
+    "omen-e"
+   ],
+   "id": "7607a792484b97f9cb07b0b2cce0763be1212499",
+   "kind": "git",
+   "last_ts": "2026-09-23T07:39:01Z",
+   "members": 2,
+   "names": [
+    "gad"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/am4-harvest/gad"
+    ],
+    "omen-e": [
+     "work/gad"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/gad"
+   ],
+   "rooted": true,
+   "roots": [
+    "7607a792484b97f9cb07b0b2cce0763be1212499"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 15
+   },
+   "commit_copies": 15,
+   "commits": 15,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 15,
+    "repo_born": 2
+   },
+   "first_ts": "2026-09-13T12:19:03Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "7862f447633880878ff1e98e22e0ee9d33072e84",
+   "kind": "git",
+   "last_ts": "2026-10-08T08:31:00Z",
+   "members": 1,
+   "names": [
+    "unfaded"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/Unfaded"
+    ]
+   },
+   "refs": 5,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/unfaded"
+   ],
+   "rooted": true,
+   "roots": [
+    "7862f447633880878ff1e98e22e0ee9d33072e84"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 48
+   },
+   "commit_copies": 48,
+   "commits": 48,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 42,
+    "chat_session": 3,
+    "commit": 48,
+    "repo_born": 1
+   },
+   "first_ts": "2026-09-13T02:02:07Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "78e1cf00a3961efeec707cdb7bdedf3334d305e8",
+   "kind": "git",
+   "last_ts": "2026-09-13T13:33:08Z",
+   "members": 1,
+   "names": [
+    "nightshift"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/nightshift"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "78e1cf00a3961efeec707cdb7bdedf3334d305e8"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 2
+   },
+   "commit_copies": 2,
+   "commits": 2,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 2,
+    "repo_born": 2
+   },
+   "first_ts": "2026-05-06T19:19:02Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "791109f057b0ff90a38d47433390bd65944f6b43",
+   "kind": "git",
+   "last_ts": "2026-05-06T20:23:47Z",
+   "members": 1,
+   "names": [
+    "multi-agent-build-blueprint"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/repos/multi-agent-build-blueprint"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "github.com/steppe-integrations/multi-agent-build-blueprint"
+   ],
+   "rooted": true,
+   "roots": [
+    "791109f057b0ff90a38d47433390bd65944f6b43"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 79,
+    "human": 181
+   },
+   "commit_copies": 260,
+   "commits": 260,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 260,
+    "repo_born": 2
+   },
+   "first_ts": "2026-07-03T23:49:06Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "798dc04719c64e6c2292673a0d89667c258c7f61",
+   "kind": "git",
+   "last_ts": "2026-09-15T03:23:21Z",
+   "members": 1,
+   "names": [
+    "networksense"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/networksense"
+    ]
+   },
+   "refs": 4,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/networksense"
+   ],
+   "rooted": true,
+   "roots": [
+    "798dc04719c64e6c2292673a0d89667c258c7f61"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 6
+   },
+   "commit_copies": 6,
+   "commits": 6,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 2,
+    "commit": 6,
+    "repo_born": 1
+   },
+   "first_ts": "2026-04-06T07:05:50Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "7cf854e941bc099cd73c0c196ba33514d72b5560",
+   "kind": "git",
+   "last_ts": "2026-04-09T05:58:03Z",
+   "members": 1,
+   "names": [
+    "scarecrow"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/start/scarecrow"
+    ]
+   },
+   "refs": 4,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/scarecrow"
+   ],
+   "rooted": true,
+   "roots": [
+    "7cf854e941bc099cd73c0c196ba33514d72b5560"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "automation": 5
+   },
+   "commit_copies": 5,
+   "commits": 5,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 5,
+    "repo_born": 1
+   },
+   "first_ts": "2026-09-27T16:31:12Z",
+   "foreign_org": false,
+   "hosts": [
+    "am4"
+   ],
+   "id": "7fb8daa9b73cb78908dcc9a79aedd678043574ac",
+   "kind": "git",
+   "last_ts": "2026-09-27T16:31:13Z",
+   "members": 1,
+   "names": [
+    "ledger"
+   ],
+   "paths": {
+    "am4": [
+     "~/.continuity/ledger"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "7fb8daa9b73cb78908dcc9a79aedd678043574ac"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 14
+   },
+   "commit_copies": 14,
+   "commits": 14,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 14,
+    "repo_born": 2
+   },
+   "first_ts": "2026-09-16T07:52:20Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "8379428a79e7d1e6f7055641be18a4e6d75fcf76",
+   "kind": "git",
+   "last_ts": "2026-10-08T08:31:10Z",
+   "members": 1,
+   "names": [
+    "valheim-profile-engine"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/valheim-profile-engine"
+    ]
+   },
+   "refs": 3,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/valheim-profile-engine"
+   ],
+   "rooted": true,
+   "roots": [
+    "8379428a79e7d1e6f7055641be18a4e6d75fcf76"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 1
+   },
+   "commit_copies": 1,
+   "commits": 1,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 218,
+    "chat_session": 4,
+    "commit": 1,
+    "repo_born": 1
+   },
+   "first_ts": "2026-07-03T12:05:22Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "888fdd4b50af2e274d8162739b70ee335081b38d",
+   "kind": "git",
+   "last_ts": "2026-07-03T12:05:22Z",
+   "members": 1,
+   "names": [
+    "tuning"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/tuning"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "888fdd4b50af2e274d8162739b70ee335081b38d"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 1,
+    "human": 3
+   },
+   "commit_copies": 4,
+   "commits": 4,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 3,
+    "chat_session": 1,
+    "commit": 4,
+    "repo_born": 1
+   },
+   "first_ts": "2026-09-27T09:37:27Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "8bb5a49aeedb4808ff4a2f3814c3617943f54bef",
+   "kind": "git",
+   "last_ts": "2026-09-27T09:37:55Z",
+   "members": 1,
+   "names": [
+    "entire-probe"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/continuity-triage/entire-probe"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "8bb5a49aeedb4808ff4a2f3814c3617943f54bef",
+    "8ee70efcdbf571865c1d05112a9242f6b276ce10"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 2,
+    "codex": 1,
+    "human": 19
+   },
+   "commit_copies": 22,
+   "commits": 22,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 351,
+    "chat_session": 13,
+    "commit": 22,
+    "repo_born": 1,
+    "worktree": 2
+   },
+   "first_ts": "2026-10-01T10:37:55Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "8fd46251caffcd90f7f79d556e594c4d44bf18c5",
+   "kind": "git",
+   "last_ts": "2026-10-05T15:47:28Z",
+   "members": 1,
+   "names": [
+    "lever-ledger"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/lever-ledger"
+    ]
+   },
+   "refs": 3,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "8fd46251caffcd90f7f79d556e594c4d44bf18c5"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 23,
+    "human": 24
+   },
+   "commit_copies": 47,
+   "commits": 47,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 2,
+    "chat_msg": 1739,
+    "chat_session": 21,
+    "commit": 47,
+    "repo_born": 2,
+    "worktree": 2
+   },
+   "first_ts": "2026-07-30T17:52:55Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "9028819e8ddacf4ff73e196f0dbb210fa4358ffd",
+   "kind": "git",
+   "last_ts": "2026-09-23T07:33:39Z",
+   "members": 2,
+   "names": [
+    "irc",
+    "irc-hearth-adapter"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/irc",
+     "work/irc-hearth-adapter"
+    ]
+   },
+   "refs": 18,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/irc"
+   ],
+   "rooted": true,
+   "roots": [
+    "9028819e8ddacf4ff73e196f0dbb210fa4358ffd"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 1
+  },
+  {
+   "authors": {
+    "human": 1
+   },
+   "commit_copies": 1,
+   "commits": 1,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 1,
+    "repo_born": 1
+   },
+   "first_ts": "2026-10-01T07:04:23Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "90cc839ff1a5e608f52976a228c0dd7016a135e9",
+   "kind": "git",
+   "last_ts": "2026-10-01T07:04:23Z",
+   "members": 1,
+   "names": [
+    "commandcenter-linux-private"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/commandcenter-linux-private"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "90cc839ff1a5e608f52976a228c0dd7016a135e9"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 71,
+    "human": 9
+   },
+   "commit_copies": 154,
+   "commits": 80,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 68,
+    "chat_session": 11,
+    "commit": 80,
+    "repo_born": 1,
+    "worktree": 11
+   },
+   "first_ts": "2026-09-27T09:37:06Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux",
+    "am4",
+    "fx99"
+   ],
+   "id": "91653aae293206f6e6f599238097dd2467b0b716",
+   "kind": "git",
+   "last_ts": "2026-10-03T02:41:20Z",
+   "members": 3,
+   "names": [
+    "continuity"
+   ],
+   "paths": {
+    "am4": [
+     "~/continuity"
+    ],
+    "fx99": [
+     "~/continuity"
+    ],
+    "omen-linux": [
+     "~/work/continuity"
+    ]
+   },
+   "refs": 14,
+   "region": null,
+   "remotes": [
+    "/home/derek/continuity-host/repos/continuity",
+    "192.168.12.220/home/derek/continuity-host/repos/continuity"
+   ],
+   "rooted": true,
+   "roots": [
+    "91653aae293206f6e6f599238097dd2467b0b716"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 7
+   },
+   "commit_copies": 7,
+   "commits": 7,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 45,
+    "chat_session": 1,
+    "commit": 7,
+    "repo_born": 2
+   },
+   "first_ts": "2026-07-11T07:17:43Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "976459ba63be970a9bf0b9b45d5b765e3addbc9c",
+   "kind": "git",
+   "last_ts": "2026-07-11T09:10:02Z",
+   "members": 1,
+   "names": [
+    "articleblitz"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/articleblitz"
+    ]
+   },
+   "refs": 4,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/articleblitz"
+   ],
+   "rooted": true,
+   "roots": [
+    "976459ba63be970a9bf0b9b45d5b765e3addbc9c"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 4
+   },
+   "commit_copies": 4,
+   "commits": 4,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 4,
+    "repo_born": 2
+   },
+   "first_ts": "2026-08-24T04:05:29Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "9abac2e4f07bb212493a01813088b7602e1e20b0",
+   "kind": "git",
+   "last_ts": "2026-08-24T15:11:10Z",
+   "members": 1,
+   "names": [
+    "vulkancliff"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/vulkancliff"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/vulkancliff"
+   ],
+   "rooted": true,
+   "roots": [
+    "9abac2e4f07bb212493a01813088b7602e1e20b0"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 1
+   },
+   "commit_copies": 1,
+   "commits": 1,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 1,
+    "repo_born": 2
+   },
+   "first_ts": "2017-12-22T03:16:52Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "9c388744422b3156dfc88c3ae8ddc06d92910fb6",
+   "kind": "git",
+   "last_ts": "2017-12-22T03:16:52Z",
+   "members": 1,
+   "names": [
+    "klaviyodataformatter"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/known-world/cache/clones/klaviyoDataformatter.git"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/klaviyodataformatter"
+   ],
+   "rooted": true,
+   "roots": [
+    "9c388744422b3156dfc88c3ae8ddc06d92910fb6"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 108,
+    "human": 28
+   },
+   "commit_copies": 136,
+   "commits": 136,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 4,
+    "chat_msg": 20,
+    "chat_session": 1,
+    "commit": 136,
+    "repo_born": 1
+   },
+   "first_ts": "2026-04-25T09:03:11Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "9fcf5ea49f82d136532628f42126b6b4c2e765b6",
+   "kind": "git",
+   "last_ts": "2026-05-15T20:16:16Z",
+   "members": 1,
+   "names": [
+    "guild"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/Guild"
+    ]
+   },
+   "refs": 23,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/goatsafterdark",
+    "users//derek//guild"
+   ],
+   "rooted": true,
+   "roots": [
+    "9fcf5ea49f82d136532628f42126b6b4c2e765b6",
+    "ccff70f99299b3c5b9b6a28b1b14bf355e0e9657"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "third_party": 4
+   },
+   "commit_copies": 4,
+   "commits": 4,
+   "derek_share": 0.0,
+   "events": {
+    "branch": 1,
+    "commit": 4,
+    "repo_born": 1
+   },
+   "first_ts": "2026-09-30T00:59:16Z",
+   "foreign_org": true,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "a18cb24bde65844f132d6cc35ab0b30d0ac34823",
+   "kind": "git",
+   "last_ts": "2026-10-01T00:08:55Z",
+   "members": 1,
+   "names": [
+    "upstream"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/clm-pilot/upstream"
+    ]
+   },
+   "refs": 3,
+   "region": null,
+   "remotes": [
+    "github.com/facebookresearch/context-language-models"
+   ],
+   "rooted": true,
+   "roots": [
+    "a18cb24bde65844f132d6cc35ab0b30d0ac34823"
+   ],
+   "shallow_only": false,
+   "third_party": true,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 31
+   },
+   "commit_copies": 31,
+   "commits": 31,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 173,
+    "chat_session": 22,
+    "commit": 31,
+    "repo_born": 1
+   },
+   "first_ts": "2026-10-03T00:42:59Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "a4e904570f8207a55503f5eab46d98986bfc2171",
+   "kind": "git",
+   "last_ts": "2026-10-09T12:16:46Z",
+   "members": 1,
+   "names": [
+    "lab"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/lab"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "192.168.12.220/home/derek/continuity-host/repos/lab"
+   ],
+   "rooted": true,
+   "roots": [
+    "a4e904570f8207a55503f5eab46d98986bfc2171"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 17
+   },
+   "commit_copies": 17,
+   "commits": 17,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 17,
+    "repo_born": 2
+   },
+   "first_ts": "2026-06-17T22:25:19Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "a6b429fa8614dcff502a3df4bfbfeace72b51651",
+   "kind": "git",
+   "last_ts": "2026-06-18T00:18:50Z",
+   "members": 1,
+   "names": [
+    "llmquest"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/known-world/cache/clones/llmquest.git"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/llmquest"
+   ],
+   "rooted": true,
+   "roots": [
+    "a6b429fa8614dcff502a3df4bfbfeace72b51651"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 12,
+    "human": 12
+   },
+   "commit_copies": 24,
+   "commits": 24,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 2,
+    "commit": 24,
+    "repo_born": 1,
+    "worktree": 2
+   },
+   "first_ts": "2026-09-03T08:39:34Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "a7795c7ee4310fac3b86f8df9eca4e58d06936b8",
+   "kind": "git",
+   "last_ts": "2026-10-07T09:51:24Z",
+   "members": 1,
+   "names": [
+    "resume-linux"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/resume-linux.git"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "a7795c7ee4310fac3b86f8df9eca4e58d06936b8"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 6,
+    "human": 67
+   },
+   "commit_copies": 73,
+   "commits": 73,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 2,
+    "chat_msg": 7011,
+    "chat_session": 47,
+    "commit": 73,
+    "repo_born": 2,
+    "worktree": 5
+   },
+   "first_ts": "2026-07-29T17:47:10Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "a824a8deb2f17696f9f6807308902b9b6e5748ee",
+   "kind": "git",
+   "last_ts": "2026-09-23T07:33:39Z",
+   "members": 1,
+   "names": [
+    "contextlandscape"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/contextlandscape"
+    ]
+   },
+   "refs": 15,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/contextlandscape"
+   ],
+   "rooted": true,
+   "roots": [
+    "a824a8deb2f17696f9f6807308902b9b6e5748ee"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 37,
+    "human": 1,
+    "third_party": 3
+   },
+   "commit_copies": 79,
+   "commits": 41,
+   "derek_share": 0.9268,
+   "events": {
+    "branch": 1,
+    "commit": 41,
+    "repo_born": 1
+   },
+   "first_ts": "2026-08-09T07:29:36Z",
+   "foreign_org": false,
+   "hosts": [
+    "fx99"
+   ],
+   "id": "ac1a64cff960abf4b0565bdf708730eb73c98614",
+   "kind": "git",
+   "last_ts": "2026-08-12T08:15:39Z",
+   "members": 2,
+   "names": [
+    "fleet"
+   ],
+   "paths": {
+    "fx99": [
+     "~/fleet",
+     "~/fleet.git"
+    ]
+   },
+   "refs": 4,
+   "region": null,
+   "remotes": [
+    "/home/derek/fleet"
+   ],
+   "rooted": true,
+   "roots": [
+    "ac1a64cff960abf4b0565bdf708730eb73c98614",
+    "d937adfc1228db9fa2229993ec117ac40701d9b2"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 3,
+    "human": 2
+   },
+   "commit_copies": 5,
+   "commits": 5,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 5,
+    "repo_born": 1
+   },
+   "first_ts": "2026-06-27T10:31:50Z",
+   "foreign_org": false,
+   "hosts": [
+    "am4"
+   ],
+   "id": "ac424a97a8b3f9012bd172baba009f132c9fc4d5",
+   "kind": "git",
+   "last_ts": "2026-08-12T12:39:24Z",
+   "members": 1,
+   "names": [
+    "bench"
+   ],
+   "paths": {
+    "am4": [
+     "~/bench"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "ac424a97a8b3f9012bd172baba009f132c9fc4d5"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 1,
+    "human": 3
+   },
+   "commit_copies": 4,
+   "commits": 4,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 23,
+    "chat_session": 2,
+    "commit": 4,
+    "repo_born": 1
+   },
+   "first_ts": "2026-06-04T05:06:53Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "aeec44ac6aa0df4feed092f1354be134ae81be83",
+   "kind": "git",
+   "last_ts": "2026-06-05T20:39:52Z",
+   "members": 1,
+   "names": [
+    "workbench"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/workbench"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/workbench"
+   ],
+   "rooted": true,
+   "roots": [
+    "aeec44ac6aa0df4feed092f1354be134ae81be83"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 43
+   },
+   "commit_copies": 43,
+   "commits": 43,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 43,
+    "repo_born": 1
+   },
+   "first_ts": "2026-09-17T09:39:53Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "aff20eee73dd981936187c09c06ca24aeb2bb566",
+   "kind": "git",
+   "last_ts": "2026-09-23T07:33:39Z",
+   "members": 1,
+   "names": [
+    "404"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/404"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/404-isolate"
+   ],
+   "rooted": true,
+   "roots": [
+    "aff20eee73dd981936187c09c06ca24aeb2bb566"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 57,
+    "codex": 7,
+    "human": 79
+   },
+   "commit_copies": 143,
+   "commits": 143,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 5,
+    "chat_msg": 389,
+    "chat_session": 40,
+    "commit": 143,
+    "repo_born": 1,
+    "worktree": 16
+   },
+   "first_ts": "2026-10-01T05:48:17Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "b23894a8f52982666070b4ae7ad3490835c59ae8",
+   "kind": "git",
+   "last_ts": "2026-10-05T15:46:23Z",
+   "members": 1,
+   "names": [
+    "lab-rnd"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/lab-rnd"
+    ]
+   },
+   "refs": 18,
+   "region": null,
+   "remotes": [
+    "192.168.12.220/home/derek/continuity-host/repos/lab-rnd"
+   ],
+   "rooted": true,
+   "roots": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 4,
+    "human": 2
+   },
+   "commit_copies": 6,
+   "commits": 6,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 161,
+    "chat_session": 2,
+    "commit": 6,
+    "repo_born": 1
+   },
+   "first_ts": "2026-08-19T05:42:53Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "b386bddfef108f92f66c2b9c368cbf82a64b697f",
+   "kind": "git",
+   "last_ts": "2026-08-20T01:54:34Z",
+   "members": 1,
+   "names": [
+    "assessment"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/assessment"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "b386bddfef108f92f66c2b9c368cbf82a64b697f"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 46,
+    "human": 42
+   },
+   "commit_copies": 115,
+   "commits": 88,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 2,
+    "chat_msg": 156,
+    "chat_session": 6,
+    "commit": 88,
+    "repo_born": 1,
+    "worktree": 1
+   },
+   "first_ts": "2026-04-09T09:55:57Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c",
+    "omen-e"
+   ],
+   "id": "b54645d264aa7db05e82a752e4c116b5336591c4",
+   "kind": "git",
+   "last_ts": "2026-09-23T07:33:39Z",
+   "members": 2,
+   "names": [
+    "steppeintegrations-site",
+    "www"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/steppeintegrations-site"
+    ],
+    "omen-e": [
+     "work/www"
+    ]
+   },
+   "refs": 7,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/steppeintegrations-site"
+   ],
+   "rooted": true,
+   "roots": [
+    "b54645d264aa7db05e82a752e4c116b5336591c4"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 3
+   },
+   "commit_copies": 3,
+   "commits": 3,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 13,
+    "chat_session": 1,
+    "commit": 3,
+    "repo_born": 1
+   },
+   "first_ts": "2026-10-03T06:06:44Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "b5f9083fef62ddf30e95569f98e8572cc01e13e6",
+   "kind": "git",
+   "last_ts": "2026-10-03T06:33:19Z",
+   "members": 1,
+   "names": [
+    "clm-pilot"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/clm-pilot"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "192.168.12.220/home/derek/continuity-host/repos/clm-pilot"
+   ],
+   "rooted": true,
+   "roots": [
+    "b5f9083fef62ddf30e95569f98e8572cc01e13e6"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 13,
+    "human": 14
+   },
+   "commit_copies": 27,
+   "commits": 27,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 27,
+    "repo_born": 1
+   },
+   "first_ts": "2026-01-17T04:37:47Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "b7e57a0434db9a7a56eb76b67f409842525c74ef",
+   "kind": "git",
+   "last_ts": "2026-01-27T05:44:59Z",
+   "members": 1,
+   "names": [
+    "stars-app"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/stars-app"
+    ]
+   },
+   "refs": 10,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/stars-app"
+   ],
+   "rooted": true,
+   "roots": [
+    "b7e57a0434db9a7a56eb76b67f409842525c74ef"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 1,
+    "human": 1
+   },
+   "commit_copies": 2,
+   "commits": 2,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 2,
+    "repo_born": 2
+   },
+   "first_ts": "2026-04-30T04:28:44Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "b996d387a033215a4701c029c5f324e807f921c7",
+   "kind": "git",
+   "last_ts": "2026-05-02T06:41:25Z",
+   "members": 1,
+   "names": [
+    "gaspercards"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/GasperCards"
+    ]
+   },
+   "refs": 4,
+   "region": null,
+   "remotes": [
+    "github.com/steppe-integrations/threat-trace"
+   ],
+   "rooted": true,
+   "roots": [
+    "b996d387a033215a4701c029c5f324e807f921c7"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 11
+   },
+   "commit_copies": 11,
+   "commits": 11,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 11,
+    "repo_born": 2
+   },
+   "first_ts": "2026-09-15T07:42:36Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "ba4c3f28125b7e8fcd7e6f901aa758c7f18dadbd",
+   "kind": "git",
+   "last_ts": "2026-10-08T08:30:51Z",
+   "members": 1,
+   "names": [
+    "selfiestick"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/SelfieStick"
+    ]
+   },
+   "refs": 3,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/selfiestick"
+   ],
+   "rooted": true,
+   "roots": [
+    "ba4c3f28125b7e8fcd7e6f901aa758c7f18dadbd"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 1
+   },
+   "commit_copies": 1,
+   "commits": 1,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 1,
+    "repo_born": 2
+   },
+   "first_ts": "2026-05-26T07:07:22Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "c7dec46462fb0a86197442142ab14e1fb943b6b2",
+   "kind": "git",
+   "last_ts": "2026-05-26T07:07:22Z",
+   "members": 1,
+   "names": [
+    "seer"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/comfy/seer"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/chest-seer"
+   ],
+   "rooted": true,
+   "roots": [
+    "c7dec46462fb0a86197442142ab14e1fb943b6b2"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 17,
+    "human": 3,
+    "third_party": 494
+   },
+   "commit_copies": 514,
+   "commits": 514,
+   "derek_share": 0.0389,
+   "events": {
+    "branch": 39,
+    "commit": 514,
+    "repo_born": 1
+   },
+   "first_ts": "2025-07-17T20:50:44Z",
+   "foreign_org": true,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "c9781956eddcb5128f8c1a8f7e5c6154c1345320",
+   "kind": "git",
+   "last_ts": "2026-09-20T20:31:06Z",
+   "members": 1,
+   "names": [
+    "kernels"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/vllm-xpu-win/kernels"
+    ]
+   },
+   "refs": 87,
+   "region": null,
+   "remotes": [
+    "github.com/vllm-project/vllm-xpu-kernels"
+   ],
+   "rooted": true,
+   "roots": [
+    "c9781956eddcb5128f8c1a8f7e5c6154c1345320"
+   ],
+   "shallow_only": false,
+   "third_party": true,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 1,
+    "human": 4
+   },
+   "commit_copies": 5,
+   "commits": 5,
+   "derek_share": 1.0,
+   "events": {
+    "commit": 5,
+    "repo_born": 1
+   },
+   "first_ts": "2026-03-07T00:45:42Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "ce3d5749af6bec1f7c7d924500ba622ab0bc4046",
+   "kind": "git",
+   "last_ts": "2026-04-09T05:58:02Z",
+   "members": 1,
+   "names": [
+    "ai-dev-system"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/ai-dev-system"
+    ]
+   },
+   "refs": 5,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/ai-dev-system"
+   ],
+   "rooted": true,
+   "roots": [
+    "ce3d5749af6bec1f7c7d924500ba622ab0bc4046"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 10
+   },
+   "commit_copies": 10,
+   "commits": 10,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 10,
+    "repo_born": 1
+   },
+   "first_ts": "2026-03-07T03:09:08Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "cfc185cf98c49d276293cb64eeb3a0a49f842720",
+   "kind": "git",
+   "last_ts": "2026-04-11T07:50:48Z",
+   "members": 1,
+   "names": [
+    "liveview"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/liveView"
+    ]
+   },
+   "refs": 4,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/liveview"
+   ],
+   "rooted": true,
+   "roots": [
+    "cfc185cf98c49d276293cb64eeb3a0a49f842720"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 5,
+    "human": 1655
+   },
+   "commit_copies": 1660,
+   "commits": 1660,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 1660,
+    "repo_born": 1
+   },
+   "first_ts": "2026-03-17T07:52:49Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "d0cda3f8bc2aa7dabeb6fda28c813f28fa55f1b9",
+   "kind": "git",
+   "last_ts": "2026-04-09T05:59:48Z",
+   "members": 1,
+   "names": [
+    "planner"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/start/planner"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/start-planner"
+   ],
+   "rooted": true,
+   "roots": [
+    "d0cda3f8bc2aa7dabeb6fda28c813f28fa55f1b9"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 19,
+    "human": 1
+   },
+   "commit_copies": 20,
+   "commits": 20,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 20,
+    "repo_born": 1
+   },
+   "first_ts": "2026-04-03T06:02:14Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "d10adf11626c2078930a467b06c72c400db531ed",
+   "kind": "git",
+   "last_ts": "2026-04-09T05:58:02Z",
+   "members": 1,
+   "names": [
+    "ashley"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/start/ashley"
+    ]
+   },
+   "refs": 4,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/ashley"
+   ],
+   "rooted": true,
+   "roots": [
+    "d10adf11626c2078930a467b06c72c400db531ed"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 23,
+    "human": 15
+   },
+   "commit_copies": 38,
+   "commits": 38,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 38,
+    "repo_born": 1
+   },
+   "first_ts": "2026-09-17T13:09:51Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "d5704c3a3c98dd1f34fe648e59a25c741412172a",
+   "kind": "git",
+   "last_ts": "2026-09-18T02:38:27Z",
+   "members": 1,
+   "names": [
+    "local-operator-workspace-20260917"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/orchestration/local-operator-workspace-20260917"
+    ]
+   },
+   "refs": 7,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "d5704c3a3c98dd1f34fe648e59a25c741412172a"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 3
+   },
+   "commit_copies": 3,
+   "commits": 3,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 3,
+    "repo_born": 1
+   },
+   "first_ts": "2026-09-09T02:31:50Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "d6bf32f3fd87bc995560881042fd7fbe0b952dd5",
+   "kind": "git",
+   "last_ts": "2026-09-09T02:43:22Z",
+   "members": 1,
+   "names": [
+    "truth-alignment-20260908"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/orchestration/truth-alignment-20260908"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [],
+   "rooted": true,
+   "roots": [
+    "d6bf32f3fd87bc995560881042fd7fbe0b952dd5"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 3
+   },
+   "commit_copies": 3,
+   "commits": 3,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 3,
+    "repo_born": 2
+   },
+   "first_ts": "2026-03-29T08:25:48Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "da0a8476e842c97b423808376aed58ada91f7a2f",
+   "kind": "git",
+   "last_ts": "2026-03-29T09:50:00Z",
+   "members": 1,
+   "names": [
+    "portmap"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/start/portmap"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/portmap"
+   ],
+   "rooted": true,
+   "roots": [
+    "da0a8476e842c97b423808376aed58ada91f7a2f"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 4,
+    "human": 18
+   },
+   "commit_copies": 22,
+   "commits": 22,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 2,
+    "chat_msg": 5,
+    "chat_session": 1,
+    "commit": 22,
+    "repo_born": 2
+   },
+   "first_ts": "2026-03-07T11:14:46Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dc00626718981a7fb78734bd61f6e8f77f0511e9",
+   "kind": "git",
+   "last_ts": "2026-09-23T07:33:38Z",
+   "members": 1,
+   "names": [
+    "ai-systems-research"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/ai-systems-research"
+    ]
+   },
+   "refs": 7,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/ai-systems-research"
+   ],
+   "rooted": true,
+   "roots": [
+    "dc00626718981a7fb78734bd61f6e8f77f0511e9"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 1
+   },
+   "commit_copies": 1,
+   "commits": 1,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 1,
+    "repo_born": 2
+   },
+   "first_ts": "2023-11-03T02:13:53Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dd77d0489cdb4ad608d4fc831ebbd5f3eadc1047",
+   "kind": "git",
+   "last_ts": "2023-11-03T02:13:53Z",
+   "members": 1,
+   "names": [
+    "comfymerchant"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/known-world/cache/clones/ComfyMerchant.git"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/comfymerchant"
+   ],
+   "rooted": true,
+   "roots": [
+    "dd77d0489cdb4ad608d4fc831ebbd5f3eadc1047"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 1
+   },
+   "commit_copies": 1,
+   "commits": 1,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 1,
+    "repo_born": 2
+   },
+   "first_ts": "2026-03-21T10:07:31Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "dec5b97c40cfd862ada61e481ca2e0e9bcd6ec06",
+   "kind": "git",
+   "last_ts": "2026-03-21T10:07:31Z",
+   "members": 1,
+   "names": [
+    "waypoints"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/known-world/cache/clones/waypoints.git"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/waypoints"
+   ],
+   "rooted": true,
+   "roots": [
+    "dec5b97c40cfd862ada61e481ca2e0e9bcd6ec06"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 53,
+    "human": 1
+   },
+   "commit_copies": 54,
+   "commits": 54,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 1717,
+    "chat_session": 46,
+    "commit": 54,
+    "repo_born": 2
+   },
+   "first_ts": "2026-06-04T04:53:56Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dee5f19b9655bcd1ee4f16352ba7deadb6a9c30e",
+   "kind": "git",
+   "last_ts": "2026-06-16T14:32:25Z",
+   "members": 1,
+   "names": [
+    "leopard"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/leopard"
+    ]
+   },
+   "refs": 5,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/leopard"
+   ],
+   "rooted": true,
+   "roots": [
+    "dee5f19b9655bcd1ee4f16352ba7deadb6a9c30e"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "events": {
+    "file_birth": 15
+   },
+   "first_ts": "2026-08-22T14:32:27Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:AM4-provision",
+   "kind": "dir",
+   "last_ts": "2026-08-22T18:32:23Z",
+   "names": [
+    "am4-provision"
+   ],
+   "paths": {
+    "omen-c": [
+     "AM4-provision"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 51,
+    "chat_session": 3,
+    "file_birth": 1
+   },
+   "first_ts": "2026-08-13T16:19:00Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:OMEN_prep",
+   "kind": "dir",
+   "last_ts": "2026-08-13T18:36:00Z",
+   "names": [
+    "omen_prep"
+   ],
+   "paths": {
+    "omen-c": [
+     "OMEN_prep"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 13
+   },
+   "first_ts": "2026-08-19T16:33:34Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:assessment",
+   "kind": "dir",
+   "last_ts": "2026-08-19T16:33:34Z",
+   "names": [
+    "assessment"
+   ],
+   "paths": {
+    "omen-c": [
+     "assessment"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-08-19T16:33:35Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:dirty-diffs",
+   "kind": "dir",
+   "last_ts": "2026-08-19T16:33:35Z",
+   "names": [
+    "dirty-diffs"
+   ],
+   "paths": {
+    "omen-c": [
+     "dirty-diffs"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 20
+   },
+   "first_ts": "2026-08-19T16:33:34Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:hearth-var",
+   "kind": "dir",
+   "last_ts": "2026-08-19T16:33:34Z",
+   "names": [
+    "hearth-var"
+   ],
+   "paths": {
+    "omen-c": [
+     "hearth-var"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 3
+   },
+   "first_ts": "2026-08-19T16:33:35Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:omen-perception-authored",
+   "kind": "dir",
+   "last_ts": "2026-08-19T16:33:35Z",
+   "names": [
+    "omen-perception-authored"
+   ],
+   "paths": {
+    "omen-c": [
+     "omen-perception-authored"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 6
+   },
+   "first_ts": "2026-08-19T16:33:34Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:tuning",
+   "kind": "dir",
+   "last_ts": "2026-08-19T16:33:35Z",
+   "names": [
+    "tuning"
+   ],
+   "paths": {
+    "omen-c": [
+     "tuning"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 147,
+    "chat_session": 8,
+    "file_birth": 14
+   },
+   "first_ts": "2026-07-20T23:53:29Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/Diana",
+   "kind": "dir",
+   "last_ts": "2026-07-23T08:10:00Z",
+   "names": [
+    "diana"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/Diana"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 53,
+    "chat_session": 1,
+    "file_birth": 25
+   },
+   "first_ts": "2026-09-22T12:23:00Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/JEPA",
+   "kind": "dir",
+   "last_ts": "2026-09-23T13:45:05Z",
+   "names": [
+    "jepa"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/JEPA"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 11
+   },
+   "first_ts": "2026-07-21T06:33:31Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/_archive",
+   "kind": "dir",
+   "last_ts": "2026-10-07T05:03:21Z",
+   "names": [
+    "_archive"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/_archive"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 22
+   },
+   "first_ts": "2026-08-12T07:59:09Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/_extract",
+   "kind": "dir",
+   "last_ts": "2026-08-12T08:16:22Z",
+   "names": [
+    "_extract"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/_extract"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 158
+   },
+   "first_ts": "2024-10-26T19:02:00Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/_retired",
+   "kind": "dir",
+   "last_ts": "2026-09-15T07:24:53Z",
+   "names": [
+    "_retired"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/_retired"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 76,
+    "chat_session": 1,
+    "file_birth": 11
+   },
+   "first_ts": "2026-09-17T07:35:00Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/am4",
+   "kind": "dir",
+   "last_ts": "2026-09-17T08:22:00Z",
+   "names": [
+    "am4"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/am4"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 6
+   },
+   "first_ts": "2026-08-12T10:12:04Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/am4-game-art-deploy",
+   "kind": "dir",
+   "last_ts": "2026-08-12T12:30:37Z",
+   "names": [
+    "am4-game-art-deploy"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/am4-game-art-deploy"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 26
+   },
+   "first_ts": "2026-07-16T08:45:55Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/am4-harvest",
+   "kind": "dir",
+   "last_ts": "2026-07-16T08:45:56Z",
+   "names": [
+    "am4-harvest"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/am4-harvest"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 4
+   },
+   "first_ts": "2026-06-27T11:48:24Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/benchmark",
+   "kind": "dir",
+   "last_ts": "2026-06-27T13:05:38Z",
+   "names": [
+    "benchmark"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/benchmark"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 2
+   },
+   "first_ts": "2026-07-23T23:18:14Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/buzz",
+   "kind": "dir",
+   "last_ts": "2026-07-24T09:45:06Z",
+   "names": [
+    "buzz"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/buzz"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 42
+   },
+   "first_ts": "2026-08-12T08:15:01Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/comfy-quest-test-artifacts-20260812",
+   "kind": "dir",
+   "last_ts": "2026-08-13T03:50:26Z",
+   "names": [
+    "comfy-quest-test-artifacts-20260812"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/comfy-quest-test-artifacts-20260812"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 12
+   },
+   "first_ts": "2026-09-07T01:51:44Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/creator-dm-restart-20260906",
+   "kind": "dir",
+   "last_ts": "2026-09-07T01:52:48Z",
+   "names": [
+    "creator-dm-restart-20260906"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/creator-dm-restart-20260906"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 40
+   },
+   "first_ts": "2026-09-20T22:34:01Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/github-runner-deepnorthtesting",
+   "kind": "dir",
+   "last_ts": "2026-10-08T19:16:36Z",
+   "names": [
+    "github-runner-deepnorthtesting"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/github-runner-deepnorthtesting"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 35,
+    "chat_session": 1,
+    "file_birth": 6
+   },
+   "first_ts": "2026-07-19T04:09:40Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/handoffs",
+   "kind": "dir",
+   "last_ts": "2026-09-06T23:24:00Z",
+   "names": [
+    "handoffs"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/handoffs"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 3
+   },
+   "first_ts": "2026-07-04T18:48:29Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/imagegen",
+   "kind": "dir",
+   "last_ts": "2026-07-04T18:49:16Z",
+   "names": [
+    "imagegen"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/imagegen"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 296,
+    "chat_session": 1,
+    "file_birth": 2
+   },
+   "first_ts": "2026-07-16T06:33:00Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/iso",
+   "kind": "dir",
+   "last_ts": "2026-07-18T04:15:56Z",
+   "names": [
+    "iso"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/iso"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 117,
+    "chat_session": 1,
+    "file_birth": 20
+   },
+   "first_ts": "2026-08-12T12:47:02Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/kart",
+   "kind": "dir",
+   "last_ts": "2026-08-18T11:04:00Z",
+   "names": [
+    "kart"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/kart"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 8
+   },
+   "first_ts": "2026-07-22T13:32:16Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/m11-transport-20260722-r1-bundle",
+   "kind": "dir",
+   "last_ts": "2026-07-22T13:33:42Z",
+   "names": [
+    "m11-transport-20260722-r1-bundle"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/m11-transport-20260722-r1-bundle"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 33
+   },
+   "first_ts": "2026-06-27T21:55:45Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/omen-perception",
+   "kind": "dir",
+   "last_ts": "2026-08-19T09:58:02Z",
+   "names": [
+    "omen-perception"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/omen-perception"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 6,
+    "chat_session": 3,
+    "file_birth": 41
+   },
+   "first_ts": "2026-09-06T23:02:00Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/orchestration",
+   "kind": "dir",
+   "last_ts": "2026-09-18T01:11:18Z",
+   "names": [
+    "orchestration"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/orchestration"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-08-10T11:01:13Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/overview",
+   "kind": "dir",
+   "last_ts": "2026-08-10T11:01:13Z",
+   "names": [
+    "overview"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/overview"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "authors": {},
+   "commit_copies": 0,
+   "commits": 0,
+   "derek_share": 0.0,
+   "events": {},
+   "first_ts": null,
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/overview/episodes",
+   "kind": "git",
+   "last_ts": null,
+   "members": 1,
+   "names": [
+    "episodes"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/overview/episodes"
+    ]
+   },
+   "refs": 0,
+   "region": null,
+   "remotes": [],
+   "rooted": false,
+   "roots": [],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "events": {
+    "file_birth": 3
+   },
+   "first_ts": "2026-09-07T00:34:05Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/research",
+   "kind": "dir",
+   "last_ts": "2026-09-07T00:34:06Z",
+   "names": [
+    "research"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/research"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 2
+   },
+   "first_ts": "2026-07-04T13:43:58Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/tools",
+   "kind": "dir",
+   "last_ts": "2026-07-04T13:44:12Z",
+   "names": [
+    "tools"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/tools"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 9
+   },
+   "first_ts": "2026-09-10T02:12:42Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/valheim-capture",
+   "kind": "dir",
+   "last_ts": "2026-09-12T21:22:55Z",
+   "names": [
+    "valheim-capture"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/valheim-capture"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 6
+   },
+   "first_ts": "2026-09-10T01:22:58Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/valheim-terrain",
+   "kind": "dir",
+   "last_ts": "2026-09-10T01:55:38Z",
+   "names": [
+    "valheim-terrain"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/valheim-terrain"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-07-08T13:50:11Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/where-to-point-it",
+   "kind": "dir",
+   "last_ts": "2026-07-08T13:50:11Z",
+   "names": [
+    "where-to-point-it"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/where-to-point-it"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 25,
+    "chat_session": 12,
+    "file_birth": 8
+   },
+   "first_ts": "2026-09-17T13:35:46Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/worktrees",
+   "kind": "dir",
+   "last_ts": "2026-09-19T08:02:44Z",
+   "names": [
+    "worktrees"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/worktrees"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 756,
+    "chat_session": 19,
+    "file_birth": 32
+   },
+   "first_ts": "2026-07-04T07:28:14Z",
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "dir:omen-c:work/writing",
+   "kind": "dir",
+   "last_ts": "2026-09-15T02:00:51Z",
+   "names": [
+    "writing"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/writing"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 60,
+    "chat_session": 5,
+    "file_birth": 14
+   },
+   "first_ts": "2025-03-18T15:23:47Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work",
+   "kind": "dir",
+   "last_ts": "2026-09-27T05:53:12Z",
+   "names": [
+    "work"
+   ],
+   "paths": {
+    "omen-e": [
+     "work"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 8
+   },
+   "first_ts": "2026-06-11T11:08:48Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/.cbm-cache",
+   "kind": "dir",
+   "last_ts": "2026-06-23T03:53:22Z",
+   "names": [
+    ".cbm-cache"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/.cbm-cache"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-04-25T06:07:00Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/.claude",
+   "kind": "dir",
+   "last_ts": "2026-04-25T06:07:00Z",
+   "names": [
+    ".claude"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/.claude"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 20
+   },
+   "first_ts": "2026-06-19T15:39:30Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/.pipcache",
+   "kind": "dir",
+   "last_ts": "2026-06-19T15:40:30Z",
+   "names": [
+    ".pipcache"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/.pipcache"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-06-19T15:58:30Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/.tmp",
+   "kind": "dir",
+   "last_ts": "2026-06-19T15:58:30Z",
+   "names": [
+    ".tmp"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/.tmp"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 587,
+    "chat_session": 2,
+    "file_birth": 8
+   },
+   "first_ts": "2026-06-22T08:35:00Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/8350",
+   "kind": "dir",
+   "last_ts": "2026-06-23T00:36:00Z",
+   "names": [
+    "8350"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/8350"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 6
+   },
+   "first_ts": "2026-03-19T22:11:54Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/Antigravity",
+   "kind": "dir",
+   "last_ts": "2026-04-03T07:41:17Z",
+   "names": [
+    "antigravity"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/Antigravity"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 3
+   },
+   "first_ts": "2026-02-13T21:57:44Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/Claim_060395671-04_PropertyDamage_and_DiminishedValue_Derek_Ciula.zip",
+   "kind": "dir",
+   "last_ts": "2026-02-13T21:58:33Z",
+   "names": [
+    "claim_060395671-04_propertydamage_and_diminishedvalue_derek_ciula.zip"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/Claim_060395671-04_PropertyDamage_and_DiminishedValue_Derek_Ciula.zip"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 13
+   },
+   "first_ts": "2025-08-01T23:30:12Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/ConsoleApp1",
+   "kind": "dir",
+   "last_ts": "2026-06-08T07:51:20Z",
+   "names": [
+    "consoleapp1"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/ConsoleApp1"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 5
+   },
+   "first_ts": "2020-12-22T20:25:40Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/ISO",
+   "kind": "dir",
+   "last_ts": "2025-06-05T15:18:56Z",
+   "names": [
+    "iso"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/ISO"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 5
+   },
+   "first_ts": "2026-03-14T03:48:10Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/archStandards",
+   "kind": "dir",
+   "last_ts": "2026-03-24T10:37:42Z",
+   "names": [
+    "archstandards"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/archStandards"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 2
+   },
+   "first_ts": "2025-12-27T19:23:59Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/audio",
+   "kind": "dir",
+   "last_ts": "2025-12-28T07:39:14Z",
+   "names": [
+    "audio"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/audio"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 118,
+    "chat_session": 4,
+    "file_birth": 92
+   },
+   "first_ts": "2026-05-22T09:59:03Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/battlemage",
+   "kind": "dir",
+   "last_ts": "2026-09-22T10:14:58Z",
+   "names": [
+    "battlemage"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/battlemage"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 2
+   },
+   "first_ts": "2026-03-21T12:04:28Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/buf",
+   "kind": "dir",
+   "last_ts": "2026-03-21T12:04:28Z",
+   "names": [
+    "buf"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/buf"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 13
+   },
+   "first_ts": "2026-04-30T10:35:38Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/claude-fleet-control",
+   "kind": "dir",
+   "last_ts": "2026-04-30T10:54:39Z",
+   "names": [
+    "claude-fleet-control"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/claude-fleet-control"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 824,
+    "chat_session": 12,
+    "file_birth": 38
+   },
+   "first_ts": "2026-05-26T04:06:55Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/comfy",
+   "kind": "dir",
+   "last_ts": "2026-05-26T10:42:00Z",
+   "names": [
+    "comfy"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/comfy"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 101,
+    "chat_session": 6,
+    "file_birth": 6
+   },
+   "first_ts": "2026-06-19T11:24:45Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/comfyrp",
+   "kind": "dir",
+   "last_ts": "2026-06-19T13:20:00Z",
+   "names": [
+    "comfyrp"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/comfyrp"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-05-15T10:14:40Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/contracts",
+   "kind": "dir",
+   "last_ts": "2026-05-15T10:14:40Z",
+   "names": [
+    "contracts"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/contracts"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 3
+   },
+   "first_ts": "2025-02-01T23:14:14Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/drawing",
+   "kind": "dir",
+   "last_ts": "2025-02-01T23:14:21Z",
+   "names": [
+    "drawing"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/drawing"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-09-22T02:08:54Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/drivers",
+   "kind": "dir",
+   "last_ts": "2026-09-22T02:08:54Z",
+   "names": [
+    "drivers"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/drivers"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 22
+   },
+   "first_ts": "2026-03-13T00:20:41Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/dump",
+   "kind": "dir",
+   "last_ts": "2026-03-13T00:20:49Z",
+   "names": [
+    "dump"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/dump"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-06-21T19:04:28Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/handoff",
+   "kind": "dir",
+   "last_ts": "2026-06-21T19:04:28Z",
+   "names": [
+    "handoff"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/handoff"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 135,
+    "chat_session": 1,
+    "file_birth": 5
+   },
+   "first_ts": "2026-06-06T06:54:00Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/herm",
+   "kind": "dir",
+   "last_ts": "2026-06-06T13:45:35Z",
+   "names": [
+    "herm"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/herm"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 1346,
+    "chat_session": 1,
+    "file_birth": 9
+   },
+   "first_ts": "2026-09-19T11:40:00Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/hermes",
+   "kind": "dir",
+   "last_ts": "2026-09-21T22:37:00Z",
+   "names": [
+    "hermes"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/hermes"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-04-17T15:01:28Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/host-cleanup",
+   "kind": "dir",
+   "last_ts": "2026-04-17T15:01:28Z",
+   "names": [
+    "host-cleanup"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/host-cleanup"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 2267,
+    "chat_session": 55,
+    "file_birth": 2
+   },
+   "first_ts": "2026-06-19T10:33:00Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/infexp",
+   "kind": "dir",
+   "last_ts": "2026-06-22T11:07:00Z",
+   "names": [
+    "infexp"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/infexp"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-08-28T05:46:41Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/llama-swap-v251",
+   "kind": "dir",
+   "last_ts": "2026-08-28T05:46:41Z",
+   "names": [
+    "llama-swap-v251"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/llama-swap-v251"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-08-21T04:44:54Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/llamacpp-b10549-vulkan",
+   "kind": "dir",
+   "last_ts": "2026-08-21T04:44:54Z",
+   "names": [
+    "llamacpp-b10549-vulkan"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/llamacpp-b10549-vulkan"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-05-22T10:09:43Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/llamacpp-b9279-vulkan",
+   "kind": "dir",
+   "last_ts": "2026-05-22T10:09:43Z",
+   "names": [
+    "llamacpp-b9279-vulkan"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/llamacpp-b9279-vulkan"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-05-08T06:15:25Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/lootbox",
+   "kind": "dir",
+   "last_ts": "2026-05-08T06:15:25Z",
+   "names": [
+    "lootbox"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/lootbox"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 6
+   },
+   "first_ts": "2024-08-17T23:05:22Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/mfa",
+   "kind": "dir",
+   "last_ts": "2024-08-18T00:02:58Z",
+   "names": [
+    "mfa"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/mfa"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-01-19T06:13:15Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/notes",
+   "kind": "dir",
+   "last_ts": "2026-01-19T06:13:15Z",
+   "names": [
+    "notes"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/notes"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-05-17T00:22:03Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/parser-handoff",
+   "kind": "dir",
+   "last_ts": "2026-05-17T00:22:03Z",
+   "names": [
+    "parser-handoff"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/parser-handoff"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 5
+   },
+   "first_ts": "2026-04-09T06:28:38Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/planning-runtime",
+   "kind": "dir",
+   "last_ts": "2026-04-15T13:39:43Z",
+   "names": [
+    "planning-runtime"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/planning-runtime"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-01-19T02:33:13Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/platform-tools",
+   "kind": "dir",
+   "last_ts": "2026-01-19T02:33:13Z",
+   "names": [
+    "platform-tools"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/platform-tools"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 7
+   },
+   "first_ts": "2026-05-06T19:10:10Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/repos",
+   "kind": "dir",
+   "last_ts": "2026-05-06T20:23:12Z",
+   "names": [
+    "repos"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/repos"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-04-17T14:56:08Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/scripts",
+   "kind": "dir",
+   "last_ts": "2026-04-17T14:56:08Z",
+   "names": [
+    "scripts"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/scripts"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 300
+   },
+   "first_ts": "2026-03-17T04:52:30Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/start",
+   "kind": "dir",
+   "last_ts": "2026-06-23T07:43:15Z",
+   "names": [
+    "start"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/start"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 2
+   },
+   "first_ts": "2026-05-15T20:06:23Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/steppe-launch",
+   "kind": "dir",
+   "last_ts": "2026-05-16T05:38:16Z",
+   "names": [
+    "steppe-launch"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/steppe-launch"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-05-13T23:25:19Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/steppe-strategy",
+   "kind": "dir",
+   "last_ts": "2026-05-13T23:25:19Z",
+   "names": [
+    "steppe-strategy"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/steppe-strategy"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 1
+   },
+   "first_ts": "2026-03-21T14:26:39Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/tools",
+   "kind": "dir",
+   "last_ts": "2026-03-21T14:26:39Z",
+   "names": [
+    "tools"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/tools"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "chat_msg": 235,
+    "chat_session": 1,
+    "file_birth": 45
+   },
+   "first_ts": "2026-09-20T04:46:55Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/vllm-xpu-win",
+   "kind": "dir",
+   "last_ts": "2026-09-23T14:08:00Z",
+   "names": [
+    "vllm-xpu-win"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/vllm-xpu-win"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "file_birth": 5
+   },
+   "first_ts": "2026-03-23T10:50:52Z",
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "dir:omen-e:work/website",
+   "kind": "dir",
+   "last_ts": "2026-03-23T10:50:52Z",
+   "names": [
+    "website"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/website"
+    ]
+   },
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "authors": {
+    "claude": 1
+   },
+   "commit_copies": 1,
+   "commits": 1,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 1,
+    "repo_born": 1
+   },
+   "first_ts": "2026-06-22T10:35:08Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "e580a2ef24acb12c5b90f5dc7264938d2eee28c1",
+   "kind": "git",
+   "last_ts": "2026-06-22T10:35:08Z",
+   "members": 1,
+   "names": [
+    "xpu-train"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/xpu-train"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/xpu-train"
+   ],
+   "rooted": true,
+   "roots": [
+    "e580a2ef24acb12c5b90f5dc7264938d2eee28c1"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 10,
+    "human": 10
+   },
+   "commit_copies": 20,
+   "commits": 20,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 20,
+    "repo_born": 2
+   },
+   "first_ts": "2026-08-25T05:05:12Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "e6fa603a4463fc18d711d8acc897fccd17921763",
+   "kind": "git",
+   "last_ts": "2026-09-04T18:35:21Z",
+   "members": 1,
+   "names": [
+    "clippy"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/known-world/cache/clones/clippy.git"
+    ]
+   },
+   "refs": 3,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/clippy"
+   ],
+   "rooted": true,
+   "roots": [
+    "e6fa603a4463fc18d711d8acc897fccd17921763",
+    "ec4766a808a7800da6852ae671f45f0bbfa614f4"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 46
+   },
+   "commit_copies": 46,
+   "commits": 46,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 124,
+    "chat_session": 1,
+    "commit": 46,
+    "repo_born": 2
+   },
+   "first_ts": "2026-09-12T08:01:28Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd",
+   "kind": "git",
+   "last_ts": "2026-10-08T08:31:29Z",
+   "members": 1,
+   "names": [
+    "deepnorthtesting"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/deepnorthtesting"
+    ]
+   },
+   "refs": 3,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/deepnorthtesting"
+   ],
+   "rooted": true,
+   "roots": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 8,
+    "human": 3
+   },
+   "commit_copies": 11,
+   "commits": 11,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 1239,
+    "chat_session": 29,
+    "commit": 11,
+    "repo_born": 2
+   },
+   "first_ts": "2026-05-29T06:28:08Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "e827d185663d650b88d3ad2148c8367ed6f2ece7",
+   "kind": "git",
+   "last_ts": "2026-09-02T22:51:57Z",
+   "members": 1,
+   "names": [
+    "b70tools"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/b70tools"
+    ]
+   },
+   "refs": 4,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/b70tools"
+   ],
+   "rooted": true,
+   "roots": [
+    "e827d185663d650b88d3ad2148c8367ed6f2ece7"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 3,
+    "human": 5
+   },
+   "commit_copies": 14,
+   "commits": 8,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 239,
+    "chat_session": 1,
+    "commit": 8,
+    "repo_born": 2
+   },
+   "first_ts": "2026-08-12T06:33:45Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c",
+    "am4"
+   ],
+   "id": "ec52961c5a3f1fbc7b78eb55d035efcdb06c526b",
+   "kind": "git",
+   "last_ts": "2026-09-08T22:06:52Z",
+   "members": 2,
+   "names": [
+    "sovereign-shards"
+   ],
+   "paths": {
+    "am4": [
+     "~/sovereign-shards"
+    ],
+    "omen-c": [
+     "work/sovereign-shards"
+    ]
+   },
+   "refs": 3,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/sovereign-shards"
+   ],
+   "rooted": true,
+   "roots": [
+    "ec52961c5a3f1fbc7b78eb55d035efcdb06c526b"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 7,
+    "human": 13
+   },
+   "commit_copies": 20,
+   "commits": 20,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "chat_msg": 13,
+    "chat_session": 1,
+    "commit": 20,
+    "repo_born": 1,
+    "worktree": 1
+   },
+   "first_ts": "2026-08-07T15:25:59Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "ec74746c1d44db7e45ac21611d55e1023d2a9818",
+   "kind": "git",
+   "last_ts": "2026-09-16T09:02:34Z",
+   "members": 1,
+   "names": [
+    "isolate"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/isolate"
+    ]
+   },
+   "refs": 4,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/isolate"
+   ],
+   "rooted": true,
+   "roots": [
+    "ec74746c1d44db7e45ac21611d55e1023d2a9818"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "claude": 10,
+    "human": 25
+   },
+   "commit_copies": 35,
+   "commits": 35,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 2,
+    "chat_msg": 705,
+    "chat_session": 59,
+    "commit": 35,
+    "repo_born": 1
+   },
+   "first_ts": "2026-04-09T09:09:14Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "ecca39f1f37ae199e1a5770bc215fc8dc132f239",
+   "kind": "git",
+   "last_ts": "2026-06-16T13:36:33Z",
+   "members": 1,
+   "names": [
+    "writing"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/writing"
+    ]
+   },
+   "refs": 14,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/desire-trace"
+   ],
+   "rooted": true,
+   "roots": [
+    "ecca39f1f37ae199e1a5770bc215fc8dc132f239"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 13
+   },
+   "commit_copies": 26,
+   "commits": 13,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 13,
+    "repo_born": 1
+   },
+   "first_ts": "2026-03-07T03:08:43Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux",
+    "omen-e"
+   ],
+   "id": "f69a5b1a96e95fb6881af3028af39ecbd9df099a",
+   "kind": "git",
+   "last_ts": "2026-04-09T05:59:35Z",
+   "members": 2,
+   "names": [
+    "liveview-ui-run",
+    "ui"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/liveView/ui"
+    ],
+    "omen-linux": [
+     "~/work/liveView-ui-run"
+    ]
+   },
+   "refs": 8,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/liveview-ui"
+   ],
+   "rooted": true,
+   "roots": [
+    "f69a5b1a96e95fb6881af3028af39ecbd9df099a"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 29
+   },
+   "commit_copies": 29,
+   "commits": 29,
+   "derek_share": 1.0,
+   "events": {
+    "branch": 1,
+    "commit": 29,
+    "repo_born": 1
+   },
+   "first_ts": "2026-04-06T19:50:37Z",
+   "foreign_org": false,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "fe69bfd7e25a89d285126e23e16d01ef7f0275b1",
+   "kind": "git",
+   "last_ts": "2026-05-07T08:25:37Z",
+   "members": 1,
+   "names": [
+    "farmer"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/start/farmer"
+    ]
+   },
+   "refs": 5,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/farmer"
+   ],
+   "rooted": true,
+   "roots": [
+    "fe69bfd7e25a89d285126e23e16d01ef7f0275b1"
+   ],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "third_party": 1
+   },
+   "commit_copies": 1,
+   "commits": 1,
+   "derek_share": 0.0,
+   "events": {
+    "branch": 1,
+    "commit": 1,
+    "repo_born": 1
+   },
+   "first_ts": "2026-06-23T17:22:28Z",
+   "foreign_org": true,
+   "hosts": [
+    "am4"
+   ],
+   "id": "github:comfyanonymous/comfyui",
+   "kind": "git",
+   "last_ts": "2026-06-23T17:22:28Z",
+   "members": 1,
+   "names": [
+    "comfyui"
+   ],
+   "paths": {
+    "am4": [
+     "~/ComfyUI"
+    ]
+   },
+   "refs": 4,
+   "region": null,
+   "remotes": [
+    "github.com/comfyanonymous/comfyui"
+   ],
+   "rooted": false,
+   "roots": [],
+   "shallow_only": true,
+   "third_party": true,
+   "worktree_records": 0
+  },
+  {
+   "authors": {},
+   "commit_copies": 0,
+   "commits": 0,
+   "derek_share": 0.0,
+   "events": {
+    "repo_born": 1
+   },
+   "first_ts": null,
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "github:djcdevelopment/battlemage",
+   "kind": "git",
+   "last_ts": null,
+   "members": 1,
+   "names": [
+    "battlemage"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/known-world/cache/clones/battlemage.git"
+    ]
+   },
+   "refs": 0,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/battlemage"
+   ],
+   "rooted": false,
+   "roots": [],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {},
+   "commit_copies": 0,
+   "commits": 0,
+   "derek_share": 0.0,
+   "events": {
+    "repo_born": 1
+   },
+   "first_ts": null,
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "github:djcdevelopment/comfy-exaltedcontracts",
+   "kind": "git",
+   "last_ts": null,
+   "members": 1,
+   "names": [
+    "comfy-exaltedcontracts"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/known-world/cache/clones/Comfy-ExaltedContracts.git"
+    ]
+   },
+   "refs": 0,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/comfy-exaltedcontracts"
+   ],
+   "rooted": false,
+   "roots": [],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {},
+   "commit_copies": 0,
+   "commits": 0,
+   "derek_share": 0.0,
+   "events": {
+    "repo_born": 1
+   },
+   "first_ts": null,
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "github:djcdevelopment/farm",
+   "kind": "git",
+   "last_ts": null,
+   "members": 1,
+   "names": [
+    "farm"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/known-world/cache/clones/farm.git"
+    ]
+   },
+   "refs": 0,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/farm"
+   ],
+   "rooted": false,
+   "roots": [],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {},
+   "commit_copies": 0,
+   "commits": 0,
+   "derek_share": 0.0,
+   "events": {},
+   "first_ts": null,
+   "foreign_org": false,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "github:djcdevelopment/not-the-quest-repo",
+   "kind": "git",
+   "last_ts": null,
+   "members": 1,
+   "names": [
+    "comfy-quest-identity-wrong-tested"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/_extract/comfy-quest-identity-wrong-tested"
+    ]
+   },
+   "refs": 0,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/not-the-quest-repo"
+   ],
+   "rooted": false,
+   "roots": [],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "events": {
+    "repo_born": 1
+   },
+   "first_ts": "2026-07-21T01:45:01Z",
+   "hosts": [
+    "github"
+   ],
+   "id": "github:djcdevelopment/open-notebook",
+   "kind": "github",
+   "last_ts": "2026-07-21T01:45:01Z",
+   "names": [
+    "djcdevelopment/open-notebook"
+   ],
+   "paths": {},
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "events": {
+    "repo_born": 1
+   },
+   "first_ts": "2011-08-25T19:45:52Z",
+   "hosts": [
+    "github"
+   ],
+   "id": "github:djcdevelopment/personal_website",
+   "kind": "github",
+   "last_ts": "2011-08-25T19:45:52Z",
+   "names": [
+    "djcdevelopment/personal_website"
+   ],
+   "paths": {},
+   "region": null,
+   "remotes": [],
+   "roots": []
+  },
+  {
+   "authors": {},
+   "commit_copies": 0,
+   "commits": 0,
+   "derek_share": 0.0,
+   "events": {
+    "repo_born": 1
+   },
+   "first_ts": null,
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "github:djcdevelopment/plinko",
+   "kind": "git",
+   "last_ts": null,
+   "members": 1,
+   "names": [
+    "plinko"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/known-world/cache/clones/plinko.git"
+    ]
+   },
+   "refs": 0,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/plinko"
+   ],
+   "rooted": false,
+   "roots": [],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {},
+   "commit_copies": 0,
+   "commits": 0,
+   "derek_share": 0.0,
+   "events": {
+    "repo_born": 1
+   },
+   "first_ts": null,
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "github:djcdevelopment/poescripter",
+   "kind": "git",
+   "last_ts": null,
+   "members": 1,
+   "names": [
+    "poescripter"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/known-world/cache/clones/POEscripter.git"
+    ]
+   },
+   "refs": 0,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/poescripter"
+   ],
+   "rooted": false,
+   "roots": [],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {},
+   "commit_copies": 0,
+   "commits": 0,
+   "derek_share": 0.0,
+   "events": {
+    "repo_born": 1
+   },
+   "first_ts": null,
+   "foreign_org": false,
+   "hosts": [
+    "omen-linux"
+   ],
+   "id": "github:djcdevelopment/threat-trace",
+   "kind": "git",
+   "last_ts": null,
+   "members": 1,
+   "names": [
+    "threat-trace"
+   ],
+   "paths": {
+    "omen-linux": [
+     "~/work/known-world/cache/clones/threat-trace.git"
+    ]
+   },
+   "refs": 0,
+   "region": null,
+   "remotes": [
+    "github.com/djcdevelopment/threat-trace"
+   ],
+   "rooted": false,
+   "roots": [],
+   "shallow_only": false,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "third_party": 1
+   },
+   "commit_copies": 1,
+   "commits": 1,
+   "derek_share": 0.0,
+   "events": {
+    "branch": 1,
+    "commit": 1,
+    "repo_born": 1
+   },
+   "first_ts": "2025-02-27T17:35:41Z",
+   "foreign_org": true,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "github:electronicarts/cnc_generals_zero_hour",
+   "kind": "git",
+   "last_ts": "2025-02-27T17:35:41Z",
+   "members": 1,
+   "names": [
+    "cnc-generals"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/research/cnc-generals"
+    ]
+   },
+   "refs": 3,
+   "region": null,
+   "remotes": [
+    "github.com/electronicarts/cnc_generals_zero_hour"
+   ],
+   "rooted": false,
+   "roots": [],
+   "shallow_only": true,
+   "third_party": true,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "third_party": 1
+   },
+   "commit_copies": 1,
+   "commits": 1,
+   "derek_share": 0.0,
+   "events": {
+    "branch": 1,
+    "commit": 1,
+    "repo_born": 1
+   },
+   "first_ts": "2026-07-17T09:33:29Z",
+   "foreign_org": true,
+   "hosts": [
+    "am4"
+   ],
+   "id": "github:oneapi-src/level-zero-tests",
+   "kind": "git",
+   "last_ts": "2026-07-17T09:33:29Z",
+   "members": 1,
+   "names": [
+    "level-zero-tests"
+   ],
+   "paths": {
+    "am4": [
+     "~/o1/level-zero-tests"
+    ]
+   },
+   "refs": 3,
+   "region": null,
+   "remotes": [
+    "github.com/oneapi-src/level-zero-tests"
+   ],
+   "rooted": false,
+   "roots": [],
+   "shallow_only": true,
+   "third_party": true,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "third_party": 1
+   },
+   "commit_copies": 1,
+   "commits": 1,
+   "derek_share": 0.0,
+   "events": {
+    "commit": 1,
+    "repo_born": 1
+   },
+   "first_ts": "2025-07-01T20:50:00Z",
+   "foreign_org": true,
+   "hosts": [
+    "am4"
+   ],
+   "id": "github:pnggroup/libpng",
+   "kind": "git",
+   "last_ts": "2025-07-01T20:50:00Z",
+   "members": 1,
+   "names": [
+    "libpng"
+   ],
+   "paths": {
+    "am4": [
+     "~/o1/libpng"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [
+    "github.com/pnggroup/libpng"
+   ],
+   "rooted": false,
+   "roots": [],
+   "shallow_only": true,
+   "third_party": true,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "human": 5,
+    "third_party": 1
+   },
+   "commit_copies": 6,
+   "commits": 6,
+   "derek_share": 0.8333,
+   "events": {
+    "branch": 1,
+    "commit": 6,
+    "repo_born": 1
+   },
+   "first_ts": "2026-09-18T20:14:54Z",
+   "foreign_org": true,
+   "hosts": [
+    "omen-e"
+   ],
+   "id": "github:systempanic/vllm-windows",
+   "kind": "git",
+   "last_ts": "2026-09-20T23:51:49Z",
+   "members": 1,
+   "names": [
+    "vllm-src"
+   ],
+   "paths": {
+    "omen-e": [
+     "work/vllm-xpu-win/vllm-src"
+    ]
+   },
+   "refs": 2,
+   "region": null,
+   "remotes": [
+    "github.com/systempanic/vllm-windows"
+   ],
+   "rooted": false,
+   "roots": [],
+   "shallow_only": true,
+   "third_party": false,
+   "worktree_records": 0
+  },
+  {
+   "authors": {
+    "third_party": 1
+   },
+   "commit_copies": 1,
+   "commits": 1,
+   "derek_share": 0.0,
+   "events": {
+    "chat_msg": 77,
+    "chat_session": 1,
+    "commit": 1,
+    "repo_born": 1
+   },
+   "first_ts": "2026-08-30T11:09:13Z",
+   "foreign_org": true,
+   "hosts": [
+    "omen-c"
+   ],
+   "id": "github:tt-a1i/archify",
+   "kind": "git",
+   "last_ts": "2026-08-30T11:09:13Z",
+   "members": 1,
+   "names": [
+    "archify"
+   ],
+   "paths": {
+    "omen-c": [
+     "work/archify"
+    ]
+   },
+   "refs": 1,
+   "region": null,
+   "remotes": [
+    "github.com/tt-a1i/archify"
+   ],
+   "rooted": false,
+   "roots": [],
+   "shallow_only": true,
+   "third_party": true,
+   "worktree_records": 0
+  }
+ ],
+ "link_basis": {
+  "root": 30,
+  "sha_overlap": 3,
+  "worktree": 16
+ },
+ "version": 1
+}

@@ -1,0 +1,3858 @@
+{
+ "actors": 2272,
+ "candidates": 6,
+ "candidates_by_basis": {
+  "name": 3,
+  "root_tree": 3
+ },
+ "chat_msg_folded_messages": 476325,
+ "chat_msg_records": 146432,
+ "chat_per_item": {
+  "chatgpt": {
+   "chat_session_records": 380,
+   "messages": 19045
+  },
+  "claude-linux": {
+   "chat_session_records": 498,
+   "messages": 49018
+  },
+  "claude-win": {
+   "chat_session_records": 1025,
+   "messages": 206077
+  },
+  "claude-zip": {
+   "chat_session_records": 405,
+   "messages": 69096
+  },
+  "codex-linux": {
+   "chat_session_records": 51,
+   "messages": 7269
+  },
+  "codex-win-a": {
+   "chat_session_records": 215,
+   "messages": 63221
+  },
+  "codex-win-b": {
+   "chat_session_records": 215,
+   "messages": 67097
+  },
+  "opencode": {
+   "chat_session_records": 24,
+   "messages": 953
+  }
+ },
+ "chat_session_records": 2810,
+ "components_multi": 21,
+ "deduped": {
+  "branch": 178,
+  "chat_msg": 90,
+  "chat_session": 3,
+  "commit": 3865,
+  "repo_born": 33
+ },
+ "dropped_null_ts": {
+  "git_repo/branch": 702,
+  "git_repo/repo_born": 8
+ },
+ "dropped_null_ts_total": 710,
+ "dup_items": {
+  "chat_msg:claude-linux>claude-linux": 90,
+  "chat_session:claude-linux>claude-linux": 3
+ },
+ "events_loaded": 215526,
+ "events_out": 210647,
+ "first_ts": "2011-08-25T19:45:52Z",
+ "github_event_match": {
+  "github_only": 2,
+  "remote_url": 52
+ },
+ "identity_fixes": {},
+ "items": {
+  "am4-git": {
+   "events_loaded": 389,
+   "manifest_events": 389,
+   "src": "git_repo",
+   "status": "complete"
+  },
+  "c-births": {
+   "events_loaded": 607,
+   "manifest_events": 607,
+   "src": "fs_births",
+   "status": "complete"
+  },
+  "c-git-a": {
+   "events_loaded": 534,
+   "manifest_events": 534,
+   "src": "git_repo",
+   "status": "complete"
+  },
+  "c-git-b": {
+   "events_loaded": 1719,
+   "manifest_events": 1719,
+   "src": "git_repo",
+   "status": "complete"
+  },
+  "c-git-c": {
+   "events_loaded": 3704,
+   "manifest_events": 3704,
+   "src": "git_repo",
+   "status": "complete"
+  },
+  "c-git-nested": {
+   "events_loaded": 1055,
+   "manifest_events": 1055,
+   "src": "git_repo",
+   "status": "complete"
+  },
+  "chatgpt": {
+   "events_loaded": 11259,
+   "manifest_events": 11259,
+   "src": "chatgpt_export",
+   "status": "complete"
+  },
+  "claude-linux": {
+   "events_loaded": 9124,
+   "manifest_events": 9124,
+   "src": "claude_jsonl",
+   "status": "complete"
+  },
+  "claude-win": {
+   "events_loaded": 41294,
+   "manifest_events": 41294,
+   "src": "claude_jsonl",
+   "status": "complete"
+  },
+  "claude-zip": {
+   "events_loaded": 17623,
+   "manifest_events": 17623,
+   "src": "claude_jsonl",
+   "status": "complete"
+  },
+  "codex-linux": {
+   "events_loaded": 5804,
+   "manifest_events": 5804,
+   "src": "codex_jsonl",
+   "status": "complete"
+  },
+  "codex-win-a": {
+   "events_loaded": 29950,
+   "manifest_events": 29950,
+   "src": "codex_jsonl",
+   "status": "complete"
+  },
+  "codex-win-b": {
+   "events_loaded": 34072,
+   "manifest_events": 34072,
+   "src": "codex_jsonl",
+   "status": "complete"
+  },
+  "continuity-runs": {
+   "events_loaded": 869,
+   "manifest_events": 869,
+   "src": "continuity",
+   "status": "complete"
+  },
+  "e-births": {
+   "events_loaded": 662,
+   "manifest_events": 662,
+   "src": "fs_births",
+   "status": "complete"
+  },
+  "e-git-a": {
+   "events_loaded": 2234,
+   "manifest_events": 2234,
+   "src": "git_repo",
+   "status": "complete"
+  },
+  "e-git-b": {
+   "events_loaded": 11855,
+   "manifest_events": 11855,
+   "src": "git_repo",
+   "status": "complete"
+  },
+  "e-git-c": {
+   "events_loaded": 360,
+   "manifest_events": 360,
+   "src": "git_repo",
+   "status": "complete"
+  },
+  "e-git-nested": {
+   "events_loaded": 11182,
+   "manifest_events": 11182,
+   "src": "git_repo",
+   "status": "complete"
+  },
+  "fx99-git": {
+   "events_loaded": 110,
+   "manifest_events": 110,
+   "src": "git_repo",
+   "status": "complete"
+  },
+  "github-list": {
+   "events_loaded": 54,
+   "manifest_events": 54,
+   "src": "github_api",
+   "status": "complete"
+  },
+  "hearth-ledger": {
+   "events_loaded": 25985,
+   "manifest_events": 25985,
+   "src": "hearth_ledger",
+   "status": "complete"
+  },
+  "linux-git": {
+   "events_loaded": 4811,
+   "manifest_events": 4811,
+   "src": "git_repo",
+   "status": "complete"
+  },
+  "mirror-0": {
+   "events_loaded": 51,
+   "manifest_events": 51,
+   "src": "git_repo",
+   "status": "complete"
+  },
+  "mirror-1": {
+   "events_loaded": 10,
+   "manifest_events": 10,
+   "src": "git_repo",
+   "status": "complete"
+  },
+  "opencode": {
+   "events_loaded": 209,
+   "manifest_events": 209,
+   "src": "opencode_db",
+   "status": "complete"
+  }
+ },
+ "items_order": [
+  "am4-git",
+  "c-births",
+  "c-git-a",
+  "c-git-b",
+  "c-git-c",
+  "c-git-nested",
+  "chatgpt",
+  "claude-linux",
+  "claude-win",
+  "claude-zip",
+  "codex-linux",
+  "codex-win-a",
+  "codex-win-b",
+  "continuity-runs",
+  "e-births",
+  "e-git-a",
+  "e-git-b",
+  "e-git-c",
+  "e-git-nested",
+  "fx99-git",
+  "github-list",
+  "hearth-ledger",
+  "linux-git",
+  "mirror-0",
+  "mirror-1",
+  "opencode"
+ ],
+ "join": {
+  "chatgpt_export": {
+   "no_path": 11259
+  },
+  "claude_jsonl": {
+   "joined": 46676,
+   "joined_dir": 4737,
+   "no_path": 821,
+   "unmatched": 15807
+  },
+  "codex_jsonl": {
+   "joined": 43697,
+   "joined_dir": 2635,
+   "no_path": 5731,
+   "unmatched": 17763
+  },
+  "continuity": {
+   "no_path": 332
+  },
+  "deepagents_runs": {
+   "joined": 133,
+   "no_path": 401,
+   "unmatched": 3
+  },
+  "hearth_ledger": {
+   "no_path": 25985
+  },
+  "opencode_db": {
+   "joined": 14,
+   "unmatched": 195
+  }
+ },
+ "largest_components": [
+  11,
+  8,
+  6,
+  5,
+  4,
+  4,
+  3,
+  3
+ ],
+ "last_ts": "2026-10-09T12:45:04Z",
+ "lineages": {
+  "dir": 78,
+  "git": 121,
+  "github_only": 2
+ },
+ "link_basis": {
+  "root": 30,
+  "sha_overlap": 3,
+  "worktree": 16
+ },
+ "manifests": {
+  "am4-git": {
+   "coverage": {
+    "excluded": 0,
+    "invalid_remote_records": 0,
+    "not_repos": 40,
+    "null_ts_emitted": 0,
+    "out_of_range": 0,
+    "sources_seen": 11,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 389,
+   "raw_sum": 368,
+   "repos": 11,
+   "src": "git_repo",
+   "status": "complete",
+   "warnings": [
+    "roots_missing:93",
+    "numstat_failed:partial_clone_missing_blobs"
+   ]
+  },
+  "c-births": {
+   "coverage": {
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 0,
+    "out_of_range": 0,
+    "sources_seen": 38,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 607,
+   "raw_sum": 174500,
+   "repos": 0,
+   "src": "fs_births",
+   "status": "complete",
+   "warnings": []
+  },
+  "c-git-a": {
+   "coverage": {
+    "excluded": 0,
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 9,
+    "out_of_range": 0,
+    "sources_seen": 14,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 534,
+   "raw_sum": 496,
+   "repos": 14,
+   "src": "git_repo",
+   "status": "complete",
+   "warnings": []
+  },
+  "c-git-b": {
+   "coverage": {
+    "excluded": 0,
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 26,
+    "out_of_range": 0,
+    "sources_seen": 14,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 1719,
+   "raw_sum": 1648,
+   "repos": 14,
+   "src": "git_repo",
+   "status": "complete",
+   "warnings": []
+  },
+  "c-git-c": {
+   "coverage": {
+    "excluded": 0,
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 122,
+    "out_of_range": 0,
+    "sources_seen": 16,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 3704,
+   "raw_sum": 3390,
+   "repos": 16,
+   "src": "git_repo",
+   "status": "complete",
+   "warnings": [
+    "numstat_failed:partial_clone_missing_blobs"
+   ]
+  },
+  "c-git-nested": {
+   "coverage": {
+    "excluded": 0,
+    "invalid_remote_records": 0,
+    "not_repos": 4,
+    "null_ts_emitted": 9,
+    "out_of_range": 0,
+    "sources_seen": 14,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 1055,
+   "raw_sum": 1020,
+   "repos": 14,
+   "src": "git_repo",
+   "status": "complete",
+   "warnings": [
+    "roots_missing:10"
+   ]
+  },
+  "chatgpt": {
+   "coverage": {
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 0,
+    "out_of_range": 0,
+    "sources_seen": 2,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 12,
+    "other_role": 4932,
+    "polling": 0
+   },
+   "events": 11259,
+   "raw_sum": 19425,
+   "repos": 0,
+   "src": "chatgpt_export",
+   "status": "complete",
+   "warnings": []
+  },
+  "claude-linux": {
+   "coverage": {
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 0,
+    "out_of_range": 0,
+    "sources_seen": 499,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 9124,
+   "raw_sum": 84774,
+   "repos": 0,
+   "src": "claude_jsonl",
+   "status": "complete",
+   "warnings": []
+  },
+  "claude-win": {
+   "coverage": {
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 0,
+    "out_of_range": 0,
+    "sources_seen": 1042,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 41294,
+   "raw_sum": 315055,
+   "repos": 0,
+   "src": "claude_jsonl",
+   "status": "complete",
+   "warnings": []
+  },
+  "claude-zip": {
+   "coverage": {
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 0,
+    "out_of_range": 0,
+    "sources_seen": 412,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 17623,
+   "raw_sum": 97929,
+   "repos": 0,
+   "src": "claude_jsonl",
+   "status": "complete",
+   "warnings": []
+  },
+  "codex-linux": {
+   "coverage": {
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 0,
+    "out_of_range": 0,
+    "sources_seen": 51,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 5804,
+   "raw_sum": 62505,
+   "repos": 0,
+   "src": "codex_jsonl",
+   "status": "complete",
+   "warnings": []
+  },
+  "codex-win-a": {
+   "coverage": {
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 0,
+    "out_of_range": 0,
+    "sources_seen": 216,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 29950,
+   "raw_sum": 379454,
+   "repos": 0,
+   "src": "codex_jsonl",
+   "status": "complete",
+   "warnings": []
+  },
+  "codex-win-b": {
+   "coverage": {
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 0,
+    "out_of_range": 0,
+    "sources_seen": 216,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 34072,
+   "raw_sum": 401641,
+   "repos": 0,
+   "src": "codex_jsonl",
+   "status": "complete",
+   "warnings": []
+  },
+  "continuity-runs": {
+   "coverage": {
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 0,
+    "out_of_range": 0,
+    "sources_seen": 6,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 869,
+   "raw_sum": 869,
+   "repos": 0,
+   "src": "continuity",
+   "status": "complete",
+   "warnings": []
+  },
+  "e-births": {
+   "coverage": {
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 0,
+    "out_of_range": 0,
+    "sources_seen": 49,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 662,
+   "raw_sum": 81412,
+   "repos": 0,
+   "src": "fs_births",
+   "status": "complete",
+   "warnings": []
+  },
+  "e-git-a": {
+   "coverage": {
+    "excluded": 0,
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 70,
+    "out_of_range": 0,
+    "sources_seen": 17,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 2234,
+   "raw_sum": 2097,
+   "repos": 17,
+   "src": "git_repo",
+   "status": "complete",
+   "warnings": []
+  },
+  "e-git-b": {
+   "coverage": {
+    "excluded": 0,
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 74,
+    "out_of_range": 0,
+    "sources_seen": 6,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 11855,
+   "raw_sum": 11679,
+   "repos": 6,
+   "src": "git_repo",
+   "status": "complete",
+   "warnings": [
+    "numstat_failed:partial_clone_missing_blobs"
+   ]
+  },
+  "e-git-c": {
+   "coverage": {
+    "excluded": 0,
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 16,
+    "out_of_range": 0,
+    "sources_seen": 15,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 360,
+   "raw_sum": 311,
+   "repos": 15,
+   "src": "git_repo",
+   "status": "complete",
+   "warnings": []
+  },
+  "e-git-nested": {
+   "coverage": {
+    "excluded": 0,
+    "invalid_remote_records": 0,
+    "not_repos": 7,
+    "null_ts_emitted": 79,
+    "out_of_range": 0,
+    "sources_seen": 16,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 11182,
+   "raw_sum": 10668,
+   "repos": 16,
+   "src": "git_repo",
+   "status": "complete",
+   "warnings": [
+    "roots_missing:18"
+   ]
+  },
+  "fx99-git": {
+   "coverage": {
+    "excluded": 0,
+    "invalid_remote_records": 0,
+    "not_repos": 19,
+    "null_ts_emitted": 0,
+    "out_of_range": 0,
+    "sources_seen": 4,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 110,
+   "raw_sum": 102,
+   "repos": 4,
+   "src": "git_repo",
+   "status": "complete",
+   "warnings": [
+    "roots_missing:6"
+   ]
+  },
+  "github-list": {
+   "coverage": {
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 0,
+    "out_of_range": 0,
+    "sources_seen": 1,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 54,
+   "raw_sum": 54,
+   "repos": 0,
+   "src": "github_api",
+   "status": "complete",
+   "warnings": [
+    "pending auth: private repos not listed"
+   ]
+  },
+  "hearth-ledger": {
+   "coverage": {
+    "deduped": 1293,
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 0,
+    "out_of_range": 0,
+    "sources_seen": 2,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 535587
+   },
+   "events": 25985,
+   "raw_sum": 562865,
+   "repos": 0,
+   "src": "hearth_ledger",
+   "status": "complete",
+   "warnings": []
+  },
+  "linux-git": {
+   "coverage": {
+    "excluded": 8,
+    "invalid_remote_records": 0,
+    "not_repos": 42,
+    "null_ts_emitted": 297,
+    "out_of_range": 0,
+    "sources_seen": 31,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 4811,
+   "raw_sum": 4165,
+   "repos": 31,
+   "src": "git_repo",
+   "status": "complete",
+   "warnings": [
+    "roots_missing:12"
+   ]
+  },
+  "mirror-0": {
+   "coverage": {
+    "excluded": 0,
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 4,
+    "out_of_range": 0,
+    "sources_seen": 8,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 51,
+   "raw_sum": 39,
+   "repos": 8,
+   "src": "git_repo",
+   "status": "complete",
+   "warnings": []
+  },
+  "mirror-1": {
+   "coverage": {
+    "excluded": 0,
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 4,
+    "out_of_range": 0,
+    "sources_seen": 4,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 10,
+   "raw_sum": 3,
+   "repos": 4,
+   "src": "git_repo",
+   "status": "complete",
+   "warnings": []
+  },
+  "opencode": {
+   "coverage": {
+    "invalid_remote_records": 0,
+    "not_repos": 0,
+    "null_ts_emitted": 0,
+    "out_of_range": 0,
+    "sources_seen": 1,
+    "sources_skipped": 0
+   },
+   "dropped": {
+    "decode_errors": 0,
+    "null_ts": 0,
+    "polling": 0
+   },
+   "events": 209,
+   "raw_sum": 953,
+   "repos": 0,
+   "src": "opencode_db",
+   "status": "complete",
+   "warnings": [
+    "sqlite_immutable_wal_may_be_missed"
+   ]
+  }
+ },
+ "per_class": {
+  "automation": 1112,
+  "chatgpt": 11259,
+  "claude": 95723,
+  "codex": 71842,
+  "human": 7290,
+  "local_model": 542,
+  "opencode": 209,
+  "third_party": 22670
+ },
+ "per_host": {
+  "am4": 89,
+  "cloud": 11259,
+  "fx99": 52,
+  "github": 54,
+  "omen-c": 93219,
+  "omen-e": 61374,
+  "omen-linux": 44600
+ },
+ "per_kind": {
+  "branch": 790,
+  "chat_msg": 146432,
+  "chat_session": 2810,
+  "commit": 32121,
+  "file_birth": 1269,
+  "offload_call": 26386,
+  "receipt": 233,
+  "repo_born": 167,
+  "run": 235,
+  "worktree": 204
+ },
+ "per_src_kind": {
+  "chatgpt_export/chat_msg": 10879,
+  "chatgpt_export/chat_session": 380,
+  "claude_jsonl/chat_msg": 66023,
+  "claude_jsonl/chat_session": 1925,
+  "codex_jsonl/chat_msg": 69345,
+  "codex_jsonl/chat_session": 481,
+  "continuity/receipt": 233,
+  "continuity/run": 99,
+  "deepagents_runs/offload_call": 401,
+  "deepagents_runs/run": 136,
+  "fs_births/file_birth": 1269,
+  "git_repo/branch": 790,
+  "git_repo/commit": 32121,
+  "git_repo/repo_born": 113,
+  "git_repo/worktree": 204,
+  "github_api/repo_born": 54,
+  "hearth_ledger/offload_call": 25985,
+  "opencode_db/chat_msg": 185,
+  "opencode_db/chat_session": 24
+ },
+ "per_ym": {
+  "2011-08": {
+   "repo_born": 1
+  },
+  "2015-08": {
+   "commit": 2,
+   "repo_born": 3
+  },
+  "2017-12": {
+   "branch": 1,
+   "commit": 1,
+   "repo_born": 2
+  },
+  "2018-08": {
+   "commit": 11,
+   "repo_born": 1
+  },
+  "2019-05": {
+   "commit": 1
+  },
+  "2019-07": {
+   "commit": 2
+  },
+  "2019-10": {
+   "commit": 2
+  },
+  "2019-11": {
+   "commit": 2
+  },
+  "2020-05": {
+   "commit": 2
+  },
+  "2020-11": {
+   "branch": 1,
+   "commit": 15
+  },
+  "2020-12": {
+   "file_birth": 2
+  },
+  "2021-05": {
+   "commit": 18,
+   "repo_born": 1
+  },
+  "2021-06": {
+   "branch": 1,
+   "commit": 20
+  },
+  "2021-07": {
+   "commit": 20
+  },
+  "2021-08": {
+   "commit": 35
+  },
+  "2021-09": {
+   "commit": 30
+  },
+  "2021-10": {
+   "commit": 20
+  },
+  "2021-11": {
+   "commit": 12
+  },
+  "2021-12": {
+   "commit": 13
+  },
+  "2022-01": {
+   "commit": 23
+  },
+  "2022-02": {
+   "commit": 14
+  },
+  "2022-03": {
+   "commit": 8
+  },
+  "2022-04": {
+   "commit": 4
+  },
+  "2022-05": {
+   "commit": 39
+  },
+  "2022-06": {
+   "commit": 37
+  },
+  "2022-07": {
+   "commit": 48
+  },
+  "2022-08": {
+   "commit": 23
+  },
+  "2022-09": {
+   "commit": 12
+  },
+  "2022-10": {
+   "commit": 38
+  },
+  "2022-11": {
+   "commit": 18
+  },
+  "2022-12": {
+   "commit": 49
+  },
+  "2023-01": {
+   "commit": 29
+  },
+  "2023-02": {
+   "commit": 20
+  },
+  "2023-03": {
+   "commit": 308,
+   "repo_born": 1
+  },
+  "2023-04": {
+   "chat_msg": 6,
+   "chat_session": 2,
+   "commit": 204
+  },
+  "2023-05": {
+   "commit": 265,
+   "repo_born": 1
+  },
+  "2023-06": {
+   "commit": 264
+  },
+  "2023-07": {
+   "commit": 248
+  },
+  "2023-08": {
+   "commit": 269
+  },
+  "2023-09": {
+   "commit": 357
+  },
+  "2023-10": {
+   "chat_msg": 6,
+   "chat_session": 3,
+   "commit": 335,
+   "repo_born": 1
+  },
+  "2023-11": {
+   "branch": 2,
+   "chat_msg": 2,
+   "chat_session": 1,
+   "commit": 351,
+   "repo_born": 2
+  },
+  "2023-12": {
+   "branch": 1,
+   "commit": 339
+  },
+  "2024-01": {
+   "branch": 1,
+   "commit": 532
+  },
+  "2024-02": {
+   "branch": 1,
+   "commit": 461
+  },
+  "2024-03": {
+   "commit": 438
+  },
+  "2024-04": {
+   "branch": 3,
+   "commit": 522
+  },
+  "2024-05": {
+   "branch": 5,
+   "commit": 508
+  },
+  "2024-06": {
+   "branch": 1,
+   "commit": 415
+  },
+  "2024-07": {
+   "branch": 5,
+   "commit": 472
+  },
+  "2024-08": {
+   "branch": 3,
+   "commit": 389,
+   "file_birth": 6
+  },
+  "2024-09": {
+   "branch": 5,
+   "commit": 348
+  },
+  "2024-10": {
+   "branch": 7,
+   "commit": 417,
+   "file_birth": 1
+  },
+  "2024-11": {
+   "branch": 4,
+   "chat_msg": 6,
+   "chat_session": 1,
+   "commit": 549
+  },
+  "2024-12": {
+   "branch": 3,
+   "chat_msg": 34,
+   "chat_session": 5,
+   "commit": 371
+  },
+  "2025-01": {
+   "branch": 7,
+   "chat_msg": 98,
+   "chat_session": 12,
+   "commit": 467,
+   "file_birth": 2
+  },
+  "2025-02": {
+   "branch": 4,
+   "chat_msg": 10,
+   "chat_session": 3,
+   "commit": 411,
+   "file_birth": 3,
+   "repo_born": 1
+  },
+  "2025-03": {
+   "branch": 18,
+   "chat_msg": 20,
+   "chat_session": 5,
+   "commit": 502,
+   "file_birth": 1
+  },
+  "2025-04": {
+   "branch": 5,
+   "chat_msg": 17,
+   "chat_session": 3,
+   "commit": 394
+  },
+  "2025-05": {
+   "branch": 20,
+   "chat_msg": 63,
+   "chat_session": 6,
+   "commit": 600
+  },
+  "2025-06": {
+   "branch": 17,
+   "chat_msg": 33,
+   "chat_session": 4,
+   "commit": 531,
+   "file_birth": 1
+  },
+  "2025-07": {
+   "branch": 43,
+   "chat_msg": 145,
+   "chat_session": 29,
+   "commit": 803,
+   "file_birth": 1,
+   "repo_born": 2
+  },
+  "2025-08": {
+   "branch": 26,
+   "chat_msg": 100,
+   "chat_session": 16,
+   "commit": 788,
+   "file_birth": 10
+  },
+  "2025-09": {
+   "branch": 30,
+   "chat_msg": 91,
+   "chat_session": 22,
+   "commit": 651,
+   "file_birth": 2
+  },
+  "2025-10": {
+   "branch": 22,
+   "chat_msg": 73,
+   "chat_session": 17,
+   "commit": 666,
+   "file_birth": 3
+  },
+  "2025-11": {
+   "branch": 29,
+   "chat_msg": 784,
+   "chat_session": 43,
+   "commit": 804
+  },
+  "2025-12": {
+   "branch": 22,
+   "chat_msg": 2535,
+   "chat_session": 51,
+   "commit": 763,
+   "file_birth": 3
+  },
+  "2026-01": {
+   "branch": 24,
+   "chat_msg": 3137,
+   "chat_session": 67,
+   "commit": 578,
+   "file_birth": 2,
+   "repo_born": 1
+  },
+  "2026-02": {
+   "branch": 35,
+   "chat_msg": 2420,
+   "chat_session": 65,
+   "commit": 684,
+   "file_birth": 4
+  },
+  "2026-03": {
+   "branch": 51,
+   "chat_msg": 1299,
+   "chat_session": 25,
+   "commit": 2616,
+   "file_birth": 179,
+   "repo_born": 20
+  },
+  "2026-04": {
+   "branch": 17,
+   "commit": 928,
+   "file_birth": 120,
+   "repo_born": 17,
+   "worktree": 22
+  },
+  "2026-05": {
+   "branch": 38,
+   "chat_msg": 8597,
+   "chat_session": 185,
+   "commit": 1193,
+   "file_birth": 120,
+   "repo_born": 21,
+   "worktree": 11
+  },
+  "2026-06": {
+   "branch": 34,
+   "chat_msg": 8838,
+   "chat_session": 222,
+   "commit": 1139,
+   "file_birth": 106,
+   "repo_born": 15
+  },
+  "2026-07": {
+   "branch": 140,
+   "chat_msg": 19641,
+   "chat_session": 380,
+   "commit": 2827,
+   "file_birth": 209,
+   "offload_call": 1264,
+   "repo_born": 21,
+   "worktree": 6
+  },
+  "2026-08": {
+   "branch": 61,
+   "chat_msg": 52833,
+   "chat_session": 580,
+   "commit": 2583,
+   "file_birth": 252,
+   "offload_call": 108,
+   "repo_born": 18,
+   "run": 3,
+   "worktree": 16
+  },
+  "2026-09": {
+   "branch": 76,
+   "chat_msg": 33031,
+   "chat_session": 557,
+   "commit": 2401,
+   "file_birth": 233,
+   "offload_call": 1873,
+   "receipt": 224,
+   "repo_born": 28,
+   "run": 164,
+   "worktree": 64
+  },
+  "2026-10": {
+   "branch": 27,
+   "chat_msg": 12613,
+   "chat_session": 506,
+   "commit": 862,
+   "file_birth": 9,
+   "offload_call": 23141,
+   "receipt": 9,
+   "repo_born": 10,
+   "run": 68,
+   "worktree": 85
+  }
+ },
+ "raw_item_kind": {
+  "am4-git": {
+   "branch": 10,
+   "commit": 368,
+   "repo_born": 11
+  },
+  "c-births": {
+   "file_birth": 607
+  },
+  "c-git-a": {
+   "branch": 22,
+   "commit": 496,
+   "repo_born": 12,
+   "worktree": 4
+  },
+  "c-git-b": {
+   "branch": 53,
+   "commit": 1648,
+   "repo_born": 11,
+   "worktree": 7
+  },
+  "c-git-c": {
+   "branch": 266,
+   "commit": 3390,
+   "repo_born": 11,
+   "worktree": 37
+  },
+  "c-git-nested": {
+   "branch": 21,
+   "commit": 1020,
+   "repo_born": 13,
+   "worktree": 1
+  },
+  "chatgpt": {
+   "chat_msg": 10879,
+   "chat_session": 380
+  },
+  "claude-linux": {
+   "chat_msg": 8626,
+   "chat_session": 498
+  },
+  "claude-win": {
+   "chat_msg": 40269,
+   "chat_session": 1025
+  },
+  "claude-zip": {
+   "chat_msg": 17218,
+   "chat_session": 405
+  },
+  "codex-linux": {
+   "chat_msg": 5753,
+   "chat_session": 51
+  },
+  "codex-win-a": {
+   "chat_msg": 29735,
+   "chat_session": 215
+  },
+  "codex-win-b": {
+   "chat_msg": 33857,
+   "chat_session": 215
+  },
+  "continuity-runs": {
+   "offload_call": 401,
+   "receipt": 233,
+   "run": 235
+  },
+  "e-births": {
+   "file_birth": 662
+  },
+  "e-git-a": {
+   "branch": 119,
+   "commit": 2097,
+   "repo_born": 17,
+   "worktree": 1
+  },
+  "e-git-b": {
+   "branch": 138,
+   "commit": 11679,
+   "repo_born": 6,
+   "worktree": 32
+  },
+  "e-git-c": {
+   "branch": 34,
+   "commit": 311,
+   "repo_born": 14,
+   "worktree": 1
+  },
+  "e-git-nested": {
+   "branch": 498,
+   "commit": 10668,
+   "repo_born": 16
+  },
+  "fx99-git": {
+   "branch": 4,
+   "commit": 102,
+   "repo_born": 4
+  },
+  "github-list": {
+   "repo_born": 54
+  },
+  "hearth-ledger": {
+   "offload_call": 25985
+  },
+  "linux-git": {
+   "branch": 498,
+   "commit": 4165,
+   "repo_born": 27,
+   "worktree": 121
+  },
+  "mirror-0": {
+   "branch": 4,
+   "commit": 39,
+   "repo_born": 8
+  },
+  "mirror-1": {
+   "branch": 3,
+   "commit": 3,
+   "repo_born": 4
+  },
+  "opencode": {
+   "chat_msg": 185,
+   "chat_session": 24
+  }
+ },
+ "raw_src_kind": {
+  "chatgpt_export/chat_msg": 10879,
+  "chatgpt_export/chat_session": 380,
+  "claude_jsonl/chat_msg": 66113,
+  "claude_jsonl/chat_session": 1928,
+  "codex_jsonl/chat_msg": 69345,
+  "codex_jsonl/chat_session": 481,
+  "continuity/receipt": 233,
+  "continuity/run": 99,
+  "deepagents_runs/offload_call": 401,
+  "deepagents_runs/run": 136,
+  "fs_births/file_birth": 1269,
+  "git_repo/branch": 1670,
+  "git_repo/commit": 35986,
+  "git_repo/repo_born": 154,
+  "git_repo/worktree": 204,
+  "github_api/repo_born": 54,
+  "hearth_ledger/offload_call": 25985,
+  "opencode_db/chat_msg": 185,
+  "opencode_db/chat_session": 24
+ },
+ "repo_nodes": [
+  {
+   "bare": false,
+   "commit_events": 5,
+   "commits": 5,
+   "empty": false,
+   "host": "am4",
+   "item": "am4-git",
+   "lineage": "7fb8daa9b73cb78908dcc9a79aedd678043574ac",
+   "path": "~/.continuity/ledger",
+   "refs": 1,
+   "repo_local": "am4:~/.continuity/ledger",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "am4",
+   "item": "am4-git",
+   "lineage": "github:comfyanonymous/comfyui",
+   "path": "~/ComfyUI",
+   "refs": 4,
+   "repo_local": "am4:~/ComfyUI",
+   "shallow": true,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 18,
+   "commits": 18,
+   "empty": false,
+   "host": "am4",
+   "item": "am4-git",
+   "lineage": "15af9cdabb52320d95d41e721fead9d83c70aedb",
+   "path": "~/am4bot",
+   "refs": 1,
+   "repo_local": "am4:~/am4bot",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "am4",
+   "item": "am4-git",
+   "lineage": "26c084662903ddaca19bef982831bfb0856e8257",
+   "path": "~/baseline/llama.cpp",
+   "refs": 3,
+   "repo_local": "am4:~/baseline/llama.cpp",
+   "shallow": true,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 5,
+   "commits": 5,
+   "empty": false,
+   "host": "am4",
+   "item": "am4-git",
+   "lineage": "ac424a97a8b3f9012bd172baba009f132c9fc4d5",
+   "path": "~/bench",
+   "refs": 1,
+   "repo_local": "am4:~/bench",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 11,
+   "commits": 11,
+   "empty": false,
+   "host": "am4",
+   "item": "am4-git",
+   "lineage": "447e150d1c2e1ae1c65bec01f7663c7d7dada6aa",
+   "path": "~/chatgpt_parser_run",
+   "refs": 2,
+   "repo_local": "am4:~/chatgpt_parser_run",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 56,
+   "commits": 56,
+   "empty": false,
+   "host": "am4",
+   "item": "am4-git",
+   "lineage": "91653aae293206f6e6f599238097dd2467b0b716",
+   "path": "~/continuity",
+   "refs": 3,
+   "repo_local": "am4:~/continuity",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "am4",
+   "item": "am4-git",
+   "lineage": "github:oneapi-src/level-zero-tests",
+   "path": "~/o1/level-zero-tests",
+   "refs": 3,
+   "repo_local": "am4:~/o1/level-zero-tests",
+   "shallow": true,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "am4",
+   "item": "am4-git",
+   "lineage": "github:pnggroup/libpng",
+   "path": "~/o1/libpng",
+   "refs": 1,
+   "repo_local": "am4:~/o1/libpng",
+   "shallow": true,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 263,
+   "commits": 263,
+   "empty": false,
+   "host": "am4",
+   "item": "am4-git",
+   "lineage": "25227eda8d35d74b6047f5f4df95a8201c0fadc3",
+   "path": "~/quest-build-20260915",
+   "refs": 3,
+   "repo_local": "am4:~/quest-build-20260915",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 6,
+   "commits": 6,
+   "empty": false,
+   "host": "am4",
+   "item": "am4-git",
+   "lineage": "ec52961c5a3f1fbc7b78eb55d035efcdb06c526b",
+   "path": "~/sovereign-shards",
+   "refs": 3,
+   "repo_local": "am4:~/sovereign-shards",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 5,
+   "commits": 5,
+   "empty": false,
+   "host": "fx99",
+   "item": "fx99-git",
+   "lineage": "6f8bd366c3526916f00b311fd6a90152130f0290",
+   "path": "~/.continuity/ledger",
+   "refs": 1,
+   "repo_local": "fx99:~/.continuity/ledger",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 18,
+   "commits": 18,
+   "empty": false,
+   "host": "fx99",
+   "item": "fx99-git",
+   "lineage": "91653aae293206f6e6f599238097dd2467b0b716",
+   "path": "~/continuity",
+   "refs": 3,
+   "repo_local": "fx99:~/continuity",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 41,
+   "commits": 41,
+   "empty": false,
+   "host": "fx99",
+   "item": "fx99-git",
+   "lineage": "ac1a64cff960abf4b0565bdf708730eb73c98614",
+   "path": "~/fleet",
+   "refs": 4,
+   "repo_local": "fx99:~/fleet",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": true,
+   "commit_events": 38,
+   "commits": 38,
+   "empty": false,
+   "host": "fx99",
+   "item": "fx99-git",
+   "lineage": "ac1a64cff960abf4b0565bdf708730eb73c98614",
+   "path": "~/fleet.git",
+   "refs": 1,
+   "repo_local": "fx99:~/fleet.git",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 43,
+   "commits": 43,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-b",
+   "lineage": "aff20eee73dd981936187c09c06ca24aeb2bb566",
+   "path": "work/404",
+   "refs": 2,
+   "repo_local": "omen-c:work/404",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1128,
+   "commits": 1128,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-b",
+   "lineage": "672abc17c9351cb2b0594c79ab774353f2cb8465",
+   "path": "work/ComfyMods",
+   "refs": 87,
+   "repo_local": "omen-c:work/ComfyMods",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 303,
+   "commits": 303,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-c",
+   "lineage": "168915c9674722417bfd3fcfadcc0883976da6db",
+   "path": "work/ComfyStewardView",
+   "refs": 5,
+   "repo_local": "omen-c:work/ComfyStewardView",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 2,
+   "commits": 2,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-nested",
+   "lineage": "6e064f8b3ef9e0bc33f53d75f7b3d6113d128e8e",
+   "path": "work/Diana/oddlittlebird",
+   "refs": 3,
+   "repo_local": "omen-c:work/Diana/oddlittlebird",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 292,
+   "commits": 292,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-nested",
+   "lineage": "033ee49e907f1f97655a3cf606d14cd43c60bbb4",
+   "path": "work/Diana/showcase-site",
+   "refs": 4,
+   "repo_local": "omen-c:work/Diana/showcase-site",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 11,
+   "commits": 11,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-c",
+   "lineage": "ba4c3f28125b7e8fcd7e6f901aa758c7f18dadbd",
+   "path": "work/SelfieStick",
+   "refs": 3,
+   "repo_local": "omen-c:work/SelfieStick",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 15,
+   "commits": 15,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-b",
+   "lineage": "7862f447633880878ff1e98e22e0ee9d33072e84",
+   "path": "work/Unfaded",
+   "refs": 5,
+   "repo_local": "omen-c:work/Unfaded",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": true,
+   "host": "omen-c",
+   "item": "c-git-nested",
+   "lineage": "github:djcdevelopment/not-the-quest-repo",
+   "path": "work/_extract/comfy-quest-identity-wrong-tested",
+   "refs": 0,
+   "repo_local": "omen-c:work/_extract/comfy-quest-identity-wrong-tested",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 111,
+   "commits": 111,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-nested",
+   "lineage": "25227eda8d35d74b6047f5f4df95a8201c0fadc3",
+   "path": "work/_extract/comfy-quest-incomplete",
+   "refs": 1,
+   "repo_local": "omen-c:work/_extract/comfy-quest-incomplete",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 215,
+   "commits": 215,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-nested",
+   "lineage": "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de",
+   "path": "work/_retired/Lumberjacks",
+   "refs": 12,
+   "repo_local": "omen-c:work/_retired/Lumberjacks",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 237,
+   "commits": 237,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-nested",
+   "lineage": "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de",
+   "path": "work/_retired/comfy",
+   "refs": 7,
+   "repo_local": "omen-c:work/_retired/comfy",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 36,
+   "commits": 36,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-nested",
+   "lineage": "3450a4ea59351a65290880b5d134866353e98d32",
+   "path": "work/am4-harvest/ember",
+   "refs": 3,
+   "repo_local": "omen-c:work/am4-harvest/ember",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 53,
+   "commits": 53,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-nested",
+   "lineage": "7607a792484b97f9cb07b0b2cce0763be1212499",
+   "path": "work/am4-harvest/gad",
+   "refs": 2,
+   "repo_local": "omen-c:work/am4-harvest/gad",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 32,
+   "commits": 32,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-nested",
+   "lineage": "352eb10ef4d4f2a489c55024f097fd2bf4819da8",
+   "path": "work/am4-harvest/manifest",
+   "refs": 2,
+   "repo_local": "omen-c:work/am4-harvest/manifest",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-c",
+   "lineage": "github:tt-a1i/archify",
+   "path": "work/archify",
+   "refs": 1,
+   "repo_local": "omen-c:work/archify",
+   "shallow": true,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 7,
+   "commits": 7,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-c",
+   "lineage": "976459ba63be970a9bf0b9b45d5b765e3addbc9c",
+   "path": "work/articleblitz",
+   "refs": 4,
+   "repo_local": "omen-c:work/articleblitz",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 6,
+   "commits": 6,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-b",
+   "lineage": "b386bddfef108f92f66c2b9c368cbf82a64b697f",
+   "path": "work/assessment",
+   "refs": 1,
+   "repo_local": "omen-c:work/assessment",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1358,
+   "commits": 1358,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-c",
+   "lineage": "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de",
+   "path": "work/baseline",
+   "refs": 34,
+   "repo_local": "omen-c:work/baseline",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 266,
+   "commits": 266,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-a",
+   "lineage": "25227eda8d35d74b6047f5f4df95a8201c0fadc3",
+   "path": "work/comfy-quest",
+   "refs": 6,
+   "repo_local": "omen-c:work/comfy-quest",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 927,
+   "commits": 927,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-c",
+   "lineage": "6a0d30840c0d974b5780231a0df9e0868b908c8e",
+   "path": "work/commandcenter",
+   "refs": 257,
+   "repo_local": "omen-c:work/commandcenter",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-c",
+   "lineage": "6a0d30840c0d974b5780231a0df9e0868b908c8e",
+   "path": "work/commandcenter-d1-guard-9f306fb",
+   "refs": 0,
+   "repo_local": "omen-c:work/commandcenter-d1-guard-9f306fb",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-c",
+   "lineage": "6a0d30840c0d974b5780231a0df9e0868b908c8e",
+   "path": "work/commandcenter-flash-foreman",
+   "refs": 0,
+   "repo_local": "omen-c:work/commandcenter-flash-foreman",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-b",
+   "lineage": "6a0d30840c0d974b5780231a0df9e0868b908c8e",
+   "path": "work/commandcenter-hermes-fx99",
+   "refs": 0,
+   "repo_local": "omen-c:work/commandcenter-hermes-fx99",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-a",
+   "lineage": "6a0d30840c0d974b5780231a0df9e0868b908c8e",
+   "path": "work/commandcenter-jev-scheduler",
+   "refs": 0,
+   "repo_local": "omen-c:work/commandcenter-jev-scheduler",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-c",
+   "lineage": "6a0d30840c0d974b5780231a0df9e0868b908c8e",
+   "path": "work/commandcenter-local-work",
+   "refs": 0,
+   "repo_local": "omen-c:work/commandcenter-local-work",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": true,
+   "commit_events": 36,
+   "commits": 36,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-c",
+   "lineage": "0a2dd31e35fa9ce6ee6518316bcc728a5feea44d",
+   "path": "work/conductor-mirror.git",
+   "refs": 1,
+   "repo_local": "omen-c:work/conductor-mirror.git",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 73,
+   "commits": 73,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-b",
+   "lineage": "a824a8deb2f17696f9f6807308902b9b6e5748ee",
+   "path": "work/contextlandscape",
+   "refs": 15,
+   "repo_local": "omen-c:work/contextlandscape",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-a",
+   "lineage": "1bad53cadff5f6b4e4c36e9afbdf81f8667e807c",
+   "path": "work/deepagents-poc",
+   "refs": 1,
+   "repo_local": "omen-c:work/deepagents-poc",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-nested",
+   "lineage": "6a0d30840c0d974b5780231a0df9e0868b908c8e",
+   "path": "work/deepagents-poc/target",
+   "refs": 0,
+   "repo_local": "omen-c:work/deepagents-poc/target",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 3,
+   "commits": 3,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-a",
+   "lineage": "4bb4fbce65994f88ff045be36c1f6ad7f1da7a9e",
+   "path": "work/deepagents-shot-director",
+   "refs": 2,
+   "repo_local": "omen-c:work/deepagents-shot-director",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 46,
+   "commits": 46,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-a",
+   "lineage": "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd",
+   "path": "work/deepnorthtesting",
+   "refs": 3,
+   "repo_local": "omen-c:work/deepnorthtesting",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-a",
+   "lineage": "01053e116889dc3d39c85b28e9b12873ad96c118",
+   "path": "work/djcdevelopment",
+   "refs": 2,
+   "repo_local": "omen-c:work/djcdevelopment",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-b",
+   "lineage": "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de",
+   "path": "work/gallery-stage-baseline-20260915",
+   "refs": 0,
+   "repo_local": "omen-c:work/gallery-stage-baseline-20260915",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-c",
+   "lineage": "25227eda8d35d74b6047f5f4df95a8201c0fadc3",
+   "path": "work/gallery-stage-quest-20260915",
+   "refs": 0,
+   "repo_local": "omen-c:work/gallery-stage-quest-20260915",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-c",
+   "lineage": "168915c9674722417bfd3fcfadcc0883976da6db",
+   "path": "work/gallery-stage-steward-20260915",
+   "refs": 0,
+   "repo_local": "omen-c:work/gallery-stage-steward-20260915",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-a",
+   "lineage": "6a0d30840c0d974b5780231a0df9e0868b908c8e",
+   "path": "work/hearth-execution-control-plane",
+   "refs": 0,
+   "repo_local": "omen-c:work/hearth-execution-control-plane",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 47,
+   "commits": 47,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-b",
+   "lineage": "9028819e8ddacf4ff73e196f0dbb210fa4358ffd",
+   "path": "work/irc",
+   "refs": 18,
+   "repo_local": "omen-c:work/irc",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-b",
+   "lineage": "9028819e8ddacf4ff73e196f0dbb210fa4358ffd",
+   "path": "work/irc-hearth-adapter",
+   "refs": 0,
+   "repo_local": "omen-c:work/irc-hearth-adapter",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 10,
+   "commits": 10,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-a",
+   "lineage": "5c8d35feb646ea17b0121b1426eca79f18c695df",
+   "path": "work/ismodded",
+   "refs": 3,
+   "repo_local": "omen-c:work/ismodded",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 20,
+   "commits": 20,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-a",
+   "lineage": "ec74746c1d44db7e45ac21611d55e1023d2a9818",
+   "path": "work/isolate",
+   "refs": 4,
+   "repo_local": "omen-c:work/isolate",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 728,
+   "commits": 728,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-c",
+   "lineage": "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de",
+   "path": "work/lumberjacks-platform",
+   "refs": 4,
+   "repo_local": "omen-c:work/lumberjacks-platform",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 24,
+   "commits": 24,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-a",
+   "lineage": "484f54f657f7e1a41232dd5ed012c751e5825bd4",
+   "path": "work/memsplice",
+   "refs": 5,
+   "repo_local": "omen-c:work/memsplice",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 260,
+   "commits": 260,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-b",
+   "lineage": "798dc04719c64e6c2292673a0d89667c258c7f61",
+   "path": "work/networksense",
+   "refs": 4,
+   "repo_local": "omen-c:work/networksense",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 48,
+   "commits": 48,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-b",
+   "lineage": "78e1cf00a3961efeec707cdb7bdedf3334d305e8",
+   "path": "work/nightshift",
+   "refs": 1,
+   "repo_local": "omen-c:work/nightshift",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 13,
+   "commits": 13,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-b",
+   "lineage": "09f02f354241f165ce1a152bd59f6246d68baf17",
+   "path": "work/notebook",
+   "refs": 6,
+   "repo_local": "omen-c:work/notebook",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 38,
+   "commits": 38,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-nested",
+   "lineage": "d5704c3a3c98dd1f34fe648e59a25c741412172a",
+   "path": "work/orchestration/local-operator-workspace-20260917",
+   "refs": 7,
+   "repo_local": "omen-c:work/orchestration/local-operator-workspace-20260917",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 3,
+   "commits": 3,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-nested",
+   "lineage": "d6bf32f3fd87bc995560881042fd7fbe0b952dd5",
+   "path": "work/orchestration/truth-alignment-20260908",
+   "refs": 1,
+   "repo_local": "omen-c:work/orchestration/truth-alignment-20260908",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": true,
+   "host": "omen-c",
+   "item": "c-git-nested",
+   "lineage": "dir:omen-c:work/overview/episodes",
+   "path": "work/overview/episodes",
+   "refs": 0,
+   "repo_local": "omen-c:work/overview/episodes",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-nested",
+   "lineage": "github:electronicarts/cnc_generals_zero_hour",
+   "path": "work/research/cnc-generals",
+   "refs": 3,
+   "repo_local": "omen-c:work/research/cnc-generals",
+   "shallow": true,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-b",
+   "lineage": "3754e8057431d9bef595311fdc962d74d1048b01",
+   "path": "work/sealcompanion",
+   "refs": 1,
+   "repo_local": "omen-c:work/sealcompanion",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 8,
+   "commits": 8,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-c",
+   "lineage": "ec52961c5a3f1fbc7b78eb55d035efcdb06c526b",
+   "path": "work/sovereign-shards",
+   "refs": 3,
+   "repo_local": "omen-c:work/sovereign-shards",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 88,
+   "commits": 88,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-a",
+   "lineage": "b54645d264aa7db05e82a752e4c116b5336591c4",
+   "path": "work/steppeintegrations-site",
+   "refs": 6,
+   "repo_local": "omen-c:work/steppeintegrations-site",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 17,
+   "commits": 17,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-a",
+   "lineage": "168915c9674722417bfd3fcfadcc0883976da6db",
+   "path": "work/steward-spatial-lab",
+   "refs": 1,
+   "repo_local": "omen-c:work/steward-spatial-lab",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 16,
+   "commits": 16,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-a",
+   "lineage": "401ef9dfefef6fe91c22e42871780963338f0b1c",
+   "path": "work/totemalert",
+   "refs": 4,
+   "repo_local": "omen-c:work/totemalert",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-c",
+   "lineage": "888fdd4b50af2e274d8162739b70ee335081b38d",
+   "path": "work/tuning",
+   "refs": 1,
+   "repo_local": "omen-c:work/tuning",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 14,
+   "commits": 14,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-b",
+   "lineage": "8379428a79e7d1e6f7055641be18a4e6d75fcf76",
+   "path": "work/valheim-profile-engine",
+   "refs": 3,
+   "repo_local": "omen-c:work/valheim-profile-engine",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 4,
+   "commits": 4,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-a",
+   "lineage": "9abac2e4f07bb212493a01813088b7602e1e20b0",
+   "path": "work/vulkancliff",
+   "refs": 2,
+   "repo_local": "omen-c:work/vulkancliff",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 10,
+   "commits": 10,
+   "empty": false,
+   "host": "omen-c",
+   "item": "c-git-c",
+   "lineage": "34afef42b76b91e0cd524c613c6feb4783957c7b",
+   "path": "work/windtunnel",
+   "refs": 3,
+   "repo_local": "omen-c:work/windtunnel",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 2,
+   "commits": 2,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-a",
+   "lineage": "b996d387a033215a4701c029c5f324e807f921c7",
+   "path": "work/GasperCards",
+   "refs": 4,
+   "repo_local": "omen-e:work/GasperCards",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 136,
+   "commits": 136,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-a",
+   "lineage": "9fcf5ea49f82d136532628f42126b6b4c2e765b6",
+   "path": "work/Guild",
+   "refs": 23,
+   "repo_local": "omen-e:work/Guild",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 344,
+   "commits": 344,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-b",
+   "lineage": "299eddc49aa7aa7c8fe606995611dfa6c1b319f1",
+   "path": "work/RaidUI",
+   "refs": 85,
+   "repo_local": "omen-e:work/RaidUI",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 5,
+   "commits": 5,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-a",
+   "lineage": "ce3d5749af6bec1f7c7d924500ba622ab0bc4046",
+   "path": "work/ai-dev-system",
+   "refs": 5,
+   "repo_local": "omen-e:work/ai-dev-system",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 22,
+   "commits": 22,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-c",
+   "lineage": "dc00626718981a7fb78734bd61f6e8f77f0511e9",
+   "path": "work/ai-systems-research",
+   "refs": 7,
+   "repo_local": "omen-e:work/ai-systems-research",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 47,
+   "commits": 47,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-c",
+   "lineage": "681d6bdf90d42b07bebbb89cef466b02e342075c",
+   "path": "work/azure-event-grid-viewer",
+   "refs": 19,
+   "repo_local": "omen-e:work/azure-event-grid-viewer",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 11,
+   "commits": 11,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-c",
+   "lineage": "e827d185663d650b88d3ad2148c8367ed6f2ece7",
+   "path": "work/b70tools",
+   "refs": 4,
+   "repo_local": "omen-e:work/b70tools",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-nested",
+   "lineage": "207f79d2cf4fdc9ae3307bc318ed81d0fd04868d",
+   "path": "work/battlemage/tempo-workbench",
+   "refs": 2,
+   "repo_local": "omen-e:work/battlemage/tempo-workbench",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 11,
+   "commits": 11,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-a",
+   "lineage": "4ebe2074fee8587b16bdf34c2f209c629562ea84",
+   "path": "work/bring-your-own-ollama",
+   "refs": 3,
+   "repo_local": "omen-e:work/bring-your-own-ollama",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 40,
+   "commits": 40,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-c",
+   "lineage": "42df0b8a97c00b9f68231e314a847d5985c9d434",
+   "path": "work/campfire",
+   "refs": 5,
+   "repo_local": "omen-e:work/campfire",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 12,
+   "commits": 12,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-b",
+   "lineage": "447e150d1c2e1ae1c65bec01f7663c7d7dada6aa",
+   "path": "work/chatGPT_parser",
+   "refs": 3,
+   "repo_local": "omen-e:work/chatGPT_parser",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-nested",
+   "lineage": "c7dec46462fb0a86197442142ab14e1fb943b6b2",
+   "path": "work/comfy/seer",
+   "refs": 2,
+   "repo_local": "omen-e:work/comfy/seer",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 61,
+   "commits": 61,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-a",
+   "lineage": "05287b8ef8695014c00e9278b0ba1240c93b527a",
+   "path": "work/denning",
+   "refs": 5,
+   "repo_local": "omen-e:work/denning",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 8,
+   "commits": 8,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-a",
+   "lineage": "1b448d5e90cc1a2088d19a118632506176cf09d0",
+   "path": "work/discoverlay",
+   "refs": 3,
+   "repo_local": "omen-e:work/discoverlay",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 37,
+   "commits": 37,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-a",
+   "lineage": "3450a4ea59351a65290880b5d134866353e98d32",
+   "path": "work/ember",
+   "refs": 3,
+   "repo_local": "omen-e:work/ember",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 46,
+   "commits": 46,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-c",
+   "lineage": "681d6bdf90d42b07bebbb89cef466b02e342075c",
+   "path": "work/event-viewer",
+   "refs": 19,
+   "repo_local": "omen-e:work/event-viewer",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 56,
+   "commits": 56,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-c",
+   "lineage": "7607a792484b97f9cb07b0b2cce0763be1212499",
+   "path": "work/gad",
+   "refs": 2,
+   "repo_local": "omen-e:work/gad",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 2,
+   "commits": 2,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-c",
+   "lineage": "61367b8d13d280e08f721db58000690352514a38",
+   "path": "work/gad-bot",
+   "refs": 2,
+   "repo_local": "omen-e:work/gad-bot",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 57,
+   "commits": 57,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-a",
+   "lineage": "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de",
+   "path": "work/game",
+   "refs": 2,
+   "repo_local": "omen-e:work/game",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 8,
+   "commits": 8,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-a",
+   "lineage": "32768eab5b3677a4d8d9e6079092142553c372fc",
+   "path": "work/hearth",
+   "refs": 5,
+   "repo_local": "omen-e:work/hearth",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 10,
+   "commits": 10,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-c",
+   "lineage": "17b6526bb7f520061ed56eef0eb5846d524e30d8",
+   "path": "work/img",
+   "refs": 2,
+   "repo_local": "omen-e:work/img",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 5,
+   "commits": 5,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-a",
+   "lineage": "5e8e19c01d520f3cc0c73b6a3e9b9d721ac96927",
+   "path": "work/lantern",
+   "refs": 2,
+   "repo_local": "omen-e:work/lantern",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 54,
+   "commits": 54,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-a",
+   "lineage": "dee5f19b9655bcd1ee4f16352ba7deadb6a9c30e",
+   "path": "work/leopard",
+   "refs": 5,
+   "repo_local": "omen-e:work/leopard",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 10,
+   "commits": 10,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-a",
+   "lineage": "cfc185cf98c49d276293cb64eeb3a0a49f842720",
+   "path": "work/liveView",
+   "refs": 4,
+   "repo_local": "omen-e:work/liveView",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 6,
+   "commits": 6,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-nested",
+   "lineage": "6196894d720f4647e8d94adcdb41f6ff74bd2e89",
+   "path": "work/liveView/ingest",
+   "refs": 4,
+   "repo_local": "omen-e:work/liveView/ingest",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 13,
+   "commits": 13,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-nested",
+   "lineage": "f69a5b1a96e95fb6881af3028af39ecbd9df099a",
+   "path": "work/liveView/ui",
+   "refs": 8,
+   "repo_local": "omen-e:work/liveView/ui",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-c",
+   "lineage": "26c084662903ddaca19bef982831bfb0856e8257",
+   "path": "work/llama.cpp-src",
+   "refs": 4,
+   "repo_local": "omen-e:work/llama.cpp-src",
+   "shallow": true,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 517,
+   "commits": 517,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-a",
+   "lineage": "26c084662903ddaca19bef982831bfb0856e8257",
+   "path": "work/llamacpp-knee",
+   "refs": 27,
+   "repo_local": "omen-e:work/llamacpp-knee",
+   "shallow": true,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-c",
+   "lineage": "26c084662903ddaca19bef982831bfb0856e8257",
+   "path": "work/llamacpp-knee-pr",
+   "refs": 0,
+   "repo_local": "omen-e:work/llamacpp-knee-pr",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 11272,
+   "commits": 11272,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-b",
+   "lineage": "26c084662903ddaca19bef982831bfb0856e8257",
+   "path": "work/llamacpp-qwen38",
+   "refs": 228,
+   "repo_local": "omen-e:work/llamacpp-qwen38",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 36,
+   "commits": 36,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-b",
+   "lineage": "352eb10ef4d4f2a489c55024f097fd2bf4819da8",
+   "path": "work/manifest",
+   "refs": 2,
+   "repo_local": "omen-e:work/manifest",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 82,
+   "commits": 82,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-a",
+   "lineage": "36db256ae1de45fdd9cf6f8cbc2c617b6e9c0278",
+   "path": "work/planning",
+   "refs": 10,
+   "repo_local": "omen-e:work/planning",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 9,
+   "commits": 9,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-b",
+   "lineage": "2f501a833fcd934cda80323546967f6bb8495705",
+   "path": "work/reader",
+   "refs": 3,
+   "repo_local": "omen-e:work/reader",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 2,
+   "commits": 2,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-nested",
+   "lineage": "791109f057b0ff90a38d47433390bd65944f6b43",
+   "path": "work/repos/multi-agent-build-blueprint",
+   "refs": 2,
+   "repo_local": "omen-e:work/repos/multi-agent-build-blueprint",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1073,
+   "commits": 1073,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-a",
+   "lineage": "0a4af0678afbd984796f319fdec8d4c2da42a3c8",
+   "path": "work/resonantOS",
+   "refs": 77,
+   "repo_local": "omen-e:work/resonantOS",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 27,
+   "commits": 27,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-a",
+   "lineage": "b7e57a0434db9a7a56eb76b67f409842525c74ef",
+   "path": "work/stars-app",
+   "refs": 10,
+   "repo_local": "omen-e:work/stars-app",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 20,
+   "commits": 20,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-nested",
+   "lineage": "d10adf11626c2078930a467b06c72c400db531ed",
+   "path": "work/start/ashley",
+   "refs": 4,
+   "repo_local": "omen-e:work/start/ashley",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 5,
+   "commits": 5,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-nested",
+   "lineage": "0b15ed22f266effd95bd93b3fdf962c69314ed7d",
+   "path": "work/start/contextforge",
+   "refs": 2,
+   "repo_local": "omen-e:work/start/contextforge",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 29,
+   "commits": 29,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-nested",
+   "lineage": "fe69bfd7e25a89d285126e23e16d01ef7f0275b1",
+   "path": "work/start/farmer",
+   "refs": 5,
+   "repo_local": "omen-e:work/start/farmer",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 8359,
+   "commits": 8359,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-nested",
+   "lineage": "5c8ff5b7646cb15237a5a597a132a51ca3a1a65f",
+   "path": "work/start/langfuse",
+   "refs": 969,
+   "repo_local": "omen-e:work/start/langfuse",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1660,
+   "commits": 1660,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-nested",
+   "lineage": "d0cda3f8bc2aa7dabeb6fda28c813f28fa55f1b9",
+   "path": "work/start/planner",
+   "refs": 2,
+   "repo_local": "omen-e:work/start/planner",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 3,
+   "commits": 3,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-nested",
+   "lineage": "da0a8476e842c97b423808376aed58ada91f7a2f",
+   "path": "work/start/portmap",
+   "refs": 2,
+   "repo_local": "omen-e:work/start/portmap",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 42,
+   "commits": 42,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-nested",
+   "lineage": "341f7bba31ffb9fc49ed74aa2d0efbea2aa2870a",
+   "path": "work/start/precheck",
+   "refs": 8,
+   "repo_local": "omen-e:work/start/precheck",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-nested",
+   "lineage": "37fa64b96d703d0a52fe532abb6551302587a19c",
+   "path": "work/start/precheckv2",
+   "refs": 2,
+   "repo_local": "omen-e:work/start/precheckv2",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 6,
+   "commits": 6,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-nested",
+   "lineage": "7cf854e941bc099cd73c0c196ba33514d72b5560",
+   "path": "work/start/scarecrow",
+   "refs": 4,
+   "repo_local": "omen-e:work/start/scarecrow",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 11,
+   "commits": 11,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-c",
+   "lineage": "168915c9674722417bfd3fcfadcc0883976da6db",
+   "path": "work/temp",
+   "refs": 2,
+   "repo_local": "omen-e:work/temp",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 6,
+   "commits": 6,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-b",
+   "lineage": "1bbfcf404219b2421739acf8a827224fa2e2b2bd",
+   "path": "work/vllama",
+   "refs": 3,
+   "repo_local": "omen-e:work/vllama",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 514,
+   "commits": 514,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-nested",
+   "lineage": "c9781956eddcb5128f8c1a8f7e5c6154c1345320",
+   "path": "work/vllm-xpu-win/kernels",
+   "refs": 87,
+   "repo_local": "omen-e:work/vllm-xpu-win/kernels",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 6,
+   "commits": 6,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-nested",
+   "lineage": "github:systempanic/vllm-windows",
+   "path": "work/vllm-xpu-win/vllm-src",
+   "refs": 2,
+   "repo_local": "omen-e:work/vllm-xpu-win/vllm-src",
+   "shallow": true,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 2,
+   "commits": 2,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-c",
+   "lineage": "6ef50f10dd4507093f02c11357bf4b20fd40675e",
+   "path": "work/work-visuals",
+   "refs": 2,
+   "repo_local": "omen-e:work/work-visuals",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 4,
+   "commits": 4,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-a",
+   "lineage": "aeec44ac6aa0df4feed092f1354be134ae81be83",
+   "path": "work/workbench",
+   "refs": 2,
+   "repo_local": "omen-e:work/workbench",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 35,
+   "commits": 35,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-c",
+   "lineage": "ecca39f1f37ae199e1a5770bc215fc8dc132f239",
+   "path": "work/writing",
+   "refs": 14,
+   "repo_local": "omen-e:work/writing",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 27,
+   "commits": 27,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-c",
+   "lineage": "b54645d264aa7db05e82a752e4c116b5336591c4",
+   "path": "work/www",
+   "refs": 7,
+   "repo_local": "omen-e:work/www",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "omen-e",
+   "item": "e-git-c",
+   "lineage": "e580a2ef24acb12c5b90f5dc7264938d2eee28c1",
+   "path": "work/xpu-train",
+   "refs": 2,
+   "repo_local": "omen-e:work/xpu-train",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 519,
+   "commits": 519,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "0a29dacd17d4f11b289718412e5861a2bebb5cb3",
+   "path": "~/.continuity/ledger",
+   "refs": 1,
+   "repo_local": "omen-linux:~/.continuity/ledger",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 4,
+   "commits": 4,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "8bb5a49aeedb4808ff4a2f3814c3617943f54bef",
+   "path": "~/continuity-triage/entire-probe",
+   "refs": 2,
+   "repo_local": "omen-linux:~/continuity-triage/entire-probe",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 807,
+   "commits": 807,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "6a0d30840c0d974b5780231a0df9e0868b908c8e",
+   "path": "~/git/commandcenter-flash-base",
+   "refs": 73,
+   "repo_local": "omen-linux:~/git/commandcenter-flash-base",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 927,
+   "commits": 927,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "6a0d30840c0d974b5780231a0df9e0868b908c8e",
+   "path": "~/private-migration-20260923/commandcenter",
+   "refs": 257,
+   "repo_local": "omen-linux:~/private-migration-20260923/commandcenter",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": true,
+   "commit_events": 36,
+   "commits": 36,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "0a2dd31e35fa9ce6ee6518316bcc728a5feea44d",
+   "path": "~/private-migration-20260923/conductor-mirror.git",
+   "refs": 1,
+   "repo_local": "omen-linux:~/private-migration-20260923/conductor-mirror.git",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "1bad53cadff5f6b4e4c36e9afbdf81f8667e807c",
+   "path": "~/private-migration-20260923/deepagents-poc",
+   "refs": 1,
+   "repo_local": "omen-linux:~/private-migration-20260923/deepagents-poc",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 3,
+   "commits": 3,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "4bb4fbce65994f88ff045be36c1f6ad7f1da7a9e",
+   "path": "~/private-migration-20260923/deepagents-shot-director",
+   "refs": 2,
+   "repo_local": "omen-linux:~/private-migration-20260923/deepagents-shot-director",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "1b618ff95308034977674b53d4d8e356f3810943",
+   "path": "~/work/amux",
+   "refs": 1,
+   "repo_local": "omen-linux:~/work/amux",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 3,
+   "commits": 3,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "b5f9083fef62ddf30e95569f98e8572cc01e13e6",
+   "path": "~/work/clm-pilot",
+   "refs": 2,
+   "repo_local": "omen-linux:~/work/clm-pilot",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 4,
+   "commits": 4,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "a18cb24bde65844f132d6cc35ab0b30d0ac34823",
+   "path": "~/work/clm-pilot/upstream",
+   "refs": 3,
+   "repo_local": "omen-linux:~/work/clm-pilot/upstream",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1319,
+   "commits": 1319,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "6a0d30840c0d974b5780231a0df9e0868b908c8e",
+   "path": "~/work/commandcenter-linux-flash",
+   "refs": 138,
+   "repo_local": "omen-linux:~/work/commandcenter-linux-flash",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "90cc839ff1a5e608f52976a228c0dd7016a135e9",
+   "path": "~/work/commandcenter-linux-private",
+   "refs": 1,
+   "repo_local": "omen-linux:~/work/commandcenter-linux-private",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 80,
+   "commits": 80,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "91653aae293206f6e6f599238097dd2467b0b716",
+   "path": "~/work/continuity",
+   "refs": 14,
+   "repo_local": "omen-linux:~/work/continuity",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 18,
+   "commits": 18,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "1bad53cadff5f6b4e4c36e9afbdf81f8667e807c",
+   "path": "~/work/deepagents-linux",
+   "refs": 6,
+   "repo_local": "omen-linux:~/work/deepagents-linux",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 38,
+   "commits": 38,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "6c3c49c7de0b97d35642501034b87b81e2eb0695",
+   "path": "~/work/discengine",
+   "refs": 1,
+   "repo_local": "omen-linux:~/work/discengine",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 5,
+   "commits": 5,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "588998951cdd908634ba2b2079e8814db5bb258c",
+   "path": "~/work/founderOS",
+   "refs": 1,
+   "repo_local": "omen-linux:~/work/founderOS",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 33,
+   "commits": 33,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "52a0ae9d8f9ac26266b4a1cb3af9f90bd090b2d3",
+   "path": "~/work/game-jepa",
+   "refs": 1,
+   "repo_local": "omen-linux:~/work/game-jepa",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 52,
+   "commits": 52,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "4ec70007a214bcdba31ab6c356a9a5d0241f5e8d",
+   "path": "~/work/jepa-add-protocol",
+   "refs": 1,
+   "repo_local": "omen-linux:~/work/jepa-add-protocol",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": true,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": true,
+   "host": "omen-linux",
+   "item": "mirror-0",
+   "lineage": "github:djcdevelopment/comfy-exaltedcontracts",
+   "path": "~/work/known-world/cache/clones/Comfy-ExaltedContracts.git",
+   "refs": 0,
+   "repo_local": "omen-linux:~/work/known-world/cache/clones/Comfy-ExaltedContracts.git",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": true,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "mirror-0",
+   "lineage": "dd77d0489cdb4ad608d4fc831ebbd5f3eadc1047",
+   "path": "~/work/known-world/cache/clones/ComfyMerchant.git",
+   "refs": 1,
+   "repo_local": "omen-linux:~/work/known-world/cache/clones/ComfyMerchant.git",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": true,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": true,
+   "host": "omen-linux",
+   "item": "mirror-1",
+   "lineage": "github:djcdevelopment/poescripter",
+   "path": "~/work/known-world/cache/clones/POEscripter.git",
+   "refs": 0,
+   "repo_local": "omen-linux:~/work/known-world/cache/clones/POEscripter.git",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": true,
+   "commit_events": 2,
+   "commits": 2,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "mirror-1",
+   "lineage": "16d90d5f3ee0de8cb88b05019eeb342ee89731d0",
+   "path": "~/work/known-world/cache/clones/PoE-Item-Filter-Creator.git",
+   "refs": 2,
+   "repo_local": "omen-linux:~/work/known-world/cache/clones/PoE-Item-Filter-Creator.git",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": true,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": true,
+   "host": "omen-linux",
+   "item": "mirror-0",
+   "lineage": "github:djcdevelopment/battlemage",
+   "path": "~/work/known-world/cache/clones/battlemage.git",
+   "refs": 0,
+   "repo_local": "omen-linux:~/work/known-world/cache/clones/battlemage.git",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": true,
+   "commit_events": 20,
+   "commits": 20,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "mirror-0",
+   "lineage": "e6fa603a4463fc18d711d8acc897fccd17921763",
+   "path": "~/work/known-world/cache/clones/clippy.git",
+   "refs": 3,
+   "repo_local": "omen-linux:~/work/known-world/cache/clones/clippy.git",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": true,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": true,
+   "host": "omen-linux",
+   "item": "mirror-0",
+   "lineage": "github:djcdevelopment/farm",
+   "path": "~/work/known-world/cache/clones/farm.git",
+   "refs": 0,
+   "repo_local": "omen-linux:~/work/known-world/cache/clones/farm.git",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": true,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "mirror-0",
+   "lineage": "9c388744422b3156dfc88c3ae8ddc06d92910fb6",
+   "path": "~/work/known-world/cache/clones/klaviyoDataformatter.git",
+   "refs": 1,
+   "repo_local": "omen-linux:~/work/known-world/cache/clones/klaviyoDataformatter.git",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": true,
+   "commit_events": 17,
+   "commits": 17,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "mirror-0",
+   "lineage": "a6b429fa8614dcff502a3df4bfbfeace72b51651",
+   "path": "~/work/known-world/cache/clones/llmquest.git",
+   "refs": 1,
+   "repo_local": "omen-linux:~/work/known-world/cache/clones/llmquest.git",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": true,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": true,
+   "host": "omen-linux",
+   "item": "mirror-0",
+   "lineage": "github:djcdevelopment/plinko",
+   "path": "~/work/known-world/cache/clones/plinko.git",
+   "refs": 0,
+   "repo_local": "omen-linux:~/work/known-world/cache/clones/plinko.git",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": true,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": true,
+   "host": "omen-linux",
+   "item": "mirror-1",
+   "lineage": "github:djcdevelopment/threat-trace",
+   "path": "~/work/known-world/cache/clones/threat-trace.git",
+   "refs": 0,
+   "repo_local": "omen-linux:~/work/known-world/cache/clones/threat-trace.git",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": true,
+   "commit_events": 1,
+   "commits": 1,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "mirror-1",
+   "lineage": "dec5b97c40cfd862ada61e481ca2e0e9bcd6ec06",
+   "path": "~/work/known-world/cache/clones/waypoints.git",
+   "refs": 1,
+   "repo_local": "omen-linux:~/work/known-world/cache/clones/waypoints.git",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 31,
+   "commits": 31,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "a4e904570f8207a55503f5eab46d98986bfc2171",
+   "path": "~/work/lab",
+   "refs": 2,
+   "repo_local": "omen-linux:~/work/lab",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 143,
+   "commits": 143,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "b23894a8f52982666070b4ae7ad3490835c59ae8",
+   "path": "~/work/lab-rnd",
+   "refs": 18,
+   "repo_local": "omen-linux:~/work/lab-rnd",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 22,
+   "commits": 22,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "8fd46251caffcd90f7f79d556e594c4d44bf18c5",
+   "path": "~/work/lever-ledger",
+   "refs": 3,
+   "repo_local": "omen-linux:~/work/lever-ledger",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 13,
+   "commits": 13,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "f69a5b1a96e95fb6881af3028af39ecbd9df099a",
+   "path": "~/work/liveView-ui-run",
+   "refs": 8,
+   "repo_local": "omen-linux:~/work/liveView-ui-run",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 25,
+   "commits": 25,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "484f54f657f7e1a41232dd5ed012c751e5825bd4",
+   "path": "~/work/memsplice",
+   "refs": 6,
+   "repo_local": "omen-linux:~/work/memsplice",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": true,
+   "commit_events": 24,
+   "commits": 24,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "a7795c7ee4310fac3b86f8df9eca4e58d06936b8",
+   "path": "~/work/resume-linux.git",
+   "refs": 2,
+   "repo_local": "omen-linux:~/work/resume-linux.git",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 26,
+   "commits": 26,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "09f02f354241f165ce1a152bd59f6246d68baf17",
+   "path": "~/work/trial/notebook",
+   "refs": 15,
+   "repo_local": "omen-linux:~/work/trial/notebook",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "09f02f354241f165ce1a152bd59f6246d68baf17",
+   "path": "~/work/trial/notebook-27b",
+   "refs": 0,
+   "repo_local": "omen-linux:~/work/trial/notebook-27b",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "09f02f354241f165ce1a152bd59f6246d68baf17",
+   "path": "~/work/trial/notebook-32b",
+   "refs": 0,
+   "repo_local": "omen-linux:~/work/trial/notebook-32b",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 16,
+   "commits": 16,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "09f02f354241f165ce1a152bd59f6246d68baf17",
+   "path": "~/work/trial/notebook-cold",
+   "refs": 3,
+   "repo_local": "omen-linux:~/work/trial/notebook-cold",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 14,
+   "commits": 14,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "09f02f354241f165ce1a152bd59f6246d68baf17",
+   "path": "~/work/trial/notebook-cold2",
+   "refs": 1,
+   "repo_local": "omen-linux:~/work/trial/notebook-cold2",
+   "shallow": false,
+   "worktree": false
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "09f02f354241f165ce1a152bd59f6246d68baf17",
+   "path": "~/work/trial/notebook-devstral",
+   "refs": 0,
+   "repo_local": "omen-linux:~/work/trial/notebook-devstral",
+   "shallow": false,
+   "worktree": true
+  },
+  {
+   "bare": false,
+   "commit_events": 0,
+   "commits": 0,
+   "empty": false,
+   "host": "omen-linux",
+   "item": "linux-git",
+   "lineage": "09f02f354241f165ce1a152bd59f6246d68baf17",
+   "path": "~/work/trial/notebook-gemma",
+   "refs": 0,
+   "repo_local": "omen-linux:~/work/trial/notebook-gemma",
+   "shallow": false,
+   "worktree": true
+  }
+ ],
+ "repo_records": 170,
+ "repo_records_duplicate_skipped": 0,
+ "sessions": 1155,
+ "sessions_by_class": {
+  "chatgpt": 380,
+  "claude": 498,
+  "codex": 253,
+  "opencode": 24
+ },
+ "zip_live_overlap": {}
+}

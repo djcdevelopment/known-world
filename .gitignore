@@ -1,6 +1,10 @@
 .venv/
 cache/
-corpus/raw/
+corpus/raw/*/*.ndjson
+corpus/raw/*/checkpoint.json
+corpus/raw/*/run.log
+corpus/raw/*/github_repos.json
+corpus/raw/*/.*
 corpus/merged/*.ndjson
 export/frames/
 laps/*/frames/

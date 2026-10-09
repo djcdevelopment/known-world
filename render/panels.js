@@ -11,17 +11,19 @@
   const KEYS = ['omen-c', 'omen-e', 'omen-linux', 'am4', 'fx99', 'github'];
   function tallies(ctx, f) {
     const x0 = 0, rowH = 96;
-    ctx.fillStyle = '#0b0e14'; ctx.fillRect(x0, 64, 240, 896);
-    ctx.fillStyle = '#1b2230'; ctx.fillRect(239, 64, 1, 896);
+    const LY = KW.LAY, PH = LY.H - LY.top - LY.bottom;
+    KW.plate(ctx, x0, LY.top, LY.left, PH);
     ctx.textBaseline = 'alphabetic';
+    ctx.save(); ctx.beginPath(); ctx.rect(0, LY.top, LY.left - 8, PH); ctx.clip();
     // rows in entry order
     const idx = []; for (let i = 0; i < nS; i++) if (S.entry[i] < F) idx.push(i);
     idx.sort((a, b) => S.entry[a] - S.entry[b] || a - b);
     for (let r = 0; r < idx.length; r++) {
       const i = idx[r], age = f - S.entry[i];
       if (age < 0) continue;
-      const u = Math.min(1, age / 12), s = u * u * (3 - 2 * u), dx = -Math.round(240 * (1 - s));
+      const u = Math.min(1, age / 12), s = u * u * (3 - 2 * u), dx = -Math.round(200 * (1 - s));
       const y = 64 + 12 + r * rowH, x = x0 + dx, k = KEYS[i];
+      ctx.globalAlpha = s;
       const gh = k === 'github';
       ctx.fillStyle = P.rgbaRaw(0.45, 0.05, 190, 0.9);
       if (!gh) ctx.fillStyle = P.rgbaRaw(0.45, 0.05, [275, 255, 165, 310, 60][['omen-c', 'omen-e', 'omen-linux', 'am4', 'fx99'].indexOf(k)], 0.95);
@@ -44,16 +46,16 @@
         ctx.textAlign = 'left';
       }
     }
+    ctx.restore();
     ctx.textAlign = 'left';
   }
   const band = U.u8(D.band), names = D.band_names, BW = D.band_window_f;
   const col = names.map(n => D.nat_classes.indexOf(n));
   function drawBand(ctx, f) {
-    const x0 = 240, w = 1360, y0 = 960, h = 120, mid = y0 + 60;
-    ctx.fillStyle = '#0b0e14'; ctx.fillRect(0, y0, 1600, h);
-    ctx.fillStyle = '#1b2230'; ctx.fillRect(x0, y0, w, 1);
-    ctx.fillStyle = '#222b3b'; ctx.fillRect(x0, mid, w, 1);
-    const ncol = 680, ck = KW.codaK(f);
+    const LY = KW.LAY, x0 = LY.left, w = LY.W - LY.left - LY.right, y0 = LY.H - LY.bottom, h = LY.bottom, mid = y0 + h / 2;
+    KW.plate(ctx, x0, y0, w, h);
+    ctx.fillStyle = '#222b3b'; ctx.fillRect(x0 + 1, mid, w - 2, 1);
+    const ncol = Math.floor(w / 2), ck = KW.codaK(f);
     for (let k = 0; k < ncol; k++) {
       const g = f - (BW - 1) + Math.round(k * (BW - 1) / (ncol - 1));
       if (g < 0) continue;
@@ -75,7 +77,7 @@
     // era ticks
     ctx.fillStyle = 'rgba(232,224,192,0.55)';
     for (const sf of D.era_switch_f) { const k = Math.round((sf - (f - (BW - 1))) * (ncol - 1) / (BW - 1)); if (k >= 0 && k < ncol) ctx.fillRect(x0 + k * 2, y0 + 4, 1, h - 8); }
-    ctx.fillStyle = '#2a3346'; ctx.fillRect(x0 + w - 2, y0, 2, h);
+    
   }
   KW.registerLayer({ id: 'tallies', z: 71, render: tallies });
   KW.registerLayer({ id: 'band', z: 72, render: drawBand });

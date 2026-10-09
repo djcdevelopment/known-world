@@ -1,0 +1,58 @@
+{
+ "capture_ms_per_frame_per_worker_median": 56.04098955185185,
+ "final_bytes": 24528138,
+ "frame_hashes_sha256": "996f08f1dd8037a6a66028f97c0c0bea9929711501e766881a8ee115991c8abb",
+ "frames": 2700,
+ "frames_wall_s": 23.02,
+ "from": 0,
+ "ms_per_frame_effective": 8.43,
+ "page_errors": [],
+ "probe": {
+  "audio_samples": 4320256,
+  "audio_tail_padding_samples": 256,
+  "click_onset_sample": 24000,
+  "click_peak_sample": 24000,
+  "container_duration_s": 90.0,
+  "delta_ms_onset": 0.0,
+  "delta_ms_peak": 0.0,
+  "elst": [
+   [
+    [
+     90000,
+     1024
+    ]
+   ],
+   [
+    [
+     90000,
+     1024
+    ]
+   ]
+  ],
+  "expected_click_sample": 24000,
+  "expected_duration_s": 90.0,
+  "expected_frames": 2700,
+  "expected_probe_frame": 15,
+  "expected_samples": 4320000,
+  "pass": true,
+  "stream_start_times": [
+   "0.000000"
+  ],
+  "t_click_onset_s": 0.5,
+  "t_click_peak_s": 0.5,
+  "t_white_s": 0.5,
+  "video_frames": 2700,
+  "white_frames": [
+   15
+  ]
+ },
+ "rehash": {
+  "equal": 30,
+  "frames": 30,
+  "mismatched": []
+ },
+ "to": 2700,
+ "total_wall_s": 29.3,
+ "wav_sha256": "db8e004b245fbdf996ea02f2e48c23af8df679d1b54db7a1270242603c21b81a",
+ "workers": 10
+}

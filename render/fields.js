@@ -54,10 +54,10 @@
     const dx = 1.7320508075688772 * v.s, dy = 1.5 * v.s;
     ctx.fillStyle = 'rgba(180,200,230,0.04)';
     ctx.beginPath();
-    const r0 = Math.floor((V.y - V.cy) / dy + v.cy / 1.5) - 1, r1 = Math.ceil((V.y + V.h - V.cy) / dy + v.cy / 1.5) + 1;
+    const Fr = KW.FRAME, r0 = Math.floor((Fr.y - V.cy) / dy + v.cy / 1.5) - 1, r1 = Math.ceil((Fr.y + Fr.h - V.cy) / dy + v.cy / 1.5) + 1;
     for (let r = r0; r <= r1; r++) {
       const y = V.cy + (r * 1.5 - v.cy) * v.s;
-      const q0 = Math.floor((V.x - V.cx) / dx + v.cx / 1.7320508075688772 - r / 2) - 1, q1 = Math.ceil((V.x + V.w - V.cx) / dx + v.cx / 1.7320508075688772 - r / 2) + 1;
+      const q0 = Math.floor((Fr.x - V.cx) / dx + v.cx / 1.7320508075688772 - r / 2) - 1, q1 = Math.ceil((Fr.x + Fr.w - V.cx) / dx + v.cx / 1.7320508075688772 - r / 2) + 1;
       for (let q = q0; q <= q1; q++) { const x = V.cx + (1.7320508075688772 * (q + r / 2) - v.cx) * v.s; ctx.rect(x - 0.5, y - 0.5, 1, 1); }
     }
     ctx.fill();

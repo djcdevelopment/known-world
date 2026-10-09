@@ -1,0 +1,38 @@
+{
+ "launch_window": {
+  "audio_sha256": "9fc11249d07deb4bfe8ecf0fb268c8036f14b73a766704f75fe692e11607e0e0",
+  "frames": 20650,
+  "kw_data_sha256": "a04641c51399e6d60e8b101dfa81fa47d9fe21b8b59cf7874180e4f5e366d32e",
+  "running_totals_world": {
+   "commits": 9789,
+   "files": 233788,
+   "lines": 7940450
+  }
+ },
+ "rolling_10s": {
+  "audio_sha256": "9fc11249d07deb4bfe8ecf0fb268c8036f14b73a766704f75fe692e11607e0e0",
+  "frames": 20650,
+  "kw_data_sha256": "accc4515930cab729f1bb061fa13e81eaf05f262dd4f0135ab5bfb1c9750a944",
+  "running_totals_world": {
+   "commits": 9789,
+   "files": 233788,
+   "lines": 7940450
+  }
+ },
+ "stream_hashed": {
+  "audio_sha256": "9fc11249d07deb4bfe8ecf0fb268c8036f14b73a766704f75fe692e11607e0e0",
+  "frames": 20650,
+  "kw_data_sha256": "7b3c0822ffd226e67edf42c755334391083fdaa693950617124c3dff9df9f91d",
+  "label_sample_shape": [
+   7,
+   7,
+   7
+  ],
+  "lane_names_in_file": 0,
+  "running_totals_world": {
+   "commits": 9789,
+   "files": 233788,
+   "lines": 7940450
+  }
+ }
+}

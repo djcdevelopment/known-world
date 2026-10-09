@@ -1,0 +1,768 @@
+{
+ "cut": {
+  "audio_expected": 4320000,
+  "audio_samples": 4320000,
+  "audio_sha256": "db8e004b245fbdf996ea02f2e48c23af8df679d1b54db7a1270242603c21b81a",
+  "audio_stats": {
+   "bells": 309,
+   "collapse_bins": 286,
+   "collapsed_frames": 1533,
+   "offload_clicks": 170,
+   "offload_roar_frames": 173,
+   "pips": 102,
+   "roll_bins": 111,
+   "tones": 184
+  },
+  "chatgpt_links": "present",
+  "clock": {
+   "boundary_out_s": [
+    6.863,
+    17.759
+   ],
+   "coda_s": 6.0,
+   "era_len_s": [
+    5.863,
+    10.896,
+    66.241
+   ],
+   "frames": 2700,
+   "intro_s": 1.0,
+   "m": 8.0521,
+   "story_s": 83.0,
+   "total_s": 90.0
+  },
+  "code": {
+   "compile/audio.py": "1f0749040b551ec8bace3411afff9f72be3483d0d7fd44e642aa0ec18f87c79b",
+   "compile/audit.py": "162b67a0a21a56247f76f5316643a0752371ef45f4b19b0ae4a422d3eb3a7686",
+   "compile/build.py": "b0b3eadafd9c495b83036536ba2cb926fdb493b0d6ca5993651c448b353a0ef0",
+   "compile/build_cli.py": "90629f257626772ab330baadec81b3a5cc0f737ccabae554043f2019612ad908",
+   "compile/build_data.py": "2ec6e771cc18224d01dc9bfbe6cafe3cdc685b50bee80d10d845f02ba991ed12",
+   "compile/camera.py": "3f6c1800d5fe4f6f225bdc3f5be98344970957ab376e785fafafd5ee37eeae55",
+   "compile/clock.py": "857d13ec3e7b7aceee4f770e72fa2c01926a9c8e546d41f73fa080cd84e6327a",
+   "compile/common.py": "50eee918f0b114c0416d9c97e982f85935ef2cc7e13bbd4d5727cedf7d363f2b",
+   "compile/corpus.py": "e545303d69d8eadc8cc23a2c26788eec7da237f4c37c7ff5593b389e571a56b0",
+   "compile/launches.py": "959c1fd8f6bbe80f50e313bdf05ec8b6eb8a48a699403f6205f3282a5f6a56fb",
+   "compile/layout.py": "307b78425e2659133ca5453dad31fcd82aea27dc1945eff8df1ad68abd38bddd",
+   "compile/names.py": "164cd6e3da9bbedb523b6109697ca8f254312bf93c90cc56b999b36a7a9622a0",
+   "compile/nations.py": "5bc7946b7223725904b47b0194ff9b2b899a914aa31458170c8b14eda1af6bdf",
+   "compile/params.json": "400cfe03963b23fd52bc9178a401d51b8f007ddda634f9986230451380c0d3b7",
+   "compile/series.py": "7f00172dabc0df99be06db7d86a25e1d6c6d718c5a36e411fa492e63447ce0bd",
+   "compile/stream.py": "b7ccfddf98cf4fdcf0a6a3be5ec8a34184184482dfa01c18e667663f5d8100e6",
+   "compile/strip.py": "7e9a2a1c0ba5754e6f7e51db7dd4afc7b10ae0c283abe63442c6fd4bccf4180e",
+   "compile/synth.py": "b13f2d3a62ddb15af7484066f926128a0546abcce978471c2db7ed16966e9286",
+   "compile/tiles.py": "0972d0b86bac1574a8da904b0a836bc7c7e6af78e31282b8cb55912f35de7ebf",
+   "export/edgecheck.mjs": "ba310f454353af488f901b66b5a497352699ef5d8cfff3c4c1ee2cabff6b57e8",
+   "export/encode.py": "c038b7019d335d86d31f955eec2d071a1a998eff4e4d532d31dff23fac63e90e",
+   "export/frames.mjs": "db4f48eafa87b696ffcca3d1d4c4c9ab143a0e66f9410ce4bfad38a9b762cff4",
+   "export/lapkit.py": "32585a6be8051a0da56bf068b97c7a6880c76bb06c505d86ba7c40d49cd154df",
+   "export/perf.mjs": "677ee60f4272100e306d45ae6ec4413eea4a3e80a2d7e5694c8db7a48e24c8ea",
+   "export/probe.py": "f7f5ea59faa37777b1c4d542e0d9fac74bdc30c47585b87d04ab9f9595abd07f",
+   "export/rehash.mjs": "0fe27fd68a1031a9917d5d55286ffb68e016a02e79d809768e4b2da92307ead6",
+   "export/run.py": "348f311acdd7636be8c8b31d3cf3260adf4fbb0e62a2b018814572e31fa45110",
+   "export/state_node.mjs": "da650c99a61f7e1f6e3d0854c6bd5b85f015c4adbdf41544fd0aaa8de6d1aad8",
+   "export/still.mjs": "71d5124da523653cb92fa3525b024369e143029e13397ae35bb1a13a4254714f",
+   "export/verify.mjs": "f43e5a37c042bb607c252771598faf05c3ce800fd3fc04636d3bfea666053c67",
+   "render/border.js": "7d4715a2be0e12dcb7a966677c2218aeaf2ba6da8a3e1b66ab71f0d255116eaf",
+   "render/card.js": "bf220edf4ee30ae998b2a1ed2a3d2897751d77a7b812e956de660cd78e54e219",
+   "render/data.js": "69860718c10c913d6ff4ed6e34e53a45f9b2dbc692597d59bda1150d27fb23ec",
+   "render/fields.js": "d00889e8607dd4a8d0eb8db68632f21646ae9f08249018642e1eab8a8dd1b602",
+   "render/index.html": "76c5228549fd9d23ca4bc114a949867697c6e968da5c6f8dba096d959b36a832",
+   "render/launch.js": "75374f2395cdf915d31e5c0fbc6365d0fa4d24c4eba8a8bec55225d4d5325a6a",
+   "render/main.js": "f936f6d68e15225aff53979c303bf1a4e226b4a924813b28779f597a10bedf51",
+   "render/palette.js": "fbcd345567e1af55e6ab5618b98d5e975a580f2fe9dd18733fff24f0ba979b7e",
+   "render/panels.js": "ba0780054053a6f5ef73a17da2249b298c89f9ee9b8c78cad26c5d0d08cb1cf2",
+   "render/radio.js": "c4fbcac64e6ffb1b96753f68dfcc98301a98734d19b888bd2e32bfe780d19837",
+   "render/state.js": "2962c6ed5c9c96e7c68896736522a343ddc9002351fee55bec1de29aaf36b042",
+   "render/stream.js": "f7910a9356e904bd9840125f9fc46a234d62ee27bb25f1ede5ea9ff072a00c49"
+  },
+  "collapsed_share_pct": 56.78,
+  "compile_s": 4.9,
+  "compile_twice": {
+   "audio_equal": true,
+   "kw_data_equal": true,
+   "second": {
+    "audio_sha256": "db8e004b245fbdf996ea02f2e48c23af8df679d1b54db7a1270242603c21b81a",
+    "frames": 2700,
+    "kw_data_sha256": "5028e157d1ecbfab2ea4686871dbf2aea3f089d4b0880bfeae6370e37d96c22a"
+   }
+  },
+  "counts": {
+   "beams": 1225,
+   "cells": 16123,
+   "checkpoints": 3,
+   "chips": 34,
+   "collapsed_frames": 1533,
+   "deltas": 17022,
+   "launch_counts": {
+    "bands": {
+     "1": 71,
+     "2": 269,
+     "3": 363,
+     "4": 205,
+     "5": 35,
+     "6": 9
+    },
+    "bands_git": {
+     "1": 30,
+     "2": 183,
+     "3": 279,
+     "4": 140,
+     "5": 8,
+     "6": 1
+    },
+    "capped_commits": 87,
+    "episodes_git": 1056,
+    "first_of_generation": 19,
+    "first_of_nation": 5,
+    "first_tests": 216,
+    "launches": 952,
+    "launches_git": 641,
+    "launches_nongit": 311,
+    "max_warheads": 58,
+    "mirv": 171,
+    "nations": {
+     "automation": 9,
+     "chatgpt": 37,
+     "claude": 453,
+     "codex": 82,
+     "human": 371
+    },
+    "nations_git": {
+     "automation": 9,
+     "claude": 442,
+     "codex": 74,
+     "human": 116
+    },
+    "nongit_nations": {
+     "chatgpt:time": 37,
+     "claude": 11,
+     "codex": 8,
+     "human": 255
+    },
+    "single": 770,
+    "single_git": 459,
+    "tests_git": 955,
+    "tests_nongit": 311,
+    "unified": 11,
+    "warheads_hist": {
+     "2": 98,
+     "3": 33,
+     "4": 14,
+     "5": 10,
+     "6": 2,
+     "7": 3,
+     "8": 3,
+     "9": 3,
+     "10": 5
+    }
+   },
+   "launches": 952,
+   "launches_skipped_no_region": 0,
+   "layout": {
+    "bridges": 29,
+    "constellations": 13,
+    "harbours": 84,
+    "islands": 93,
+    "joined_lineages": 83,
+    "notches": 317,
+    "spurs": 224
+   },
+   "nations": [
+    "human",
+    "chatgpt",
+    "claude",
+    "codex",
+    "automation",
+    "local_model",
+    "opencode"
+   ],
+   "peak_launches_per_frame": 7,
+   "regions": 321,
+   "rings": 25,
+   "tiles": 6227,
+   "tiles_by_kind": {
+    "dir": 2283,
+    "git": 2928,
+    "third": 1016
+   },
+   "tiles_counts": {
+    "cells": 16123,
+    "regions": 321,
+    "regions_by_host": {
+     "am4": 13,
+     "fx99": 8,
+     "omen-c": 74,
+     "omen-e": 148,
+     "omen-linux": 78
+    },
+    "regions_dir": 177,
+    "regions_git": 131,
+    "regions_third": 13,
+    "tiles": 6227,
+    "tiles_never_touched": 284,
+    "touches": 147065
+   },
+   "tiles_never_touched": 284,
+   "tiles_stats": {
+    "copies_revealed": 20,
+    "copy_tiles_revealed": 41,
+    "ruin_clone_event": 1,
+    "ruin_clone_last_ts": 12
+   },
+   "touches": 147065
+  },
+  "cut_s": 90,
+  "hq": {
+   "changes": [
+    [
+     1137,
+     "omen-e"
+    ],
+    [
+     1602,
+     "omen-c"
+    ],
+    [
+     2353,
+     "omen-e"
+    ],
+    [
+     2416,
+     "omen-linux"
+    ]
+   ],
+   "first_linux_day_iso": "2026-09-28T00:00:00Z"
+  },
+  "inputs": {
+   "actors.json": "c6b2bb2f032474ca492bf6edc12a00aebf2c5b6bece5e03e7194271aec69e24b",
+   "chatgpt_links.json": "63ed4b48fd2f88c177f8f839edcc9ed0de22ec81e16b5e711e3f12a8511c5843",
+   "events.ndjson": "cc5ca71fea323610234e9368dadc583ce0e527935f1d291902ed910f74c5f9b1",
+   "hosts.json": "d01c2f4d04326ae0ff750fb76c89b648358231e09d7cc50f55fe04930d8e22d6",
+   "relations.json": "8875b6ce4a1a692ec008472c97d43566769b9ac855f00925a16be88c851b6b3b",
+   "repos.json": "62da206a3d102dc8d9d7e949845826ccea130d2a66b61dbe2801ac2f61751946",
+   "sessions.json": "4730a2c30885067400725e10b97cdf10d535f3913687408882e996c12f002157",
+   "stats.json": "877aa4bfeb48d581cede6ce98e23389c35cbdd118c21281046d58d791e5f743f"
+  },
+  "kw_data_bytes": 3537506,
+  "kw_data_sha256": "5028e157d1ecbfab2ea4686871dbf2aea3f089d4b0880bfeae6370e37d96c22a",
+  "params_hash": "79f236d4d0655d85756a06acecaf72e6501411a5e6bb752957e5f52ffc6cc929",
+  "peak_launches_per_film_second": 43,
+  "relations": "present",
+  "running_totals": {
+   "bulk_copy_excluded": {
+    "file_birth": 680125,
+    "file_update": 62411
+   },
+   "lines_uncapped": {
+    "added": 15934153,
+    "cap": 20000,
+    "commits_capped": 87,
+    "removed": 2516181,
+    "total": 18450334
+   },
+   "nation": {
+    "automation": {
+     "commits": 644,
+     "files_changed": 1120,
+     "lines_added": 86398,
+     "lines_removed": 7628
+    },
+    "chatgpt": {
+     "commits": 0,
+     "files_changed": 0,
+     "lines_added": 0,
+     "lines_removed": 0
+    },
+    "claude": {
+     "commits": 4391,
+     "files_changed": 30354,
+     "lines_added": 2551755,
+     "lines_removed": 210941
+    },
+    "codex": {
+     "commits": 46,
+     "files_changed": 1057,
+     "lines_added": 47784,
+     "lines_removed": 662
+    },
+    "human": {
+     "commits": 4708,
+     "files_changed": 56330,
+     "lines_added": 4745778,
+     "lines_removed": 289501
+    },
+    "local_model": {
+     "commits": 0,
+     "files_changed": 0,
+     "lines_added": 0,
+     "lines_removed": 0
+    },
+    "opencode": {
+     "commits": 0,
+     "files_changed": 0,
+     "lines_added": 0,
+     "lines_removed": 0
+    }
+   },
+   "no_numstat_counted": 0,
+   "surface": {
+    "am4": {
+     "commits": 28,
+     "files_created": 5523,
+     "files_updated": 325
+    },
+    "fx99": {
+     "commits": 43,
+     "files_created": 1157,
+     "files_updated": 965
+    },
+    "github": {
+     "commits": 0,
+     "files_created": 0,
+     "files_updated": 0
+    },
+    "omen-c": {
+     "commits": 3722,
+     "files_created": 25962,
+     "files_updated": 3543
+    },
+    "omen-e": {
+     "commits": 3441,
+     "files_created": 72790,
+     "files_updated": 21491
+    },
+    "omen-linux": {
+     "commits": 2555,
+     "files_created": 13030,
+     "files_updated": 141
+    }
+   },
+   "third": {
+    "clone_commits": 23451,
+    "clone_files": 122495,
+    "clone_lines": 17227908,
+    "clone_lines_capped": 4643214,
+    "clone_no_numstat": 11164,
+    "own_third_class_commits": 1151,
+    "own_third_class_files": 11923,
+    "own_third_class_lines": 2586053,
+    "own_third_class_no_numstat": 0
+   },
+   "world": {
+    "commits": 9789,
+    "files": 233788,
+    "lines": 7940450
+   }
+  },
+  "stream": {
+   "commits": 9789,
+   "constellations_with_lanes": 13,
+   "contract_edges_cross": 4,
+   "contract_edges_drawn": 1,
+   "edge_types": {
+    "consumes": 3,
+    "contract": 1
+   },
+   "frames_at_cap": 1987,
+   "frames_with_lanes": 2575,
+   "lanes_ever_visible": 58,
+   "lanes_total": 111,
+   "loose_lanes": 32,
+   "max_concurrent": 14,
+   "max_quiet": 49,
+   "mean_visible": 11.066,
+   "mirv_connectors": 144,
+   "mirv_lanes_touched_max": 10,
+   "paired_lineages": 20,
+   "rails": 541,
+   "rails_joined": 75,
+   "slot_overflow": 0,
+   "swaps": 70,
+   "ticks": 1007
+  },
+  "world_sha256": "be982583003b72ea57eb3be7d27af23ab2b37cc3fc3d544d0de3857c365e82ea"
+ },
+ "full": {
+  "audio_expected": 33040000,
+  "audio_samples": 33040000,
+  "audio_sha256": "ca41cfb46a230c0057a889e7297c2312aa6ee111c475e22cd4117029c2f870ee",
+  "audio_stats": {
+   "bells": 309,
+   "collapse_bins": 41,
+   "collapsed_frames": 295,
+   "offload_clicks": 301,
+   "offload_roar_frames": 204,
+   "pips": 517,
+   "roll_bins": 2,
+   "tones": 880
+  },
+  "chatgpt_links": "present",
+  "clock": {
+   "boundary_out_s": [
+    49.207,
+    136.942
+   ],
+   "coda_s": 18.0,
+   "era_len_s": [
+    47.207,
+    87.735,
+    533.38
+   ],
+   "frames": 20650,
+   "intro_s": 2.0,
+   "m": 1.0,
+   "story_s": 668.322,
+   "total_s": 688.322
+  },
+  "code": {
+   "compile/audio.py": "1f0749040b551ec8bace3411afff9f72be3483d0d7fd44e642aa0ec18f87c79b",
+   "compile/audit.py": "162b67a0a21a56247f76f5316643a0752371ef45f4b19b0ae4a422d3eb3a7686",
+   "compile/build.py": "b0b3eadafd9c495b83036536ba2cb926fdb493b0d6ca5993651c448b353a0ef0",
+   "compile/build_cli.py": "90629f257626772ab330baadec81b3a5cc0f737ccabae554043f2019612ad908",
+   "compile/build_data.py": "2ec6e771cc18224d01dc9bfbe6cafe3cdc685b50bee80d10d845f02ba991ed12",
+   "compile/camera.py": "3f6c1800d5fe4f6f225bdc3f5be98344970957ab376e785fafafd5ee37eeae55",
+   "compile/clock.py": "857d13ec3e7b7aceee4f770e72fa2c01926a9c8e546d41f73fa080cd84e6327a",
+   "compile/common.py": "50eee918f0b114c0416d9c97e982f85935ef2cc7e13bbd4d5727cedf7d363f2b",
+   "compile/corpus.py": "e545303d69d8eadc8cc23a2c26788eec7da237f4c37c7ff5593b389e571a56b0",
+   "compile/launches.py": "959c1fd8f6bbe80f50e313bdf05ec8b6eb8a48a699403f6205f3282a5f6a56fb",
+   "compile/layout.py": "307b78425e2659133ca5453dad31fcd82aea27dc1945eff8df1ad68abd38bddd",
+   "compile/names.py": "164cd6e3da9bbedb523b6109697ca8f254312bf93c90cc56b999b36a7a9622a0",
+   "compile/nations.py": "5bc7946b7223725904b47b0194ff9b2b899a914aa31458170c8b14eda1af6bdf",
+   "compile/params.json": "400cfe03963b23fd52bc9178a401d51b8f007ddda634f9986230451380c0d3b7",
+   "compile/series.py": "7f00172dabc0df99be06db7d86a25e1d6c6d718c5a36e411fa492e63447ce0bd",
+   "compile/stream.py": "b7ccfddf98cf4fdcf0a6a3be5ec8a34184184482dfa01c18e667663f5d8100e6",
+   "compile/strip.py": "7e9a2a1c0ba5754e6f7e51db7dd4afc7b10ae0c283abe63442c6fd4bccf4180e",
+   "compile/synth.py": "b13f2d3a62ddb15af7484066f926128a0546abcce978471c2db7ed16966e9286",
+   "compile/tiles.py": "0972d0b86bac1574a8da904b0a836bc7c7e6af78e31282b8cb55912f35de7ebf",
+   "export/edgecheck.mjs": "ba310f454353af488f901b66b5a497352699ef5d8cfff3c4c1ee2cabff6b57e8",
+   "export/encode.py": "c038b7019d335d86d31f955eec2d071a1a998eff4e4d532d31dff23fac63e90e",
+   "export/frames.mjs": "db4f48eafa87b696ffcca3d1d4c4c9ab143a0e66f9410ce4bfad38a9b762cff4",
+   "export/lapkit.py": "32585a6be8051a0da56bf068b97c7a6880c76bb06c505d86ba7c40d49cd154df",
+   "export/perf.mjs": "677ee60f4272100e306d45ae6ec4413eea4a3e80a2d7e5694c8db7a48e24c8ea",
+   "export/probe.py": "f7f5ea59faa37777b1c4d542e0d9fac74bdc30c47585b87d04ab9f9595abd07f",
+   "export/rehash.mjs": "0fe27fd68a1031a9917d5d55286ffb68e016a02e79d809768e4b2da92307ead6",
+   "export/run.py": "348f311acdd7636be8c8b31d3cf3260adf4fbb0e62a2b018814572e31fa45110",
+   "export/state_node.mjs": "da650c99a61f7e1f6e3d0854c6bd5b85f015c4adbdf41544fd0aaa8de6d1aad8",
+   "export/still.mjs": "71d5124da523653cb92fa3525b024369e143029e13397ae35bb1a13a4254714f",
+   "export/verify.mjs": "f43e5a37c042bb607c252771598faf05c3ce800fd3fc04636d3bfea666053c67",
+   "render/border.js": "7d4715a2be0e12dcb7a966677c2218aeaf2ba6da8a3e1b66ab71f0d255116eaf",
+   "render/card.js": "bf220edf4ee30ae998b2a1ed2a3d2897751d77a7b812e956de660cd78e54e219",
+   "render/data.js": "69860718c10c913d6ff4ed6e34e53a45f9b2dbc692597d59bda1150d27fb23ec",
+   "render/fields.js": "d00889e8607dd4a8d0eb8db68632f21646ae9f08249018642e1eab8a8dd1b602",
+   "render/index.html": "76c5228549fd9d23ca4bc114a949867697c6e968da5c6f8dba096d959b36a832",
+   "render/launch.js": "75374f2395cdf915d31e5c0fbc6365d0fa4d24c4eba8a8bec55225d4d5325a6a",
+   "render/main.js": "f936f6d68e15225aff53979c303bf1a4e226b4a924813b28779f597a10bedf51",
+   "render/palette.js": "fbcd345567e1af55e6ab5618b98d5e975a580f2fe9dd18733fff24f0ba979b7e",
+   "render/panels.js": "ba0780054053a6f5ef73a17da2249b298c89f9ee9b8c78cad26c5d0d08cb1cf2",
+   "render/radio.js": "c4fbcac64e6ffb1b96753f68dfcc98301a98734d19b888bd2e32bfe780d19837",
+   "render/state.js": "2962c6ed5c9c96e7c68896736522a343ddc9002351fee55bec1de29aaf36b042",
+   "render/stream.js": "f7910a9356e904bd9840125f9fc46a234d62ee27bb25f1ede5ea9ff072a00c49"
+  },
+  "collapsed_share_pct": 1.43,
+  "compile_s": 20.9,
+  "compile_twice": {
+   "audio_equal": true,
+   "kw_data_equal": true,
+   "second": {
+    "audio_sha256": "ca41cfb46a230c0057a889e7297c2312aa6ee111c475e22cd4117029c2f870ee",
+    "frames": 20650,
+    "kw_data_sha256": "cf1332ae3ca91d4b6a55ce7080beb80a5adef32ac3fea1fa2d2e31dffb050763"
+   }
+  },
+  "counts": {
+   "beams": 4953,
+   "cells": 16123,
+   "checkpoints": 23,
+   "chips": 34,
+   "collapsed_frames": 295,
+   "deltas": 26276,
+   "launch_counts": {
+    "bands": {
+     "1": 71,
+     "2": 269,
+     "3": 363,
+     "4": 205,
+     "5": 35,
+     "6": 9
+    },
+    "bands_git": {
+     "1": 30,
+     "2": 183,
+     "3": 279,
+     "4": 140,
+     "5": 8,
+     "6": 1
+    },
+    "capped_commits": 87,
+    "episodes_git": 1056,
+    "first_of_generation": 19,
+    "first_of_nation": 5,
+    "first_tests": 216,
+    "launches": 952,
+    "launches_git": 641,
+    "launches_nongit": 311,
+    "max_warheads": 58,
+    "mirv": 171,
+    "nations": {
+     "automation": 9,
+     "chatgpt": 37,
+     "claude": 453,
+     "codex": 82,
+     "human": 371
+    },
+    "nations_git": {
+     "automation": 9,
+     "claude": 442,
+     "codex": 74,
+     "human": 116
+    },
+    "nongit_nations": {
+     "chatgpt:time": 37,
+     "claude": 11,
+     "codex": 8,
+     "human": 255
+    },
+    "single": 770,
+    "single_git": 459,
+    "tests_git": 955,
+    "tests_nongit": 311,
+    "unified": 11,
+    "warheads_hist": {
+     "2": 98,
+     "3": 33,
+     "4": 14,
+     "5": 10,
+     "6": 2,
+     "7": 3,
+     "8": 3,
+     "9": 3,
+     "10": 5
+    }
+   },
+   "launches": 952,
+   "launches_skipped_no_region": 0,
+   "layout": {
+    "bridges": 29,
+    "constellations": 13,
+    "harbours": 84,
+    "islands": 93,
+    "joined_lineages": 83,
+    "notches": 317,
+    "spurs": 224
+   },
+   "nations": [
+    "human",
+    "chatgpt",
+    "claude",
+    "codex",
+    "automation",
+    "local_model",
+    "opencode"
+   ],
+   "peak_launches_per_frame": 3,
+   "regions": 321,
+   "rings": 103,
+   "tiles": 6227,
+   "tiles_by_kind": {
+    "dir": 2283,
+    "git": 2928,
+    "third": 1016
+   },
+   "tiles_counts": {
+    "cells": 16123,
+    "regions": 321,
+    "regions_by_host": {
+     "am4": 13,
+     "fx99": 8,
+     "omen-c": 74,
+     "omen-e": 148,
+     "omen-linux": 78
+    },
+    "regions_dir": 177,
+    "regions_git": 131,
+    "regions_third": 13,
+    "tiles": 6227,
+    "tiles_never_touched": 284,
+    "touches": 147065
+   },
+   "tiles_never_touched": 284,
+   "tiles_stats": {
+    "copies_revealed": 20,
+    "copy_tiles_revealed": 41,
+    "ruin_clone_event": 1,
+    "ruin_clone_last_ts": 12
+   },
+   "touches": 147065
+  },
+  "cut_s": null,
+  "hq": {
+   "changes": [
+    [
+     8980,
+     "omen-e"
+    ],
+    [
+     12724,
+     "omen-c"
+    ],
+    [
+     18772,
+     "omen-e"
+    ],
+    [
+     19276,
+     "omen-linux"
+    ]
+   ],
+   "first_linux_day_iso": "2026-09-28T00:00:00Z"
+  },
+  "inputs": {
+   "actors.json": "c6b2bb2f032474ca492bf6edc12a00aebf2c5b6bece5e03e7194271aec69e24b",
+   "chatgpt_links.json": "63ed4b48fd2f88c177f8f839edcc9ed0de22ec81e16b5e711e3f12a8511c5843",
+   "events.ndjson": "cc5ca71fea323610234e9368dadc583ce0e527935f1d291902ed910f74c5f9b1",
+   "hosts.json": "d01c2f4d04326ae0ff750fb76c89b648358231e09d7cc50f55fe04930d8e22d6",
+   "relations.json": "8875b6ce4a1a692ec008472c97d43566769b9ac855f00925a16be88c851b6b3b",
+   "repos.json": "62da206a3d102dc8d9d7e949845826ccea130d2a66b61dbe2801ac2f61751946",
+   "sessions.json": "4730a2c30885067400725e10b97cdf10d535f3913687408882e996c12f002157",
+   "stats.json": "877aa4bfeb48d581cede6ce98e23389c35cbdd118c21281046d58d791e5f743f"
+  },
+  "kw_data_bytes": 22390454,
+  "kw_data_sha256": "cf1332ae3ca91d4b6a55ce7080beb80a5adef32ac3fea1fa2d2e31dffb050763",
+  "params_hash": "79f236d4d0655d85756a06acecaf72e6501411a5e6bb752957e5f52ffc6cc929",
+  "peak_launches_per_film_second": 19,
+  "relations": "present",
+  "running_totals": {
+   "bulk_copy_excluded": {
+    "file_birth": 680125,
+    "file_update": 62411
+   },
+   "lines_uncapped": {
+    "added": 15934153,
+    "cap": 20000,
+    "commits_capped": 87,
+    "removed": 2516181,
+    "total": 18450334
+   },
+   "nation": {
+    "automation": {
+     "commits": 644,
+     "files_changed": 1120,
+     "lines_added": 86398,
+     "lines_removed": 7628
+    },
+    "chatgpt": {
+     "commits": 0,
+     "files_changed": 0,
+     "lines_added": 0,
+     "lines_removed": 0
+    },
+    "claude": {
+     "commits": 4391,
+     "files_changed": 30354,
+     "lines_added": 2551755,
+     "lines_removed": 210941
+    },
+    "codex": {
+     "commits": 46,
+     "files_changed": 1057,
+     "lines_added": 47784,
+     "lines_removed": 662
+    },
+    "human": {
+     "commits": 4708,
+     "files_changed": 56330,
+     "lines_added": 4745778,
+     "lines_removed": 289501
+    },
+    "local_model": {
+     "commits": 0,
+     "files_changed": 0,
+     "lines_added": 0,
+     "lines_removed": 0
+    },
+    "opencode": {
+     "commits": 0,
+     "files_changed": 0,
+     "lines_added": 0,
+     "lines_removed": 0
+    }
+   },
+   "no_numstat_counted": 0,
+   "surface": {
+    "am4": {
+     "commits": 28,
+     "files_created": 5523,
+     "files_updated": 325
+    },
+    "fx99": {
+     "commits": 43,
+     "files_created": 1157,
+     "files_updated": 965
+    },
+    "github": {
+     "commits": 0,
+     "files_created": 0,
+     "files_updated": 0
+    },
+    "omen-c": {
+     "commits": 3722,
+     "files_created": 25962,
+     "files_updated": 3543
+    },
+    "omen-e": {
+     "commits": 3441,
+     "files_created": 72790,
+     "files_updated": 21491
+    },
+    "omen-linux": {
+     "commits": 2555,
+     "files_created": 13030,
+     "files_updated": 141
+    }
+   },
+   "third": {
+    "clone_commits": 23451,
+    "clone_files": 122495,
+    "clone_lines": 17227908,
+    "clone_lines_capped": 4643214,
+    "clone_no_numstat": 11164,
+    "own_third_class_commits": 1151,
+    "own_third_class_files": 11923,
+    "own_third_class_lines": 2586053,
+    "own_third_class_no_numstat": 0
+   },
+   "world": {
+    "commits": 9789,
+    "files": 233788,
+    "lines": 7940450
+   }
+  },
+  "stream": {
+   "commits": 9789,
+   "constellations_with_lanes": 13,
+   "contract_edges_cross": 4,
+   "contract_edges_drawn": 4,
+   "edge_types": {
+    "consumes": 3,
+    "contract": 1
+   },
+   "frames_at_cap": 12579,
+   "frames_with_lanes": 18352,
+   "lanes_ever_visible": 109,
+   "lanes_total": 111,
+   "loose_lanes": 32,
+   "max_concurrent": 14,
+   "max_quiet": 37,
+   "mean_visible": 10.396,
+   "mirv_connectors": 144,
+   "mirv_lanes_touched_max": 10,
+   "paired_lineages": 20,
+   "rails": 541,
+   "rails_joined": 75,
+   "slot_overflow": 0,
+   "swaps": 144,
+   "ticks": 1007
+  },
+  "world_sha256": "be982583003b72ea57eb3be7d27af23ab2b37cc3fc3d544d0de3857c365e82ea"
+ }
+}

@@ -10,7 +10,7 @@
     const u = KW.codaFrac(f);
     if (u < 9 / 18) return;
     const fin = Math.min(1, (u - 9 / 18) / (1 / 18)), fout = u > 17 / 18 ? Math.min(1, (u - 17 / 18) / (1 / 18)) : 0;
-    ctx.fillStyle = 'rgba(7,9,14,' + (0.96 * fin).toFixed(3) + ')'; ctx.fillRect(0, 0, 1920, 1080);
+    ctx.fillStyle = 'rgba(7,9,14,' + (0.96 * fin).toFixed(3) + ')'; ctx.fillRect(0, 0, KW.LAY.W, KW.LAY.H);
     ctx.globalAlpha = fin;
     const x0 = 160, cols = [x0, x0 + 250, x0 + 410, x0 + 500, x0 + 690, x0 + 920, x0 + 1110, x0 + 1220, x0 + 1370], y0 = 150, rowH = 62;
     ctx.textBaseline = 'alphabetic'; ctx.textAlign = 'left';
@@ -36,10 +36,11 @@
       ctx.font = '24px ' + FONT; ctx.fillStyle = '#c9c3a8';
       ctx.fillText(r.commits, cols[6], y); ctx.fillText(r.files, cols[7], y); ctx.fillText(r.lines + ' lines', cols[8], y);
     }
+    if (D.card_third) { ctx.font = '22px ' + FONT; ctx.fillStyle = '#5f6779'; ctx.fillText(D.card_third, cols[0] + 34, y0 + 40 + (D.card.length + 1) * rowH + 6); }
     ctx.font = '20px ' + FONT; ctx.fillStyle = '#8b93a6';
     D.card_footer.forEach((t, i) => ctx.fillText(t, x0, 950 + i * 30));
     ctx.globalAlpha = 1;
-    if (fout > 0) { ctx.fillStyle = 'rgba(0,0,0,' + fout.toFixed(3) + ')'; ctx.fillRect(0, 0, 1920, 1080); }
+    if (fout > 0) { ctx.fillStyle = 'rgba(0,0,0,' + fout.toFixed(3) + ')'; ctx.fillRect(0, 0, KW.LAY.W, KW.LAY.H); }
   }
   KW.registerLayer({ id: 'card', z: 90, render: card });
 })();

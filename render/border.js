@@ -23,8 +23,7 @@
   function drawTicker(ctx, f) {
     const W = ctx.canvas.width, T = KW.tickerText(f);
     ctx.save();
-    ctx.fillStyle = '#0b0e14'; ctx.fillRect(0, 0, W, 64);
-    ctx.fillStyle = '#1b2230'; ctx.fillRect(0, 63, W, 1);
+    KW.plate(ctx, 0, 0, W, KW.LAY.top);
     ctx.textBaseline = 'alphabetic';
     ctx.font = '30px ' + FONT; ctx.fillStyle = '#e8e0c0';
     ctx.fillText(T.text, 24, 42);
@@ -59,16 +58,16 @@
   const fm = KW.fmt, UNIT = D.rate_unit_names;
   const compact = v => v >= 1e6 ? (v / 1e6).toFixed(1) + 'M' : v >= 1e3 ? (v / 1e3).toFixed(v >= 1e4 ? 0 : 1) + 'k' : String(Math.round(v));
   function drawLegend(ctx, f) {
-    const x0 = 1600, rowH = 136;
-    ctx.fillStyle = '#0b0e14'; ctx.fillRect(x0, 64, 320, 1016);
-    ctx.fillStyle = '#1b2230'; ctx.fillRect(x0, 64, 1, 1016);
+    const LY = KW.LAY, x0 = LY.W - LY.right, rowH = 136, PH = LY.H - LY.top;
+    KW.plate(ctx, x0, LY.top, LY.right, PH);
     ctx.textBaseline = 'alphabetic';
-    ctx.save(); ctx.beginPath(); ctx.rect(x0 + 1, 64, 319, 1016); ctx.clip();  // nothing of a row or chip leaves the panel
+    ctx.save(); ctx.beginPath(); ctx.rect(x0 + 1, LY.top, LY.right - 9, PH); ctx.clip();  // nothing of a row or chip leaves the panel
     for (let i = 0; i < N; i++) {
       const age = f - entry[i];
       if (age < 0) continue;
-      const u = Math.min(1, age / 12), s = u * u * (3 - 2 * u), dx = Math.round(320 * (1 - s));
+      const u = Math.min(1, age / 12), s = u * u * (3 - 2 * u), dx = Math.round(240 * (1 - s));
       const y = 64 + 12 + i * rowH, x = x0 + dx;
+      ctx.globalAlpha = s;
       const fl = age < 18 ? 1 - age / 18 : 0;
       ctx.fillStyle = KW.palette.rgba(i, 0.62 + 0.3 * fl, 1);
       ctx.fillRect(x + 14, y + 4, 16, 16);
@@ -116,6 +115,7 @@
       ctx.textAlign = 'right'; ctx.fillStyle = '#c9c3a8'; ctx.fillText(fm.commas(rateN[k]), x + 142, y + 121);
       if (crN) { ctx.textAlign = 'left'; ctx.fillStyle = '#8b93a6'; ctx.fillText('created~ ' + fm.compact(crN[k]), x + 160, y + 121); }
       ctx.textAlign = 'left';
+      ctx.globalAlpha = 1;
     }
     ctx.restore();
     ctx.textAlign = 'left';

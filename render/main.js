@@ -2,7 +2,9 @@
 (function () {
   const KW = window.KW, D = KW.D;
   const Q = new URLSearchParams(location.search);
-  const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+  const cv = document.getElementById('c');
+  cv.width = KW.LAY.W; cv.height = KW.LAY.H;
+  const ctx = cv.getContext('2d');
   KW.errors = [];
   function renderFrame(f) {
     f = Math.max(0, Math.min(KW.F - 1, f | 0));
@@ -13,7 +15,7 @@
     for (const l of KW.layers) {
       if (KW.off && KW.off.has(l.id)) continue;
       ctx.save();
-      if (l.map) { ctx.beginPath(); ctx.rect(V.x, V.y, V.w, V.h); ctx.clip(); }
+      if (l.map) { const C = KW.LAY.hud === 'plates' ? KW.FRAME : V; ctx.beginPath(); ctx.rect(C.x, C.y, C.w, C.h); ctx.clip(); }
       try { l.render(ctx, f); } catch (e) { KW.errors.push(l.id + '@' + f + ':' + e.message); }
       ctx.restore();
     }

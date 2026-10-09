@@ -24,6 +24,7 @@ import layout as lay
 import names as nm
 import nations as nat
 import series as ser
+import stream as stm
 import synth
 import tiles as til
 
@@ -123,8 +124,10 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
                        tmask=None if params["camera_ruins_in_box"] else (tkind != 2))
     cam_x, cam_y, cam_s = camera[:, 0].astype(np.float64), camera[:, 1].astype(np.float64), camera[:, 2].astype(np.float64)
 
+    cam_cx = cam.centre(params)[0]
+
     def screen_x(x, f):
-        return cam.CENTRE[0] + (x - cam_x[f]) * cam_s[f]
+        return cam_cx + (x - cam_x[f]) * cam_s[f]
 
     # ---- launches ----------------------------------------------------------------------------------------------------------
     gens = {r["nation"]: [] for r in nat_rows}
@@ -298,14 +301,20 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
                      "shapes": "%d / %d / %d" % tuple(int(v) for v in shape_cnt[i]), "tiles": "%d / %d" % (len(touched[i]), nT),
                      "parts": r["participations"]})
     tp = rt["totals"]["third"]
-    n_nonum_all = tp.get("clone_no_numstat", 0) + tp.get("own_third_class_no_numstat", 0) + rt["totals"]["no_numstat_counted"]
-    n_in = rt["totals"]["no_numstat_counted"]
-    if n_in:
-        f3 = "%s commits without line counts count as commits and files, 0 lines; %s more sit in third-party clones and in no total" % (format(n_in, ","), format(n_nonum_all - n_in, ","))
-    else:
-        f3 = "%s commits without line counts, all in third-party clones, are in no total: commits, files and lines here are Derek's lineages only" % format(n_nonum_all, ",")
+    lu = rt["totals"]["lines_uncapped"]
+    bulk = rt["totals"]["bulk_copy_excluded"]
     footer = ["no chat source covers 2026-04",
-              "no Claude Code transcript before 2026-05-08 survives: Claude is known from commit trailers only, 2026-01 to 2026-04", f3]
+              "no Claude Code transcript before 2026-05-08 survives: Claude is known from commit trailers only, 2026-01 to 2026-04"]
+    if params["bulk_copy_footer"] and bulk:
+        footer.append("bulk copies are not counted: %s births and %s updates left out of files created and updated" % (format(bulk["file_birth"], ","), format(bulk["file_update"], ",")))
+    if lu["cap"]:
+        footer.append("lines are capped at %s per commit, as in launch yield (%s commits); uncapped total %s added + removed" % (
+            format(lu["cap"], ","), format(lu["commits_capped"], ","), format(lu["total"], ",")))
+    card_third = None
+    if params["third_party_clones_row"] == "tally_card":
+        tl = tp.get("clone_lines_capped", 0) if lu["cap"] else tp.get("clone_lines", 0)
+        card_third = "third-party clones, explored not built: %s commits, %s lines, %s without line counts" % (
+            format(tp.get("clone_commits", 0), ","), format(int(tl), ","), format(tp.get("clone_no_numstat", 0), ","))
     for i, r in enumerate(card):
         k = nat_rows[i]["nation"]; tn = rt["totals"]["nation"][k]
         r["commits"] = format(tn["commits"], ","); r["files"] = format(tn["files_changed"], ",")
@@ -313,6 +322,8 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
     wt = rt["totals"]["world"]
     card_world = {"name": "world", "tests": int(sum(r["tests"] for r in card)), "commits": format(wt["commits"], ","), "files": format(wt["files"], ","),
                   "lines": "%s" % compact(wt["lines"])}
+    # ---- the stream ---------------------------------------------------------------------------------------------------------
+    st = stm.build(params, c, clock, launches, Wd, Tl, rfirst, nat_index) if params["stream"] == "on" else None
     # ---- data block ----------------------------------------------------------------------------------------------------------
     blk = bd.clock_block(clock, probe_f)
     f32 = lambda a: bd.b64(np.asarray(a).astype("<f4"))
@@ -369,9 +380,14 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
         "bs": bd.b64(bs.astype("<i4")), "br": bd.b64(br.astype("<u2")), "bw": bd.b64(bw), "bcn_n": bd.b64(bcn),
         "ring_f": bd.b64(rings.astype("<i4")),
         "seat": {h: bd.b64(np.minimum(255, series["seat_" + h]).astype("u1")) for h in ser.SEAT_HOSTS},
-        "card": card, "card_world": card_world, "card_footer": footer,
+        "card": card, "card_world": card_world, "card_footer": footer, "card_third": card_third,
+        "layout": {"W": int(params["frame_w"]), "H": int(params["frame_h"]), "hud": params["hud"], "alpha": params["hud_alpha"] if params["hud"] == "plates" else 1.0,
+                   "left": int(params["hud_left"]), "top": int(params["hud_top"]), "right": int(params["hud_right"]), "bottom": int(params["hud_bottom"]),
+                   "safe": list(cam.safe_area(params))},
         "terrain_L": params["terrain_L"], "terrain_C": params["terrain_C"], "collapse_thr": params["collapse_events_per_s"], "labels": params["labels"],
     })
+    if st is not None:
+        blk["stream"] = stream_block(st, params, fps)
     os.makedirs(outdir, exist_ok=True)
     data_path = os.path.join(outdir, "kw-data.js")
     rec["kw_data_sha256"] = bd.write_data_js(data_path, blk)
@@ -383,6 +399,9 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
     rec["audio_stats"] = astats
     rec["clock"] = clock.summary()
     rec["running_totals"] = rt["totals"]
+    if st is not None:
+        rec["stream"] = st["stats"]
+        rec["stream"]["edge_types"] = dict(st["edge_types"])
     if write_world:
         rec["world_sha256"] = write_world_json(os.path.join(outdir, "world.json"), Tl, Wd, tfirst, rfirst, params)
     hq_cross = None
@@ -403,6 +422,29 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
              "tiles": Tl, "world": Wd, "tfirst": tfirst, "rfirst": rfirst, "camera": camera, "rows": rows, "clock": clock, "corpus": c,
              "stats": stats, "tests": tests, "ng": ng, "eps": eps, "hq_host": hq_host, "hq_hosts": hq_hosts, "isl_f": isl_f}
     return rec, audio, data_path, clock, extra
+
+
+def stream_block(st, params, fps):
+    f32 = lambda a: bd.b64(np.asarray(a).astype("<f4"))
+    i32 = lambda a: bd.b64(np.asarray(a).astype("<i4"))
+    u8 = lambda a: bd.b64(np.asarray(a).astype("u1"))
+    rl, mv, tk = st["rail"], st["mirv"], st["ticks"]
+    ms, ml = [0], []
+    for (_f, _n, lanes) in mv:
+        ml += lanes; ms.append(len(ml))
+    return {"L": st["L"], "K": st["K"], "names": st["names"], "labels": params["stream_labels"],
+            "col_x": 1600 - int(params["stream_col_w"]), "col_w": int(params["stream_col_w"]), "ruler_w": stm.RULER_W,
+            "window_f": int(round(params["stream_window_s"] * fps)), "fade_f": max(2, int(round(params["stream_fade_s"] * fps))),
+            "conn_f": max(2, int(round(params["stream_connector_s"] * fps))),
+            "sid": u8(st["sl_id"].reshape(-1)), "sx": f32(st["sl_x"].reshape(-1)), "sa": u8(st["sl_a"].reshape(-1)),
+            "ss": i32(st["sl_since"].reshape(-1)), "sq": u8(st["quiet"]),
+            "n": int(len(st["cm_f"])), "cf": i32(st["cm_f"]), "cl": u8(st["cm_lane"]), "cn": u8(st["cm_nat"]), "cc": u8(st["cm_code"]), "cs": u8(st["cm_side"]),
+            "bf": i32(st["bridge_f"]), "con": u8([255 if x < 0 else x for x in st["lane_con"]]),
+            "nr": len(rl), "rf0": i32([r[0] for r in rl]), "rlane": u8([r[1] for r in rl]), "rf1": i32([r[2] for r in rl]),
+            "rflag": u8([r[3] for r in rl]), "rside": u8([r[4] for r in rl]),
+            "nm": len(mv), "mf": i32([r[0] for r in mv]), "mnat": u8([r[1] for r in mv]), "mstart": i32(ms), "mlane": u8(ml),
+            "ne": len(st["edges"]), "ea": u8([e[0] for e in st["edges"]]), "eb": u8([e[1] for e in st["edges"]]), "ef": i32([e[2] for e in st["edges"]]),
+            "nt": len(tk["f"]), "tf": i32(tk["f"]), "tl": u8(tk["level"]), "tlab": tk["label"]}
 
 
 def compact(v):

@@ -1,0 +1,66 @@
+{
+ "coda_f": 20110,
+ "edge_check": {
+  "19235": {
+   "nation_panel_outer_8px_differing": 0,
+   "tallies_outer_8px_differing": 0
+  },
+  "19237": {
+   "nation_panel_outer_8px_differing": 0,
+   "tallies_outer_8px_differing": 0
+  },
+  "19239": {
+   "nation_panel_outer_8px_differing": 0,
+   "tallies_outer_8px_differing": 0
+  },
+  "19241": {
+   "nation_panel_outer_8px_differing": 0,
+   "tallies_outer_8px_differing": 0
+  },
+  "19243": {
+   "nation_panel_outer_8px_differing": 0,
+   "tallies_outer_8px_differing": 0
+  },
+  "19245": {
+   "nation_panel_outer_8px_differing": 0,
+   "tallies_outer_8px_differing": 0
+  },
+  "19247": {
+   "nation_panel_outer_8px_differing": 0,
+   "tallies_outer_8px_differing": 0
+  },
+  "19249": {
+   "nation_panel_outer_8px_differing": 0,
+   "tallies_outer_8px_differing": 0
+  },
+  "19251": {
+   "nation_panel_outer_8px_differing": 0,
+   "tallies_outer_8px_differing": 0
+  },
+  "19253": {
+   "nation_panel_outer_8px_differing": 0,
+   "tallies_outer_8px_differing": 0
+  }
+ },
+ "errors": [],
+ "frames": {
+  "stream-2023-11": 2021,
+  "stream-2026-03-05": 4409,
+  "stream-2026-03-15": 5129,
+  "stream-2026-05-20": 9881,
+  "stream-2026-07-05": 13193,
+  "stream-2026-09-27": 19241,
+  "stream-2026-10-03": 19673,
+  "tally-card": 20530
+ },
+ "sha256": {
+  "stream-2023-11.png": "3ef8ef55a2dd493feac052a8699f3a512cbe7328c38074d126db0f00cae7d967",
+  "stream-2026-03-05.png": "954980d89988e3f1437da650e9d5fa9a2a72d6a86b543d698a227e91d7b1b241",
+  "stream-2026-03-15.png": "2d25f33ff86c7359b5aa33f69d97296bfa249053482abe1a4321d5aade1899e1",
+  "stream-2026-05-20.png": "ee9b9bd67d4e19c0808d3936c04ec0176b0f33db0596933b253ad3152d1f49cd",
+  "stream-2026-07-05.png": "66346b1b39df9606ec14af5c2312d9a775532decb16dfb502b441592cdffc0f8",
+  "stream-2026-09-27.png": "6da13c434032c22e3b54da5579eb331ce58ae75dd795d9a1f881756b8db70055",
+  "stream-2026-10-03.png": "eeee8967a8166e5f7f9e1bd89dbc285e1ddaec1a50ae67dc257b12ca34b4ff45",
+  "tally-card.png": "9dcccffe79cc98821cc38426372ad25a6a682b532b34b9e49b53e89e0b67308d"
+ }
+}

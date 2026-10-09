@@ -1,0 +1,40 @@
+{
+ "cut": {
+  "errors": [],
+  "frames": 1200,
+  "stream_delta": {
+   "max": 7.4,
+   "median": 2,
+   "p95": 4.3
+  },
+  "total": {
+   "max": 68.3,
+   "median": 10,
+   "p95": 41.1
+  },
+  "without_stream": {
+   "max": 61.4,
+   "median": 8.5,
+   "p95": 37.7
+  }
+ },
+ "full": {
+  "errors": [],
+  "frames": 1200,
+  "stream_delta": {
+   "max": 11.8,
+   "median": 0.4,
+   "p95": 6.3
+  },
+  "total": {
+   "max": 61.3,
+   "median": 9.7,
+   "p95": 38.4
+  },
+  "without_stream": {
+   "max": 72.2,
+   "median": 9.2,
+   "p95": 37.5
+  }
+ }
+}

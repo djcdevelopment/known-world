@@ -85,6 +85,7 @@ def load(params):
             if r in c.third:
                 tp["clone_commits"] += 1; tp["clone_no_numstat"] += int(_nn)
                 tp["clone_files"] += _m.get("files") or 0; tp["clone_lines"] += (_m.get("ins") or 0) + (_m.get("del") or 0)
+                tp["clone_lines_capped"] += min((_m.get("ins") or 0) + (_m.get("del") or 0), params["yield_cap_lines_per_commit"])
             elif cls == "third_party" and r in c.own:
                 tp["own_third_class_commits"] += 1; tp["own_third_class_no_numstat"] += int(_nn)
                 tp["own_third_class_files"] += _m.get("files") or 0; tp["own_third_class_lines"] += (_m.get("ins") or 0) + (_m.get("del") or 0)

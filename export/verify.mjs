@@ -44,7 +44,7 @@ for (const f of sf) out.state[f] = await a.page.evaluate(f => { const S = KW.new
 out.luminance = await a.page.evaluate(() => {
   const cv = document.getElementById('c'), ctx = cv.getContext('2d');
   const lum = () => {
-    const d = ctx.getImageData(240, 64, 1360, 896).data; let m = 0;
+    const d = ctx.getImageData(240, 64, 1100, 896).data; let m = 0;
     for (let i = 0; i < d.length; i += 4) {
       const lin = v => { v /= 255; return v <= 0.04045 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); };
       const r = lin(d[i]), g = lin(d[i + 1]), b = lin(d[i + 2]);

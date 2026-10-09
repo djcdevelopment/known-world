@@ -244,8 +244,15 @@ def running_totals(c, params, clock, nat_index, surfaces, hosts_fs, launches=Non
     cnt = np.zeros((nN, F)); fil = np.zeros((nN, F)); ins = np.zeros((nN, F)); dele = np.zeros((nN, F))
     np.add.at(cnt, (ni, fr), 1.0)
     np.add.at(fil, (ni, fr), np.array([x[3] for x in cm], dtype=np.float64))
-    np.add.at(ins, (ni, fr), np.array([x[4] for x in cm], dtype=np.float64))
-    np.add.at(dele, (ni, fr), np.array([x[5] for x in cm], dtype=np.float64))
+    ins_raw = np.array([x[4] for x in cm], dtype=np.float64)
+    del_raw = np.array([x[5] for x in cm], dtype=np.float64)
+    raw = ins_raw + del_raw
+    cap = float(params["yield_cap_lines_per_commit"])
+    # Fable 2026-10-10: displayed lines use the launch yield's cap, so "lines" means one thing everywhere (totals_line_cap: yield | none)
+    sc = np.where(raw > cap, cap / np.maximum(raw, 1.0), 1.0) if params["totals_line_cap"] == "yield" else np.ones(len(cm))
+    n_capped = int((sc < 1.0).sum())
+    np.add.at(ins, (ni, fr), ins_raw * sc)
+    np.add.at(dele, (ni, fr), del_raw * sc)
     cum = lambda a: np.cumsum(a, axis=-1)
     ccum, fcum, icum, dcum = cum(cnt), cum(fil), cum(ins), cum(dele)
     # surfaces: commits by host, files created / updated by host (bulk copies excluded unless births_exclude_bulk is false)
@@ -310,6 +317,7 @@ def running_totals(c, params, clock, nat_index, surfaces, hosts_fs, launches=Non
         "nation": {k: {"commits": int(ccum[i, -1]), "files_changed": int(fcum[i, -1]), "lines_added": int(icum[i, -1]), "lines_removed": int(dcum[i, -1])} for k, i in nat_index.items()},
         "surface": {s: {"commits": int(sc_commits[i, -1]), "files_created": int(sc_created[i, -1]), "files_updated": int(sc_updated[i, -1])} for s, i in sidx.items()},
         "world": {"commits": int(w_commits[-1]), "files": int(w_files[-1]), "lines": int(w_lines[-1])},
+        "lines_uncapped": {"added": int(ins_raw.sum()), "removed": int(del_raw.sum()), "total": int(raw.sum()), "commits_capped": n_capped, "cap": int(cap) if params["totals_line_cap"] == "yield" else None},
         "bulk_copy_excluded": bulk_n if excl else {}, "no_numstat_counted": int(sum(1 for x in cm if x[6])),
         "third": c.third_totals,
     }

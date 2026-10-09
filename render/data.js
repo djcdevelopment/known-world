@@ -11,8 +11,19 @@
   KW.tau = f64(D.tau);
   KW.era = u8(D.era);
   KW.F = D.F; KW.fps = D.fps;
-  // map area on the 1920 x 1080 canvas: left 240 tallies, top 64 ticker, right 320 legend, bottom 120 band
-  KW.VIEW = { x: 240, y: 64, w: 1360, h: 896, cx: 920, cy: 512 };
+  // layout from the viewport (the compile writes the frame size and the HUD insets; nothing below hard-codes 1920 x 1080).
+  // The map owns the whole frame; the plates (ticker, tallies, stream, nations, band) hug the edges at about 60 percent opacity
+  // and the camera fits the known world into the safe area, the frame minus the plates' insets (KW.VIEW).
+  const LY = D.layout || { W: 1920, H: 1080, hud: 'columns', alpha: 1, left: 240, top: 64, right: 320, bottom: 120, safe: [240, 64, 1360, 896] };
+  KW.LAY = LY;
+  KW.FRAME = { x: 0, y: 0, w: LY.W, h: LY.H };
+  KW.VIEW = { x: LY.safe[0], y: LY.safe[1], w: LY.safe[2], h: LY.safe[3], cx: LY.safe[0] + LY.safe[2] / 2, cy: LY.safe[1] + LY.safe[3] / 2 };
+  // a HUD plate: translucent dark panel with a 1 px border (opaque under hud: columns)
+  KW.plate = function (ctx, x, y, w, h) {
+    ctx.fillStyle = 'rgba(11,14,20,' + LY.alpha.toFixed(3) + ')'; ctx.fillRect(x, y, w, h);
+    ctx.fillStyle = LY.alpha < 1 ? 'rgba(74,86,112,0.55)' : '#1b2230';
+    ctx.fillRect(x, y, w, 1); ctx.fillRect(x, y + h - 1, w, 1); ctx.fillRect(x, y, 1, h); ctx.fillRect(x + w - 1, y, 1, h);
+  };
   // running totals helpers: thousands separators, compact figures, and the shared log scale of the micro-bars
   // (0 below 10; full at 10^7.5; faint ticks at 1k, 10k, 100k, 1M)
   const commas = v => { let s = String(Math.round(v)), o = ''; while (s.length > 3) { o = ',' + s.slice(-3) + o; s = s.slice(0, -3); } return s + o; };

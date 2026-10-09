@@ -40,7 +40,7 @@
 <body>
 <header>
   <h1>Known World <span>· living plan</span></h1>
-  <p>A fog-of-war time-lapse of everything built on the lab's surfaces, repos and chats · goal G-known-world · updated 2026-10-10 11:30Z</p>
+  <p>A fog-of-war time-lapse of everything built on the lab's surfaces, repos and chats · goal G-known-world · updated 2026-10-10 13:10Z</p>
 </header>
 <main>
   <section class="c12">
@@ -58,7 +58,7 @@
         <tr><td>—</td><td>Launch probe (payload model on real data)</td><td><span class="pill done">done</span></td><td>415 launches on Derek's lineages at the default thresholds (215 single, 200 MIRV); MIRVs rise from 0 in January to 47 of 70 in July 2026; yields span five orders of magnitude; nations enter 2017 (human), 2023-04 (ChatGPT), 2025-10 (Claude), 2026-06 (Codex), 2026-07 (builders, local seats), 2026-09 (OpenCode)</td><td><code>laps/PROBE-00-launches/RESULT.md</code></td></tr>
         <tr><td>—</td><td>Running totals (slice 8) and private GitHub repos (task 1d)</td><td><span class="pill done">done</span></td><td>Totals on screen; 93 GitHub repos listed (39 private), 4 mirrored, merge swapped (216,796 events)</td><td><code>laps/LAP-11-running-totals/</code>, CORPUS-REPORT §15</td></tr>
         <tr><td>—</td><td>The stream (slice 9) and full-bleed HUD</td><td><span class="pill done">done</span></td><td>Lanes, rails, connectors; HUD plates; tight-start camera; full re-export 4.4 min</td><td><code>laps/LAP-12-stream/</code></td></tr>
-        <tr><td>—</td><td>The player (slice 10) + update-rule fix (1e)</td><td><span class="pill running">running</span></td><td>Speed steps 1 to 4, scrubber hashmarks (eras, continents, nations, migration, storm, regime changes), portrait layout, camera steered by the warm world; corpus v1.6 drops preserved-timestamp updates</td><td>DIRECTION.md rev 4; CONTRACT v1.6</td></tr>
+        <tr><td>—</td><td>The player (slice 10) + update-rule fix (1e)</td><td><span class="pill done">done</span></td><td>Speed steps 1 to 4, scrubber hashmarks (eras, continents, nations, migration, storm, regime changes), portrait layout, camera steered by the warm world; corpus v1.6 drops preserved-timestamp updates</td><td>DIRECTION.md rev 4; CONTRACT v1.6</td></tr>
         <tr><td>—</td><td>Local-seat repo-card arm</td><td><span class="pill deferred">deferred</span></td><td>Capability record per seat</td><td>30B and AM4 tool seats absent under the bench27 all-27B hold; door: default lane not live</td></tr>
       </tbody>
     </table>
@@ -183,6 +183,24 @@
       <img src="laps/LAP-12-stream/stills/stream-2026-03-05.png" alt="2026-03-05" style="width:100%; border:1px solid var(--border); border-radius:4px">
       <img src="laps/LAP-12-stream/stills/stream-2026-09-27.png" alt="2026-09-27" style="width:100%; border:1px solid var(--border); border-radius:4px">
     </p>
+  </section>
+  <section class="c12">
+    <h2>Slice 10: the player, the marks, portrait, the camera (2026-10-10)</h2>
+    <p style="font-size:13px; color:var(--text-2); margin-bottom:10px">Player: play/pause, speed steps 1 · 1.5 · 2 · 3 · 4 (<code>-- - + ++</code>, keys too), a scrubber with 31 hashmarks (eras, new continents, nations entering, the migration, the storm, 15 regime changes from a piecewise fit of the cumulative series), hover names on lanes and nations; the film position is read from the audio clock so picture and sound cannot drift. Portrait layouts at phone and tablet sizes. Camera steered by the warm, weighty world: the opening scale now holds 30.8 s before the first pull-back. Corpus v1.6 (preserved timestamps dropped). Full export 4.6 min: <code>laps/LAP-13-player/out/full/final.mp4</code>. Player: <code>.venv/bin/python -I export/serve.py 8765</code> then <code>http://127.0.0.1:8765/render/index.html?data=../laps/LAP-13-player/build-full/kw-data.js</code>.</p>
+    <p style="display:grid; grid-template-columns: 2fr 2fr 1fr; gap:8px; align-items:start">
+      <img src="laps/LAP-13-player/stills/2023-11.png" alt="2023-11 tight start" style="width:100%; border:1px solid var(--border); border-radius:4px">
+      <img src="laps/LAP-13-player/stills/2026-03-05.png" alt="2026-03-05" style="width:100%; border:1px solid var(--border); border-radius:4px">
+      <img src="laps/LAP-13-player/stills/portrait-390x844-2026-09-27.png" alt="phone portrait" style="width:100%; border:1px solid var(--border); border-radius:4px">
+    </p>
+    <table>
+      <thead><tr><th>Open (Derek's call)</th><th>Arms</th><th>Default now</th></tr></thead>
+      <tbody>
+        <tr><td>Do launches steer the camera?</td><td>all · none</td><td>all: a real test anywhere pulls the view back (the 2023-11-03 test on a far directory ends the first tight start); none keeps 2023-11 tighter but hides a test off screen</td></tr>
+        <tr><td>Tile weight to steer</td><td>3 · 6 commits' worth</td><td>3 (tight start 30.8 s; 6 gives 52 s)</td></tr>
+        <tr><td>Regime-change slope unit</td><td>year · era unit; threshold 0.5</td><td>year (the era-unit reading finds no marks at 0.5)</td></tr>
+        <tr><td>Portrait stream</td><td>hidden · thin strip</td><td>hidden</td></tr>
+      </tbody>
+    </table>
   </section>
   <section class="c12">
     <h2>Laps</h2>

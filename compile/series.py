@@ -75,6 +75,7 @@ def class_series(c, params, clock, nat_index):
     F = clock.F
     chat = {k: [] for k in ("chatgpt", "claude", "codex", "opencode")}
     chatw = {k: [] for k in chat}
+    start_t = common.start_epoch(params)
     for line in open(os.path.join(MERGED, "events.ndjson")):
         if '"chat_msg"' not in line:
             continue
@@ -83,7 +84,10 @@ def class_series(c, params, clock, nat_index):
             continue
         k = e["actor"]["class"]
         if k in chat:
-            chat[k].append(parse_ts(e["ts"])); chatw[k].append(e["magnitude"]["n"])
+            t_ = parse_ts(e["ts"])
+            if start_t is not None and t_ < start_t:
+                continue
+            chat[k].append(t_); chatw[k].append(e["magnitude"]["n"])
     out = {}
     for k in chat:
         f = clock.frame(np.array(chat[k], dtype=np.int64))

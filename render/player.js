@@ -112,8 +112,8 @@
   setAudioLbl();
   const bar = el('bar', tpWrap); if (por) { bar.style.flexBasis = '100%'; bar.style.flexGrow = '0'; }
   // era segments
-  const sw = D.era_switch_f, edges = [0, sw[0], sw[1], F - 1];
-  [0.05, 0.11, 0.19].forEach((a, i) => { const s = el('seg', bar); s.style.left = (100 * edges[i] / (F - 1)) + '%'; s.style.width = (100 * (edges[i + 1] - edges[i]) / (F - 1)) + '%'; s.style.background = 'rgba(160,170,196,' + a + ')'; s.style.borderRight = i < 2 ? '1px solid rgba(' + KW.C.fgRgb + ',.35)' : 'none'; });
+  const sw = D.era_switch_f, edges = [0].concat(sw, [F - 1]), shades = sw.length ? [0.05, 0.11, 0.19] : [0.08];   // the clock's era list: one segment under eras: single
+  shades.forEach((a, i) => { const s = el('seg', bar); s.style.left = (100 * edges[i] / (F - 1)) + '%'; s.style.width = (100 * (edges[i + 1] - edges[i]) / (F - 1)) + '%'; s.style.background = 'rgba(160,170,196,' + a + ')'; s.style.borderRight = i < shades.length - 1 ? '1px solid rgba(' + KW.C.fgRgb + ',.35)' : 'none'; });
   const fill = el('fill', bar), head = el('head', bar);
   const marks = (D.marks || []).slice();
   const mkEls = marks.map(m => { const d = el('mk', bar); d.style.left = (100 * m.frame / (F - 1)) + '%'; const i = el('', d, undefined, 'i'); i.style.background = KW.markColor(m.kind, 0.9); d._m = m; return d; });

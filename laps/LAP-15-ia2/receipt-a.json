@@ -1,0 +1,38 @@
+{
+ "F": 2700,
+ "epoch0_days": 20454,
+ "era_switch_f": [],
+ "eras": 1,
+ "intro_f": 60,
+ "marks": [
+  "migration",
+  "nation",
+  "regime",
+  "storm",
+  "surface"
+ ],
+ "prologue": {
+  "counts": {
+   "chat_msgs": 4808,
+   "commits": 5,
+   "conversations": 223,
+   "events": 4522,
+   "repos": 3,
+   "third_party_events": 17666
+  },
+  "text": "Earlier evidence, 2011-08 to 2025-12: 223 ChatGPT conversations, 5 commits, 3 repositories. The story begins 2026-01-01."
+ },
+ "rate_labels": [
+  "",
+  "",
+  "1 day = 0.29 s \u00b7 \u00d78.24"
+ ],
+ "ruler_first_label": [
+  "",
+  "",
+  ""
+ ],
+ "tau_max": 281.65357638888963,
+ "tau_min": 0.0,
+ "twice_equal": true
+}

@@ -38,10 +38,43 @@ class Clock:
     def __init__(self, params, snapshot_epoch, cut_s=None):
         self.p = params
         self.fps = params["fps"]
+        self.single = params.get("eras") == "single"
+        eN = snapshot_epoch / DAY
+        if self.single:
+            # One era: a constant rate from start_date to the snapshot, no boundaries, no glides. The era index of every frame is 2 (the
+            # day-grain ticker, the week unit of the rates, the 30-day regime minimum): the three-era consumers read one era, unchanged.
+            e0 = _epoch_days(params["start_date"])
+            self.epoch0 = e0
+            self.bounds_days = [0.0, 0.0]
+            self.end_days = eN - e0
+            rC = params["era_rates"]["C"]["seconds"]
+            self.rates = [1.0 / rC] * 3
+            self.base_tau = np.array([0.0, eN - e0])
+            self.base_s = np.array([0.0, rC * (eN - e0)])
+            self.tau_k, self.s_k = self.base_tau.copy(), self.base_s.copy()
+            self.glide_out = []
+        else:
+            self._init_three(params, eN)
+
+        self.story_s = float(self.s_k[-1])
+        self.intro_s = float(params["prologue_s"]) if self.single else float(params["intro_s"])
+        self.coda_s = float(params["coda_s"])
+        self.m = 1.0
+        if cut_s:
+            # 90 s cut: story state compresses by m = story / (cut - intro - coda); intro 1 s, coda 6 s (STRATEGY 8)
+            self.intro_s, self.coda_s = (float(params["prologue_cut_s"]) if self.single else 1.0), 6.0
+            m = params["cut_90s_multiple"]
+            self.m = self.story_s / (cut_s - self.intro_s - self.coda_s) if m == "auto" else float(m)
+            self.s_k = self.s_k / self.m
+            self.glide_out = [tuple(x / self.m for x in g) for g in self.glide_out]
+            self.story_s = float(self.s_k[-1])
+        self.total_s = self.intro_s + self.story_s + self.coda_s
+        self.F = int(round(self.total_s * self.fps))
+
+    def _init_three(self, params, eN):
         e0 = _epoch_days(params["era_bounds"]["A"])
         eB = _epoch_days(params["era_bounds"]["B"])
         eC = _epoch_days(params["era_bounds"]["C"])
-        eN = snapshot_epoch / DAY
         self.epoch0 = e0
         self.bounds_days = [eB - e0, eC - e0]
         self.end_days = eN - e0
@@ -111,20 +144,6 @@ class Clock:
         assert np.all(np.diff(self.tau_k) > 0) and np.all(np.diff(self.s_k) > 0)
         if not self.glide_out:
             self.glide_out = [(float(np.interp(b, self.tau_k, self.s_k)),) * 3 for b in self.bounds_days]
-        self.story_s = float(self.s_k[-1])
-        self.intro_s = float(params["intro_s"])
-        self.coda_s = float(params["coda_s"])
-        self.m = 1.0
-        if cut_s:
-            # 90 s cut: story state compresses by m = story / (cut - intro - coda); intro 1 s, coda 6 s (STRATEGY 8)
-            self.intro_s, self.coda_s = 1.0, 6.0
-            m = params["cut_90s_multiple"]
-            self.m = self.story_s / (cut_s - self.intro_s - self.coda_s) if m == "auto" else float(m)
-            self.s_k = self.s_k / self.m
-            self.glide_out = [tuple(x / self.m for x in g) for g in self.glide_out]
-            self.story_s = float(self.s_k[-1])
-        self.total_s = self.intro_s + self.story_s + self.coda_s
-        self.F = int(round(self.total_s * self.fps))
 
     # --- forward map ---------------------------------------------------
     def tau_of_epoch(self, t_epoch):
@@ -148,6 +167,9 @@ class Clock:
         """era index per frame (0 A, 1 B, 2 C); switches at the glide midpoint."""
         s = np.arange(self.F) / self.fps - self.intro_s
         era = np.zeros(self.F, dtype=np.uint8)
+        if self.single:
+            era[:] = 2
+            return era
         for i, (_, mid, _) in enumerate(self.glide_out):
             era[s >= mid] = i + 1
         return era
@@ -162,6 +184,10 @@ class Clock:
         return (b - a) / h
 
     def rate_labels(self):
+        if self.single:   # the page indexes by era; the single era is index 2
+            c = self.p["era_rates"]["C"]["seconds"]
+            lab = ("1 day = %.2f s \u00b7 \u00d7%.2f" % (c / self.m, self.m)) if self.m != 1.0 else ("1 day = %g s" % c)
+            return ["", "", lab]
         if self.m != 1.0:
             return ["1 yr = %.2f s \u00b7 \u00d7%.2f" % (self.p["era_rates"]["A"]["seconds"] / self.m, self.m),
                     "1 mo = %.2f s \u00b7 \u00d7%.2f" % (self.p["era_rates"]["B"]["seconds"] / self.m, self.m),
@@ -172,9 +198,14 @@ class Clock:
 
     def era_edges_s(self):
         """Output second (intro included) of each era boundary (glide midpoint) for strip ticks."""
+        if self.single:
+            return []
         return [self.intro_s + m for (_, m, _) in self.glide_out]
 
     def summary(self):
+        if self.single:
+            return {"frames": self.F, "total_s": round(self.total_s, 3), "story_s": round(self.story_s, 3), "intro_s": self.intro_s, "coda_s": self.coda_s,
+                    "m": round(self.m, 4), "eras": "single", "start_date": self.p["start_date"], "story_days": round(self.end_days, 3)}
         return {"frames": self.F, "total_s": round(self.total_s, 3), "story_s": round(self.story_s, 3),
                 "intro_s": self.intro_s, "coda_s": self.coda_s, "m": round(self.m, 4),
                 "boundary_out_s": [round(x, 3) for x in self.era_edges_s()],

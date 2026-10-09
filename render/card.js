@@ -6,7 +6,26 @@
   const FONT = '"JetBrains Mono", monospace';
   KW.codaLen = D.F - D.coda_f;
   KW.codaFrac = f => (f - D.coda_f) / KW.codaLen;
+  // the prologue card (eras: single): the first intro seconds, one line that says what came before the story's first day. It fades in over 0.3 s and out
+  // over 0.5 s onto the (empty) world; nothing else says it (the honesty rule). The text comes from the compile (counts only).
+  function wrapLine(ctx, text, w) {
+    const words = text.split(' '), out = []; let cur = '';
+    for (const t of words) { const nx = cur ? cur + ' ' + t : t; if (ctx.measureText(nx).width > w && cur) { out.push(cur); cur = t; } else cur = nx; }
+    if (cur) out.push(cur); return out;
+  }
+  function prologue(ctx, f) {
+    const LY = KW.LAY, n = D.intro_f, fin = Math.min(1, (f + 1) / 9), fout = Math.min(1, Math.max(0, (n - f) / 15));
+    const a = Math.min(fin, fout);
+    ctx.fillStyle = 'rgba(7,9,14,' + (a).toFixed(3) + ')'; ctx.fillRect(0, 0, LY.W, LY.H);
+    const por = LY.mode === 'portrait', px = por ? 17 : 30, lh = Math.round(px * 1.5), w = LY.W - (por ? 40 : 360);
+    ctx.font = px + 'px ' + FONT; ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic';
+    const lines = wrapLine(ctx, D.prologue.text, w), y0 = Math.round(LY.H / 2 - (lines.length - 1) * lh / 2);
+    ctx.fillStyle = 'rgba(' + KW.C.fgRgb + ',' + a.toFixed(3) + ')';
+    lines.forEach((t, i) => ctx.fillText(t, LY.W / 2, y0 + i * lh));
+    ctx.textAlign = 'left';
+  }
   function card(ctx, f) {
+    if (D.prologue && f < D.intro_f) { prologue(ctx, f); return; }
     const u = KW.codaFrac(f);
     if (u < 9 / 18) return;
     const fin = Math.min(1, (u - 9 / 18) / (1 / 18)), fout = u > 17 / 18 ? Math.min(1, (u - 17 / 18) / (1 / 18)) : 0;
@@ -52,8 +71,8 @@
         ctx.fillText(r.tests, cols[2], y); ctx.fillText(r.commits, cols[6], y); ctx.fillText(r.files, cols[7], y); ctx.fillText(r.created + ' / ' + r.updated, cols[8], y);
       });
     }
-    ctx.font = '20px ' + FONT; ctx.fillStyle = KW.C.muted;
-    D.card_footer.forEach((t, i) => ctx.fillText(t, x0, 950 + i * 30));
+    ctx.font = '18px ' + FONT; ctx.fillStyle = KW.C.muted;
+    { let yf = 936; for (const t of D.card_footer) for (const ln of wrapLine(ctx, t, 1600)) { ctx.fillText(ln, x0, yf); yf += 24; } }
     ctx.globalAlpha = 1;
     if (fout > 0) { ctx.fillStyle = 'rgba(0,0,0,' + fout.toFixed(3) + ')'; ctx.fillRect(0, 0, KW.LAY.W, KW.LAY.H); }
   }

@@ -308,6 +308,17 @@ def _ruler(params, clock):
         if f not in out or level > out[f][0]:
             out[f] = (level, label)
     import datetime as dt
+    if clock.single:   # one era: day ticks from the start date, the first day is the hard tick
+        t = int(round(clock.epoch0 * 86400))
+        while t <= end:
+            d = dt.datetime.fromtimestamp(t, dt.UTC)
+            add(t, 1, "%02d\u00b7%02d" % (d.month, d.day))
+            for hh in (6, 12, 18):
+                add(t + hh * 3600, 0, "")
+            t += 86400
+        add(int(round(clock.epoch0 * 86400)), 2, "")
+        fs = sorted(out)
+        return {"f": fs, "level": [out[f][0] for f in fs], "label": [out[f][1] for f in fs]}
     for y in range(2011, 2024):
         for m in (1, 4, 7, 10):
             t = _epoch(y, m, 1)

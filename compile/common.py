@@ -74,6 +74,13 @@ def day_epoch(datestr):
     return calendar.timegm((y, m, d, 0, 0, 0))
 
 
+def start_epoch(params):
+    """Unix seconds of the story's first day under `eras: single`, else None (the three-era clock starts at era_bounds A)."""
+    if params.get("eras") == "single":
+        return day_epoch(params["start_date"])
+    return None
+
+
 def corpus_inputs():
     names = ["events.ndjson", "repos.json", "sessions.json", "hosts.json", "actors.json", "stats.json",
              "relations.json", "chatgpt_links.json"]

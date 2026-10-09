@@ -4,7 +4,7 @@ import collections
 import json
 import os
 
-from common import MERGED, parse_ts
+from common import MERGED, parse_ts, start_epoch, iso
 
 AI = ("claude", "codex", "opencode", "automation", "local_model")
 SESSION_CLASSES = ("claude", "codex", "opencode")
@@ -61,6 +61,8 @@ def load(params):
     gen_first = {}  # (class, canon-minor-or-raw) -> (t, source)
     sess_models = {}
     n_events = 0
+    start_t = start_epoch(params)
+    pro = {"conversations": set(), "commits": 0, "repos": set(), "events": 0, "t0": None, "t1": None, "third_party_events": 0, "chat_msgs": 0}
     for line in open(os.path.join(MERGED, "events.ndjson")):
         e = json.loads(line)
         n_events += 1
@@ -69,6 +71,25 @@ def load(params):
         a = e["actor"]
         cls = a["class"]
         r = e.get("repo")
+        if start_t is not None and t < start_t:
+            # The story starts at start_date (eras: single): earlier evidence is tallied for the prologue card and never indexed, so no total,
+            # first-touch, entry or episode counts it (a frame clamp would pile it on frame 0). A GitHub repository born earlier keeps its birth at
+            # the start (it existed from the first frame on); everything else is dropped from the story.
+            own = cls != "third_party" and r not in c.third
+            if own:
+                pro["events"] += 1
+                pro["t0"] = t if pro["t0"] is None else min(pro["t0"], t); pro["t1"] = t if pro["t1"] is None else max(pro["t1"], t)
+                if cls == "chatgpt":
+                    pro["conversations"].add((e.get("meta") or {}).get("session"))
+                    if k == "chat_msg":
+                        pro["chat_msgs"] += e["magnitude"]["n"]
+                if k == "commit" and r in c.own:
+                    pro["commits"] += 1; pro["repos"].add(r)
+            else:
+                pro["third_party_events"] += 1
+            if not (k == "repo_born" and e.get("host") == "github"):
+                continue
+            t = start_t
         if cls != "third_party" and k in FIRST_EVENT_KINDS and (r not in c.third or params["first_event_include_third_party"]):
             if cls not in first_event or t < first_event[cls]:
                 first_event[cls] = t
@@ -157,6 +178,17 @@ def load(params):
                 d["t1"] = t if d["t1"] is None else max(d["t1"], t)
                 d["nrec"] += 1
     c.n_events = n_events
+    c.start_t = start_t
+    c.prologue = None
+    if start_t is not None:
+        ym = lambda x: iso(x)[:7]
+        c.prologue = {"start": params["start_date"], "conversations": len(pro["conversations"]), "commits": pro["commits"], "repos": len(pro["repos"]),
+                      "events": pro["events"], "chat_msgs": pro["chat_msgs"], "third_party_events": pro["third_party_events"],
+                      "first": ym(pro["t0"]) if pro["t0"] else "", "last": ym(pro["t1"]) if pro["t1"] else ""}
+        for l in c.lineages.values():   # a lineage that began earlier first-touches at the start
+            for key in ("first_ts",):
+                if l.get(key) and parse_ts(l[key]) < start_t:
+                    l[key] = iso(start_t)
     c.tot_commits, c.fs_rows, c.third_totals = sorted(tot_commits), sorted(fs_rows, key=lambda x: (x[0], x[1], x[2], str(x[5]))), dict(tp)
     c.third_paths, c.third_hosts, c.chat_all, c.sess_events, c.gh_born, c.dir_touch, c.nc_first = third_paths, third_hosts, sorted(chat_all), sorted(sess_events), sorted(gh_born, key=lambda x: (x[0], str(x[1]))), dir_touch, nc_first
     for r in dir_touch:

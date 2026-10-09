@@ -327,8 +327,7 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
     tp = rt["totals"]["third"]
     lu = rt["totals"]["lines_uncapped"]
     bulk = rt["totals"]["bulk_copy_excluded"]
-    footer = ["no chat source covers 2026-04",
-              "no Claude Code transcript before 2026-05-08 survives: Claude is known from commit trailers only, 2026-01 to 2026-04"]
+    footer = list(params["uncertainty_footer"])
     if params["bulk_copy_footer"] and bulk:
         footer.append("bulk copies are not counted: %s births and %s updates left out of files created and updated" % (format(bulk["file_birth"], ","), format(bulk["file_update"], ",")))
     if lu["cap"]:
@@ -349,7 +348,7 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
     # ---- marks (the scrubber's hashmarks, the ticker hairline's ticks) -------------------------------------------------------
     marks, marks_diag = [], {}
     if params["marks"] == "on":
-        sw_f = [int(np.argmax(clock.era_frames() >= i + 1)) for i in range(2)]
+        sw_f = [] if clock.single else [int(np.argmax(clock.era_frames() >= i + 1)) for i in range(2)]
         hq_lin = hq_hosts.index("omen-linux")
         hq_cross = int(np.argmax(hq_host == hq_lin)) if (hq_host == hq_lin).any() else None
         marks, marks_diag = mk.build(params, clock, sw_f, [(SURFACE_LABEL[s_], int(sf_first[s_])) for s_ in SURFACES],
@@ -416,6 +415,7 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
         "ring_f": bd.b64(rings.astype("<i4")),
         "seat": {h: bd.b64(np.minimum(255, series["seat_" + h]).astype("u1")) for h in ser.SEAT_HOSTS},
         "marks": marks,
+        "intro_f": int(round(clock.intro_s * fps)), "prologue": prologue_block(c, params),
         "card": card, "card_world": card_world, "card_footer": footer, "card_third": card_third,
         "layout": {"W": int(params["frame_w"]), "H": int(params["frame_h"]), "kind": params["layout"], "hud": params["hud"], "alpha": params["hud_alpha"] if params["hud"] == "plates" else 1.0,
                    "left": int(params["hud_left"]), "top": int(params["hud_top"]), "right": int(params["hud_right"]), "bottom": int(params["hud_bottom"]),
@@ -502,6 +502,15 @@ def stream_block(st, params, fps):
             "nm": len(mv), "mf": i32([r[0] for r in mv]), "mnat": u8([r[1] for r in mv]), "mstart": i32(ms), "mlane": u8(ml),
             "ne": len(st["edges"]), "ea": u8([e[0] for e in st["edges"]]), "eb": u8([e[1] for e in st["edges"]]), "ef": i32([e[2] for e in st["edges"]]),
             "nt": len(tk["f"]), "tf": i32(tk["f"]), "tl": u8(tk["level"]), "tlab": tk["label"]}
+
+
+def prologue_block(c, params):
+    """The prologue card's one line (counts and months only; nothing named): what the corpus holds from before the story's first day."""
+    p = getattr(c, "prologue", None)
+    if not p:
+        return None
+    return {"text": params["prologue_text"].format(start=p["start"], conversations=format(p["conversations"], ","), commits=format(p["commits"], ","),
+                                                   repos=format(p["repos"], ","), first=p["first"], last=p["last"]), "counts": {k: p[k] for k in ("conversations", "commits", "repos", "events", "chat_msgs", "third_party_events")}}
 
 
 def compact(v):

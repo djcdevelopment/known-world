@@ -829,3 +829,73 @@ Commits added: 43 mirrored commits in total, but continuity and conductor alread
 | relations nodes joined / edges | 88 / 223 | 88 / 223 (no delta) |
 
 The merge, relations and chatgpt_links outputs were built into `corpus/.merge-tmp` (privacy scan exit 0). The swap into `corpus/merged` is pending the running builder; the exact command is in MERGE-READY.md. `relations.py` and `chatgpt_links.py` gained `--out DIR`.
+
+## 16. Update rule v1.6 (task 1e)
+
+Rule (CONTRACT.md section 1, v1.6): `file_update` is counted only when the mtime day is after the birth day. An mtime on an earlier day than the birth is a timestamp preserved through a copy from elsewhere: no update on this surface, dropped and counted in manifest `coverage.preserved_mtime` (per source in `sources[].preserved_mtime`). Same-day mtimes stay births only. Files with no birth time (no `%W`) keep the old behaviour (mtime stands in for birth, no update); they are counted in `coverage.update_birth_missing` when present (none in these six items: every file had a birth time). Local and ssh walks share one code path (`fs_births.process_source`), so both hosts follow the rule. Births are unchanged by the rule. The manifest allowlist now accepts `preserved_mtime` in `sources`. Re-run: all six births items with `--fresh`, each `privacy_scan.py` exit 0.
+
+### 16.1 Per item
+
+| Item | file_birth records before | after | Files folded (births) before | after | file_update records before | after | Files folded (updates) before | after | Preserved-mtime files dropped | Null-mtime files (unchanged) |
+|---|---|---|---|---|---|---|---|---|---|---|
+| c-births | 607 | 607 | 174,498 | 174,498 | 508 | 105 | 34,863 | 2,346 | 32,517 | 28,661 |
+| e-births | 662 | 662 | 81,408 | 81,408 | 228 | 78 | 12,499 | 452 | 12,047 | 0 |
+| e-root-births | 1,243 | 1,243 | 491,667 | 491,667 | 703 | 197 | 30,172 | 2,924 | 27,248 | 58 |
+| linux-births | 600 | 617 | 28,769 | 28,802 | 146 | 8 | 5,474 | 15 | 5,459 | 30 |
+| am4-births | 109 | 109 | 18,372 | 18,372 | 11 | 4 | 2,393 | 268 | 2,125 | 0 |
+| fx99-births | 52 | 52 | 3,873 | 3,873 | 197 | 6 | 3,475 | 8 | 3,467 | 0 |
+| total | 3,273 | 3,290 | 798,587 | 798,620 | 1,793 | 398 | 88,876 | 6,013 | 82,863 | |
+
+Births equal the previous run for every item except `linux-births` (+17 records, +33 files): the live Linux home gained files on 2026-10-09 after the previous run; all 600 earlier records are identical, the 17 new ones are dated today. Not an effect of the rule. File-update records fell from 1,793 to 398 (files 88,876 to 6,013).
+
+### 16.2 File activity (files folded into births + updates), per host and year, before -> after, 2014 to 2025
+
+| Year | am4 | fx99 | omen-c | omen-e | omen-linux | all hosts |
+|---|---|---|---|---|---|---|
+| 2014 | 0 | 0 | 0 | 2 -> 0 | 0 | 2 -> 0 |
+| 2016 | 0 | 0 | 11 -> 0 | 0 | 0 | 11 -> 0 |
+| 2017 | 0 | 0 | 118 -> 0 | 42 -> 0 | 0 | 160 -> 0 |
+| 2018 | 0 | 538 -> 0 | 340 -> 0 | 17 -> 0 | 0 | 895 -> 0 |
+| 2019 | 0 | 389 -> 0 | 124 -> 0 | 0 | 0 | 513 -> 0 |
+| 2020 | 0 | 0 | 20 -> 0 | 24 -> 19 | 0 | 44 -> 19 |
+| 2021 | 0 | 0 | 79 -> 0 | 72 -> 23 | 0 | 151 -> 23 |
+| 2022 | 0 | 0 | 52 -> 0 | 59 -> 14 | 1,740 -> 0 | 1,851 -> 14 |
+| 2023 | 0 | 0 | 549 -> 0 | 860 -> 324 | 233 -> 0 | 1,642 -> 324 |
+| 2024 | 0 | 0 | 1,889 -> 2 | 2,420 -> 396 | 61 -> 0 | 4,370 -> 398 |
+| 2025 | 0 | 12 -> 0 | 1,056 -> 0 | 3,483 -> 2,196 | 340 -> 0 | 4,891 -> 2,196 |
+| total | 0 -> 0 | 939 -> 0 | 4,238 -> 2 | 6,979 -> 2,972 | 2,374 -> 0 | 14,530 -> 2,974 |
+
+### 16.3 Same, 2026
+
+| Year | am4 | fx99 | omen-c | omen-e | omen-linux | all hosts |
+|---|---|---|---|---|---|---|
+| 2026 | 20,765 -> 18,640 | 6,409 -> 3,881 | 205,123 -> 176,842 | 608,759 -> 573,479 | 31,869 -> 28,817 | 872,925 -> 801,659 |
+| total | 20,765 -> 18,640 | 6,409 -> 3,881 | 205,123 -> 176,842 | 608,759 -> 573,479 | 31,869 -> 28,817 | 872,925 -> 801,659 |
+
+### 16.3b Years before 2014
+
+| Year | am4 | fx99 | omen-c | omen-e | omen-linux | all hosts |
+|---|---|---|---|---|---|---|
+| 2013 | 0 | 0 | 0 | 8 -> 0 | 0 | 8 -> 0 |
+| total | 0 -> 0 | 0 -> 0 | 0 -> 0 | 8 -> 0 | 0 -> 0 | 8 -> 0 |
+
+### 16.4 Merged totals (corpus/merged), before -> after
+
+| Measure | Before | After |
+|---|---|---|
+| events (stats.events_out) | 216,796 | 215,418 |
+| file_birth records | 3,273 | 3,290 |
+| file_update records | 1,793 | 398 |
+| commit records | 34,391 | 34,391 |
+| chat_msg records | 146,432 | 146,432 |
+| chat_session records | 2,810 | 2,810 |
+| repo_born records | 216 | 216 |
+| branch records | 802 | 802 |
+| worktree records | 225 | 225 |
+| offload_call records | 26,386 | 26,386 |
+| run records | 235 | 235 |
+| receipt records | 233 | 233 |
+| lineages git / dir / github_only | {'dir': 177, 'git': 132, 'github_only': 2} | {'dir': 178, 'git': 132, 'github_only': 2} |
+Reading the tables. Every pre-2026 month in the old tables was carried by update records: the files on the five surfaces were all born (copied in) in 2026 or at the first copy, while their mtimes kept the original years. After the rule, the years 2013 to 2019 are empty on every host (FX99 927 and C: 593 files gone; the 2018 and 2019 FX99 frames were pure preserved timestamps), and what remains in 2020 to 2025 is genuine modification after a real birth on that surface (omen-e 2,972 files, omen-c 2). The 2026 totals fell by 71,266 files for the same reason (mtime earlier than the in-year birth day). Lower-bound caveat of v1.4 still holds. Rows in section 12 are the pre-1.6 state and are kept as history.
+
+Future runs. (1) The old section 12 sentence "copied files can carry an mtime earlier than their birth: those count as updates" is superseded by this section. (2) `update_null_mtime` (c-births 28,661, e-root-births 58, linux-births 30) still hides files with 1970 or 1980 mtimes; those carry no date either way. (3) A birth-less file system would silently get no updates: watch `coverage.update_birth_missing`. (4) Same-day copy-and-edit cannot be told from a birth; only a mtime on a later day counts. (5) `linux-births` is a live tree: re-running it changes births by the files created since (+17 records this time); re-merge after any re-run. (6) merge.py takes positional `raw out` arguments, relations.py and chatgpt_links.py take `--out`.

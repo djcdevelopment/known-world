@@ -285,6 +285,8 @@ def main(argv):
                 ctx.log("budget reached inside source label=%s" % lab)
                 break
             entry = {"kind": s["kind"], "raw": res.get("raw", 0), "status": res["status"]}
+            if "preserved_mtime" in res:
+                entry["preserved_mtime"] = res["preserved_mtime"]
             if res.get("reason"):
                 entry["reason"] = core.clip(res["reason"], 100)
             if res["status"] == "skipped":
@@ -357,8 +359,9 @@ def write_manifest(item, ck, ctx, sources, status, out_dir, extra_warnings, more
                           "sources_skipped": [{"label": k, "reason": v.get("reason", "?")} for k, v in done.items()
                                               if v["status"] == "skipped"]}, **ck["extra"]),
         "warnings": ck["warnings"] + extra_warnings,
-        "sources": [{"label": k, "kind": v["kind"], "raw": v.get("raw", 0)} for k, v in done.items()
-                    if v["status"] == "done"],
+        "sources": [dict({"label": k, "kind": v["kind"], "raw": v.get("raw", 0)},
+                         **({"preserved_mtime": v["preserved_mtime"]} if "preserved_mtime" in v else {}))
+                    for k, v in done.items() if v["status"] == "done"],
         "slices": ck["slices"],
     }
     atomic_write_json(os.path.join(out_dir, "manifest.json"), man)

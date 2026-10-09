@@ -257,7 +257,7 @@ def validate_manifest(rec):
     if not isinstance(rec.get("warnings"), list):
         errs.append("warnings:bad")
     srcs = rec.get("sources", [])
-    if not (isinstance(srcs, list) and all(isinstance(s, dict) and set(s) <= {"label", "kind", "raw"} for s in srcs)):
+    if not (isinstance(srcs, list) and all(isinstance(s, dict) and set(s) <= {"label", "kind", "raw", "preserved_mtime"} for s in srcs)):
         errs.append("sources:bad")
     return errs
 

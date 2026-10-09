@@ -59,27 +59,11 @@
   "chat_msg:claude-linux>claude-linux": 90,
   "chat_session:claude-linux>claude-linux": 3
  },
- "events_loaded": 221874,
- "events_out": 216796,
+ "events_loaded": 220496,
+ "events_out": 215418,
  "file_activity": {
   "per_host_ym": {
    "am4": {
-    "2026-01": {
-     "file_update_files": 1930,
-     "file_update_records": 1
-    },
-    "2026-02": {
-     "file_update_files": 38,
-     "file_update_records": 2
-    },
-    "2026-03": {
-     "file_update_files": 141,
-     "file_update_records": 2
-    },
-    "2026-05": {
-     "file_update_files": 16,
-     "file_update_records": 2
-    },
     "2026-09": {
      "file_birth_files": 18372,
      "file_birth_records": 109,
@@ -88,373 +72,69 @@
     }
    },
    "fx99": {
-    "2018-05": {
-     "file_update_files": 4,
-     "file_update_records": 2
-    },
-    "2018-06": {
-     "file_update_files": 21,
-     "file_update_records": 9
-    },
-    "2018-07": {
-     "file_update_files": 182,
-     "file_update_records": 12
-    },
-    "2018-08": {
-     "file_update_files": 68,
-     "file_update_records": 16
-    },
-    "2018-09": {
-     "file_update_files": 216,
-     "file_update_records": 17
-    },
-    "2018-10": {
-     "file_update_files": 18,
-     "file_update_records": 11
-    },
-    "2018-11": {
-     "file_update_files": 3,
-     "file_update_records": 2
-    },
-    "2018-12": {
-     "file_update_files": 26,
-     "file_update_records": 11
-    },
-    "2019-01": {
-     "file_update_files": 6,
-     "file_update_records": 5
-    },
-    "2019-02": {
-     "file_update_files": 17,
-     "file_update_records": 8
-    },
-    "2019-03": {
-     "file_update_files": 158,
-     "file_update_records": 11
-    },
-    "2019-04": {
-     "file_update_files": 15,
-     "file_update_records": 12
-    },
-    "2019-05": {
-     "file_update_files": 49,
-     "file_update_records": 13
-    },
-    "2019-06": {
-     "file_update_files": 135,
-     "file_update_records": 19
-    },
-    "2019-07": {
-     "file_update_files": 9,
-     "file_update_records": 4
-    },
-    "2025-03": {
-     "file_update_files": 6,
-     "file_update_records": 1
-    },
-    "2025-11": {
-     "file_update_files": 6,
-     "file_update_records": 1
-    },
-    "2026-05": {
-     "file_update_files": 6,
-     "file_update_records": 1
-    },
     "2026-06": {
      "file_birth_files": 8,
      "file_birth_records": 1
     },
-    "2026-07": {
-     "file_update_files": 24,
-     "file_update_records": 2
-    },
     "2026-08": {
      "file_birth_files": 927,
-     "file_birth_records": 1,
-     "file_update_files": 2034,
-     "file_update_records": 3
+     "file_birth_records": 1
     },
     "2026-09": {
      "file_birth_files": 490,
      "file_birth_records": 39,
-     "file_update_files": 447,
-     "file_update_records": 35
+     "file_update_files": 7,
+     "file_update_records": 5
     },
     "2026-10": {
      "file_birth_files": 2448,
      "file_birth_records": 11,
-     "file_update_files": 25,
-     "file_update_records": 2
+     "file_update_files": 1,
+     "file_update_records": 1
     }
    },
    "omen-c": {
-    "2016-06": {
-     "file_update_files": 1,
-     "file_update_records": 1
-    },
-    "2016-11": {
-     "file_update_files": 10,
-     "file_update_records": 2
-    },
-    "2017-05": {
-     "file_update_files": 3,
-     "file_update_records": 1
-    },
-    "2017-12": {
-     "file_update_files": 115,
-     "file_update_records": 1
-    },
-    "2018-01": {
-     "file_update_files": 2,
-     "file_update_records": 1
-    },
-    "2018-04": {
-     "file_update_files": 240,
-     "file_update_records": 3
-    },
-    "2018-05": {
-     "file_update_files": 48,
-     "file_update_records": 4
-    },
-    "2018-08": {
-     "file_update_files": 41,
-     "file_update_records": 12
-    },
-    "2018-11": {
-     "file_update_files": 1,
-     "file_update_records": 1
-    },
-    "2018-12": {
-     "file_update_files": 8,
-     "file_update_records": 8
-    },
-    "2019-08": {
-     "file_update_files": 1,
-     "file_update_records": 1
-    },
-    "2019-09": {
-     "file_update_files": 123,
-     "file_update_records": 1
-    },
-    "2020-02": {
-     "file_update_files": 15,
-     "file_update_records": 1
-    },
-    "2020-06": {
-     "file_update_files": 2,
-     "file_update_records": 1
-    },
-    "2020-07": {
-     "file_update_files": 3,
-     "file_update_records": 1
-    },
-    "2021-03": {
-     "file_update_files": 65,
-     "file_update_records": 9
-    },
-    "2021-10": {
-     "file_update_files": 14,
-     "file_update_records": 3
-    },
-    "2022-01": {
-     "file_update_files": 6,
-     "file_update_records": 2
-    },
-    "2022-03": {
-     "file_update_files": 9,
-     "file_update_records": 3
-    },
-    "2022-05": {
-     "file_update_files": 11,
-     "file_update_records": 2
-    },
-    "2022-10": {
-     "file_update_files": 26,
-     "file_update_records": 3
-    },
-    "2023-03": {
-     "file_update_files": 75,
-     "file_update_records": 8
-    },
-    "2023-04": {
-     "file_update_files": 18,
-     "file_update_records": 5
-    },
-    "2023-09": {
-     "file_update_files": 156,
-     "file_update_records": 4
-    },
-    "2023-10": {
-     "file_update_files": 14,
-     "file_update_records": 2
-    },
-    "2023-11": {
-     "file_update_files": 285,
-     "file_update_records": 3
-    },
-    "2023-12": {
-     "file_update_files": 1,
-     "file_update_records": 1
-    },
-    "2024-01": {
-     "file_update_files": 6,
-     "file_update_records": 3
-    },
-    "2024-03": {
-     "file_update_files": 4,
-     "file_update_records": 2
-    },
-    "2024-06": {
-     "file_update_files": 61,
-     "file_update_records": 3
-    },
-    "2024-07": {
-     "file_update_files": 5,
-     "file_update_records": 1
-    },
-    "2024-08": {
-     "file_update_files": 21,
-     "file_update_records": 15
-    },
-    "2024-09": {
-     "file_update_files": 152,
-     "file_update_records": 13
-    },
     "2024-10": {
      "file_birth_files": 2,
-     "file_birth_records": 1,
-     "file_update_files": 122,
-     "file_update_records": 11
-    },
-    "2024-11": {
-     "file_update_files": 1311,
-     "file_update_records": 30
-    },
-    "2024-12": {
-     "file_update_files": 205,
-     "file_update_records": 9
-    },
-    "2025-01": {
-     "file_update_files": 204,
-     "file_update_records": 19
-    },
-    "2025-02": {
-     "file_update_files": 73,
-     "file_update_records": 26
-    },
-    "2025-03": {
-     "file_update_files": 63,
-     "file_update_records": 8
-    },
-    "2025-07": {
-     "file_update_files": 75,
-     "file_update_records": 1
-    },
-    "2025-08": {
-     "file_update_files": 430,
-     "file_update_records": 3
-    },
-    "2025-10": {
-     "file_update_files": 18,
-     "file_update_records": 4
-    },
-    "2025-11": {
-     "file_update_files": 193,
-     "file_update_records": 1
-    },
-    "2026-01": {
-     "file_update_files": 540,
-     "file_update_records": 4
-    },
-    "2026-02": {
-     "file_update_files": 2,
-     "file_update_records": 1
+     "file_birth_records": 1
     },
     "2026-03": {
      "file_birth_files": 2,
-     "file_birth_records": 1,
-     "file_update_files": 256,
-     "file_update_records": 2
-    },
-    "2026-04": {
-     "file_update_files": 6,
-     "file_update_records": 6
-    },
-    "2026-05": {
-     "file_update_files": 4456,
-     "file_update_records": 59
+     "file_birth_records": 1
     },
     "2026-06": {
      "file_birth_files": 37806,
-     "file_birth_records": 24,
-     "file_update_files": 22443,
-     "file_update_records": 46
+     "file_birth_records": 24
     },
     "2026-07": {
      "file_birth_files": 65098,
      "file_birth_records": 209,
-     "file_update_files": 1249,
-     "file_update_records": 86
+     "file_update_files": 857,
+     "file_update_records": 65
     },
     "2026-08": {
      "file_birth_files": 14720,
      "file_birth_records": 205,
-     "file_update_files": 1363,
-     "file_update_records": 28
+     "file_update_files": 1289,
+     "file_update_records": 13
     },
     "2026-09": {
      "file_birth_files": 56686,
      "file_birth_records": 158,
-     "file_update_files": 213,
-     "file_update_records": 37
+     "file_update_files": 159,
+     "file_update_records": 22
     },
     "2026-10": {
      "file_birth_files": 184,
      "file_birth_records": 9,
-     "file_update_files": 99,
-     "file_update_records": 6
+     "file_update_files": 41,
+     "file_update_records": 5
     }
    },
    "omen-e": {
-    "2013-08": {
-     "file_update_files": 7,
-     "file_update_records": 1
-    },
-    "2013-10": {
-     "file_update_files": 1,
-     "file_update_records": 1
-    },
-    "2014-05": {
-     "file_update_files": 2,
-     "file_update_records": 2
-    },
-    "2017-07": {
-     "file_update_files": 42,
-     "file_update_records": 4
-    },
-    "2018-08": {
-     "file_update_files": 17,
-     "file_update_records": 6
-    },
-    "2020-03": {
-     "file_update_files": 5,
-     "file_update_records": 1
-    },
     "2020-12": {
      "file_birth_files": 19,
      "file_birth_records": 2
-    },
-    "2021-01": {
-     "file_update_files": 3,
-     "file_update_records": 1
-    },
-    "2021-02": {
-     "file_update_files": 5,
-     "file_update_records": 5
-    },
-    "2021-03": {
-     "file_update_files": 22,
-     "file_update_records": 6
     },
     "2021-04": {
      "file_birth_files": 2,
@@ -474,297 +154,239 @@
     },
     "2021-10": {
      "file_birth_files": 3,
-     "file_birth_records": 2,
-     "file_update_files": 18,
-     "file_update_records": 6
+     "file_birth_records": 2
     },
     "2021-11": {
      "file_birth_files": 1,
      "file_birth_records": 1
     },
-    "2021-12": {
-     "file_update_files": 1,
-     "file_update_records": 1
-    },
     "2022-01": {
      "file_birth_files": 2,
-     "file_birth_records": 1,
-     "file_update_files": 2,
-     "file_update_records": 1
+     "file_birth_records": 1
     },
     "2022-02": {
      "file_birth_files": 1,
-     "file_birth_records": 1,
-     "file_update_files": 1,
-     "file_update_records": 1
+     "file_birth_records": 1
     },
     "2022-03": {
      "file_birth_files": 7,
-     "file_birth_records": 1,
-     "file_update_files": 2,
-     "file_update_records": 1
+     "file_birth_records": 1
     },
     "2022-04": {
      "file_birth_files": 2,
      "file_birth_records": 1
     },
-    "2022-05": {
-     "file_update_files": 28,
-     "file_update_records": 1
-    },
     "2022-09": {
      "file_birth_files": 2,
      "file_birth_records": 1
     },
-    "2022-10": {
-     "file_update_files": 12,
-     "file_update_records": 1
-    },
     "2023-01": {
      "file_birth_files": 2,
-     "file_birth_records": 1,
-     "file_update_files": 11,
-     "file_update_records": 4
+     "file_birth_records": 1
     },
     "2023-02": {
      "file_birth_files": 2,
-     "file_birth_records": 2,
-     "file_update_files": 1,
-     "file_update_records": 1
-    },
-    "2023-03": {
-     "file_update_files": 46,
-     "file_update_records": 9
+     "file_birth_records": 2
     },
     "2023-05": {
      "file_birth_files": 2,
      "file_birth_records": 1
     },
-    "2023-06": {
-     "file_update_files": 12,
-     "file_update_records": 1
-    },
-    "2023-08": {
-     "file_update_files": 115,
-     "file_update_records": 3
-    },
     "2023-09": {
      "file_birth_files": 2,
-     "file_birth_records": 1,
-     "file_update_files": 1,
-     "file_update_records": 1
-    },
-    "2023-10": {
-     "file_update_files": 66,
-     "file_update_records": 10
+     "file_birth_records": 1
     },
     "2023-11": {
      "file_birth_files": 212,
-     "file_birth_records": 1,
-     "file_update_files": 186,
-     "file_update_records": 5
+     "file_birth_records": 1
     },
     "2023-12": {
      "file_birth_files": 82,
      "file_birth_records": 5,
-     "file_update_files": 120,
-     "file_update_records": 6
+     "file_update_files": 22,
+     "file_update_records": 1
     },
     "2024-01": {
      "file_birth_files": 11,
      "file_birth_records": 3,
-     "file_update_files": 12,
-     "file_update_records": 6
+     "file_update_files": 2,
+     "file_update_records": 1
     },
     "2024-02": {
      "file_birth_files": 11,
-     "file_birth_records": 4,
-     "file_update_files": 23,
-     "file_update_records": 4
+     "file_birth_records": 4
     },
     "2024-03": {
      "file_birth_files": 1,
      "file_birth_records": 1,
-     "file_update_files": 20,
-     "file_update_records": 4
+     "file_update_files": 2,
+     "file_update_records": 1
     },
     "2024-04": {
      "file_birth_files": 9,
-     "file_birth_records": 4,
-     "file_update_files": 4,
-     "file_update_records": 2
+     "file_birth_records": 4
     },
     "2024-05": {
      "file_birth_files": 4,
      "file_birth_records": 1,
-     "file_update_files": 4,
-     "file_update_records": 3
+     "file_update_files": 3,
+     "file_update_records": 2
     },
     "2024-06": {
      "file_birth_files": 12,
-     "file_birth_records": 4,
-     "file_update_files": 27,
-     "file_update_records": 7
+     "file_birth_records": 4
     },
     "2024-07": {
      "file_birth_files": 9,
-     "file_birth_records": 3,
-     "file_update_files": 84,
-     "file_update_records": 8
+     "file_birth_records": 3
     },
     "2024-08": {
      "file_birth_files": 170,
      "file_birth_records": 9,
-     "file_update_files": 14,
-     "file_update_records": 3
+     "file_update_files": 12,
+     "file_update_records": 2
     },
     "2024-09": {
      "file_birth_files": 10,
      "file_birth_records": 4,
-     "file_update_files": 437,
-     "file_update_records": 18
+     "file_update_files": 5,
+     "file_update_records": 2
     },
     "2024-10": {
      "file_birth_files": 49,
      "file_birth_records": 11,
-     "file_update_files": 141,
-     "file_update_records": 18
+     "file_update_files": 8,
+     "file_update_records": 3
     },
     "2024-11": {
      "file_birth_files": 78,
-     "file_birth_records": 7,
-     "file_update_files": 1234,
-     "file_update_records": 29
-    },
-    "2024-12": {
-     "file_update_files": 56,
-     "file_update_records": 18
+     "file_birth_records": 7
     },
     "2025-01": {
      "file_birth_files": 12,
      "file_birth_records": 8,
-     "file_update_files": 683,
-     "file_update_records": 18
+     "file_update_files": 1,
+     "file_update_records": 1
     },
     "2025-02": {
      "file_birth_files": 56,
      "file_birth_records": 5,
-     "file_update_files": 206,
-     "file_update_records": 25
+     "file_update_files": 2,
+     "file_update_records": 1
     },
     "2025-03": {
      "file_birth_files": 8,
      "file_birth_records": 3,
-     "file_update_files": 114,
-     "file_update_records": 17
+     "file_update_files": 3,
+     "file_update_records": 2
     },
     "2025-04": {
      "file_birth_files": 15,
      "file_birth_records": 3,
-     "file_update_files": 4,
-     "file_update_records": 3
+     "file_update_files": 2,
+     "file_update_records": 2
     },
     "2025-05": {
      "file_birth_files": 70,
      "file_birth_records": 5,
-     "file_update_files": 47,
-     "file_update_records": 11
+     "file_update_files": 6,
+     "file_update_records": 4
     },
     "2025-06": {
      "file_birth_files": 802,
      "file_birth_records": 17,
-     "file_update_files": 8,
-     "file_update_records": 4
+     "file_update_files": 4,
+     "file_update_records": 3
     },
     "2025-07": {
      "file_birth_files": 53,
      "file_birth_records": 18,
-     "file_update_files": 42,
-     "file_update_records": 14
+     "file_update_files": 5,
+     "file_update_records": 2
     },
     "2025-08": {
      "file_birth_files": 89,
      "file_birth_records": 17,
-     "file_update_files": 41,
-     "file_update_records": 5
+     "file_update_files": 5,
+     "file_update_records": 3
     },
     "2025-09": {
      "file_birth_files": 140,
      "file_birth_records": 15,
-     "file_update_files": 52,
-     "file_update_records": 11
+     "file_update_files": 43,
+     "file_update_records": 5
     },
     "2025-10": {
      "file_birth_files": 32,
      "file_birth_records": 16,
-     "file_update_files": 124,
-     "file_update_records": 14
+     "file_update_files": 8,
+     "file_update_records": 5
     },
     "2025-11": {
      "file_birth_files": 383,
      "file_birth_records": 7,
-     "file_update_files": 47,
-     "file_update_records": 19
+     "file_update_files": 7,
+     "file_update_records": 6
     },
     "2025-12": {
      "file_birth_files": 436,
      "file_birth_records": 13,
-     "file_update_files": 19,
-     "file_update_records": 12
+     "file_update_files": 14,
+     "file_update_records": 7
     },
     "2026-01": {
      "file_birth_files": 790,
      "file_birth_records": 14,
-     "file_update_files": 204,
-     "file_update_records": 17
+     "file_update_files": 117,
+     "file_update_records": 10
     },
     "2026-02": {
      "file_birth_files": 61,
      "file_birth_records": 9,
-     "file_update_files": 682,
-     "file_update_records": 19
+     "file_update_files": 4,
+     "file_update_records": 2
     },
     "2026-03": {
      "file_birth_files": 20948,
      "file_birth_records": 204,
-     "file_update_files": 9691,
-     "file_update_records": 100
+     "file_update_files": 240,
+     "file_update_records": 40
     },
     "2026-04": {
      "file_birth_files": 12316,
      "file_birth_records": 203,
-     "file_update_files": 2386,
-     "file_update_records": 58
+     "file_update_files": 556,
+     "file_update_records": 17
     },
     "2026-05": {
      "file_birth_files": 34934,
      "file_birth_records": 172,
-     "file_update_files": 3352,
-     "file_update_records": 56
+     "file_update_files": 1027,
+     "file_update_records": 26
     },
     "2026-06": {
      "file_birth_files": 5669,
      "file_birth_records": 145,
-     "file_update_files": 2083,
-     "file_update_records": 38
+     "file_update_files": 44,
+     "file_update_records": 25
     },
     "2026-07": {
      "file_birth_files": 802,
      "file_birth_records": 46,
-     "file_update_files": 1022,
-     "file_update_records": 12
+     "file_update_files": 12,
+     "file_update_records": 9
     },
     "2026-08": {
      "file_birth_files": 13760,
      "file_birth_records": 139,
-     "file_update_files": 1311,
-     "file_update_records": 26
+     "file_update_files": 32,
+     "file_update_records": 14
     },
     "2026-09": {
      "file_birth_files": 480891,
      "file_birth_records": 758,
-     "file_update_files": 17770,
-     "file_update_records": 252
+     "file_update_files": 1189,
+     "file_update_records": 78
     },
     "2026-10": {
      "file_birth_files": 86,
@@ -774,55 +396,15 @@
     }
    },
    "omen-linux": {
-    "2022-10": {
-     "file_update_files": 1683,
-     "file_update_records": 1
-    },
-    "2022-11": {
-     "file_update_files": 57,
-     "file_update_records": 2
-    },
-    "2023-02": {
-     "file_update_files": 57,
-     "file_update_records": 1
-    },
-    "2023-06": {
-     "file_update_files": 60,
-     "file_update_records": 1
-    },
-    "2023-08": {
-     "file_update_files": 58,
-     "file_update_records": 1
-    },
-    "2023-10": {
-     "file_update_files": 58,
-     "file_update_records": 1
-    },
-    "2024-02": {
-     "file_update_files": 61,
-     "file_update_records": 2
-    },
-    "2025-03": {
-     "file_update_files": 10,
-     "file_update_records": 1
-    },
-    "2025-05": {
-     "file_update_files": 330,
-     "file_update_records": 3
-    },
-    "2026-05": {
-     "file_update_files": 13,
-     "file_update_records": 2
-    },
     "2026-09": {
      "file_birth_files": 15599,
      "file_birth_records": 486,
-     "file_update_files": 3080,
-     "file_update_records": 127
+     "file_update_files": 8,
+     "file_update_records": 4
     },
     "2026-10": {
-     "file_birth_files": 13170,
-     "file_birth_records": 114,
+     "file_birth_files": 13203,
+     "file_birth_records": 131,
      "file_update_files": 7,
      "file_update_records": 4
     }
@@ -834,60 +416,56 @@
     "birth_bytes": 5851150443,
     "birth_files": 18372,
     "birth_records": 109,
-    "update_bulk_records": 2,
-    "update_bytes": 2155652354,
-    "update_files": 2393,
-    "update_records": 11
+    "update_bytes": 22048969,
+    "update_files": 268,
+    "update_records": 4
    },
    "c-births": {
     "birth_bulk_records": 107,
     "birth_bytes": 37755507385,
     "birth_files": 174498,
     "birth_records": 607,
-    "update_bulk_records": 146,
-    "update_bytes": 5575244802,
-    "update_files": 34863,
-    "update_records": 508
+    "update_bulk_records": 3,
+    "update_bytes": 2652213616,
+    "update_files": 2346,
+    "update_records": 105
    },
    "e-births": {
     "birth_bulk_records": 66,
     "birth_bytes": 202622693432,
     "birth_files": 81408,
     "birth_records": 662,
-    "update_bulk_records": 28,
-    "update_bytes": 45503985912,
-    "update_files": 12499,
-    "update_records": 228
+    "update_bytes": 19604443758,
+    "update_files": 452,
+    "update_records": 78
    },
    "e-root-births": {
     "birth_bulk_records": 155,
     "birth_bytes": 862969025863,
     "birth_files": 491667,
     "birth_records": 1243,
-    "update_bulk_records": 119,
-    "update_bytes": 81376518463,
-    "update_files": 30172,
-    "update_records": 703
+    "update_bulk_records": 2,
+    "update_bytes": 17451053671,
+    "update_files": 2924,
+    "update_records": 197
    },
    "fx99-births": {
     "birth_bulk_records": 14,
     "birth_bytes": 10572716519,
     "birth_files": 3873,
     "birth_records": 52,
-    "update_bulk_records": 31,
-    "update_bytes": 10316435249,
-    "update_files": 3475,
-    "update_records": 197
+    "update_bytes": 5707138,
+    "update_files": 8,
+    "update_records": 6
    },
    "linux-births": {
     "birth_bulk_records": 101,
-    "birth_bytes": 12349725922,
-    "birth_files": 28769,
-    "birth_records": 600,
-    "update_bulk_records": 82,
-    "update_bytes": 348302572,
-    "update_files": 5474,
-    "update_records": 146
+    "birth_bytes": 12349810045,
+    "birth_files": 28802,
+    "birth_records": 617,
+    "update_bytes": 1758584,
+    "update_files": 15,
+    "update_records": 8
    }
   }
  },
@@ -899,8 +477,8 @@
  "identity_fixes": {},
  "items": {
   "am4-births": {
-   "events_loaded": 120,
-   "manifest_events": 120,
+   "events_loaded": 113,
+   "manifest_events": 113,
    "src": "fs_births",
    "status": "complete"
   },
@@ -911,8 +489,8 @@
    "status": "complete"
   },
   "c-births": {
-   "events_loaded": 1115,
-   "manifest_events": 1115,
+   "events_loaded": 712,
+   "manifest_events": 712,
    "src": "fs_births",
    "status": "complete"
   },
@@ -995,8 +573,8 @@
    "status": "complete"
   },
   "e-births": {
-   "events_loaded": 890,
-   "manifest_events": 890,
+   "events_loaded": 740,
+   "manifest_events": 740,
    "src": "fs_births",
    "status": "complete"
   },
@@ -1025,8 +603,8 @@
    "status": "complete"
   },
   "e-root-births": {
-   "events_loaded": 1946,
-   "manifest_events": 1946,
+   "events_loaded": 1440,
+   "manifest_events": 1440,
    "src": "fs_births",
    "status": "complete"
   },
@@ -1043,8 +621,8 @@
    "status": "complete"
   },
   "fx99-births": {
-   "events_loaded": 249,
-   "manifest_events": 249,
+   "events_loaded": 58,
+   "manifest_events": 58,
    "src": "fs_births",
    "status": "complete"
   },
@@ -1067,8 +645,8 @@
    "status": "complete"
   },
   "linux-births": {
-   "events_loaded": 746,
-   "manifest_events": 746,
+   "events_loaded": 625,
+   "manifest_events": 625,
    "src": "fs_births",
    "status": "complete"
   },
@@ -1180,9 +758,9 @@
   5,
   5
  ],
- "last_ts": "2026-10-09T13:33:18Z",
+ "last_ts": "2026-10-09T15:41:09Z",
  "lineages": {
-  "dir": 177,
+  "dir": 178,
   "git": 132,
   "github_only": 2
  },
@@ -1198,6 +776,7 @@
     "not_repos": 0,
     "null_ts_emitted": 0,
     "out_of_range": 0,
+    "preserved_mtime": 2125,
     "sources_seen": 2,
     "sources_skipped": 0
    },
@@ -1206,7 +785,7 @@
     "null_ts": 0,
     "polling": 0
    },
-   "events": 120,
+   "events": 113,
    "raw_sum": 18375,
    "repos": 0,
    "src": "fs_births",
@@ -1244,6 +823,7 @@
     "not_repos": 0,
     "null_ts_emitted": 0,
     "out_of_range": 0,
+    "preserved_mtime": 32517,
     "sources_seen": 38,
     "sources_skipped": 0,
     "update_null_mtime": 28661
@@ -1253,7 +833,7 @@
     "null_ts": 0,
     "polling": 0
    },
-   "events": 1115,
+   "events": 712,
    "raw_sum": 174500,
    "repos": 0,
    "src": "fs_births",
@@ -1549,6 +1129,7 @@
     "not_repos": 0,
     "null_ts_emitted": 0,
     "out_of_range": 0,
+    "preserved_mtime": 12047,
     "sources_seen": 49,
     "sources_skipped": 0
    },
@@ -1557,7 +1138,7 @@
     "null_ts": 0,
     "polling": 0
    },
-   "events": 890,
+   "events": 740,
    "raw_sum": 81412,
    "repos": 0,
    "src": "fs_births",
@@ -1662,6 +1243,7 @@
     "not_repos": 0,
     "null_ts_emitted": 0,
     "out_of_range": 0,
+    "preserved_mtime": 27248,
     "sources_seen": 51,
     "sources_skipped": 0,
     "update_null_mtime": 58
@@ -1671,7 +1253,7 @@
     "null_ts": 0,
     "polling": 0
    },
-   "events": 1946,
+   "events": 1440,
    "raw_sum": 491673,
    "repos": 0,
    "src": "fs_births",
@@ -1728,6 +1310,7 @@
     "not_repos": 0,
     "null_ts_emitted": 0,
     "out_of_range": 0,
+    "preserved_mtime": 3467,
     "sources_seen": 6,
     "sources_skipped": 0
    },
@@ -1736,7 +1319,7 @@
     "null_ts": 0,
     "polling": 0
    },
-   "events": 249,
+   "events": 58,
    "raw_sum": 3873,
    "repos": 0,
    "src": "fs_births",
@@ -1816,16 +1399,18 @@
     "not_repos": 0,
     "null_ts_emitted": 0,
     "out_of_range": 0,
-    "sources_seen": 49,
-    "sources_skipped": 0
+    "preserved_mtime": 5459,
+    "sources_seen": 50,
+    "sources_skipped": 0,
+    "update_null_mtime": 30
    },
    "dropped": {
     "decode_errors": 0,
     "null_ts": 0,
     "polling": 0
    },
-   "events": 746,
-   "raw_sum": 28769,
+   "events": 625,
+   "raw_sum": 28802,
    "repos": 0,
    "src": "fs_births",
    "status": "complete",
@@ -1950,27 +1535,27 @@
   "chatgpt": 11259,
   "claude": 96158,
   "codex": 71842,
-  "human": 11248,
+  "human": 9870,
   "local_model": 542,
   "opencode": 209,
   "third_party": 24426
  },
  "per_host": {
-  "am4": 209,
+  "am4": 202,
   "cloud": 11259,
-  "fx99": 301,
+  "fx99": 110,
   "github": 93,
-  "omen-c": 93726,
-  "omen-e": 65864,
-  "omen-linux": 45344
+  "omen-c": 93323,
+  "omen-e": 65208,
+  "omen-linux": 45223
  },
  "per_kind": {
   "branch": 802,
   "chat_msg": 146432,
   "chat_session": 2810,
   "commit": 34391,
-  "file_birth": 3273,
-  "file_update": 1793,
+  "file_birth": 3290,
+  "file_update": 398,
   "offload_call": 26386,
   "receipt": 233,
   "repo_born": 216,
@@ -1988,8 +1573,8 @@
   "continuity/run": 99,
   "deepagents_runs/offload_call": 401,
   "deepagents_runs/run": 136,
-  "fs_births/file_birth": 3273,
-  "fs_births/file_update": 1793,
+  "fs_births/file_birth": 3290,
+  "fs_births/file_update": 398,
   "git_repo/branch": 802,
   "git_repo/commit": 34391,
   "git_repo/repo_born": 123,
@@ -2003,97 +1588,24 @@
   "2011-08": {
    "repo_born": 1
   },
-  "2013-08": {
-   "file_update": 1
-  },
-  "2013-10": {
-   "file_update": 1
-  },
-  "2014-05": {
-   "file_update": 2
-  },
   "2015-08": {
    "commit": 2,
    "repo_born": 3
   },
-  "2016-06": {
-   "file_update": 1
-  },
-  "2016-11": {
-   "file_update": 2
-  },
-  "2017-05": {
-   "file_update": 1
-  },
-  "2017-07": {
-   "file_update": 4
-  },
   "2017-12": {
    "branch": 1,
    "commit": 1,
-   "file_update": 1,
    "repo_born": 2
-  },
-  "2018-01": {
-   "file_update": 1
-  },
-  "2018-04": {
-   "file_update": 3
-  },
-  "2018-05": {
-   "file_update": 6
-  },
-  "2018-06": {
-   "file_update": 9
-  },
-  "2018-07": {
-   "file_update": 12
   },
   "2018-08": {
    "commit": 11,
-   "file_update": 34,
    "repo_born": 1
   },
-  "2018-09": {
-   "file_update": 17
-  },
-  "2018-10": {
-   "file_update": 11
-  },
-  "2018-11": {
-   "file_update": 3
-  },
-  "2018-12": {
-   "file_update": 19
-  },
-  "2019-01": {
-   "file_update": 5
-  },
-  "2019-02": {
-   "file_update": 8
-  },
-  "2019-03": {
-   "file_update": 11
-  },
-  "2019-04": {
-   "file_update": 12
-  },
   "2019-05": {
-   "commit": 1,
-   "file_update": 13
-  },
-  "2019-06": {
-   "file_update": 19
+   "commit": 1
   },
   "2019-07": {
-   "commit": 2,
-   "file_update": 4
-  },
-  "2019-08": {
-   "file_update": 1
-  },
-  "2019-09": {
-   "file_update": 1
+   "commit": 2
   },
   "2019-10": {
    "commit": 2
@@ -2101,20 +1613,8 @@
   "2019-11": {
    "commit": 2
   },
-  "2020-02": {
-   "file_update": 1
-  },
-  "2020-03": {
-   "file_update": 1
-  },
   "2020-05": {
    "commit": 2
-  },
-  "2020-06": {
-   "file_update": 1
-  },
-  "2020-07": {
-   "file_update": 1
   },
   "2020-11": {
    "branch": 1,
@@ -2122,15 +1622,6 @@
   },
   "2020-12": {
    "file_birth": 2
-  },
-  "2021-01": {
-   "file_update": 1
-  },
-  "2021-02": {
-   "file_update": 5
-  },
-  "2021-03": {
-   "file_update": 15
   },
   "2021-04": {
    "file_birth": 1
@@ -2157,39 +1648,33 @@
   },
   "2021-10": {
    "commit": 20,
-   "file_birth": 2,
-   "file_update": 9
+   "file_birth": 2
   },
   "2021-11": {
    "commit": 12,
    "file_birth": 1
   },
   "2021-12": {
-   "commit": 13,
-   "file_update": 1
+   "commit": 13
   },
   "2022-01": {
    "commit": 23,
-   "file_birth": 1,
-   "file_update": 3
+   "file_birth": 1
   },
   "2022-02": {
    "commit": 14,
-   "file_birth": 1,
-   "file_update": 1
+   "file_birth": 1
   },
   "2022-03": {
    "commit": 8,
-   "file_birth": 1,
-   "file_update": 4
+   "file_birth": 1
   },
   "2022-04": {
    "commit": 4,
    "file_birth": 1
   },
   "2022-05": {
-   "commit": 39,
-   "file_update": 3
+   "commit": 39
   },
   "2022-06": {
    "commit": 37
@@ -2205,36 +1690,30 @@
    "file_birth": 1
   },
   "2022-10": {
-   "commit": 38,
-   "file_update": 5
+   "commit": 38
   },
   "2022-11": {
-   "commit": 18,
-   "file_update": 2
+   "commit": 18
   },
   "2022-12": {
    "commit": 49
   },
   "2023-01": {
    "commit": 29,
-   "file_birth": 1,
-   "file_update": 4
+   "file_birth": 1
   },
   "2023-02": {
    "commit": 20,
-   "file_birth": 2,
-   "file_update": 2
+   "file_birth": 2
   },
   "2023-03": {
    "commit": 308,
-   "file_update": 17,
    "repo_born": 1
   },
   "2023-04": {
    "chat_msg": 6,
    "chat_session": 2,
-   "commit": 204,
-   "file_update": 5
+   "commit": 204
   },
   "2023-05": {
    "commit": 265,
@@ -2242,26 +1721,22 @@
    "repo_born": 1
   },
   "2023-06": {
-   "commit": 264,
-   "file_update": 2
+   "commit": 264
   },
   "2023-07": {
    "commit": 248
   },
   "2023-08": {
-   "commit": 269,
-   "file_update": 4
+   "commit": 269
   },
   "2023-09": {
    "commit": 357,
-   "file_birth": 1,
-   "file_update": 5
+   "file_birth": 1
   },
   "2023-10": {
    "chat_msg": 6,
    "chat_session": 3,
    "commit": 335,
-   "file_update": 13,
    "repo_born": 1
   },
   "2023-11": {
@@ -2270,88 +1745,81 @@
    "chat_session": 1,
    "commit": 351,
    "file_birth": 1,
-   "file_update": 8,
    "repo_born": 2
   },
   "2023-12": {
    "branch": 1,
    "commit": 339,
    "file_birth": 5,
-   "file_update": 7
+   "file_update": 1
   },
   "2024-01": {
    "branch": 1,
    "commit": 532,
    "file_birth": 3,
-   "file_update": 9
+   "file_update": 1
   },
   "2024-02": {
    "branch": 1,
    "commit": 461,
-   "file_birth": 4,
-   "file_update": 6
+   "file_birth": 4
   },
   "2024-03": {
    "commit": 438,
    "file_birth": 1,
-   "file_update": 6
+   "file_update": 1
   },
   "2024-04": {
    "branch": 3,
    "commit": 522,
-   "file_birth": 4,
-   "file_update": 2
+   "file_birth": 4
   },
   "2024-05": {
    "branch": 5,
    "commit": 508,
    "file_birth": 1,
-   "file_update": 3
+   "file_update": 2
   },
   "2024-06": {
    "branch": 1,
    "commit": 415,
-   "file_birth": 4,
-   "file_update": 10
+   "file_birth": 4
   },
   "2024-07": {
    "branch": 5,
    "commit": 472,
-   "file_birth": 3,
-   "file_update": 9
+   "file_birth": 3
   },
   "2024-08": {
    "branch": 3,
    "commit": 389,
    "file_birth": 9,
-   "file_update": 18
+   "file_update": 2
   },
   "2024-09": {
    "branch": 5,
    "commit": 348,
    "file_birth": 4,
-   "file_update": 31
+   "file_update": 2
   },
   "2024-10": {
    "branch": 7,
    "commit": 417,
    "file_birth": 12,
-   "file_update": 29
+   "file_update": 3
   },
   "2024-11": {
    "branch": 4,
    "chat_msg": 6,
    "chat_session": 1,
    "commit": 549,
-   "file_birth": 7,
-   "file_update": 59
+   "file_birth": 7
   },
   "2024-12": {
    "branch": 3,
    "chat_msg": 34,
    "chat_session": 5,
-   "commit": 371,
-   "file_update": 27
+   "commit": 371
   },
   "2025-01": {
    "branch": 7,
@@ -2359,7 +1827,7 @@
    "chat_session": 12,
    "commit": 467,
    "file_birth": 8,
-   "file_update": 37
+   "file_update": 1
   },
   "2025-02": {
    "branch": 4,
@@ -2367,7 +1835,7 @@
    "chat_session": 3,
    "commit": 414,
    "file_birth": 5,
-   "file_update": 51,
+   "file_update": 1,
    "repo_born": 1
   },
   "2025-03": {
@@ -2376,7 +1844,7 @@
    "chat_session": 5,
    "commit": 604,
    "file_birth": 3,
-   "file_update": 27
+   "file_update": 2
   },
   "2025-04": {
    "branch": 5,
@@ -2384,7 +1852,7 @@
    "chat_session": 3,
    "commit": 579,
    "file_birth": 3,
-   "file_update": 3
+   "file_update": 2
   },
   "2025-05": {
    "branch": 21,
@@ -2392,7 +1860,7 @@
    "chat_session": 6,
    "commit": 699,
    "file_birth": 5,
-   "file_update": 14
+   "file_update": 4
   },
   "2025-06": {
    "branch": 17,
@@ -2400,7 +1868,7 @@
    "chat_session": 4,
    "commit": 686,
    "file_birth": 17,
-   "file_update": 4
+   "file_update": 3
   },
   "2025-07": {
    "branch": 44,
@@ -2408,7 +1876,7 @@
    "chat_session": 29,
    "commit": 926,
    "file_birth": 18,
-   "file_update": 15,
+   "file_update": 2,
    "repo_born": 3
   },
   "2025-08": {
@@ -2417,7 +1885,7 @@
    "chat_session": 16,
    "commit": 862,
    "file_birth": 17,
-   "file_update": 8
+   "file_update": 3
   },
   "2025-09": {
    "branch": 30,
@@ -2425,7 +1893,7 @@
    "chat_session": 22,
    "commit": 784,
    "file_birth": 15,
-   "file_update": 11
+   "file_update": 5
   },
   "2025-10": {
    "branch": 22,
@@ -2433,7 +1901,7 @@
    "chat_session": 17,
    "commit": 728,
    "file_birth": 16,
-   "file_update": 18
+   "file_update": 5
   },
   "2025-11": {
    "branch": 29,
@@ -2441,7 +1909,7 @@
    "chat_session": 43,
    "commit": 887,
    "file_birth": 7,
-   "file_update": 21
+   "file_update": 6
   },
   "2025-12": {
    "branch": 22,
@@ -2449,7 +1917,7 @@
    "chat_session": 51,
    "commit": 811,
    "file_birth": 13,
-   "file_update": 12
+   "file_update": 7
   },
   "2026-01": {
    "branch": 24,
@@ -2457,7 +1925,7 @@
    "chat_session": 67,
    "commit": 721,
    "file_birth": 14,
-   "file_update": 22,
+   "file_update": 10,
    "repo_born": 2
   },
   "2026-02": {
@@ -2466,7 +1934,7 @@
    "chat_session": 65,
    "commit": 800,
    "file_birth": 9,
-   "file_update": 22
+   "file_update": 2
   },
   "2026-03": {
    "branch": 52,
@@ -2474,14 +1942,14 @@
    "chat_session": 25,
    "commit": 2702,
    "file_birth": 205,
-   "file_update": 104,
+   "file_update": 40,
    "repo_born": 28
   },
   "2026-04": {
    "branch": 20,
    "commit": 1208,
    "file_birth": 203,
-   "file_update": 64,
+   "file_update": 17,
    "repo_born": 31,
    "worktree": 33
   },
@@ -2491,7 +1959,7 @@
    "chat_session": 185,
    "commit": 1349,
    "file_birth": 172,
-   "file_update": 120,
+   "file_update": 26,
    "repo_born": 27,
    "worktree": 11
   },
@@ -2501,7 +1969,7 @@
    "chat_session": 222,
    "commit": 1192,
    "file_birth": 170,
-   "file_update": 84,
+   "file_update": 25,
    "repo_born": 24
   },
   "2026-07": {
@@ -2510,7 +1978,7 @@
    "chat_session": 380,
    "commit": 2879,
    "file_birth": 255,
-   "file_update": 100,
+   "file_update": 74,
    "offload_call": 1264,
    "repo_born": 23,
    "worktree": 6
@@ -2521,7 +1989,7 @@
    "chat_session": 580,
    "commit": 2685,
    "file_birth": 345,
-   "file_update": 57,
+   "file_update": 27,
    "offload_call": 108,
    "repo_born": 19,
    "run": 3,
@@ -2533,7 +2001,7 @@
    "chat_session": 557,
    "commit": 2616,
    "file_birth": 1550,
-   "file_update": 455,
+   "file_update": 113,
    "offload_call": 1873,
    "receipt": 224,
    "repo_born": 35,
@@ -2545,8 +2013,8 @@
    "chat_msg": 12613,
    "chat_session": 506,
    "commit": 862,
-   "file_birth": 144,
-   "file_update": 13,
+   "file_birth": 161,
+   "file_update": 11,
    "offload_call": 23141,
    "receipt": 9,
    "repo_born": 10,
@@ -2557,7 +2025,7 @@
  "raw_item_kind": {
   "am4-births": {
    "file_birth": 109,
-   "file_update": 11
+   "file_update": 4
   },
   "am4-git": {
    "branch": 10,
@@ -2566,7 +2034,7 @@
   },
   "c-births": {
    "file_birth": 607,
-   "file_update": 508
+   "file_update": 105
   },
   "c-git-a": {
    "branch": 22,
@@ -2632,7 +2100,7 @@
   },
   "e-births": {
    "file_birth": 662,
-   "file_update": 228
+   "file_update": 78
   },
   "e-git-a": {
    "branch": 119,
@@ -2659,7 +2127,7 @@
   },
   "e-root-births": {
    "file_birth": 1243,
-   "file_update": 703
+   "file_update": 197
   },
   "e-root-git-a": {
    "branch": 33,
@@ -2675,7 +2143,7 @@
   },
   "fx99-births": {
    "file_birth": 52,
-   "file_update": 197
+   "file_update": 6
   },
   "fx99-git": {
    "branch": 4,
@@ -2689,8 +2157,8 @@
    "offload_call": 25985
   },
   "linux-births": {
-   "file_birth": 600,
-   "file_update": 146
+   "file_birth": 617,
+   "file_update": 8
   },
   "linux-git": {
    "branch": 498,
@@ -2729,8 +2197,8 @@
   "continuity/run": 99,
   "deepagents_runs/offload_call": 401,
   "deepagents_runs/run": 136,
-  "fs_births/file_birth": 3273,
-  "fs_births/file_update": 1793,
+  "fs_births/file_birth": 3290,
+  "fs_births/file_update": 398,
   "git_repo/branch": 1741,
   "git_repo/commit": 38385,
   "git_repo/repo_born": 175,

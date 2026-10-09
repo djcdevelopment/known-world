@@ -1,5 +1,5 @@
 {
- "as_of": "2026-10-09T13:33:18Z",
+ "as_of": "2026-10-09T15:41:09Z",
  "constellations": [
   {
    "archetype": "engineering-only",
@@ -214,7 +214,7 @@
    "dirname": 13,
    "github": 75
   },
-  "lineages_without_manifest": 228,
+  "lineages_without_manifest": 229,
   "manifest_repos": 88,
   "unjoined": []
  },

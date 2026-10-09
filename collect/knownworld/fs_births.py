@@ -1,7 +1,9 @@
 """fs_births.py: file births and last-modified days folded per (depth-2 directory, day) (CONTRACT.md sections 1, 6).
 
-v1.4: also emits `file_update` (one record per (depth-2 directory, day) of mtime days, counted only when the mtime day
-differs from the birth day). Hosts am4 and fx99 are walked over ssh with fs_find.py shipped on stdin, folded here.
+v1.4: also emits `file_update` (one record per (depth-2 directory, day) of mtime days). v1.6: counted only when the
+mtime day is after the birth day; an earlier mtime is a timestamp preserved through a copy, dropped and counted in
+coverage `preserved_mtime` (per source in manifest `sources[].preserved_mtime`). Files with no birth time keep the old
+behaviour (mtime stands in for birth, no update) and are counted in coverage `update_birth_missing`. Hosts am4 and fx99 are walked over ssh with fs_find.py shipped on stdin, folded here.
 
 Uses GNU `find ... -exec stat --printf '%W|%Y|%s|%n\\0' -- {} +` (GNU find has no birth directive; stat %W is the
 birth time on the ntfs3 mounts, 0 when unknown, then mtime is used). Only counts and bytes survive; file names are used for exclusion and to find the depth-2 directory, then
@@ -121,6 +123,8 @@ def process_source(ctx, src, cursor):
     secs = Counter()
     raw = 0
     null_mt = 0
+    preserved = 0
+    nobirth = 0
     for rec in st.records():
         raw += 1
         parts = rec.split(b"|", 3)
@@ -155,13 +159,19 @@ def process_source(ctx, src, cursor):
         else:
             secs[be] += 1
             g[4][be] += 1
-        # file_update: needs a real birth and a clean mtime on another day (1970/1980 mtimes are null)
+        # file_update (v1.6): needs a real birth and a clean mtime on a day AFTER the birth day. No birth (no %W):
+        # old behaviour, mtime stands in for birth, no update (counted as update_birth_missing). An mtime day before
+        # the birth day is a timestamp preserved through a copy: dropped, counted as preserved_mtime.
         if be is None:
+            nobirth += 1
             continue
         if me is None:
             null_mt += 1
             continue
         if core.day_of(me) == core.day_of(be):
+            continue
+        if core.day_of(me) < core.day_of(be):
+            preserved += 1
             continue
         uk = (d, core.day_of(me))
         u = upd.get(uk)
@@ -186,6 +196,9 @@ def process_source(ctx, src, cursor):
         return {"status": "skipped", "reason": "ssh_rc:%s" % st.rc}
     if null_mt:
         ctx.extra["update_null_mtime"] = ctx.extra.get("update_null_mtime", 0) + null_mt
+    ctx.extra["preserved_mtime"] = ctx.extra.get("preserved_mtime", 0) + preserved
+    if nobirth:
+        ctx.extra["update_birth_missing"] = ctx.extra.get("update_birth_missing", 0) + nobirth
     bulk_secs = {s for s, c in secs.items() if c >= BULK_SECOND_MIN}
     for (d, day), (n, size, e, nb, sc) in sorted(groups.items()):
         in_bulk = sum(c for s, c in sc.items() if s in bulk_secs)
@@ -208,4 +221,4 @@ def process_source(ctx, src, cursor):
         if n >= 5 and in_bulk >= BULK_FRACTION * n:
             ev["meta"] = {"bulk_copy": True}
         ctx.emit(ev)
-    return {"status": "done", "raw": raw}
+    return {"status": "done", "raw": raw, "preserved_mtime": preserved}

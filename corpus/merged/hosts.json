@@ -5,12 +5,12 @@
     "automation": 1095,
     "claude": 33851,
     "codex": 7817,
-    "human": 1856,
+    "human": 1735,
     "local_model": 507,
     "opencode": 209,
     "third_party": 9
    },
-   "events": 45344,
+   "events": 45223,
    "first_ts": "2015-08-11T05:23:44Z",
    "host": "omen-linux",
    "kinds": {
@@ -18,22 +18,22 @@
     "chat_msg": 14474,
     "chat_session": 570,
     "commit": 2564,
-    "file_birth": 600,
-    "file_update": 146,
+    "file_birth": 617,
+    "file_update": 8,
     "offload_call": 26351,
     "receipt": 229,
     "repo_born": 18,
     "run": 232,
     "worktree": 121
    },
-   "last_ts": "2026-10-09T12:45:04Z",
-   "lineages": 85,
+   "last_ts": "2026-10-09T15:41:09Z",
+   "lineages": 86,
    "srcs": {
     "claude_jsonl": 9031,
     "codex_jsonl": 5804,
     "continuity": 328,
     "deepagents_runs": 534,
-    "fs_births": 746,
+    "fs_births": 625,
     "git_repo": 2742,
     "hearth_ledger": 25950,
     "opencode_db": 209
@@ -44,11 +44,11 @@
     "automation": 3,
     "claude": 38797,
     "codex": 50253,
-    "human": 3287,
+    "human": 2884,
     "third_party": 1386
    },
-   "events": 93726,
-   "first_ts": "2016-06-05T16:16:52Z",
+   "events": 93323,
+   "first_ts": "2021-05-01T21:10:53Z",
    "host": "omen-c",
    "kinds": {
     "branch": 194,
@@ -56,7 +56,7 @@
     "chat_session": 1305,
     "commit": 5109,
     "file_birth": 607,
-    "file_update": 508,
+    "file_update": 105,
     "repo_born": 37,
     "run": 3,
     "worktree": 49
@@ -67,7 +67,7 @@
     "claude_jsonl": 36966,
     "codex_jsonl": 50253,
     "deepagents_runs": 3,
-    "fs_births": 1115,
+    "fs_births": 712,
     "git_repo": 5389
    }
   },
@@ -75,11 +75,11 @@
    "classes": {
     "claude": 23456,
     "codex": 13772,
-    "human": 5612,
+    "human": 4956,
     "third_party": 23024
    },
-   "events": 65864,
-   "first_ts": "2013-08-07T13:33:38Z",
+   "events": 65208,
+   "first_ts": "2018-08-22T16:50:01Z",
    "host": "omen-e",
    "kinds": {
     "branch": 557,
@@ -87,7 +87,7 @@
     "chat_session": 555,
     "commit": 26640,
     "file_birth": 1905,
-    "file_update": 931,
+    "file_update": 275,
     "repo_born": 56,
     "worktree": 55
    },
@@ -96,7 +96,7 @@
    "srcs": {
     "claude_jsonl": 21951,
     "codex_jsonl": 13769,
-    "fs_births": 2836,
+    "fs_births": 2180,
     "git_repo": 27308
    }
   },
@@ -104,18 +104,18 @@
    "classes": {
     "automation": 7,
     "claude": 17,
-    "human": 146,
+    "human": 139,
     "local_model": 35,
     "third_party": 4
    },
-   "events": 209,
+   "events": 202,
    "first_ts": "2025-07-01T20:50:00Z",
    "host": "am4",
    "kinds": {
     "branch": 10,
     "commit": 32,
     "file_birth": 109,
-    "file_update": 11,
+    "file_update": 4,
     "offload_call": 35,
     "receipt": 2,
     "repo_born": 10
@@ -124,7 +124,7 @@
    "lineages": 13,
    "srcs": {
     "continuity": 2,
-    "fs_births": 120,
+    "fs_births": 113,
     "git_repo": 52,
     "hearth_ledger": 35
    }
@@ -133,17 +133,17 @@
    "classes": {
     "automation": 7,
     "claude": 37,
-    "human": 254,
+    "human": 63,
     "third_party": 3
    },
-   "events": 301,
-   "first_ts": "2018-05-23T00:22:26Z",
+   "events": 110,
+   "first_ts": "2026-06-22T14:57:53Z",
    "host": "fx99",
    "kinds": {
     "branch": 2,
     "commit": 46,
     "file_birth": 52,
-    "file_update": 197,
+    "file_update": 6,
     "receipt": 2,
     "repo_born": 2
    },
@@ -151,7 +151,7 @@
    "lineages": 9,
    "srcs": {
     "continuity": 2,
-    "fs_births": 249,
+    "fs_births": 58,
     "git_repo": 50
    }
   },

@@ -1,0 +1,131 @@
+{
+ "map_rect": [
+  0,
+  84,
+  1600,
+  796
+ ],
+ "results": [
+  {
+   "date": null,
+   "frames_changed": 1,
+   "max_share": 0.0007740384615384615,
+   "mean_share": 2.669098143236074e-05,
+   "near_nation_entry": false,
+   "over_0_5pct": 0,
+   "second": 76,
+   "start": 2280
+  },
+  {
+   "date": null,
+   "frames_changed": 3,
+   "max_share": 0.001125,
+   "mean_share": 5.479111405835543e-05,
+   "near_nation_entry": false,
+   "over_0_5pct": 0,
+   "second": 111,
+   "start": 3330
+  },
+  {
+   "date": null,
+   "frames_changed": 12,
+   "max_share": 0.0015721153846153847,
+   "mean_share": 0.00019694960212201593,
+   "near_nation_entry": false,
+   "over_0_5pct": 0,
+   "second": 254,
+   "start": 7620
+  },
+  {
+   "date": null,
+   "frames_changed": 24,
+   "max_share": 0.0015,
+   "mean_share": 0.0006937997347480107,
+   "near_nation_entry": false,
+   "over_0_5pct": 0,
+   "second": 263,
+   "start": 7890
+  },
+  {
+   "date": null,
+   "frames_changed": 12,
+   "max_share": 0.00034615384615384613,
+   "mean_share": 7.617705570291776e-05,
+   "near_nation_entry": false,
+   "over_0_5pct": 0,
+   "second": 279,
+   "start": 8370
+  },
+  {
+   "date": null,
+   "frames_changed": 8,
+   "max_share": 0.0012764423076923076,
+   "mean_share": 0.00020026525198938992,
+   "near_nation_entry": false,
+   "over_0_5pct": 0,
+   "second": 300,
+   "start": 9000
+  },
+  {
+   "date": null,
+   "frames_changed": 6,
+   "max_share": 0.00023798076923076922,
+   "mean_share": 3.149867374005305e-05,
+   "near_nation_entry": false,
+   "over_0_5pct": 0,
+   "second": 312,
+   "start": 9360
+  },
+  {
+   "date": null,
+   "frames_changed": 6,
+   "max_share": 0.0014615384615384616,
+   "mean_share": 0.00019371684350132621,
+   "near_nation_entry": false,
+   "over_0_5pct": 0,
+   "second": 462,
+   "start": 13860
+  },
+  {
+   "date": null,
+   "frames_changed": 5,
+   "max_share": 0.0011947115384615384,
+   "mean_share": 6.258289124668436e-05,
+   "near_nation_entry": false,
+   "over_0_5pct": 0,
+   "second": 541,
+   "start": 16230
+  },
+  {
+   "date": null,
+   "frames_changed": 7,
+   "max_share": 0.0025865384615384617,
+   "mean_share": 0.0002774370026525199,
+   "near_nation_entry": false,
+   "over_0_5pct": 0,
+   "second": 632,
+   "start": 18960
+  }
+ ],
+ "seconds": [
+  76,
+  111,
+  254,
+  263,
+  279,
+  300,
+  312,
+  462,
+  541,
+  632
+ ],
+ "seed": 14,
+ "timeline_rect": [
+  0,
+  880,
+  1920,
+  200
+ ],
+ "worst_max_share_all": 0.0025865384615384617,
+ "worst_max_share_excluding_entries": 0.0025865384615384617
+}

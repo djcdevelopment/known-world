@@ -14,6 +14,8 @@ const out = path.resolve(A.out);
 const workers = parseInt(A.workers || '10', 10);
 const from = parseInt(A.from || '0', 10);
 const FFMPEG = process.env.FFMPEG;
+const QP = new URLSearchParams(A.query || '');
+const VPW = parseInt(QP.get('vw') || '1920', 10), VPH = parseInt(QP.get('vh') || '1080', 10), DSF = parseFloat(QP.get('dpr') || '1');   // a portrait export: vw=360&vh=640&dpr=3 renders 1080 x 1920
 const page_url = 'file://' + root + '/render/index.html?export=1&data=' + encodeURIComponent(A.data) + (A.query ? '&' + A.query : '');
 fs.mkdirSync(out + '/seg', {recursive: true});
 fs.mkdirSync(out + '/hashes', {recursive: true});
@@ -21,7 +23,7 @@ const launchOpts = {headless: true, args: ['--force-color-profile=srgb', '--font
 
 async function openPage() {
   const browser = await chromium.launch(launchOpts);
-  const ctx = await browser.newContext({viewport: {width: 1920, height: 1080}, deviceScaleFactor: 1});
+  const ctx = await browser.newContext({viewport: {width: VPW, height: VPH}, deviceScaleFactor: DSF});
   const page = await ctx.newPage();
   await page.goto(page_url);
   await page.waitForFunction(() => window.__ready === true);
@@ -60,7 +62,7 @@ async function worker(w) {
     for (let f = a; f < b; f++) {
       const r0 = process.hrtime.bigint();
       await h.page.evaluate(f => window.renderFrame(f), f);
-      const shot = await h.cdp.send('Page.captureScreenshot', {format: 'png', optimizeForSpeed: true});
+      const shot = await h.cdp.send('Page.captureScreenshot', (DSF === 1 ? {format: 'png', optimizeForSpeed: true} : {format: 'png', optimizeForSpeed: true, clip: {x: 0, y: 0, width: VPW, height: VPH, scale: DSF}}));
       renderNs += process.hrtime.bigint() - r0;
       const buf = Buffer.from(shot.data, 'base64');
       lines.push(f + ' ' + crypto.createHash('sha256').update(buf).digest('hex'));

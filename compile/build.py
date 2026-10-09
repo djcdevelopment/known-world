@@ -417,10 +417,12 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
         "seat": {h: bd.b64(np.minimum(255, series["seat_" + h]).astype("u1")) for h in ser.SEAT_HOSTS},
         "marks": marks,
         "card": card, "card_world": card_world, "card_footer": footer, "card_third": card_third,
-        "layout": {"W": int(params["frame_w"]), "H": int(params["frame_h"]), "hud": params["hud"], "alpha": params["hud_alpha"] if params["hud"] == "plates" else 1.0,
+        "layout": {"W": int(params["frame_w"]), "H": int(params["frame_h"]), "kind": params["layout"], "hud": params["hud"], "alpha": params["hud_alpha"] if params["hud"] == "plates" else 1.0,
                    "left": int(params["hud_left"]), "top": int(params["hud_top"]), "right": int(params["hud_right"]), "bottom": int(params["hud_bottom"]),
                    "safe": list(cam.safe_area(params))},
         "layout_portrait": params["hud_portrait"],
+        "ia": ia_block(params, fps) if params["layout"] == "ia" else None,
+        "coast": bool(params["layout"] == "ia" and params["ia_coast_labels"] == "on"),
         "terrain_L": params["terrain_L"], "terrain_C": params["terrain_C"], "collapse_thr": params["collapse_events_per_s"], "labels": params["labels"],
     })
     if st is not None:
@@ -462,6 +464,22 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
     return rec, audio, data_path, clock, extra
 
 
+def ia_block(params, fps):
+    """The information-architecture zones (DIRECTION rev 5): pixel rects of the landscape frame and the portrait recipe. The page lays out
+    from these; nothing in the page names 1920 or 1080."""
+    W, H = int(params["frame_w"]), int(params["frame_h"])
+    th, nw, tl = int(params["ia_ticker_h"]), int(params["ia_nation_w"]), int(params["ia_timeline_h"])
+    rh, bh, pitch, nl = int(params["ia_ruler_h"]), int(params["ia_band_h"]), int(params["ia_lane_pitch"]), int(params["ia_lanes_max"])
+    ty = H - tl
+    ax1 = W - int(params["ia_axis_pad_r"])
+    ax0 = ax1 - 3 * int(round(params["stream_window_s"] * fps))   # 3 px per film frame: a steady, integer scroll
+    return {"ticker": [0, 0, 720, th], "map": list(cam.safe_area(params)), "nations": [W - nw, 0, nw, ty],
+            "timeline": [0, ty, W, tl], "ruler": [0, ty, W, rh], "band": [0, ty + rh, W, bh], "lanes": [0, ty + rh + bh + 3, W, nl * pitch],
+            "ax0": ax0, "ax1": ax1, "name_w": int(params["ia_name_w"]), "pitch": pitch, "nl": nl, "window_f": int(round(params["stream_window_s"] * fps)),
+            "nation_fade_f": max(2, int(round(float(params["ia_nation_fade_s"]) * fps))), "portrait": params["ia_portrait"],
+            "nation_row": int(params["ia_nation_row_fit"]), "design": params["design_system"] == "on"}
+
+
 def stream_block(st, params, fps):
     f32 = lambda a: bd.b64(np.asarray(a).astype("<f4"))
     i32 = lambda a: bd.b64(np.asarray(a).astype("<i4"))
@@ -471,6 +489,7 @@ def stream_block(st, params, fps):
     for (_f, _n, lanes) in mv:
         ml += lanes; ms.append(len(ml))
     return {"L": st["L"], "K": st["K"], "names": st["names"], "labels": params["stream_labels"],
+            "horizontal": bool(st["horizontal"]), "max_lanes": int(st["max_lanes"]),
             "col_x": 1600 - int(params["stream_col_w"]), "col_w": int(params["stream_col_w"]), "ruler_w": stm.RULER_W,
             "window_f": int(round(params["stream_window_s"] * fps)), "fade_f": max(2, int(round(params["stream_fade_s"] * fps))),
             "conn_f": max(2, int(round(params["stream_connector_s"] * fps))),

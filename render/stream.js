@@ -3,7 +3,7 @@
 // flashes and nothing sounds. Repo names are printed here only (the map's labels stay off); the hashed arm swaps them at compile.
 (function () {
   const KW = window.KW, D = KW.D, S = D.stream;
-  if (!S || !KW.LAY.stream) return;   // portrait hides the stream (hud_portrait: hidden)
+  if (!S || !KW.LAY.stream || KW.LAY.ia) return;   // portrait hides the stream (hud_portrait: hidden)
   const U = KW.util, F = D.F, K = S.K, L = S.L, FONT = '"JetBrains Mono", monospace';
   const LY = KW.LAY, X0 = LY.W - LY.right - S.col_w, W = S.col_w, TOP = LY.top, PHT = LY.H - LY.top - LY.bottom, YQ = TOP + 20, YH = YQ + 104, YB = LY.H - LY.bottom, H = YB - YH, Wf = S.window_f, PPF = H / Wf;
   const sid = U.u8(S.sid), sx = U.f32(S.sx), sa = U.u8(S.sa), ss = U.i32(S.ss), sq = U.u8(S.sq);

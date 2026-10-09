@@ -11,8 +11,8 @@
   const KEYS = ['omen-c', 'omen-e', 'omen-linux', 'am4', 'fx99', 'github'];
   function tallies(ctx, f) {
     const x0 = 0, LY = KW.LAY, por = LY.mode === 'portrait';
-    if (por && !KW.ui.surfaces) return;   // portrait: the tallies sit behind a tap
-    const PW = por ? 240 : LY.left, PH = por ? LY.bandY - LY.top : LY.H - LY.top - LY.bottom;
+    if ((por || LY.ia) && !KW.ui.surfaces) return;   // portrait and the ia layout: the tallies sit behind a toggle (a tap, the key s)
+    const PW = por ? 240 : (LY.ia ? 240 : LY.left), PH = por ? LY.bandY - LY.top : (LY.ia ? LY.ia.tl[1] - LY.top : LY.H - LY.top - LY.bottom);
     KW.plate(ctx, x0, LY.top, PW, PH);
     ctx.textBaseline = 'alphabetic';
     ctx.save(); ctx.beginPath(); ctx.rect(0, LY.top, PW - 8, PH); ctx.clip();
@@ -24,17 +24,18 @@
     for (let r = 0; r < idx.length; r++) {
       const i = idx[r], age = f - S.entry[i];
       if (age < 0) continue;
-      const u = Math.min(1, age / 12), s = u * u * (3 - 2 * u), dx = -Math.round(200 * (1 - s));
+      const u = Math.min(1, age / 12), s = LY.ia ? 1 : u * u * (3 - 2 * u), dx = LY.ia ? 0 : -Math.round(200 * (1 - s));
       const y = LY.top + 12 + r * rowH, x = x0 + dx, k = KEYS[i];
       ctx.globalAlpha = s;
       const gh = k === 'github';
       ctx.fillStyle = P.rgbaRaw(0.45, 0.05, 190, 0.9);
       if (!gh) ctx.fillStyle = P.rgbaRaw(0.45, 0.05, [275, 255, 165, 310, 60][['omen-c', 'omen-e', 'omen-linux', 'am4', 'fx99'].indexOf(k)], 0.95);
+      if (KW.C.surf) ctx.fillStyle = KW.C.surf[i];   // design system: surface-* hex
       ctx.fillRect(x + 14, y + 4, 16, 16);
-      ctx.font = '20px ' + FONT; ctx.fillStyle = '#e8e0c0'; ctx.textAlign = 'left'; ctx.fillText(S.names[i], x + 40, y + 20);
+      ctx.font = '20px ' + FONT; ctx.fillStyle = KW.C.fg; ctx.textAlign = 'left'; ctx.fillText(S.names[i], x + 40, y + 20);
       ctx.font = '28px ' + FONT; ctx.textAlign = 'right';
       ctx.fillText(String(gh ? islc[f] : tests[i * F + f]), x + 226, y + 22);
-      ctx.textAlign = 'left'; ctx.font = '14px ' + FONT; ctx.fillStyle = '#8b93a6';
+      ctx.textAlign = 'left'; ctx.font = '14px ' + FONT; ctx.fillStyle = KW.C.muted;
       ctx.fillText(gh ? 'repos risen' : compact(commits[i * F + f]) + 'c  ' + compact(files[i * F + f]) + 'f', x + 14, y + 44);
       if (!gh) {
         // files created and files updated per surface: the same shared-log micro-bars as the right panel
@@ -42,8 +43,8 @@
         ctx.font = '12px ' + FONT;
         [['created', created[k]], ['updated', updated[k]]].forEach((rw, r) => {
           const by = y + 62 + r * 15;
-          ctx.textAlign = 'left'; ctx.fillStyle = '#8b93a6'; ctx.fillText(rw[0], x + 14, by);
-          ctx.textAlign = 'right'; ctx.fillStyle = '#c9c3a8'; ctx.fillText(fm.compact(rw[1]), x + 128, by);
+          ctx.textAlign = 'left'; ctx.fillStyle = KW.C.muted; ctx.fillText(rw[0], x + 14, by);
+          ctx.textAlign = 'right'; ctx.fillStyle = KW.C.fg2; ctx.fillText(fm.compact(rw[1]), x + 128, by);
           fm.microBar(ctx, x + 134, by - 8, 92, 8, [rw[1]], hue);
         });
         ctx.textAlign = 'left';
@@ -78,10 +79,10 @@
       if (o > 0.02) { ctx.fillStyle = P.rgba(D.nat_classes.indexOf('local_model'), 0.6, Math.min(1, 0.25 + o)); ctx.fillRect(x, mid - 1, 2, 2); }
     }
     // era ticks
-    ctx.fillStyle = 'rgba(232,224,192,0.55)';
+    ctx.fillStyle = 'rgba(' + KW.C.fgRgb + ',0.55)';
     for (const sf of D.era_switch_f) { const k = Math.round((sf - (f - (BW - 1))) * (ncol - 1) / (BW - 1)); if (k >= 0 && k < ncol) ctx.fillRect(x0 + k * 2, y0 + 4, 1, h - 8); }
     
   }
   KW.registerLayer({ id: 'tallies', z: 71, render: tallies });
-  KW.registerLayer({ id: 'band', z: 72, render: drawBand });
+  if (!KW.LAY.ia) KW.registerLayer({ id: 'band', z: 72, render: drawBand });
 })();

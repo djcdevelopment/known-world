@@ -8,7 +8,7 @@ const A = Object.fromEntries(process.argv.slice(2).reduce((acc, v, i, arr) => { 
 const root = path.resolve(new URL('..', import.meta.url).pathname);
 const browser = await chromium.launch({headless: true, args: ['--force-color-profile=srgb', '--font-render-hinting=none', '--disable-lcd-text']});
 const VW = parseInt(A.vw || '1920', 10), VH = parseInt(A.vh || '1080', 10);
-const ctx = await browser.newContext({viewport: {width: VW, height: VH}, deviceScaleFactor: 1});
+const ctx = await browser.newContext({viewport: {width: VW, height: VH}, deviceScaleFactor: parseFloat(A.dsf || '1')});
 const page = await ctx.newPage();
 page.on('pageerror', e => console.log('pageerror', e.message));
 await page.goto('file://' + root + '/render/index.html?export=1&data=' + encodeURIComponent(A.data) + (A.vw ? '&vw=' + VW + '&vh=' + VH : '') + (A.query ? '&' + A.query : ''));

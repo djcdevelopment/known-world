@@ -2,6 +2,7 @@
 <html><head><meta charset="utf-8"><title>Known World</title>
 <style>html,body{margin:0;padding:0;background:#07090e;overflow:hidden}canvas{display:block}</style></head>
 <body><canvas id="c" width="1920" height="1080"></canvas>
+<script src="system.js"></script>
 <script>
 // The data script is chosen by ?data=<path> (default kw-data.js) so one page serves the cut, the full piece and tests.
 document.write('<script src="' + (new URLSearchParams(location.search).get('data') || 'kw-data.js') + '"><\/script>');
@@ -15,6 +16,7 @@ document.write('<script src="' + (new URLSearchParams(location.search).get('data
 <script src="panels.js"></script>
 <script src="border.js"></script>
 <script src="stream.js"></script>
+<script src="ia.js"></script>
 <script src="card.js"></script>
 <script src="main.js"></script>
 <script src="player.js"></script>

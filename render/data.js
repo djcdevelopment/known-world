@@ -21,7 +21,26 @@
   const exporting = Q.get('export') === '1';
   const vw = parseFloat(Q.get('vw')) || (exporting ? 0 : window.innerWidth), vh = parseFloat(Q.get('vh')) || (exporting ? 0 : window.innerHeight);
   const dpr = parseFloat(Q.get('dpr')) || (exporting ? 1 : (window.devicePixelRatio || 1));
+  // information architecture (layout ia): four zones in the order the eye asks: ticker top-left, the map in the safe area, nations at the right,
+  // the timeline at the bottom (marks ruler, chatter and commit band, lineage lanes on one scrolling axis). Rects come from the compile (D.ia).
+  const IA0 = D.ia;
+  function iaRects(W, H, por) {
+    const I = IA0, P = I.portrait;
+    if (!por) {
+      const th = I.ticker[3], nw = I.nations[2], tlh = I.timeline[3], ty = H - tlh, rh = I.ruler[3], bh = I.band[3];
+      const ax1 = W - (I.timeline[2] - I.ax1), ax0 = Math.max(I.name_w, ax1 - 3 * I.window_f);
+      return { tick: [0, 0, I.ticker[2], th], nat: [W - nw, 0, nw, ty], tl: [0, ty, W, tlh], ruler: [0, ty, W, rh], band: [0, ty + rh, W, bh],
+               lanes: [0, ty + rh + bh + 3, W, I.nl * I.pitch], ax0, ax1, pxf: (ax1 - ax0) / I.window_f, nameX: ax0 - I.name_w, nameW: I.name_w, pitch: I.pitch, nl: I.nl, window_f: I.window_f,
+               safe: [0, th, W - nw, ty - th], fade_f: I.nation_fade_f, namePx: 10 };
+    }
+    // portrait (the primary frame, 360 x 640 css): ticker, nation strip, map, timeline. Closed = ruler + band at the bottom; open (the lanes behind a tap) = the zone grows up
+    const rh = P.ruler, bh = P.band, tlc = rh + bh, tlo = P.lanes_open, ax1 = W - 8, ax0 = P.name_w;
+    const mk = tl => { const ty = H - tl; return { tl: [0, ty, W, tl], ruler: [0, ty, W, rh], band: [0, ty + rh, W, bh], lanes: [0, ty + rh + bh + 3, W, I.nl * P.pitch] }; };
+    return Object.assign({ tick: [0, 0, W, P.ticker], nat: [0, P.ticker, W, P.strip], ax0, ax1, pxf: (ax1 - ax0) / I.window_f, nameX: 3, nameW: P.name_w - 4, pitch: P.pitch, nl: I.nl, window_f: I.window_f,
+             safe: [0, P.ticker + P.strip, W, H - P.ticker - P.strip - tlc], fade_f: I.nation_fade_f, namePx: 10, open: mk(tlo), closed: mk(tlc) }, mk(tlc));
+  }
   function layoutFor() {
+    if (IA0) return layoutIA();
     const LY = Object.assign({ mode: 'landscape', stream: !!D.stream, bandY: L0.H - L0.bottom, bandH: L0.bottom, tickerH: L0.top, stripH: 0, tpH: 0, B: 1, css: 1 }, L0);
     if (!vw || !vh) return LY;
     if (vw >= vh) {
@@ -42,18 +61,42 @@
     LY.safe = [0, LY.top, W, H - LY.top - LY.bottom];
     return LY;
   }
+  function layoutIA() {
+    const LY = { mode: 'landscape', ia: null, stream: true, B: 1, css: 1, alpha: 1, hud: 'columns', W: L0.W, H: L0.H, bandY: 0, bandH: 0, tickerH: IA0.ticker[3], stripH: 0, tpH: 0, left: 0, top: IA0.ticker[3], right: IA0.nations[2], bottom: IA0.timeline[3] };
+    if (vw && vh && vw < vh) {
+      const P = IA0.portrait, W = P.w, H = Math.round(W * vh / vw);
+      Object.assign(LY, { mode: 'portrait', W, H, stream: true, css: vw / W, tickerH: P.ticker, stripH: P.strip });
+      LY.B = LY.css * dpr; LY.ia = iaRects(W, H, true);
+      LY.top = P.ticker + P.strip; LY.bandY = LY.ia.tl[1]; LY.bottom = P.ruler + P.band; LY.left = 0; LY.right = 0;
+    } else {
+      if (vw && vh) {
+        const H = L0.H, W = Math.max(1440, Math.min(2560, Math.round(H * vw / vh)));
+        LY.W = W; LY.H = H; LY.css = Math.min(vw / W, vh / H); LY.B = LY.css * dpr;
+      }
+      LY.ia = iaRects(LY.W, LY.H, false);
+      LY.bandY = LY.ia.band[1];
+    }
+    LY.safe = LY.ia.safe.slice();
+    return LY;
+  }
   const LY = layoutFor();
   KW.LAY = LY; KW.B = LY.B; KW.dpr = dpr; KW.viewport = { w: vw, h: vh };
   KW.FRAME = { x: 0, y: 0, w: LY.W, h: LY.H };
   KW.VIEW = { x: LY.safe[0], y: LY.safe[1], w: LY.safe[2], h: LY.safe[3], cx: LY.safe[0] + LY.safe[2] / 2, cy: LY.safe[1] + LY.safe[3] / 2 };
   // the camera is compiled for the landscape safe area; any other safe area contains it (what was in view stays in view)
   KW.camK = (L0.safe[2] === LY.safe[2] && L0.safe[3] === LY.safe[3]) ? 1 : Math.min(LY.safe[2] / L0.safe[2], LY.safe[3] / L0.safe[3]);
-  KW.ui = { nations: false, surfaces: false };
+  KW.ui = { nations: false, surfaces: false, lanes: false };
   KW.compat = Q.get('compat') === 'slice9';   // verification arm: no hashmark hairline, the slice-9 stream header; at 1920 x 1080 it must hash equal to the slice-9 renderer
+  // colours: the film's own (slice 10) unless the design system is on (layout ia, design_system on): design/known-world-design-system/tokens.json fg, fg-2, frame-muted, muted, frame-line, canvas, dim, sea
+  const DS = !!(D.ia && D.ia.design);
+  const SY = window.KW_SYS, hexRgb = h => parseInt(h.slice(1, 3), 16) + ',' + parseInt(h.slice(3, 5), 16) + ',' + parseInt(h.slice(5, 7), 16);
+  KW.C = DS ? { fg: SY.color.fg, fgRgb: hexRgb(SY.color.fg), fg2: SY.color.fg2, muted: SY.color.frameMuted, mutedRgb: hexRgb(SY.color.frameMuted), muted2: SY.color.muted, rule: SY.color.frameLine,
+                canvas: SY.color.canvas, sea: SY.color.sea, surf: ['omen-c', 'omen-e', 'omen-linux', 'am4', 'fx99', 'github'].map(k => SY.surface[k]), plateRgb: hexRgb(SY.color.canvas), dim: SY.color.dim }
+            : { fg: '#e8e0c0', fgRgb: '232,224,192', fg2: '#c9c3a8', muted: '#8b93a6', mutedRgb: '139,147,166', muted2: '#5f6779', rule: '#1b2230', canvas: '#07090e', sea: null, surf: null, plateRgb: '11,14,20', dim: '#2a3346' };
   // a HUD plate: translucent dark panel with a 1 px border (opaque under hud: columns)
   KW.plate = function (ctx, x, y, w, h) {
-    ctx.fillStyle = 'rgba(11,14,20,' + LY.alpha.toFixed(3) + ')'; ctx.fillRect(x, y, w, h);
-    ctx.fillStyle = LY.alpha < 1 ? 'rgba(74,86,112,0.55)' : '#1b2230';
+    ctx.fillStyle = 'rgba(' + KW.C.plateRgb + ',' + LY.alpha.toFixed(3) + ')'; ctx.fillRect(x, y, w, h);
+    ctx.fillStyle = LY.alpha < 1 ? 'rgba(74,86,112,0.55)' : KW.C.rule;
     ctx.fillRect(x, y, w, 1); ctx.fillRect(x, y + h - 1, w, 1); ctx.fillRect(x, y, 1, h); ctx.fillRect(x + w - 1, y, 1, h);
   };
   // running totals helpers: thousands separators, compact figures, and the shared log scale of the micro-bars
@@ -64,11 +107,11 @@
   const TICKS = [3, 4, 5, 6];
   function microBar(ctx, x, y, w, h, vals, color) {
     // vals: one value (a bar of height h) or two (ins over del, each h/2 rounded)
-    ctx.fillStyle = 'rgba(139,147,166,0.10)'; ctx.fillRect(x, y, w, h);
+    ctx.fillStyle = 'rgba(' + KW.C.mutedRgb + ',0.10)'; ctx.fillRect(x, y, w, h);
     ctx.fillStyle = color;
     if (vals.length === 1) ctx.fillRect(x, y, barLen(vals[0], w), h);
     else { const h1 = Math.floor(h / 2); ctx.fillRect(x, y, barLen(vals[0], w), h1); ctx.fillRect(x, y + h - h1, barLen(vals[1], w), h1); }
-    ctx.fillStyle = 'rgba(232,224,192,0.22)';
+    ctx.fillStyle = 'rgba(' + KW.C.fgRgb + ',0.22)';
     for (const t of TICKS) ctx.fillRect(x + Math.round(w * (t - 1) / 6.5), y - 1, 1, h + 2);
   }
   KW.fmt = { commas, compact, barLen, microBar };

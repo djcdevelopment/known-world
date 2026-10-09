@@ -17,19 +17,20 @@
   const css = `
   html,body{margin:0;padding:0;background:#07090e;overflow:hidden;height:100%;font-family:${FONT}}
   #stage{position:absolute;overflow:hidden}
-  #ui{position:absolute;left:0;top:0;transform-origin:0 0;pointer-events:none;color:#e8e0c0;font:12px ${FONT}}
+  #ui{position:absolute;left:0;top:0;transform-origin:0 0;pointer-events:none;color:${KW.C.fg};font:12px ${FONT}}
   #ui *{box-sizing:border-box}
-  .tp{position:absolute;display:flex;align-items:center;gap:6px;pointer-events:auto;user-select:none}
+  .tp{position:absolute;display:flex;align-items:center;gap:6px;pointer-events:auto;user-select:none;transition:opacity .3s}
+  .tp.ia{background:rgba(11,14,20,.92);border-bottom:1px solid rgba(74,86,112,.55)} .tp.hide{opacity:0;pointer-events:none}
   .tp.plate{background:rgba(11,14,20,.6);border:1px solid rgba(74,86,112,.55)}
-  .b{height:22px;min-width:26px;padding:0 6px;border:1px solid rgba(74,86,112,.7);background:rgba(20,26,38,.7);color:#e8e0c0;font:13px ${FONT};cursor:pointer;display:flex;align-items:center;justify-content:center;border-radius:2px}
-  .b:hover{background:rgba(60,72,98,.8)} .b.on{border-color:#e8e0c0}
-  .lbl{color:#c9c3a8;font-size:12px;white-space:nowrap}
+  .b{height:22px;min-width:26px;padding:0 6px;border:1px solid rgba(74,86,112,.7);background:rgba(20,26,38,.7);color:${KW.C.fg};font:13px ${FONT};cursor:pointer;display:flex;align-items:center;justify-content:center;border-radius:2px}
+  .b:hover{background:rgba(60,72,98,.8)} .b.on{border-color:${KW.C.fg}}
+  .lbl{color:${KW.C.fg2};font-size:12px;white-space:nowrap}
   .bar{position:relative;flex:1;height:22px;background:rgba(7,9,14,.55);border:1px solid rgba(74,86,112,.6);cursor:pointer;min-width:60px}
-  .seg{position:absolute;top:0;bottom:0} .fill{position:absolute;left:0;top:0;bottom:0;background:rgba(232,224,192,.16)}
-  .head{position:absolute;top:-2px;bottom:-2px;width:2px;background:#e8e0c0}
+  .seg{position:absolute;top:0;bottom:0} .fill{position:absolute;left:0;top:0;bottom:0;background:rgba(${KW.C.fgRgb},.16)}
+  .head{position:absolute;top:-2px;bottom:-2px;width:2px;background:${KW.C.fg}}
   .mk{position:absolute;top:0;bottom:0;width:7px;margin-left:-3px}
   .mk i{position:absolute;left:3px;top:0;bottom:0;width:1px}
-  #tip{position:absolute;pointer-events:none;background:rgba(11,14,20,.92);border:1px solid rgba(74,86,112,.8);padding:3px 6px;color:#e8e0c0;font:12px ${FONT};white-space:nowrap;display:none;z-index:9}
+  #tip{position:absolute;pointer-events:none;background:rgba(11,14,20,.92);border:1px solid rgba(74,86,112,.8);padding:3px 6px;color:${KW.C.fg};font:12px ${FONT};white-space:nowrap;display:none;z-index:9}
   #aud{display:none}`;
   const st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
   const cv = document.getElementById('c');
@@ -89,11 +90,19 @@
   // ---- transport DOM ----------------------------------------------------------------------------------------------------------
   const por = LY.mode === 'portrait';
   const tpWrap = el('tp' + (por ? ' plate' : ''), ui);
-  if (!por) { Object.assign(tpWrap.style, { left: (LY.left + 8) + 'px', top: (LY.bandY + 5) + 'px', width: (LY.W - LY.left - LY.right - 16) + 'px', height: '24px' }); }
+  if (LY.ia) {   // information architecture: the transport and the scrubber overlay the timeline's ruler and hide after 3 s without input
+    tpWrap.classList.add('ia');
+    const R = LY.ia.ruler;
+    if (!por) Object.assign(tpWrap.style, { left: '0px', top: R[1] + 'px', width: LY.W + 'px', height: R[3] + 'px', padding: '0 8px' });
+    else Object.assign(tpWrap.style, { left: '0px', top: R[1] + 'px', width: LY.W + 'px', height: (R[3] + LY.ia.band[3]) + 'px', flexWrap: 'wrap', padding: '4px 6px', alignContent: 'flex-start', gap: '4px 5px' });
+  }
+  else if (!por) { Object.assign(tpWrap.style, { left: (LY.left + 8) + 'px', top: (LY.bandY + 5) + 'px', width: (LY.W - LY.left - LY.right - 16) + 'px', height: '24px' }); }
   else { Object.assign(tpWrap.style, { left: '0px', top: (LY.H - LY.tpH) + 'px', width: LY.W + 'px', height: LY.tpH + 'px', flexWrap: 'wrap', padding: '5px 8px', alignContent: 'flex-start', gap: '5px 6px' }); }
+  if (LY.ia && !por) st.textContent += '.tp.ia .b{height:20px}.tp.ia .bar{height:18px}';
   const bt = (txt, title, fn) => { const b = el('b', tpWrap, txt, 'button'); b.title = title; b.onclick = e => { fn(); b.blur(); }; return b; };
   const bSlow = bt('--', 'speed 1x', () => setSpeed(0)), bDn = bt('-', 'slower', () => setSpeed(S.si - 1));
   const bPlay = bt('▶', 'play / pause (space)', () => toggle()), bUp = bt('+', 'faster', () => setSpeed(S.si + 1)), bFast = bt('++', 'speed 4x', () => setSpeed(4));
+  if (LY.ia && por) bt('\u2261', 'lineage lanes', () => { KW.ui.lanes = !KW.ui.lanes; S.shown = -1; });
   const lSpeed = el('lbl', tpWrap, '1×'); lSpeed.style.minWidth = '34px'; lSpeed.style.textAlign = 'center'; lSpeed.title = 'current speed';
   const lTime = el('lbl', tpWrap, ''); lTime.style.minWidth = '84px';
   const bMute = bt('♪', 'audio', () => { if (A.state === 'pick') pick.click(); else { A.muted = !A.muted; if (A.muted) audioStop(); else if (S.playing) audioStart(); setAudioLbl(); } });
@@ -104,7 +113,7 @@
   const bar = el('bar', tpWrap); if (por) { bar.style.flexBasis = '100%'; bar.style.flexGrow = '0'; }
   // era segments
   const sw = D.era_switch_f, edges = [0, sw[0], sw[1], F - 1];
-  [0.05, 0.11, 0.19].forEach((a, i) => { const s = el('seg', bar); s.style.left = (100 * edges[i] / (F - 1)) + '%'; s.style.width = (100 * (edges[i + 1] - edges[i]) / (F - 1)) + '%'; s.style.background = 'rgba(160,170,196,' + a + ')'; s.style.borderRight = i < 2 ? '1px solid rgba(232,224,192,.35)' : 'none'; });
+  [0.05, 0.11, 0.19].forEach((a, i) => { const s = el('seg', bar); s.style.left = (100 * edges[i] / (F - 1)) + '%'; s.style.width = (100 * (edges[i + 1] - edges[i]) / (F - 1)) + '%'; s.style.background = 'rgba(160,170,196,' + a + ')'; s.style.borderRight = i < 2 ? '1px solid rgba(' + KW.C.fgRgb + ',.35)' : 'none'; });
   const fill = el('fill', bar), head = el('head', bar);
   const marks = (D.marks || []).slice();
   const mkEls = marks.map(m => { const d = el('mk', bar); d.style.left = (100 * m.frame / (F - 1)) + '%'; const i = el('', d, undefined, 'i'); i.style.background = KW.markColor(m.kind, 0.9); d._m = m; return d; });
@@ -143,7 +152,7 @@
     for (const r of (KW.nationRows || [])) if (p.x >= r.x && p.x < r.x + r.w && p.y >= r.y && p.y < r.y + r.h) {
       const e = KW.util.i32(D.nat_entry_f)[r.i]; return D.nat_names[r.i] + '  entered ' + dateOf(Math.min(F - 1, e));
     }
-    if (KW.LAY.mode === 'landscape' || KW.ui.surfaces) for (const r of (KW.tallyRows || [])) if (p.x >= 0 && p.x < 240 && p.y >= r.y && p.y < r.y + r.h) return r.name + '  first appeared ' + dateOf(Math.min(F - 1, D.surfaces.entry[r.i]));
+    if ((KW.LAY.mode === 'landscape' && !KW.LAY.ia) || KW.ui.surfaces) for (const r of (KW.tallyRows || [])) if (p.x >= 0 && p.x < 240 && p.y >= r.y && p.y < r.y + r.h) return r.name + '  first appeared ' + dateOf(Math.min(F - 1, D.surfaces.entry[r.i]));
     return null;
   }
   cv.addEventListener('pointermove', e => { const p = logical(e), t = hoverAt(p); if (t) showTip(t, p.x, p.y); else hideTip(); });
@@ -155,6 +164,7 @@
       const sb = KW.surfBtn;
       if (sb && p.x >= sb.x && p.x < sb.x + sb.w && p.y >= sb.y && p.y < sb.y + sb.h) { KW.ui.surfaces = !KW.ui.surfaces; KW.ui.nations = false; }
       else if (hit) { KW.ui.nations = !KW.ui.nations; KW.ui.surfaces = false; }
+      else if (LY.ia && KW.timelineRects && p.y >= KW.timelineRects.band[1] && p.y < KW.timelineRects.band[1] + KW.timelineRects.band[3]) { KW.ui.lanes = !KW.ui.lanes; }   // tap the band: open or fold the lanes
       else if (p.y > LY.top) { KW.ui.nations = false; KW.ui.surfaces = false; }
       S.shown = -1; return;
     }
@@ -186,9 +196,16 @@
     else if (k === 'ArrowRight') { seek(S.pos + 5 * FPS); e.preventDefault(); }
     else if (k === '[') setSpeed(S.si - 1);
     else if (k === ']') setSpeed(S.si + 1);
+    else if (k === 's' || k === 'S') { KW.ui.surfaces = !KW.ui.surfaces; if (KW.ui.surfaces) KW.ui.nations = false; S.shown = -1; }
     else if (k === 'Home') { seek(0); e.preventDefault(); }
     else if (k === 'End') { seek(F - 1); e.preventDefault(); }
   });
+  // chrome auto-hide (ia): visible while the pointer or a key moved within 3 s, or the pointer is over it; fades over 0.3 s (css transition)
+  let lastInput = performance.now(), overChrome = false;
+  const wake = () => { lastInput = performance.now(); tpWrap.classList.remove('hide'); };
+  ['pointermove', 'pointerdown', 'keydown', 'wheel', 'touchstart'].forEach(ev => window.addEventListener(ev, wake, { passive: true }));
+  tpWrap.addEventListener('pointerenter', () => { overChrome = true; wake(); }); tpWrap.addEventListener('pointerleave', () => { overChrome = false; lastInput = performance.now(); });
+  window.kwChrome = () => ({ hidden: tpWrap.classList.contains('hide'), idle_ms: performance.now() - lastInput });
   // a changed viewport changes the layout: keep the place and reload
   let rt = null;
   window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { const f = Math.floor(S.pos); location.hash = 'f=' + f + '&s=' + S.si; location.reload(); }, 300); });
@@ -202,6 +219,7 @@
       if (S.pos >= F - 1) { S.pos = F - 1; pause(); }
       if (S.pos < 0) S.pos = 0;
     }
+    if (LY.ia && !overChrome && ts - lastInput > 3000 && !tpWrap.classList.contains('hide')) tpWrap.classList.add('hide');
     const f = Math.max(0, Math.min(F - 1, Math.floor(S.pos)));
     if (f !== S.shown) {
       S.shown = f; window.renderFrame(f);

@@ -122,8 +122,8 @@ def state_check(params, datajs, extra, rec, dates=("2026-04-20", "2026-07-20", "
     return {"node": j["node"], "frames": rows, "tiles": nT, "groups": nG, "events": int(len(T)), "checkpoint_every": 900}
 
 
-def export_piece(datajs, audio, F_total, f0, f1, probe_f, outdir, workers=10):
-    return ex.run_export(datajs, audio, F_total, f0, f1, probe_f, outdir, workers=workers)
+def export_piece(datajs, audio, F_total, f0, f1, probe_f, outdir, workers=10, query=None):
+    return ex.run_export(datajs, audio, F_total, f0, f1, probe_f, outdir, workers=workers, query=query)
 
 
 def montage(frames_dir, frames, out_png, cols=6, rows=4, thumb=(480, 270)):
@@ -145,7 +145,7 @@ def sha_tree(here, names):
     return {n: common.sha256_file(os.path.join(here, n)) for n in names if os.path.exists(os.path.join(here, n))}
 
 
-def rehash(datajs, outdir, f0, f1, n=30):
+def rehash(datajs, outdir, f0, f1, n=30, query=None):
     """Re-render n frames of an export in a fresh Chromium (reverse order) and compare with the export's per-frame hashes."""
     hs = {}
     for line in open(os.path.join(outdir, "frame-hashes.txt")):
@@ -153,7 +153,7 @@ def rehash(datajs, outdir, f0, f1, n=30):
             f, h = line.split()
             hs[int(f)] = h
     frames = [f0 + int((i + 0.5) * (f1 - f0) / n) for i in range(n)]
-    r = subprocess.run(["node", os.path.join(ROOT, "export", "rehash.mjs"), "--data", rel_render(datajs), "--frames", ",".join(map(str, frames))],
+    r = subprocess.run(["node", os.path.join(ROOT, "export", "rehash.mjs"), "--data", rel_render(datajs), "--frames", ",".join(map(str, frames))] + (["--query", query] if query else []),
                        capture_output=True, text=True, env=NODE_ENV, stdin=subprocess.DEVNULL)
     if r.returncode:
         raise SystemExit(r.stderr[-2000:])

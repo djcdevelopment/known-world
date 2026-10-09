@@ -21,7 +21,7 @@
     for (const l of KW.layers) {
       if (KW.off && KW.off.has(l.id)) continue;
       ctx.save();
-      if (l.map) { const C = LY.hud === 'plates' ? KW.FRAME : V; ctx.beginPath(); ctx.rect(C.x, C.y, C.w, C.h); ctx.clip(); }
+      if (l.map) { const C = LY.hud === 'plates' && !LY.ia ? KW.FRAME : V; ctx.beginPath(); ctx.rect(C.x, C.y, C.w, C.h); ctx.clip(); }
       try { l.render(ctx, f); } catch (e) { KW.errors.push(l.id + '@' + f + ':' + e.message); }
       ctx.restore();
     }
@@ -30,7 +30,7 @@
   window.kwErrors = () => KW.errors;
   window.kwOff = list => { KW.off = new Set(list); };
   window.kwOnlyBelow = z => { KW.off = new Set(KW.layers.filter(l => l.z >= z).map(l => l.id)); };
-  window.kwInfo = () => ({ F: KW.F, fps: KW.fps, font: ctx.font, layers: KW.layers.map(l => l.id), layout: { mode: LY.mode, W: LY.W, H: LY.H, B: LY.B, safe: LY.safe } });
+  window.kwInfo = () => ({ F: KW.F, fps: KW.fps, font: ctx.font, layers: KW.layers.map(l => l.id), layout: { mode: LY.mode, W: LY.W, H: LY.H, B: LY.B, safe: LY.safe, ia: LY.ia } });
   window.kwUi = ui => { Object.assign(KW.ui, ui); };   // portrait overlays for stills; the export never sets it
   const ready = (document.fonts && document.fonts.ready) ? document.fonts.ready : Promise.resolve();
   ready.then(() => {

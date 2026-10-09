@@ -59,6 +59,7 @@
   function setWorld(ctx, v) { const b = KW.B; ctx.setTransform(b * v.s, 0, 0, b * v.s, b * (V.cx - v.cx * v.s), b * (V.cy - v.cy * v.s)); }
   KW.setWorld = setWorld;
   function lattice(ctx, f) {
+    if (KW.C.sea) { ctx.fillStyle = KW.C.sea; ctx.fillRect(V.x, V.y, V.w, V.h); }   // design system: the sea (the map's safe area; everything else is canvas)
     const v = KW.view(f); if (v.s < 6) return;
     const dx = 1.7320508075688772 * v.s, dy = 1.5 * v.s;
     ctx.fillStyle = 'rgba(180,200,230,0.04)';

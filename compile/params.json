@@ -114,5 +114,23 @@
   "am4-tool-4070ti": "qwen3-8b", "am4-tool-5070": "qwen3-8b", "am4-moe": "qwen3-30b-a3b", "fx99-vllm": "qwen2.5-coder-7b",
   "omen-arc": "omen-arc", "omen-arc-27b": "qwen3.8-27b", "omen-ollama": "omen-ollama", "omen-swap": "omen-swap",
   "am4-oxen": "am4-oxen", "fx99-ollama": "fx99-ollama", "am4-ollama": "am4-ollama"
- }
+ },
+ "layout": "ia",
+ "ia_ticker_h": 84,
+ "ia_nation_w": 320,
+ "ia_timeline_h": 200,
+ "ia_ruler_h": 24,
+ "ia_band_h": 60,
+ "ia_lane_pitch": 11,
+ "ia_lanes_max": 10,
+ "ia_name_w": 108,
+ "ia_axis_pad_r": 12,
+ "ia_nation_fade_s": 1.0,
+ "ia_portrait": {"w": 360, "ticker": 64, "strip": 44, "ruler": 24, "band": 60, "lanes_open": 200, "pitch": 11, "name_w": 64},
+ "ia_coast_labels": "on",
+ "ia_nation_row": 136,
+ "ia_nation_row_dense": 96,
+ "ia_nation_row_fit": 120,
+ "design_system": "on",
+ "camera_centre_halfwidth_s": 1.5
 }

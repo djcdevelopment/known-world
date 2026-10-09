@@ -40,7 +40,8 @@ def build(params, c, clock, launches, Wd, Tl, rfirst, nat_index):
     Wf = int(round(params["stream_window_s"] * fps))
     fade_f = max(2, int(round(params["stream_fade_s"] * fps)))
     cap = float(params["yield_cap_lines_per_commit"])
-    max_lanes = int(params["stream_max_lanes"])
+    horizontal = params.get("layout") == "ia"
+    max_lanes = min(int(params["stream_max_lanes"]), int(params["ia_lanes_max"])) if horizontal else int(params["stream_max_lanes"])
     dormant = float(params["stream_dormant_days"])
     rel = c.relations or {"nodes": [], "constellations": [], "edges": []}
     node_of = {n["lineage"]: n for n in rel["nodes"] if n.get("lineage")}
@@ -121,6 +122,7 @@ def build(params, c, clock, launches, Wd, Tl, rfirst, nat_index):
     quiet = np.zeros(F, dtype=np.uint8)
     nvis = np.zeros(F, dtype=np.uint8)
     tier, tier_low = TIERS[0], 0
+    slot_of = {}   # horizontal form: lane -> fixed vertical slot while the lane is visible
     overflow = 0
     swaps = 0
     ratio = float(params["stream_swap_ratio"])
@@ -185,19 +187,39 @@ def build(params, c, clock, launches, Wd, Tl, rfirst, nat_index):
                 tier, tier_low = need, 0
         else:
             tier_low = 0
-        pitch = min(PITCH_CAP, LANE_W / tier)
-        slot = 0
-        for i in np.nonzero(inv)[0]:
-            tgt = LANE_X0_REL + (slot + 0.5) * pitch
-            slot += 1
-            if xcur[i] < 0:
-                xcur[i] = xfrom[i] = xto[i] = tgt; xt0[i] = f
-            elif abs(tgt - xto[i]) > 1e-9:
-                xfrom[i], xto[i], xt0[i] = xcur[i], tgt, f
-        for i in np.nonzero(inv)[0]:
-            xcur[i] = xfrom[i] + (xto[i] - xfrom[i]) * _ss((f - xt0[i]) / fade_f)
-        # alpha
-        alpha = np.where(inv, np.minimum(1.0, alpha + 1.0 / fade_f), np.maximum(0.0, alpha - 1.0 / fade_f))
+        if horizontal:
+            # fixed vertical slots: a lane keeps its slot while it is visible; an entering lane takes the free slot that keeps the
+            # constellation order of the visible lanes best (fewest inversions, then the lowest slot). Nothing slides.
+            for i in [i for i in slot_of if not inv[i]]:
+                del slot_of[i]
+            used = set(slot_of.values())
+            for i in np.nonzero(inv)[0]:
+                if i in slot_of:
+                    continue
+                best, bc = None, None
+                for sl in range(max_lanes):
+                    if sl in used:
+                        continue
+                    cost = sum(1 for o, so in slot_of.items() if (o < i) != (so < sl)) + 0.5 * sum(abs(so - sl) for o, so in slot_of.items() if lane_con[o] == lane_con[i] >= 0)
+                    if bc is None or cost < bc:
+                        best, bc = sl, cost
+                slot_of[i] = best; used.add(best)
+                xcur[i] = float(best)
+            alpha = np.where(inv, 1.0, 0.0)
+        else:
+            pitch = min(PITCH_CAP, LANE_W / tier)
+            slot = 0
+            for i in np.nonzero(inv)[0]:
+                tgt = LANE_X0_REL + (slot + 0.5) * pitch
+                slot += 1
+                if xcur[i] < 0:
+                    xcur[i] = xfrom[i] = xto[i] = tgt; xt0[i] = f
+                elif abs(tgt - xto[i]) > 1e-9:
+                    xfrom[i], xto[i], xt0[i] = xcur[i], tgt, f
+            for i in np.nonzero(inv)[0]:
+                xcur[i] = xfrom[i] + (xto[i] - xfrom[i]) * _ss((f - xt0[i]) / fade_f)
+            # alpha
+            alpha = np.where(inv, np.minimum(1.0, alpha + 1.0 / fade_f), np.maximum(0.0, alpha - 1.0 / fade_f))
         vis = np.nonzero(alpha > 0)[0]
         if len(vis) > K_SLOTS:
             keep = vis[np.lexsort((vis, -alpha[vis]))][:K_SLOTS]
@@ -246,6 +268,8 @@ def build(params, c, clock, launches, Wd, Tl, rfirst, nat_index):
     # ---- ruler ---------------------------------------------------------------------------------------------------------------------
     ticks = _ruler(params, clock)
     # ---- statistics -------------------------------------------------------------------------------------------------------------------
+    if horizontal:   # at most max_lanes lanes are ever visible: the slot arrays shrink to that width
+        sl_id, sl_x, sl_a, sl_since = sl_id[:, :max_lanes], sl_x[:, :max_lanes], sl_a[:, :max_lanes], sl_since[:, :max_lanes]
     ever = set(int(i) for i in np.unique(sl_id[sl_id != SLOT_NONE]))
     stats = {"lanes_total": L, "lanes_ever_visible": len(ever), "max_concurrent": int(nvis.max()),
              "mean_visible": round(float(nvis[clock_story_range(clock)].mean()), 3), "max_quiet": int(quiet.max()),
@@ -255,7 +279,7 @@ def build(params, c, clock, launches, Wd, Tl, rfirst, nat_index):
              "paired_lineages": int((bridge_f >= 0).sum()), "commits": int(len(cm_f)), "constellations_with_lanes": ncon,
              "loose_lanes": int(sum(1 for x in lane_con if x < 0)), "ticks": len(ticks["f"]),
              "frames_at_cap": int((nvis >= max_lanes).sum()), "frames_with_lanes": int((nvis > 0).sum())}
-    return {"names": names, "L": L, "K": K_SLOTS, "sl_id": sl_id, "sl_x": sl_x, "sl_a": sl_a, "sl_since": sl_since, "quiet": quiet,
+    return {"names": names, "L": L, "K": K_SLOTS if not horizontal else max_lanes, "horizontal": horizontal, "max_lanes": max_lanes, "sl_id": sl_id, "sl_x": sl_x, "sl_a": sl_a, "sl_since": sl_since, "quiet": quiet,
             "cm_f": cm_f, "cm_lane": cm_lane, "cm_nat": cm_nat, "cm_code": cm_code, "cm_side": cm_side,
             "bridge_f": bridge_f.astype(np.int32), "rail": rl, "mirv": mv, "edges": [(a, b, edge_f[j]) for j, (a, b, _t) in enumerate(edges) if edge_f[j] >= 0],
             "edge_types": collections.Counter(t for (_a, _b, t) in edges), "ticks": ticks, "stats": stats, "lane_lineage": lins, "lane_con": lane_con}

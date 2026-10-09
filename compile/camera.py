@@ -11,12 +11,16 @@ import math
 
 import numpy as np
 
+LAST_BOX = None   # (F, 4) the known land's box per frame (warm land, launch targets, and what joined), for the centring receipt
+
 
 
 def safe_area(params):
     """The frame minus the HUD plates' insets (x, y, w, h). The map owns the whole frame and runs under the plates; the
     camera fits the known world into this rectangle. Derived from the frame size, so a portrait frame needs no new maths."""
     W, H = int(params["frame_w"]), int(params["frame_h"])
+    if params.get("layout") == "ia":   # information architecture: ticker strip on top, timeline zone below, nation panel at the right
+        return (0, int(params["ia_ticker_h"]), W - int(params["ia_nation_w"]), H - int(params["ia_ticker_h"]) - int(params["ia_timeline_h"]))
     right = int(params["hud_right"]) + (int(params["stream_col_w"]) if params["stream"] == "on" else 0)
     l, t, b = int(params["hud_left"]), int(params["hud_top"]), int(params["hud_bottom"])
     return (l, t, W - l - right, H - t - b)
@@ -117,6 +121,16 @@ def _fb(x, alpha):
         a += alpha * (y[i] - a)
         y[i] = a
     return y
+
+
+def _hann(x, half):
+    """Finite-support zero-phase smoothing (Hann window of 2 * half + 1 samples, edges held): no influence from further than `half`
+    samples away, so a centre that has not changed for 2 * half samples is reproduced exactly."""
+    half = max(1, int(half))
+    k = np.hanning(2 * half + 3)[1:-1]
+    k = k / k.sum()
+    xp = np.concatenate([np.full(half, x[0]), x, np.full(half, x[-1])])
+    return np.convolve(xp, k, mode="valid")
 
 
 def steering(params, clock, tfirst, tbox, tmask, touches, launch_pts, beacons, F):
@@ -231,6 +245,7 @@ def build(params, clock, tfirst, tbox, items, hq_xy, world_bbox, coda_f, F, tmas
     bxs = np.zeros((F, 4))
     joined = False
     fend = float(params["camera_end_fill"])
+    centred = params.get("layout") == "ia"
     # first and final spans of the steering box (including the join), for the fill ramp
     st_span = np.maximum(steer[:, 2] - steer[:, 0], steer[:, 3] - steer[:, 1])
     span0, spanF = max(st_span[0], 6.0), max(st_span.max(), 6.0)
@@ -256,6 +271,8 @@ def build(params, clock, tfirst, tbox, items, hq_xy, world_bbox, coda_f, F, tmas
             if f >= hq_join:
                 b0 = union(b0, (hx[f] - 2, hy[f] - 2, hx[f] + 2, hy[f] + 2))
         a0, a1, a2, a3 = b0
+        if centred:   # information architecture: the scale looks ahead, the centre does not: the known land stays centred while the view eases out
+            tgt[f, 0], tgt[f, 1] = (a0 + a2) / 2.0, (a1 + a3) / 2.0
         bxs[f] = (a0, a1, a2, a3)
         contain[f] = min(Wv / max(a2 - a0, 1e-6), Hv / max(a3 - a1, 1e-6)) * 0.97
     ls = np.log(tgt[:, 2])
@@ -264,7 +281,11 @@ def build(params, clock, tfirst, tbox, items, hq_xy, world_bbox, coda_f, F, tmas
     if not params["zoom_in_allowed"]:
         ls = np.minimum.accumulate(ls)  # pull back only, from the first frame: the growth of scale is experienced as zoom
     alpha = 1.0 - math.exp(-1.0 / (params["camera_tau_s"] * fps))
-    cxs, cys, lss = _fb(tgt[:, 0], alpha), _fb(tgt[:, 1], alpha), _fb(ls, alpha)
+    if centred:   # the centre follows the known land's box through a finite window: exactly centred whenever the box is steady
+        hw_f = float(params["camera_centre_halfwidth_s"]) * fps
+        cxs, cys, lss = _hann(tgt[:, 0], hw_f), _hann(tgt[:, 1], hw_f), _fb(ls, alpha)
+    else:
+        cxs, cys, lss = _fb(tgt[:, 0], alpha), _fb(tgt[:, 1], alpha), _fb(ls, alpha)
     lss = np.minimum(lss, np.log(smax))
     lss = np.minimum(lss, np.log(contain))
     if not params["zoom_in_allowed"]:
@@ -279,6 +300,8 @@ def build(params, clock, tfirst, tbox, items, hq_xy, world_bbox, coda_f, F, tmas
     bad = (bxs[:, 3] - hh) > (bxs[:, 1] + hh)
     cys = np.where(bad, (bxs[:, 1] + bxs[:, 3]) / 2, cys)
     out = np.stack([cxs, cys, s], axis=1)
+    global LAST_BOX
+    LAST_BOX = bxs.copy()
     # box dimensions follow the scale: pulled back only (running max), smoothed like the log-scale
     bdim = np.maximum.accumulate(bdim, axis=0)
     bdim = np.exp(np.stack([_fb(np.log(bdim[:, 0]), alpha), _fb(np.log(bdim[:, 1]), alpha)], axis=1))

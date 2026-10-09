@@ -33,19 +33,18 @@ From `repos.json` per lineage: `id`, `kind`, `hosts`, `paths` (per host), `first
 comes from `meta.hosts` on commits (a commit on two hosts touches the tile in both regions) and from `host` on
 `file_birth`; the tile's first-touch time; and a tile weight `w` that stands in for file count.
 
-`w` = sum of `file_birth.magnitude.n` + sum over commits of `magnitude.files / len(files)` (file count apportioned
-over the depth-2 directories touched); measured p50 2, p90 26, max 37,041. Data requests for collection v1.4: a
+`w` = sum of `file_birth.magnitude.n` (and, once collected, `file_update` n) + sum over commits of `magnitude.files / len(files)` (file count apportioned
+over the depth-2 directories touched); measured p50 2, p90 26, max 37,041. Data requests for collection v1.5: a
 tip-tree file count per depth-2 directory (`cat-file` tree walk, counts only) to replace the proxy; and `meta.records`
 (hashed `repo_local` list) on merged commits, so MIRV warheads can target worktree spurs exactly (until then they
 target the episode's distinct depth-2 tiles and hosts).
 
-Names are read for joins only and never drawn: no region label appears on screen (privacy, and the honesty rule).
+Names are read for joins only, never drawn. The v1.4 `file_update` collection adds AM4 and FX99 non-git ground, so tile counts above are a floor.
 
 ### 1.2 Grid and area
 
-Axial hex coordinates `(q, r)`, pointy-top. A tile occupies `cells = clamp(1 + floor(tile_area_k · log10(1 + w)), 1,
-7)` hexes with `tile_area_k = 2`: w=1 gives 1 cell, w=10 gives 3, w=100 gives 5, w≥1,000 gives 7 (a full flower).
-The measured weights give about 1.7 cells per tile, about 7,500 cells for 4,387 tile instances.
+Axial `(q, r)`, pointy-top. A tile takes `cells = clamp(1 + floor(tile_area_k · log10(1 + w)), 1, 7)` hexes,
+`tile_area_k = 2`: w=1 → 1, 10 → 3, 100 → 5, ≥1,000 → 7 (a flower). About 1.7 cells per tile, 7,500 in all.
 
 ### 1.3 Regions (repos and `dir:` lineages, one per lineage × host)
 
@@ -93,10 +92,9 @@ background.
 
 ### 1.7 Final size at 1080p
 
-The map viewport inside the border is 1,420 × 904 px (left 200, right 300, top 56, bottom 120). The final world is
-about 7,500 tile cells, about 2,500 coast-gap cells, the seas and the archipelago band: roughly 14,000 hex slots in the
-bounding box. That gives a hex radius of about 6 px on the final pull-back (a texture with legible islands) and 12 to
-20 px mid era C, when one or two continents are known.
+Map viewport 1,420 × 904 px (border: left 200, right 300, top 56, bottom 120). About 7,500 tile cells, 2,500
+coast-gap cells, seas and archipelago make about 14,000 hex slots: a 6 px hex radius on the final pull-back, 12 to 20
+px mid era C.
 
 ## 2. Timeline compilation
 
@@ -177,28 +175,25 @@ The lookahead makes room before the Linux continent rises, so no landmass arrive
 
 ### 2.6 Field series (`fields.bin`)
 
-One Float32 row per output frame of the full piece: commit rate (log-smoothed), chat message rate per class, offload
-count per seat, cumulative tallies per surface and per nation. The 90 s cut samples it through the same time map.
+One Float32 row per output frame: commit rate, chat rate per class, offloads per seat, cumulative tallies per surface
+and nation; the 90 s cut samples it through the same time map.
 
 ## 3. Audio synthesis plan
 
-Offline numpy, 48 kHz stereo, written as WAV, from the same `timeline.json` and `launches.json` (sample index =
-`round(t_out · 48000)`), so the sound is aligned by construction.
+Offline numpy, 48 kHz stereo WAV, from the same `timeline.json` and `launches.json` (sample = `round(t_out ·
+48000)`): aligned by construction.
 
 - **Launch tone**: pitch by nation (human A3, Claude E4, Codex G4, OpenCode B4, local C3, automation D4); sine plus two
   partials whose balance marks the generation; length `0.18 · 1.45^class` s, gain `-24 + 3·class` dB.
-- **MIRV**: one rising 120 ms chirp for the beam, then N ticks an octave up, spread over 300 ms and panned to their
-  warheads.
-- **Unified**: the nation's tone with a fifth below, twice the length.
-- **First test of a lineage**: a low bell (inharmonic partials 1, 2.76, 5.4).
-- **First test of a nation**: the bell plus the nation's tone held 1.5 s.
-- **Pan**: from the target's screen x under the camera, `pan = 0.8 · (x/W - 0.5)`. Sound follows the map.
+- **ChatGPT-inferred tests** (v1.4): F4 through a band-pass, so they sound like radio: the research program's tests.
+- **MIRV**: a rising 120 ms chirp, then N ticks an octave up over 300 ms, each panned to its warhead.
+- **Unified**: the tone with a fifth below, twice as long. **Lineage first test**: a low bell (partials 1, 2.76,
+  5.4). **Nation first test**: the bell plus the tone held 1.5 s.
+- **Pan**: `0.8 · (x/W - 0.5)` from the target's screen x under the camera: sound follows the map.
 - **Hum**: brown noise, low-passed at 90 Hz, gain following the log of the commit-rate field.
-- **Static**: per-class band-passed noise (ChatGPT 2.5 kHz, Claude 1.6 kHz, Codex 3.2 kHz, OpenCode 2.0 kHz),
-  amplitude following the log of that class's message rate. The ChatGPT years are static only.
-- **Offload sparks**: soft clicks at local-model C5, density-limited to 20 per second.
-- **Collapse**: onsets above `collapse_events_per_s` in a 1 s window merge into a roll (tremolo on the dominant
-  nation's pitch) or a chord of the nations present.
+- **Static**: band-passed noise per class (ChatGPT 2.5 kHz, Claude 1.6, Codex 3.2, OpenCode 2.0), amplitude by log
+  message rate. Offload sparks: soft C5 clicks, at most 20 per second.
+- **Collapse**: onsets above `collapse_events_per_s` in 1 s merge into a roll on the dominant pitch or a chord.
 
 ## 4. Renderer structure
 
@@ -221,37 +216,32 @@ One HTML page, Canvas 2D, `render(t_out, profile)` pure: no `Date`, no `Math.ran
 2. Explored tiles in terrain tint, region coasts as 1 px strokes, ruins hatched grey (one CanvasPattern).
 3. Active glow in the `lighter` composite.
 4. Spurs, notches, bridges, harbours, beacons, HQ.
-5. Comms: session beams HQ→region at an alpha set by messages per minute, ChatGPT rings, offload arcs aggregated per
-   seat per frame (2,571 calls per story-day in October would be about 1,070 per film-second, so they are drawn as
-   one arc per seat with brightness by log count).
-6. Launches in `lighter`: beam, split point at 70% of the path, warheads, flash with a screen-space radius `6 ·
-   1.6^(class-1)` px (constant on screen across zoom, as kilotons were), bloom `0.25 · 1.4^class` s of output time.
-7. Border.
-8. End card.
+5. Comms: session beams HQ→region (alpha by messages per minute), ChatGPT rings, offload arcs as one per seat per
+   frame at log-count brightness (October's 2,571 calls per story-day are about 1,070 per film-second).
+6. Launches in `lighter`: beam, split at 70% of the path, warheads, flash of screen-space radius `6 · 1.6^(class-1)`
+   px (constant across zoom, as kilotons were), bloom `0.25 · 1.4^class` s.
+7. Border, then the end card.
 
 **The border**:
 
 - **Top**: date ticker and rate.
-- **Right**: nations in order of entry. Swatch, name (class and generation), tests and yield in 22 px tabular
-  figures, capacity (commits, files) in 14 px beneath. A new nation's row slides in at its first test.
+- **Right**: classes in order of entry, each with its generation chips, tests and yield in 22 px tabular figures,
+  capacity (commits, files) in 14 px beneath; a row slides in at its nation's first test.
 - **Left**: per-surface tallies (tiles explored, commits).
 - **Bottom**: the radio band, stacked log-rate areas per class over a trailing 20 s window.
 
 ## 5. Export pipeline and time estimate
 
-Sharding is trivial because `render(t)` is pure. 12 headless Chromium workers on the 24 cores each take a contiguous
-frame range. Each draws, reads the canvas through `toDataURL('image/png')` (this skips the page compositor that
-`page.screenshot` pays for), and pipes the frames into its own ffmpeg (libx264 crf 18, identical settings, closed
-GOP). The segments are joined with the concat demuxer (`-c copy`) and the WAV is muxed last.
+`render(t)` is pure, so 12 headless Chromium workers on the 24 cores each take a contiguous frame range, read the
+canvas with `toDataURL('image/png')` (skipping the compositor `page.screenshot` pays for) and pipe into their own
+ffmpeg (libx264 crf 18, identical settings, closed GOP); segments join with the concat demuxer, the WAV is muxed last.
 
-**Estimate**: the spike measured 271 ms per frame at 20,000 tiles through one page. Take 270 ms per worker frame and
-assume 60% parallel efficiency over 12 workers: 20,430 × 0.27 / 7.2 = 766 s, about **13 minutes** for frames. Encode
-runs inside the workers and is negligible (spike: 0.41 s per 60 frames). The 90 s cut (2,700 frames) adds about 2
-minutes and audio about 1. Total about **17 minutes** against the 30 minute bar. The first lap measures 300 frames at
-1, 6 and 12 workers before the estimate is relied on.
+**Estimate**: the spike's 271 ms per frame (20,000 tiles, one page) at 60% efficiency over 12 workers: 20,430 × 0.27
+/ 7.2 = 766 s, about **13 minutes**; encode is negligible (0.41 s per 60 frames); the 90 s cut adds 2 and audio 1:
+about **17 minutes** against the 30 minute bar. Lap 0 measures 300 frames at 1, 6 and 12 workers first.
 
-**4K path**: DPR 2 on the same render. The world is in world units and the border in CSS px, so nothing reflows.
-About 4× capture cost, about 55 minutes with 12 workers, as an offline batch.
+**4K path**: DPR 2 on the same render (world units and CSS px, so nothing reflows); about 4× capture, about 55
+minutes with 12 workers.
 
 ## 6. Parameters (every DIRECTION.md parameter is one switch in `compile/params.json`)
 
@@ -271,20 +261,17 @@ About 4× capture cost, about 55 minutes with 12 workers, as an offline batch.
 | `yield_bands` | log10 | log10, quantile; `yield_basis` lines, composite |
 | `mirv_min_targets` / `unify_window_h` / `generation_shades` | 2 / 24 / true | contract section 8 |
 | Layout and camera extras | `tile_area_k` 2, `coast_gap` 1, `camera_pad` 0.08, `camera_tau_s` 4, `camera_lookahead_s` 6, `zoom_in_allowed` false, `max_hex_px` 40 | |
-| Rule extras | `nation_rule` commits_first, `ticker_tz` UTC, `yield_cap_lines_per_commit` 20,000, `engagement_max_span_h` 12 | |
+| Rule extras | `nation_rule` commits_first, `inferred_nation_render` marked, `episode_gap_days` 1, `ticker_tz` UTC, `yield_cap_lines_per_commit` 20,000, `engagement_max_span_h` 12 | |
 
-Output durations of blooms and tones are set in output seconds, so the 90 s cut keeps its flashes visible while the
-story time compresses.
+Bloom and tone durations are in output seconds, so the 90 s cut keeps flashes visible while story time compresses.
 
 ## 7. Thin-slice build order
 
-1. **The atlas**: `compile/layout.py` over the real `repos.json` and tile keys produces `layout.json` and one still,
-   `render(t_end)`, at 1080p. Verdict on legibility (islands distinct, bridges short, ruins peripheral) before any
-   motion.
-2. **Fog in motion**: the rate schedule, tile touch arrays, decay and camera keyframes. Export 2026-03 to 2026-05 (about
-   220 s) at 1 worker and then 12. Measure ms per frame and the fraction of tiles changing per frame.
-3. **Launches**: `launches.py` (episodes, engagements, shapes, nations) and the launch layer. Check the 902 / 356
-   counts and the March-to-September cadence.
+1. **The atlas**: `compile/layout.py` → `layout.json` and one 1080p still, `render(t_end)`; verdict on legibility
+   (islands distinct, bridges short, ruins peripheral) before any motion.
+2. **Fog in motion**: rate schedule, touch arrays, decay, camera; export 2026-03 to 2026-05 at 1 then 12 workers;
+   measure ms per frame and tiles changing per frame.
+3. **Launches**: `launches.py` and the launch layer; reproduce PROBE-00's 415 / 215 / 200 at default parameters.
 4. **Border**: ticker, legend, tallies, radio band.
 5. **Audio**: `audio.py`, the mux, an alignment check (clap frames at known launches).
 6. **Full export** and the 90 s cut. Hash three frames twice to confirm byte-identical output.

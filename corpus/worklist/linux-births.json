@@ -1,0 +1,37 @@
+{
+ "id": "linux-births",
+ "source_type": "fs_births",
+ "host": "omen-linux",
+ "roots": [
+  "/home/derek/work/hybrid-context-trial",
+  "/home/derek/work/jepa-confirmation-20260924",
+  "/home/derek/work/jepa-evidence-units-20260925",
+  "/home/derek/work/jepa-operation-representations-20260925",
+  "/home/derek/work/jepa-project-holdout-20260925",
+  "/home/derek/work/jepa-recorded-actions-20260925",
+  "/home/derek/work/jepa-same-role-actions-20260925",
+  "/home/derek/research"
+ ],
+ "shard": {
+  "k": 0,
+  "n": 1,
+  "rule": "sha1(path) % n"
+ },
+ "since": null,
+ "until": null,
+ "out_dir": "/home/derek/work/known-world/corpus/raw/linux-births",
+ "timeout_s": 3000,
+ "mount": null,
+ "options": {
+  "children_of": [
+   "/home/derek/work"
+  ],
+  "loose_files": true,
+  "exclude_children": [
+   "worktrees",
+   "amux",
+   "known-world"
+  ],
+  "find_timeout_s": 900
+ }
+}

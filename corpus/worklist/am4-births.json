@@ -1,0 +1,22 @@
+{
+ "id": "am4-births",
+ "source_type": "fs_births",
+ "host": "am4",
+ "roots": [
+  "~/work/am4-dual-nvidia-poc",
+  "~/work/vllm-e3-20260923"
+ ],
+ "shard": {
+  "k": 0,
+  "n": 1,
+  "rule": "sha1(path) % n"
+ },
+ "since": null,
+ "until": null,
+ "out_dir": "/home/derek/work/known-world/corpus/raw/am4-births",
+ "timeout_s": 900,
+ "mount": null,
+ "options": {
+  "find_timeout_s": 600
+ }
+}

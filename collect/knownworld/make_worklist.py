@@ -59,6 +59,20 @@ add("c-births", "fs_births", "omen-c",
                                                              "model", "venvs"], find_timeout_s=900)
 add("e-births", "fs_births", "omen-e", [], 2400, "e", children_of=[E + "/work"], loose_files=True,
     exclude_children=["models"], find_timeout_s=900)
+import glob  # noqa: E402
+
+zero = sorted(d for pat in ("hybrid-context-trial", "jepa-evidence-units-2026*", "jepa-confirmation-2026*",
+                            "jepa-project-holdout-2026*", "jepa-recorded-actions-2026*",
+                            "jepa-same-role-actions-2026*", "jepa-operation-representations-2026*")
+              for d in glob.glob(H + "/work/" + pat) if os.path.isdir(d))
+add("linux-births", "fs_births", "omen-linux", zero + ([H + "/research"] if os.path.isdir(H + "/research")
+                                                      and not os.path.islink(H + "/research") else []),
+    3000, None, children_of=[H + "/work"], loose_files=True,
+    exclude_children=["worktrees", "amux", "known-world"], find_timeout_s=900)
+add("am4-births", "fs_births", "am4", ["~/work/am4-dual-nvidia-poc", "~/work/vllm-e3-20260923"], 900, None,
+    find_timeout_s=600)
+add("fx99-births", "fs_births", "fx99", ["~/dmos", "~/menu", "~/liferaft", "~/ai-bench", "~/apps", "~/cookbook"],
+    900, None, find_timeout_s=600)
 add("chatgpt", "chatgpt_export", "cloud", [E + "/work/chatGPT_parser/data/normalized"], 600, "e")
 add("claude-zip", "claude_jsonl", "omen-e", [E + "/work/claude-20260623T084942Z-3-001.zip"], 1800, "e",
     zip=E + "/work/claude-20260623T084942Z-3-001.zip")

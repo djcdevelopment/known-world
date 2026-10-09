@@ -1,0 +1,26 @@
+{
+ "id": "fx99-births",
+ "source_type": "fs_births",
+ "host": "fx99",
+ "roots": [
+  "~/dmos",
+  "~/menu",
+  "~/liferaft",
+  "~/ai-bench",
+  "~/apps",
+  "~/cookbook"
+ ],
+ "shard": {
+  "k": 0,
+  "n": 1,
+  "rule": "sha1(path) % n"
+ },
+ "since": null,
+ "until": null,
+ "out_dir": "/home/derek/work/known-world/corpus/raw/fx99-births",
+ "timeout_s": 900,
+ "mount": null,
+ "options": {
+  "find_timeout_s": 600
+ }
+}

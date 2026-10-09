@@ -44,7 +44,7 @@ HOST_RANK = {"omen-linux": 0, "omen-c": 1, "omen-e": 2, "am4": 3, "fx99": 4, "gi
 EMPTY_TREE = "4b825dc642cb6eb9a060e54bf8d69288fbf2156"
 HEX12 = re.compile(r"^[0-9a-f]{12}$")
 GENERIC_NAMES = {"work", "src", "repo", "repos", "git", "test", "tests", "tmp", "temp", "app", "root", "main", "code"}
-KIND_ORDER = {"repo_born": 0, "branch": 1, "worktree": 2, "commit": 3, "file_birth": 4, "chat_session": 5,
+KIND_ORDER = {"repo_born": 0, "branch": 1, "worktree": 2, "commit": 3, "file_birth": 4, "file_update": 4, "chat_session": 5,
               "chat_msg": 6, "offload_call": 7, "receipt": 8, "run": 9}
 
 
@@ -382,7 +382,7 @@ def merge(raw_dir=RAW, out_dir=OUT):
 
     dir_idx = {}
     for it, e in evs:
-        if e["kind"] == "file_birth" and isinstance(e.get("repo"), str) and e["repo"].startswith("dir:"):
+        if e["kind"] in ("file_birth", "file_update") and isinstance(e.get("repo"), str) and e["repo"].startswith("dir:"):
             _, dh, dp = e["repo"].split(":", 2)
             dir_idx[pkey(dh, dp)] = e["repo"]
 

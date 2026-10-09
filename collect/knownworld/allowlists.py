@@ -8,7 +8,7 @@ import re
 EVENT_KEYS = {"ts", "ts_author", "ts_commit", "kind", "actor", "role", "host", "repo", "repo_local", "path", "files",
               "magnitude", "ref", "src", "meta"}
 REQUIRED = {"ts", "kind", "actor", "host", "ref", "src", "magnitude"}
-KINDS = {"commit", "repo_born", "branch", "worktree", "file_birth", "chat_msg", "chat_session", "offload_call",
+KINDS = {"commit", "repo_born", "branch", "worktree", "file_birth", "file_update", "chat_msg", "chat_session", "offload_call",
          "receipt", "run"}
 CLASSES = {"human", "chatgpt", "claude", "codex", "opencode", "local_model", "automation", "third_party"}
 HOSTS = {"omen-c", "omen-e", "omen-linux", "am4", "fx99", "github", "cloud"}
@@ -105,7 +105,7 @@ PER_SRC = {
     "git_repo": {"kinds": {"commit", "repo_born", "branch", "worktree"}, "mag": {"n", "files", "ins", "del"},
                  "meta": {"human_authored": v_bool, "files_capped": v_bool, "no_numstat": v_bool,
                           "unresolved": v_bool, "hosts": v_hosts}},
-    "fs_births": {"kinds": {"file_birth"}, "mag": {"n", "bytes"},
+    "fs_births": {"kinds": {"file_birth", "file_update"}, "mag": {"n", "bytes"},
                   "meta": {"bulk_copy": v_bool, "birth_missing": v_bool, "hosts": v_hosts}},
     "claude_jsonl": {"kinds": {"chat_msg", "chat_session"},
                      "mag": {"n", "tokens_in", "tokens_out", "tokens_cache", "duration_s", "tool_calls"},

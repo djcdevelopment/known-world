@@ -325,3 +325,32 @@ consumed + data_sources + depends_on in and out (intra-repo contracts excluded).
 directory basename and aliases. Relationship dates come from our own corpus (an edge cannot predate either endpoint's
 first commit); only GAD and ai-systems-research have a real YAML history (first commit 2026-05-24), the other ten were
 batch-committed 2026-09-23.
+
+## 3b. ChatGPT-era links and liveView (surveyed 2026-10-09)
+
+**liveView is not an inventory source.** `E:\work\liveView/ingest/out` holds three snapshots of 12 to 75 UUID-named run
+folders scanned on 2026-03-11 (no drive letters, every `modified` is scan time, `edges.json` empty); `artifacts/sessions`
+holds 7 research-handoff packages (2026-03-07 ×2, 2026-04-10 ×5; `request_log.json`, some with a UTF-8 BOM) that record
+repos and files touched by the AI-assisted work on liveView itself. Use only as minor markers for that project.
+
+**chatGPT_parser projections link conversations to projects** (`E:\work/chatGPT_parser/data/projections`, built
+2026-09-23; conversations per year 2023: 6, 2024: 6, 2025: 211, 2026: 157):
+
+| File | Records | Metadata fields to use (never `title`, `title_hint`, `text*`, `*_preview`, `intent_terms`) |
+|---|---|---|
+| `timeline.ndjson` | 380 | `conversation_id create_time update_time duration_seconds message_count artifact_count commands_used[] key_file_paths[] has_code has_errors phase_label phase_confidence` |
+| `session_classification.ndjson` | 380 | `commands_used[] code_languages[] has_* assistant_user_ratio phase_label` |
+| `decision_trace.ndjson`, `session_strategy_summary.ndjson` | 380 | `key_file_paths[] strategy_label turning_points[] recovery_after_error artifact_driven` |
+| `artifact_workflow_paths.ndjson` | 1,314 | `file_path conversation_id workflow_label phase_label message_ids[] artifact_ids[] command_names[]` |
+| `artifact_index.ndjson` | 3,879 | `artifact_id artifact_type (code 3,512 / execution_output 367) conversation_id source_message_id file_references[] approx_lines language` |
+| `activity_calendar.ndjson` | 189 | `date conversation_count message_count artifact_count command_invocation_count error_conversation_count` (2023-04-17 → 2026-03-11) |
+| `entity_usage_map.ndjson` | 1,667 | `entity_type (repository 920, file_path 643, tool 64, …) entity_label conversation_ids[]` |
+| graph `nodes.ndjson` (69 MB, stream) | 32,523 | Message nodes: `create_time file_references[] shell_commands_detected[] role`; 1,103 messages in 92 conversations carry file references |
+
+Labels: `phase_label` implementation 172, mixed 134, problem_framing 53, verification 18, investigation 3;
+`strategy_label` debugging 91, debug_build_loop 86, exploration 84, mixed 36, visual_inspection 34,
+artifact_implementation 32, implementation 17. 158 conversations have a code or output artifact; 74 name a file path.
+Drive-letter paths start 2025-08-23 and name about 8 projects: `D:/work/liveView` (108 mentions, 8 conversations),
+`D:/work/ai-dev-system` (35, 6), `D:/work/stars-app` (20, 5), `D:/work/ai-systems-research` (11, 3), `D:/work/writing`,
+`D:/valhiem`, plus `C:/Users/derek`, `C:/Python312`. Drop relative paths and `/mnt/data` sandbox paths (85). Paths are
+model-written text: intent, not proof. Nothing from 2023–24 carries a path; those years attribute by time only.

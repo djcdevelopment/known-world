@@ -1,0 +1,52 @@
+{
+ "raw_numstat": {
+  "commits": 9784,
+  "added": 15931735,
+  "removed": 2516174,
+  "line_changes": 18447909
+ },
+ "decoded_final_lines": 18447909.0,
+ "activity_at_frames": [
+  {
+   "frame": 1800,
+   "source_matched_counts": {
+    "conversations": 13
+   }
+  },
+  {
+   "frame": 2427,
+   "source_matched_counts": {
+    "conversations": 118,
+    "executions": 64
+   }
+  },
+  {
+   "frame": 2520,
+   "source_matched_counts": {
+    "conversations": 160,
+    "executions": 64,
+    "investigations": 52,
+    "attempts": 56,
+    "findings": 95
+   }
+  }
+ ],
+ "audio_unchanged": true,
+ "launch_count_unchanged": 845,
+ "fixture_checks": 4,
+ "fixture_seconds": 0.011,
+ "compile_seconds": 4.3,
+ "browser_errors": [],
+ "excerpt": {
+  "frames": 240,
+  "seconds": 8,
+  "render_seconds": 8.108,
+  "errors": []
+ },
+ "local_sources": {
+  "hearth_ledger": 22672,
+  "deepagents_runs": 88
+ },
+ "local_call_counter": 22672,
+ "data_sha256": "2fbf71c639b361a0f8c8e0211e738bdab3588742f9c2827a4839d0a8f7b155f7"
+}

@@ -1,0 +1,5931 @@
+{
+ "version": 1,
+ "observed_at": "2026-10-10T14:15:12.848161+00:00",
+ "repos_sha256": "20640180b13007e000ffeed2efdeb7709e28379066f5f96f811c7c3c2dfac975",
+ "records": [
+  {
+   "source": "antigravity",
+   "id": "042e9446-9c0a-4c4f-90a6-3172e59d4deb",
+   "ts": "2026-07-03T10:13:29.346804Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-07-03T10:13:11.157421Z",
+   "steps": 67,
+   "host": "omen-c",
+   "projects": [
+    "6a0d30840c0d974b5780231a0df9e0868b908c8e"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "58464c92-8a2e-4ca7-bf5d-a6992dfd19b0",
+   "ts": "2026-07-03T11:42:36.478213Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-07-03T11:42:26.213988Z",
+   "steps": 137,
+   "host": "omen-c",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "da1fdf19-4bf4-467b-a644-666936d01b74",
+   "ts": "2026-07-03T13:35:16.526111Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-07-03T13:34:41.210419Z",
+   "steps": 6,
+   "host": "omen-c",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "4f6d957d-10e3-4ca5-9890-739be9b45da9",
+   "ts": "2026-07-04T18:49:03.152530Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-07-04T18:48:59.035082Z",
+   "steps": 153,
+   "host": "omen-c",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "bb7c87f1-bc3c-41ab-9497-f80cfbc227c2",
+   "ts": "2026-07-09T07:07:02.618127Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-07-09T07:06:57.796311Z",
+   "steps": 8,
+   "host": "omen-c",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "0f97194f-2ff9-44b5-b68c-7ee1f39dc7ae",
+   "ts": "2026-07-10T22:35:28.143905Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-07-10T22:35:10.132305Z",
+   "steps": 10,
+   "host": "omen-c",
+   "projects": [
+    "dir:omen-c:work/Diana"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "8fe2bfdc-9b2e-4b2e-b88f-070907a7a712",
+   "ts": "2026-07-11T10:59:48.474375Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-07-11T10:59:30.098727Z",
+   "steps": 21,
+   "host": "omen-c",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "1020345d-4cd5-4250-b932-48cfab6537da",
+   "ts": "2026-07-11T10:59:48.899431Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-07-11T10:59:30.125731Z",
+   "steps": 20,
+   "host": "omen-c",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "91856977-68d7-4296-bc29-678bc068ec4e",
+   "ts": "2026-07-11T11:00:43.637870Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-07-11T11:00:39.166985Z",
+   "steps": 112,
+   "host": "omen-c",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "5da82d3b-a3aa-4303-be59-913d6c275991",
+   "ts": "2026-07-11T13:51:09.313712Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-07-11T13:50:06.897055Z",
+   "steps": 26,
+   "host": "omen-c",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "a7f78479-99d2-4691-9d62-89633856a8ad",
+   "ts": "2026-07-11T14:18:18.107749Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-07-11T14:18:08.818868Z",
+   "steps": 219,
+   "host": "omen-c",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "c4af7848-5784-465d-95ab-59a19f867c36",
+   "ts": "2026-07-18T05:32:29.784956Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-07-18T05:32:23.161403Z",
+   "steps": 201,
+   "host": "omen-c",
+   "projects": [
+    "dir:omen-c:work/iso"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "9fd2a65f-b9f3-423e-9649-dc3023b673a2",
+   "ts": "2026-07-18T07:24:30.098759Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-07-18T07:24:25.437503Z",
+   "steps": 9,
+   "host": "omen-c",
+   "projects": [
+    "dir:omen-c:work/Diana"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "3967b146-f50a-4d13-891f-37f189f219c5",
+   "ts": "2026-07-21T06:36:54.137301Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-07-21T06:36:50.807333Z",
+   "steps": 122,
+   "host": "omen-c",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_1206315fc8d4c6663847d1947494d61e",
+   "job_id": "job_f23311fd19d8e4281330e8db5a14a180",
+   "ts": "2026-07-31T01:31:05.012359Z",
+   "end": "2026-07-31T01:31:13.210330Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 144,
+   "tokens_out": 230
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_afb9e3264f425648b75dc24d4bebfc58",
+   "job_id": "job_56d96b40fe98fdf053bbba4b6a9acaf4",
+   "ts": "2026-07-31T01:31:15.571415Z",
+   "end": "2026-07-31T01:31:22.699107Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 145,
+   "tokens_out": 200
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_0f13a7f4db62578782e0f44fc42c10a6",
+   "job_id": "job_6719e3c96e7e4e0025369eb5611d9757",
+   "ts": "2026-07-31T01:31:24.681082Z",
+   "end": "2026-07-31T01:31:42.738307Z",
+   "time_kind": "invocation_interval",
+   "status": "failed",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 156,
+   "tokens_out": 512
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_a99840c8115438433f66167eff9ce6a6",
+   "job_id": "job_06d5fe8f3ec8401c2180b16226d57675",
+   "ts": "2026-07-31T01:31:45.037109Z",
+   "end": "2026-07-31T01:32:03.122096Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 154,
+   "tokens_out": 512
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_59d1c2efa58585e25de025bdd9ca89a5",
+   "job_id": "job_015afdce98048f5efd9205cef81b0e6a",
+   "ts": "2026-07-31T01:32:06.616016Z",
+   "end": "2026-07-31T01:32:14.541069Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 143,
+   "tokens_out": 110
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_6928546c184f15fa601d1aebafd2caa0",
+   "job_id": "job_a1c1ece141703b809fb217f07c8fedc1",
+   "ts": "2026-07-31T01:32:06.690023Z",
+   "end": "2026-07-31T01:32:17.247485Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 143,
+   "tokens_out": 187
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_862ef22ef167addcd347bf3be4c14ea0",
+   "job_id": "job_3a3018d5b14ed5c13c8c595b6f42ddc2",
+   "ts": "2026-07-31T01:32:17.584690Z",
+   "end": "2026-07-31T01:32:23.572170Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 143,
+   "tokens_out": 167
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_ecab86777832b5052a334ebe3f8a0d29",
+   "job_id": "job_1df1b45734ab0e73591df2d9809adabe",
+   "ts": "2026-07-31T01:32:23.799242Z",
+   "end": "2026-07-31T01:32:32.031512Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 156,
+   "tokens_out": 229
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_ab1bea46aaee41cf0809c7828a1c192b",
+   "job_id": "job_4202966565575e9fbd41800f0d893651",
+   "ts": "2026-07-31T01:36:44.498985Z",
+   "end": "2026-07-31T01:36:50.579910Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 211,
+   "tokens_out": 138
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_49fa9843c643fbb07da98a7304ad1c15",
+   "job_id": "job_54331077675883b7e710add2ef9b42af",
+   "ts": "2026-07-31T01:40:11.154766Z",
+   "end": "2026-07-31T01:40:14.787007Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 211,
+   "tokens_out": 105
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_5aaf16fea3723399cce624eee47329ef",
+   "job_id": "job_ee0df8820dbe35a80bf5f83546b5f60a",
+   "ts": "2026-07-31T01:41:32.123443Z",
+   "end": "2026-07-31T01:41:35.846796Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 211,
+   "tokens_out": 107
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_11121a50d9a34e4b8711349ff776b02d",
+   "job_id": "job_2502cbc5d5202f1ffca7331eecfe171e",
+   "ts": "2026-07-31T01:47:41.501435Z",
+   "end": "2026-07-31T01:47:47.236486Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 202,
+   "tokens_out": 156
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_6c01ec927a379190748fdd486c27672a",
+   "job_id": "job_3eec6887e81bfacfcb37fe7a404f87c1",
+   "ts": "2026-07-31T11:38:45.377747Z",
+   "end": "2026-07-31T11:39:09.286727Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 204,
+   "tokens_out": 332
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_6fac7e8b88b6d9819454ce2e081707e5",
+   "job_id": "job_e64116254dd6624fa8f7da24c2f22604",
+   "ts": "2026-07-31T11:42:58.193813Z",
+   "end": "2026-07-31T11:43:08.850790Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 204,
+   "tokens_out": 294
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_8985ba63b75b00ff15fbbd914b832014",
+   "job_id": "job_e12a83c6cc9523e4546dbb8de04f0527",
+   "ts": "2026-07-31T11:45:22.072420Z",
+   "end": "2026-07-31T11:45:32.269409Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 204,
+   "tokens_out": 287
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_6f6cc695018f7518d15039355b2b323e",
+   "job_id": "job_a92eae31570bb2fa47dfab69fac807e3",
+   "ts": "2026-07-31T12:50:22.133216Z",
+   "end": "2026-07-31T12:50:30.388899Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 211,
+   "tokens_out": 219
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_6f443f7d7d2b27e224c95d1b195f6e5e",
+   "job_id": "job_1ea904561639008e81d1ebb706e8777f",
+   "ts": "2026-07-31T13:09:26.846559Z",
+   "end": "2026-07-31T13:09:51.814168Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini-pro",
+   "model": "gemini-3.1-pro-preview",
+   "projects": [],
+   "tokens_in": 14206,
+   "tokens_out": 1259
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_4e56d82be779ea6c914b0c3d5827f255",
+   "job_id": "job_69a4e57da2a837296e3751c49326bb4f",
+   "ts": "2026-07-31T13:15:09.698011Z",
+   "end": "2026-07-31T13:16:45.954487Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini-pro",
+   "model": "gemini-3.1-pro-preview",
+   "projects": [],
+   "tokens_in": 28308,
+   "tokens_out": 654
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_4390438b5f900f4230da1113306b8049",
+   "job_id": "job_547352d9867e11f62dbff9239ae1eaba",
+   "ts": "2026-07-31T13:17:09.820365Z",
+   "end": "2026-07-31T13:17:58.017748Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini",
+   "model": "gemini-3.5-flash",
+   "projects": [],
+   "tokens_in": 2813,
+   "tokens_out": 2165
+  },
+  {
+   "source": "antigravity",
+   "id": "e0018837-4c27-464f-b683-79a27914f6fb",
+   "ts": "2026-07-31T13:33:52.887535Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-07-31T13:32:48.824827Z",
+   "steps": 213,
+   "host": "omen-c",
+   "projects": [
+    "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_786658d42541ab1939cc30db93edbdbd",
+   "job_id": "job_24cd70c638880af5cff95371b3122ef0",
+   "ts": "2026-07-31T14:08:16.563672Z",
+   "end": "2026-07-31T14:09:47.296122Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini-pro",
+   "model": "gemini-3.1-pro-preview",
+   "projects": [],
+   "tokens_in": 9150,
+   "tokens_out": 6280
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_07e71bfa438a37fbe979c968ed94a7fc",
+   "job_id": "job_547b079d29eb521673024eb786e99000",
+   "ts": "2026-07-31T14:48:27.654969Z",
+   "end": "2026-07-31T14:48:56.194950Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 212,
+   "tokens_out": 407
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_9cd32a9272e07338d084f03dc72e2fe5",
+   "job_id": "job_5345d8b224a5eb3c63c65473245d08ca",
+   "ts": "2026-07-31T15:02:15.159353Z",
+   "end": "2026-07-31T15:02:29.527239Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 208,
+   "tokens_out": 368
+  },
+  {
+   "source": "antigravity",
+   "id": "2555863a-8053-4731-8142-49c49bde1e80",
+   "ts": "2026-07-31T15:17:28.648761Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-07-31T15:16:43.180474Z",
+   "steps": 12,
+   "host": "omen-c",
+   "projects": [
+    "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_b8201148d1174410c07db5e81fd762db",
+   "job_id": "job_1be2cdeda54fd5ca49f02877d9d0bffc",
+   "ts": "2026-07-31T15:20:24.539248Z",
+   "end": "2026-07-31T15:20:40.700808Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 232,
+   "tokens_out": 427
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_674dd7d8f1b8560956e5ad114f0d3462",
+   "job_id": "job_04a78719e3575a0c3972337f13e7e90e",
+   "ts": "2026-07-31T15:21:16.569907Z",
+   "end": "2026-07-31T15:21:29.897071Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 213,
+   "tokens_out": 370
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_9db447a449d796b1d86a683dc7700770",
+   "job_id": "job_497176744588df7f456fe8173be8ba11",
+   "ts": "2026-07-31T15:22:07.116006Z",
+   "end": "2026-07-31T15:22:22.384820Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 207,
+   "tokens_out": 426
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_cc6d3814f44233f36c4651ddedb5793c",
+   "job_id": "job_75b5414debb542c4bdde06b1740e09eb",
+   "ts": "2026-07-31T23:25:42.587976Z",
+   "end": "2026-07-31T23:25:58.636322Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini",
+   "model": "gemini-3.5-flash",
+   "projects": [],
+   "tokens_in": 14688,
+   "tokens_out": 882
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_52f215c565a573595f096f01797b757d",
+   "job_id": "job_c32456ff019e147a9ee8a0defe1500ed",
+   "ts": "2026-08-01T01:42:16.386533Z",
+   "end": "2026-08-01T01:42:46.908579Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini",
+   "model": "gemini-3.5-flash",
+   "projects": [],
+   "tokens_in": 5209,
+   "tokens_out": 1467
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_7d06b98b1cf2e73dca635817fe06b080",
+   "job_id": "job_fb78129ea3e278ed4065efc22f807505",
+   "ts": "2026-08-01T01:54:00.821671Z",
+   "end": "2026-08-01T01:54:25.159491Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini-pro",
+   "model": "gemini-3.1-pro-preview",
+   "projects": [],
+   "tokens_in": 20799,
+   "tokens_out": 1189
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_2794aae8c5b4ae3f9dea91b2bb29f13c",
+   "job_id": "job_67da77589c05260120fda3ad34b9779c",
+   "ts": "2026-08-01T01:54:25.359874Z",
+   "end": "2026-08-01T01:54:55.783444Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini-pro",
+   "model": "gemini-3.1-pro-preview",
+   "projects": [],
+   "tokens_in": 24166,
+   "tokens_out": 1916
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_cc923d654b69732eae17796b0973d1d9",
+   "job_id": "job_46d46ce68e41838eb34822de3aa5d908",
+   "ts": "2026-08-01T01:58:43.640817Z",
+   "end": "2026-08-01T01:59:19.902538Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini-pro",
+   "model": "gemini-3.1-pro-preview",
+   "projects": [],
+   "tokens_in": 13520,
+   "tokens_out": 1555
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_7c95e12dd60227653d625bd133aefcd5",
+   "job_id": "job_c39d91f00305cf4f14ffeb6e20d5acdc",
+   "ts": "2026-08-01T02:05:22.095143Z",
+   "end": "2026-08-01T02:09:00.302915Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini-pro",
+   "model": "gemini-3.1-pro-preview",
+   "projects": [],
+   "tokens_in": 20815,
+   "tokens_out": 653
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_3e682501dacea5557bc06a2225d7fa4b",
+   "job_id": "job_e7d874b8db05fc21989400e5454846de",
+   "ts": "2026-08-01T11:34:04.852241Z",
+   "end": "2026-08-01T11:34:44.623107Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini",
+   "model": "gemini-3.5-flash",
+   "projects": [],
+   "tokens_in": 26760,
+   "tokens_out": 2274
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_0fdc62b6c3a99f07f9a21daaa2ea86dd",
+   "job_id": "job_b6c79827c09f78e216dbe7090afb56e6",
+   "ts": "2026-08-01T14:36:28.776416Z",
+   "end": "2026-08-01T14:36:56.817360Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini-pro",
+   "model": "gemini-3.1-pro-preview",
+   "projects": [],
+   "tokens_in": 26175,
+   "tokens_out": 1547
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_804d5893efdc77ab55ada8c29f569f38",
+   "job_id": "job_ffdb81bbbe06ee1e6f65dad4f02dbda8",
+   "ts": "2026-08-01T19:17:36.540343Z",
+   "end": "2026-08-01T19:18:16.271500Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini",
+   "model": "gemini-3.5-flash",
+   "projects": [],
+   "tokens_in": 955,
+   "tokens_out": 1861
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_189a94ff9e490ac78bc353e968c9c92f",
+   "job_id": "job_69768932e49e87c8557ed7f8cd89c0bf",
+   "ts": "2026-08-01T19:18:16.510596Z",
+   "end": "2026-08-01T19:18:50.569008Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini",
+   "model": "gemini-3.5-flash",
+   "projects": [],
+   "tokens_in": 1043,
+   "tokens_out": 1961
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_621869e9c1a545a64552f650be232ebb",
+   "job_id": "job_e59d9f50e95c2e3747967c1efc097076",
+   "ts": "2026-08-01T19:18:50.788602Z",
+   "end": "2026-08-01T19:19:19.173038Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini",
+   "model": "gemini-3.5-flash",
+   "projects": [],
+   "tokens_in": 1017,
+   "tokens_out": 1976
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_3ffd0088371fc2b7547cc6ffd44bf4c5",
+   "job_id": "job_c0f6141151caad1a76c06c592b553107",
+   "ts": "2026-08-02T03:47:09.541599Z",
+   "end": "2026-08-02T03:48:20.653939Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 202,
+   "tokens_out": 180
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_29e34b77fcb5fea2fdafd2f88e4280ac",
+   "job_id": "job_859f5c3ede384b4b08acab644cb9f1e0",
+   "ts": "2026-08-02T03:52:21.572898Z",
+   "end": "2026-08-02T03:52:27.769167Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 205,
+   "tokens_out": 141
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_6d78ec19c4a11551ab6b9ff5deed8a92",
+   "job_id": "job_b8703b8c58e50739f776a332b0c6704b",
+   "ts": "2026-08-02T03:55:30.301030Z",
+   "end": "2026-08-02T03:55:38.575653Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 283,
+   "tokens_out": 191
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_246da0b11715b5af692ab5067ec65c1b",
+   "job_id": "job_db814f318a0cfc1b6c1be9de40657639",
+   "ts": "2026-08-02T03:57:33.408174Z",
+   "end": "2026-08-02T03:57:45.499176Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 242,
+   "tokens_out": 315
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_0dcfcb5f5db2d31c9926aeedb39893f1",
+   "job_id": "job_1af8c4fe56d148d16268c19eb840371e",
+   "ts": "2026-08-02T04:01:27.141497Z",
+   "end": "2026-08-02T04:01:40.932492Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 293,
+   "tokens_out": 353
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_7dad60616713d689a54a125cd4e2eb5d",
+   "job_id": "job_480f59706f5b118c49e00a69320ad056",
+   "ts": "2026-08-02T04:05:03.720845Z",
+   "end": "2026-08-02T04:05:11.086359Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 260,
+   "tokens_out": 181
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_0a70ecb3e4e2a686fdfbcd5d42f78e89",
+   "job_id": "job_602c24bae1740c409dc3df672c0733d8",
+   "ts": "2026-08-02T04:05:46.578715Z",
+   "end": "2026-08-02T04:05:55.035941Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 206,
+   "tokens_out": 237
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_5a8a21c5383593019deea5d7e863297c",
+   "job_id": "job_32e44239ae359d7c5466c944b3529473",
+   "ts": "2026-08-02T04:06:17.794196Z",
+   "end": "2026-08-02T04:06:23.790050Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "am4-moe",
+   "model": "gpt-oss-120b",
+   "projects": [],
+   "tokens_in": 209,
+   "tokens_out": 165
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_1ba40f1dd458d5efc5286f3814700bb7",
+   "job_id": "job_d7d4d855eee521a0ac3256189d2cb0e3",
+   "ts": "2026-08-05T10:34:42.316759Z",
+   "end": "2026-08-05T10:35:12.445585Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini",
+   "model": "gemini-3.5-flash",
+   "projects": [],
+   "tokens_in": 1592,
+   "tokens_out": 1488
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_90fa31767dc3534f588f281516b40f5e",
+   "job_id": "job_37c0b3143751f84ce168e205476edbe6",
+   "ts": "2026-08-05T19:41:11.488008Z",
+   "end": "2026-08-05T19:41:58.739668Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini-pro",
+   "model": "gemini-3.1-pro-preview",
+   "projects": [],
+   "tokens_in": 27483,
+   "tokens_out": 2817
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_41ed292843c8ae46d6bbc35122fd9f0e",
+   "job_id": "job_63ffcbc7accfa07614e748cc752b9a8d",
+   "ts": "2026-08-05T20:06:07.217891Z",
+   "end": "2026-08-05T20:07:44.521505Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini-pro",
+   "model": "gemini-3.1-pro-preview",
+   "projects": [],
+   "tokens_in": 12709,
+   "tokens_out": 655
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_47921cc8ea0673c5a81e410eaa531d52",
+   "job_id": "job_23385ae28441845bba79ecb422148a07",
+   "ts": "2026-08-06T06:23:18.506109Z",
+   "end": "2026-08-06T06:23:44.064812Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini-pro",
+   "model": "gemini-3.1-pro-preview",
+   "projects": [],
+   "tokens_in": 32669,
+   "tokens_out": 1584
+  },
+  {
+   "source": "antigravity",
+   "id": "35a4146f-9f65-4c26-ab77-5b919b1af71f",
+   "ts": "2026-08-07T12:52:40.486927Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-07T12:52:36.472384Z",
+   "steps": 7,
+   "host": "omen-c",
+   "projects": [
+    "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "a7edd5e7-2ff5-4fa6-ba08-f27acfa4abaa",
+   "ts": "2026-08-07T13:22:11.076967Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-07T13:20:04.406160Z",
+   "steps": 75,
+   "host": "omen-c",
+   "projects": [
+    "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "b70588d7-9fed-453d-a7fe-6a5982e79981",
+   "ts": "2026-08-07T14:24:36.142076Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-07T14:24:28.704766Z",
+   "steps": 461,
+   "host": "omen-c",
+   "projects": [
+    "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "324679e8-a6d7-4f16-bbbd-1cf17ddbe23e",
+   "ts": "2026-08-07T15:14:20.670017Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-07T15:13:12.184311Z",
+   "steps": 127,
+   "host": "omen-c",
+   "projects": [
+    "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "6e3f9f3c-8743-4f6d-a249-9ad7e0455342",
+   "ts": "2026-08-08T02:50:17.253116Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-08T02:38:23.247466Z",
+   "steps": 131,
+   "host": "omen-c",
+   "projects": [
+    "168915c9674722417bfd3fcfadcc0883976da6db"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_9d009e3c1c731e7090dc63500dc9976f",
+   "job_id": "job_fb1d9a44e91461a43594d9a9caf5d1aa",
+   "ts": "2026-08-08T04:55:55.917801Z",
+   "end": "2026-08-08T04:56:20.314530Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini",
+   "model": "gemini-3.5-flash",
+   "projects": [],
+   "tokens_in": 1426,
+   "tokens_out": 1162
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_0e3a4c4d679ce49761c3d4110c5ed0c2",
+   "job_id": "job_27038360d8ccf38dec834f7f838c1f5e",
+   "ts": "2026-08-08T12:46:46.332189Z",
+   "end": "2026-08-08T12:46:46.426331Z",
+   "time_kind": "invocation_interval",
+   "status": "failed",
+   "host": "omen-c",
+   "backend": "am4-oxen",
+   "model": "oxen",
+   "projects": [],
+   "tokens_in": null,
+   "tokens_out": null
+  },
+  {
+   "source": "antigravity",
+   "id": "151155c4-4343-450f-bc81-1ed38f1bc951",
+   "ts": "2026-08-10T09:59:41.729302Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-10T09:54:42.019050Z",
+   "steps": 68,
+   "host": "omen-c",
+   "projects": [
+    "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "4a6df596-91b9-4447-8fb6-05be3690aed9",
+   "ts": "2026-08-10T10:01:43.858732Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-10T09:54:42.223293Z",
+   "steps": 75,
+   "host": "omen-c",
+   "projects": [
+    "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "71a1b5da-704d-4433-a139-56daf6cb9216",
+   "ts": "2026-08-10T10:05:26.531985Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-10T09:54:42.386614Z",
+   "steps": 103,
+   "host": "omen-c",
+   "projects": [
+    "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "fd55186c-2964-4a1b-9bb5-1e27f9b9f44f",
+   "ts": "2026-08-10T10:33:18.848675Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-10T10:22:40.022131Z",
+   "steps": 79,
+   "host": "omen-c",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "ff5715e2-2d7c-4fc8-adc2-0d8a2227e4ae",
+   "ts": "2026-08-10T10:33:22.443533Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-10T10:22:40.191209Z",
+   "steps": 68,
+   "host": "omen-c",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "87f5641a-a181-4ec9-b147-6d7c76818a5b",
+   "ts": "2026-08-10T10:35:29.704609Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-10T10:22:39.861544Z",
+   "steps": 107,
+   "host": "omen-c",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "3f470835-c686-454d-b0c4-73f4dcdff38b",
+   "ts": "2026-08-10T10:35:56.167316Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-10T10:22:40.592623Z",
+   "steps": 121,
+   "host": "omen-c",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "4b06b5c2-c5fb-4521-9d23-3d4ae180a050",
+   "ts": "2026-08-10T10:37:55.653274Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-10T10:22:40.413103Z",
+   "steps": 107,
+   "host": "omen-c",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "9e958b0a-62b7-4519-96d1-f15c987bf717",
+   "ts": "2026-08-10T11:01:22.412183Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-10T11:00:58.834993Z",
+   "steps": 168,
+   "host": "omen-c",
+   "projects": [
+    "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "33668440-269a-4ace-8129-99de0513e0f6",
+   "ts": "2026-08-10T12:30:02.502658Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-10T12:27:25.442212Z",
+   "steps": 111,
+   "host": "omen-c",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_d29137cdc2e14b465cb83c92e9ac9d23",
+   "job_id": "job_f50386f1b235d784177ad80b2a419c54",
+   "ts": "2026-08-12T04:56:20.146423Z",
+   "end": "2026-08-12T04:56:59.210759Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini",
+   "model": "gemini-3.5-flash",
+   "projects": [],
+   "tokens_in": 14337,
+   "tokens_out": 317
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_0103200990dcebf9d81d9ad6e6acd4ad",
+   "job_id": "job_0fe2e65efc60a7883fd60babab1fa5c8",
+   "ts": "2026-08-12T04:56:59.433302Z",
+   "end": "2026-08-12T04:57:39.023353Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini",
+   "model": "gemini-3.5-flash",
+   "projects": [],
+   "tokens_in": 6435,
+   "tokens_out": 886
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_f5a6482db2bf430859ce0254fa3b8718",
+   "job_id": "job_f833a387e1ab223e7a5b71e16c36ecfc",
+   "ts": "2026-08-12T04:57:39.221355Z",
+   "end": "2026-08-12T04:58:14.657762Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini",
+   "model": "gemini-3.5-flash",
+   "projects": [],
+   "tokens_in": 6777,
+   "tokens_out": 421
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_bf1fb4d0531c0dcea9b02bef7055bf54",
+   "job_id": "job_d7f3fe89e7e02ba7b09bb07cca988348",
+   "ts": "2026-08-12T04:58:14.850715Z",
+   "end": "2026-08-12T04:58:57.871949Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini",
+   "model": "gemini-3.5-flash",
+   "projects": [],
+   "tokens_in": 20776,
+   "tokens_out": 928
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_e0cdbed9b63a18f34ff7413551e677bc",
+   "job_id": "job_a73b2fc9a7a6be6bea5ed5a44561883b",
+   "ts": "2026-08-12T04:58:58.070153Z",
+   "end": "2026-08-12T05:00:10.281631Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini",
+   "model": "gemini-3.5-flash",
+   "projects": [],
+   "tokens_in": 21486,
+   "tokens_out": 654
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_d38c9f0ffd5cf83d44d667f77dd2f2da",
+   "job_id": "job_5d98b3c5f01d8be95d2333a5a7fe835f",
+   "ts": "2026-08-12T05:00:10.564154Z",
+   "end": "2026-08-12T05:01:26.170442Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini",
+   "model": "gemini-3.5-flash",
+   "projects": [],
+   "tokens_in": 21586,
+   "tokens_out": 652
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_2781b6c1f66979cb116c7d5580220fa2",
+   "job_id": "job_8c4d48aaa82043c4b5ec0a3974cecdab",
+   "ts": "2026-08-12T05:02:04.892290Z",
+   "end": "2026-08-12T05:02:28.019325Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini-pro",
+   "model": "gemini-3.1-pro-preview",
+   "projects": [],
+   "tokens_in": 21420,
+   "tokens_out": 7
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_79211c000b07ccea36e5904f29c34bcc",
+   "job_id": "job_2629381863452acac0b5f1663768e083",
+   "ts": "2026-08-12T05:02:28.276031Z",
+   "end": "2026-08-12T05:02:59.084031Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini-pro",
+   "model": "gemini-3.1-pro-preview",
+   "projects": [],
+   "tokens_in": 21500,
+   "tokens_out": 7
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_d730a1c82d9bbdfbef56e4d6ae681bfe",
+   "job_id": "job_bae39fe4f409b6d12f0113016fa36dca",
+   "ts": "2026-08-12T06:28:59.765427Z",
+   "end": "2026-08-12T06:29:14.679531Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini",
+   "model": "gemini-3.5-flash",
+   "projects": [],
+   "tokens_in": 2350,
+   "tokens_out": 1071
+  },
+  {
+   "source": "antigravity",
+   "id": "9a1167c4-a3d2-462c-bf0a-e03164c22fa6",
+   "ts": "2026-08-12T10:57:44.318856Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-12T10:57:18.555594Z",
+   "steps": 21,
+   "host": "omen-c",
+   "projects": [
+    "dir:omen-c:work/writing"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "196cfc5c-2645-4f01-ab47-7b6e6e941218",
+   "ts": "2026-08-12T10:57:49.610665Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-12T10:57:18.641224Z",
+   "steps": 21,
+   "host": "omen-c",
+   "projects": [
+    "dir:omen-c:work/writing"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "234cbeb5-e5a7-4724-84ed-6d9d59e0558e",
+   "ts": "2026-08-12T10:58:03.438514Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-12T10:57:18.596083Z",
+   "steps": 35,
+   "host": "omen-c",
+   "projects": [
+    "dir:omen-c:work/writing"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_bbc18537174553b2f1f0951b1931704b",
+   "job_id": "job_67c3c984f04116f5878ca9530a3689e4",
+   "ts": "2026-08-12T11:39:10.509309Z",
+   "end": "2026-08-12T11:39:36.109289Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini",
+   "model": "gemini-3.5-flash",
+   "projects": [],
+   "tokens_in": 1399,
+   "tokens_out": 1274
+  },
+  {
+   "source": "antigravity",
+   "id": "199364d8-9392-4aef-bcc1-fe07f01d1256",
+   "ts": "2026-08-12T11:42:27.940777Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-12T11:40:06.661342Z",
+   "steps": 19,
+   "host": "omen-c",
+   "projects": [
+    "dir:omen-c:work/writing"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "c8570ebf-a10c-4363-9073-d0746588b759",
+   "ts": "2026-08-12T11:43:08.657886Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-12T11:40:06.769658Z",
+   "steps": 17,
+   "host": "omen-c",
+   "projects": [
+    "dir:omen-c:work/writing"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "024cf6e1-be9a-4fac-9efb-464d45c63256",
+   "ts": "2026-08-12T11:45:32.065125Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-12T11:40:06.715736Z",
+   "steps": 15,
+   "host": "omen-c",
+   "projects": [
+    "dir:omen-c:work/writing"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "29618b8b-832a-4e2b-a019-2f08537086db",
+   "ts": "2026-08-12T11:45:58.360368Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-12T11:40:06.825319Z",
+   "steps": 22,
+   "host": "omen-c",
+   "projects": [
+    "dir:omen-c:work/writing"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_6c26fff7f97349aac334461eec7e2230",
+   "job_id": "job_a4f0ff7b526a811026632e449c70a773",
+   "ts": "2026-08-19T12:31:17.585958Z",
+   "end": "2026-08-19T12:31:24.988988Z",
+   "time_kind": "invocation_interval",
+   "status": "failed",
+   "host": "omen-c",
+   "backend": "omen-ollama",
+   "model": "qwen3-coder:30b",
+   "projects": [],
+   "tokens_in": null,
+   "tokens_out": null
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_34137dfed95aaae2500a8a62f331be04",
+   "job_id": "job_222c6c46213acddcf3cc16c356e98e2a",
+   "ts": "2026-08-19T12:35:38.473507Z",
+   "end": "2026-08-19T12:35:51.015812Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "omen-ollama",
+   "model": "qwen3-coder:30b",
+   "projects": [],
+   "tokens_in": 18,
+   "tokens_out": 7
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_fffc8065ad3485fceeb88524bed9449d",
+   "job_id": "job_643f4ef860aa5200ba4d598aa081370e",
+   "ts": "2026-08-19T16:02:54.723193Z",
+   "end": "2026-08-19T16:03:19.382488Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini",
+   "model": "gemini-3.5-flash",
+   "projects": [],
+   "tokens_in": 6294,
+   "tokens_out": 160
+  },
+  {
+   "source": "hearth_execution",
+   "id": "inv_aec75573d5d4a9f108658da3f4cb6f6a",
+   "job_id": "job_b3e17bfc04f66d597f09a6a555a460bc",
+   "ts": "2026-08-19T16:03:21.729293Z",
+   "end": "2026-08-19T16:03:43.977645Z",
+   "time_kind": "invocation_interval",
+   "status": "succeeded",
+   "host": "omen-c",
+   "backend": "gcp-gemini",
+   "model": "gemini-3.5-flash",
+   "projects": [],
+   "tokens_in": 3529,
+   "tokens_out": 1059
+  },
+  {
+   "source": "antigravity",
+   "id": "da1b6168-1dbe-48b8-9f39-f980f63f207e",
+   "ts": "2026-08-30T05:37:26.334934Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-08-30T05:36:51.567569Z",
+   "steps": 151,
+   "host": "omen-c",
+   "projects": [
+    "168915c9674722417bfd3fcfadcc0883976da6db"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "cf9de4ef-9cfe-4de2-8d29-cb921876991e",
+   "ts": "2026-09-03T09:17:20.473573Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-03T09:17:09.392623Z",
+   "steps": 343,
+   "host": "omen-c",
+   "projects": [
+    "2144ddb13345f74710ea7db8917f088a2846f600"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "0b41eb3f-63ae-410b-8b2e-023e2b59e61f",
+   "ts": "2026-09-03T12:21:28.544398Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-03T12:19:48.928741Z",
+   "steps": 33,
+   "host": "omen-c",
+   "projects": [
+    "17b6526bb7f520061ed56eef0eb5846d524e30d8"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "0c1e3d78-fe86-467e-b3b3-a1d5c9cf4784",
+   "ts": "2026-09-03T12:25:12.129471Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-03T12:19:48.958448Z",
+   "steps": 151,
+   "host": "omen-c",
+   "projects": [
+    "17b6526bb7f520061ed56eef0eb5846d524e30d8"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "8ec7c9df-c4ad-44da-b22d-10ab888257f4",
+   "ts": "2026-09-04T02:35:48.897873Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-04T02:35:20.484639Z",
+   "steps": 620,
+   "host": "omen-c",
+   "projects": [
+    "6a0d30840c0d974b5780231a0df9e0868b908c8e"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "bf2f7534-1af7-46ac-be5c-fe82f080c739",
+   "ts": "2026-09-04T09:51:35.280450Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-04T09:48:37.662789Z",
+   "steps": 609,
+   "host": "omen-c",
+   "projects": [
+    "aa33e4c8932824b88a99e3da9cdd27c412994e8c"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "ebbae9bb-921f-4fe1-9644-cc74fa2e57bd",
+   "ts": "2026-09-04T17:56:03.439053Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-04T17:55:05.964367Z",
+   "steps": 1520,
+   "host": "omen-c",
+   "projects": [
+    "6a0d30840c0d974b5780231a0df9e0868b908c8e"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "ce6e3f15-43d7-459b-9ce3-8afe75bb416b",
+   "ts": "2026-09-07T01:18:52.662763Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-07T01:18:06.438705Z",
+   "steps": 58,
+   "host": "omen-c",
+   "projects": [
+    "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "8bd2885f-1c03-436a-b64e-c1a66ccd845b",
+   "ts": "2026-09-07T07:16:08.659222Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-07T07:14:07.972595Z",
+   "steps": 67,
+   "host": "omen-c",
+   "projects": [
+    "6a0d30840c0d974b5780231a0df9e0868b908c8e"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "8478ba60-8da3-40d9-9864-ed9ff153fda2",
+   "ts": "2026-09-07T07:18:09.756901Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-07T07:14:08.100011Z",
+   "steps": 166,
+   "host": "omen-c",
+   "projects": [
+    "6a0d30840c0d974b5780231a0df9e0868b908c8e"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "545da479-5322-4aa9-9edd-db609377d49b",
+   "ts": "2026-09-07T07:18:10.072786Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-07T07:14:08.163120Z",
+   "steps": 154,
+   "host": "omen-c",
+   "projects": [
+    "6a0d30840c0d974b5780231a0df9e0868b908c8e"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "0ee80488-3724-4fea-935f-f9b6f01e46ec",
+   "ts": "2026-09-07T07:19:36.021960Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-07T07:14:08.033297Z",
+   "steps": 174,
+   "host": "omen-c",
+   "projects": [
+    "6a0d30840c0d974b5780231a0df9e0868b908c8e"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "3e8e98d6-de5e-4908-acc4-a82fe201c178",
+   "ts": "2026-09-07T08:16:30.656142Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-07T08:15:15.429984Z",
+   "steps": 825,
+   "host": "omen-c",
+   "projects": [
+    "6a0d30840c0d974b5780231a0df9e0868b908c8e"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "56fa31bf-6d70-4897-80b3-ca7b6c0876c9",
+   "ts": "2026-09-07T15:59:00.977413Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-07T12:19:35.737641Z",
+   "steps": 4273,
+   "host": "omen-c",
+   "projects": [
+    "17b6526bb7f520061ed56eef0eb5846d524e30d8"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "f242a191-ffd8-4ac6-a3b2-0ebd38845f44",
+   "ts": "2026-09-08T20:18:14.353126Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-08T20:18:04.644005Z",
+   "steps": 10,
+   "host": "omen-c",
+   "projects": [
+    "6a0d30840c0d974b5780231a0df9e0868b908c8e"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "cd672b1a-3679-48f9-9c15-b4086566175b",
+   "ts": "2026-09-08T22:32:22.075665Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-08T22:31:06.984859Z",
+   "steps": 20,
+   "host": "omen-c",
+   "projects": [
+    "6a0d30840c0d974b5780231a0df9e0868b908c8e"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "07bbc885-d190-4ff8-9664-4df588bbfbc2",
+   "ts": "2026-09-09T03:49:37.305260Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-09T03:49:17.497759Z",
+   "steps": 1906,
+   "host": "omen-c",
+   "projects": [
+    "a7795c7ee4310fac3b86f8df9eca4e58d06936b8"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "5e6b17d0-ee69-4afa-9128-d2c0e8849deb",
+   "ts": "2026-09-09T09:01:23.962673Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-09T08:58:54.118505Z",
+   "steps": 138,
+   "host": "omen-c",
+   "projects": [
+    "aa33e4c8932824b88a99e3da9cdd27c412994e8c"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "cdb40d19-a8a1-4961-91f9-9fe6819e346d",
+   "ts": "2026-09-09T09:14:42.128293Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-09T09:12:50.834595Z",
+   "steps": 911,
+   "host": "omen-c",
+   "projects": [
+    "dir:omen-c:work/writing"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "73be73bd-174b-4433-b94e-e09f66149609",
+   "ts": "2026-09-09T09:32:07.350885Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-09T09:31:55.842412Z",
+   "steps": 194,
+   "host": "omen-c",
+   "projects": [
+    "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "d71b0b9f-25d2-4efa-b3e3-3680c6292be9",
+   "ts": "2026-09-09T10:35:53.791020Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-09T10:35:15.971094Z",
+   "steps": 114,
+   "host": "omen-c",
+   "projects": [
+    "a7795c7ee4310fac3b86f8df9eca4e58d06936b8"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "32fd9d1b-892e-46dc-bfa9-c66b78c4cd55",
+   "ts": "2026-09-09T20:55:02.313074Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-09T20:48:36.217857Z",
+   "steps": 597,
+   "host": "omen-c",
+   "projects": [
+    "dir:omen-e:omen/steward-multi-era"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "830e4b84-0fd1-4b75-868a-17b9f81ba2c0",
+   "ts": "2026-09-09T20:57:28.842970Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-09T20:57:22.636631Z",
+   "steps": 9,
+   "host": "omen-c",
+   "projects": [
+    "dir:omen-e:omen/steward-multi-era"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "cc9aa220-d2dd-4539-9b4d-409638c7c26f",
+   "ts": "2026-09-09T21:01:32.763626Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-09T20:56:55.187672Z",
+   "steps": 84,
+   "host": "omen-c",
+   "projects": [
+    "dir:omen-e:omen/steward-multi-era"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "493f2e8f-33f9-485e-b30b-970c4809ab72",
+   "ts": "2026-09-10T05:24:59.692179Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-10T05:24:43.656224Z",
+   "steps": 15,
+   "host": "omen-c",
+   "projects": [
+    "6a0d30840c0d974b5780231a0df9e0868b908c8e"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "fae5263b-76ca-4106-9580-001b1e3817c8",
+   "ts": "2026-09-11T03:14:29.223191Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-11T03:11:41.130296Z",
+   "steps": 309,
+   "host": "omen-c",
+   "projects": [
+    "17b6526bb7f520061ed56eef0eb5846d524e30d8"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "f0961be9-ecc8-4812-bca1-141f32aefe43",
+   "ts": "2026-09-11T08:04:49.084619Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-11T08:03:30.300100Z",
+   "steps": 168,
+   "host": "omen-c",
+   "projects": [
+    "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "5981c3c8-3452-4206-b3c6-80f2350d4ab5",
+   "ts": "2026-09-12T10:56:46.723715Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-12T10:56:30.442948Z",
+   "steps": 303,
+   "host": "omen-c",
+   "projects": [
+    "6a0d30840c0d974b5780231a0df9e0868b908c8e"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "fa74f18c-3588-40e1-8e80-0544181dfa2d",
+   "ts": "2026-09-12T15:30:05.864348Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-12T15:26:13.414396Z",
+   "steps": 501,
+   "host": "omen-c",
+   "projects": [
+    "4bb4fbce65994f88ff045be36c1f6ad7f1da7a9e"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "c63133fd-7f10-42bc-a83d-cdf8d48caa92",
+   "ts": "2026-09-13T04:51:49.774256Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-13T04:50:37.473407Z",
+   "steps": 3689,
+   "host": "omen-c",
+   "projects": [
+    "6a0d30840c0d974b5780231a0df9e0868b908c8e"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "40dd4962-616e-41c4-b554-879cfac90d78",
+   "ts": "2026-09-13T12:44:57.822798Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-13T12:44:51.583118Z",
+   "steps": 255,
+   "host": "omen-c",
+   "projects": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "77ff740b-27d5-4aa9-a72f-ac61acd26079",
+   "ts": "2026-09-13T13:13:57.996091Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-13T13:12:05.123630Z",
+   "steps": 358,
+   "host": "omen-c",
+   "projects": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "6ae79f20-6d05-41b3-bf92-7204dc1df91a",
+   "ts": "2026-09-13T15:40:23.814879Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-13T15:40:19.124045Z",
+   "steps": 864,
+   "host": "omen-c",
+   "projects": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "3e4437ce-5a32-4d59-9c80-df0713826b30",
+   "ts": "2026-09-15T00:56:27.962753Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-15T00:54:41.549808Z",
+   "steps": 725,
+   "host": "omen-c",
+   "projects": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "92033e0f-4c0f-44ac-b08b-4e55e60a37e9",
+   "ts": "2026-09-15T02:33:18.890313Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-15T02:33:14.961061Z",
+   "steps": 7,
+   "host": "omen-c",
+   "projects": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "a32f942e-a559-4e39-bf69-da8ebd19b565",
+   "ts": "2026-09-15T02:33:18.961145Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-15T02:33:14.829407Z",
+   "steps": 7,
+   "host": "omen-c",
+   "projects": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "427bf7ef-df7b-4efc-9c3c-ccee35dbc111",
+   "ts": "2026-09-15T02:33:27.688461Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-15T02:33:14.918160Z",
+   "steps": 15,
+   "host": "omen-c",
+   "projects": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "0fac47d9-711c-41f3-9f2d-bf205b0f7f14",
+   "ts": "2026-09-15T02:33:32.273288Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-15T02:33:14.876567Z",
+   "steps": 11,
+   "host": "omen-c",
+   "projects": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "6c513ce8-5439-4c50-8189-f9b800ba0b1b",
+   "ts": "2026-09-15T02:34:22.473882Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-15T02:30:46.356262Z",
+   "steps": 336,
+   "host": "omen-c",
+   "projects": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "ef8a933d-87d3-424d-b6f9-6ba33b99aa8d",
+   "ts": "2026-09-15T03:36:34.865343Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-15T03:36:06.688530Z",
+   "steps": 1219,
+   "host": "omen-c",
+   "projects": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "e594a1c7-228e-400e-b760-8f1ff743ebce",
+   "ts": "2026-09-15T05:55:26.573661Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-15T05:52:40.903446Z",
+   "steps": 82,
+   "host": "omen-c",
+   "projects": [
+    "78e1cf00a3961efeec707cdb7bdedf3334d305e8"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "2d7635e0-4c6e-4c87-a510-1adedf8d61d6",
+   "ts": "2026-09-15T07:01:04.822948Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-15T06:43:22.066717Z",
+   "steps": 693,
+   "host": "omen-c",
+   "projects": [
+    "a7795c7ee4310fac3b86f8df9eca4e58d06936b8"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "1825fd52-6dce-498a-a945-8c9b337df510",
+   "ts": "2026-09-15T07:29:50.362162Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-15T07:27:28.541062Z",
+   "steps": 319,
+   "host": "omen-c",
+   "projects": [
+    "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "61257b5a-86c5-4116-842f-bfc6a52b02dd",
+   "ts": "2026-09-15T09:24:27.352874Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-15T09:15:28.440201Z",
+   "steps": 438,
+   "host": "omen-c",
+   "projects": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "7e0c4f33-4c7b-4f95-9bd2-d54b94d31fc0",
+   "ts": "2026-09-15T20:56:13.494007Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-15T20:52:48.387020Z",
+   "steps": 216,
+   "host": "omen-c",
+   "projects": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "e1cb781b-8ce2-4ae5-ad46-a351daa5e2c0",
+   "ts": "2026-09-16T07:28:22.262022Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-16T07:27:19.952166Z",
+   "steps": 34,
+   "host": "omen-c",
+   "projects": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "e79c4f98-0898-458b-94e8-2449bc387721",
+   "ts": "2026-09-16T21:15:18.044303Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-16T09:30:21.200558Z",
+   "steps": 1339,
+   "host": "omen-c",
+   "projects": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "c59d4564-4cf9-4889-b79c-5eebac73c95a",
+   "ts": "2026-09-16T22:27:15.816309Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-16T22:27:01.520287Z",
+   "steps": 126,
+   "host": "omen-c",
+   "projects": [
+    "aff20eee73dd981936187c09c06ca24aeb2bb566"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "ff6e7dea-e60a-4690-8360-d9704b99195f",
+   "ts": "2026-09-16T23:30:41.277569Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-16T23:24:30.887950Z",
+   "steps": 222,
+   "host": "omen-c",
+   "projects": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "2c539cdb-8746-4c91-bc6a-511e10e89ce0",
+   "ts": "2026-09-17T06:40:40.415963Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-17T06:39:21.056055Z",
+   "steps": 831,
+   "host": "omen-c",
+   "projects": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "a59df076-df1a-4ec2-8a8f-8257d095354c",
+   "ts": "2026-09-17T10:34:05.278139Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-17T10:33:17.738256Z",
+   "steps": 190,
+   "host": "omen-c",
+   "projects": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "a3077da4-2f82-4374-86e7-e22002f68819",
+   "ts": "2026-09-17T13:22:44.904216Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-17T13:21:15.542488Z",
+   "steps": 536,
+   "host": "omen-c",
+   "projects": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "da5ecdb5-b239-4eea-af03-3e7140fd24af",
+   "ts": "2026-09-17T15:08:27.105371Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-17T15:07:53.027362Z",
+   "steps": 18,
+   "host": "omen-c",
+   "projects": [
+    "6a0d30840c0d974b5780231a0df9e0868b908c8e"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "0191643e-2994-468c-9a11-672301a20b12",
+   "ts": "2026-09-17T15:27:44.892411Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-17T15:27:07.296809Z",
+   "steps": 21,
+   "host": "omen-c",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "21c8cad8-98e3-46b9-b39c-c189b7b5b85c",
+   "ts": "2026-09-17T22:44:53.467292Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-17T22:44:44.342210Z",
+   "steps": 124,
+   "host": "omen-c",
+   "projects": [
+    "484f54f657f7e1a41232dd5ed012c751e5825bd4"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "a7696d01-fa17-44d3-bfb9-b9be392196d3",
+   "ts": "2026-09-18T00:37:36.892888Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-18T00:16:15.250402Z",
+   "steps": 3263,
+   "host": "omen-c",
+   "projects": [
+    "6a0d30840c0d974b5780231a0df9e0868b908c8e"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "ba313242-a6ce-45fd-8db6-d2d06fc81f2e",
+   "ts": "2026-09-19T11:47:14.085728Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-19T11:37:12.351575Z",
+   "steps": 544,
+   "host": "omen-c",
+   "projects": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "f33b0477-c0df-4b73-8ced-9e1343e67fef",
+   "ts": "2026-09-19T12:49:44.180277Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-19T12:43:38.604877Z",
+   "steps": 593,
+   "host": "omen-c",
+   "projects": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "f8018e0b-ac14-4679-b778-bec7d5f8741d",
+   "ts": "2026-09-20T02:27:03.968861Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-20T02:15:42.518452Z",
+   "steps": 5014,
+   "host": "omen-c",
+   "projects": [
+    "aff20eee73dd981936187c09c06ca24aeb2bb566"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "e669c2b8-5fd0-4369-947e-a379f888daa8",
+   "ts": "2026-09-23T04:58:37.765565Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-23T04:55:19.059379Z",
+   "steps": 83,
+   "host": "omen-c",
+   "projects": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "b793e8a4-d82e-4037-be24-b8ff2765b018",
+   "ts": "2026-09-23T05:12:47.168228Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-23T05:10:06.064531Z",
+   "steps": 357,
+   "host": "omen-c",
+   "projects": [
+    "dir:omen-c:work/JEPA"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "5983241f-4b08-44da-849f-db434939239c",
+   "ts": "2026-09-23T08:01:58.640947Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-23T07:59:06.271121Z",
+   "steps": 1101,
+   "host": "omen-c",
+   "projects": [
+    "352eb10ef4d4f2a489c55024f097fd2bf4819da8"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "98e8dff7-a5d8-425c-ade1-52f9dbeb5647",
+   "ts": "2026-09-23T08:19:12.677443Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-23T08:16:52.775302Z",
+   "steps": 45,
+   "host": "omen-c",
+   "projects": [
+    "dc00626718981a7fb78734bd61f6e8f77f0511e9"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "b57217d6-7cd9-4053-8571-a86776ddecfc",
+   "ts": "2026-09-23T08:58:32.733053Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-23T08:54:01.480442Z",
+   "steps": 136,
+   "host": "omen-c",
+   "projects": [
+    "447e150d1c2e1ae1c65bec01f7663c7d7dada6aa"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "6c8e2cc5-51a0-4f4e-9c98-b18ea49f5734",
+   "ts": "2026-09-23T08:59:51.230729Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-23T08:54:01.402080Z",
+   "steps": 178,
+   "host": "omen-c",
+   "projects": [
+    "447e150d1c2e1ae1c65bec01f7663c7d7dada6aa"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "f2b7ac93-41c8-44c1-8e28-b6e8b8d4316b",
+   "ts": "2026-09-23T09:08:50.256519Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-23T08:54:01.438828Z",
+   "steps": 268,
+   "host": "omen-c",
+   "projects": [
+    "447e150d1c2e1ae1c65bec01f7663c7d7dada6aa"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "556e4d3b-249c-4cfb-b82c-ab69834220df",
+   "ts": "2026-09-23T09:57:20.965424Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-23T09:57:02.030160Z",
+   "steps": 74,
+   "host": "omen-c",
+   "projects": [
+    "447e150d1c2e1ae1c65bec01f7663c7d7dada6aa"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "81d957e1-cc79-4457-94f4-0cbdd51afe1a",
+   "ts": "2026-09-23T13:56:36.896063Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-23T13:48:59.050414Z",
+   "steps": 1105,
+   "host": "omen-c",
+   "projects": [
+    "dir:omen-c:work/JEPA"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "265a57e5-2fee-4fe2-ae66-d2dc25b0fbe2",
+   "ts": "2026-09-27T05:24:01.808710Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-27T05:22:45.595021Z",
+   "steps": 154,
+   "host": "omen-c",
+   "projects": [
+    "dc00626718981a7fb78734bd61f6e8f77f0511e9"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "3da71cdb-370c-4473-abd8-d56e8018e941",
+   "ts": "2026-09-27T05:47:53.620429Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-27T05:47:51.020172Z",
+   "steps": 86,
+   "host": "omen-c",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "d6719c1e-08aa-4b05-832b-241347f4d3e9",
+   "ts": "2026-09-27T07:45:22.548801Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-27T07:45:10.645114Z",
+   "steps": 10,
+   "host": "omen-c",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "239cf04d-6413-48ac-a9e1-a7ab94dee6c7",
+   "ts": "2026-09-27T08:15:00.611795Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-27T08:13:53.102508Z",
+   "steps": 95,
+   "host": "omen-c",
+   "projects": [
+    "0a4af0678afbd984796f319fdec8d4c2da42a3c8"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "9c32f509-a281-4c48-a9c4-d9647a65d256",
+   "ts": "2026-09-27T09:07:03.273458Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-27T09:03:32.791033Z",
+   "steps": 98,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "26513cf9-10ad-42b1-910a-e586f6918d3c",
+   "ts": "2026-09-27T09:17:20.949184Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-27T09:15:56.078345Z",
+   "steps": 30,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "809457e5-ee43-48a7-8566-dde5f967490b",
+   "ts": "2026-09-27T10:26:49.183035Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-27T10:26:38.078677Z",
+   "steps": 6,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "83804fd4-9662-4fc7-988d-ba7800362370",
+   "ts": "2026-09-27T12:35:31.563265Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-27T12:35:08.277794Z",
+   "steps": 6,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "c41dd11d-2d5f-449a-881c-486cd0d5211d",
+   "ts": "2026-09-27T15:54:00.116903Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-27T15:54:00.116903Z",
+   "steps": 238,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "6256dccb-8fd3-491e-99e6-ccc5ec623be3",
+   "ts": "2026-09-27T17:20:37.974305Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-27T17:03:37.885004Z",
+   "steps": 153,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "dcc45d3f-968f-4e47-8f3c-f3b91c863860",
+   "ts": "2026-09-28T01:09:14.477194Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-28T01:09:14.477194Z",
+   "steps": 29,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "96526262-4884-4c56-82b6-4bea965fcf1f",
+   "ts": "2026-09-28T04:23:41.616595Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-09-28T04:23:22.277309Z",
+   "steps": 260,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "10aead28-48fe-4238-83e9-3de7aff88516",
+   "ts": "2026-10-01T02:32:38.368497Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-01T02:11:22.238799Z",
+   "steps": 341,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-mechanism",
+   "ts": "2026-10-01T05:20:34.453192Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-routing",
+   "ts": "2026-10-01T05:20:34.453192Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-ded1608ce057",
+   "ts": "2026-10-01T05:20:34.479655Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-5562ba531a05",
+   "ts": "2026-10-01T05:20:34.504967Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-cap-20261001T014000Z-smoke-a203ef",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-cap-20261001T014125Z-named-2c1baa",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-cap-20261001T015134Z-named-30253b",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-cap-20261001T020140Z-named-49549b",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-cap-20261001T020715Z-outcome-48e1e7",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-cap-20261001T021354Z-smoke-210302",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-cap-20261001T042103Z-outcome-6fa96a",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-cap-20261001T042542Z-outcome-5ead5a",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-cap-20261001T043242Z-outcome-219f60",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-lab-20260930T235715Z-237539",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-lab-20261001T003150Z-3ea88b",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-lab-20261001T004010Z-6aef12",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-lab-20261001T004239Z-7f7965",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-replay-handoff-base",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-replay-handoff-nearby",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-replay-miller-base",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-replay-miller-nearby",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-replay-tcut-base",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-replay-tcut-nearby",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-E000",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-E001",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-E002",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-E003",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-E004",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-E005",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-E006",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-E007",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-hearth-history",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-recipe-range",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-source-ashley-retrospective",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-source-commandcenter-pour-c2",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-source-farmer-infrastructure",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-source-linux-closeout",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-source-linux-serving-recipe",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-source-planner-handoff",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-source-planning-spine-manifest",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-source-precheck-runbook",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-E000",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-E001",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-E002",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-E003",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-E004",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-E005",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-E006",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-E007",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-hearth-history",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-recipe-replays",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-source-map",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-supported-reuse",
+   "ts": "2026-10-01T05:22:11.815457Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-routing-coherence",
+   "ts": "2026-10-01T05:23:33.803251Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-routing-explicit-pins",
+   "ts": "2026-10-01T05:23:33.832754Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-routing-family-divergence",
+   "ts": "2026-10-01T05:23:33.832754Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-routing-output-budget",
+   "ts": "2026-10-01T05:23:33.832754Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-routing-plan-occupancy-provenance",
+   "ts": "2026-10-01T05:23:33.832754Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-fresh-recovery",
+   "ts": "2026-10-01T05:33:32.715089Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-b3963f3f0871",
+   "ts": "2026-10-01T05:33:32.741855Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-fresh-recovery",
+   "ts": "2026-10-01T05:43:03.856178Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "supported",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-research-mechanism",
+   "ts": "2026-10-01T05:43:04.093701Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "supported",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "antigravity",
+   "id": "b4da336e-62a2-4b7d-a332-eaa7a2dec389",
+   "ts": "2026-10-01T06:16:46.119242Z",
+   "time_kind": "last_modified",
+   "last_user_input": null,
+   "steps": 24,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-qual-day-e006-miller",
+   "ts": "2026-10-01T07:42:55.337045Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-qual-day-expand-edges",
+   "ts": "2026-10-01T07:42:55.337045Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-qual-day-os-local-chores",
+   "ts": "2026-10-01T07:42:55.337045Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-qual-day-presence-probe",
+   "ts": "2026-10-01T07:42:55.337045Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-qual-day-resolve-citation",
+   "ts": "2026-10-01T07:42:55.337045Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-qual-devstral-resolve-citation",
+   "ts": "2026-10-01T07:42:55.337045Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-qual-qwen32b-resolve-citation",
+   "ts": "2026-10-01T07:42:55.337045Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-qual-toolnight-chores",
+   "ts": "2026-10-01T07:42:55.337045Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-qual-toolnight-expand-edges",
+   "ts": "2026-10-01T07:42:55.337045Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-qual-toolnight-presence",
+   "ts": "2026-10-01T07:42:55.337045Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "QITEM-e006-tool-acquisition",
+   "ts": "2026-10-01T07:42:55.337045Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "QITEM-expand-edges",
+   "ts": "2026-10-01T07:42:55.337045Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "QITEM-os-local-chores",
+   "ts": "2026-10-01T07:42:55.337045Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "QITEM-presence-probe",
+   "ts": "2026-10-01T07:42:55.337045Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "QITEM-resolve-citation",
+   "ts": "2026-10-01T07:42:55.337045Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-qual-day-perception-ocr",
+   "ts": "2026-10-01T10:26:47.668054Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-qual-day-perception-scoring",
+   "ts": "2026-10-01T10:26:47.668054Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "QITEM-perception-ocr",
+   "ts": "2026-10-01T10:26:47.668054Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "QITEM-perception-scoring",
+   "ts": "2026-10-01T10:26:47.668054Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "antigravity",
+   "id": "8fb90e56-7035-4bb8-b876-f4649afa72b7",
+   "ts": "2026-10-01T11:04:46.494175Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-01T10:47:46.201380Z",
+   "steps": 3748,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-qual-vision-chart",
+   "ts": "2026-10-01T11:33:22.787805Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-qual-vision-screenshot",
+   "ts": "2026-10-01T11:33:22.787805Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "QITEM-chart-diagram",
+   "ts": "2026-10-01T11:33:22.787805Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "QITEM-screenshot-grounded",
+   "ts": "2026-10-01T11:33:22.787805Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "completed",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-15376cefcbcb",
+   "ts": "2026-10-01T12:00:19.446454Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "dispatching",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-daily-01-supported-reuse",
+   "ts": "2026-10-01T12:06:08.908571Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "supported",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-daily-01-discovery",
+   "ts": "2026-10-01T12:06:08.943795Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-b377de1080db",
+   "ts": "2026-10-01T12:06:09.014001Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "dispatching",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-04a7ec76439b",
+   "ts": "2026-10-01T12:10:50.573258Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "dispatching",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-d0b2bf01dfff",
+   "ts": "2026-10-01T12:16:08.059875Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "dispatching",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-ba39563e1b36",
+   "ts": "2026-10-01T12:20:54.183116Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "dispatching",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-daily-01-operational",
+   "ts": "2026-10-01T12:25:55.820761Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "supported",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-daily-02-chore-review",
+   "ts": "2026-10-01T12:37:27.912712Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-2b378b2c12cd",
+   "ts": "2026-10-01T12:37:28.058805Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-daily-02-prior-chores",
+   "ts": "2026-10-01T12:37:28.415135Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-daily-02-grounding",
+   "ts": "2026-10-01T12:37:28.574017Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-4945902f8912",
+   "ts": "2026-10-01T12:37:28.786023Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "dispatching",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-c9e472874a23",
+   "ts": "2026-10-01T12:43:55.155410Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "dispatching",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-eda1ad4e354f",
+   "ts": "2026-10-01T12:57:01.239710Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "dispatching",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-daily-02-seat1-prep",
+   "ts": "2026-10-01T13:01:06.304069Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-e338c8e79b77",
+   "ts": "2026-10-01T13:01:06.462823Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-daily-02-seat1-prep",
+   "ts": "2026-10-01T13:02:55.702334Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "accepted",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-daily-02-grounding-recovered",
+   "ts": "2026-10-01T13:11:41.941631Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "accepted",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-daily-02-single-delivery",
+   "ts": "2026-10-01T13:11:41.976338Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-3cb0134fca25",
+   "ts": "2026-10-01T13:11:42.010520Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-24e48071b937",
+   "ts": "2026-10-01T13:35:50.931197Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-81b9d3ab3994",
+   "ts": "2026-10-01T13:39:54.130843Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-dfc6327ef1cf",
+   "ts": "2026-10-01T13:42:06.132447Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-daily-02-operational",
+   "ts": "2026-10-01T14:00:25.812989Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "supported",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-daily-03-recovery",
+   "ts": "2026-10-01T14:18:55.832946Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "active",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-daily-03-operational",
+   "ts": "2026-10-01T14:24:08.662894Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "supported",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-daily-04-adaptation",
+   "ts": "2026-10-01T14:26:49.883600Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "active",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-daily-04-operational",
+   "ts": "2026-10-01T14:32:58.188193Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "supported",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-daily-05-perception",
+   "ts": "2026-10-01T14:35:40.883072Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "active",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-daily-05-operational",
+   "ts": "2026-10-01T14:37:36.239009Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "supported",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-daily-06-context-reuse",
+   "ts": "2026-10-01T14:39:40.596433Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "active",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-daily-06-operational",
+   "ts": "2026-10-01T14:46:59.045356Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "supported",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-daily-07-night-work",
+   "ts": "2026-10-01T14:50:35.524807Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "active",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-daily-07-operational",
+   "ts": "2026-10-01T14:53:07.067412Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "supported",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "antigravity",
+   "id": "b3427f70-188b-4f88-a2d5-99e9782db678",
+   "ts": "2026-10-01T15:24:17.161781Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-01T15:23:11.827860Z",
+   "steps": 1425,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-daily-03-requal",
+   "ts": "2026-10-01T16:10:44.831206Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-daily-03-recovery",
+   "ts": "2026-10-01T16:15:46.157258Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "supported",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-daily-04-requal",
+   "ts": "2026-10-01T16:16:32.277796Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-daily-04-adaptation",
+   "ts": "2026-10-01T16:22:02.291501Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "supported",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-daily-06-requal",
+   "ts": "2026-10-01T16:24:16.042964Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-daily-06-context-reuse",
+   "ts": "2026-10-01T16:42:23.074219Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "supported",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-daily-05-requal",
+   "ts": "2026-10-01T16:44:40.058854Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-daily-05-cpu-perception",
+   "ts": "2026-10-01T16:48:54.771150Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "antigravity",
+   "id": "f2c33da7-4c5b-491c-af89-028c948ab7a7",
+   "ts": "2026-10-02T15:52:56.029189Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-02T15:52:52.522832Z",
+   "steps": 3,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "3e84bee8-d560-4a49-99cd-dd09d96c755c",
+   "ts": "2026-10-02T21:05:51.528064Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-02T21:04:59.610109Z",
+   "steps": 14,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "3ab9e0cf-10be-4381-a65c-261c14ae5088",
+   "ts": "2026-10-02T22:49:17.250343Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-02T22:49:10.866781Z",
+   "steps": 45,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "aec013ff-4157-4a9d-82e3-c4e4ffecd5ae",
+   "ts": "2026-10-03T12:07:28.468741Z",
+   "time_kind": "last_modified",
+   "last_user_input": null,
+   "steps": 87,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "d0bac8b1-c2b1-4738-9652-9b58c3648fd4",
+   "ts": "2026-10-03T12:07:46.028675Z",
+   "time_kind": "last_modified",
+   "last_user_input": null,
+   "steps": 99,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "e6536d14-7f4c-4217-8be0-fb35b823f362",
+   "ts": "2026-10-03T12:09:00.009646Z",
+   "time_kind": "last_modified",
+   "last_user_input": null,
+   "steps": 131,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "d61d767a-6bd4-4c76-b4f9-b305027dbe5c",
+   "ts": "2026-10-03T13:22:55.527696Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-03T13:21:11.426472Z",
+   "steps": 316,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-qwen38-native-levers-20261003",
+   "ts": "2026-10-03T14:46:41.874297Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-qwen38-native-levers-20261003",
+   "ts": "2026-10-03T15:09:40.966983Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-qwen38-thinking-pilot-20261003",
+   "ts": "2026-10-03T16:29:21.906811Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-0f026538a92f",
+   "ts": "2026-10-03T16:29:22.015865Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-365c6b4f63da",
+   "ts": "2026-10-03T16:56:59.198219Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-97c0ad79c611",
+   "ts": "2026-10-03T16:56:59.413340Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-0980416a6a6a",
+   "ts": "2026-10-03T17:22:53.549277Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-qwen38-flash-qualification-20261003",
+   "ts": "2026-10-03T17:31:04.362842Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-650cee42ee11",
+   "ts": "2026-10-03T17:31:04.470997Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-099ceaacb760",
+   "ts": "2026-10-03T17:33:13.805406Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-40e061da597f",
+   "ts": "2026-10-03T17:47:51.622570Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-9474d2486d29",
+   "ts": "2026-10-03T17:58:20.721102Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-36a7a12372de",
+   "ts": "2026-10-03T18:03:12.027424Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-qwen3-30b-flash-pilot-20261003",
+   "ts": "2026-10-03T19:22:23.386308Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-bfbaa65299e8",
+   "ts": "2026-10-03T19:22:23.610116Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-b75b34383784",
+   "ts": "2026-10-03T19:23:38.620598Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-qwen38-thinking-pilot-20261003",
+   "ts": "2026-10-03T19:26:30.316139Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-qwen38-flash-attention-20261003",
+   "ts": "2026-10-03T19:26:30.425593Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-qwen3-30b-flash-pilot-20261003",
+   "ts": "2026-10-03T19:26:30.528172Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-seat0-flash-adoption-20261004",
+   "ts": "2026-10-04T02:50:58.738441Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-a3dadc3d6c42",
+   "ts": "2026-10-04T02:50:58.947955Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-seat0-capacity-20261004",
+   "ts": "2026-10-04T03:06:37.265681Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-6552fd13dd10",
+   "ts": "2026-10-04T03:06:37.373734Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-cf6928eb49ca",
+   "ts": "2026-10-04T03:50:55.798629Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-982141cb6d41",
+   "ts": "2026-10-04T03:58:54.326407Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-qwen3-30b-flash-repeat-20261004",
+   "ts": "2026-10-04T04:03:55.266711Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-e176db02145f",
+   "ts": "2026-10-04T04:03:55.372863Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-3ca0506589a7",
+   "ts": "2026-10-04T04:11:45.512879Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-qwen3-30b-flash-adopted-20261004",
+   "ts": "2026-10-04T04:34:56.435118Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-seat0-capacity-20261004",
+   "ts": "2026-10-04T04:34:56.551274Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-seat0-flash-adopted-20261004",
+   "ts": "2026-10-04T04:34:56.665357Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-seat0-short-calls-20261004",
+   "ts": "2026-10-04T06:41:49.802015Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-5ad074f3c924",
+   "ts": "2026-10-04T06:41:50.048120Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-items-settle-20261004",
+   "ts": "2026-10-04T06:47:58.259804Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-ee8dc67bec6d",
+   "ts": "2026-10-04T06:47:58.369973Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "A-5fbec0b7ccb1",
+   "ts": "2026-10-04T06:59:53.359772Z",
+   "time_kind": "first_registry_event",
+   "kind": "attempt",
+   "status": "running",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-seat0-short-calls-20261004",
+   "ts": "2026-10-04T07:00:13.322170Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-items-settle-20261004",
+   "ts": "2026-10-04T07:00:13.424569Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-bench27-am4-recipe",
+   "ts": "2026-10-05T07:01:19.304597Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-bench27-arms",
+   "ts": "2026-10-05T07:01:19.304597Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-bench27-capacity",
+   "ts": "2026-10-05T07:01:19.304597Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-bench27-config",
+   "ts": "2026-10-05T07:01:19.304597Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "I-bench27-parity",
+   "ts": "2026-10-05T07:01:19.304597Z",
+   "time_kind": "first_registry_event",
+   "kind": "investigation",
+   "status": "planned",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-config-entry",
+   "ts": "2026-10-05T07:37:46.164519Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-am4-graphs",
+   "ts": "2026-10-05T07:58:55.386005Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-parity-20261005",
+   "ts": "2026-10-05T08:39:46.448193Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-am4-a2r",
+   "ts": "2026-10-05T08:45:01.859327Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-am4-a2t",
+   "ts": "2026-10-05T08:45:02.091036Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-am4-a3",
+   "ts": "2026-10-05T08:45:02.342421Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-am4-a4",
+   "ts": "2026-10-05T08:45:02.560599Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-am4-a5",
+   "ts": "2026-10-05T08:45:02.785955Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-am4-w24576",
+   "ts": "2026-10-05T08:56:15.441317Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-am4-w32768",
+   "ts": "2026-10-05T08:56:15.642917Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-am4-w49152",
+   "ts": "2026-10-05T08:56:15.866551Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-mtp3-20261005",
+   "ts": "2026-10-05T09:15:41.489954Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-am4-e134",
+   "ts": "2026-10-05T09:35:19.439724Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-am4-f134",
+   "ts": "2026-10-05T09:35:19.439724Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-am4-f134link",
+   "ts": "2026-10-05T09:35:19.439724Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-am4-nauto",
+   "ts": "2026-10-05T09:35:19.439724Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-am4-u90",
+   "ts": "2026-10-05T09:35:19.439724Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-am4-u95",
+   "ts": "2026-10-05T09:35:19.439724Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-am4-nauto93",
+   "ts": "2026-10-05T09:48:01.590536Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-am4-nauto90",
+   "ts": "2026-10-05T09:53:56.346490Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-am4-nfp8-32-20261005",
+   "ts": "2026-10-05T10:05:35.627834Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-am4-nfp8-49-20261005",
+   "ts": "2026-10-05T10:05:35.627834Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-am4-nfp8-65-20261005",
+   "ts": "2026-10-05T10:26:04.206260Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-am4-sizing-finalization-20261005",
+   "ts": "2026-10-05T10:32:07.250357Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-mtp-off-20261005",
+   "ts": "2026-10-05T10:38:01.866377Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-am4-native-kv-report-20261005",
+   "ts": "2026-10-05T11:09:59.188412Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-fp8-20261005",
+   "ts": "2026-10-05T11:55:18.154446Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-direct131k-20261005",
+   "ts": "2026-10-05T12:44:11.257068Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-mem085-20261005",
+   "ts": "2026-10-05T13:39:39.279724Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-mem095-20261005",
+   "ts": "2026-10-05T14:42:52.454993Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-ssm-bf16-20261005",
+   "ts": "2026-10-05T15:25:07.801723Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "lab_registry",
+   "id": "F-bench27-slots3-20261005",
+   "ts": "2026-10-05T15:46:05.624346Z",
+   "time_kind": "first_registry_event",
+   "kind": "finding",
+   "status": "conditional",
+   "host": "omen-linux",
+   "projects": [
+    "b23894a8f52982666070b4ae7ad3490835c59ae8"
+   ],
+   "project_role": "record_owner"
+  },
+  {
+   "source": "antigravity",
+   "id": "5e370b44-1621-4781-a4a5-a770a602b07f",
+   "ts": "2026-10-07T06:05:52.742036Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-07T06:04:36.721469Z",
+   "steps": 303,
+   "host": "omen-c",
+   "projects": [
+    "1fe7d04af9f1abb4f0fdc7431e01202eb3f778de"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "2c01b3a0-81aa-4e85-9b5b-6687008464d4",
+   "ts": "2026-10-07T06:34:24.504474Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-07T06:16:47.168980Z",
+   "steps": 298,
+   "host": "omen-c",
+   "projects": [
+    "dir:omen-e:linux"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "9e88a0d3-8c8e-44af-8491-c14c85d18cf0",
+   "ts": "2026-10-07T15:48:04.000908Z",
+   "time_kind": "last_modified",
+   "last_user_input": null,
+   "steps": 86,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "fe1f1874-cf61-404a-a4ec-8a1ff570bf47",
+   "ts": "2026-10-07T18:09:28.615921Z",
+   "time_kind": "last_modified",
+   "last_user_input": null,
+   "steps": 143,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "edf261f6-80c6-4c86-bffe-a3035401ed12",
+   "ts": "2026-10-07T19:06:20.282081Z",
+   "time_kind": "last_modified",
+   "last_user_input": null,
+   "steps": 84,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "faa70dba-d802-4dc6-ad33-92de999d97c1",
+   "ts": "2026-10-07T19:06:24.173427Z",
+   "time_kind": "last_modified",
+   "last_user_input": null,
+   "steps": 89,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "9907c382-336f-478b-8171-8efe8122a8c4",
+   "ts": "2026-10-07T20:12:46.320561Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-07T20:09:25.477391Z",
+   "steps": 682,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "1dfefa58-2053-4e01-8826-c9d654449f39",
+   "ts": "2026-10-07T20:59:28.412350Z",
+   "time_kind": "last_modified",
+   "last_user_input": null,
+   "steps": 211,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "2abc7321-657b-4956-b846-27bdba61c4cd",
+   "ts": "2026-10-07T21:19:20.934581Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-07T21:18:39.877978Z",
+   "steps": 387,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "1ac31912-824d-4a2a-bc32-a96a3bd449d4",
+   "ts": "2026-10-08T03:07:19.327264Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-08T03:05:19.513046Z",
+   "steps": 623,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "4c293070-2555-4b2b-a8c4-1b9a180f3c87",
+   "ts": "2026-10-08T06:59:11.997188Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-08T06:58:11.133849Z",
+   "steps": 751,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "147c31e1-5094-4a2f-8fdc-7792792909bd",
+   "ts": "2026-10-08T07:14:55.720579Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-08T07:08:49.888209Z",
+   "steps": 3826,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "4b4bf4b4-5a28-4dbd-90c4-b80afbaa2986",
+   "ts": "2026-10-08T08:37:19.017147Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-08T08:15:17.707680Z",
+   "steps": 1232,
+   "host": "omen-c",
+   "projects": [
+    "e70d3eb0de96fcc403233a0682aef26e6bd8c7bd"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "2a4fafd8-4775-4478-8e74-1430b7492f6f",
+   "ts": "2026-10-09T09:30:15.910121Z",
+   "time_kind": "last_modified",
+   "last_user_input": null,
+   "steps": 64,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "1ac82aae-e96d-4538-9332-d27a5e565c56",
+   "ts": "2026-10-09T09:33:08.403561Z",
+   "time_kind": "last_modified",
+   "last_user_input": null,
+   "steps": 76,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "31777a51-fbc1-40dc-8c28-95be3bcffd47",
+   "ts": "2026-10-09T09:51:29.930514Z",
+   "time_kind": "last_modified",
+   "last_user_input": null,
+   "steps": 72,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "80fbbe5d-4c01-4381-a259-9ab51c5331e4",
+   "ts": "2026-10-09T09:52:33.840481Z",
+   "time_kind": "last_modified",
+   "last_user_input": null,
+   "steps": 68,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "725f8f65-87d7-48f5-b42a-629422ffc3af",
+   "ts": "2026-10-09T10:21:51.136078Z",
+   "time_kind": "last_modified",
+   "last_user_input": null,
+   "steps": 52,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "b0501036-9770-469c-8370-f4c5666d301b",
+   "ts": "2026-10-09T10:24:51.710592Z",
+   "time_kind": "last_modified",
+   "last_user_input": null,
+   "steps": 76,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "70247c79-c161-4c80-b19d-2dc1dd37bef4",
+   "ts": "2026-10-09T10:24:57.195738Z",
+   "time_kind": "last_modified",
+   "last_user_input": null,
+   "steps": 84,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "7b0f08de-a448-4aa5-9a85-83fdbb319af0",
+   "ts": "2026-10-09T11:10:53.470513Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-09T11:10:03.980250Z",
+   "steps": 898,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "6a9e8517-4895-45f7-a2e6-a013ec069559",
+   "ts": "2026-10-09T13:21:52.280152Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-09T13:21:50.357582Z",
+   "steps": 2,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "6b76b2fd-6197-4917-8173-0616fb4b2a38",
+   "ts": "2026-10-09T13:24:34.769059Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-09T13:24:32.097508Z",
+   "steps": 2,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "3f0808a1-072a-4e50-a2a7-f557491884a0",
+   "ts": "2026-10-09T13:25:09.944913Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-09T13:25:04.165397Z",
+   "steps": 4,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "874d2000-035f-4732-8c24-91b2b481a057",
+   "ts": "2026-10-09T13:25:21.944457Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-09T13:25:18.542572Z",
+   "steps": 2,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "575dbaa8-0616-4ddc-be05-5870c7f1600f",
+   "ts": "2026-10-09T13:25:44.215107Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-09T13:25:32.082131Z",
+   "steps": 7,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "c0da432d-4811-4ddf-b394-90ccc1e29b54",
+   "ts": "2026-10-09T13:26:35.414712Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-09T13:26:18.660619Z",
+   "steps": 8,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "ce4418fd-745c-4b2c-b602-3e83d2b8934c",
+   "ts": "2026-10-09T13:29:10.060147Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-09T13:29:07.615396Z",
+   "steps": 2,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "a9a9a8bb-5d62-4c1e-912b-86e22e59df22",
+   "ts": "2026-10-09T15:03:46.087443Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-09T14:57:16.961913Z",
+   "steps": 1446,
+   "host": "omen-linux",
+   "projects": [
+    "1b618ff95308034977674b53d4d8e356f3810943"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "65c90d6d-33d8-4fcb-8b7e-e0fd1a8496c0",
+   "ts": "2026-10-09T15:03:46.236723Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-09T15:01:57.418780Z",
+   "steps": 22,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "cd2684a3-611d-412b-bd85-d2508d2a130f",
+   "ts": "2026-10-09T15:14:25.588841Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-09T15:14:21.515873Z",
+   "steps": 2,
+   "host": "omen-linux",
+   "projects": [
+    "1b618ff95308034977674b53d4d8e356f3810943"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "a30d536d-b39a-4bbc-87ba-f687d2bcffe3",
+   "ts": "2026-10-09T17:07:31.957322Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-09T17:07:18.455923Z",
+   "steps": 14,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "afff6b99-7088-4345-be49-703bdb30c613",
+   "ts": "2026-10-09T17:08:52.005355Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-09T17:08:44.436009Z",
+   "steps": 4,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "0b5ac45b-7ae5-49c9-8847-757de93d082f",
+   "ts": "2026-10-09T17:09:05.477118Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-09T17:08:55.112023Z",
+   "steps": 4,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "153ed644-d65c-43ad-a9a5-35d45d208f29",
+   "ts": "2026-10-09T17:10:19.187031Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-09T17:10:11.330141Z",
+   "steps": 4,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "12478e3d-3b4f-4ba9-b24f-b55fb9a448c6",
+   "ts": "2026-10-09T17:10:30.266780Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-09T17:10:22.463229Z",
+   "steps": 4,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "b85aa424-a717-4e92-9233-061ed552a969",
+   "ts": "2026-10-09T17:23:06.953208Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-09T17:22:42.349084Z",
+   "steps": 17,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "929f9648-7dc7-4567-8181-db62a7f36a65",
+   "ts": "2026-10-09T17:28:50.465082Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-09T17:28:31.692374Z",
+   "steps": 6,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "21d9963b-17f9-463b-8191-e660c6a6f17e",
+   "ts": "2026-10-09T20:47:20.326061Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-09T20:47:13.721493Z",
+   "steps": 1074,
+   "host": "omen-linux",
+   "projects": [
+    "dir:omen-linux:~/work/bf6"
+   ],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "aee7cd88-af9c-44a0-8bd1-6b82e4a77993",
+   "ts": "2026-10-10T00:44:00.388052Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-10T00:43:44.569235Z",
+   "steps": 9,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "5d6a9280-8eec-49a6-98d4-1bde3ccc2e59",
+   "ts": "2026-10-10T02:03:25.419051Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-10T02:03:22.606775Z",
+   "steps": 2,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "8375205c-3077-4a93-91ed-5cc83bd05984",
+   "ts": "2026-10-10T02:04:27.600596Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-10T02:04:22.201692Z",
+   "steps": 2,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "3616dc05-b4bc-4cf9-a40e-ea773b553077",
+   "ts": "2026-10-10T07:54:26.906758Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-10T07:54:24.406032Z",
+   "steps": 199,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "76c204f3-c67d-44ef-9f58-926871aa5d26",
+   "ts": "2026-10-10T08:08:17.112071Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-10T08:08:09.658705Z",
+   "steps": 281,
+   "host": "omen-linux",
+   "projects": [],
+   "client": "antigravity",
+   "model": null
+  },
+  {
+   "source": "antigravity",
+   "id": "15197c6e-2ed9-4963-a368-19ab95952903",
+   "ts": "2026-10-10T10:00:31.206395Z",
+   "time_kind": "last_modified",
+   "last_user_input": "2026-10-10T10:00:00.771885Z",
+   "steps": 1288,
+   "host": "omen-linux",
+   "projects": [
+    "dir:omen-linux:~/work/bf6"
+   ],
+   "client": "antigravity",
+   "model": null
+  }
+ ],
+ "coverage": [
+  {
+   "source": "antigravity",
+   "host": "omen-c",
+   "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/conversation_summaries.db",
+   "rows": 113,
+   "invalid_dates": 0,
+   "duplicates": 0,
+   "wal_present": true,
+   "status": "partial_wal"
+  },
+  {
+   "source": "antigravity",
+   "host": "omen-linux",
+   "path": "/home/derek/.gemini/antigravity-cli/conversation_summaries.db",
+   "rows": 62,
+   "invalid_dates": 1,
+   "duplicates": 0,
+   "wal_present": false,
+   "status": "complete"
+  },
+  {
+   "source": "hearth_execution",
+   "path": "/mnt/omen-c-read/hearth-var/execution/projection.sqlite",
+   "wal_present": false,
+   "unpaired": 0,
+   "invalid": 0,
+   "duplicate_events": 0,
+   "status": "complete",
+   "paired": 64,
+   "jobs": 64
+  },
+  {
+   "source": "lab_registry",
+   "path": "/home/derek/work/lab-rnd/research/state/events",
+   "files": 849,
+   "invalid": 0,
+   "status": "complete",
+   "objects": 203
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "linux-continuity-work",
+  "host": "omen-linux",
+  "root": "/home/derek/work/continuity",
+  "group": "execution",
+  "status": "complete",
+  "limits": {
+    "depth": 5,
+    "seconds": 30,
+    "max_files": 100000,
+    "max_candidates": 2500
+  },
+  "counts": {
+    "directories": 14,
+    "files": 119,
+    "excluded": 2
+  },
+  "candidates": [
+    {
+      "id": "828bdbd3731ec987",
+      "path": "/home/derek/work/continuity",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 27909,
+      "mtime_hint_min": 1790502351,
+      "mtime_hint_max": 1790809660
+    },
+    {
+      "id": "8ba6cc94a5dd7ecf",
+      "path": "/home/derek/work/continuity/schemas",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 10034,
+      "mtime_hint_min": 1790586360,
+      "mtime_hint_max": 1790995169
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.001
+}

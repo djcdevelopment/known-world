@@ -1,0 +1,28 @@
+{
+  "group": "execution",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "linux-hearth-ledger",
+    "host": "omen-linux",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 2,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500
+    },
+    "rollups_omitted": 0,
+    "rollups": [
+      {
+        "path": "/home/derek/hearth-production/var/ledger",
+        "directories": 1,
+        "structured_files": {
+          ".sqlite": 1,
+          ".ndjson": 1
+        },
+        "git_markers": 0
+      }
+    ]
+  }
+}

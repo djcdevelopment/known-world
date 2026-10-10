@@ -1,0 +1,121 @@
+{
+  "group": "execution",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "c-hearth",
+    "host": "omen-c",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 5,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500
+    },
+    "rollups_omitted": 5,
+    "rollups": [
+      {
+        "path": "/mnt/omen-c-read/hearth-var/experiments/study-20260707T073708Z",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 5,
+          ".json": 5
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/hearth-var/experiments/study-20260707T073205Z",
+        "directories": 1,
+        "structured_files": {
+          ".json": 2,
+          ".jsonl": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/hearth-var",
+        "directories": 1,
+        "structured_files": {
+          ".json": 3
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/hearth-var/execution",
+        "directories": 1,
+        "structured_files": {
+          ".sqlite": 2,
+          ".ndjson": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/hearth-var/sentinel",
+        "directories": 1,
+        "structured_files": {
+          ".ndjson": 1,
+          ".json": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/hearth-var/experiments/doc-adr-bench-20260721T154713Z-smoke",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 1,
+          ".json": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/hearth-var/experiments/doc-adr-bench-20260721T161359Z-sweep",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 1,
+          ".json": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/hearth-var/experiments/matrix-20260705T110418Z-smoke",
+        "directories": 1,
+        "structured_files": {
+          ".json": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/hearth-var/experiments/matrix-20260706T052819Z-pilot",
+        "directories": 1,
+        "structured_files": {
+          ".json": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/hearth-var/experiments/matrix-20260706T063613Z-sweep-r2",
+        "directories": 1,
+        "structured_files": {
+          ".json": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/hearth-var/experiments/matrix-20260706T074048Z-pc-sweep-r3",
+        "directories": 1,
+        "structured_files": {
+          ".json": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/hearth-var/experiments/matrix-20260706T080240Z-pc-sweep-r3",
+        "directories": 1,
+        "structured_files": {
+          ".json": 2
+        },
+        "git_markers": 0
+      }
+    ]
+  }
+}

@@ -8,12 +8,14 @@ import collections
 import names as nm
 from common import iso
 
-NATIONS = ("human", "chatgpt", "claude", "codex", "opencode", "local_model", "automation")
+NATIONS = ("human", "chatgpt", "claude", "codex", "opencode", "local_model", "automation", "gemini")
 
 
 def build(c, launches, params):
     g = params["generation_granularity"]
     first_event = dict(c.first_event)
+    if c.gemini_calls:
+        first_event["gemini"] = c.gemini_calls[0][0]
     if c.first_local_offload is not None:
         first_event["local_model"] = min(first_event.get("local_model", c.first_local_offload), c.first_local_offload)
     sess_cls = {sid: s["class"] for sid, s in c.session_info.items()}

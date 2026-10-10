@@ -1,0 +1,24 @@
+[
+  {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "played": true,
+    "overflow": false,
+    "errors": [],
+    "counts_verified": true,
+    "decoded_end_card": true
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "played": true,
+    "overflow": false,
+    "errors": [],
+    "counts_verified": true,
+    "decoded_end_card": true
+  }
+]

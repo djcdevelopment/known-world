@@ -1,0 +1,9 @@
+# Five-second opening legend
+
+Added `render/intro.js` and an explicit intro-only export mode. Seven rows with illustrative animated samples explain project/folder land, collaborator colour and activity brightness, output-sized bursts, moving work/local-call trails, persistent project links/worktree spokes, inferred busiest-agent-chat machine marker, and score/totals. Meanings checked against `compile/tiles.py`, `compile/series.py`, `render/fields.js`, `render/launch.js`, and `render/radio.js`. The hub tracks chat activity, not CPU/GPU utilization. Brightness is a weighted recent-activity display, not an exact productivity meter.
+
+Rendered only 150 opening frames (2.769 seconds), prepended with video stream copy, and muxed the existing reviewed WAV with precisely 5,000ms leading silence. All 2,700 decoded original story frames match pixel hashes after the opener. No experiment, benchmark, data recount or full story render. Film is now 95 seconds. Actual compressed opener and immediate story transition inspected.
+
+Packager records opening/duration and updated public prose. Published current hash assets and original stable aliases, manifest, index last, under exclusive lock and unchanged-baseline assertion. Full live HTTPS downloads of all six packaged files match SHA256. Public video SHA256 `0579e99d98bec5e9035386ea9501a383c4ec7966ba2408cbd390342d9d25a17e`. Backup FX99 `/home/derek/backups/known-world-publish/20261010-opening`. Lock released after verification.
+
+Desktop explicitly plays original stable MP4 URL; portrait plays current hashed URL. Both verify 95-second duration, opening, transition and ending, exact aggregate public counts, no errors or overflow. Actual served opening screenshot inspected. Evidence in validation/. A local publish-script formatting error initially created an empty lock before any public change; confirmed empty, removed, corrected and republished normally. No service configuration/restart.

@@ -1,0 +1,73 @@
+{
+  "id": "linux-bench27",
+  "host": "omen-linux",
+  "root": "/home/derek/work/bench27-plan",
+  "group": "lab",
+  "status": "complete",
+  "limits": {
+    "depth": 6,
+    "seconds": 30,
+    "max_files": 100000,
+    "max_candidates": 2500
+  },
+  "counts": {
+    "directories": 4,
+    "files": 225
+  },
+  "candidates": [
+    {
+      "id": "e988e74795158ceb",
+      "path": "/home/derek/work/bench27-plan",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 118737,
+      "mtime_hint_min": 1791181535,
+      "mtime_hint_max": 1791215388
+    },
+    {
+      "id": "caf7e6a235402eae",
+      "path": "/home/derek/work/bench27-plan/review",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 66
+      },
+      "marker_files_direct": 6,
+      "bytes_direct": 837707,
+      "mtime_hint_min": 1791183440,
+      "mtime_hint_max": 1791215576
+    },
+    {
+      "id": "c75d0589d2c6d798",
+      "path": "/home/derek/work/bench27-plan/review/b70-final-attestation",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 11649,
+      "mtime_hint_min": 1791206117,
+      "mtime_hint_max": 1791206294
+    },
+    {
+      "id": "73d6ad0db1ec39ed",
+      "path": "/home/derek/work/bench27-plan/review/b70-final-attestation/independent-review",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 19133,
+      "mtime_hint_min": 1791206037,
+      "mtime_hint_max": 1791206200
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.001
+}

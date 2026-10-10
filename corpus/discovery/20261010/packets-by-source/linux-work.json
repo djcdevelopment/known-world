@@ -1,0 +1,128 @@
+{
+  "group": "lab",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "linux-work",
+    "host": "omen-linux",
+    "status": "partial",
+    "gaps": [],
+    "limits": {
+      "depth": 6,
+      "seconds": 55,
+      "max_files": 100000,
+      "max_candidates": 1500
+    },
+    "rollups_omitted": 56,
+    "rollups": [
+      {
+        "path": "/home/derek/work/commandcenter-linux-flash/runs",
+        "directories": 687,
+        "structured_files": {
+          ".json": 27093,
+          ".jsonl": 72,
+          ".ndjson": 257
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/deepagents-linux/runs",
+        "directories": 133,
+        "structured_files": {
+          ".sqlite": 133,
+          ".jsonl": 130,
+          ".json": 2227
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/commandcenter-public/runs",
+        "directories": 72,
+        "structured_files": {
+          ".json": 1267,
+          ".jsonl": 22,
+          ".ndjson": 8
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/discengine/output",
+        "directories": 156,
+        "structured_files": {
+          ".json": 976,
+          ".jsonl": 49,
+          ".csv": 27,
+          ".db": 7
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/delivery-plan/evidence",
+        "directories": 142,
+        "structured_files": {
+          ".json": 683,
+          ".jsonl": 5
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/evidence-resume-20260928/ledger-snapshot",
+        "directories": 1,
+        "structured_files": {
+          ".json": 300
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/founderOS/artifacts",
+        "directories": 82,
+        "structured_files": {
+          ".db": 37,
+          ".json": 135,
+          ".jsonl": 15
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/founderOS/output",
+        "directories": 6,
+        "structured_files": {
+          ".json": 104,
+          ".jsonl": 6
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/commandcenter-linux-flash/docs",
+        "directories": 19,
+        "structured_files": {
+          ".json": 86
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/commandcenter-linux-flash/fleet",
+        "directories": 3,
+        "structured_files": {
+          ".json": 75
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/commandcenter-public/fleet",
+        "directories": 3,
+        "structured_files": {
+          ".json": 75
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/bench27-plan/review",
+        "directories": 3,
+        "structured_files": {
+          ".json": 70
+        },
+        "git_markers": 0
+      }
+    ]
+  }
+}

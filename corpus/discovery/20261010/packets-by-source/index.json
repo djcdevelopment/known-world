@@ -1,0 +1,319 @@
+{
+  "packets": [
+    {
+      "id": "c-claude",
+      "group": "clients",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/c-claude.json",
+      "status": "complete",
+      "bytes": 3088
+    },
+    {
+      "id": "c-codex",
+      "group": "clients",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/c-codex.json",
+      "status": "complete",
+      "bytes": 1445
+    },
+    {
+      "id": "c-gemini",
+      "group": "clients",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/c-gemini.json",
+      "status": "complete",
+      "bytes": 1691
+    },
+    {
+      "id": "e-gemini",
+      "group": "clients",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/e-gemini.json",
+      "status": "complete",
+      "bytes": 598
+    },
+    {
+      "id": "linux-claude",
+      "group": "clients",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/linux-claude.json",
+      "status": "complete",
+      "bytes": 2978
+    },
+    {
+      "id": "linux-codex",
+      "group": "clients",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/linux-codex.json",
+      "status": "complete",
+      "bytes": 805
+    },
+    {
+      "id": "linux-gemini",
+      "group": "clients",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/linux-gemini.json",
+      "status": "complete",
+      "bytes": 1466
+    },
+    {
+      "id": "linux-opencode",
+      "group": "clients",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/linux-opencode.json",
+      "status": "complete",
+      "bytes": 615
+    },
+    {
+      "id": "am4-continuity",
+      "group": "execution",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/am4-continuity.json",
+      "status": "complete",
+      "bytes": 766
+    },
+    {
+      "id": "c-hearth",
+      "group": "execution",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/c-hearth.json",
+      "status": "complete",
+      "bytes": 3104
+    },
+    {
+      "id": "e-omen",
+      "group": "execution",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/e-omen.json",
+      "status": "partial",
+      "bytes": 3224
+    },
+    {
+      "id": "fx99-continuity",
+      "group": "execution",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/fx99-continuity.json",
+      "status": "complete",
+      "bytes": 768
+    },
+    {
+      "id": "linux-continuity",
+      "group": "execution",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/linux-continuity.json",
+      "status": "complete",
+      "bytes": 777
+    },
+    {
+      "id": "linux-hearth-artifacts",
+      "group": "execution",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/linux-hearth-artifacts.json",
+      "status": "complete",
+      "bytes": 3126
+    },
+    {
+      "id": "linux-hearth-ledger",
+      "group": "execution",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/linux-hearth-ledger.json",
+      "status": "complete",
+      "bytes": 657
+    },
+    {
+      "id": "am4-bot-runs",
+      "group": "execution",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/am4-bot-runs.json",
+      "status": "complete",
+      "bytes": 602
+    },
+    {
+      "id": "am4-fleet-results",
+      "group": "execution",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/am4-fleet-results.json",
+      "status": "complete",
+      "bytes": 617
+    },
+    {
+      "id": "c-commandcenter-campaign",
+      "group": "execution",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/c-commandcenter-campaign.json",
+      "status": "complete",
+      "bytes": 1868
+    },
+    {
+      "id": "fx99-fleet",
+      "group": "execution",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/fx99-fleet.json",
+      "status": "complete",
+      "bytes": 2756
+    },
+    {
+      "id": "linux-campaign",
+      "group": "execution",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/linux-campaign.json",
+      "status": "complete",
+      "bytes": 1702
+    },
+    {
+      "id": "linux-continuity-work",
+      "group": "execution",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/linux-continuity-work.json",
+      "status": "complete",
+      "bytes": 775
+    },
+    {
+      "id": "am4-bench",
+      "group": "lab",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/am4-bench.json",
+      "status": "missing",
+      "bytes": 439
+    },
+    {
+      "id": "am4-work",
+      "group": "lab",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/am4-work.json",
+      "status": "complete",
+      "bytes": 1651
+    },
+    {
+      "id": "c-assessment",
+      "group": "lab",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/c-assessment.json",
+      "status": "complete",
+      "bytes": 1197
+    },
+    {
+      "id": "c-tuning",
+      "group": "lab",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/c-tuning.json",
+      "status": "complete",
+      "bytes": 976
+    },
+    {
+      "id": "e-manifest",
+      "group": "lab",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/e-manifest.json",
+      "status": "complete",
+      "bytes": 1545
+    },
+    {
+      "id": "e-start",
+      "group": "lab",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/e-start.json",
+      "status": "complete",
+      "bytes": 2732
+    },
+    {
+      "id": "fx99-bench",
+      "group": "lab",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/fx99-bench.json",
+      "status": "complete",
+      "bytes": 589
+    },
+    {
+      "id": "fx99-work",
+      "group": "lab",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/fx99-work.json",
+      "status": "complete",
+      "bytes": 415
+    },
+    {
+      "id": "linux-research",
+      "group": "lab",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/linux-research.json",
+      "status": "complete",
+      "bytes": 615
+    },
+    {
+      "id": "linux-work",
+      "group": "lab",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/linux-work.json",
+      "status": "partial",
+      "bytes": 3067
+    },
+    {
+      "id": "am4-bench-found",
+      "group": "lab",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/am4-bench-found.json",
+      "status": "complete",
+      "bytes": 2857
+    },
+    {
+      "id": "c-benchmark",
+      "group": "lab",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/c-benchmark.json",
+      "status": "complete",
+      "bytes": 631
+    },
+    {
+      "id": "linux-bench27",
+      "group": "lab",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/linux-bench27.json",
+      "status": "complete",
+      "bytes": 1003
+    },
+    {
+      "id": "linux-lab-rnd",
+      "group": "lab",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/linux-lab-rnd.json",
+      "status": "complete",
+      "bytes": 3497
+    },
+    {
+      "id": "linux-lever-ledger",
+      "group": "lab",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/linux-lever-ledger.json",
+      "status": "complete",
+      "bytes": 622
+    },
+    {
+      "id": "am4-home",
+      "group": "projects",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/am4-home.json",
+      "status": "complete",
+      "bytes": 2777
+    },
+    {
+      "id": "c-root",
+      "group": "projects",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/c-root.json",
+      "status": "complete",
+      "bytes": 2719
+    },
+    {
+      "id": "c-work",
+      "group": "projects",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/c-work.json",
+      "status": "partial",
+      "bytes": 3318
+    },
+    {
+      "id": "e-root",
+      "group": "projects",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/e-root.json",
+      "status": "complete",
+      "bytes": 2734
+    },
+    {
+      "id": "e-work",
+      "group": "projects",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/e-work.json",
+      "status": "partial",
+      "bytes": 3026
+    },
+    {
+      "id": "fx99-home",
+      "group": "projects",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/fx99-home.json",
+      "status": "complete",
+      "bytes": 1954
+    },
+    {
+      "id": "linux-git",
+      "group": "projects",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/linux-git.json",
+      "status": "complete",
+      "bytes": 590
+    },
+    {
+      "id": "linux-home",
+      "group": "projects",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/linux-home.json",
+      "status": "complete",
+      "bytes": 2642
+    },
+    {
+      "id": "linux-migration",
+      "group": "projects",
+      "file": "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/linux-migration.json",
+      "status": "complete",
+      "bytes": 3239
+    }
+  ]
+}

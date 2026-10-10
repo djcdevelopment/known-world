@@ -5,7 +5,7 @@ import numpy as np
 
 import series as ser
 
-CHAT_OF = {"chatgpt": "chatgpt", "claude": "claude", "codex": "codex", "opencode": "opencode", "local_model": "local_model"}
+CHAT_OF = {"chatgpt": "chatgpt", "claude": "claude", "codex": "codex", "opencode": "opencode", "local_model": "local_model", "gemini": "gemini"}
 
 
 def build(rows, series, classes, F, fps):

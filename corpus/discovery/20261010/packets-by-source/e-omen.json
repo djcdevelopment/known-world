@@ -1,0 +1,134 @@
+{
+  "group": "execution",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "e-omen",
+    "host": "omen-e",
+    "status": "partial",
+    "gaps": [
+      "time_or_file_budget",
+      "time_or_file_budget"
+    ],
+    "limits": {
+      "depth": 5,
+      "seconds": 30,
+      "max_files": 100000,
+      "max_candidates": 1500
+    },
+    "rollups_omitted": 71,
+    "rollups": [
+      {
+        "path": "/mnt/omen-e-read/omen/imagegen/data",
+        "directories": 5,
+        "structured_files": {
+          ".ndjson": 1,
+          ".json": 4117,
+          ".db": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/omen/DMos/artifacts",
+        "directories": 156,
+        "structured_files": {
+          ".json": 528,
+          ".ndjson": 40,
+          ".csv": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/omen/DMos/data",
+        "directories": 50,
+        "structured_files": {
+          ".json": 425,
+          ".ndjson": 20
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/omen/steward-multi-era/campaigns",
+        "directories": 45,
+        "structured_files": {
+          ".json": 149,
+          ".tsv": 43,
+          ".jsonl": 9
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/omen/DMos-command-freshness/artifacts",
+        "directories": 33,
+        "structured_files": {
+          ".json": 79,
+          ".ndjson": 4
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/omen/DMos-rehearsal/artifacts",
+        "directories": 15,
+        "structured_files": {
+          ".json": 62,
+          ".ndjson": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/omen/DMos-chronicle-salience/artifacts",
+        "directories": 19,
+        "structured_files": {
+          ".json": 59,
+          ".ndjson": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/omen/DMos-actor-controls/artifacts",
+        "directories": 26,
+        "structured_files": {
+          ".json": 48,
+          ".ndjson": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/omen/DMos-rc1/artifacts",
+        "directories": 14,
+        "structured_files": {
+          ".json": 34,
+          ".ndjson": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/omen/steward-multi-era/packages",
+        "directories": 17,
+        "structured_files": {
+          ".json": 34
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/omen/bmc/artifacts",
+        "directories": 33,
+        "structured_files": {
+          ".json": 20,
+          ".db": 9
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/omen/bf6-highlights-retired-20260828/runtime",
+        "directories": 14,
+        "structured_files": {
+          ".json": 18,
+          ".ndjson": 2,
+          ".sqlite": 2,
+          ".db": 3
+        },
+        "git_markers": 0
+      }
+    ]
+  }
+}

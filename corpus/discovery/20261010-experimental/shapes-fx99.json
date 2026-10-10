@@ -1,0 +1,12 @@
+{
+ "root": "/home/derek/work",
+ "enumerated_files": 0,
+ "candidate_files": 0,
+ "candidate_directories": 0,
+ "inspected": 0,
+ "rows": [],
+ "omissions": [],
+ "enumeration_status": "complete",
+ "elapsed_s": 0.0,
+ "policy": "Representative schema discovery only; no work counts inferred. Payload files, credentials and runtime/model caches excluded."
+}

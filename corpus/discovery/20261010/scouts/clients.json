@@ -1,0 +1,69 @@
+{
+  "status": "reviewed",
+  "candidate_status_before_review": "awaiting_review",
+  "scout": "clients",
+  "reviewer": "codex-frontier",
+  "verdict": {
+    "substance": "partially_useful",
+    "accepted": [
+      "Antigravity trajectory/step SQL metadata as source",
+      "Missing timestamp/model columns require schema work",
+      "Client/model distinction"
+    ],
+    "rejected": [
+      "File counts or step counts as complexity/session totals",
+      "Infer time from mtime or model from type codes",
+      "Read first/last transcript line",
+      "Generalize three DB samples to all DBs"
+    ],
+    "form": "over requested word range; retained verbatim"
+  },
+  "result": {
+    "ok": true,
+    "text": "**Local Evidence Scout Report**\n\n**Observed Inventory Facts**\nThe provided inventory identifies three distinct client families across local and remote mounts: Antigravity, Codex, and Claude. Antigravity is present on both remote (`c-gemini`, 113 `.db` conversation files) and local (`linux-gemini`, 62 `.db` files) systems. It utilizes a SQL-based storage structure. The `brain` directory contains substantial `.jsonl` and `.json` corpora (1,710 files remote, 461 local). Codex is primarily present on the remote mount (`c-codex`), with monthly session directories containing hundreds of `.jsonl` files (e.g., 243 in August 2026). Local Codex presence is minimal. Claude is the most fragmented, with 49 remote project directories (151 `.jsonl` files total) and 19 local directories (171 `.jsonl` files). The Claude storage is project-scoped (e.g., `C--work-commandcenter`) rather than monthly.\n\n**Observed Schema Facts**\nThe Antigravity `conversations` `.db` files contain seven tables. `trajectory_meta` holds one row per DB file, linking `trajectory_id` and `cascade_id` to an integer `trajectory_type` and `source`. The `steps` table is the primary data holder, with row counts varying significantly per sample (4, 341, 4, 21, 15, 67). `steps` includes `step_type`, `status`, and `step_format` integers. It contains multiple BLOB columns: `metadata`, `error_details`, `permissions`, `task_details`, `render_info`, and `step_payload`. The `gen_metadata` and `executor_metadata` tables contain indexed BLOBs. The `trajectory_metadata_blob` table contains a single BLOB row per database. No table contains columns explicitly named \"model_id,\" \"timestamp,\" or \"message_content.\"\n\n**Proposed Interpretation**\nThe \"visceral scale\" of AI development is visible in the Antigravity `steps` table. The variance in row counts (from 4 to 341) across seemingly similar `.db` files suggests these are not uniform sessions but rather variable-length trajectories or cascades. The `trajectory_id` and `cascade_id` imply a hierarchical execution model, where a single cascade may generate multiple trajectories, each containing numerous steps. The presence of `render_info` and `step_payload` BLOBs in `steps` suggests these contain the actual execution artifacts or outputs, which may include model calls or tool invocations, rather than just user prompts. The Codex `.jsonl` files, organized by month, likely represent linear session logs, offering a different temporal granularity than Antigravity’s cascaded trajectories.\n\n**Four Concrete Sources Worth Collecting**\n1.  **Antigravity `trajectory_meta` + `steps` (Remote & Local):** Essential for understanding execution depth and trajectory types. Extract `trajectory_id`, `trajectory_type`, and `step_count` to map the distribution of task complexity.\n2.  **Antigravity `gen_metadata` / `executor_metadata`:** These BLOBs likely contain model configuration or execution context. Extracting metadata keys (not values) could reveal which models were used across different step types.\n3.  **Codex Session `.jsonl` (Remote):** The monthly structure and high file counts (243+ files in August) provide a clear timeline of activity volume. Sampling these files for line counts and timestamp fields (if present in JSON structure, not SQL) would help measure \"growth\" over time.\n4.  **Claude Project Directory Structure:** The 49 remote project directories reveal the breadth of application domains. Extracting directory names and `.jsonl` counts per project provides a map of where AI is being applied, highlighting high-activity projects like `commandcenter` (64 files).\n\n**Safe Metadata-Only Extraction Recipe**\n1.  **Antigravity:** For each `.db` file, query `trajectory_meta` for `trajectory_id`, `trajectory_type`, and `source`. Query `SELECT COUNT(*) FROM steps` to get step count. Query `SELECT DISTINCT step_type FROM steps` to identify step categories. Do not read BLOBs.\n2.  **Codex:** List all `.jsonl` files in `/sessions/YYYY/MM/`. For each file, extract file size, modification time, and first/last line if JSON headers contain metadata. Count total lines per file as a proxy for conversation length.\n3.  **Claude:** List all `.jsonl` files in project directories. Count files and total lines per project directory. Extract directory names to identify project topics.\n\n**Identity/Time Caveats**\n*   **No Timestamps in Schema:** The Antigravity schema does not show a timestamp column in `trajectory_meta` or `steps`. Time must be inferred from file mtime (unreliable) or potentially from BLOB contents (forbidden). The Codex directory structure (`/2026/08/`) provides month-level granularity only.\n*   **Model Identity Obscure:** No model ID columns exist in the Antigravity schema. Model identity must be inferred from `gen_metadata` BLOB keys or `trajectory_type` semantics, which is ambiguous without decoding.\n*   **Count ≠ Session:** File counts are not session counts. One `.db` file may contain multiple trajectories or one fragmented session. Codex `.jsonl` files likely represent one session each, but this is an assumption.\n\n**Two Targeted Follow-up Paths**\n1.  **Map Trajectory Types:** Decode the integer values in `trajectory_meta.trajectory_type` and `steps.step_type` by cross-referencing with any available documentation or by analyzing the distribution of `step_count` per type. This will reveal if certain types (e.g., \"code_gen,\" \"planning\") are growing in frequency or complexity.\n2.  **Correlate Codex Volume with Antigravity Cascades:** Compare the monthly Codex file count growth with the Antigravity `steps` row count distribution for the same period. If Codex volumes spike while Antigravity step counts remain stable, it may indicate a shift in user preference or a change in task routing between clients.",
+    "execution": {
+      "request_id": "req_043b733bd9855af6053e2878fd420db3",
+      "job_id": "job_da7e68ee8e5c300ef009a1d1bfe71f2a",
+      "status": "succeeded",
+      "artifact": {
+        "artifact_id": "art_61aefc85558cffc1a51e63785e191481",
+        "created_at": "2026-10-10T13:53:40.911427Z",
+        "filename": "job_da7e68ee8e5c300ef009a1d1bfe71f2a-result.md",
+        "media_type": "text/plain; charset=utf-8",
+        "role": "result",
+        "sha256": "74f6019c3ec1cfb6ae8e1a59a29957d2f14adc714722504964d673ece0e4d37f",
+        "size": 5783
+      }
+    },
+    "backend": "omen-dense-27b",
+    "model": "qwen3.8-27b",
+    "routed_by": "family:reasoning_planning:depth_override:omen-dense-27b",
+    "occupancy": "available",
+    "rung_state": null,
+    "pool_config_hash": "fcc348a163ca",
+    "tokens_in": 10542,
+    "tokens_out": 1347,
+    "duration_ms": 33335,
+    "max_tokens": 2200,
+    "timeout_s": 239,
+    "task_family": "reasoning_planning",
+    "family_recommendation": {
+      "advisory": true,
+      "backend_hint": "omen-dense-27b",
+      "depth_rule_applied": true,
+      "evidence": "ADR-0039: 0.687x jobs/hour @512, 2.63x @8K, 5.49x @32K",
+      "family": "reasoning_planning",
+      "model_id": "qwen3.8-27b",
+      "pin_required": false,
+      "prompt_tokens": 10336,
+      "providers": [
+        "omen-dense-27b",
+        "omen-dense-27b-b"
+      ],
+      "reason": "depth_override: prompt_tokens 10336 >= 8192, so qwen3.8-27b is preferred over qwen3-30b-a3b for reasoning_planning. Qwen 3.8 campaign do_not_promote (12/15) at the 512-token operating point: the 27B delivers 0.687x the incumbent's jobs/hour there, so the door default (omen-vllm) serves shallow reasoning/planning.",
+      "refusal": null,
+      "refused": false,
+      "requested_family": "reasoning_planning"
+    }
+  }
+}

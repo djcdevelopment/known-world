@@ -1,0 +1,53 @@
+{
+ "world": {
+  "commits": 9784,
+  "commit_file_touches": 88827,
+  "file_creations": 116099,
+  "file_update_observations": 4922,
+  "line_changes": 18447909,
+  "file_touches": 209848
+ },
+ "nation": {
+  "human": {
+   "commits": 4703,
+   "files_changed": 56296,
+   "lines_added": 10669684,
+   "lines_removed": 2234785
+  },
+  "claude": {
+   "commits": 4391,
+   "files_changed": 30354,
+   "lines_added": 5005288,
+   "lines_removed": 273092
+  },
+  "automation": {
+   "commits": 644,
+   "files_changed": 1120,
+   "lines_added": 86797,
+   "lines_removed": 7628
+  },
+  "codex": {
+   "commits": 46,
+   "files_changed": 1057,
+   "lines_added": 169966,
+   "lines_removed": 669
+  }
+ },
+ "session_records": {
+  "chatgpt": 157,
+  "claude": 1925,
+  "codex": 481,
+  "opencode": 24
+ },
+ "distinct_sessions": {
+  "chatgpt": 157,
+  "claude": 498,
+  "codex": 253,
+  "opencode": 24
+ },
+ "calls": {
+  "gemini": 1057,
+  "local_records": 22760,
+  "local_dispatch": 22672
+ }
+}

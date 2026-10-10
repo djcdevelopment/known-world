@@ -1,0 +1,68 @@
+{
+  "status": "reviewed",
+  "candidate_status_before_review": "awaiting_review",
+  "scout": "execution",
+  "reviewer": "codex-frontier",
+  "verdict": {
+    "substance": "partially_useful",
+    "accepted": [
+      "Windows execution projection has lifecycle IDs/timestamps",
+      "Follow AM4 bot and Windows experiment trails"
+    ],
+    "rejected": [
+      "Assume continuity matches lab registry schema",
+      "Infer parallelism from file volume",
+      "Deduplicate distinct experiment trials by cell_id alone",
+      "Raw head/grep of transcripts"
+    ],
+    "form": "over requested word range; retained verbatim"
+  },
+  "result": {
+    "ok": true,
+    "text": "**Observed Inventory & Schema Facts**\n\nThe supplied `execution.json` inventory reveals five distinct source roots. The `linux-hearth-artifacts` root contains 42 rollups, dominated by `/home/derek/hearth-production/runs/hearth-gateway/artifacts` (1,546 `.json` files) and `/home/derek/hearth-production/runs/hearth-offload-claude-frontier/artifacts` (349 `.json` files). These artifacts are nested under specific run directories (e.g., `hearth-gateway`, `hearth-offload-codex-cli`) but lack explicit timestamp fields in the inventory metadata; only directory names imply chronological separation. The `c-hearth` root on `/mnt/omen-c-read` contains experiment directories with explicit ISO-8601 timestamps in their paths, such as `experiments/study-20260707T073708Z` and `matrix-20260705T110418Z-smoke`. These directories contain `.json` and `.jsonl` files. The `linux-continuity` root holds 362 `.json` event files in `/home/derek/.continuity/ledger/events`. The `am4-home` and `fx99-home` roots contain smaller clusters of results and logs.\n\nSchema probes clarify the internal structure of key sources. The `c-execution-7` probe targets `/mnt/omen-c-read/hearth-var/execution/projection.sqlite`. It reveals four tables: `artifacts` (125 rows), `events` (573 rows), `idempotency` (29 rows), and `jobs` (64 rows). The `events` table is critical for temporal reconstruction, featuring columns: `sequence` (INTEGER), `timestamp` (TEXT), `event_type` (TEXT), `request_id` (TEXT), `job_id` (TEXT), and `invocation_id` (TEXT). The `jobs` table links `job_id` to `status`, `state_json`, and `last_sequence`. The `antigravity` database probes (Linux and C-roots) contain `steps` tables with `step_type`, `status`, and `metadata` BLOBs, but explicit `timestamp` columns are not listed in the schema; `trajectory_meta` contains `trajectory_id` and `source`. The `lab-registry` probe shows a `records` list where each object has `created_at`, `updated_at`, `id`, `kind`, and `status` fields, with a top-level `at` field.\n\n**Proposed Interpretation & Source Ranking**\n\nTo express the visceral scale and growth of AI development, the animation should prioritize sources with explicit temporal markers and high-volume parallel execution evidence. The `c-hearth` execution database is the strongest anchor because its `events` table provides precise `timestamp` fields for 573 distinct events, allowing the animation to visualize concurrency spikes over time. The presence of `job_id` and `invocation_id` links these events to specific workloads, enabling the representation of parallelism. The directory names in `c-hearth` (e.g., `matrix-20260705...`) provide a coarse-grained timeline for the growth aspect, showing progression from \"smoke\" to \"sweep\" runs.\n\nThe `linux-continuity` source offers a high-volume event stream (362 files), which is suitable for expressing sustained, high-frequency activity. While the inventory does not detail the internal schema, the `lab-registry` probe (which likely mirrors continuity structures) confirms the presence of `created_at` timestamps. This source is ideal for the \"growth\" narrative, showing an accumulation of state over time.\n\nThe `linux-hearth-artifacts` source, specifically the `hearth-gateway` and `hearth-offload-claude-frontier` directories, provides the \"visceral scale\" via sheer file count (1,895 total JSON artifacts). Although these files lack explicit timestamps in the inventory, their grouping under distinct run directories implies chronological phases. The `am4-home` source, with 82 `.jsonl` run files, serves as a secondary volume indicator for parallel node execution, though its temporal resolution is lower.\n\n**Ranked Sources**\n\n1.  **Source:** `c-execution-7`\n    **Path:** `/mnt/omen-c-read/hearth-var/execution/projection.sqlite`\n    **Recoverable Measures:** 573 events with `timestamp`, `event_type`, `job_id`, `invocation_id`. 64 jobs with `status`.\n    **ID/Time Fields:** `timestamp` (TEXT), `sequence` (INTEGER), `job_id`, `invocation_id`.\n    **Next Metadata Query:** `SELECT MIN(timestamp), MAX(timestamp), COUNT(DISTINCT job_id) FROM events;`\n    **Deduplication Risk:** Events may be replicated across `artifacts` and `events` tables if artifact creation is logged as an event; distinct `event_id` needed.\n\n2.  **Source:** `linux-continuity`\n    **Path:** `/home/derek/.continuity/ledger/events`\n    **Recoverable Measures:** 362 JSON event files, each likely containing `created_at` and `updated_at` per `lab-registry` schema analogy.\n    **ID/Time Fields:** `created_at`, `updated_at`, `id` (assumed from `lab-registry` probe).\n    **Next Metadata Query:** `ls -lt /home/derek/.continuity/ledger/events | head -5` to confirm mtime correlation with `created_at`.\n    **Deduplication Risk:** Potential overlap with `c-hearth` ledger if both systems log the same job lifecycles.\n\n3.  **Source:** `linux-hearth-artifacts` (Gateway)\n    **Path:** `/home/derek/hearth-production/runs/hearth-gateway/artifacts`\n    **Recoverable Measures:** 1,546 JSON files, representing high-throughput artifact generation.\n    **ID/Time Fields:** Unknown; directory mtime is not evidence time. Filename patterns may contain hashes.\n    **Next Metadata Query:** `find /home/derek/hearth-production/runs/hearth-gateway/artifacts -name \"*.json\" | head -1` to inspect filename structure for embedded IDs/timestamps.\n    **Deduplication Risk:** Overlap with `hearth-offload-claude-frontier` if artifacts are synced or duplicated across roots.\n\n4.  **Source:** `c-hearth` Experiments\n    **Path:** `/mnt/omen-c-read/hearth-var/experiments`\n    **Recoverable Measures:** ~15 experiment directories with explicit date-time in names (e.g., `20260705T110418Z`).\n    **ID/Time Fields:** Directory name contains ISO-8601 timestamp.\n    **Next Metadata Query:** `ls -d /mnt/omen-c-read/hearth-var/experiments/*/ | sort` to map the temporal sequence of experiments.\n    **Deduplication Risk:** `smoke`, `pilot`, and `sweep` variants of the same matrix may repeat cells, requiring `cell_id` deduplication.\n\n5.  **Source:** `am4-home` Runs\n    **Path:** `/home/derek/am4bot/runs`\n    **Recoverable Measures:** 82 JSONL files, indicating parallel node execution volume.\n    **ID/Time Fields:** Unknown; likely file mtime or internal `run_id` timestamps.\n    **Next Metadata Query:** `head -1 /home/derek/am4bot/runs/*.jsonl | grep -o '\"start_time\":[^,]*' | head -1` to identify time field.\n    **Deduplication Risk:** Potential re-runs or retries creating duplicate entries with different `run_id`s but same logical task.",
+    "execution": {
+      "request_id": "req_80d0b7992c7f1552c40d295220adde5f",
+      "job_id": "job_c661dc6392ce1c4d1325412426e845c0",
+      "status": "succeeded",
+      "artifact": {
+        "artifact_id": "art_6b6d1a886fc9c9e3c99207f4a5cfb94c",
+        "created_at": "2026-10-10T13:54:24.240775Z",
+        "filename": "job_c661dc6392ce1c4d1325412426e845c0-result.md",
+        "media_type": "text/plain; charset=utf-8",
+        "role": "result",
+        "sha256": "3e3fcb74c374c999653a2ca4f7dbdd73ddb942a2a247467b6092f73bd5455b3c",
+        "size": 6555
+      }
+    },
+    "backend": "omen-dense-27b",
+    "model": "qwen3.8-27b",
+    "routed_by": "family:reasoning_planning:depth_override:omen-dense-27b",
+    "occupancy": "available",
+    "rung_state": null,
+    "pool_config_hash": "fcc348a163ca",
+    "tokens_in": 15973,
+    "tokens_out": 1716,
+    "duration_ms": 42930,
+    "max_tokens": 2200,
+    "timeout_s": 239,
+    "task_family": "reasoning_planning",
+    "family_recommendation": {
+      "advisory": true,
+      "backend_hint": "omen-dense-27b",
+      "depth_rule_applied": true,
+      "evidence": "ADR-0039: 0.687x jobs/hour @512, 2.63x @8K, 5.49x @32K",
+      "family": "reasoning_planning",
+      "model_id": "qwen3.8-27b",
+      "pin_required": false,
+      "prompt_tokens": 14384,
+      "providers": [
+        "omen-dense-27b",
+        "omen-dense-27b-b"
+      ],
+      "reason": "depth_override: prompt_tokens 14384 >= 8192, so qwen3.8-27b is preferred over qwen3-30b-a3b for reasoning_planning. Qwen 3.8 campaign do_not_promote (12/15) at the 512-token operating point: the 27B delivers 0.687x the incumbent's jobs/hour there, so the door default (omen-vllm) serves shallow reasoning/planning.",
+      "refusal": null,
+      "refused": false,
+      "requested_family": "reasoning_planning"
+    }
+  }
+}

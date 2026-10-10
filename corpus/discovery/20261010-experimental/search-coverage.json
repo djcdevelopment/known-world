@@ -1,0 +1,68 @@
+[
+  {
+    "root": "/mnt/omen-c-read/work",
+    "enumerated_files": 769691,
+    "candidate_files": 14606,
+    "candidate_directories": 4370,
+    "inspected": 10581,
+    "enumeration_status": "partial_read_errors",
+    "elapsed_s": 14.22,
+    "policy": "Representative schema discovery only; no work counts inferred. Payload files, credentials and runtime/model caches excluded.",
+    "omitted_families": 2449
+  },
+  {
+    "root": "/mnt/omen-e-read/work",
+    "enumerated_files": 900030,
+    "candidate_files": 9873,
+    "candidate_directories": 3566,
+    "inspected": 7070,
+    "enumeration_status": "complete",
+    "elapsed_s": 6.21,
+    "policy": "Representative schema discovery only; no work counts inferred. Payload files, credentials and runtime/model caches excluded.",
+    "omitted_families": 2336
+  },
+  {
+    "root": "/home/derek/work",
+    "enumerated_files": 572864,
+    "candidate_files": 84893,
+    "candidate_directories": 21159,
+    "inspected": 49303,
+    "enumeration_status": "complete",
+    "elapsed_s": 9.59,
+    "policy": "Representative schema discovery only; no work counts inferred. Payload files, credentials and runtime/model caches excluded.",
+    "omitted_families": 17557
+  },
+  {
+    "root": "/home/derek/work",
+    "enumerated_files": 12984,
+    "candidate_files": 36,
+    "candidate_directories": 10,
+    "inspected": 26,
+    "enumeration_status": "complete",
+    "elapsed_s": 0.34,
+    "policy": "Representative schema discovery only; no work counts inferred. Payload files, credentials and runtime/model caches excluded.",
+    "omitted_families": 0
+  },
+  {
+    "root": "/home/derek/ai-bench",
+    "enumerated_files": 8,
+    "candidate_files": 2,
+    "candidate_directories": 1,
+    "inspected": 2,
+    "enumeration_status": "complete",
+    "elapsed_s": 0.0,
+    "policy": "Representative schema discovery only; no work counts inferred. Payload files, credentials and runtime/model caches excluded.",
+    "omitted_families": 0
+  },
+  {
+    "root": "/home/derek/fleet",
+    "enumerated_files": 10400,
+    "candidate_files": 741,
+    "candidate_directories": 741,
+    "inspected": 741,
+    "enumeration_status": "complete",
+    "elapsed_s": 1.33,
+    "policy": "Representative schema discovery only; no work counts inferred. Payload files, credentials and runtime/model caches excluded.",
+    "omitted_families": 0
+  }
+]

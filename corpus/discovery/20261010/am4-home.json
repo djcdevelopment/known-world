@@ -1,0 +1,500 @@
+{
+  "id": "am4-home",
+  "host": "am4",
+  "root": "/home/derek",
+  "group": "projects",
+  "status": "complete",
+  "limits": {
+    "depth": 2,
+    "seconds": 25,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 259,
+    "excluded": 90,
+    "files": 2876,
+    "symlinks_excluded": 15,
+    "directories_beyond_depth": 1128
+  },
+  "candidates": [
+    {
+      "id": "a1ca01d0876a7f6e",
+      "path": "/home/derek",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 6609189749,
+      "mtime_hint_min": 1770984968,
+      "mtime_hint_max": 1791197706
+    },
+    {
+      "id": "6902234a1d695aef",
+      "path": "/home/derek/.config/am4-fleet",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".sqlite": 1,
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 10277664,
+      "mtime_hint_min": 1782728284,
+      "mtime_hint_max": 1791639558
+    },
+    {
+      "id": "8825b90579f6e6f6",
+      "path": "/home/derek/.config/fleet-review-seat",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 114537,
+      "mtime_hint_min": 1789970391,
+      "mtime_hint_max": 1790030051
+    },
+    {
+      "id": "45d504d4979a20be",
+      "path": "/home/derek/.continuity/ledger",
+      "git_marker": true,
+      "name_hint": true,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 8,
+      "mtime_hint_min": 1790526672,
+      "mtime_hint_max": 1790526672
+    },
+    {
+      "id": "eb7e17f62b5dab90",
+      "path": "/home/derek/.steam",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 620,
+      "mtime_hint_min": 1789510761,
+      "mtime_hint_max": 1789511501
+    },
+    {
+      "id": "07e84c5d30e99a3d",
+      "path": "/home/derek/ComfyUI",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 592768,
+      "mtime_hint_min": 1782247341,
+      "mtime_hint_max": 1782247370
+    },
+    {
+      "id": "e4bbdf0ab41b2da6",
+      "path": "/home/derek/am4-fleet-node",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 9381,
+      "mtime_hint_min": 1783158963,
+      "mtime_hint_max": 1783158963
+    },
+    {
+      "id": "4e49a1d14828d6ae",
+      "path": "/home/derek/am4-fleet-node/results",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 26
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 386090,
+      "mtime_hint_min": 1782733091,
+      "mtime_hint_max": 1782738757
+    },
+    {
+      "id": "840c3f618447d72a",
+      "path": "/home/derek/am4bot",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".db": 2,
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 392241,
+      "mtime_hint_min": 1782377409,
+      "mtime_hint_max": 1786637974
+    },
+    {
+      "id": "a9485ecdf64316e4",
+      "path": "/home/derek/am4bot/runs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 82
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 249057,
+      "mtime_hint_min": 1782389616,
+      "mtime_hint_max": 1782726217
+    },
+    {
+      "id": "419572498300b5f0",
+      "path": "/home/derek/baseline/llama.cpp",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 270991,
+      "mtime_hint_min": 1782211002,
+      "mtime_hint_max": 1782211002
+    },
+    {
+      "id": "c426497cf77dc245",
+      "path": "/home/derek/bench",
+      "git_marker": true,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 17,
+        ".csv": 1,
+        ".db": 1
+      },
+      "marker_files_direct": 17,
+      "bytes_direct": 50031404,
+      "mtime_hint_min": 1782358911,
+      "mtime_hint_max": 1786601361
+    },
+    {
+      "id": "906340958a80f543",
+      "path": "/home/derek/bench/context-landscape-canon-breadth-v1",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 6,
+        ".jsonl": 2
+      },
+      "marker_files_direct": 4,
+      "bytes_direct": 1019708,
+      "mtime_hint_min": 1786588751,
+      "mtime_hint_max": 1786601361
+    },
+    {
+      "id": "2256ddd6d62c266e",
+      "path": "/home/derek/bench/context-landscape-founding-canon-v2",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 5,
+        ".jsonl": 3
+      },
+      "marker_files_direct": 5,
+      "bytes_direct": 430628,
+      "mtime_hint_min": 1786537390,
+      "mtime_hint_max": 1786542814
+    },
+    {
+      "id": "6beaa0ecc49c305a",
+      "path": "/home/derek/bench/context-landscape-highlight-hd-v1",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2,
+        ".json": 2
+      },
+      "marker_files_direct": 3,
+      "bytes_direct": 1675887,
+      "mtime_hint_min": 1786612950,
+      "mtime_hint_max": 1786637974
+    },
+    {
+      "id": "d26d334bd2546471",
+      "path": "/home/derek/bench/context-landscape-pilot",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 5,
+        ".json": 2
+      },
+      "marker_files_direct": 6,
+      "bytes_direct": 19743805,
+      "mtime_hint_min": 1786530293,
+      "mtime_hint_max": 1786535681
+    },
+    {
+      "id": "932c86c19bcb92cd",
+      "path": "/home/derek/bench/results_full",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 975900,
+      "mtime_hint_min": 1782619973,
+      "mtime_hint_max": 1786638623
+    },
+    {
+      "id": "4027980005594de3",
+      "path": "/home/derek/bench27-cuda130",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 7416,
+      "mtime_hint_min": 1791189488,
+      "mtime_hint_max": 1791189689
+    },
+    {
+      "id": "f2fc9130c2bee5dc",
+      "path": "/home/derek/bench27-cuda134",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 310664,
+      "mtime_hint_min": 1791189769,
+      "mtime_hint_max": 1791197706
+    },
+    {
+      "id": "b218028aeb8187a7",
+      "path": "/home/derek/bench27-cuda134/pre-arm-cache",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1010040,
+      "mtime_hint_min": 1791190337,
+      "mtime_hint_max": 1791190337
+    },
+    {
+      "id": "c318dd4e73e3483e",
+      "path": "/home/derek/chatgpt_parser_run",
+      "git_marker": true,
+      "name_hint": true,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 426964,
+      "mtime_hint_min": 1773381940,
+      "mtime_hint_max": 1782773366
+    },
+    {
+      "id": "9a6b8bcd145093ee",
+      "path": "/home/derek/chatgpt_parser_run/.claude",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 175,
+      "mtime_hint_min": 1773562891,
+      "mtime_hint_max": 1773562891
+    },
+    {
+      "id": "1be9df4cb99abcfd",
+      "path": "/home/derek/chatgpt_parser_run/docs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 49133,
+      "mtime_hint_min": 1773388453,
+      "mtime_hint_max": 1775893753
+    },
+    {
+      "id": "3ada1a2c9e0486c7",
+      "path": "/home/derek/chatgpt_parser_run/schemas",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 9
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 6377,
+      "mtime_hint_min": 1773383895,
+      "mtime_hint_max": 1773393124
+    },
+    {
+      "id": "b8f268f0150abbb7",
+      "path": "/home/derek/contextlandscape-topography",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 19730,
+      "mtime_hint_min": 1786526014,
+      "mtime_hint_max": 1786526030
+    },
+    {
+      "id": "5f12aa2c5b68e638",
+      "path": "/home/derek/continuity",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 17679,
+      "mtime_hint_min": 1790526672,
+      "mtime_hint_max": 1790526672
+    },
+    {
+      "id": "bbb402bf7d730bfb",
+      "path": "/home/derek/gallery",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4592473,
+      "mtime_hint_min": 1782370474,
+      "mtime_hint_max": 1791640218
+    },
+    {
+      "id": "06a7488eabfff295",
+      "path": "/home/derek/handoff",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 6992635,
+      "mtime_hint_min": 1782578836,
+      "mtime_hint_max": 1790809331
+    },
+    {
+      "id": "829641924fd57297",
+      "path": "/home/derek/o1/level-zero-tests",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".csv": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 72241,
+      "mtime_hint_min": 1784354711,
+      "mtime_hint_max": 1784354774
+    },
+    {
+      "id": "e82530b0ddfbf166",
+      "path": "/home/derek/o1/libpng",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3545952,
+      "mtime_hint_min": 1784354759,
+      "mtime_hint_max": 1784354759
+    },
+    {
+      "id": "962f75a878998519",
+      "path": "/home/derek/otelpipe",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 34220,
+      "mtime_hint_min": 1782580808,
+      "mtime_hint_max": 1782582720
+    },
+    {
+      "id": "89575e94cbcdede9",
+      "path": "/home/derek/quest-build-20260915",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 40028,
+      "mtime_hint_min": 1789510225,
+      "mtime_hint_max": 1789510225
+    },
+    {
+      "id": "53f2f2d8e12c8fb6",
+      "path": "/home/derek/quest-build-20260915/artifacts",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 8225,
+      "mtime_hint_min": 1789510225,
+      "mtime_hint_max": 1789510225
+    },
+    {
+      "id": "ccfba28f758e3689",
+      "path": "/home/derek/sovereign-shards",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 15756,
+      "mtime_hint_min": 1787130272,
+      "mtime_hint_max": 1787137880
+    },
+    {
+      "id": "c58883b08af7b126",
+      "path": "/home/derek/sovereign-shards/lab",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 2744,
+      "mtime_hint_min": 1787130272,
+      "mtime_hint_max": 1787134330
+    },
+    {
+      "id": "305f990a95cbafc1",
+      "path": "/home/derek/thunderstore_tracker",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 956895,
+      "mtime_hint_min": 1789654335,
+      "mtime_hint_max": 1791639924
+    },
+    {
+      "id": "14a581c8c5b93989",
+      "path": "/home/derek/valheim-capture",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 5,
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 31579746,
+      "mtime_hint_min": 1787668547,
+      "mtime_hint_max": 1789343532
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.046
+}

@@ -17,3 +17,11 @@ node_modules/
 laps/*/build-*/
 laps/*/out/
 laps/*/.twice-*/
+
+# Reproducible film exports; keep source, evidence sidecars and validation receipts.
+laps/*/build/
+laps/*/site/
+laps/*/frames-*/
+laps/*/intro-frames/
+laps/**/*.png
+laps/*/joined.txt

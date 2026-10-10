@@ -1,0 +1,123 @@
+{
+  "goal": "G-known-world",
+  "receipt_id": "br-20261010-134823-70316e83",
+  "source_roots": 45,
+  "status_counts": {
+    "partial": 4,
+    "complete": 40,
+    "missing": 1
+  },
+  "unique_candidate_directories": 10132,
+  "limits": "Directory metadata within depth/file/time limits only. Candidate counts do not measure jobs, trials, sessions or unique artifacts. Broad scans overlap follow-up roots.",
+  "incomplete_sources": [
+    {
+      "id": "linux-work",
+      "status": "partial",
+      "gaps": [
+        "candidate_budget (from counts.candidates_omitted)"
+      ]
+    },
+    {
+      "id": "c-work",
+      "status": "partial",
+      "gaps": [
+        {
+          "directory_id": "a9381d3620ca2122",
+          "errno": 13
+        },
+        {
+          "directory_id": "3f98a2a52c342652",
+          "errno": 13
+        },
+        "time_or_file_budget",
+        "candidate_budget (from counts.candidates_omitted)"
+      ]
+    },
+    {
+      "id": "e-work",
+      "status": "partial",
+      "gaps": [
+        "candidate_budget (from counts.candidates_omitted)"
+      ]
+    },
+    {
+      "id": "e-omen",
+      "status": "partial",
+      "gaps": [
+        "time_or_file_budget"
+      ]
+    },
+    {
+      "id": "am4-bench",
+      "status": "missing",
+      "gaps": [
+        "root_missing"
+      ]
+    }
+  ],
+  "verified_counts": {
+    "execution-counts": {
+      "source": "/mnt/omen-c-read/hearth-var/execution/projection.sqlite",
+      "job_status_counts": {
+        "failed": 3,
+        "succeeded": 61
+      },
+      "event_type_counts": {
+        "artifact.recorded": 125,
+        "invocation.failed": 3,
+        "invocation.started": 64,
+        "invocation.succeeded": 61,
+        "job.dispatched": 64,
+        "job.failed": 3,
+        "job.queued": 64,
+        "job.running": 64,
+        "job.succeeded": 61,
+        "request.accepted": 64
+      },
+      "event_span": [
+        "2026-07-31T01:31:04.912567Z",
+        "2026-08-19T16:03:44.047674Z"
+      ],
+      "distinct_jobs_in_events": 64,
+      "wal_present": false,
+      "limitation": "Windows snapshot, immutable read; tool-call count and job count are different. No state_json or metadata_json inspected."
+    },
+    "execution-overlap": {
+      "source": "/mnt/omen-c-read/hearth-var/execution/projection.sqlite",
+      "paired_invocations": 64,
+      "unpaired_started": 0,
+      "peak_simultaneous_invocations": 2,
+      "sum_invocation_seconds": 1854.216,
+      "scope": "Windows historical execution snapshot only; lifecycle intervals, not HTTP duration or directory mtime; not proof of GPU utilization or accepted output."
+    },
+    "registry-counts": {
+      "source": "/home/derek/work/lab-rnd/research/state/events",
+      "event_files": 849,
+      "latest_objects_by_kind": {
+        "attempt": 56,
+        "investigation": 52,
+        "artifact": 257,
+        "finding": 95,
+        "question": 34,
+        "goal": 3,
+        "decision": 18
+      },
+      "event_span": [
+        "2026-10-01T05:20:34.453192+00:00",
+        "2026-10-05T15:46:05.624346+00:00"
+      ],
+      "limitation": "Registry changes are not execution attempts or accepted results; retain IDs/revisions when later joining evidence."
+    }
+  },
+  "continuity_work_id": "w-d74f42a9e9ab",
+  "validation": {
+    "focused_checks": 5,
+    "focused_checks_passed": 5,
+    "javascript_syntax": "passed",
+    "git_diff_check": "passed",
+    "latest_scanner_smoke": "corpus/discovery/20261010-smoke/inventory.json",
+    "model_calls": 6,
+    "reviewed_scout_candidates": 6,
+    "no_full_render": true
+  }
+}

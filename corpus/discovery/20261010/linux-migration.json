@@ -1,0 +1,1117 @@
+{
+  "id": "linux-migration",
+  "host": "omen-linux",
+  "root": "/home/derek/private-migration-20260923",
+  "group": "projects",
+  "status": "complete",
+  "limits": {
+    "depth": 4,
+    "seconds": 25,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 273,
+    "files": 2928,
+    "directories_beyond_depth": 124,
+    "excluded": 18
+  },
+  "candidates": [
+    {
+      "id": "a3fafe94514e55b5",
+      "path": "/home/derek/private-migration-20260923/commandcenter",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 6276754,
+      "mtime_hint_min": 1782558810,
+      "mtime_hint_max": 1790172743
+    },
+    {
+      "id": "1a990876a41ed85b",
+      "path": "/home/derek/private-migration-20260923/commandcenter/am4-fleet-node",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 36220,
+      "mtime_hint_min": 1783157890,
+      "mtime_hint_max": 1787052466
+    },
+    {
+      "id": "1decfba5c1ef12a7",
+      "path": "/home/derek/private-migration-20260923/commandcenter/am4-fleet-node/results",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 54823,
+      "mtime_hint_min": 1782733081,
+      "mtime_hint_max": 1784365395
+    },
+    {
+      "id": "809ea06934379934",
+      "path": "/home/derek/private-migration-20260923/commandcenter/am4-fleet-node/results/raw-2026-07-18-gambit",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 301869,
+      "mtime_hint_min": 1784363653,
+      "mtime_hint_max": 1784363723
+    },
+    {
+      "id": "4f1a69a7b0f52fc8",
+      "path": "/home/derek/private-migration-20260923/commandcenter/campaign",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 92064,
+      "mtime_hint_min": 1783246074,
+      "mtime_hint_max": 1788760149
+    },
+    {
+      "id": "b55c0096d3b8f990",
+      "path": "/home/derek/private-migration-20260923/commandcenter/campaign/ff-probes",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 708561,
+      "mtime_hint_min": 1788039106,
+      "mtime_hint_max": 1789096904
+    },
+    {
+      "id": "a112a986c03ff528",
+      "path": "/home/derek/private-migration-20260923/commandcenter/campaign/harvest",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 23
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 104598,
+      "mtime_hint_min": 1783778557,
+      "mtime_hint_max": 1783778557
+    },
+    {
+      "id": "6cdbec8529426ddb",
+      "path": "/home/derek/private-migration-20260923/commandcenter/campaign/qwen38/assay",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 22817,
+      "mtime_hint_min": 1787817337,
+      "mtime_hint_max": 1787817337
+    },
+    {
+      "id": "8de98661503e0979",
+      "path": "/home/derek/private-migration-20260923/commandcenter/campaign/qwen38/config",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 13738,
+      "mtime_hint_min": 1787854522,
+      "mtime_hint_max": 1787911634
+    },
+    {
+      "id": "0b7b7b3fb572e014",
+      "path": "/home/derek/private-migration-20260923/commandcenter/campaign/qwen38/schema",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3524,
+      "mtime_hint_min": 1787831108,
+      "mtime_hint_max": 1787831108
+    },
+    {
+      "id": "02deb0bfa0c097f4",
+      "path": "/home/derek/private-migration-20260923/commandcenter/campaign/results",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 45425,
+      "mtime_hint_min": 1789504220,
+      "mtime_hint_max": 1789506386
+    },
+    {
+      "id": "659828b748a1b2ac",
+      "path": "/home/derek/private-migration-20260923/commandcenter/corpus/fixtures/llama-bench",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 6
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 53252,
+      "mtime_hint_min": 1787872065,
+      "mtime_hint_max": 1787875308
+    },
+    {
+      "id": "25645f7cb172b8af",
+      "path": "/home/derek/private-migration-20260923/commandcenter/corpus/runs/b0-preflight-20260821T032313Z",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 9814,
+      "mtime_hint_min": 1787282945,
+      "mtime_hint_max": 1787283067
+    },
+    {
+      "id": "7ab6bffe45c8e25f",
+      "path": "/home/derek/private-migration-20260923/commandcenter/fleet-worker-node",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2167,
+      "mtime_hint_min": 1782738768,
+      "mtime_hint_max": 1782738775
+    },
+    {
+      "id": "88755cf602ad400f",
+      "path": "/home/derek/private-migration-20260923/commandcenter/hearth/callers",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 75768,
+      "mtime_hint_min": 1783122908,
+      "mtime_hint_max": 1790046114
+    },
+    {
+      "id": "afd617242afddc5c",
+      "path": "/home/derek/private-migration-20260923/commandcenter/hearth/contracts",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 8
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 47413,
+      "mtime_hint_min": 1784416041,
+      "mtime_hint_max": 1789505017
+    },
+    {
+      "id": "5b01fb01ec4e07e7",
+      "path": "/home/derek/private-migration-20260923/commandcenter/hearth/gcp",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 12272,
+      "mtime_hint_min": 1784802665,
+      "mtime_hint_max": 1784803489
+    },
+    {
+      "id": "c9f683a58a9e0c00",
+      "path": "/home/derek/private-migration-20260923/commandcenter/hearth/schemas",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 11208,
+      "mtime_hint_min": 1788437542,
+      "mtime_hint_max": 1788527578
+    },
+    {
+      "id": "8059f37b3b760005",
+      "path": "/home/derek/private-migration-20260923/commandcenter/hearth/tests/fixtures",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 56068,
+      "mtime_hint_min": 1783183194,
+      "mtime_hint_max": 1783183194
+    },
+    {
+      "id": "17d4592b230d9019",
+      "path": "/home/derek/private-migration-20260923/commandcenter/session-export-1787839617319",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2,
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 6663904,
+      "mtime_hint_min": 1787839616,
+      "mtime_hint_max": 1787839616
+    },
+    {
+      "id": "ecf10b7d6582b32f",
+      "path": "/home/derek/private-migration-20260923/commandcenter/session-export-1787839617319/557c7e0b-dc46-4f3c-8d31-49bd3f3dfe91/subagents",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3,
+        ".jsonl": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 833306,
+      "mtime_hint_min": 1787839616,
+      "mtime_hint_max": 1787839616
+    },
+    {
+      "id": "3b3ab03f7a994f27",
+      "path": "/home/derek/private-migration-20260923/commandcenter/tools/audio-lab/receipts",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 16
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 28095,
+      "mtime_hint_min": 1788518894,
+      "mtime_hint_max": 1788543675
+    },
+    {
+      "id": "5f6446f695c08b7c",
+      "path": "/home/derek/private-migration-20260923/deepagents-poc",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 662,
+      "mtime_hint_min": 1789652617,
+      "mtime_hint_max": 1789652617
+    },
+    {
+      "id": "92da0da290ff32c6",
+      "path": "/home/derek/private-migration-20260923/deepagents-poc/operations/20260912-flash-dense/dense-delivery-20260912-062104",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".sqlite": 1,
+        ".jsonl": 1,
+        ".json": 24
+      },
+      "marker_files_direct": 2,
+      "bytes_direct": 328022,
+      "mtime_hint_min": 1789219265,
+      "mtime_hint_max": 1789219889
+    },
+    {
+      "id": "5f14f020dfdf9cab",
+      "path": "/home/derek/private-migration-20260923/deepagents-poc/operations/20260912-flash-dense/run-20260912-1229",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".sqlite": 1,
+        ".json": 14,
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 184634,
+      "mtime_hint_min": 1789216143,
+      "mtime_hint_max": 1789216452
+    },
+    {
+      "id": "00e8e0796a8874fb",
+      "path": "/home/derek/private-migration-20260923/deepagents-poc/operations/20260912-flash-dense/run-20260912-1234-assisted1",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".sqlite": 1,
+        ".jsonl": 2,
+        ".json": 29
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 2503331,
+      "mtime_hint_min": 1789216458,
+      "mtime_hint_max": 1789218205
+    },
+    {
+      "id": "bf48959c3c2eff8b",
+      "path": "/home/derek/private-migration-20260923/deepagents-poc/operations/20260912-hybrid-orchestration",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1,
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 46461,
+      "mtime_hint_min": 1789211225,
+      "mtime_hint_max": 1789219889
+    },
+    {
+      "id": "aa28788aac239a48",
+      "path": "/home/derek/private-migration-20260923/deepagents-shot-director",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 17423,
+      "mtime_hint_min": 1789209455,
+      "mtime_hint_max": 1789275056
+    },
+    {
+      "id": "961a23ec042e03e6",
+      "path": "/home/derek/private-migration-20260923/deepagents-shot-director/out/demo_run",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".tsv": 1,
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2532,
+      "mtime_hint_min": 1789209785,
+      "mtime_hint_max": 1789209785
+    },
+    {
+      "id": "75027e81d2eab198",
+      "path": "/home/derek/private-migration-20260923/deepagents-shot-director/out/loop_runs/loop-20260912-071424",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2,
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3559,
+      "mtime_hint_min": 1789222464,
+      "mtime_hint_max": 1789222468
+    },
+    {
+      "id": "11f558abc7c08896",
+      "path": "/home/derek/private-migration-20260923/deepagents-shot-director/out/loop_runs/loop-20260912-071451",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2,
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3559,
+      "mtime_hint_min": 1789222491,
+      "mtime_hint_max": 1789222494
+    },
+    {
+      "id": "3fec268066048193",
+      "path": "/home/derek/private-migration-20260923/deepagents-shot-director/out/loop_runs/loop-20260912-074508",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 3,
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 28233,
+      "mtime_hint_min": 1789224308,
+      "mtime_hint_max": 1789224316
+    },
+    {
+      "id": "6dd32443ebf80ac4",
+      "path": "/home/derek/private-migration-20260923/deepagents-shot-director/out/loop_runs/loop-20260912-075925",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 4,
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 10790573,
+      "mtime_hint_min": 1789225072,
+      "mtime_hint_max": 1789225197
+    },
+    {
+      "id": "e76c5eda26558068",
+      "path": "/home/derek/private-migration-20260923/deepagents-shot-director/out/loop_runs/loop-20260912-080022",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2,
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 10765031,
+      "mtime_hint_min": 1789225072,
+      "mtime_hint_max": 1789225233
+    },
+    {
+      "id": "5d189d6e74b4f7c8",
+      "path": "/home/derek/private-migration-20260923/deepagents-shot-director/out/loop_runs/loop-20260912-080858",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2,
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1776,
+      "mtime_hint_min": 1789225738,
+      "mtime_hint_max": 1789225738
+    },
+    {
+      "id": "d435fa489df04bcf",
+      "path": "/home/derek/private-migration-20260923/deepagents-shot-director/out/loop_runs/loop-20260912-080908",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 3,
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 21376545,
+      "mtime_hint_min": 1789225748,
+      "mtime_hint_max": 1789226359
+    },
+    {
+      "id": "e01a52d596f13602",
+      "path": "/home/derek/private-migration-20260923/state/hearth/var",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4,
+        ".ndjson": 1,
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 425836247,
+      "mtime_hint_min": 1783124405,
+      "mtime_hint_max": 1790172750
+    },
+    {
+      "id": "6eef9b50f9eac703",
+      "path": "/home/derek/private-migration-20260923/state/hearth/var/execution",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".sqlite": 2,
+        ".ndjson": 1
+      },
+      "marker_files_direct": 4,
+      "bytes_direct": 90786663,
+      "mtime_hint_min": 1788513346,
+      "mtime_hint_max": 1790172696
+    },
+    {
+      "id": "6b8c69e69a68690c",
+      "path": "/home/derek/private-migration-20260923/state/hearth/var/friendgate",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1,
+        ".ndjson": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4479,
+      "mtime_hint_min": 1789306327,
+      "mtime_hint_max": 1790038299
+    },
+    {
+      "id": "7884512a9d3b77ca",
+      "path": "/home/derek/private-migration-20260923/state/hearth/var/imagegen",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".ndjson": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 77049,
+      "mtime_hint_min": 1790070622,
+      "mtime_hint_max": 1790070622
+    },
+    {
+      "id": "5a6c6a568a93ff11",
+      "path": "/home/derek/private-migration-20260923/state/hearth/var/ledger",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".sqlite": 1,
+        ".ndjson": 1
+      },
+      "marker_files_direct": 2,
+      "bytes_direct": 324893082,
+      "mtime_hint_min": 1790080557,
+      "mtime_hint_max": 1790172739
+    },
+    {
+      "id": "50e7dc1a8ebc694b",
+      "path": "/home/derek/private-migration-20260923/state/hearth/var/public-portfolio",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 54977,
+      "mtime_hint_min": 1788532284,
+      "mtime_hint_max": 1790158505
+    },
+    {
+      "id": "724147f79cc0441b",
+      "path": "/home/derek/private-migration-20260923/state/hearth/var/render",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4,
+        ".ndjson": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 74981,
+      "mtime_hint_min": 1787654816,
+      "mtime_hint_max": 1790172691
+    },
+    {
+      "id": "451e31fcf57695db",
+      "path": "/home/derek/private-migration-20260923/state/hearth/var/rotation",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3154,
+      "mtime_hint_min": 1789697858,
+      "mtime_hint_max": 1789697858
+    },
+    {
+      "id": "8b242ca9f546ca2f",
+      "path": "/home/derek/private-migration-20260923/state/hearth/var/seats",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1,
+        ".ndjson": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 12001491,
+      "mtime_hint_min": 1789805840,
+      "mtime_hint_max": 1790172578
+    },
+    {
+      "id": "538c7fc1cde51afb",
+      "path": "/home/derek/private-migration-20260923/state/hearth/var/sentinel",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2,
+        ".ndjson": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 8579463,
+      "mtime_hint_min": 1787909990,
+      "mtime_hint_max": 1787910350
+    },
+    {
+      "id": "1717f2265a82d7ca",
+      "path": "/home/derek/private-migration-20260923/state/hearth/var/task_lane",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4,
+      "mtime_hint_min": 1789993673,
+      "mtime_hint_max": 1789993673
+    },
+    {
+      "id": "31cc1414842892a6",
+      "path": "/home/derek/private-migration-20260923/state/runs/enumerate",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1,
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 3553,
+      "mtime_hint_min": 1788514384,
+      "mtime_hint_max": 1788514384
+    },
+    {
+      "id": "2c9753501a7154cc",
+      "path": "/home/derek/private-migration-20260923/state/runs/g2-validation",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3230,
+      "mtime_hint_min": 1783137783,
+      "mtime_hint_max": 1783137892
+    },
+    {
+      "id": "8d2d4568d6aaf829",
+      "path": "/home/derek/private-migration-20260923/state/runs/g2-validation/artifacts",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1679,
+      "mtime_hint_min": 1783137871,
+      "mtime_hint_max": 1783137871
+    },
+    {
+      "id": "4363f85124f31e19",
+      "path": "/home/derek/private-migration-20260923/state/runs/hearth",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 90496,
+      "mtime_hint_min": 1790046919,
+      "mtime_hint_max": 1790046919
+    },
+    {
+      "id": "b65f5b0a8c0ea532",
+      "path": "/home/derek/private-migration-20260923/state/runs/hearth/harvest-proofs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4259,
+      "mtime_hint_min": 1784347098,
+      "mtime_hint_max": 1784347098
+    },
+    {
+      "id": "be7e2bae400bc5cd",
+      "path": "/home/derek/private-migration-20260923/state/runs/hearth-gateway",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 4
+      },
+      "marker_files_direct": 4,
+      "bytes_direct": 224547989,
+      "mtime_hint_min": 1788482823,
+      "mtime_hint_max": 1790172712
+    },
+    {
+      "id": "137d0f6f5cfceb43",
+      "path": "/home/derek/private-migration-20260923/state/runs/hearth-offload-claude-frontier",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".ndjson": 1,
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 287449,
+      "mtime_hint_min": 1789960917,
+      "mtime_hint_max": 1790050855
+    },
+    {
+      "id": "f57ed110fae393f7",
+      "path": "/home/derek/private-migration-20260923/state/runs/hearth-offload-codex-cli",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".ndjson": 1,
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 28321,
+      "mtime_hint_min": 1790074895,
+      "mtime_hint_max": 1790076821
+    },
+    {
+      "id": "e4ef453c683520a2",
+      "path": "/home/derek/private-migration-20260923/state/runs/hearth-offload-experiment-doc-adr-bench",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".ndjson": 1,
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 13011,
+      "mtime_hint_min": 1788482622,
+      "mtime_hint_max": 1788483448
+    },
+    {
+      "id": "5734a67bc350be88",
+      "path": "/home/derek/private-migration-20260923/state/runs/hearth-offload-gcp-adk-test",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".ndjson": 1,
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 1165,
+      "mtime_hint_min": 1785403351,
+      "mtime_hint_max": 1785403408
+    },
+    {
+      "id": "fc5413933e32a0ca",
+      "path": "/home/derek/private-migration-20260923/state/runs/hearth-offload-rotation-proof",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 780,
+      "mtime_hint_min": 1788483775,
+      "mtime_hint_max": 1788483775
+    },
+    {
+      "id": "de2d013a56db8a1e",
+      "path": "/home/derek/private-migration-20260923/state/runs/omen-5070-hwbaseline-2026-07-02",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 1964,
+      "mtime_hint_min": 1783042660,
+      "mtime_hint_max": 1783042660
+    },
+    {
+      "id": "d42e93dbcfca2ad6",
+      "path": "/home/derek/private-migration-20260923/state/runs/omen-5070-hwbaseline-2026-07-02/artifacts",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 10
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 9228,
+      "mtime_hint_min": 1783042660,
+      "mtime_hint_max": 1783042660
+    },
+    {
+      "id": "29af641c2bae3216",
+      "path": "/home/derek/private-migration-20260923/state/runs/omen-debut-bl-dee707",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 9667,
+      "mtime_hint_min": 1783082678,
+      "mtime_hint_max": 1783082726
+    },
+    {
+      "id": "1b83a4e77fb7d6a7",
+      "path": "/home/derek/private-migration-20260923/state/runs/omen-debut-bl-dee707/artifacts",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1274,
+      "mtime_hint_min": 1783082662,
+      "mtime_hint_max": 1783082662
+    },
+    {
+      "id": "84543b18027e1e82",
+      "path": "/home/derek/private-migration-20260923/state/runs/omen-debut-bl-dee707/conductor",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 9368,
+      "mtime_hint_min": 1783082652,
+      "mtime_hint_max": 1783082652
+    },
+    {
+      "id": "a21cb7f7931a8008",
+      "path": "/home/derek/private-migration-20260923/state/runs/omen-worker-1-reearn",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 5281,
+      "mtime_hint_min": 1783146730,
+      "mtime_hint_max": 1783147933
+    },
+    {
+      "id": "da34b3fb6aea4c05",
+      "path": "/home/derek/private-migration-20260923/state/runs/omen-worker-1-reearn/artifacts",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2225,
+      "mtime_hint_min": 1783146730,
+      "mtime_hint_max": 1783146730
+    },
+    {
+      "id": "6dcc78c59766a532",
+      "path": "/home/derek/private-migration-20260923/state/runs/omen-worker-1-reearn/conductor",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 4354,
+      "mtime_hint_min": 1783146730,
+      "mtime_hint_max": 1783146730
+    },
+    {
+      "id": "d1875ff923f21272",
+      "path": "/home/derek/private-migration-20260923/state/runs/pour-a1-r7",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 695,
+      "mtime_hint_min": 1783058435,
+      "mtime_hint_max": 1783058435
+    },
+    {
+      "id": "e1ed99820e8071c9",
+      "path": "/home/derek/private-migration-20260923/state/runs/pour-a1-r7/artifacts",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1650,
+      "mtime_hint_min": 1783058435,
+      "mtime_hint_max": 1783058435
+    },
+    {
+      "id": "95128214f5cc543e",
+      "path": "/home/derek/private-migration-20260923/state/runs/pour-a1-r7/conductor",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 4276,
+      "mtime_hint_min": 1783058413,
+      "mtime_hint_max": 1783058414
+    },
+    {
+      "id": "0cf2f12bcba9a8ae",
+      "path": "/home/derek/private-migration-20260923/state/runs/pour-b2",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 783,
+      "mtime_hint_min": 1783052771,
+      "mtime_hint_max": 1783052771
+    },
+    {
+      "id": "861d94dc8fdbd60e",
+      "path": "/home/derek/private-migration-20260923/state/runs/pour-b2/artifacts",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3379,
+      "mtime_hint_min": 1783052771,
+      "mtime_hint_max": 1783052771
+    },
+    {
+      "id": "6b0d63b07b01b546",
+      "path": "/home/derek/private-migration-20260923/state/runs/pour-b2/conductor",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 5394,
+      "mtime_hint_min": 1783052771,
+      "mtime_hint_max": 1783052771
+    },
+    {
+      "id": "73294159e5af5c2d",
+      "path": "/home/derek/private-migration-20260923/state/runs/pour-c2",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 2150,
+      "mtime_hint_min": 1783086509,
+      "mtime_hint_max": 1783086509
+    },
+    {
+      "id": "a44f0a1deb5949eb",
+      "path": "/home/derek/private-migration-20260923/state/runs/pour-c2/artifacts",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2288,
+      "mtime_hint_min": 1783086512,
+      "mtime_hint_max": 1783086517
+    },
+    {
+      "id": "43c8e37d549286af",
+      "path": "/home/derek/private-migration-20260923/state/runs/pour-c2/conductor",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 4527,
+      "mtime_hint_min": 1783085492,
+      "mtime_hint_max": 1783085492
+    },
+    {
+      "id": "4d7a06a63d606edb",
+      "path": "/home/derek/private-migration-20260923/state/runs/regression-probe-ccb1",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 4446,
+      "mtime_hint_min": 1783142489,
+      "mtime_hint_max": 1783142752
+    },
+    {
+      "id": "28582329093e5056",
+      "path": "/home/derek/private-migration-20260923/state/runs/regression-probe-ccb1/artifacts",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2264,
+      "mtime_hint_min": 1783142489,
+      "mtime_hint_max": 1783142489
+    },
+    {
+      "id": "37ab20a3e0d2686f",
+      "path": "/home/derek/private-migration-20260923/state/runs/regression-probe-ccb1/conductor",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 4361,
+      "mtime_hint_min": 1783142489,
+      "mtime_hint_max": 1783142489
+    },
+    {
+      "id": "9f7d7875be7cec59",
+      "path": "/home/derek/private-migration-20260923/state/runs/run",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1,
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 34560,
+      "mtime_hint_min": 1788515112,
+      "mtime_hint_max": 1788515113
+    },
+    {
+      "id": "2f1f3baea2995e84",
+      "path": "/home/derek/private-migration-20260923/state/runs/vllm-moe-crash-omen-wsl-2026-07-02",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 10637,
+      "mtime_hint_min": 1783082677,
+      "mtime_hint_max": 1783082732
+    },
+    {
+      "id": "9be30cdc91051250",
+      "path": "/home/derek/private-migration-20260923/state/runs/vllm-moe-crash-omen-wsl-2026-07-02/artifacts",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3460,
+      "mtime_hint_min": 1783082677,
+      "mtime_hint_max": 1783082677
+    },
+    {
+      "id": "46c8bca06893b63b",
+      "path": "/home/derek/private-migration-20260923/state/runs/vllm-moe-crash-omen-wsl-2026-07-02/wsl",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2,
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 87916,
+      "mtime_hint_min": 1783082677,
+      "mtime_hint_max": 1783082677
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.646
+}

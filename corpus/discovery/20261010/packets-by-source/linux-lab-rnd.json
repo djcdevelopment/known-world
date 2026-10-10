@@ -1,0 +1,138 @@
+{
+  "group": "lab",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "linux-lab-rnd",
+    "host": "omen-linux",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 6,
+      "seconds": 30,
+      "max_files": 100000,
+      "max_candidates": 2500
+    },
+    "rollups_omitted": 30,
+    "rollups": [
+      {
+        "path": "/home/derek/work/lab-rnd/research/evidence",
+        "directories": 1245,
+        "structured_files": {
+          ".json": 3170,
+          ".jsonl": 15,
+          ".ndjson": 190,
+          ".csv": 85
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/lab-rnd/research/state",
+        "directories": 2,
+        "structured_files": {
+          ".json": 851
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/lab-rnd/runs/cap-20261001T020140Z-named-49549b",
+        "directories": 29,
+        "structured_files": {
+          ".json": 61,
+          ".jsonl": 1,
+          ".csv": 3
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/lab-rnd/runs/cap-20261001T043242Z-outcome-219f60",
+        "directories": 29,
+        "structured_files": {
+          ".json": 61,
+          ".jsonl": 1,
+          ".csv": 3
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/lab-rnd/runs/cap-20261001T042103Z-outcome-6fa96a",
+        "directories": 29,
+        "structured_files": {
+          ".json": 61,
+          ".jsonl": 1,
+          ".csv": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/lab-rnd/runs/cap-20261001T020715Z-outcome-48e1e7",
+        "directories": 28,
+        "structured_files": {
+          ".json": 59,
+          ".jsonl": 1,
+          ".csv": 3
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/lab-rnd/runs/cap-20261001T014125Z-named-2c1baa",
+        "directories": 28,
+        "structured_files": {
+          ".json": 58,
+          ".jsonl": 1,
+          ".csv": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/lab-rnd/runs/cap-20261001T121608Z-outcome-bf8782",
+        "directories": 22,
+        "structured_files": {
+          ".json": 46,
+          ".jsonl": 1,
+          ".csv": 8
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/lab-rnd/runs/cap-20261001T121050Z-outcome-8663ac",
+        "directories": 21,
+        "structured_files": {
+          ".json": 44,
+          ".jsonl": 1,
+          ".csv": 7
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/lab-rnd/runs/cap-20261001T125701Z-outcome-d82059",
+        "directories": 23,
+        "structured_files": {
+          ".json": 48,
+          ".jsonl": 1,
+          ".csv": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/lab-rnd/runs/cap-20261001T042542Z-outcome-5ead5a",
+        "directories": 21,
+        "structured_files": {
+          ".json": 45,
+          ".jsonl": 1,
+          ".csv": 3
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/lab-rnd/runs/cap-20261001T120609Z-outcome-fd78cf",
+        "directories": 18,
+        "structured_files": {
+          ".json": 38,
+          ".jsonl": 1,
+          ".csv": 8
+        },
+        "git_markers": 0
+      }
+    ]
+  }
+}

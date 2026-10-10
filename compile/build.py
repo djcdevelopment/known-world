@@ -14,6 +14,7 @@ import numpy as np
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import audio as aud
+import activity as act
 import build_data as bd
 import camera as cam
 import clock as clk
@@ -33,7 +34,7 @@ import tiles as til
 BLOOM_LIFE = [0.40, 0.60, 0.90, 1.35, 2.0, 3.0]
 RADIUS_PX = [6, 10, 15, 23, 35, 52]
 DISPLAY = {"human": "human", "chatgpt": "ChatGPT", "claude": "Claude", "codex": "Codex", "opencode": "OpenCode",
-           "local_model": "local", "automation": "automation"}
+           "local_model": "local", "automation": "automation", "gemini": "Gemini"}
 HOSTS = ("omen-e", "omen-c", "omen-linux", "am4", "fx99")
 SURFACES = ("omen-c", "omen-e", "omen-linux", "am4", "fx99", "github")
 SURFACE_LABEL = {"omen-c": "C:", "omen-e": "E:", "omen-linux": "linux", "am4": "AM4", "fx99": "FX99", "github": "GitHub"}
@@ -90,6 +91,7 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
     ccum, fcum = ser.commit_capacity(c, clock, nat_index)
     pcum = ser.participations(c, clock, nat_index)
     rt = ser.running_totals(c, params, clock, nat_index, SURFACES, HOSTS, launches)
+    activity, rec['activity'] = act.build(params, clock, c, Tl, series)
     assert np.array_equal(rt["ccum"].astype(np.float32), ccum) and np.array_equal(rt["fcum"].astype(np.float32), fcum)
     band_names, band_arr = ser.band_series(series, F, fps)
     hq_host, hq_hosts, hq_day_host = ser.hq_track(c, params, clock, tau)
@@ -191,7 +193,7 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
         ni = nat_index[l["nation"]]
         gi = gen_idx.get((l["nation"], l["generation"]), 0)
         flags = (1 if l["first_test"] else 0) | (2 if shape == "mirv" else 0) | (4 if shape == "unified" else 0) | (8 if l["nation_inferred"] else 0) | (16 if first_nat_launch.get(l["nation"]) == l["launch_id"] else 0)
-        life = max(3, int(round(BLOOM_LIFE[vb - 1] * env * fps)))
+        life = max(3, int(round(BLOOM_LIFE[vb - 1] * env * fps * params.get("burst_tail_scale", 1.0))))
         whs = []
         if shape == "mirv" and l["warhead_list"]:
             n = len(l["warhead_list"])
@@ -333,6 +335,9 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
         k = nat_rows[i]["nation"]; tn = rt["totals"]["nation"][k]
         r["commits"] = format(tn["commits"], ","); r["files"] = format(tn["files_changed"], ",")
         r["lines"] = "+%s / \u2212%s" % (compact(tn["lines_added"]), compact(tn["lines_removed"]))
+        r['parts'] = int(pcum[i, -1])
+        r['part_label'] = 'HEARTH calls' if k in ('gemini', 'local_model') else 'sessions'
+        r['line_changes'] = format(tn['lines_added'] + tn['lines_removed'], ',')
     wt = rt["totals"]["world"]
     card_world = {"name": "world", "tests": int(sum(r["tests"] for r in card)), "commits": format(wt["commits"], ","), "files": format(wt["files"], ","),
                   "lines": "%s" % compact(wt["lines"])}
@@ -412,7 +417,14 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
         "tests_cum": bd.b64(np.cumsum(tests_cum, axis=1).astype("<u2")), "lines_cum": bd.b64(np.cumsum(lines_cum, axis=1).astype("<f4")),
         "files_cum": bd.b64(np.cumsum(files_cum, axis=1).astype("<f4")), "commits_cum": bd.b64(ccum.astype("<f4")), "capfiles_cum": bd.b64(fcum.astype("<f4")),
         "parts_cum": bd.b64(pcum.astype("<f4")),
-        "ins_cum": f32(rt["icum"]), "del_cum": f32(rt["dcum"]), "rate_nat": f32(rt["rate"]), "w_cum": f32(rt["w"]),
+        "part_labels": ["HEARTH calls" if k in ("gemini", "local_model") else "sessions" for k in classes],
+        "count_semantics": 1,
+        "file_breakdown": {"commit_touches": sum(n['files_changed'] for n in rt['totals']['nation'].values()),
+                           "creations": sum(s['files_created'] for s in rt['totals']['surface'].values()),
+                           "updates": sum(s['files_updated'] for s in rt['totals']['surface'].values())},
+        "totals_precision": "f64", "activity": activity,
+        "ins_cum": bd.b64(rt["icum"].astype('<f8')), "del_cum": bd.b64(rt["dcum"].astype('<f8')),
+        "rate_nat": f32(rt["rate"]), "w_cum": bd.b64(rt["w"].astype('<f8')),
         "sc_created": f32(rt["sc_created"]), "sc_updated": f32(rt["sc_updated"]),
         "created_nat": f32(rt["created_nat"]) if rt["created_nat"] is not None else None,
         "rate_unit_names": list(ser.ERA_UNIT_NAMES), "rate_window": params["rate_window"],
@@ -421,6 +433,9 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
         "sc_tests": bd.b64(sc_tests.astype("<u2")), "sc_commits": bd.b64(sc_commits.astype("<f4")), "sc_files": bd.b64(sc_files.astype("<f4")),
         "isl_cum": bd.b64(isl_cum.astype("<u2")),
         "radius_px": RADIUS_PX, "env_scale": round(env, 6),
+        "burst_tail_scale": params.get("burst_tail_scale", 1.0),
+        "connection_hold_days": params.get("connection_hold_days", 5.0),
+        "connection_expire_days": params.get("connection_expire_days", 7.0),
         # radio
         "band_names": band_names, "band": bd.b64(band_arr), "band_window_f": int(round(params["band_window_s"] * fps)),
         "bs": bd.b64(bs.astype("<i4")), "br": bd.b64(br.astype("<u2")), "bw": bd.b64(bw), "bcn_n": bd.b64(bcn),
@@ -452,6 +467,9 @@ def build(params, cut_s=None, outdir=".", probe_f=15, seed=20261009, corpus=None
     rec["audio_stats"] = astats
     rec["clock"] = clock.summary()
     rec["running_totals"] = rt["totals"]
+    rec["gemini_calls"] = {"count": len(c.gemini_calls), "backends": ["gcp-gemini", "gcp-gemini-pro"],
+                           "first_ts": common.iso(c.gemini_calls[0][0]) if c.gemini_calls else None,
+                           "scope": "HEARTH dispatch records, not sessions, launches or accepted deliveries"}
     if st is not None:
         rec["stream"] = st["stats"]
         rec["stream"]["edge_types"] = dict(st["edge_types"])

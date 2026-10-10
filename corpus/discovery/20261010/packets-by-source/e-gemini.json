@@ -1,0 +1,27 @@
+{
+  "group": "clients",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "e-gemini",
+    "host": "omen-e",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 5,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500
+    },
+    "rollups_omitted": 0,
+    "rollups": [
+      {
+        "path": "/mnt/omen-e-read/gemini",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 6
+        },
+        "git_markers": 1
+      }
+    ]
+  }
+}

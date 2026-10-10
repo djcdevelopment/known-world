@@ -1,0 +1,25 @@
+{
+  "group": "projects",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "linux-git",
+    "host": "omen-linux",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 4,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500
+    },
+    "rollups_omitted": 0,
+    "rollups": [
+      {
+        "path": "/home/derek/git/commandcenter-flash-base",
+        "directories": 1,
+        "structured_files": {},
+        "git_markers": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "linux-lever-ledger",
+  "host": "omen-linux",
+  "root": "/home/derek/work/lever-ledger/slices",
+  "group": "lab",
+  "status": "complete",
+  "limits": {
+    "depth": 1,
+    "seconds": 30,
+    "max_files": 100000,
+    "max_candidates": 2500
+  },
+  "counts": {
+    "directories": 1,
+    "files": 34
+  },
+  "candidates": [
+    {
+      "id": "274ccd448a974b97",
+      "path": "/home/derek/work/lever-ledger/slices",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 17
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3871480,
+      "mtime_hint_min": 1790843685,
+      "mtime_hint_max": 1791215212
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.0
+}

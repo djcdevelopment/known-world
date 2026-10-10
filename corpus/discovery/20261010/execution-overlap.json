@@ -1,0 +1,8 @@
+{
+  "source": "/mnt/omen-c-read/hearth-var/execution/projection.sqlite",
+  "paired_invocations": 64,
+  "unpaired_started": 0,
+  "peak_simultaneous_invocations": 2,
+  "sum_invocation_seconds": 1854.216,
+  "scope": "Windows historical execution snapshot only; lifecycle intervals, not HTTP duration or directory mtime; not proof of GPU utilization or accepted output."
+}

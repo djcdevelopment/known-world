@@ -1,0 +1,7423 @@
+{
+ "root": "/home/derek/fleet",
+ "enumerated_files": 10400,
+ "candidate_files": 741,
+ "candidate_directories": 741,
+ "inspected": 741,
+ "rows": [
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T165506Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T171048Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T172638Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T174228Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T175818Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T181355Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T182918Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T184453Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T190038Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T191608Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T193156Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T194707Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T200209Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T201729Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T203232Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T204745Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T210247Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T211808Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T213346Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T214944Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T220528Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T222058Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T223648Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T225157Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T230718Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T232231Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T233808Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261002T235338Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T000901Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T002418Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T004028Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T005601Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T011158Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T012730Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T014248Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T015818Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T021408Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T022944Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T024501Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T030048Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T031558Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T033115Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T034718Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T040230Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T041821Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T043340Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T044918Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T050453Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T052011Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T053601Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T055105Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T060628Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T062147Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T063718Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T065256Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T070848Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T072418Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T073938Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T075512Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T081031Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T082548Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T084058Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T085627Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T091156Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T092718Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T094318Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T095831Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T101408Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T103008Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T104524Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T110107Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T111656Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T113258Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T114848Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T120448Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T122018Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T123557Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T125117Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T130658Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T132243Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T133758Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T135348Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T140928Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T142518Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T144118Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T145647Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T151222Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T152805Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T154343Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T155908Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T161428Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T163004Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T164548Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T170130Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T171716Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T173238Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T174838Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T180438Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T181958Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T183534Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T185038Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T190623Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T192222Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T193818Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T195322Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T200914Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T202442Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T204012Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T205540Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T211138Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T212704Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T214248Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T215828Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T221329Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T222849Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T224408Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T230001Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T231531Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T233108Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261003T234628Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T000228Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T001828Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T003405Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T004944Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T010524Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T012046Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T013605Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T015141Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T020738Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T022243Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T023804Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T025403Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T030924Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T032505Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T034048Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T035603Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T041148Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T042728Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T044318Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T045911Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T051422Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T052958Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T054553Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T060144Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T061723Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T063248Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T064816Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T070407Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T071930Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T073530Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T075104Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T080616Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T082148Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T083725Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T085324Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T090924Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T092516Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T094108Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T095616Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T101137Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T102638Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T104148Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T105655Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T111218Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T112747Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T114308Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T115907Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T121426Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T122952Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T124558Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T130125Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T131653Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T133249Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T134826Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T140408Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T142008Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T143535Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T145058Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T150628Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T152148Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T153739Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T155248Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T160808Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T162338Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T163938Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T165505Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T171008Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T172605Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T174137Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T175735Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T181328Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T182918Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T184448Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T190001Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T191551Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T193053Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T194610Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T200207Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T201805Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T203403Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T204932Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T210447Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T212018Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T213548Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T215115Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T220616Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T222140Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T223734Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T225328Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T230910Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T232419Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T233948Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261004T235518Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T001022Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T002544Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T004045Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T005558Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T011148Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T012741Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T014348Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T015906Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T021448Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T023018Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T024537Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T030122Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T031628Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T033223Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T034756Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T040318Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T041838Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T043358Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T044941Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T050445Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T052018Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T053528Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T055104Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T060652Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T062218Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T063754Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T065308Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T070817Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T072337Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T073848Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T075428Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T081028Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T082545Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T084148Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T085718Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T091316Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T092834Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T094352Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T095936Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T101502Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T103037Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T104545Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T110133Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T111648Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T113151Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T114728Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T120306Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T121855Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T123404Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T124957Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T130527Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T132118Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T133627Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T135138Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T140714Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T142258Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T143846Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T145415Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T151003Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T152551Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T154148Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T155658Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T161310Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T162832Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T164338Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T165843Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T171358Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T172928Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T174516Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T180056Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T181626Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T183147Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T184708Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T190238Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T191836Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T193422Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T194948Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T200548Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T202125Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T203718Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T205227Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T210815Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T212329Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T213850Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T215428Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T220942Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T222518Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T224052Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T225553Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T231116Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T232617Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T234158Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261005T235738Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T001328Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T002928Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T004428Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T005954Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T011548Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T013145Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T014713Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T020217Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T021728Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T023258Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T024837Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T030358Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T031948Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T033523Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T035058Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T040618Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T042145Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T043738Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T045314Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T050908Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T052502Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T054007Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T055558Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T061106Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T062628Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T064148Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T065748Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T071335Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T072848Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T074424Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T080008Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T081514Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T083028Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T084611Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T090142Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T091652Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T093218Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T094756Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T100348Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T101924Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T103518Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T105058Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T110635Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T112220Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T113803Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T115338Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T120924Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T122445Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T124011Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T125548Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T131128Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T132725Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T134318Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T135831Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T141352Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T142916Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T144450Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T150008Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T151527Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T153105Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T154633Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T160144Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T161659Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T163246Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T164817Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T170354Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T171918Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T173438Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T175012Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T180548Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T182100Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T183628Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T185153Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T190655Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T192238Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T193815Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T195358Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T200928Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T202518Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T204058Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T205656Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T211157Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T212718Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T214248Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T215839Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T221355Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T222924Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T224438Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T230028Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T231638Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T233218Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261006T234735Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T000333Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T001905Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T003418Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T005000Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T010520Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T012028Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T013557Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T015124Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T020713Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T022238Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T023801Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T025304Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T030857Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T032448Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T034033Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T035623Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T041218Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T042721Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T044258Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T045845Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T051408Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T052928Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T054506Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T060040Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T061558Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T063156Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T064659Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T070248Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T071818Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T073408Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T074914Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T080513Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T082036Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T083558Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T085158Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T090755Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T092301Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T093858Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T095444Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T101017Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T102618Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T104216Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T105738Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T111258Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T112858Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T114415Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T115930Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T121518Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T123118Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T124708Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T130247Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T131819Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T133410Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T134928Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T140448Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T142002Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T143518Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T145112Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T150624Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T152204Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T153805Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T155338Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T160938Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T162514Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T164028Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T165548Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T171138Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T172748Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T174348Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T175948Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T181538Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T183108Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T184620Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T190206Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T191805Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T193334Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T194920Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T200457Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T202048Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T203648Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T205248Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T210817Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T212338Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T213914Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T215424Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T221010Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T222555Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T224128Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T225646Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T231218Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T232723Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T234313Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261007T235845Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T001358Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T002945Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T004538Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T010131Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T011728Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T013301Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T014828Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T020357Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T021923Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T023454Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T025004Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T030525Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T032046Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T033558Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T035133Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T040728Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T042258Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T043848Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T045352Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T050948Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T052546Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T054107Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T055638Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T061158Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T062734Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T064310Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T065857Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T071456Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T073048Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T074631Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T080203Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T081716Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T083307Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T084846Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T090407Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T091908Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T093457Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T095057Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T100640Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T102232Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T103830Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T105416Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T111017Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T112535Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T114119Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T115638Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T121228Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T122738Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T124323Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T125856Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T131455Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T133048Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T134648Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T140208Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T141719Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T143257Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T144811Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T150411Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T152006Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T153558Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T155128Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T160728Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T162248Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T163818Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T165418Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T171008Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T172538Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T174118Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T175638Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T181139Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T182707Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T184228Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T185746Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T191318Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T192821Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T194417Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T195938Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T201538Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T203108Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T204708Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T210254Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T211755Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T213323Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T214856Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T220448Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T222018Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T223556Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T225102Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T230701Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T232202Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T233744Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261008T235328Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T000833Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T002358Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T003918Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T005518Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T011028Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T012628Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T014222Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T015728Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T021241Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T022828Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T024428Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T025948Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T031517Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T033106Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T034624Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T040148Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T041708Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T043228Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T044808Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T050345Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T051924Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T053440Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T055035Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T060627Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T062148Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T063718Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T065228Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T070831Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T072408Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T073944Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T075544Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T081139Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T082714Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T084224Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T085818Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T091408Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T092914Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T094428Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T100028Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T101548Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T103056Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T104645Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T110158Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T111717Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T113238Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T114801Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T120328Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T121903Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T123428Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T125004Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T130553Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T132110Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T133638Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T135146Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T140743Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T142248Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T143755Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T145344Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T150918Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T152452Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T154003Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T155546Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T161140Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T162705Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T164228Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T165754Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T171348Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T172938Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T174455Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T180003Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T181608Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T183206Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T184748Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T190348Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T191902Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T193448Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T195048Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T200648Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T202150Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T203745Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T205322Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T210828Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T212341Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T213902Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T215403Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T220922Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T222443Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T223958Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T225529Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T231058Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T232648Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T234158Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261009T235746Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T001348Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T002918Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T004511Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T010045Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T011556Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T013128Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T014648Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T020229Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T021748Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T023343Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T024916Z/manifest.json",
+   "bytes": 1487,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T030420Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T032008Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T033558Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T035134Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T040732Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T042330Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T043918Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T045455Z/manifest.json",
+   "bytes": 1487,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T051047Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T052648Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T054149Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T055708Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T061303Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T062804Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T064343Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T065844Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T071347Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T072948Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T074515Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T080112Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T081646Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T083235Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T084828Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T090428Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T091948Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T093548Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T095110Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T100617Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T102208Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T103808Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T105337Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T110846Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T112428Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T114000Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T115543Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T121052Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T122556Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T124101Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T125638Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T131208Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T132758Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T134324Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T135838Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T141348Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T142930Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T144438Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T150003Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T151538Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T153040Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T154609Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T160133Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T161715Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T163306Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/fleet/snapshots/20261010T164900Z/manifest.json",
+   "bytes": 2516,
+   "keys": [
+    "collected_at",
+    "collector",
+    "hosts"
+   ],
+   "shapes": []
+  }
+ ],
+ "omissions": [],
+ "enumeration_status": "complete",
+ "elapsed_s": 1.33,
+ "policy": "Representative schema discovery only; no work counts inferred. Payload files, credentials and runtime/model caches excluded."
+}

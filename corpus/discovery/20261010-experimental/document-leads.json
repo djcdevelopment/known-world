@@ -1,0 +1,151 @@
+[
+ {
+  "file": "ROTATION-PROGRAM.html",
+  "paths": [
+   "corpus/schema/bench-row.v1.json",
+   "results/serverlogs/",
+   "corpus/backfills/qwen38-campaign-full-20260827\u2026jsonl",
+   "results/requests/flash-iq4-ngl*.jsonl",
+   "E:\\work\\battlemage\\rotation-phase1\\r2-receipts.jsonl",
+   "experiments/doc-adr-bench-20260904T005139Z-sweep",
+   "E:\\work\\battlemage\\lz-probes\\{lz-receipts.jsonl,npu0\\npu19-runtime.log,npu0\\npu20-runtime.log,npu0\\npu20-graph-contract.json}",
+   "E:\\work\\battlemage\\lz-probes\\npu0\\{npu21-runtime.log,npu21-graph-contract.json,npu21-precision-precheck.json,npu21-summary.json}",
+   "experiments/doc-adr-bench-20260904T005139Z-sweep",
+   "E:\\work\\battlemage\\kv",
+   "campaign/lz-probes/etw1_feasibility.ps1",
+   "campaign/ff-probes/ub_ab.py",
+   "campaign/ff-probes/wa_solo_controls.ps1",
+   "campaign/ff-probes/ff_provenance.py",
+   "campaign/ff-probes/ff_census.py",
+   "E:\\work\\battlemage\\ff-probes\\ff-receipts.jsonl",
+   "corpus/schema/bench-row.v1.json",
+   "campaign/lz-probes/npu21_f16_dq_expert.py",
+   "E:\\work\\battlemage\\lz-probes\\npu0\\npu21-runtime.log",
+   "E:\\work\\battlemage\\lz-probes\\npu0\\npu20-runtime.log",
+   "E:\\work\\battlemage\\lz-probes\\npu0\\npu19-runtime.log",
+   "E:\\work\\battlemage\\lz-probes\\npu0\\npu18-runtime.log",
+   "E:\\work\\battlemage\\lz-probes\\npu0\\npu17-runtime.log",
+   "E:\\work\\battlemage\\lz-probes\\npu0\\npu16-runtime.log",
+   "E:\\work\\battlemage\\lz-probes\\npu0\\npu15-runtime.log",
+   "E:\\work\\battlemage\\lz-probes\\npu0\\npu14-runtime.log",
+   "E:\\work\\battlemage\\lz-probes\\npu0\\npu13-runtime.log",
+   "E:\\work\\battlemage\\lz-probes\\npu0\\npu12-runtime.log",
+   "campaign/lz-probes/npu11_collapsed_expert.py",
+   "E:\\work\\battlemage\\lz-probes\\npu0\\npu11-runtime.log",
+   "E:\\work\\battlemage\\lz-probes\\npu0\\npu10-runtime.log",
+   "E:\\work\\battlemage\\lz-probes\\npu0\\npu9-runtime.log",
+   "E:\\work\\battlemage\\lz-probes\\npu0\\npu8-runtime.log",
+   "E:\\work\\battlemage\\lz-probes\\npu0\\npu7-runtime.log",
+   "E:\\work\\battlemage\\lz-probes\\npu0\\npu5-runtime.log",
+   "E:\\work\\battlemage\\lz-probes\\npu0\\npu4-runtime.log",
+   "E:\\work\\battlemage\\lz-probes\\npu0\\npu3-runtime.log",
+   "E:\\work\\battlemage\\lz-probes\\npu0\\npu2-runtime.log",
+   "campaign/lz-probes/npu0_host_routed_moe.py",
+   "E:\\work\\battlemage\\npuw-2026.3\\.venv\\Scripts\\python.exe -m pip install PyYAML==6.0.3",
+   "campaign/lz-probes/",
+   "E:\\work\\battlemage\\lz-probes\\lz-receipts.jsonl",
+   "E:\\work\\battlemage\\rotation-phase1\\",
+   "corpus/backfills/",
+   "E:\\work\\battlemage\\qwen38-bench-2026-08\\",
+   "C:\\work\\handoffs\\decision-architecture\\adr-index.md"
+  ]
+ },
+ {
+  "file": "LOCAL-MODEL-LAB-INDEX.html",
+  "paths": [
+   "C:\\work\\tuning\\ollama-backend-lab\\results-summary.md",
+   "C:\\work\\tuning\\ollama-moe-findings.md",
+   "C:\\work\\tuning\\ollama-backend-lab\\hardware-capability-matrix.md",
+   "C:\\work\\tuning\\ollama-backend-lab\\hardware-baseline-omen-5070-2026-07-02.md",
+   "C:\\work\\tuning\\ollama-backend-lab\\results\\20260702-064115-cuda-capability-bench.csv",
+   "C:\\work\\am4-harvest\\ember\\RnD\\",
+   "results/E1-SUMMARY.md",
+   "results/battery-thermal-window-20260621.md",
+   "results/two-card-TDR-contamination-20260620",
+   "C:\\work\\am4-harvest\\manifest\\experiments\\opus-repo-analysis-2026-05-30\\reports\\REPORT-battlemage.md",
+   "C:\\work\\am4-harvest\\manifest\\experiments\\b70-bringup\\PLAN.md",
+   "C:\\work\\commandcenter\\am4-fleet-node\\results\\2026-06-29-sycl-context-ladder.md",
+   "results\\2026-06-29-service-path-matrix.md",
+   "C:\\work\\commandcenter\\am4-fleet-node\\results\\2026-07-17-linux-rebaseline-o0-inventory.md",
+   "C:\\work\\commandcenter\\am4-fleet-node\\results\\2026-07-18-o1-ze-peer-p2p.md",
+   "results\\raw-2026-07-18-o1-ze-peer\\",
+   "C:\\work\\commandcenter\\am4-fleet-node\\results\\2026-07-18-oxen-moe-gpt-oss-120b.md",
+   "C:\\work\\commandcenter\\am4-fleet-node\\results\\2026-07-18-oxen-moe-gambit.md",
+   "results\\raw-2026-07-18-gambit\\",
+   "C:\\work\\commandcenter\\B70-VERTICAL-TRACE.html",
+   "C:\\work\\commandcenter\\am4-fleet-node\\B70-CARD-MANAGEMENT.md",
+   "C:\\work\\tuning\\am4\\README.md",
+   "C:\\work\\windtunnel\\MATRIX-WIND-TUNNEL-LOG.html",
+   "C:\\work\\commandcenter\\hearth\\var\\experiments\\matrix-*\\",
+   "experiments\\matrix.py",
+   "C:\\work\\windtunnel\\APPARATUS-PROOF.html",
+   "C:\\work\\commandcenter\\hearth\\var\\experiments\\doc-adr-bench-20260721T161359Z-sweep\\summary.json",
+   "experiments\\doc_adr_bench.py",
+   "C:\\work\\commandcenter\\GCP-AGENT-ASSESSMENT.html",
+   "C:\\work\\commandcenter\\knowledge\\offload.json",
+   "C:\\work\\Lumberjacks\\docs\\benchmark-host-capacity-2026-07-12.md",
+   "C:\\work\\benchmark\\README.md",
+   "C:\\work\\commandcenter\\hearth\\scheduler\\experiments\\IMAGEGEN-250-RESULTS.md",
+   "C:\\work\\tuning\\ollama-backend-lab\\results-summary.md",
+   "C:\\work\\tuning\\ollama-moe-findings.md",
+   "C:\\work\\tuning\\ollama-backend-lab\\hardware-capability-matrix.md",
+   "results/E1-SUMMARY.md",
+   "results\\*capability-bench.csv",
+   "C:\\work\\am4-harvest\\ember\\RnD\\01\u201307",
+   "results\\2026-06-29-sycl-context-ladder.md",
+   "results\\2026-06-29-service-path-{matrix,ladder,concurrency-ladder,single0}.md",
+   "results\\2026-07-17-linux-rebaseline-o0-inventory.md",
+   "results\\2026-07-18-o1-ze-peer-p2p.md",
+   "results\\2026-07-18-oxen-moe-gpt-oss-120b.md",
+   "results\\2026-07-18-oxen-moe-gambit.md",
+   "C:\\work\\commandcenter\\B70-VERTICAL-TRACE.html",
+   "C:\\work\\tuning\\am4\\README.md",
+   "C:\\work\\windtunnel\\MATRIX-WIND-TUNNEL-LOG.html",
+   "C:\\work\\windtunnel\\APPARATUS-PROOF.html",
+   "experiments\\doc-adr-bench-20260721T161359Z-sweep\\summary.json",
+   "C:\\work\\commandcenter\\GCP-AGENT-ASSESSMENT.html",
+   "C:\\work\\commandcenter\\knowledge\\offload.json",
+   "C:\\work\\Lumberjacks\\docs\\benchmark-host-capacity-2026-07-12.md",
+   "C:\\work\\benchmark\\README.md",
+   "experiments\\IMAGEGEN-250-RESULTS.md",
+   "C:\\work",
+   "research/research/experiments",
+   "C:\\work\\notebook\\docs\\benchmark-{plan,runbook}.md"
+  ]
+ },
+ {
+  "file": "MATRIX-WIND-TUNNEL-LOG.html",
+  "paths": []
+ },
+ {
+  "file": "OMEN-FLEET-FORENSICS-2026-08-20.html",
+  "paths": [
+   "C:\\Users\\derek\\VMs\\zen-deepseek-1\\dev-vm.vhdx",
+   "C:\\Users\\derek\\VMs\\dev-vm\\dev-vm.vhdx"
+  ]
+ },
+ {
+  "file": "OMEN-LIMIT-TEST-2026-08.html",
+  "paths": [
+   "E:\\work\\battlemage\\burnin-2026-08\\",
+   "C:\\work\\commandcenter\\docs\\HWINFO.CSV",
+   "results\\stage2-bench70b-*-POISONED-cotenant-load.jsonl",
+   "E:\\work\\llamacpp-knee",
+   "results\\expZ-summary.csv",
+   "results\\quarantine-spilled\\",
+   "C:\\work\\writing\\llamacpp-25356-comment-draft-2026-08-22.md"
+  ]
+ },
+ {
+  "file": "OMEN-LIMIT-TEST-CHARTS-2026-08.html",
+  "paths": [
+   "E:\\work\\battlemage\\burnin-2026-08\\"
+  ]
+ },
+ {
+  "file": "TWO-ECONOMIES-WIND-TUNNEL.html",
+  "paths": [
+   "C:\\work\\commandcenter"
+  ]
+ }
+]

@@ -43,6 +43,8 @@ def load(params):
     chat = collections.defaultdict(list)  # lineage -> (t, session, class, n)
     gpt = []  # (t, session)
     offloads = []  # (t, backend, class) local backends only
+    local_dispatch_t = []  # HEARTH records only; tool observations may duplicate calls
+    gemini_calls = []  # evidenced cloud dispatches; no project/yield inference
     nongit = collections.defaultdict(lambda: collections.defaultdict(lambda: {"files": 0, "bytes": 0, "dirs": set(), "t0": None, "t1": None, "bulk": 0, "nrec": 0}))
     host_first = collections.defaultdict(dict)
     first_event = {}
@@ -52,7 +54,7 @@ def load(params):
     tot_commits = []  # running totals: (t, class, host, files, ins, del, no_numstat) for counted commits
     fs_rows = []  # running totals: (t, host, kind, n, bulk, lineage) every file_birth / file_update record
     tp = collections.Counter()  # commits not counted in any nation, for the receipt
-    sess_events = []
+    sess_events = {}
     gh_born = []
     dir_touch = collections.defaultdict(list)
     nc_first = {}  # (lineage, host) -> first non-commit event, for third-party clone time
@@ -144,15 +146,23 @@ def load(params):
             if isinstance(mods, str):
                 mods = [mods]
             sess_models[sid] = (cls, list(mods or []), t, int(e["magnitude"].get("n") or 0))
-            sess_events.append((t, cls, e["host"]))
+            # Mirrors and repeated source projections retain the same native
+            # session identity. Count its earliest observation once per class.
+            skey = (cls, sid or e['ref'])
+            if skey not in sess_events or t < sess_events[skey][0]:
+                sess_events[skey] = (t, cls, e['host'])
             for mname in mods or []:
                 key = (cls, mname)
                 if key not in gen_first or t < gen_first[key]:
                     gen_first[key] = t
         elif k == "offload_call":
             b = e["meta"].get("backend")
+            if b in ("gcp-gemini", "gcp-gemini-pro"):
+                gemini_calls.append((t, b, cls))
             if is_local_backend(b, params):
                 offloads.append((t, b, cls))
+                if e.get('src') == 'hearth_ledger':
+                    local_dispatch_t.append(t)
                 if b not in first_backend or t < first_backend[b]:
                     first_backend[b] = t
                 if first_local_offload is None or t < first_local_offload:
@@ -190,7 +200,7 @@ def load(params):
                 if l.get(key) and parse_ts(l[key]) < start_t:
                     l[key] = iso(start_t)
     c.tot_commits, c.fs_rows, c.third_totals = sorted(tot_commits), sorted(fs_rows, key=lambda x: (x[0], x[1], x[2], str(x[5]))), dict(tp)
-    c.third_paths, c.third_hosts, c.chat_all, c.sess_events, c.gh_born, c.dir_touch, c.nc_first = third_paths, third_hosts, sorted(chat_all), sorted(sess_events), sorted(gh_born, key=lambda x: (x[0], str(x[1]))), dir_touch, nc_first
+    c.third_paths, c.third_hosts, c.chat_all, c.sess_events, c.gh_born, c.dir_touch, c.nc_first = third_paths, third_hosts, sorted(chat_all), sorted(sess_events.values()), sorted(gh_born, key=lambda x: (x[0], str(x[1]))), dir_touch, nc_first
     for r in dir_touch:
         dir_touch[r].sort()
     # directories that later gain a git lineage (exact path match on the same host): non-git only before its first commit
@@ -217,6 +227,8 @@ def load(params):
     c.chat_t = {r: [x[0] for x in v] for r, v in chat.items()}
     c.gpt_t = [x[0] for x in gpt]
     c.off_t = [x[0] for x in offloads]
+    c.local_dispatch_t = sorted(local_dispatch_t)
+    c.gemini_calls = sorted(gemini_calls)
     c.births_t = {r: [x[0] for x in v] for r, v in births.items()}
     c.host_first = host_first
     c.first_event = first_event

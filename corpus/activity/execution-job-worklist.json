@@ -1,0 +1,1884 @@
+{
+ "source_root": "/home/derek/work/lab-rnd/research/evidence",
+ "jobs": {
+  "job_a1ab3bdb7c3abaa25ce4eb69f2c1e0a4": [
+   "bench27-mem095-20261005/pass-a-c1-review/form.nonblind/sample-02/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-1/seat-0/run.json"
+  ],
+  "job_5b32dec965f9213567bb4e2d97dee0fd": [
+   "bench27-mem095-20261005/pass-a-c1-review/form.nonblind/sample-02/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-1/seat-0/run.json"
+  ],
+  "job_8c629a5880dc60b3a93a45bbc707ff61": [
+   "bench27-mem095-20261005/pass-a-c1-review/form.nonblind/sample-01/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-1/seat-1/run.json"
+  ],
+  "job_5814820078117c4197e11da6591a10f7": [
+   "bench27-mem095-20261005/pass-a-c1-review/form.nonblind/sample-01/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-1/seat-1/run.json"
+  ],
+  "job_72ddc4412eefbb0feb242ec57d84c7e9": [
+   "bench27-mem095-20261005/pass-b-c2-treatment-review/D053-repair.nonblind/render-copy/run.json",
+   "bench27-mem095-20261005/pass-b-c2-treatment-review/form.nonblind/seat-0/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-5/seat-0/run.json"
+  ],
+  "job_9bd9a9076a2c89816fdbdfeca66b06f5": [
+   "bench27-mem095-20261005/pass-b-c2-treatment-review/D053-repair.nonblind/render-copy/run.json",
+   "bench27-mem095-20261005/pass-b-c2-treatment-review/form.nonblind/seat-0/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-5/seat-0/run.json"
+  ],
+  "job_ec506f1ceca80fb46bc503a40ce89946": [
+   "bench27-mem095-20261005/pass-b-c2-treatment-review/D053-repair.nonblind/render-copy/run.json",
+   "bench27-mem095-20261005/pass-b-c2-treatment-review/form.nonblind/seat-0/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-5/seat-0/run.json"
+  ],
+  "job_ee99fd1ee5b3bc93b993384f0ebd8a7c": [
+   "bench27-mem095-20261005/pass-b-c2-treatment-review/D053-repair.nonblind/render-copy/run.json",
+   "bench27-mem095-20261005/pass-b-c2-treatment-review/form.nonblind/seat-0/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-5/seat-0/run.json"
+  ],
+  "job_48cac20582703ec48bccb303ee6a9edd": [
+   "bench27-mem095-20261005/pass-a-c2-review/D048-repairs.nonblind/report-04/render-copy/run.json",
+   "bench27-mem095-20261005/pass-a-c2-review/D048-repairs.nonblind/report-02/render-copy/run.json",
+   "bench27-mem095-20261005/pass-a-c2-review/form.nonblind/seat-0/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-5/seat-0/run.json"
+  ],
+  "job_8bd150522e9d94d271d8f91d9f0d31fb": [
+   "bench27-mem095-20261005/pass-a-c2-review/D048-repairs.nonblind/report-04/render-copy/run.json",
+   "bench27-mem095-20261005/pass-a-c2-review/D048-repairs.nonblind/report-02/render-copy/run.json",
+   "bench27-mem095-20261005/pass-a-c2-review/form.nonblind/seat-0/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-5/seat-0/run.json"
+  ],
+  "job_5d1404b30d59533209992d369c356e3f": [
+   "bench27-mem095-20261005/pass-a-c2-review/D048-repairs.nonblind/report-04/render-copy/run.json",
+   "bench27-mem095-20261005/pass-a-c2-review/D048-repairs.nonblind/report-02/render-copy/run.json",
+   "bench27-mem095-20261005/pass-a-c2-review/form.nonblind/seat-0/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-5/seat-0/run.json"
+  ],
+  "job_96230756cf9b105429a82c69714463e8": [
+   "bench27-mem095-20261005/pass-a-c2-review/D048-repairs.nonblind/report-04/render-copy/run.json",
+   "bench27-mem095-20261005/pass-a-c2-review/D048-repairs.nonblind/report-02/render-copy/run.json",
+   "bench27-mem095-20261005/pass-a-c2-review/form.nonblind/seat-0/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-5/seat-0/run.json"
+  ],
+  "job_36ef5a12cad50c3eef5563ceff63d325": [
+   "bench27-mem095-20261005/pass-a-c2-review/D048-repairs.nonblind/report-01/render-copy/run.json",
+   "bench27-mem095-20261005/pass-a-c2-review/form.nonblind/seat-1/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-5/seat-1/run.json"
+  ],
+  "job_700aefe5f954a67d4d7b8f74fe8c9bbf": [
+   "bench27-mem095-20261005/pass-a-c2-review/D048-repairs.nonblind/report-01/render-copy/run.json",
+   "bench27-mem095-20261005/pass-a-c2-review/form.nonblind/seat-1/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-5/seat-1/run.json"
+  ],
+  "job_bcb8b1e15c04c9f67aafdce657cdd8c2": [
+   "bench27-mem095-20261005/pass-a-c2-review/D048-repairs.nonblind/report-01/render-copy/run.json",
+   "bench27-mem095-20261005/pass-a-c2-review/form.nonblind/seat-1/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-5/seat-1/run.json"
+  ],
+  "job_b7d6578be711ad21733cec6be6184e5d": [
+   "bench27-mem095-20261005/pass-a-c2-review/D048-repairs.nonblind/report-01/render-copy/run.json",
+   "bench27-mem095-20261005/pass-a-c2-review/form.nonblind/seat-1/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-5/seat-1/run.json"
+  ],
+  "job_25c3e7842858ccb42d323eaf883d4991": [
+   "bench27-mem095-20261005/pass-b-c1-review/D050-repair.nonblind/render-copy/run.json",
+   "bench27-mem095-20261005/pass-b-c1-review/form.nonblind/sample-02/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-1/seat-0/run.json"
+  ],
+  "job_3988ddd4b5392753f013698504877370": [
+   "bench27-mem095-20261005/pass-b-c1-review/D050-repair.nonblind/render-copy/run.json",
+   "bench27-mem095-20261005/pass-b-c1-review/form.nonblind/sample-02/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-1/seat-0/run.json"
+  ],
+  "job_519261e4701ff67819f9d20a17ee0ec6": [
+   "bench27-mem095-20261005/pass-b-c1-review/form.nonblind/sample-01/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-1/seat-1/run.json"
+  ],
+  "job_84fe18c9a36b7df7cc06a7a3e38460ff": [
+   "bench27-mem095-20261005/pass-b-c1-review/form.nonblind/sample-01/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-1/seat-1/run.json"
+  ],
+  "job_2352fd3f1fd7cc41c2f4eabf14a02c44": [
+   "bench27-mem095-20261005/pass-b-c2-control-review/form.nonblind/seat-1/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-5/seat-1/run.json"
+  ],
+  "job_9c2acaa9ffe0c1e1e5b54c36e078bdd0": [
+   "bench27-mem095-20261005/pass-b-c2-control-review/form.nonblind/seat-1/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-5/seat-1/run.json"
+  ],
+  "job_d86bdd39375e3526762e6e0f9abe64a4": [
+   "bench27-mem095-20261005/pass-b-c2-control-review/form.nonblind/seat-1/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-5/seat-1/run.json"
+  ],
+  "job_e703200a7654fe963b328c4d6ac9adfa": [
+   "bench27-mem095-20261005/pass-b-c2-control-review/form.nonblind/seat-1/run.json",
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-5/seat-1/run.json"
+  ],
+  "job_73f5923bd40a14569f27d573d818b753": [
+   "bench27-slots3-20261005/treatment-review/form.nonblind/seat-1/run.json",
+   "bench27-slots3-20261005/treatment-review/D064-repairs.nonblind/render-copy/run.json",
+   "bench27-slots3-20261005/paired-c3/rep-1/seat-1/run.json"
+  ],
+  "job_3b5a84a745a175b13e52f52ea1dcbae5": [
+   "bench27-slots3-20261005/treatment-review/form.nonblind/seat-1/run.json",
+   "bench27-slots3-20261005/treatment-review/D064-repairs.nonblind/render-copy/run.json",
+   "bench27-slots3-20261005/paired-c3/rep-1/seat-1/run.json"
+  ],
+  "job_aaeb5e37627770bf243728b997c3f049": [
+   "bench27-slots3-20261005/treatment-review/form.nonblind/seat-1/run.json",
+   "bench27-slots3-20261005/treatment-review/D064-repairs.nonblind/render-copy/run.json",
+   "bench27-slots3-20261005/paired-c3/rep-1/seat-1/run.json"
+  ],
+  "job_2ebb5b99e57303200d40cb9a482929cc": [
+   "bench27-slots3-20261005/treatment-review/form.nonblind/seat-1/run.json",
+   "bench27-slots3-20261005/treatment-review/D064-repairs.nonblind/render-copy/run.json",
+   "bench27-slots3-20261005/paired-c3/rep-1/seat-1/run.json"
+  ],
+  "job_1c9ce4545cea16b1b9a95689e69ed612": [
+   "bench27-slots3-20261005/treatment-review/form.nonblind/seat-1/run.json",
+   "bench27-slots3-20261005/treatment-review/D064-repairs.nonblind/render-copy/run.json",
+   "bench27-slots3-20261005/paired-c3/rep-1/seat-1/run.json"
+  ],
+  "job_b6ef5e244614b7c298fd83005dbfe1a1": [
+   "bench27-slots3-20261005/treatment-review/form.nonblind/seat-1/run.json",
+   "bench27-slots3-20261005/treatment-review/D064-repairs.nonblind/render-copy/run.json",
+   "bench27-slots3-20261005/paired-c3/rep-1/seat-1/run.json"
+  ],
+  "job_5e1631e9829ce9e4f4e11d8fe4a4ab18": [
+   "bench27-slots3-20261005/paired-c3/rep-1/seat-0/run.json",
+   "bench27-slots3-20261005/control-review/form.nonblind/seat-0/run.json",
+   "bench27-slots3-20261005/control-review/D065-repairs.nonblind/render-copy/run.json"
+  ],
+  "job_96a7cb16d85c76ba3d04266db0780c21": [
+   "bench27-slots3-20261005/paired-c3/rep-1/seat-0/run.json",
+   "bench27-slots3-20261005/control-review/form.nonblind/seat-0/run.json",
+   "bench27-slots3-20261005/control-review/D065-repairs.nonblind/render-copy/run.json"
+  ],
+  "job_c9dbde94b6d5838c5276b5dd032834b0": [
+   "bench27-slots3-20261005/paired-c3/rep-1/seat-0/run.json",
+   "bench27-slots3-20261005/control-review/form.nonblind/seat-0/run.json",
+   "bench27-slots3-20261005/control-review/D065-repairs.nonblind/render-copy/run.json"
+  ],
+  "job_d2cdc2408b74fa8c4b30de4357470ab3": [
+   "bench27-slots3-20261005/paired-c3/rep-1/seat-0/run.json",
+   "bench27-slots3-20261005/control-review/form.nonblind/seat-0/run.json",
+   "bench27-slots3-20261005/control-review/D065-repairs.nonblind/render-copy/run.json"
+  ],
+  "job_425d476b4e1bb2670dca3a450d222e74": [
+   "bench27-slots3-20261005/paired-c3/rep-1/seat-0/run.json",
+   "bench27-slots3-20261005/control-review/form.nonblind/seat-0/run.json",
+   "bench27-slots3-20261005/control-review/D065-repairs.nonblind/render-copy/run.json"
+  ],
+  "job_577cb213ff0a9842907eddba13940947": [
+   "bench27-slots3-20261005/paired-c3/rep-1/seat-0/run.json",
+   "bench27-slots3-20261005/control-review/form.nonblind/seat-0/run.json",
+   "bench27-slots3-20261005/control-review/D065-repairs.nonblind/render-copy/run.json"
+  ],
+  "job_e34e8e53e028c6612408dfd62a83c515": [
+   "codex-20261003/lap-c/work_f81751409d6f42629951fdb3081eb30a/run.json"
+  ],
+  "job_8945d242cb6bbb39996059188c8361cb": [
+   "codex-20261003/lap-c/work_9fbf128ca9ba417684f8f4043f4a9770/run.json"
+  ],
+  "job_715405bd0c464e5620615d2851f03a56": [
+   "codex-20261003/lap-c/work_df29fd33aef342479f80173e5fbdc916/run.json"
+  ],
+  "job_dbe7a62a37717bc5a06ea752ce749c46": [
+   "codex-20261003/lap-c/work_fc4586044b954cd8ab8ba23d5b4920b7/run.json"
+  ],
+  "job_5449c76eb7162dbeedac6cda5306f976": [
+   "codex-20261003/lap-c/work_a5c2a614c9024279bacf6263b914ecd5/run.json"
+  ],
+  "job_45b8deaed5d49ede2de185fc44e79ce9": [
+   "codex-20261003/lap-c/work_faf5c0e9de95410999268c728414e6c3/run.json"
+  ],
+  "job_40981bfc8d52f9838089be5959339822": [
+   "codex-20261003/lap-a-exact-live/work_4213f7d10d134582912f187a54bbfa63/run.json"
+  ],
+  "job_be416513be8fd542579edf05cd33eb8a": [
+   "codex-20261003/lap-a-exact-live/work_4213f7d10d134582912f187a54bbfa63/run.json"
+  ],
+  "job_fefcb0b02908076f23cc8d9ed1bfdb7e": [
+   "codex-20261003/lap-a-exact-live/work_4239001175574e2399fa0c78f4553cc9/run.json"
+  ],
+  "job_0ebdb7deb726f45a5e0c92c1a1e11a88": [
+   "codex-20261003/lap-a-exact-live/work_5d1482cd02e648cf87499abc8b1f267d/run.json"
+  ],
+  "job_12cd90b976e13251f08bbdda687c0c4b": [
+   "codex-20261003/lap-a-exact-live/work_5d1482cd02e648cf87499abc8b1f267d/run.json"
+  ],
+  "job_7b508e24393946a8c0b3a70342f566e2": [
+   "codex-20261003/lap-a-exact-live/work_5d1482cd02e648cf87499abc8b1f267d/run.json"
+  ],
+  "job_ec83fdd122e4d17802a769f41ebd411d": [
+   "codex-20261003/lap-a-live/work_9e43d8331134484f8ca070e7a1f35dab/run.json"
+  ],
+  "job_db00f4f64fe03b7f16f6d177c8071fcd": [
+   "codex-20261003/lap-a-live/work_9e43d8331134484f8ca070e7a1f35dab/run.json"
+  ],
+  "job_79484f73b00769ed41fc007acdc268ad": [
+   "codex-20261003/lap-a-live/work_3c840a285ea4477f97a1fc7d750c436e/run.json"
+  ],
+  "job_a811f7511a1e084fe4aa306277b9f668": [
+   "codex-20261003/lap-a-live/work_baa95cd6b363447e9158011ffb3d1752/run.json"
+  ],
+  "job_557b29cac73b5140841aab930235ec8e": [
+   "codex-20261003/lap-a-live/work_baa95cd6b363447e9158011ffb3d1752/run.json"
+  ],
+  "job_87398d950ecd9f31c316e6cdf82d17cf": [
+   "codex-20261003/lap-a-live/work_97623443df394f8889343b154c7f6dff/run.json"
+  ],
+  "job_fd247a2341b10fcb99d64611be73a4d5": [
+   "codex-20261003/lap-a-live/work_c90f40b9a7de444291105358e6472fbe/run.json"
+  ],
+  "job_b83d20bddbcd5fd3895cd8c632b4732a": [
+   "bench27-parity-20261005/bench27-20261005-parity/rep-3/seat-0/run.json"
+  ],
+  "job_19e8c200ef0ac51a0db1d71634e88542": [
+   "bench27-parity-20261005/bench27-20261005-parity/rep-3/seat-0/run.json"
+  ],
+  "job_4949e15a41ab2f0c53fc64abc4600b61": [
+   "bench27-parity-20261005/bench27-20261005-parity/rep-3/seat-1/run.json"
+  ],
+  "job_c9793e13cab7aa98e394bd28dbe6e888": [
+   "bench27-parity-20261005/bench27-20261005-parity/rep-3/seat-1/run.json"
+  ],
+  "job_a7892e008eab89bdfa0656667d746c1e": [
+   "bench27-parity-20261005/bench27-20261005-parity/rep-4/seat-0/run.json"
+  ],
+  "job_e2cb1e1b03872e333f59cb0326d9d01f": [
+   "bench27-parity-20261005/bench27-20261005-parity/rep-4/seat-0/run.json"
+  ],
+  "job_649f6bcedd4ba66260cd3284431c33fe": [
+   "bench27-parity-20261005/bench27-20261005-parity/rep-4/seat-0/run.json"
+  ],
+  "job_424c6bf606a7d3aff947419d8c00c6a3": [
+   "bench27-parity-20261005/bench27-20261005-parity/rep-4/seat-0/run.json"
+  ],
+  "job_0417860fa8859653d539962514a61e3c": [
+   "bench27-parity-20261005/bench27-20261005-parity/rep-4/seat-1/run.json"
+  ],
+  "job_76f5565e69cfa4c62ee080c6a3caabda": [
+   "bench27-parity-20261005/bench27-20261005-parity/rep-4/seat-1/run.json"
+  ],
+  "job_02250fded607b7129a9bb9d263ea78af": [
+   "bench27-parity-20261005/bench27-20261005-parity/rep-4/seat-1/run.json"
+  ],
+  "job_05b76c5901ec8e8b4c23b6bb263a4193": [
+   "bench27-parity-20261005/bench27-20261005-parity/rep-4/seat-1/run.json"
+  ],
+  "job_e9f87520bd3ea13608153b6ceb54849c": [
+   "bench27-parity-20261005/bench27-20261005-parity/rep-2/seat-0/run.json"
+  ],
+  "job_8bd50027ad357f99c8b937a6367ecc9b": [
+   "bench27-parity-20261005/bench27-20261005-parity/rep-2/seat-0/run.json"
+  ],
+  "job_80683371d20da03765c6aa798842a6dc": [
+   "bench27-parity-20261005/bench27-20261005-parity/rep-2/seat-1/run.json"
+  ],
+  "job_c5297f7138c4542ea9eb404d98756b83": [
+   "bench27-parity-20261005/bench27-20261005-parity/rep-2/seat-1/run.json"
+  ],
+  "job_fc8b671a9398752c2a83387c6f7c8e0b": [
+   "bench27-parity-20261005/r6/seat-0/run.json"
+  ],
+  "job_bfdc7f5fd484ff2d5552c6c26961abf7": [
+   "bench27-parity-20261005/r6/seat-0/run.json"
+  ],
+  "job_71a12e4b7dffe4aafbf7525b5cf8c946": [
+   "bench27-parity-20261005/r6/seat-1/run.json"
+  ],
+  "job_d4778ae1882f04b2b1efd41f4e465ff8": [
+   "bench27-parity-20261005/r6/seat-1/run.json"
+  ],
+  "job_81f668c30f97c77f8482b75c4a7b6e64": [
+   "bench27-parity-20261005/r5/seat-0/run.json"
+  ],
+  "job_21cc10e210d0931da02b4947d5666aa8": [
+   "bench27-parity-20261005/r5/seat-0/run.json"
+  ],
+  "job_ebecf13eca463c60398f905e8aeaaa6d": [
+   "bench27-parity-20261005/r5/seat-1/run.json"
+  ],
+  "job_dcf2572727ef0faf74ad0321b3e55841": [
+   "bench27-parity-20261005/r5/seat-1/run.json"
+  ],
+  "job_63a67c1bc4c29a11568d45ba1fc333b7": [
+   "bench27-parity-20261005/r1/seat-0/run.json"
+  ],
+  "job_43f504b8aa7a5d0baf85e0e1084ab736": [
+   "bench27-parity-20261005/r1/seat-0/run.json"
+  ],
+  "job_072a81cf408921198dc376e8960a7489": [
+   "bench27-parity-20261005/r1/seat-1/run.json"
+  ],
+  "job_49a5bbd0bcea13c1d46629986e9498dc": [
+   "bench27-parity-20261005/r1/seat-1/run.json"
+  ],
+  "job_96e7ff6cdb225062b94310a2c624497c": [
+   "bench27-ssm-20261005/pass-a-c1-review/form.nonblind/sample-02/run.json",
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a/rep-1/seat-0/run.json"
+  ],
+  "job_6f252bada4e27e35c80862a39789d291": [
+   "bench27-ssm-20261005/pass-a-c1-review/form.nonblind/sample-02/run.json",
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a/rep-1/seat-0/run.json"
+  ],
+  "job_38ae64c2c89e3c2faee8b473769f2fc6": [
+   "bench27-ssm-20261005/pass-a-c1-review/form.nonblind/sample-01/run.json",
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a/rep-1/seat-1/run.json"
+  ],
+  "job_40759b5f0c9e9c9bc1a93b7cf6745138": [
+   "bench27-ssm-20261005/pass-a-c1-review/form.nonblind/sample-01/run.json",
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a/rep-1/seat-1/run.json"
+  ],
+  "job_e7a987da083df01c90806128468efc0c": [
+   "bench27-ssm-20261005/pass-b-c1-review/form.nonblind/sample-02/run.json",
+   "bench27-ssm-20261005/pass-b-c1-review/D058-repairs.nonblind/report-02/render-copy/run.json",
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b/rep-1/seat-0/run.json"
+  ],
+  "job_42dedf357d77cfa5d9e0974938d3acb2": [
+   "bench27-ssm-20261005/pass-b-c1-review/form.nonblind/sample-02/run.json",
+   "bench27-ssm-20261005/pass-b-c1-review/D058-repairs.nonblind/report-02/render-copy/run.json",
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b/rep-1/seat-0/run.json"
+  ],
+  "job_d39d3180d6a6ce98eebaadc4306cc824": [
+   "bench27-ssm-20261005/pass-b-c1-review/form.nonblind/sample-01/run.json",
+   "bench27-ssm-20261005/pass-b-c1-review/D058-repairs.nonblind/report-01/render-copy/run.json",
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b/rep-1/seat-1/run.json"
+  ],
+  "job_6fda1efcf15bfa61f08d644a16e03d50": [
+   "bench27-ssm-20261005/pass-b-c1-review/form.nonblind/sample-01/run.json",
+   "bench27-ssm-20261005/pass-b-c1-review/D058-repairs.nonblind/report-01/render-copy/run.json",
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b/rep-1/seat-1/run.json"
+  ],
+  "job_b75dd213e643f4621fe07d2d84eab838": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-a/rep-3/seat-0/run.json"
+  ],
+  "job_ba4f3f3ec8862ff76ebb838b43563b1a": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-a/rep-3/seat-0/run.json"
+  ],
+  "job_5e8a0ceba5dbada2b28b78e7c9bc1c30": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-a/rep-3/seat-1/run.json"
+  ],
+  "job_8d7a97027fbd743e7a202c09c4f88480": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-a/rep-3/seat-1/run.json"
+  ],
+  "job_29dfa14e8d8ade5e57f8b727e1b7b7ed": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-a/rep-1/seat-0/run.json"
+  ],
+  "job_52e9b00e892a65a050f5aa6d8ffd9999": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-a/rep-1/seat-0/run.json"
+  ],
+  "job_89f2018314b83f3dd662c29a4ebbc7f8": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-a/rep-1/seat-1/run.json"
+  ],
+  "job_e9105ad87cbc1768910663ce03fb87dc": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-a/rep-1/seat-1/run.json"
+  ],
+  "job_a29dd85b61429aee0a9ce5dd679f4f13": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-a/rep-4/seat-0/run.json"
+  ],
+  "job_d789b18e5be70b9e50ff90be95c31f53": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-a/rep-4/seat-0/run.json"
+  ],
+  "job_6681b8156366ea9ddb79f3cf6651e0f7": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-a/rep-4/seat-1/run.json"
+  ],
+  "job_2beb7ea04a8f59e69171ca09cc7d94a9": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-a/rep-4/seat-1/run.json"
+  ],
+  "job_8391372d6560c5db231bd182e33e2d35": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-a/rep-2/seat-0/run.json"
+  ],
+  "job_9ce755aa598bf3a8d14258fecf5849ca": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-a/rep-2/seat-0/run.json"
+  ],
+  "job_f66e085624bd45be5608a70aa68b7f6a": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-a/rep-2/seat-1/run.json"
+  ],
+  "job_ade53b73fd44928fcbca25258fdf6a32": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-a/rep-2/seat-1/run.json"
+  ],
+  "job_e8ad6b21084427ae0d15e9a943829886": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-b-retry1/rep-3/seat-0/run.json"
+  ],
+  "job_10359efaa7b01dd56631810693a1dd8c": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-b-retry1/rep-3/seat-0/run.json"
+  ],
+  "job_82b77b6f2683ec96c26b44f8020f51ef": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-b-retry1/rep-3/seat-1/run.json"
+  ],
+  "job_123e2f9a69d4e0a8191910f4b97c5ba0": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-b-retry1/rep-3/seat-1/run.json"
+  ],
+  "job_16ecda3d2a5cc95ba55ce51c12a4ba6c": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-b-retry1/rep-1/seat-0/run.json"
+  ],
+  "job_9857eebff8f62ae81216ac77ce084eb5": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-b-retry1/rep-1/seat-0/run.json"
+  ],
+  "job_ac5370a1b4f28ef82ab3e527618c476d": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-b-retry1/rep-1/seat-1/run.json"
+  ],
+  "job_c6e5962f30e5a7fdedcb96407c04aca4": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-b-retry1/rep-1/seat-1/run.json"
+  ],
+  "job_94df4374d43031df6572cdd1f2dc004d": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-b-retry1/rep-4/seat-0/run.json"
+  ],
+  "job_9c140df6d2a4ef6a65ac22cb445d293a": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-b-retry1/rep-4/seat-0/run.json"
+  ],
+  "job_1cfbe30e116630ab6b8583841b249e96": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-b-retry1/rep-4/seat-1/run.json"
+  ],
+  "job_527ca59564ebfca23849da8f21d9b5e2": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-b-retry1/rep-4/seat-1/run.json"
+  ],
+  "job_5815daf53ea740c22513a213a9ad6333": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-b-retry1/rep-2/seat-0/run.json"
+  ],
+  "job_253937dd2705273d27e2b5b10c51e5bb": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-b-retry1/rep-2/seat-0/run.json"
+  ],
+  "job_0a312e008091970f96f83d796535103c": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-b-retry1/rep-2/seat-1/run.json"
+  ],
+  "job_66f62f27b37f8c7b2a49d6ffbb35f898": [
+   "bench27-arms-20261005/bench27-20261005-mtp3-pass-b-retry1/rep-2/seat-1/run.json"
+  ],
+  "job_07611d2bb0b1d8f9ef77080fa2a28bc0": [
+   "qwen38-thinking-pilot-20261003/E3-native-flash/run.json"
+  ],
+  "job_198dc65d07fb35b3faa397b4ea6a818e": [
+   "qwen38-thinking-pilot-20261003/E3-native-flash/run.json"
+  ],
+  "job_64a79d819197f4bfef876294b986d69d": [
+   "qwen38-thinking-pilot-20261003/E3-native-flash-canary/run.json"
+  ],
+  "job_f7b022c8248029fc18d5e9c47b0c1b72": [
+   "qwen38-thinking-pilot-20261003/E3-native-flash-canary/run.json"
+  ],
+  "job_0cd1b75c43e15efb214204b6f4f98da4": [
+   "qwen38-thinking-pilot-20261003/E1-mtp2-r2/run.json"
+  ],
+  "job_a755303ce539485552ee6af74cc0d399": [
+   "qwen38-thinking-pilot-20261003/E1-mtp2-r2/run.json"
+  ],
+  "job_0e0912e6147b0b85ab1b8bb557c9b2c4": [
+   "qwen38-thinking-pilot-20261003/smoke-live-092829/run.json"
+  ],
+  "job_3e51452931dea06ded4c26a30b68852b": [
+   "qwen38-thinking-pilot-20261003/smoke-live-092829/run.json"
+  ],
+  "job_53a74c6e4ed14459221dea3cb850336b": [
+   "qwen38-thinking-pilot-20261003/E0-baseline/run.json"
+  ],
+  "job_89468f816b8de96a4536b7c7852a2aeb": [
+   "qwen38-thinking-pilot-20261003/E0-baseline/run.json"
+  ],
+  "job_0d8c1a9f1c888e078b566dcbceab22a7": [
+   "qwen38-thinking-pilot-20261003/Q1-flashb/sizing-c2/run.json"
+  ],
+  "job_73a41713a49753bb12c3c0dfb85c15c9": [
+   "qwen38-thinking-pilot-20261003/Q1-flashb/sizing-c2/run.json"
+  ],
+  "job_c85b7e1ed6a1b6bd069fe9485e49fd19": [
+   "qwen38-thinking-pilot-20261003/Q1-flashb/sizing-c2/run.json"
+  ],
+  "job_c48fbc8f9ef927ebf4d050512df43d92": [
+   "qwen38-thinking-pilot-20261003/Q1-flashb/sizing-c2/run.json"
+  ],
+  "job_51ccc24b791b418826f8481574f7d2a7": [
+   "qwen38-thinking-pilot-20261003/Q1-flashb/needle12/run.json"
+  ],
+  "job_67055c5acb36e3e60b2d5c4dbaf05174": [
+   "qwen38-thinking-pilot-20261003/Q1-flashb/needle12/run.json"
+  ],
+  "job_abb4db6bf08b636bb7f541b777f454ee": [
+   "qwen38-thinking-pilot-20261003/Q1-flashb/needle40/run.json"
+  ],
+  "job_995383fc85a6fc3acddddd12c8cacf30": [
+   "qwen38-thinking-pilot-20261003/Q1-flashb/needle40/run.json"
+  ],
+  "job_6169bfa97c76350c222d1c116afa2922": [
+   "qwen38-thinking-pilot-20261003/Q1-flashb/sizing/run.json"
+  ],
+  "job_9fc0e7ecf890fbcb9372ac26714c11eb": [
+   "qwen38-thinking-pilot-20261003/Q1-flashb/sizing/run.json"
+  ],
+  "job_b4ea17bd8989a4a5eac7de3d93f31b5e": [
+   "qwen38-thinking-pilot-20261003/Q1-flashb/backoff/run.json"
+  ],
+  "job_bdadd2b77e898d5dab5fa66b83de0c31": [
+   "qwen38-thinking-pilot-20261003/Q1-flashb/backoff/run.json"
+  ],
+  "job_4f08707a67a1a7f7005cef6512f63955": [
+   "qwen38-thinking-pilot-20261003/Q1-flash/needle12/run.json"
+  ],
+  "job_12ef5fdb3179a354a80c2404f716ba0e": [
+   "qwen38-thinking-pilot-20261003/Q3-flash-mtp2/needle40/run.json"
+  ],
+  "job_34df72b34eb5d79b9f6f7f270be54306": [
+   "qwen38-thinking-pilot-20261003/Q3-flash-mtp2/needle40/run.json"
+  ],
+  "job_bbc97cfb2f7615927f6f7cca580ec3f6": [
+   "qwen38-thinking-pilot-20261003/Q3-flash-mtp2/sizing/run.json"
+  ],
+  "job_6ef477473bb8d8b93d0ce1e800106dd4": [
+   "qwen38-thinking-pilot-20261003/Q3-flash-mtp2/sizing/run.json"
+  ],
+  "job_48dff92e27a1e5372cbaa7c313cdc289": [
+   "qwen38-thinking-pilot-20261003/Q3-flash-mtp2/backoff/run.json"
+  ],
+  "job_2b12daa24aa7cac610b8ca13e39dcd70": [
+   "qwen38-thinking-pilot-20261003/Q3-flash-mtp2/backoff/run.json"
+  ],
+  "job_289810de085ff9a69df16699dc6b9e99": [
+   "qwen38-thinking-pilot-20261003/Q5-triton-control/series/needle40/run.json"
+  ],
+  "job_0502894194895d1f0081656145696252": [
+   "qwen38-thinking-pilot-20261003/Q5-triton-control/series/needle40/run.json"
+  ],
+  "job_8dbb334a051b1762532a3025c37bb33c": [
+   "qwen38-thinking-pilot-20261003/Q5-triton-control/series/sizing/run.json"
+  ],
+  "job_def2cf1d659d2c260ce787364f616cb1": [
+   "qwen38-thinking-pilot-20261003/Q5-triton-control/series/sizing/run.json"
+  ],
+  "job_f4f8c92b91fef58c970e0e9890b410db": [
+   "qwen38-thinking-pilot-20261003/Q5-triton-control/series/backoff/run.json"
+  ],
+  "job_6c124d319884876ac63b68206c1d3278": [
+   "qwen38-thinking-pilot-20261003/Q5-triton-control/series/backoff/run.json"
+  ],
+  "job_d1c0b59455f7ad905c19105100f0aa1f": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b-open-arbiter/rep-1/seat-0/run.json"
+  ],
+  "job_cfc2a9bea731a991c242a9d9ba95bc34": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b-open-arbiter/rep-1/seat-0/run.json"
+  ],
+  "job_e05579f634971ae04c443067fe6751b9": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b-open-arbiter/rep-1/seat-1/run.json"
+  ],
+  "job_37e07d6ea49a573e50abe367352d9b8e": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b-open-arbiter/rep-1/seat-1/run.json"
+  ],
+  "job_31981b197421434b6d6fac35e7ef2e49": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_d9b42b456f1e697d98d41834a4e7a0ef": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_43dd00e5b15297602f2a1187f62613ef": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_4dcc89224cb1d4becd13c5fc9440d97c": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_59091c382a8ca84c7698d1472c880557": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_f65b066c3b3f2f481e4125150cdd601b": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_a86f6f7b2ad1a920fd97719c7f53ce1f": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_e847c576b763630849f48159b63568b0": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_83b37ff03d577416262c8c15bb8fb8f1": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a-open-admission/rep-1/seat-0/run.json"
+  ],
+  "job_2d4435ec90307fe7ee4440be2ae733bd": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a-open-admission/rep-1/seat-0/run.json"
+  ],
+  "job_8c8e9e051a095814a9fffa5f6ef49a43": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a-open-admission/rep-1/seat-1/run.json"
+  ],
+  "job_37e09e18606c3cac43cba76dfaa01596": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a-open-admission/rep-1/seat-1/run.json"
+  ],
+  "job_851e2b2678cdead4f6fb8a38bf2fb2aa": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_1dbf340855fa1702a54040a03577e0c1": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_dc24b3c64fb38de95007a4e3d3276533": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_1498f7357407798ef802e6ac1cf5b213": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_5409e0a61f163dfcd3c973736051d939": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a-open-arbiter/rep-1/seat-0/run.json"
+  ],
+  "job_638055873cc6bbbf4255a603d64329fd": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a-open-arbiter/rep-1/seat-0/run.json"
+  ],
+  "job_583250ea04dcd8c264debdb6e74ed4e0": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a-open-arbiter/rep-1/seat-1/run.json"
+  ],
+  "job_051ec63b8538f72eac638aacfceb4d95": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a-open-arbiter/rep-1/seat-1/run.json"
+  ],
+  "job_c92734134e81c2d328a2c37060e248ab": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_ae701fb1258769c053b8cf856816847a": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_e97a481d19edf32884119dc81cefebab": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_14c345f60ca38240c315fcddf7834390": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_b087d067820273d57473ff21f962f121": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_dc7e20bf4071fbc014a9b5167728fadc": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_392c1d120c10ce287a521e52c642bd36": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_3dc74f062c5ddc47b76377ae34f288b8": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_fe83b1a7f4b00dba99935c8dd44b0623": [
+   "bench27-more-arms-20261005/bench27-mtp3-needles-pass-a-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_c37809b09ebdfcf4a8d714d45d98bb0f": [
+   "bench27-more-arms-20261005/bench27-mtp3-needles-pass-a-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_d765ae00d97601aa2fe9bb01f2025108": [
+   "bench27-more-arms-20261005/bench27-mtp3-needles-pass-a-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_2106c25ea4de377d592f3c6e589e9d51": [
+   "bench27-more-arms-20261005/bench27-mtp3-needles-pass-a-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_f4a806681d9b98d28c80c3162abbcf33": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_e38112d4a4225ba598c69256a7274c04": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_77ddbfdafc767d2b7a07b39c602102cd": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_2b14d4ad702163db18e1961a5cc36192": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_547d05edad0946089e225d83cce5da59": [
+   "bench27-more-arms-20261005/bench27-mtp3-needles-pass-b-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_1f68c682cef4caab0ad94757d1480cb4": [
+   "bench27-more-arms-20261005/bench27-mtp3-needles-pass-b-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_00f5cb8b954dbd1424861c8b1fecc3f6": [
+   "bench27-more-arms-20261005/bench27-mtp3-needles-pass-b-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_741b110472884763561dcb764c5de3a8": [
+   "bench27-more-arms-20261005/bench27-mtp3-needles-pass-b-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_8f2d22e063af71aaa989c2ce749ac80d": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-5/seat-0/run.json",
+   "bench27-mem085-20261005/pass-a-c2-review/form.nonblind/seat-0/run.json"
+  ],
+  "job_1aa6c802e6cfa63ef6650f0ec75b20c6": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-5/seat-0/run.json",
+   "bench27-mem085-20261005/pass-a-c2-review/form.nonblind/seat-0/run.json"
+  ],
+  "job_cbdddc4b6fc256e9a149c1440e960a0f": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-5/seat-0/run.json",
+   "bench27-mem085-20261005/pass-a-c2-review/form.nonblind/seat-0/run.json"
+  ],
+  "job_3e473f5e244eb64637d6ce9635f40594": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-5/seat-0/run.json",
+   "bench27-mem085-20261005/pass-a-c2-review/form.nonblind/seat-0/run.json"
+  ],
+  "job_d4e64868fae3f06b553c2c97d2ce266b": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-5/seat-1/run.json",
+   "bench27-mem085-20261005/D043-quote-repairs/A-seat1-conv2/render-copy/run.json",
+   "bench27-mem085-20261005/pass-a-c2-review/form.nonblind/seat-1/run.json",
+   "bench27-mem085-20261005/pass-a-c2-review/repair-report03.nonblind/render-copy/run.json"
+  ],
+  "job_6e44a8c186c126b269ebd1abf1473e5e": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-5/seat-1/run.json",
+   "bench27-mem085-20261005/D043-quote-repairs/A-seat1-conv2/render-copy/run.json",
+   "bench27-mem085-20261005/pass-a-c2-review/form.nonblind/seat-1/run.json",
+   "bench27-mem085-20261005/pass-a-c2-review/repair-report03.nonblind/render-copy/run.json"
+  ],
+  "job_7b5c55405cc69b9fdcadc29d8b18a35a": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-5/seat-1/run.json",
+   "bench27-mem085-20261005/D043-quote-repairs/A-seat1-conv2/render-copy/run.json",
+   "bench27-mem085-20261005/pass-a-c2-review/form.nonblind/seat-1/run.json",
+   "bench27-mem085-20261005/pass-a-c2-review/repair-report03.nonblind/render-copy/run.json"
+  ],
+  "job_0e6feb3fb8b3e2acff7bae46cf2bc962": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-5/seat-1/run.json",
+   "bench27-mem085-20261005/D043-quote-repairs/A-seat1-conv2/render-copy/run.json",
+   "bench27-mem085-20261005/pass-a-c2-review/form.nonblind/seat-1/run.json",
+   "bench27-mem085-20261005/pass-a-c2-review/repair-report03.nonblind/render-copy/run.json"
+  ],
+  "job_ccf85429a14f42384b14043565f5ef03": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-3/seat-0/run.json",
+   "bench27-mem085-20261005/pass-a-c1-review/form.nonblind/sample-08/run.json"
+  ],
+  "job_f0e3b482ae6ce0f1c151750f46e5f5b6": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-3/seat-0/run.json",
+   "bench27-mem085-20261005/pass-a-c1-review/form.nonblind/sample-08/run.json"
+  ],
+  "job_3d12554507fd4465f02271d6b58f1f29": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-3/seat-1/run.json",
+   "bench27-mem085-20261005/pass-a-c1-review/form.nonblind/sample-01/run.json"
+  ],
+  "job_a8bfb939415a7996cbc198ac365c07f1": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-3/seat-1/run.json",
+   "bench27-mem085-20261005/pass-a-c1-review/form.nonblind/sample-01/run.json"
+  ],
+  "job_f41f2711ebc0007c3ff7616100b64fce": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-1/seat-0/run.json",
+   "bench27-mem085-20261005/pass-a-c1-review/form.nonblind/sample-02/run.json"
+  ],
+  "job_ab8cd9af588d5aa2470ef51d466ffb69": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-1/seat-0/run.json",
+   "bench27-mem085-20261005/pass-a-c1-review/form.nonblind/sample-02/run.json"
+  ],
+  "job_728de488ee24522209b574767830e04a": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-1/seat-1/run.json",
+   "bench27-mem085-20261005/pass-a-c1-review/form.nonblind/sample-07/run.json"
+  ],
+  "job_6e9aa932d7ba7db71055ae57be10798e": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-1/seat-1/run.json",
+   "bench27-mem085-20261005/pass-a-c1-review/form.nonblind/sample-07/run.json"
+  ],
+  "job_e8cdb5453f96d61c943cf26819e3a2f2": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-4/seat-0/run.json",
+   "bench27-mem085-20261005/pass-a-c1-review/form.nonblind/sample-03/run.json"
+  ],
+  "job_a29416d61bfc63b5658ff3a530093610": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-4/seat-0/run.json",
+   "bench27-mem085-20261005/pass-a-c1-review/form.nonblind/sample-03/run.json"
+  ],
+  "job_5d32f5091841a91b3802b5b8bf339cdf": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-4/seat-1/run.json",
+   "bench27-mem085-20261005/pass-a-c1-review/form.nonblind/sample-06/run.json"
+  ],
+  "job_7d243f316ede92c54af400178d23ff0d": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-4/seat-1/run.json",
+   "bench27-mem085-20261005/pass-a-c1-review/form.nonblind/sample-06/run.json"
+  ],
+  "job_c5121d0199ae422989f0f16105cbc24f": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-2/seat-0/run.json",
+   "bench27-mem085-20261005/pass-a-c1-review/form.nonblind/sample-05/run.json"
+  ],
+  "job_ecdb6aacee7ae9a71beaff8cad1daf4e": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-2/seat-0/run.json",
+   "bench27-mem085-20261005/pass-a-c1-review/form.nonblind/sample-05/run.json"
+  ],
+  "job_f6c5d7b6cca251997eaf37350653dac4": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-2/seat-1/run.json",
+   "bench27-mem085-20261005/pass-a-c1-review/form.nonblind/sample-04/run.json"
+  ],
+  "job_6818218f77d992bdc312f414f2d04b73": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a/rep-2/seat-1/run.json",
+   "bench27-mem085-20261005/pass-a-c1-review/form.nonblind/sample-04/run.json"
+  ],
+  "job_1cb86bfd96e3b93f2fc906667ec1cd5c": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_36c39dec6c73b0bdda8cc79e1ff47c5a": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_f9005fb478b4865cd7925600d3e00347": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_2b93badc6fa8af42bb9baacdc3290491": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_e45215e78165b2f3dce11cdf8839a094": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_b874ab4b5865da73f86be541a7e63e61": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_7267da5acc5525f8faa6ad7896bf650d": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_a48323d902cd1d96af029b2a57ba8615": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_768476def2eea5f32ad8bf793e2d4acd": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a/rep-3/seat-0/run.json"
+  ],
+  "job_c392449270f04a93a9b2fa1a5dbfc4c1": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a/rep-3/seat-0/run.json"
+  ],
+  "job_5d7fe9f695fced1854989a6d385b7ae4": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a/rep-3/seat-1/run.json"
+  ],
+  "job_a38189d6571cbd2478af8b3c48117976": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a/rep-3/seat-1/run.json"
+  ],
+  "job_8d464931c5e3dee334e3d2f965ec81f3": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a/rep-1/seat-0/run.json"
+  ],
+  "job_2345165295397065af210e62b28015c8": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a/rep-1/seat-0/run.json"
+  ],
+  "job_7e4edebe5e2c24e9eb1e83dfda14ed0e": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a/rep-1/seat-1/run.json"
+  ],
+  "job_c5c332f2c3f9b316e793cded7a9ce351": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a/rep-1/seat-1/run.json"
+  ],
+  "job_dca0b1d4b547ec2d38f1ac30e1bc221c": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a/rep-4/seat-0/run.json"
+  ],
+  "job_a6de72b1c990e8131a673d51b24dd29b": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a/rep-4/seat-0/run.json"
+  ],
+  "job_f3e285df916496cb57287845c076dabf": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a/rep-4/seat-1/run.json"
+  ],
+  "job_f97609d9dc3328238720ee17bc9787da": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a/rep-4/seat-1/run.json"
+  ],
+  "job_4026679e2dfdc8766078e3196db93239": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a/rep-2/seat-0/run.json"
+  ],
+  "job_12ce03730f23f7185ddcb7210f4c83d6": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a/rep-2/seat-0/run.json"
+  ],
+  "job_856320110dd5fb32e59fa6794419878b": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a/rep-2/seat-1/run.json"
+  ],
+  "job_1fca4f41d225b4c8d32d350ba2a2961e": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a/rep-2/seat-1/run.json"
+  ],
+  "job_71d89b3a618b352f8914dda9c0ed11fc": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_43b66f610403da8d3a0ea5ea92f6631b": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_d37f64c26c2d4141f391a96d86750770": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_620893ca7ffb63e098d9946bca4aa7ad": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_41d36cbf7ac3177dbef2339bb06f4a44": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_7bb9e3c9ac7b9d390b01074b0ce6389d": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_6db782b96daaa620545e573b0c35901e": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_95e666fb5e1e6a4a404789e3eb803edd": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_fdd7209bc8647609e99dfc33d8e0a693": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-5/seat-0/run.json",
+   "bench27-mem085-20261005/D043-quote-repairs/B-seat0-conv1/render-copy/run.json",
+   "bench27-mem085-20261005/D043-quote-repairs/B-seat0-conv2/render-copy/run.json",
+   "bench27-mem085-20261005/pass-b-c2-review/form.nonblind/seat-0/run.json"
+  ],
+  "job_ab28c853ce434f6e7a6813de3514463e": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-5/seat-0/run.json",
+   "bench27-mem085-20261005/D043-quote-repairs/B-seat0-conv1/render-copy/run.json",
+   "bench27-mem085-20261005/D043-quote-repairs/B-seat0-conv2/render-copy/run.json",
+   "bench27-mem085-20261005/pass-b-c2-review/form.nonblind/seat-0/run.json"
+  ],
+  "job_d30f5640beae0ddb5235804753e5a4b9": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-5/seat-0/run.json",
+   "bench27-mem085-20261005/D043-quote-repairs/B-seat0-conv1/render-copy/run.json",
+   "bench27-mem085-20261005/D043-quote-repairs/B-seat0-conv2/render-copy/run.json",
+   "bench27-mem085-20261005/pass-b-c2-review/form.nonblind/seat-0/run.json"
+  ],
+  "job_71967341668cc02cc3eb18bebd2a4b5d": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-5/seat-0/run.json",
+   "bench27-mem085-20261005/D043-quote-repairs/B-seat0-conv1/render-copy/run.json",
+   "bench27-mem085-20261005/D043-quote-repairs/B-seat0-conv2/render-copy/run.json",
+   "bench27-mem085-20261005/pass-b-c2-review/form.nonblind/seat-0/run.json"
+  ],
+  "job_27bc7200c8533e40d791289ecac8667e": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-5/seat-1/run.json",
+   "bench27-mem085-20261005/pass-b-c2-review/form.nonblind/seat-1/run.json",
+   "bench27-mem085-20261005/pass-b-c2-review/repair-report03.nonblind/render-copy/run.json"
+  ],
+  "job_c95392b8453eb95e9404df0383504d38": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-5/seat-1/run.json",
+   "bench27-mem085-20261005/pass-b-c2-review/form.nonblind/seat-1/run.json",
+   "bench27-mem085-20261005/pass-b-c2-review/repair-report03.nonblind/render-copy/run.json"
+  ],
+  "job_6386aed5047599e4878feed7cd2be7bc": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-5/seat-1/run.json",
+   "bench27-mem085-20261005/pass-b-c2-review/form.nonblind/seat-1/run.json",
+   "bench27-mem085-20261005/pass-b-c2-review/repair-report03.nonblind/render-copy/run.json"
+  ],
+  "job_885e0b368b4d349f84b8be16324589dc": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-5/seat-1/run.json",
+   "bench27-mem085-20261005/pass-b-c2-review/form.nonblind/seat-1/run.json",
+   "bench27-mem085-20261005/pass-b-c2-review/repair-report03.nonblind/render-copy/run.json"
+  ],
+  "job_d63476253fbf61e8a9ae08ea80644830": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-3/seat-0/run.json"
+  ],
+  "job_2e449d221ddcb1f932da046376be4864": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-3/seat-0/run.json"
+  ],
+  "job_e0c87f2456c6f47fbcdb7d1342cbaa5a": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-3/seat-1/run.json"
+  ],
+  "job_b698cc2775a95ac9ea8a695f5ea4895c": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-3/seat-1/run.json"
+  ],
+  "job_02baab5f207dc6a0f100a40a41d1b5a6": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-1/seat-0/run.json",
+   "bench27-mem085-20261005/pass-b-c1-review/form.nonblind/sample-02/run.json"
+  ],
+  "job_2f5925ed92ff17cbb7431d8f9ee2066d": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-1/seat-0/run.json",
+   "bench27-mem085-20261005/pass-b-c1-review/form.nonblind/sample-02/run.json"
+  ],
+  "job_cb9c6128546a4bf19f42b283c2180ac3": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-1/seat-1/run.json",
+   "bench27-mem085-20261005/pass-b-c1-review/form.nonblind/sample-01/run.json"
+  ],
+  "job_024da4b541d3d01bae4bc99a563cb68c": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-1/seat-1/run.json",
+   "bench27-mem085-20261005/pass-b-c1-review/form.nonblind/sample-01/run.json"
+  ],
+  "job_124a20a19465e121613d803506d01d4a": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-4/seat-0/run.json"
+  ],
+  "job_2cf1b8676642fcdbdba33e96d9cfe45d": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-4/seat-0/run.json"
+  ],
+  "job_0eb92fab2dab8cbee7c00ece51db7fb3": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-4/seat-1/run.json"
+  ],
+  "job_2b2f94835393858054e50d1fd8e520de": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-4/seat-1/run.json"
+  ],
+  "job_9437701465770ffbd2bc5bb5584a82fc": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-2/seat-0/run.json"
+  ],
+  "job_5ffcb2790545269946bf2950ebcd7f97": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-2/seat-0/run.json"
+  ],
+  "job_2f51401470c3490bd99cc1512fd6ff3c": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-2/seat-1/run.json"
+  ],
+  "job_10affaf1b35c45ef27dc0aafc9d3d2d8": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b/rep-2/seat-1/run.json"
+  ],
+  "job_175d66a4b4b728e60537c46b9a55aeee": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_a0628debf3adb2b2eba2bd67a750b2b4": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_f7241768d413cac3c688641e84b34986": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_e641b5f71019da232881b8b474b1a721": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-b-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_7bca0fc25290db3a48010dea2adc57fe": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_264989be1a856c90ecda0bc7ab9cab86": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_3254a4a04a878dbf70545fe1e9a11155": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_77b3e6f83ddf819de2f700e15e89e857": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-a-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_9ebfb2ed70c0a0218f40a167fbcebb28": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a/rep-3/seat-0/run.json"
+  ],
+  "job_1bf5033bce0d102c0df0d6461fd02126": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a/rep-3/seat-0/run.json"
+  ],
+  "job_aaadb16f841a63c363b49fe2a1123e90": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a/rep-3/seat-1/run.json"
+  ],
+  "job_1225b591d2c4ff147435a52ac9275f5f": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a/rep-3/seat-1/run.json"
+  ],
+  "job_f92d5b79b780d479134cd25fcc00fe01": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a/rep-4/seat-0/run.json"
+  ],
+  "job_3b84a9e3b9e47f1f74126f073619865e": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a/rep-4/seat-0/run.json"
+  ],
+  "job_2408493579965a72e11889f32f412b67": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a/rep-4/seat-1/run.json"
+  ],
+  "job_2228d5624a306b4d888b4adc1d4f17b9": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a/rep-4/seat-1/run.json"
+  ],
+  "job_ae9cb95047bdafcf031c28bb83355aa6": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a/rep-2/seat-0/run.json"
+  ],
+  "job_0b8b412ebee28dae1fb3ebba04fe3a91": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a/rep-2/seat-0/run.json"
+  ],
+  "job_6b6aaba708009000d27b7835f8954935": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a/rep-2/seat-1/run.json"
+  ],
+  "job_15a7f567cbb2afd6b326a73e33fb58ce": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a/rep-2/seat-1/run.json"
+  ],
+  "job_6d187fa7e0d57d105e632b2ecf664a47": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_82274db1b4f44d30219c67427a82f29c": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_d1f9779a09e27d3c821f5bdd4e9e1cea": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_e3d11fee22a1bedc7ab8bebc251cf965": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_8338df7a570e44f80fc69337ab7be375": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_b8a542e6e6d89bb1e2d67e93f17ac0e2": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_a8b8d61fb9d8f381cbd98653bcbbf59d": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_ace464c3bf80761891bf27f7640a8afc": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_095d10d3f9f3ff377d566b220e3bda3e": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_78de74d6b335e8fa1ed8ca4383680eb1": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_eb4508618e7ddd8185a7b223e334dcf6": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_712dc68067986739c5f971c6b6f33534": [
+   "bench27-more-arms-20261005/bench27-more-mem085-pass-a-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_69b910c43be5c7ee3f57f48d13516aad": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_65ee0f1ccd16726dcc341dbb2bf10737": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_b43df227b916b2d0bd74bfa18b131674": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_0f566bb6b37237d8f3176839c57ee42c": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_8a2da406629bc24f7e44e35e6ab42575": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_3ce955590d9f789d6458adf072e6baf6": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_783e9cdf960df12b47ae50eeec654620": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_c2e49117b0e1b5617db440c62ba475f0": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_e21e1682b96503ef0d4e03f0c067a5b9": [
+   "bench27-more-arms-20261005/bench27-mtp3-needles-pass-a-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_16ac4b89925997de1eb8c83c2e412f8d": [
+   "bench27-more-arms-20261005/bench27-mtp3-needles-pass-a-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_fefa5ff4df868f13e37bb3bb2faa9e72": [
+   "bench27-more-arms-20261005/bench27-mtp3-needles-pass-a-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_ccb96dd7974fc1637c9a3a0880e9c6e0": [
+   "bench27-more-arms-20261005/bench27-mtp3-needles-pass-a-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_2c41b42c09af69c179d1e87d7b454f37": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b/rep-3/seat-0/run.json"
+  ],
+  "job_1fbc533bd19cf20d1ac877402b005af3": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b/rep-3/seat-0/run.json"
+  ],
+  "job_7daf850c0584246c8467b728c634ea98": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b/rep-3/seat-1/run.json"
+  ],
+  "job_bdbd6425060f74383314ca291d034ad4": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b/rep-3/seat-1/run.json"
+  ],
+  "job_202026a0028eeb47efd890edc68c2347": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b/rep-1/seat-0/run.json"
+  ],
+  "job_70ce23f638202cb1e907fe81eeaad9b1": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b/rep-1/seat-0/run.json"
+  ],
+  "job_0e5f36eaa91cda13edd150fc5f084465": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b/rep-1/seat-1/run.json"
+  ],
+  "job_8cfef5256e951d2bf4b02a0004bd7eea": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b/rep-1/seat-1/run.json"
+  ],
+  "job_46e3c7345a3a8ae2f51e11d986b75a36": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b/rep-4/seat-0/run.json"
+  ],
+  "job_1b60789393cd21ceb540d48d51ea6da0": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b/rep-4/seat-0/run.json"
+  ],
+  "job_44717303d8d171be1712901234cd1b2a": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b/rep-4/seat-1/run.json"
+  ],
+  "job_05afc50631faf7fa3c85db3adbb4e4c1": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b/rep-4/seat-1/run.json"
+  ],
+  "job_ec74cc5f820c40db88e9d90f7c9853eb": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b/rep-2/seat-0/run.json"
+  ],
+  "job_c013795aebc5cbe4126beb2feef82054": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b/rep-2/seat-0/run.json"
+  ],
+  "job_8b7929591bf0de199733e98887905cf6": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b/rep-2/seat-1/run.json"
+  ],
+  "job_64d8ff6735a353596e85c5201d250dd9": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b/rep-2/seat-1/run.json"
+  ],
+  "job_c8580a34f31d2a8b750d561bb4398513": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a/rep-3/seat-0/run.json"
+  ],
+  "job_011e285fcb35708209b78fa3638980da": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a/rep-3/seat-0/run.json"
+  ],
+  "job_6df64a9327846527a12f623214cc936e": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a/rep-3/seat-1/run.json"
+  ],
+  "job_5503650e7c58f6ab3ef59e3b63021246": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a/rep-3/seat-1/run.json"
+  ],
+  "job_f3ace41dfeafc4b95f7ace431b1bc815": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a/rep-1/seat-0/run.json"
+  ],
+  "job_49c4731e9bae547172146434e4b747d5": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a/rep-1/seat-0/run.json"
+  ],
+  "job_a50c5d2b6a96605350f3c99f471e6817": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a/rep-1/seat-1/run.json"
+  ],
+  "job_5870e520a7c72038ff8b5698b7e10304": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a/rep-1/seat-1/run.json"
+  ],
+  "job_41ada059b1d6a4aada353c252d47565d": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a/rep-4/seat-0/run.json"
+  ],
+  "job_22858fdfba58ac570fcea61685900727": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a/rep-4/seat-0/run.json"
+  ],
+  "job_ce138319882d75e33db6498a2a0aa7c1": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a/rep-4/seat-1/run.json"
+  ],
+  "job_2e4f59ed00fc230c78ccfd922cb5bb93": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a/rep-4/seat-1/run.json"
+  ],
+  "job_5ff7e218a52c06400f00ae5a09861c6b": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a/rep-2/seat-0/run.json"
+  ],
+  "job_6f4ec162f55dc7aae021a9f4685f8bc7": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a/rep-2/seat-0/run.json"
+  ],
+  "job_22e5b61db03ab2093aa7498eed72331c": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a/rep-2/seat-1/run.json"
+  ],
+  "job_2eecdc0625b9fe39b43be93d4d923bbd": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-a/rep-2/seat-1/run.json"
+  ],
+  "job_6ed7c19bd23fb665bd5e875ab2dc69f0": [
+   "bench27-more-arms-20261005/bench27-mtp3-needles-pass-b-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_9d746f9a25737afcd64879159bbb39aa": [
+   "bench27-more-arms-20261005/bench27-mtp3-needles-pass-b-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_424977a811e4f63d66661ea163d84182": [
+   "bench27-more-arms-20261005/bench27-mtp3-needles-pass-b-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_f9eba3f81bb2ee833044836eefcef889": [
+   "bench27-more-arms-20261005/bench27-mtp3-needles-pass-b-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_f9a38d17d715a1e097a60e8db38c829b": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b-open-admission/rep-1/seat-0/run.json"
+  ],
+  "job_bbb9b49724f27939bd8fe86668312863": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b-open-admission/rep-1/seat-0/run.json"
+  ],
+  "job_faa5c110b5acc1bd7117e5ca9e1c9085": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b-open-admission/rep-1/seat-1/run.json"
+  ],
+  "job_2910d954712624c5dc981af94dffb3ef": [
+   "bench27-more-arms-20261005/bench27-more-fp8-open-pass-b-open-admission/rep-1/seat-1/run.json"
+  ],
+  "job_dbeecb305e12f4b0f5a4cc717391c7b7": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b/rep-3/seat-0/run.json"
+  ],
+  "job_3db51dcce0046558d70ef282d48c0a02": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b/rep-3/seat-0/run.json"
+  ],
+  "job_b9079e81d0ce28f743ac29db7a8a46f8": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b/rep-3/seat-1/run.json"
+  ],
+  "job_e94fcdc225cd1adf5bcfc13ba98ab745": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b/rep-3/seat-1/run.json"
+  ],
+  "job_ab1c8ea6fce5ab13a26eb822449e6651": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b/rep-4/seat-0/run.json"
+  ],
+  "job_bfcbdebbdab9213b09ed3135f3a463c6": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b/rep-4/seat-0/run.json"
+  ],
+  "job_5c8424de605a943aa017560c2e9d8684": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b/rep-4/seat-1/run.json"
+  ],
+  "job_4489c6f6ed5f59cfe3ce35ae20916fe0": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b/rep-4/seat-1/run.json"
+  ],
+  "job_974180b76ff02bb9d40fcd6c8865805f": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b/rep-2/seat-0/run.json"
+  ],
+  "job_e951f2b2938db724144f656e36f10892": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b/rep-2/seat-0/run.json"
+  ],
+  "job_a3295c34fc56a74ebbc06c8e00c5718c": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b/rep-2/seat-1/run.json"
+  ],
+  "job_8bb5fd0748c4fdc92d1312ad312b9e54": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-b/rep-2/seat-1/run.json"
+  ],
+  "job_6b3fc64a96c79f95177c135975cfea45": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-3/seat-0/run.json"
+  ],
+  "job_4f6447e900918a003409d1ce721d9423": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-3/seat-0/run.json"
+  ],
+  "job_540597591b8272964c774130f0561d14": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-3/seat-1/run.json"
+  ],
+  "job_18a536a102832ef50b42e1363d59f0ce": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-3/seat-1/run.json"
+  ],
+  "job_fab001a34da6ac9005e1da15f9a62aa0": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-4/seat-0/run.json"
+  ],
+  "job_83773cd024830aed775e02b428eb685d": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-4/seat-0/run.json"
+  ],
+  "job_ecf9f7d0525bc3cfe801103d50728d5e": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-4/seat-1/run.json"
+  ],
+  "job_bca61e7eb00af558b972dd84f43dac72": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-4/seat-1/run.json"
+  ],
+  "job_15cc428e7c073169e0efad4569f55bf8": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-2/seat-0/run.json"
+  ],
+  "job_0da0be731a88085113dfd5ee02ab99e2": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-2/seat-0/run.json"
+  ],
+  "job_4d97a542fb0ecd7aad687de1ddc7cb2c": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-2/seat-1/run.json"
+  ],
+  "job_220754114e13a90163aa6dedbd23834b": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-a/rep-2/seat-1/run.json"
+  ],
+  "job_9e13653738baefff5e6355560c31d8f9": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_227edc7b62623193498556247dd5a6c6": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_00e78254fd6b79a3a9de849914682e44": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_ed96bcd64b8fdcc471e77be30d22103a": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_df440cea7b84936c3a992d3157ab8621": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-3/seat-0/run.json"
+  ],
+  "job_352ab2cb25471bd0acd35213fe8fe1df": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-3/seat-0/run.json"
+  ],
+  "job_32efa637ec572a822acbe59f3b3e70a1": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-3/seat-1/run.json"
+  ],
+  "job_6a65a21c40a058ca61ab71717620d0ea": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-3/seat-1/run.json"
+  ],
+  "job_17111b1094f522ae6d0f3f4bf70377b3": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-4/seat-0/run.json"
+  ],
+  "job_75d769e2e9b641e8e34bdc364eb1a7c8": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-4/seat-0/run.json"
+  ],
+  "job_6de0bb28fc0622ba2a885b8b4011cab9": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-4/seat-1/run.json"
+  ],
+  "job_12ac08efa5c92ca699f2f41614571a06": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-4/seat-1/run.json"
+  ],
+  "job_412aa2753d8e71ba2f47511d83a63dd6": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-2/seat-0/run.json"
+  ],
+  "job_42e8e4ab8dbd5e2a236854e19c9b2807": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-2/seat-0/run.json"
+  ],
+  "job_84f4052f6b928c1941ecd76edc2f629b": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-2/seat-1/run.json"
+  ],
+  "job_7d9ba8fde5def6240513bd7e4a1f4c4f": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b/rep-2/seat-1/run.json"
+  ],
+  "job_361b498a2d02d8c8c6d9e3e19cef9213": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1/rep-3/seat-0/run.json"
+  ],
+  "job_b2fa4dabbd3f330f9b370662b19d9c27": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1/rep-3/seat-0/run.json"
+  ],
+  "job_8c58e3309ca6e9f58f097a85cb5cc31d": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1/rep-3/seat-1/run.json"
+  ],
+  "job_ff93c4ebbecd02ca25d7e0ff33bb35cf": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1/rep-3/seat-1/run.json"
+  ],
+  "job_7f13268b3959fc1e01a62294de195da4": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1/rep-1/seat-0/run.json"
+  ],
+  "job_64b4838bb87d04242b1e04c40f78e593": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1/rep-1/seat-0/run.json"
+  ],
+  "job_5966ad03ec214eb40ab9078c16a7a6ba": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1/rep-1/seat-1/run.json"
+  ],
+  "job_e2cd0f9849b91ee1bc6502b06f80a373": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1/rep-1/seat-1/run.json"
+  ],
+  "job_e48be8538e5e3a47e8c706fdeb47cc06": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1/rep-4/seat-0/run.json"
+  ],
+  "job_81eb7a884748843d35a04d09cbe07f99": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1/rep-4/seat-0/run.json"
+  ],
+  "job_d61a9e70201706d08f340d687b856778": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1/rep-4/seat-1/run.json"
+  ],
+  "job_853b30d7cc9b6629698b1f0972f946c4": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1/rep-4/seat-1/run.json"
+  ],
+  "job_03da8b2075b04ac3be5b6b66cd873401": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1/rep-2/seat-0/run.json"
+  ],
+  "job_35d7cd18ab9287cc9d1b2e697cad5f6b": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1/rep-2/seat-0/run.json"
+  ],
+  "job_f485a3ba131539d19548b8b63e25fb4d": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1/rep-2/seat-1/run.json"
+  ],
+  "job_022501eff1d0fcf44fd2a37fafeeac0d": [
+   "bench27-more-arms-20261005/bench27-more-mtp-off-pass-b-retry1/rep-2/seat-1/run.json"
+  ],
+  "job_9a2867f60061327338b2c6d660b7b6ab": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_a5973fc4c136073587ca78f599813f90": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a-needle-12k/rep-1/seat-0/run.json"
+  ],
+  "job_b312c14b578ff6279b8b28f645522073": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_5eee81cda5f3cb266a3acbf5f9d2fb93": [
+   "bench27-more-arms-20261005/bench27-more-ssm-bf16-pass-a-needle-12k/rep-1/seat-1/run.json"
+  ],
+  "job_1a380b1b47bc57d7c423e8f210775ca7": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_3dd3d5abf05f347f9f25a0da8edc62d2": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b-needle-38k/rep-1/seat-0/run.json"
+  ],
+  "job_3dd0d15c091b1636806da6cc1c0de8a2": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_fee089e8c3abd31b9a3fc792274903a1": [
+   "bench27-more-arms-20261005/bench27-more-mem095-pass-b-needle-38k/rep-1/seat-1/run.json"
+  ],
+  "job_01b6a52e1bd87eed433b4a627531e4f0": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0018/seat-0/run.json"
+  ],
+  "job_bee6db567b7ffe3f3245cf1c1e5756a2": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0018/seat-0/run.json"
+  ],
+  "job_84495a9e9506cb4959fc010b07b61dac": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0018/seat-1/run.json"
+  ],
+  "job_363e70795b4695c6b735a9e62ba3291f": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0018/seat-1/run.json"
+  ],
+  "job_6ed525039a1a6536f22cc5a1567cf671": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0005/seat-0/run.json"
+  ],
+  "job_8a7d68380ffa5f1645be3164fb75477d": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0005/seat-0/run.json"
+  ],
+  "job_17cc6416667491ca0ad30288e25a96b5": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0005/seat-1/run.json"
+  ],
+  "job_adcaa8b1561b3587f6f9b9e872cdd9c9": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0005/seat-1/run.json"
+  ],
+  "job_3ed2281481bb3b8784f29e9729a31023": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0009/seat-0/run.json"
+  ],
+  "job_e4ab3c167adb3ee3c7d52bba940d7c37": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0009/seat-0/run.json"
+  ],
+  "job_da9f4ec8074814c8e2e1c92eb8697a26": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0009/seat-1/run.json"
+  ],
+  "job_0c9fc2bbed8a89127a8f8add10fa59f3": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0009/seat-1/run.json"
+  ],
+  "job_9b84bb4c99d65c55013b17bcba17d3ff": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0029/seat-0/run.json"
+  ],
+  "job_4adab46f8e7dc9abebc4b24b36228480": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0029/seat-0/run.json"
+  ],
+  "job_538d37e00b0fdcd1b71fa50d9e96433b": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0029/seat-1/run.json"
+  ],
+  "job_1a35771aee596cae7a53f1d8e4c9d447": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0029/seat-1/run.json"
+  ],
+  "job_148b624ad518b6143908743218deb0a9": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0031/seat-0/run.json"
+  ],
+  "job_5e941d8236295580fe8b3fc18b18f160": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0031/seat-0/run.json"
+  ],
+  "job_5e9c9ff57dc775fd340c9411dc4c8f7b": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0031/seat-1/run.json"
+  ],
+  "job_dffc96bb683dba75386feab2b13f2700": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0031/seat-1/run.json"
+  ],
+  "job_bd23cf15c7e3ebd1a1c46f211743f296": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0028/seat-0/run.json"
+  ],
+  "job_4fd4441118ac50d67c7113cd0f676c9a": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0028/seat-0/run.json"
+  ],
+  "job_2a285bb8e017384b13a0e785d6831697": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0028/seat-1/run.json"
+  ],
+  "job_bbadfe997e3eaa30e5ac6ef5a62a462c": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0028/seat-1/run.json"
+  ],
+  "job_93facd07c38747272f1ef380d2b6ef42": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0010/seat-0/run.json"
+  ],
+  "job_fabc23726fa16fcddde735f577c0cb03": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0010/seat-0/run.json"
+  ],
+  "job_d529488e41431c0552edab6a524ca5ce": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0010/seat-1/run.json"
+  ],
+  "job_963f0ab4ec5697768b5400807cc016e7": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0010/seat-1/run.json"
+  ],
+  "job_849abaaa9ac2157eb118a1f497a5cff7": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0012/seat-0/run.json"
+  ],
+  "job_521f58dd10378827af79882f7a960136": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0012/seat-0/run.json"
+  ],
+  "job_22ea7600f634ae820f5b8b1e25abe82e": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0012/seat-1/run.json"
+  ],
+  "job_88b9dbbac50a9f70fd6fe3c4c15fa9d4": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0012/seat-1/run.json"
+  ],
+  "job_23f50b4a0432a0d67c1085bd5a03f99f": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0003/seat-0/run.json"
+  ],
+  "job_d980b708a1a58f313e62105e45b423e8": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0003/seat-0/run.json"
+  ],
+  "job_c80e27187df813e2d273313fd56b3076": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0003/seat-1/run.json"
+  ],
+  "job_4b5f4fde2c5df6a8e1ccc99c566dcc14": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0003/seat-1/run.json"
+  ],
+  "job_e634f77d882ab971461feed23f619c30": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0026/seat-0/run.json"
+  ],
+  "job_0d68ce634508c876bb0775de9b37ab28": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0026/seat-0/run.json"
+  ],
+  "job_69c378e74518e06d86c06fc1638cc2bd": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0026/seat-1/run.json"
+  ],
+  "job_e836184c19705a8ea9f254bcc66c3b10": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0026/seat-1/run.json"
+  ],
+  "job_5d1ccae9c3c6481f953216b4655a55e4": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0014/seat-0/run.json"
+  ],
+  "job_cdc7ab2bdfd181ddc41b41237871a348": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0014/seat-0/run.json"
+  ],
+  "job_87a894984b015cf87fc94b7b39450300": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0014/seat-1/run.json"
+  ],
+  "job_8f6fdc62455556d03cfa1d0eb2456403": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0014/seat-1/run.json"
+  ],
+  "job_958c37e8c9e914fce8619e556c88bd11": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0019/seat-0/run.json"
+  ],
+  "job_e8156f2061a14df88a87aab909fe70b4": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0019/seat-0/run.json"
+  ],
+  "job_52ad8dbc2130900e5ba398817a96ed1d": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0019/seat-1/run.json"
+  ],
+  "job_d36e117021dc209a33b61f8cde453d8a": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0019/seat-1/run.json"
+  ],
+  "job_cb7bb90f0ffdec1e6a0e76f51a1c2de6": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0002/seat-0/run.json"
+  ],
+  "job_774fc647c3682ddec59f317c80bf4bdf": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0002/seat-0/run.json"
+  ],
+  "job_14a8f5179863d577d412ce09e404e2a1": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0002/seat-1/run.json"
+  ],
+  "job_bca57cd455b3ba4f7d93a36cbf9742b4": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0002/seat-1/run.json"
+  ],
+  "job_a95b37a95355503758f299096d657007": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0024/seat-0/run.json"
+  ],
+  "job_a285ed2e4e405e6a39eee05d477ab89b": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0024/seat-0/run.json"
+  ],
+  "job_f429d058decd684e1960d15c2b52f6b3": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0024/seat-1/run.json"
+  ],
+  "job_6eb8d6804e4e08142a1b975c46e0beff": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0024/seat-1/run.json"
+  ],
+  "job_8ba8fd8022f3526f205806747af5f345": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0027/seat-0/run.json"
+  ],
+  "job_587e334c49c80c11cc002a6fd3112ce7": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0027/seat-0/run.json"
+  ],
+  "job_7a2225ea8e58ba0c75540b0a7cd407c9": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0027/seat-1/run.json"
+  ],
+  "job_1a298160d494ceb084a01c2ca875b3ff": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0027/seat-1/run.json"
+  ],
+  "job_4c85e54110694d459911b00d0f3594e8": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0030/seat-0/run.json"
+  ],
+  "job_bf86d38ea2e12617a584fe2824c3ad27": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0030/seat-0/run.json"
+  ],
+  "job_fd798ea688322983d3b9dc8fc8ba0de3": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0030/seat-1/run.json"
+  ],
+  "job_5f429df8b4026ca174c6eca63fc0f5b6": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0030/seat-1/run.json"
+  ],
+  "job_3835d5e2d7800a55c232fcdcbb0f77f9": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0022/seat-0/run.json"
+  ],
+  "job_74a6f6add54d0ce006e0ad005e30f316": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0022/seat-0/run.json"
+  ],
+  "job_96ad706a56d7c2dac321626dc2c8355f": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0022/seat-1/run.json"
+  ],
+  "job_14b785875473618b7edca7022703528d": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0022/seat-1/run.json"
+  ],
+  "job_686ced798476ef7f5e1d3b73b72c29a6": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0017/seat-0/run.json"
+  ],
+  "job_3b0e1b62008cb911f3d45fdd4c3ec13b": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0017/seat-0/run.json"
+  ],
+  "job_f7617741bc42ea717cea6bf1bb85be59": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0017/seat-1/run.json"
+  ],
+  "job_ea7989d295e02877b00cddb7b7c4a133": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0017/seat-1/run.json"
+  ],
+  "job_94131881ba12bf1556f09bd7a0f9050c": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0004/seat-0/run.json"
+  ],
+  "job_226a8ee4f6e516cbbb686ad51c5657e6": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0004/seat-0/run.json"
+  ],
+  "job_32956e27cf471289d8fc08ad7619158b": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0004/seat-1/run.json"
+  ],
+  "job_0e160391a5f9f4350920b41b3d966453": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0004/seat-1/run.json"
+  ],
+  "job_ad0a19df61d1416b45574001f3422917": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0025/seat-0/run.json"
+  ],
+  "job_e506c0ecc6b15439c5d65e2d14387ed0": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0025/seat-0/run.json"
+  ],
+  "job_32b42a7be3dcd203f091c9e55a6dd6c6": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0025/seat-1/run.json"
+  ],
+  "job_97c48681fb489f0f3d5bd915ec44ea06": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0025/seat-1/run.json"
+  ],
+  "job_5702f8ebdf38550ce772ec5df0efd36a": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0023/seat-0/run.json"
+  ],
+  "job_fb1e0eef6e6cc44d710361446510f0ec": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0023/seat-0/run.json"
+  ],
+  "job_4ce9c633f239a022176fabfef0618e98": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0023/seat-1/run.json"
+  ],
+  "job_22d40a524d37074ad0c419b62fb0dd91": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0023/seat-1/run.json"
+  ],
+  "job_f40fd5aab50c9160dac9a6c5b4c0cd59": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0021/seat-0/run.json"
+  ],
+  "job_ad1b44fde58efddcde4fe2ea56e243b1": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0021/seat-0/run.json"
+  ],
+  "job_551248c2e854465a2b24b3e01d7c59f4": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0021/seat-1/run.json"
+  ],
+  "job_fe7205c9649b011836f1b6f88d2a71c3": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0021/seat-1/run.json"
+  ],
+  "job_f4afd426b2849694ff6622847a0df160": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0001/seat-0/run.json"
+  ],
+  "job_87471590f79f947f4a8e1855b99310f8": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0001/seat-0/run.json"
+  ],
+  "job_13ad01a2b0d1cc5886a00bbd1df559b9": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0001/seat-1/run.json"
+  ],
+  "job_03d59eebb5a7a6ce9f223ad59ecf773b": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0001/seat-1/run.json"
+  ],
+  "job_c9468242ea770f5ccfcc32b089f47023": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0016/seat-0/run.json"
+  ],
+  "job_30a5e8413c50f3127bbe3f4b36b62037": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0016/seat-0/run.json"
+  ],
+  "job_8752a11fccd7f5cabeef8861961e94f2": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0016/seat-1/run.json"
+  ],
+  "job_101f599040dbd6b5a0d40e1470e8b598": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0016/seat-1/run.json"
+  ],
+  "job_ad90c6e76809862d05d42e7e43ee19d8": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0007/seat-0/run.json"
+  ],
+  "job_2ae4b614e8a6c5b0fe6968cf258143a7": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0007/seat-0/run.json"
+  ],
+  "job_9c8c0b4022e65e85bf5c1205fbf003cb": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0007/seat-1/run.json"
+  ],
+  "job_51d0136c5843e75ee5a9573f0ff9a033": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0007/seat-1/run.json"
+  ],
+  "job_a7ccaf910a80cd8724021045168ab5a9": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0015/seat-0/run.json"
+  ],
+  "job_8c942a9dfba0020b22d0d2e42e20e030": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0015/seat-0/run.json"
+  ],
+  "job_cd8e6f6e21a2d5e228b8b7f631fae36a": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0015/seat-1/run.json"
+  ],
+  "job_a1125dbb0537240eadfcf6b6c59f9250": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0015/seat-1/run.json"
+  ],
+  "job_86ce561829059e8513d95b3244907f60": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0011/seat-0/run.json"
+  ],
+  "job_674f8e6ef1893c6a50abcdb3186bc332": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0011/seat-0/run.json"
+  ],
+  "job_898eb149539f29154a97e8092d643f37": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0011/seat-1/run.json"
+  ],
+  "job_5cd30e343b65eab426eedcbf84cb7521": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0011/seat-1/run.json"
+  ],
+  "job_f3c7513202c19cca7681e4d7f128b314": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0020/seat-0/run.json"
+  ],
+  "job_076423e45cecc6e6f9740775ebb14d8e": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0020/seat-0/run.json"
+  ],
+  "job_25dd18ff14c08764763bbd57daa45bbc": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0020/seat-1/run.json"
+  ],
+  "job_803ee0696cdf488db81f7f9d6c1c939f": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0020/seat-1/run.json"
+  ],
+  "job_f2817d56ff952bbf08a5acaca47ccec0": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0013/seat-0/run.json"
+  ],
+  "job_09b36631e344950cf6deac253b7fe5ca": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0013/seat-0/run.json"
+  ],
+  "job_3a4f68aab4314570ada7dc7306b45a5f": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0013/seat-1/run.json"
+  ],
+  "job_913074ca2e8f706c708f8d5ca62e2638": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0013/seat-1/run.json"
+  ],
+  "job_6d09729e8cad7640c935e43ab5cc7ee2": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0006/seat-0/run.json"
+  ],
+  "job_002427f97b9ed6a1fd1750291f373dd3": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0006/seat-0/run.json"
+  ],
+  "job_8323ed216ead6be076317ec3e7f81fb5": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0006/seat-1/run.json"
+  ],
+  "job_1a7c8cefa96f7e164e0b2534b4b9a0d9": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0006/seat-1/run.json"
+  ],
+  "job_9b1fdbe9f19587e64b6dbd699358f9f3": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0008/seat-0/run.json"
+  ],
+  "job_812132677e62228cacb0789f18ec1de5": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0008/seat-0/run.json"
+  ],
+  "job_7edc7c28b03c854ba8bab3853c7ab289": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0008/seat-1/run.json"
+  ],
+  "job_ff0f74d9eb55191fb8955d815b9090c4": [
+   "bench27-soak-20261005/bench27-b70-baseline-soak-20261005/controller/pair-0008/seat-1/run.json"
+  ],
+  "job_237b0c853d372cd92015d204ab73bcdf": [
+   "seat0-flash-adoption-20261004/canary-needle12/run.json"
+  ],
+  "job_050a4eb8fa2c14acfbb8f2ae1c611e59": [
+   "seat0-flash-adoption-20261004/canary-needle12/run.json"
+  ],
+  "job_3dc7227a0ef8f96d338f132f4265c090": [
+   "seat0-flash-adoption-20261004/soak/needle60.210000/run.json"
+  ],
+  "job_170b2790b976796591eda9fd5eec787d": [
+   "seat0-flash-adoption-20261004/soak/needle60.210000/run.json"
+  ],
+  "job_9ae0239e0626a6eac0b08132141c91b4": [
+   "seat0-flash-adoption-20261004/soak/mixed12/run.json"
+  ],
+  "job_8afcb401cadd1f6bacad7f22476535f2": [
+   "seat0-flash-adoption-20261004/soak/mixed12/run.json"
+  ],
+  "job_e1554926555dc579152786b6342dcff3": [
+   "seat0-flash-adoption-20261004/soak/mixed60/run.json"
+  ],
+  "job_72f0413c58e82271b9ce2fdb0ca17ce1": [
+   "seat0-flash-adoption-20261004/soak/mixed60/run.json"
+  ],
+  "job_30faeceda1c15a10d057db7e4b6d9c1a": [
+   "seat0-flash-adoption-20261004/soak/deliveries/work_b79976c8c47b4c419643180aae526144/run.json"
+  ],
+  "job_5c73aecdb5c2def4e9041eddf7d08ac6": [
+   "seat0-flash-adoption-20261004/soak/deliveries/work_5b58dea59e904f20bc5a6f5ea62a18ed/run.json"
+  ],
+  "job_1a6751328bd7d434852cfc5b270a02ec": [
+   "seat0-flash-adoption-20261004/soak/deliveries/work_5b58dea59e904f20bc5a6f5ea62a18ed/run.json"
+  ]
+ },
+ "other_run_job_counts": {
+  "seat1-flash-pilot-20261003/adopted-door-check/index-02.v2.omen-vllm/run.json": 0,
+  "seat1-flash-pilot-20261003/adopted-door-check/index-01.v2.omen-vllm/run.json": 0,
+  "seat1-flash-pilot-20261003/adopted-door-check/triton-soak-run/index-02.v2.omen-vllm/run.json": 0,
+  "codex-20261003/lap-c/work_f81751409d6f42629951fdb3081eb30a/run.json": 1,
+  "codex-20261003/lap-c/work_9fbf128ca9ba417684f8f4043f4a9770/run.json": 1,
+  "codex-20261003/lap-c/work_df29fd33aef342479f80173e5fbdc916/run.json": 1,
+  "codex-20261003/lap-c/work_fc4586044b954cd8ab8ba23d5b4920b7/run.json": 1,
+  "codex-20261003/lap-c/work_a5c2a614c9024279bacf6263b914ecd5/run.json": 1,
+  "codex-20261003/lap-c/work_faf5c0e9de95410999268c728414e6c3/run.json": 1,
+  "codex-20261003/lap-a-exact-live/work_4213f7d10d134582912f187a54bbfa63/run.json": 2,
+  "codex-20261003/lap-a-exact-live/work_4239001175574e2399fa0c78f4553cc9/run.json": 1,
+  "codex-20261003/lap-a-exact-live/work_5d1482cd02e648cf87499abc8b1f267d/run.json": 3,
+  "codex-20261003/lap-a-live/work_9e43d8331134484f8ca070e7a1f35dab/run.json": 2,
+  "codex-20261003/lap-a-live/work_3c840a285ea4477f97a1fc7d750c436e/run.json": 1,
+  "codex-20261003/lap-a-live/work_baa95cd6b363447e9158011ffb3d1752/run.json": 2,
+  "codex-20261003/lap-a-live/work_97623443df394f8889343b154c7f6dff/run.json": 1,
+  "codex-20261003/lap-a-live/work_c90f40b9a7de444291105358e6472fbe/run.json": 1,
+  "qwen38-thinking-pilot-20261003/Q3-flash-mtp2/carry/sizing.carry.omen-dense-27b.175634/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/author/index-03.v2-b8.am4-tool-4070ti/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/author/index-05.v2-b8.am4-tool-4070ti/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/author/index-04.v2.omen-vllm/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/author/index-01.v2-b8.am4-tool-5070/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/author/index-03.v2.omen-vllm/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/author/index-01.v2-b8.am4-tool-4070ti/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/author/index-06.v2.omen-vllm/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/author/index-06.v2-b8.am4-tool-5070/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/author/index-02.v2-b8.am4-tool-4070ti/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/author/index-05.v2-b8.am4-tool-5070/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/author/index-02.v2-b8.am4-tool-5070/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/author/index-04.v2-b8.am4-tool-4070ti/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/author/index-03.v2-b8.am4-tool-5070/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/author/index-05.v2.omen-vllm/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/author/index-06.v2-b8.am4-tool-4070ti/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/author/index-04.v2-b8.am4-tool-5070/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/author/index-02.v2.omen-vllm/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/author/index-01.v2.omen-vllm/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/gate/index-03.v2-b8.am4-tool-4070ti/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/gate/index-04.v2.omen-vllm/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/gate/index-03.v2.omen-vllm/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/gate/index-01.v2-b8.am4-tool-4070ti/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/gate/index-06.v2.omen-vllm/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/gate/index-02.v2-b8.am4-tool-4070ti/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/gate/index-05.v2.omen-vllm/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/gate/index-02.v2.omen-vllm/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/gate/index-01.v2.omen-vllm/run.json": 0,
+  "seat0-flash-adoption-20261004/soak/deliveries/work_b79976c8c47b4c419643180aae526144/run.json": 1,
+  "seat0-flash-adoption-20261004/soak/deliveries/work_5b58dea59e904f20bc5a6f5ea62a18ed/run.json": 2,
+  "seat0-flash-adoption-20261004/thermal/triton-k1/index-01.v2.omen-vllm/run.json": 0
+ }
+}

@@ -1,0 +1,236 @@
+{
+  "id": "am4-bench-found",
+  "host": "am4",
+  "root": "/home/derek/bench",
+  "group": "lab",
+  "status": "complete",
+  "limits": {
+    "depth": 5,
+    "seconds": 30,
+    "max_files": 100000,
+    "max_candidates": 2500
+  },
+  "counts": {
+    "directories": 40,
+    "files": 14162,
+    "excluded": 1
+  },
+  "candidates": [
+    {
+      "id": "c426497cf77dc245",
+      "path": "/home/derek/bench",
+      "git_marker": true,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 17,
+        ".csv": 1,
+        ".db": 1
+      },
+      "marker_files_direct": 17,
+      "bytes_direct": 50031404,
+      "mtime_hint_min": 1782358911,
+      "mtime_hint_max": 1786601361
+    },
+    {
+      "id": "906340958a80f543",
+      "path": "/home/derek/bench/context-landscape-canon-breadth-v1",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 6,
+        ".jsonl": 2
+      },
+      "marker_files_direct": 4,
+      "bytes_direct": 1019708,
+      "mtime_hint_min": 1786588751,
+      "mtime_hint_max": 1786601361
+    },
+    {
+      "id": "2256ddd6d62c266e",
+      "path": "/home/derek/bench/context-landscape-founding-canon-v2",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 5,
+        ".jsonl": 3
+      },
+      "marker_files_direct": 5,
+      "bytes_direct": 430628,
+      "mtime_hint_min": 1786537390,
+      "mtime_hint_max": 1786542814
+    },
+    {
+      "id": "6beaa0ecc49c305a",
+      "path": "/home/derek/bench/context-landscape-highlight-hd-v1",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2,
+        ".json": 2
+      },
+      "marker_files_direct": 3,
+      "bytes_direct": 1675887,
+      "mtime_hint_min": 1786612950,
+      "mtime_hint_max": 1786637974
+    },
+    {
+      "id": "d26d334bd2546471",
+      "path": "/home/derek/bench/context-landscape-pilot",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 5,
+        ".json": 2
+      },
+      "marker_files_direct": 6,
+      "bytes_direct": 19743805,
+      "mtime_hint_min": 1786530293,
+      "mtime_hint_max": 1786535681
+    },
+    {
+      "id": "932c86c19bcb92cd",
+      "path": "/home/derek/bench/results_full",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 975900,
+      "mtime_hint_min": 1782619973,
+      "mtime_hint_max": 1786638623
+    },
+    {
+      "id": "89782c9a4cbe7416",
+      "path": "/home/derek/bench/results_botE2E/meta",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 525,
+      "mtime_hint_min": 1782581799,
+      "mtime_hint_max": 1782581799
+    },
+    {
+      "id": "fd293142e405bee8",
+      "path": "/home/derek/bench/results_burst/meta",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 8
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4683,
+      "mtime_hint_min": 1782370988,
+      "mtime_hint_max": 1782371207
+    },
+    {
+      "id": "1a4e1fc930357878",
+      "path": "/home/derek/bench/results_dreamE2E/meta",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 763,
+      "mtime_hint_min": 1782582289,
+      "mtime_hint_max": 1782582289
+    },
+    {
+      "id": "3d51e4e08bdf4928",
+      "path": "/home/derek/bench/results_fluxsmoke/meta",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 600,
+      "mtime_hint_min": 1782381934,
+      "mtime_hint_max": 1782381934
+    },
+    {
+      "id": "ac2c7e4e72c4c541",
+      "path": "/home/derek/bench/results_full/edgeless",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 164
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 44444,
+      "mtime_hint_min": 1782760863,
+      "mtime_hint_max": 1782760863
+    },
+    {
+      "id": "1f0c88665e17f819",
+      "path": "/home/derek/bench/results_full/edgeless.bak-20260629-192103",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4490,
+      "mtime_hint_min": 1782760863,
+      "mtime_hint_max": 1782760863
+    },
+    {
+      "id": "8b20d4aacadd2e44",
+      "path": "/home/derek/bench/results_full/meta",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4550
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4918656,
+      "mtime_hint_min": 1782360229,
+      "mtime_hint_max": 1786637963
+    },
+    {
+      "id": "2898519f10bd6839",
+      "path": "/home/derek/bench/results_pilot/meta",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 48
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 27545,
+      "mtime_hint_min": 1782358928,
+      "mtime_hint_max": 1782359048
+    },
+    {
+      "id": "a9a66aeea3d0abb1",
+      "path": "/home/derek/bench/results_smoke/meta",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1188,
+      "mtime_hint_min": 1782369685,
+      "mtime_hint_max": 1782370041
+    },
+    {
+      "id": "e999bc0ab9402eb9",
+      "path": "/home/derek/bench/results_switch/meta",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2340,
+      "mtime_hint_min": 1782370109,
+      "mtime_hint_max": 1782370232
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.157
+}

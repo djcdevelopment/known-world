@@ -20,6 +20,22 @@
     g.addColorStop(1, P.rgba(ni, L, 0));
     ctx.fillStyle = g;
     ctx.fillRect(x - R, y - R, 2 * R, 2 * R);
+    // Screen-space contrast survives matching terrain and additive saturation.
+    // The coloured halo still carries authorship; hollow inferred cores stay open.
+    ctx.save();
+    ctx.globalCompositeOperation = 'source-over';
+    const edgeR = Math.max(4, R * (0.30 + 0.60 * t));
+    const edgeA = Math.min(0.9, (1 - t) * Math.max(0.5, Math.min(1, scale)));
+    ctx.beginPath(); ctx.arc(x, y, edgeR, 0, TAU);
+    ctx.strokeStyle = 'rgba(7,9,14,' + (0.85 * edgeA) + ')';
+    ctx.lineWidth = 4; ctx.stroke();
+    ctx.strokeStyle = 'rgba(245,248,255,' + (0.85 * edgeA) + ')';
+    ctx.lineWidth = 1.4; ctx.stroke();
+    if (!hollow) {
+      ctx.fillStyle = 'rgba(245,248,255,' + Math.min(0.95, 1.4 * (1 - t) * (1 - t) * Math.max(0.5, scale)) + ')';
+      ctx.beginPath(); ctx.arc(x, y, Math.max(1.8, Math.min(4, R * 0.13)), 0, TAU); ctx.fill();
+    }
+    ctx.restore();
   }
   function weight(band, age, life) { if (age < 0 || age >= life) return 0; const t = age / life, r = D.radius_px[band - 1] / 15; return (1 - t) * (1 - t) * r * r; }
   // quadratic arc point and its path

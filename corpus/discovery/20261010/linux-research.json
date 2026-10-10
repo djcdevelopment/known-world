@@ -1,0 +1,35 @@
+{
+  "id": "linux-research",
+  "host": "omen-linux",
+  "root": "/home/derek/research",
+  "group": "lab",
+  "status": "complete",
+  "limits": {
+    "depth": 5,
+    "seconds": 25,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 3,
+    "files": 46,
+    "symlinks_excluded": 1
+  },
+  "candidates": [
+    {
+      "id": "1a4fe7e9a9f7bd81",
+      "path": "/home/derek/research/manifest-json",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 25
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 94538,
+      "mtime_hint_min": 1790531500,
+      "mtime_hint_max": 1790531538
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.0
+}

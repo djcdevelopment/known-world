@@ -1,0 +1,833 @@
+[
+ {
+  "root": "/mnt/omen-e-read/work/denning",
+  "files": [
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/battery-A1.json",
+    "bytes": 2766
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/battery-A2.json",
+    "bytes": 2772
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/battery-Bf16.jsonl",
+    "bytes": 16273
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/battery-Bq8.jsonl",
+    "bytes": 18654
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/battery-C1-morning-x8.json",
+    "bytes": 303
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/battery-C1.json",
+    "bytes": 894
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/battery-D1.jsonl",
+    "bytes": 4482
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917211.result.json",
+    "bytes": 1515
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917211.watchdog.jsonl",
+    "bytes": 13105
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917238.result.json",
+    "bytes": 1634
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917238.watchdog.jsonl",
+    "bytes": 13454
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917265.result.json",
+    "bytes": 1747
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917265.watchdog.jsonl",
+    "bytes": 16820
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917296.result.json",
+    "bytes": 1877
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917296.watchdog.jsonl",
+    "bytes": 18157
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917331.result.json",
+    "bytes": 1994
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917331.watchdog.jsonl",
+    "bytes": 22615
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/e1-Bdq-real-decode-20260619.json",
+    "bytes": 805
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/e1-microbench-cardA-20260619.json",
+    "bytes": 762
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/e1-microbench-cardB-contended-20260619.json",
+    "bytes": 872
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1-1781915479.result.json",
+    "bytes": 2207
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1-1781915479.watchdog.jsonl",
+    "bytes": 21274
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1-1781915719.result.json",
+    "bytes": 2398
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1-1781915719.watchdog.jsonl",
+    "bytes": 21048
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917078.result.json",
+    "bytes": 492
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917078.watchdog.jsonl",
+    "bytes": 10788
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917124.result.json",
+    "bytes": 1818
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/bench-1782031916.jsonl",
+    "bytes": 19449
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/bench-1782031941.jsonl",
+    "bytes": 19437
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/bench-1782031976.jsonl",
+    "bytes": 19422
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/bench-1782031999.jsonl",
+    "bytes": 11472
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/bench-1782032020.jsonl",
+    "bytes": 11454
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/bench-1782032057.jsonl",
+    "bytes": 19403
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/bench-1782063101.jsonl",
+    "bytes": 19412
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/bench-1782063179.jsonl",
+    "bytes": 19413
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/bench-base-both.summary.json",
+    "bytes": 1588
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/bench-base-c1.summary.json",
+    "bytes": 1572
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/bench-base-c2.summary.json",
+    "bytes": 1567
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/bench-den-both.summary.json",
+    "bytes": 1584
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/bench-den-c1.summary.json",
+    "bytes": 1557
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/bench-den-c2.summary.json",
+    "bytes": 1559
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/bench-dry.jsonl",
+    "bytes": 6664
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/bench-E1-base.summary.json",
+    "bytes": 1588
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/bench-E1-den.summary.json",
+    "bytes": 1588
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/denningd-serve.watchdog.jsonl",
+    "bytes": 16253
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/display-cap-sweep.jsonl",
+    "bytes": 183
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/battery-spill-d114688.json",
+    "bytes": 0
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/battery-spill-d131072.json",
+    "bytes": 0
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/battery-spill-d65536.json",
+    "bytes": 0
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/battery-spill-d81920.json",
+    "bytes": 0
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/battery-spill-d98304.json",
+    "bytes": 0
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/battery-spill.csv",
+    "bytes": 323
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/battery-watchdog.jsonl",
+    "bytes": 905031
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/battery-watchdog2.jsonl",
+    "bytes": 144974
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/bench-1782030562.jsonl",
+    "bytes": 17417
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/bench-1782030843.jsonl",
+    "bytes": 19442
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/bench-1782030939.jsonl",
+    "bytes": 19418
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/display-sweep.watchdog.jsonl",
+    "bytes": 32097
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917124.watchdog.jsonl",
+    "bytes": 21878
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/modelload-x16-20260622.csv",
+    "bytes": 468
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/prefill-x16-20260621.jsonl",
+    "bytes": 17938
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/spill-70b.jsonl",
+    "bytes": 0
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/watchdog-phase4-20260622.jsonl",
+    "bytes": 32012
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/watchdog-x16-20260621.jsonl",
+    "bytes": 140373
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/watchdog-x16-20260622.jsonl",
+    "bytes": 241257
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/watchdog-xputrain-20260622.jsonl",
+    "bytes": 237054
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917211/events.jsonl",
+    "bytes": 158627
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917211/schema.json",
+    "bytes": 1078
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917238/events.jsonl",
+    "bytes": 163190
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917238/schema.json",
+    "bytes": 1078
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917265/events.jsonl",
+    "bytes": 197387
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917265/schema.json",
+    "bytes": 1078
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917296/events.jsonl",
+    "bytes": 210534
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917296/schema.json",
+    "bytes": 1078
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917331/events.jsonl",
+    "bytes": 264829
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917331/schema.json",
+    "bytes": 1078
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1-1781915479/events.jsonl",
+    "bytes": 255338
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1-1781915479/schema.json",
+    "bytes": 1078
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1-1781915719/events.jsonl",
+    "bytes": 251349
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1-1781915719/schema.json",
+    "bytes": 1078
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917078/events.jsonl",
+    "bytes": 101062
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917078/schema.json",
+    "bytes": 1078
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917124/events.jsonl",
+    "bytes": 250862
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917124/schema.json",
+    "bytes": 1078
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/i4c-1781922300/events.jsonl",
+    "bytes": 71399
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/i4c-1781922300/schema.json",
+    "bytes": 1078
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/i4c-1781922319/events.jsonl",
+    "bytes": 172155
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/i4c-1781922319/schema.json",
+    "bytes": 1078
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/i4c-1781922347/events.jsonl",
+    "bytes": 172451
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/i4c-1781922347/schema.json",
+    "bytes": 1078
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/i4c-1781922375/events.jsonl",
+    "bytes": 208984
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/i4c-1781922375/schema.json",
+    "bytes": 1078
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/i4c-1781922409/events.jsonl",
+    "bytes": 252221
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/i4c-1781922409/schema.json",
+    "bytes": 1078
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/idle-baseline-20260619/events.jsonl",
+    "bytes": 52973
+   },
+   {
+    "path": "/mnt/omen-e-read/work/denning/results/raw/idle-baseline-20260619/schema.json",
+    "bytes": 1078
+   }
+  ]
+ },
+ {
+  "root": "/mnt/omen-c-read/work/memsplice/research",
+  "files": []
+ },
+ {
+  "root": "/mnt/omen-c-read/work/commandcenter/campaign",
+  "files": [
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/speculation_manifest.json",
+    "bytes": 4830
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/ff-probes/provenance-boundaries.json",
+    "bytes": 5212
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/ff-probes/rate-baselines.json",
+    "bytes": 4970
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-spec-builder-elo-tournament-6d506fb3.json",
+    "bytes": 4469
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-assay-stream-acceptance-8d04d66a.json",
+    "bytes": 4472
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-js5-actuation-bc96bebb.json",
+    "bytes": 4506
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-rerun-wordcount-local-dbe8bb4b.json",
+    "bytes": 4579
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-spec-acceptance-oracle-7c08869b.json",
+    "bytes": 4622
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-spec-architecture-alignment-311e3b26.json",
+    "bytes": 4652
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-spec-bankedfire-candidate-source-9f380bd9.json",
+    "bytes": 4652
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-spec-belief-recency-decay-11e434ec.json",
+    "bytes": 4173
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-spec-end-to-end-lineage-44375040.json",
+    "bytes": 4628
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-spec-fleet-autoscale-0054eb2c.json",
+    "bytes": 4330
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-spec-fleet-model-residency-planner-55a4c101.json",
+    "bytes": 4657
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-spec-idea-to-candidate-loop-c54a3bb3.json",
+    "bytes": 4379
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-spec-imagegen-as-machine-5bcb2fb7.json",
+    "bytes": 4413
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-spec-knowledge-per-kwh-c9e9a8a3.json",
+    "bytes": 4622
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-spec-learned-router-3acbc0d1.json",
+    "bytes": 4570
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-spec-ledger-rebuild-dr-ec63b4c4.json",
+    "bytes": 4596
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-spec-mechnet-modes-c7f246db.json",
+    "bytes": 4598
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-spec-research-brief-assay-57d3bfa8.json",
+    "bytes": 4640
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-spec-scheduler-imagegen-inference-c6edd20e.json",
+    "bytes": 4661
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-spec-self-learning-loop-improvements-84ac8765.json",
+    "bytes": 4519
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-spec-sensory-dashboard-2b107d81.json",
+    "bytes": 4596
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-spec-watchfire-autoheal-envelope-40a3337f.json",
+    "bytes": 4641
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest/hearth-spec-watchfire-npu-classifier-9b902d35.json",
+    "bytes": 4623
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/qwen38/assay/tasks.json",
+    "bytes": 22817
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/qwen38/config/artifacts.json",
+    "bytes": 3519
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/qwen38/config/campaign.json",
+    "bytes": 8654
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/qwen38/config/promotion-example.json",
+    "bytes": 1565
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/qwen38/schema/request-row.v1.json",
+    "bytes": 3524
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/results/am4-vm-decode-request.json",
+    "bytes": 519
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/results/am4-vm-decode-result.json",
+    "bytes": 1637
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/results/mechnet-am4-fx99-capacity-evidence-run.json",
+    "bytes": 4573
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/results/mechnet-fleet-resource-review.json",
+    "bytes": 5165
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/campaign/results/mechnet-live-builder-schedule-2026-09-15.json",
+    "bytes": 24954
+   }
+  ]
+ },
+ {
+  "root": "/mnt/omen-c-read/work/commandcenter/analysis",
+  "files": []
+ },
+ {
+  "root": "/mnt/omen-c-read/work/commandcenter/corpus",
+  "files": [
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/llama-bench-a-control-production-20260827.bench-row.v1.jsonl",
+    "bytes": 8121
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/llama-bench-a-control-production-20260827.json",
+    "bytes": 962
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/llama-bench-a-control-singlecard-20260827.bench-row.v1.jsonl",
+    "bytes": 17995
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/llama-bench-a-control-singlecard-20260827.json",
+    "bytes": 1115
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/llama-bench-b-control-campaign-20260827.bench-row.v1.jsonl",
+    "bytes": 8341
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/llama-bench-b-control-campaign-20260827.json",
+    "bytes": 1001
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/llama-bench-c-qwen38-27b-20260827.bench-row.v1.jsonl",
+    "bytes": 7972
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/llama-bench-c-qwen38-27b-20260827.json",
+    "bytes": 924
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/llama-bench-control-qwen3-30b-20260827.json",
+    "bytes": 1015
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/llama-bench-d-flash-next-20260827.bench-row.v1.jsonl",
+    "bytes": 7940
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/llama-bench-d-flash-next-20260827.json",
+    "bytes": 943
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/qwen38-campaign-baseline-20260827.bench-row.v1.jsonl",
+    "bytes": 459923
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/qwen38-campaign-baseline-20260827.json",
+    "bytes": 1037
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/qwen38-campaign-full-20260827.bench-row.v1.jsonl",
+    "bytes": 2281542
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/qwen38-campaign-full-20260827.json",
+    "bytes": 1278
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expY-mistral24b-mmv16-rep1.json",
+    "bytes": 884
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expY-mistral24b-mmv16-rep2.bench-row.v1.jsonl",
+    "bytes": 27003
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expY-mistral24b-mmv16-rep2.json",
+    "bytes": 903
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expY-mistral24b-mmv4-rep1.bench-row.v1.jsonl",
+    "bytes": 26523
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expY-mistral24b-mmv4-rep1.json",
+    "bytes": 881
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expY-mistral24b-mmv4-rep2.bench-row.v1.jsonl",
+    "bytes": 26941
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expY-mistral24b-mmv4-rep2.json",
+    "bytes": 900
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expY-mistral24b-mmv8-rep1.bench-row.v1.jsonl",
+    "bytes": 27485
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expY-mistral24b-mmv8-rep1.json",
+    "bytes": 894
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expY-mistral24b-mmv8-rep2.bench-row.v1.jsonl",
+    "bytes": 26934
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-gemma27-mmv16-c24k.bench-row.v1.jsonl",
+    "bytes": 26592
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-gemma27-mmv16-c24k.json",
+    "bytes": 884
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-gemma27-mmv8-c24k.bench-row.v1.jsonl",
+    "bytes": 26695
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-gemma27-mmv8-c24k.json",
+    "bytes": 889
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-gptoss20-mmv16.bench-row.v1.jsonl",
+    "bytes": 26353
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-gptoss20-mmv16.json",
+    "bytes": 873
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-gptoss20-mmv8.bench-row.v1.jsonl",
+    "bytes": 26462
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-gptoss20-mmv8.json",
+    "bytes": 878
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-llama70-mmv16-c32k.bench-row.v1.jsonl",
+    "bytes": 26968
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-llama70-mmv16-c32k.json",
+    "bytes": 901
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-llama70-mmv8-c32k.bench-row.v1.jsonl",
+    "bytes": 27079
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-llama70-mmv8-c32k.json",
+    "bytes": 906
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-mistral24-mmv16.bench-row.v1.jsonl",
+    "bytes": 26829
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-mistral24-mmv16.json",
+    "bytes": 895
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-mistral24-mmv8.bench-row.v1.jsonl",
+    "bytes": 26938
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-mistral24-mmv8.json",
+    "bytes": 900
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-moe30-mmv16.bench-row.v1.jsonl",
+    "bytes": 26888
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-moe30-mmv16.json",
+    "bytes": 897
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expY-mistral24b-mmv16-rep1.bench-row.v1.jsonl",
+    "bytes": 26590
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expY-mistral24b-mmv8-rep2.json",
+    "bytes": 900
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-moe30-mmv8.bench-row.v1.jsonl",
+    "bytes": 26993
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-moe30-mmv8.json",
+    "bytes": 902
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-phi4-mmv16.bench-row.v1.jsonl",
+    "bytes": 26003
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-phi4-mmv16.json",
+    "bytes": 857
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-phi4-mmv8.bench-row.v1.jsonl",
+    "bytes": 26115
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-phi4-mmv8.json",
+    "bytes": 862
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-qwen32-mmv16-c32k.bench-row.v1.jsonl",
+    "bytes": 26834
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-qwen32-mmv16-c32k.json",
+    "bytes": 895
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-qwen32-mmv8-c32k.bench-row.v1.jsonl",
+    "bytes": 26940
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/backfills/vulkancliff-expZ-qwen32-mmv8-c32k.json",
+    "bytes": 900
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/fixtures/llama-bench/A-control-production-SINGLECARD.json",
+    "bytes": 15940
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/fixtures/llama-bench/A-control-production.json",
+    "bytes": 8004
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/fixtures/llama-bench/B-control-campaign.json",
+    "bytes": 8027
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/fixtures/llama-bench/C-qwen38-27b.json",
+    "bytes": 7938
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/fixtures/llama-bench/D-flash-next.json",
+    "bytes": 8290
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/fixtures/llama-bench/qwen3-30b-a3b-control.json",
+    "bytes": 5053
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/fixtures/qwen38-summary/baseline-20260827.json",
+    "bytes": 33389
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/fixtures/qwen38-summary/campaign-full-20260827.json",
+    "bytes": 157858
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/runs/b0-preflight-20260821T032313Z/manifest.json",
+    "bytes": 8317
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/runs/b0-preflight-20260821T032313Z/enumerate/events.jsonl",
+    "bytes": 2475
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/runs/b0-preflight-20260821T032313Z/enumerate/schema.json",
+    "bytes": 1078
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/runs/b0-preflight-20260821T032313Z/idle/events.jsonl",
+    "bytes": 785088
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/runs/b0-preflight-20260821T032313Z/idle/schema.json",
+    "bytes": 1078
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/schema/bench-row.v1.json",
+    "bytes": 5960
+   },
+   {
+    "path": "/mnt/omen-c-read/work/commandcenter/corpus/schema/run-manifest.v1.json",
+    "bytes": 4959
+   }
+  ]
+ }
+]

@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "started": "2026-10-10T14:01:11.729449+00:00",
+  "roots_sha256": "f2c87433bfcab4ec5d01609db8e0bf128b24e9be8bd6e2a82fed86e9bc596e85",
+  "scanner_sha256": "38aca7cf700a23d6d7c6076ea870c3d04caac4b21e4ef7cbc365d141fba1bf71",
+  "source_contents_read": false,
+  "privacy": "Private directory metadata only. No files opened, no transcript bodies, no credential contents.",
+  "coverage_rule": "Complete means enumerated within declared depth and exclusions. Missing/partial/failed are not zero activity.",
+  "sources": [
+    {
+      "id": "linux-lever-ledger",
+      "host": "omen-linux",
+      "root": "/home/derek/work/lever-ledger/slices",
+      "group": "lab",
+      "status": "complete",
+      "counts": {
+        "directories": 1,
+        "files": 34
+      },
+      "gaps": []
+    },
+    {
+      "id": "am4-bench-found",
+      "host": "am4",
+      "root": "/home/derek/bench",
+      "group": "lab",
+      "status": "complete",
+      "counts": {
+        "directories": 40,
+        "files": 14162,
+        "excluded": 1
+      },
+      "gaps": []
+    }
+  ],
+  "unique_candidate_directories": 17
+}

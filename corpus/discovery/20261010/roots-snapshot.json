@@ -1,0 +1,524 @@
+{
+  "version": 1,
+  "goal": "G-known-world",
+  "sources": [
+    {
+      "id": "linux-work",
+      "host": "omen-linux",
+      "path": "/home/derek/work",
+      "group": "lab",
+      "depth": 6,
+      "seconds": 55,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "linux-research",
+      "host": "omen-linux",
+      "path": "/home/derek/research",
+      "group": "lab",
+      "depth": 5,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "linux-git",
+      "host": "omen-linux",
+      "path": "/home/derek/git",
+      "group": "projects",
+      "depth": 4,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "linux-migration",
+      "host": "omen-linux",
+      "path": "/home/derek/private-migration-20260923",
+      "group": "projects",
+      "depth": 4,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "linux-home",
+      "host": "omen-linux",
+      "path": "/home/derek",
+      "group": "projects",
+      "depth": 1,
+      "seconds": 15,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "linux-hearth-ledger",
+      "host": "omen-linux",
+      "path": "/home/derek/hearth-production/var/ledger",
+      "group": "execution",
+      "depth": 2,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "linux-hearth-artifacts",
+      "host": "omen-linux",
+      "path": "/home/derek/hearth-production/runs",
+      "group": "execution",
+      "depth": 4,
+      "seconds": 30,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "linux-continuity",
+      "host": "omen-linux",
+      "path": "/home/derek/.continuity/ledger",
+      "group": "execution",
+      "depth": 3,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "linux-claude",
+      "host": "omen-linux",
+      "path": "/home/derek/.claude/projects",
+      "group": "clients",
+      "depth": 6,
+      "seconds": 20,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "linux-codex",
+      "host": "omen-linux",
+      "path": "/home/derek/.codex/sessions",
+      "group": "clients",
+      "depth": 6,
+      "seconds": 20,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "linux-gemini",
+      "host": "omen-linux",
+      "path": "/home/derek/.gemini",
+      "group": "clients",
+      "depth": 6,
+      "seconds": 20,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "linux-opencode",
+      "host": "omen-linux",
+      "path": "/home/derek/.local/share/opencode",
+      "group": "clients",
+      "depth": 6,
+      "seconds": 20,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "c-work",
+      "host": "omen-c",
+      "path": "/mnt/omen-c-read/work",
+      "group": "projects",
+      "depth": 6,
+      "seconds": 55,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "c-root",
+      "host": "omen-c",
+      "path": "/mnt/omen-c-read",
+      "group": "projects",
+      "depth": 2,
+      "seconds": 20,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "c-assessment",
+      "host": "omen-c",
+      "path": "/mnt/omen-c-read/assessment",
+      "group": "lab",
+      "depth": 5,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "c-tuning",
+      "host": "omen-c",
+      "path": "/mnt/omen-c-read/tuning",
+      "group": "lab",
+      "depth": 5,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "c-hearth",
+      "host": "omen-c",
+      "path": "/mnt/omen-c-read/hearth-var",
+      "group": "execution",
+      "depth": 5,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "c-claude",
+      "host": "omen-c",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects",
+      "group": "clients",
+      "depth": 6,
+      "seconds": 30,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "c-codex",
+      "host": "omen-c",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions",
+      "group": "clients",
+      "depth": 6,
+      "seconds": 30,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "c-gemini",
+      "host": "omen-c",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini",
+      "group": "clients",
+      "depth": 6,
+      "seconds": 30,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "e-work",
+      "host": "omen-e",
+      "path": "/mnt/omen-e-read/work",
+      "group": "projects",
+      "depth": 6,
+      "seconds": 60,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "e-root",
+      "host": "omen-e",
+      "path": "/mnt/omen-e-read",
+      "group": "projects",
+      "depth": 3,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "e-omen",
+      "host": "omen-e",
+      "path": "/mnt/omen-e-read/omen",
+      "group": "execution",
+      "depth": 5,
+      "seconds": 30,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "e-start",
+      "host": "omen-e",
+      "path": "/mnt/omen-e-read/work/start",
+      "group": "lab",
+      "depth": 6,
+      "seconds": 30,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "e-manifest",
+      "host": "omen-e",
+      "path": "/mnt/omen-e-read/work/manifest",
+      "group": "lab",
+      "depth": 6,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "e-gemini",
+      "host": "omen-e",
+      "path": "/mnt/omen-e-read/gemini",
+      "group": "clients",
+      "depth": 5,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "am4-home",
+      "host": "am4",
+      "path": "~",
+      "group": "projects",
+      "depth": 2,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "ssh": "10.44.0.2",
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "am4-work",
+      "host": "am4",
+      "path": "~/work",
+      "group": "lab",
+      "depth": 5,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "ssh": "10.44.0.2",
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "am4-continuity",
+      "host": "am4",
+      "path": "~/.continuity/ledger",
+      "group": "execution",
+      "depth": 3,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "ssh": "10.44.0.2",
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "am4-bench",
+      "host": "am4",
+      "path": "~/ai-bench",
+      "group": "lab",
+      "depth": 5,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "ssh": "10.44.0.2",
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "fx99-home",
+      "host": "fx99",
+      "path": "~",
+      "group": "projects",
+      "depth": 2,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "ssh": "100.122.130.124",
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "fx99-work",
+      "host": "fx99",
+      "path": "~/work",
+      "group": "lab",
+      "depth": 5,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "ssh": "100.122.130.124",
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "fx99-continuity",
+      "host": "fx99",
+      "path": "~/.continuity/ledger",
+      "group": "execution",
+      "depth": 3,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "ssh": "100.122.130.124",
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    },
+    {
+      "id": "fx99-bench",
+      "host": "fx99",
+      "path": "~/ai-bench",
+      "group": "lab",
+      "depth": 5,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500,
+      "ssh": "100.122.130.124",
+      "exclude": [
+        "/home/derek/work/known-world",
+        "/home/derek/work/worktrees",
+        "/home/derek/work/amux"
+      ]
+    }
+  ]
+}

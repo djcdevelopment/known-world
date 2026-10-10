@@ -1,0 +1,43 @@
+{
+  "group": "lab",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "linux-bench27",
+    "host": "omen-linux",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 6,
+      "seconds": 30,
+      "max_files": 100000,
+      "max_candidates": 2500
+    },
+    "rollups_omitted": 0,
+    "rollups": [
+      {
+        "path": "/home/derek/work/bench27-plan/review",
+        "directories": 1,
+        "structured_files": {
+          ".json": 66
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/bench27-plan/review/b70-final-attestation",
+        "directories": 2,
+        "structured_files": {
+          ".json": 4
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/bench27-plan",
+        "directories": 1,
+        "structured_files": {
+          ".json": 1
+        },
+        "git_markers": 0
+      }
+    ]
+  }
+}

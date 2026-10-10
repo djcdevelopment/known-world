@@ -1,0 +1,27 @@
+{
+  "group": "lab",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "c-benchmark",
+    "host": "omen-c",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 6,
+      "seconds": 30,
+      "max_files": 100000,
+      "max_candidates": 2500
+    },
+    "rollups_omitted": 0,
+    "rollups": [
+      {
+        "path": "/mnt/omen-c-read/work/benchmark/baselines/20260627-060409",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 1
+        },
+        "git_markers": 0
+      }
+    ]
+  }
+}

@@ -31,6 +31,7 @@
     const fin = Math.min(1, (u - 9 / 18) / (1 / 18)), fout = u > 17 / 18 ? Math.min(1, (u - 17 / 18) / (1 / 18)) : 0;
     ctx.fillStyle = 'rgba(7,9,14,' + ((KW.LAY.ia ? 1 : 0.96) * fin).toFixed(3) + ')'; ctx.fillRect(0, 0, KW.LAY.W, KW.LAY.H);
     ctx.globalAlpha = fin;
+    if (D.count_semantics && KW.LAY.ia) { auditedCard(ctx); ctx.globalAlpha = 1; return; }
     if (KW.LAY.mode === 'portrait') { portrait(ctx, fin, fout); return; }
     const x0 = 160, cols = [x0, x0 + 250, x0 + 410, x0 + 500, x0 + 690, x0 + 920, x0 + 1110, x0 + 1220, x0 + 1370], y0 = 150, rowH = 62;
     ctx.textBaseline = 'alphabetic'; ctx.textAlign = 'left';
@@ -75,6 +76,75 @@
     { let yf = 936; for (const t of D.card_footer) for (const ln of wrapLine(ctx, t, 1600)) { ctx.fillText(ln, x0, yf); yf += 24; } }
     ctx.globalAlpha = 1;
     if (fout > 0) { ctx.fillStyle = 'rgba(0,0,0,' + fout.toFixed(3) + ')'; ctx.fillRect(0, 0, KW.LAY.W, KW.LAY.H); }
+  }
+  function auditedCard(ctx) {
+    const fm = KW.fmt, W = KW.LAY.W, H = KW.LAY.H, por = KW.LAY.mode === 'portrait';
+    ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
+    ctx.fillStyle = KW.C.fg; ctx.font = (por ? '20px ' : '30px ') + FONT;
+    ctx.fillText('Recorded totals', por ? 14 : 120, por ? 32 : 78);
+    if (por) {
+      let y = 66;
+      for (const r of D.card) {
+        ctx.font = '14px ' + FONT; ctx.fillStyle = KW.C.fg;
+        ctx.fillText(r.name + ' · ' + r.tests + ' bursts', 14, y);
+        ctx.font = '10px ' + FONT; ctx.fillStyle = KW.C.muted;
+        ctx.fillText(r.commits + ' commits · ' + r.files + ' git touches', 14, y + 15);
+        ctx.fillText(r.line_changes + ' changes' + (r.parts ? ' · ' + fm.commas(r.parts) + ' ' + r.part_label : ''), 14, y + 29);
+        y += 46;
+      }
+      ctx.font = '12px ' + FONT; ctx.fillStyle = KW.C.fg;
+      ctx.fillText(D.card_world.commits + ' commits · ' + D.card_world.files + ' file touches', 14, y + 4);
+      ctx.fillText(fm.commas(KW.wcum[2 * D.F + D.F - 1]) + ' line changes', 14, y + 23);
+      y += 48;
+      for (const [label, value] of activityTotals()) {
+        ctx.font = '11px ' + FONT; ctx.fillText(label + ' · ' + fm.commas(value), 14, y); y += 18;
+      }
+      ctx.font = '9px ' + FONT; ctx.fillStyle = KW.C.muted;
+      for (const line of wrapLine(ctx, '*Undated image results remain outside the timeline.', W - 28)) {
+        ctx.fillText(line, 14, y + 8); y += 12;
+      }
+      return;
+    }
+    const cols = [120, 425, 610, 850, 1125, 1480];
+    ctx.font = '14px ' + FONT; ctx.fillStyle = KW.C.muted;
+    ['collaborator', 'bursts', 'commits', 'git file touches', 'line changes', 'calls / distinct sessions'].forEach((s, i) => ctx.fillText(s, cols[i], 125));
+    D.card.forEach((r, i) => {
+      const y = 172 + i * 42;
+      ctx.font = '22px ' + FONT; ctx.fillStyle = KW.C.fg;
+      [r.name, fm.commas(r.tests), r.commits, r.files, r.line_changes,
+       r.parts ? fm.commas(r.parts) + ' ' + (r.part_label === 'sessions' ? 'sessions' : 'calls') : '—'].forEach((s, j) => ctx.fillText(s, cols[j], y));
+    });
+    ctx.fillStyle = KW.C.rule; ctx.fillRect(120, 495, W - 240, 1);
+    ctx.font = '25px ' + FONT; ctx.fillStyle = KW.C.fg;
+    ctx.fillText(D.card_world.commits + ' commits · ' + D.card_world.files + ' file touches · ' + fm.commas(KW.wcum[2 * D.F + D.F - 1]) + ' line changes', 120, 543);
+    ctx.font = '16px ' + FONT; ctx.fillStyle = KW.C.muted;
+    const b = D.file_breakdown;
+    ctx.fillText('File touches = ' + fm.commas(b.commit_touches) + ' in git + ' + fm.commas(b.creations) + ' creations + ' + fm.commas(b.updates) + ' update observations', 120, 577);
+    const items = activityTotals();
+    items.forEach(([label, value], i) => {
+      const x = 120 + (i % 4) * 420, y = 652 + Math.floor(i / 4) * 78;
+      ctx.font = '15px ' + FONT; ctx.fillStyle = KW.C.muted; ctx.fillText(label, x, y);
+      ctx.font = '26px ' + FONT; ctx.fillStyle = KW.C.fg; ctx.fillText(fm.commas(value), x, y + 33);
+    });
+    ctx.font = '16px ' + FONT; ctx.fillStyle = KW.C.muted;
+    ctx.fillText('Bursts, calls, jobs, attempts and bench measures are different views; their totals overlap.', 120, 918);
+    ctx.fillText('*Undated image results remain outside the timeline. Research-log dates can be approximate.', 120, 948);
+    let y = 981;
+    ctx.font = '13px ' + FONT;
+    for (const text of D.card_footer) for (const line of wrapLine(ctx, text, W - 240)) {
+      if (y < H - 14) ctx.fillText(line, 120, y); y += 21;
+    }
+  }
+  function activityTotals() {
+    if (!KW.activity) return [];
+    const c = KW.activity.counts, f = D.F - 1;
+    return [['Local HEARTH calls', c.local_calls[f]], ['Completed invocations', c.executions[f]],
+            ['Antigravity conversations', c.conversations[f]], ['Recorded bench runners', c.bench_runs[f]],
+            ['Fleet result observations', c.fleet_results[f]], ['Registry research attempts', c.attempts[f]],
+            ['Direct research attempts', c.direct_attempts ? c.direct_attempts[f] : 0],
+            ['Bench configurations', c.bench_measurements ? c.bench_measurements[f] : 0],
+            ['Measured experiment trials', c.bench_trials ? c.bench_trials[f] : 0],
+            ['Undated image results*', D.activity.undated ? D.activity.undated.image_results : 0]];
   }
   // the final figures per surface (the last frame's cumulative tables), in entry order
   function surfBlock() {

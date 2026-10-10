@@ -1,0 +1,27 @@
+{
+  "group": "lab",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "linux-lever-ledger",
+    "host": "omen-linux",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 1,
+      "seconds": 30,
+      "max_files": 100000,
+      "max_candidates": 2500
+    },
+    "rollups_omitted": 0,
+    "rollups": [
+      {
+        "path": "/home/derek/work/lever-ledger/slices",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 17
+        },
+        "git_markers": 0
+      }
+    ]
+  }
+}

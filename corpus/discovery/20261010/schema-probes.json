@@ -1,0 +1,1338 @@
+{
+  "version": 1,
+  "probes": [
+    {
+      "id": "linux-antigravity-0",
+      "path": "/home/derek/.gemini/antigravity-cli/conversations/0b5ac45b-7ae5-49c9-8847-757de93d082f.db",
+      "status": "complete",
+      "limitations": [
+        "Immutable read: WAL rows may be omitted; no data values or BLOBs selected"
+      ],
+      "tables": [
+        {
+          "name": "battle_mode_infos",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 0
+        },
+        {
+          "name": "executor_metadata",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 1
+        },
+        {
+          "name": "gen_metadata",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            },
+            {
+              "name": "size",
+              "type": "INTEGER"
+            }
+          ],
+          "rows": 2
+        },
+        {
+          "name": "parent_references",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 0
+        },
+        {
+          "name": "steps",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "step_type",
+              "type": "INTEGER"
+            },
+            {
+              "name": "status",
+              "type": "INTEGER"
+            },
+            {
+              "name": "has_subtrajectory",
+              "type": "numeric"
+            },
+            {
+              "name": "metadata",
+              "type": "BLOB"
+            },
+            {
+              "name": "error_details",
+              "type": "BLOB"
+            },
+            {
+              "name": "permissions",
+              "type": "BLOB"
+            },
+            {
+              "name": "task_details",
+              "type": "BLOB"
+            },
+            {
+              "name": "render_info",
+              "type": "BLOB"
+            },
+            {
+              "name": "step_payload",
+              "type": "BLOB"
+            },
+            {
+              "name": "step_format",
+              "type": "INTEGER"
+            }
+          ],
+          "rows": 4
+        },
+        {
+          "name": "trajectory_meta",
+          "columns": [
+            {
+              "name": "trajectory_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "cascade_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "trajectory_type",
+              "type": "INTEGER"
+            },
+            {
+              "name": "source",
+              "type": "INTEGER"
+            }
+          ],
+          "rows": 1
+        },
+        {
+          "name": "trajectory_metadata_blob",
+          "columns": [
+            {
+              "name": "id",
+              "type": "TEXT"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 1
+        }
+      ],
+      "wal_present": false
+    },
+    {
+      "id": "linux-antigravity-1",
+      "path": "/home/derek/.gemini/antigravity-cli/conversations/10aead28-48fe-4238-83e9-3de7aff88516.db",
+      "status": "complete",
+      "limitations": [
+        "Immutable read: WAL rows may be omitted; no data values or BLOBs selected"
+      ],
+      "tables": [
+        {
+          "name": "battle_mode_infos",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 0
+        },
+        {
+          "name": "executor_metadata",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 23
+        },
+        {
+          "name": "gen_metadata",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            },
+            {
+              "name": "size",
+              "type": "INTEGER"
+            }
+          ],
+          "rows": 167
+        },
+        {
+          "name": "parent_references",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 0
+        },
+        {
+          "name": "steps",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "step_type",
+              "type": "INTEGER"
+            },
+            {
+              "name": "status",
+              "type": "INTEGER"
+            },
+            {
+              "name": "has_subtrajectory",
+              "type": "numeric"
+            },
+            {
+              "name": "metadata",
+              "type": "BLOB"
+            },
+            {
+              "name": "error_details",
+              "type": "BLOB"
+            },
+            {
+              "name": "permissions",
+              "type": "BLOB"
+            },
+            {
+              "name": "task_details",
+              "type": "BLOB"
+            },
+            {
+              "name": "render_info",
+              "type": "BLOB"
+            },
+            {
+              "name": "step_payload",
+              "type": "BLOB"
+            },
+            {
+              "name": "step_format",
+              "type": "INTEGER"
+            }
+          ],
+          "rows": 341
+        },
+        {
+          "name": "trajectory_meta",
+          "columns": [
+            {
+              "name": "trajectory_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "cascade_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "trajectory_type",
+              "type": "INTEGER"
+            },
+            {
+              "name": "source",
+              "type": "INTEGER"
+            }
+          ],
+          "rows": 1
+        },
+        {
+          "name": "trajectory_metadata_blob",
+          "columns": [
+            {
+              "name": "id",
+              "type": "TEXT"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 1
+        }
+      ],
+      "wal_present": false
+    },
+    {
+      "id": "linux-antigravity-2",
+      "path": "/home/derek/.gemini/antigravity-cli/conversations/12478e3d-3b4f-4ba9-b24f-b55fb9a448c6.db",
+      "status": "complete",
+      "limitations": [
+        "Immutable read: WAL rows may be omitted; no data values or BLOBs selected"
+      ],
+      "tables": [
+        {
+          "name": "battle_mode_infos",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 0
+        },
+        {
+          "name": "executor_metadata",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 1
+        },
+        {
+          "name": "gen_metadata",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            },
+            {
+              "name": "size",
+              "type": "INTEGER"
+            }
+          ],
+          "rows": 2
+        },
+        {
+          "name": "parent_references",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 0
+        },
+        {
+          "name": "steps",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "step_type",
+              "type": "INTEGER"
+            },
+            {
+              "name": "status",
+              "type": "INTEGER"
+            },
+            {
+              "name": "has_subtrajectory",
+              "type": "numeric"
+            },
+            {
+              "name": "metadata",
+              "type": "BLOB"
+            },
+            {
+              "name": "error_details",
+              "type": "BLOB"
+            },
+            {
+              "name": "permissions",
+              "type": "BLOB"
+            },
+            {
+              "name": "task_details",
+              "type": "BLOB"
+            },
+            {
+              "name": "render_info",
+              "type": "BLOB"
+            },
+            {
+              "name": "step_payload",
+              "type": "BLOB"
+            },
+            {
+              "name": "step_format",
+              "type": "INTEGER"
+            }
+          ],
+          "rows": 4
+        },
+        {
+          "name": "trajectory_meta",
+          "columns": [
+            {
+              "name": "trajectory_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "cascade_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "trajectory_type",
+              "type": "INTEGER"
+            },
+            {
+              "name": "source",
+              "type": "INTEGER"
+            }
+          ],
+          "rows": 1
+        },
+        {
+          "name": "trajectory_metadata_blob",
+          "columns": [
+            {
+              "name": "id",
+              "type": "TEXT"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 1
+        }
+      ],
+      "wal_present": false
+    },
+    {
+      "id": "c-antigravity-0",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/conversations/0191643e-2994-468c-9a11-672301a20b12.db",
+      "status": "complete",
+      "limitations": [
+        "Immutable read: WAL rows may be omitted; no data values or BLOBs selected"
+      ],
+      "tables": [
+        {
+          "name": "battle_mode_infos",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 0
+        },
+        {
+          "name": "executor_metadata",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 2
+        },
+        {
+          "name": "gen_metadata",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            },
+            {
+              "name": "size",
+              "type": "INTEGER"
+            }
+          ],
+          "rows": 9
+        },
+        {
+          "name": "parent_references",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 0
+        },
+        {
+          "name": "steps",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "step_type",
+              "type": "INTEGER"
+            },
+            {
+              "name": "status",
+              "type": "INTEGER"
+            },
+            {
+              "name": "has_subtrajectory",
+              "type": "numeric"
+            },
+            {
+              "name": "metadata",
+              "type": "BLOB"
+            },
+            {
+              "name": "error_details",
+              "type": "BLOB"
+            },
+            {
+              "name": "permissions",
+              "type": "BLOB"
+            },
+            {
+              "name": "task_details",
+              "type": "BLOB"
+            },
+            {
+              "name": "render_info",
+              "type": "BLOB"
+            },
+            {
+              "name": "step_payload",
+              "type": "BLOB"
+            },
+            {
+              "name": "step_format",
+              "type": "INTEGER"
+            }
+          ],
+          "rows": 21
+        },
+        {
+          "name": "trajectory_meta",
+          "columns": [
+            {
+              "name": "trajectory_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "cascade_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "trajectory_type",
+              "type": "INTEGER"
+            },
+            {
+              "name": "source",
+              "type": "INTEGER"
+            }
+          ],
+          "rows": 1
+        },
+        {
+          "name": "trajectory_metadata_blob",
+          "columns": [
+            {
+              "name": "id",
+              "type": "TEXT"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 1
+        }
+      ],
+      "wal_present": false
+    },
+    {
+      "id": "c-antigravity-1",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/conversations/024cf6e1-be9a-4fac-9efb-464d45c63256.db",
+      "status": "complete",
+      "limitations": [
+        "Immutable read: WAL rows may be omitted; no data values or BLOBs selected"
+      ],
+      "tables": [
+        {
+          "name": "battle_mode_infos",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 0
+        },
+        {
+          "name": "executor_metadata",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 1
+        },
+        {
+          "name": "gen_metadata",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            },
+            {
+              "name": "size",
+              "type": "INTEGER"
+            }
+          ],
+          "rows": 3
+        },
+        {
+          "name": "parent_references",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 0
+        },
+        {
+          "name": "steps",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "step_type",
+              "type": "INTEGER"
+            },
+            {
+              "name": "status",
+              "type": "INTEGER"
+            },
+            {
+              "name": "has_subtrajectory",
+              "type": "numeric"
+            },
+            {
+              "name": "metadata",
+              "type": "BLOB"
+            },
+            {
+              "name": "error_details",
+              "type": "BLOB"
+            },
+            {
+              "name": "permissions",
+              "type": "BLOB"
+            },
+            {
+              "name": "task_details",
+              "type": "BLOB"
+            },
+            {
+              "name": "render_info",
+              "type": "BLOB"
+            },
+            {
+              "name": "step_payload",
+              "type": "BLOB"
+            },
+            {
+              "name": "step_format",
+              "type": "INTEGER"
+            }
+          ],
+          "rows": 15
+        },
+        {
+          "name": "trajectory_meta",
+          "columns": [
+            {
+              "name": "trajectory_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "cascade_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "trajectory_type",
+              "type": "INTEGER"
+            },
+            {
+              "name": "source",
+              "type": "INTEGER"
+            }
+          ],
+          "rows": 1
+        },
+        {
+          "name": "trajectory_metadata_blob",
+          "columns": [
+            {
+              "name": "id",
+              "type": "TEXT"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 1
+        }
+      ],
+      "wal_present": false
+    },
+    {
+      "id": "c-antigravity-2",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/conversations/042e9446-9c0a-4c4f-90a6-3172e59d4deb.db",
+      "status": "complete",
+      "limitations": [
+        "Immutable read: WAL rows may be omitted; no data values or BLOBs selected"
+      ],
+      "tables": [
+        {
+          "name": "battle_mode_infos",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 0
+        },
+        {
+          "name": "executor_metadata",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 4
+        },
+        {
+          "name": "gen_metadata",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            },
+            {
+              "name": "size",
+              "type": "INTEGER"
+            }
+          ],
+          "rows": 32
+        },
+        {
+          "name": "parent_references",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 0
+        },
+        {
+          "name": "steps",
+          "columns": [
+            {
+              "name": "idx",
+              "type": "INTEGER"
+            },
+            {
+              "name": "step_type",
+              "type": "INTEGER"
+            },
+            {
+              "name": "status",
+              "type": "INTEGER"
+            },
+            {
+              "name": "has_subtrajectory",
+              "type": "numeric"
+            },
+            {
+              "name": "metadata",
+              "type": "BLOB"
+            },
+            {
+              "name": "error_details",
+              "type": "BLOB"
+            },
+            {
+              "name": "permissions",
+              "type": "BLOB"
+            },
+            {
+              "name": "task_details",
+              "type": "BLOB"
+            },
+            {
+              "name": "render_info",
+              "type": "BLOB"
+            },
+            {
+              "name": "step_payload",
+              "type": "BLOB"
+            },
+            {
+              "name": "step_format",
+              "type": "INTEGER"
+            }
+          ],
+          "rows": 67
+        },
+        {
+          "name": "trajectory_meta",
+          "columns": [
+            {
+              "name": "trajectory_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "cascade_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "trajectory_type",
+              "type": "INTEGER"
+            },
+            {
+              "name": "source",
+              "type": "INTEGER"
+            }
+          ],
+          "rows": 1
+        },
+        {
+          "name": "trajectory_metadata_blob",
+          "columns": [
+            {
+              "name": "id",
+              "type": "TEXT"
+            },
+            {
+              "name": "data",
+              "type": "BLOB"
+            }
+          ],
+          "rows": 1
+        }
+      ],
+      "wal_present": false
+    },
+    {
+      "id": "c-execution-6",
+      "path": "/mnt/omen-c-read/hearth-var/execution/coordination.sqlite",
+      "status": "complete",
+      "limitations": [
+        "Immutable read: WAL rows may be omitted; no data values or BLOBs selected"
+      ],
+      "tables": [
+        {
+          "name": "capacity_leases",
+          "columns": [
+            {
+              "name": "lease_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "scope",
+              "type": "TEXT"
+            },
+            {
+              "name": "job_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "invocation_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "acquired_at",
+              "type": "REAL"
+            },
+            {
+              "name": "expires_at",
+              "type": "REAL"
+            }
+          ],
+          "rows": 0
+        }
+      ],
+      "wal_present": false
+    },
+    {
+      "id": "c-execution-7",
+      "path": "/mnt/omen-c-read/hearth-var/execution/projection.sqlite",
+      "status": "complete",
+      "limitations": [
+        "Immutable read: WAL rows may be omitted; no data values or BLOBs selected"
+      ],
+      "tables": [
+        {
+          "name": "artifacts",
+          "columns": [
+            {
+              "name": "artifact_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "job_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "invocation_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "metadata_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "recorded_sequence",
+              "type": "INTEGER"
+            }
+          ],
+          "rows": 125
+        },
+        {
+          "name": "events",
+          "columns": [
+            {
+              "name": "sequence",
+              "type": "INTEGER"
+            },
+            {
+              "name": "event_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "byte_offset",
+              "type": "INTEGER"
+            },
+            {
+              "name": "byte_length",
+              "type": "INTEGER"
+            },
+            {
+              "name": "timestamp",
+              "type": "TEXT"
+            },
+            {
+              "name": "event_type",
+              "type": "TEXT"
+            },
+            {
+              "name": "request_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "job_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "invocation_id",
+              "type": "TEXT"
+            }
+          ],
+          "rows": 573
+        },
+        {
+          "name": "idempotency",
+          "columns": [
+            {
+              "name": "idempotency_key",
+              "type": "TEXT"
+            },
+            {
+              "name": "request_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "job_id",
+              "type": "TEXT"
+            }
+          ],
+          "rows": 29
+        },
+        {
+          "name": "jobs",
+          "columns": [
+            {
+              "name": "job_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "request_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "status",
+              "type": "TEXT"
+            },
+            {
+              "name": "state_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "last_sequence",
+              "type": "INTEGER"
+            }
+          ],
+          "rows": 64
+        }
+      ],
+      "wal_present": false
+    },
+    {
+      "id": "lab-registry",
+      "path": "/home/derek/work/lab-rnd/research/state/events/00000001.json",
+      "status": "complete",
+      "limitations": [
+        "Shape of first JSONL record or one bounded JSON file only; no scalar values emitted"
+      ],
+      "shape": {
+        "at": "str",
+        "previous_sha256": "NoneType",
+        "reason": "str",
+        "records": {
+          "type": "list",
+          "sample_shape": {
+            "created_at": "str",
+            "evidence": "list",
+            "id": "str",
+            "kind": "str",
+            "modes": "list",
+            "next_action": "str",
+            "revision": "int",
+            "scope": "list",
+            "status": "str",
+            "title": "str",
+            "updated_at": "str"
+          }
+        },
+        "schema": "str",
+        "sequence": "int"
+      }
+    },
+    {
+      "id": "lever-bench27",
+      "path": "/home/derek/work/lever-ledger/slices/16-bench27.jsonl",
+      "status": "complete",
+      "limitations": [
+        "Shape of first JSONL record or one bounded JSON file only; no scalar values emitted"
+      ],
+      "shape": {
+        "id": "str",
+        "key": "str",
+        "lever": "str",
+        "category": "str",
+        "date": "str",
+        "platform": "str",
+        "machines": {
+          "type": "list",
+          "sample_shape": "str"
+        },
+        "where": {
+          "type": "list",
+          "sample_shape": "str"
+        },
+        "hypothesis": "str",
+        "change": "str",
+        "setup": "str",
+        "result": "str",
+        "verdict": "str",
+        "status_now": "str",
+        "evidence": {
+          "type": "list",
+          "sample_shape": "str"
+        },
+        "confidence": "str",
+        "related": {
+          "type": "list",
+          "sample_shape": null
+        },
+        "notes": "str"
+      }
+    },
+    {
+      "id": "lever-runs",
+      "path": "/home/derek/work/lever-ledger/slices/06-runs-data.jsonl",
+      "status": "complete",
+      "limitations": [
+        "Shape of first JSONL record or one bounded JSON file only; no scalar values emitted"
+      ],
+      "shape": {
+        "id": "str",
+        "key": "str",
+        "lever": "str",
+        "category": "str",
+        "date": "str",
+        "platform": "str",
+        "machines": {
+          "type": "list",
+          "sample_shape": "str"
+        },
+        "where": {
+          "type": "list",
+          "sample_shape": "str"
+        },
+        "hypothesis": "str",
+        "change": "str",
+        "setup": "str",
+        "result": "str",
+        "verdict": "str",
+        "status_now": "str",
+        "evidence": {
+          "type": "list",
+          "sample_shape": "str"
+        },
+        "confidence": "str",
+        "related": {
+          "type": "list",
+          "sample_shape": "str"
+        },
+        "notes": "str"
+      }
+    },
+    {
+      "id": "c-experiment-0",
+      "path": "/mnt/omen-c-read/hearth-var/experiments/doc-adr-bench-20260721T154713Z-smoke/summary.json",
+      "status": "complete",
+      "limitations": [
+        "Shape of first JSONL record or one bounded JSON file only; no scalar values emitted"
+      ],
+      "shape": {
+        "cells": "int",
+        "ok_cells": "int",
+        "mean_score_by_backend": {},
+        "mean_cost_usd_by_backend": {},
+        "total_cost_usd_by_backend": {},
+        "mean_latency_ms_by_backend": {}
+      }
+    },
+    {
+      "id": "c-experiment-1",
+      "path": "/mnt/omen-c-read/hearth-var/experiments/doc-adr-bench-20260721T161359Z-sweep/summary.json",
+      "status": "complete",
+      "limitations": [
+        "Shape of first JSONL record or one bounded JSON file only; no scalar values emitted"
+      ],
+      "shape": {
+        "cells": "int",
+        "ok_cells": "int",
+        "mean_score_by_backend": {},
+        "mean_cost_usd_by_backend": {},
+        "total_cost_usd_by_backend": {},
+        "mean_latency_ms_by_backend": {}
+      }
+    },
+    {
+      "id": "c-experiment-2",
+      "path": "/mnt/omen-c-read/hearth-var/experiments/matrix-20260705T110418Z-smoke/dataset.json",
+      "status": "complete",
+      "limitations": [
+        "Shape of first JSONL record or one bounded JSON file only; no scalar values emitted"
+      ],
+      "shape": {
+        "run_id": "str",
+        "summary": {
+          "cells": "int",
+          "ok_cells": "int",
+          "mean_score_by_planner_laps": {},
+          "mean_score_by_prompt": {}
+        },
+        "rows": {
+          "type": "list",
+          "sample_shape": {
+            "cell_id": "str",
+            "prompt_id": "str",
+            "laps": "int",
+            "ordering": "str",
+            "planner": "dict",
+            "critic": "dict",
+            "ok": "bool",
+            "converged": "bool",
+            "rounds_run": "int",
+            "cost": "dict",
+            "score": "dict",
+            "error": "NoneType",
+            "final": "str"
+          }
+        }
+      }
+    },
+    {
+      "id": "c-experiment-3",
+      "path": "/mnt/omen-c-read/hearth-var/experiments/matrix-20260705T110418Z-smoke/summary.json",
+      "status": "complete",
+      "limitations": [
+        "Shape of first JSONL record or one bounded JSON file only; no scalar values emitted"
+      ],
+      "shape": {
+        "cells": "int",
+        "ok_cells": "int",
+        "mean_score_by_planner_laps": {},
+        "mean_score_by_prompt": {}
+      }
+    },
+    {
+      "id": "c-experiment-4",
+      "path": "/mnt/omen-c-read/hearth-var/experiments/matrix-20260706T052819Z-pilot/dataset.json",
+      "status": "complete",
+      "limitations": [
+        "Shape of first JSONL record or one bounded JSON file only; no scalar values emitted"
+      ],
+      "shape": {
+        "run_id": "str",
+        "summary": {
+          "cells": "int",
+          "ok_cells": "int",
+          "mean_score_by_planner_laps": {},
+          "mean_score_by_prompt": {}
+        },
+        "rows": {
+          "type": "list",
+          "sample_shape": {
+            "cell_id": "str",
+            "prompt_id": "str",
+            "laps": "int",
+            "ordering": "str",
+            "planner": "dict",
+            "critic": "dict",
+            "ok": "bool",
+            "converged": "bool",
+            "rounds_run": "int",
+            "cost": "dict",
+            "score": "dict",
+            "error": "NoneType",
+            "final": "str"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "group": "projects",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "e-work",
+    "host": "omen-e",
+    "status": "partial",
+    "gaps": [],
+    "limits": {
+      "depth": 6,
+      "seconds": 60,
+      "max_files": 100000,
+      "max_candidates": 1500
+    },
+    "rollups_omitted": 29,
+    "rollups": [
+      {
+        "path": "/mnt/omen-e-read/work/battlemage/qwen38-bench-2026-08",
+        "directories": 925,
+        "structured_files": {
+          ".json": 1030,
+          ".jsonl": 1175
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/work/RaidUI/.worktrees",
+        "directories": 200,
+        "structured_files": {
+          ".json": 601
+        },
+        "git_markers": 32
+      },
+      {
+        "path": "/mnt/omen-e-read/work/b70tools/eval",
+        "directories": 136,
+        "structured_files": {
+          ".json": 279,
+          ".jsonl": 46
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/work/b70tools/runs",
+        "directories": 97,
+        "structured_files": {
+          ".json": 162,
+          ".jsonl": 141,
+          ".csv": 4
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/work/ai-dev-system/output",
+        "directories": 34,
+        "structured_files": {
+          ".jsonl": 17,
+          ".json": 58
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/work/battlemage/burnin-2026-08",
+        "directories": 22,
+        "structured_files": {
+          ".jsonl": 45,
+          ".csv": 1,
+          ".json": 21
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/work/battlemage/ff-probes",
+        "directories": 13,
+        "structured_files": {
+          ".jsonl": 13,
+          ".json": 13
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/work/battlemage/intel_ollama",
+        "directories": 12,
+        "structured_files": {
+          ".csv": 6,
+          ".json": 15,
+          ".jsonl": 3
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/work/.cbm-cache",
+        "directories": 1,
+        "structured_files": {
+          ".db": 23
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/work/RaidUI/research",
+        "directories": 10,
+        "structured_files": {
+          ".json": 17,
+          ".jsonl": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/work/battlemage/bench-2026-05-24",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 16,
+          ".json": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/work/ai-dev-system/runs",
+        "directories": 1,
+        "structured_files": {
+          ".json": 17
+        },
+        "git_markers": 0
+      }
+    ]
+  }
+}

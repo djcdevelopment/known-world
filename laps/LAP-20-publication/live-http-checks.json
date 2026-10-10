@@ -1,0 +1,31 @@
+{
+ "index.html": {
+  "status": 200,
+  "bytes": 5191,
+  "sha256": "34e57563587a2976cfcd7f3b8fc93ca42637a3b084538f435906f3c68675de14",
+  "matches_staged": true
+ },
+ "release.json": {
+  "status": 200,
+  "bytes": 3529,
+  "sha256": "17777dae634959caf5aaee3bc7ac295b9db6e0aac59309b4e229b85565ea7a20",
+  "matches_staged": true
+ },
+ "known-world-90s-b58c7df86cf1.mp4": {
+  "status": 200,
+  "bytes": 34700108,
+  "sha256": "b58c7df86cf1f36c3c68d593402eafb811207138173ce89cf6eee5c5b42b58f4",
+  "matches_staged": true
+ },
+ "poster-078f51e936f5.png": {
+  "status": 200,
+  "bytes": 832785,
+  "sha256": "078f51e936f584c5f247fb421b89fe90cd7110c4eaf26eab92467a5a24488f1f",
+  "matches_staged": true
+ },
+ "range": {
+  "status": 206,
+  "content_range": "bytes 0-15/34700108",
+  "bytes": 16
+ }
+}

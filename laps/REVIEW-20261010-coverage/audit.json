@@ -1,0 +1,114 @@
+{
+  "goal": "G-known-world",
+  "date": "2026-10-10",
+  "scope": "Read-only coverage and design review. No renderer, collectors, source histories or deployed site changed. No visual or audio model review; models received code or written direction.",
+  "baseline_commit": "c6c99bf",
+  "counts": {
+    "all_offload_records": 26386,
+    "recognized_local_records": 22760,
+    "recognized_local_through_sep29": 837,
+    "recognized_local_hearth_ledger": 22672,
+    "recognized_local_deepagents_runs": 88
+  },
+  "backend_counts": {
+    "(missing)": 2569,
+    "gcp-gemini": 683,
+    "gcp-gemini-pro": 374,
+    "omen-ollama": 24,
+    "am4-moe": 238,
+    "am4-oxen": 332,
+    "omen-arc": 186,
+    "fx99-ollama": 3,
+    "omen-swap": 11,
+    "am4-ollama": 2,
+    "am4-dense": 7,
+    "am4-read-4070ti": 2,
+    "omen-arc-27b": 9,
+    "am4-vllm": 769,
+    "omen-vllm": 9112,
+    "fx99-vllm": 371,
+    "omen-dense-27b": 7553,
+    "am4-tool-4070ti": 2520,
+    "am4-tool-5070": 1621
+  },
+  "offload_span": [
+    "2026-07-04T03:47:24Z",
+    "2026-10-07T20:31:19Z"
+  ],
+  "run_receipt_counts": {
+    "run": 235,
+    "receipt": 233
+  },
+  "published_cut_receipt_totals": {
+    "commits": 9784,
+    "files": 209848,
+    "lines": 7938025
+  },
+  "published_cut_uncapped_lines": {
+    "added": 15931735,
+    "cap": 20000,
+    "commits_capped": 87,
+    "removed": 2516174,
+    "total": 18447909
+  },
+  "findings": [
+    "837 matches all recognized local records through September 29. Caller class does not control the local participation count; backend prefix does. This corrects the initial caller-attribution suspicion.",
+    "Current local backend prefix filter recognizes omen-, am4-, fx99-. 1,057 Gemini-backed dispatch records (683 gcp-gemini + 374 gcp-gemini-pro) are outside that local filter; Gemini also has no actor category/collector. These are calls, not proven unique tasks or launches.",
+    "2,569 offload records have no backend. They cannot honestly be assigned to local or Gemini without further evidence.",
+    "235 run records and 233 receipts exist in merged corpus. They can affect first-event/host bookkeeping, but do not have an independent counted/rendered run series. These are not 468 distinct benchmark experiments.",
+    "Local recognized total includes 88 deepagents observation records alongside 22,672 successful HEARTH dispatch records; cross-source job identity is not established, so do not call it a unique inference count.",
+    "Line totals are capped at 20,000 changed lines per commit. Current cut receipt reports 7,938,025 displayed vs 18,447,909 raw line changes across 87 capped commits. Neither measure is current lines of code. Files sums file-touch activity and filesystem births/updates, not unique files.",
+    "Antigravity conversation directories exist: Linux antigravity-cli has 62 .db files, Windows antigravity has 113 .db files; sidecars also exist. Filenames/extensions counted only; no database contents read or session totals inferred.",
+    "No mechnet name matched collected lineage names/paths. Name-only search cannot establish absence under another project name."
+  ],
+  "model_reviews": [
+    {
+      "model": "qwen2.5-coder-7b",
+      "backend": "fx99-vllm",
+      "job_id": "job_4b33df217f926ce1773c45614cbafb25",
+      "duration_ms": 9360,
+      "verdict": "No recommendations adopted: generic, mostly existing features, extra sound conflicts with current direction. Completed text, no visual inspection."
+    },
+    {
+      "model": "qwen3.8-27b",
+      "backend": "omen-dense-27b",
+      "job_id": "job_28f26399dfa2afc6dd1e2be59676fde3",
+      "duration_ms": 28484,
+      "verdict": "Partially useful: confirmed offload filter and absence of run series. Reject invented receipt success semantics, unproven dedupe bug as count cause, and pre-2026 explanation (all collected offloads are in 2026). No candidate code applied."
+    },
+    {
+      "model": "qwen3-27b",
+      "backend": "am4-vllm",
+      "job_id": "job_a7d227f06dc6c20ab50ca3ae33ef360a",
+      "duration_ms": 29122,
+      "verdict": "Partial candidate, NOT successful complete review: output hit 1200-token cap and ended mid-sentence, exceeding requested length. Useful concept: client badge distinct from model attribution. Reject adding already existing local row, inferring launches from calls, and assumption Antigravity is a local compute seat. No candidate code applied."
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": 1,
+      "change": "Honest totals and source coverage",
+      "detail": "Separate raw numeric counts from capped visual intensity; label line changes/file touches; show source coverage in an expandable detail or end card. Keep the 2026 start.",
+      "preview": "One late-date before/after still."
+    },
+    {
+      "priority": 2,
+      "change": "Evidence-backed Gemini/Antigravity attribution",
+      "detail": "Preserve client and model separately, with provenance and unknown state. Count each dispatch/session once; add Gemini activity from evidenced backend/model metadata. Antigravity can have a client badge, not a second count of the same event. Inspect database schemas using allowlisted metadata before implementing ingestion.",
+      "preview": "Same 8-second excerpt before/after when recovered activity occurs."
+    },
+    {
+      "priority": 3,
+      "change": "Optional lab detail view",
+      "detail": "Keep main geography and musical score. Focus existing research territory on request, expose runs, calls and reviewed verdicts separately. Join jobs/runs/receipts by durable IDs before counting or placing on project land; unresolved activity stays explicitly unplaced.",
+      "preview": "One still plus an 8-second excerpt. Full render only after user has seen the comparison."
+    }
+  ],
+  "existing_variations": {
+    "vertical_stream": "laps/LAP-12-stream/out/cut/final.mp4",
+    "four_zone_layout": "laps/LAP-14-ia/out/cut/final.mp4",
+    "constellation_and_score": "laps/LAP-15-ia2/out/cut/final.mp4",
+    "current_wide_map": "laps/LAP-16-fill/out/cut/final.mp4"
+  },
+  "verification": "Direct aggregate scan of merged corpus, source inspection, current cut receipt inspection, directory metadata counts. No test suite or full render run."
+}

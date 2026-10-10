@@ -1,0 +1,70 @@
+{
+  "group": "lab",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "am4-work",
+    "host": "am4",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 5,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500
+    },
+    "rollups_omitted": 0,
+    "rollups": [
+      {
+        "path": "/home/derek/work/am4-dual-nvidia-poc/logs",
+        "directories": 6,
+        "structured_files": {
+          ".json": 52,
+          ".csv": 6
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/am4-dual-nvidia-poc/output",
+        "directories": 1,
+        "structured_files": {
+          ".json": 10,
+          ".csv": 1,
+          ".jsonl": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/am4-dual-nvidia-poc/llama.cpp",
+        "directories": 4,
+        "structured_files": {
+          ".json": 4
+        },
+        "git_markers": 1
+      },
+      {
+        "path": "/home/derek/work/am4-dual-nvidia-poc/llama.cpp-knee",
+        "directories": 4,
+        "structured_files": {
+          ".json": 4
+        },
+        "git_markers": 1
+      },
+      {
+        "path": "/home/derek/work/am4-dual-nvidia-poc/llama.cpp-master",
+        "directories": 4,
+        "structured_files": {
+          ".json": 4
+        },
+        "git_markers": 1
+      },
+      {
+        "path": "/home/derek/work/vllm-e3-20260923",
+        "directories": 1,
+        "structured_files": {
+          ".json": 1
+        },
+        "git_markers": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "group": "clients",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "linux-codex",
+    "host": "omen-linux",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 6,
+      "seconds": 20,
+      "max_files": 100000,
+      "max_candidates": 1500
+    },
+    "rollups_omitted": 0,
+    "rollups": [
+      {
+        "path": "/home/derek/.codex/sessions/2026/10",
+        "directories": 8,
+        "structured_files": {
+          ".jsonl": 43
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/.codex/sessions/2026/09",
+        "directories": 3,
+        "structured_files": {
+          ".jsonl": 18
+        },
+        "git_markers": 0
+      }
+    ]
+  }
+}

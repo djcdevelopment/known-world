@@ -14,13 +14,14 @@
   const rankOf = () => { if (rank) return rank; const o = [...Array(N).keys()].sort((a, b) => (KW.natShownF[a] - KW.natShownF[b]) || a - b); rank = new Int32Array(N); o.forEach((i, r) => { rank[i] = r; }); return rank; };
   const hash = (a, b) => { let h = (a * 374761393 + b * 668265263) | 0; h = (h ^ (h >>> 13)) * 1274126177 | 0; return ((h ^ (h >>> 16)) >>> 0); };
   KW.drawScore = function (ctx, f, y0, h, condensed) {
-    const R = rankOf(), s = Math.max(4, Math.min(condensed ? 8 : 24, Math.floor(h / N))), WF = A.WF, W = KW.LAY.W;
+    const M = N + (KW.activity ? KW.activity.lanes.length : 0);
+    const R = rankOf(), s = Math.max(4, Math.min(condensed ? 8 : 24, Math.floor(h / M))), WF = A.WF, W = KW.LAY.W;
     let nVis = 0; for (let i = 0; i < N; i++) if (f >= KW.natShownF[i]) nVis++;
     if (!nVis) return;
-    ctx.save(); ctx.beginPath(); ctx.rect(1, y0, W - 2, N * s); ctx.clip();
+    ctx.save(); ctx.beginPath(); ctx.rect(1, y0, W - 2, M * s); ctx.clip();
     // bar lines: story days
     ctx.fillStyle = 'rgba(' + KW.C.fgRgb + ',0.07)';
-    for (let g = Math.max(1, f - WF + 1); g <= f; g++) if (Math.floor(tau[g] + 1e-9) !== Math.floor(tau[g - 1] + 1e-9)) ctx.fillRect(Math.round(A.xOf(f, g)), y0, 1, N * s);
+    for (let g = Math.max(1, f - WF + 1); g <= f; g++) if (Math.floor(tau[g] + 1e-9) !== Math.floor(tau[g - 1] + 1e-9)) ctx.fillRect(Math.round(A.xOf(f, g)), y0, 1, M * s);
     for (let i = 0; i < N; i++) {
       if (f < KW.natShownF[i]) continue;
       const top = y0 + R[i] * s, col = P.flat(i, 0.62, 0.9);
@@ -56,6 +57,7 @@
       }
       if (more[q] > 0 && !condensed) { ctx.font = '11px ' + FONT; ctx.fillStyle = col; ctx.textAlign = 'left'; ctx.fillText('+' + more[q], x + 5, top + 10); }
     }
+    if (KW.drawActivityScore) KW.drawActivityScore(ctx, f, y0 + N * s, s, condensed);
     // double bar and a letter for nation, constellation, migration, storm marks
     ctx.font = '11px ' + FONT; ctx.textAlign = 'center';
     for (const m of marks) {

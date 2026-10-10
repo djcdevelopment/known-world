@@ -1,0 +1,481 @@
+{
+ "root": "/home/derek/work",
+ "enumerated_files": 12984,
+ "candidate_files": 36,
+ "candidate_directories": 10,
+ "inspected": 26,
+ "rows": [
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/llama.cpp-knee/benches/dgx-spark/aime25_openai__gpt-oss-120b-high_temp1.0_20251109_094547.json",
+   "bytes": 120,
+   "keys": [
+    "chars",
+    "chars:std",
+    "score",
+    "score:std"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/llama.cpp-knee/benches/dgx-spark/aime25_openai__gpt-oss-120b-high_temp1.0_20251109_094547_allresults.json",
+   "bytes": 1613851,
+   "keys": [
+    "score",
+    "metrics",
+    "htmls",
+    "convos",
+    "metadata"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/llama.cpp-master/benches/dgx-spark/aime25_openai__gpt-oss-120b-high_temp1.0_20251109_094547.json",
+   "bytes": 120,
+   "keys": [
+    "chars",
+    "chars:std",
+    "score",
+    "score:std"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/llama.cpp-master/benches/dgx-spark/aime25_openai__gpt-oss-120b-high_temp1.0_20251109_094547_allresults.json",
+   "bytes": 1613851,
+   "keys": [
+    "score",
+    "metrics",
+    "htmls",
+    "convos",
+    "metadata"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/llama.cpp/benches/dgx-spark/aime25_openai__gpt-oss-120b-high_temp1.0_20251109_094547.json",
+   "bytes": 120,
+   "keys": [
+    "chars",
+    "chars:std",
+    "score",
+    "score:std"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/llama.cpp/benches/dgx-spark/aime25_openai__gpt-oss-120b-high_temp1.0_20251109_094547_allresults.json",
+   "bytes": 1613851,
+   "keys": [
+    "score",
+    "metrics",
+    "htmls",
+    "convos",
+    "metadata"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/logs/20260917T075959Z-4070ti/result.json",
+   "bytes": 533,
+   "keys": [
+    "configuration",
+    "started_utc",
+    "log_directory",
+    "repetitions",
+    "status",
+    "full_placement_control",
+    "load_seconds",
+    "coherence_response",
+    "error",
+    "finished_utc"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/logs/20260917T080159Z-4070ti/benchmark-3.json",
+   "bytes": 7228,
+   "keys": [
+    "index",
+    "content",
+    "tokens",
+    "id_slot",
+    "stop",
+    "model",
+    "tokens_predicted",
+    "tokens_evaluated",
+    "generation_settings",
+    "prompt",
+    "has_new_line",
+    "truncated",
+    "stop_type",
+    "stopping_word",
+    "tokens_cached",
+    "timings",
+    "client_ttft_seconds",
+    "client_total_seconds",
+    "completed_utc"
+   ],
+   "shapes": [
+    "measured_result"
+   ]
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/logs/20260917T080159Z-4070ti/benchmark-request.json",
+   "bytes": 5215,
+   "keys": [
+    "prompt",
+    "n_predict",
+    "ignore_eos",
+    "cache_prompt",
+    "temperature",
+    "seed"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/logs/20260917T080159Z-4070ti/result.json",
+   "bytes": 1910,
+   "keys": [
+    "configuration",
+    "started_utc",
+    "log_directory",
+    "repetitions",
+    "status",
+    "full_placement_control",
+    "load_seconds",
+    "coherence_response",
+    "finished_utc"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/logs/20260917T080541Z-5070/benchmark-3.json",
+   "bytes": 7275,
+   "keys": [
+    "index",
+    "content",
+    "tokens",
+    "id_slot",
+    "stop",
+    "model",
+    "tokens_predicted",
+    "tokens_evaluated",
+    "generation_settings",
+    "prompt",
+    "has_new_line",
+    "truncated",
+    "stop_type",
+    "stopping_word",
+    "tokens_cached",
+    "timings",
+    "client_ttft_seconds",
+    "client_total_seconds",
+    "completed_utc"
+   ],
+   "shapes": [
+    "measured_result"
+   ]
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/logs/20260917T080541Z-5070/benchmark-request.json",
+   "bytes": 5215,
+   "keys": [
+    "prompt",
+    "n_predict",
+    "ignore_eos",
+    "cache_prompt",
+    "temperature",
+    "seed"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/logs/20260917T080541Z-5070/result.json",
+   "bytes": 1897,
+   "keys": [
+    "configuration",
+    "started_utc",
+    "log_directory",
+    "repetitions",
+    "status",
+    "full_placement_control",
+    "load_seconds",
+    "coherence_response",
+    "finished_utc"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/logs/20260917T080918Z-dual-1-1/benchmark-2.json",
+   "bytes": 7393,
+   "keys": [
+    "index",
+    "content",
+    "tokens",
+    "id_slot",
+    "stop",
+    "model",
+    "tokens_predicted",
+    "tokens_evaluated",
+    "generation_settings",
+    "prompt",
+    "has_new_line",
+    "truncated",
+    "stop_type",
+    "stopping_word",
+    "tokens_cached",
+    "timings",
+    "client_ttft_seconds",
+    "client_total_seconds",
+    "completed_utc"
+   ],
+   "shapes": [
+    "measured_result"
+   ]
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/logs/20260917T080918Z-dual-1-1/benchmark-request.json",
+   "bytes": 5215,
+   "keys": [
+    "prompt",
+    "n_predict",
+    "ignore_eos",
+    "cache_prompt",
+    "temperature",
+    "seed"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/logs/20260917T080918Z-dual-1-1/result.json",
+   "bytes": 1797,
+   "keys": [
+    "configuration",
+    "started_utc",
+    "log_directory",
+    "repetitions",
+    "status",
+    "load_seconds",
+    "coherence_response",
+    "finished_utc"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/logs/20260917T081005Z-dual-2-3/benchmark-1.json",
+   "bytes": 7278,
+   "keys": [
+    "index",
+    "content",
+    "tokens",
+    "id_slot",
+    "stop",
+    "model",
+    "tokens_predicted",
+    "tokens_evaluated",
+    "generation_settings",
+    "prompt",
+    "has_new_line",
+    "truncated",
+    "stop_type",
+    "stopping_word",
+    "tokens_cached",
+    "timings",
+    "client_ttft_seconds",
+    "client_total_seconds",
+    "completed_utc"
+   ],
+   "shapes": [
+    "measured_result"
+   ]
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/logs/20260917T081005Z-dual-2-3/benchmark-request.json",
+   "bytes": 5215,
+   "keys": [
+    "prompt",
+    "n_predict",
+    "ignore_eos",
+    "cache_prompt",
+    "temperature",
+    "seed"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/logs/20260917T081005Z-dual-2-3/result.json",
+   "bytes": 1795,
+   "keys": [
+    "configuration",
+    "started_utc",
+    "log_directory",
+    "repetitions",
+    "status",
+    "load_seconds",
+    "coherence_response",
+    "finished_utc"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/logs/20260917T081050Z-dual-3-2/benchmark-2.json",
+   "bytes": 7392,
+   "keys": [
+    "index",
+    "content",
+    "tokens",
+    "id_slot",
+    "stop",
+    "model",
+    "tokens_predicted",
+    "tokens_evaluated",
+    "generation_settings",
+    "prompt",
+    "has_new_line",
+    "truncated",
+    "stop_type",
+    "stopping_word",
+    "tokens_cached",
+    "timings",
+    "client_ttft_seconds",
+    "client_total_seconds",
+    "completed_utc"
+   ],
+   "shapes": [
+    "measured_result"
+   ]
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/logs/20260917T081050Z-dual-3-2/benchmark-request.json",
+   "bytes": 5215,
+   "keys": [
+    "prompt",
+    "n_predict",
+    "ignore_eos",
+    "cache_prompt",
+    "temperature",
+    "seed"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/logs/20260917T081050Z-dual-3-2/result.json",
+   "bytes": 1796,
+   "keys": [
+    "configuration",
+    "started_utc",
+    "log_directory",
+    "repetitions",
+    "status",
+    "load_seconds",
+    "coherence_response",
+    "finished_utc"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/output/results-detailed.json",
+   "bytes": 24032,
+   "keys": [
+    "configuration",
+    "started_utc",
+    "log_directory",
+    "repetitions",
+    "status",
+    "full_placement_control",
+    "load_seconds",
+    "coherence_response",
+    "error",
+    "finished_utc",
+    "model_buffers_mib",
+    "cpu_model_mib",
+    "gpu_model_mib",
+    "offloaded_layers",
+    "embedding_override_logged",
+    "gpu_buffers_cover_tensor_payload",
+    "kv_and_recurrent_mib",
+    "gpu_peak_mib",
+    "gpu_min_free_mib",
+    "gpu_peak_temp_c",
+    "gpu_peak_power_w",
+    "warnings_errors",
+    "all_weights_gpu_resident"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/output/results.csv",
+   "bytes": 1053,
+   "keys": [
+    "configuration",
+    "status",
+    "4070ti_peak_mib",
+    "5070_peak_mib",
+    "cpu_model_mib",
+    "gpu_model_mib",
+    "offloaded_layers",
+    "prompt_tps_median",
+    "generation_tps_median",
+    "ttft_seconds_median",
+    "repetitions",
+    "all_weights_gpu_resident",
+    "log_directory"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/output/results.jsonl",
+   "bytes": 7834,
+   "keys": [
+    "configuration",
+    "started_utc",
+    "log_directory",
+    "repetitions",
+    "status",
+    "full_placement_control",
+    "load_seconds",
+    "coherence_response",
+    "error",
+    "finished_utc"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/work/am4-dual-nvidia-poc/output/reviewed-results.json",
+   "bytes": 22396,
+   "keys": [
+    "configuration",
+    "started_utc",
+    "log_directory",
+    "repetitions",
+    "status",
+    "full_placement_control",
+    "load_seconds",
+    "coherence_response",
+    "finished_utc",
+    "model_buffers_mib",
+    "cpu_model_mib",
+    "gpu_model_mib",
+    "offloaded_layers",
+    "embedding_override_logged",
+    "gpu_buffers_cover_tensor_payload",
+    "kv_and_recurrent_mib",
+    "gpu_peak_mib",
+    "gpu_min_free_mib",
+    "gpu_peak_temp_c",
+    "gpu_peak_power_w",
+    "warnings_errors",
+    "prompt_tps",
+    "generation_tps",
+    "ttft_seconds_median",
+    "all_weights_gpu_resident",
+    "gpu_loaded_mib"
+   ],
+   "shapes": []
+  }
+ ],
+ "omissions": [],
+ "enumeration_status": "complete",
+ "elapsed_s": 0.34,
+ "policy": "Representative schema discovery only; no work counts inferred. Payload files, credentials and runtime/model caches excluded."
+}

@@ -1,0 +1,26 @@
+{
+  "source": "/mnt/omen-c-read/hearth-var/execution/projection.sqlite",
+  "job_status_counts": {
+    "failed": 3,
+    "succeeded": 61
+  },
+  "event_type_counts": {
+    "artifact.recorded": 125,
+    "invocation.failed": 3,
+    "invocation.started": 64,
+    "invocation.succeeded": 61,
+    "job.dispatched": 64,
+    "job.failed": 3,
+    "job.queued": 64,
+    "job.running": 64,
+    "job.succeeded": 61,
+    "request.accepted": 64
+  },
+  "event_span": [
+    "2026-07-31T01:31:04.912567Z",
+    "2026-08-19T16:03:44.047674Z"
+  ],
+  "distinct_jobs_in_events": 64,
+  "wal_present": false,
+  "limitation": "Windows snapshot, immutable read; tool-call count and job count are different. No state_json or metadata_json inspected."
+}

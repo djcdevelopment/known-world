@@ -142,8 +142,10 @@
     for (let b = 0; b < D.nb; b++) {
       const bf = bfirst[b];
       if (bf > f || bf >= F) continue;
+      const memory = KW.connectionFade ? KW.connectionFade(f, KW.connectionLast('bridge:' + b, f)) : 1;
+      if (!memory) continue;
       const age = f - bf, lit = age < 24 ? 1 - age / 24 : 0, cand = bkind[b] === 0 && bprom[b] > f;
-      const al = Math.min(0.9, 0.42 + 0.5 * lit);
+      const al = Math.min(0.9, 0.42 + 0.5 * lit) * memory;
       const x0 = KW.sx(b0x[b], v), y0 = KW.sy(b0y[b], v), x1 = KW.sx(b1x[b], v), y1 = KW.sy(b1y[b], v);
       const mx = (x0 + x1) / 2, my = (y0 + y1) / 2, dx = x1 - x0, dy = y1 - y0, sg = (b % 2 ? 1 : -1) * 0.2, nl = Math.hypot(dx, dy) || 1, ox = -dy / nl * 1.6, oy = dx / nl * 1.6;
       ctx.strokeStyle = P.rgbaRaw(0.7, 0.05, 235, al); ctx.lineWidth = 1; ctx.setLineDash(cand ? [4, 4] : []);
@@ -157,10 +159,12 @@
     const v = KW.view(f);
     for (let k = 0; k < D.nsp; k++) {
       if (spf[k] > f) continue;
+      const memory = KW.connectionFade ? KW.connectionFade(f, KW.connectionLast('spur:' + k, f)) : 1;
+      if (!memory) continue;
       const age = KW.tau[f] - KW.tau[spf[k]], fac = 0.3 + 0.7 * Math.pow(2, -age / D.hl);
       const ramp = Math.min(1, (f - spf[k] + 1) / 12);
       const x0 = KW.sx(spx0[k], v), y0 = KW.sy(spy0[k], v), x1 = x0 + (KW.sx(spx1[k], v) - x0) * fac * ramp, y1 = y0 + (KW.sy(spy1[k], v) - y0) * fac * ramp;
-      ctx.strokeStyle = P.rgbaRaw(0.55, 0.02, 250, 0.4 + 0.5 * fac); ctx.lineWidth = Math.max(1, Math.min(2, 0.35 * v.s));
+      ctx.strokeStyle = P.rgbaRaw(0.55, 0.02, 250, (0.4 + 0.5 * fac) * memory); ctx.lineWidth = Math.max(1, Math.min(2, 0.35 * v.s));
       ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x1, y1); ctx.stroke();
     }
     ctx.lineWidth = Math.max(1, Math.min(2.2, 0.4 * v.s)); ctx.strokeStyle = 'rgba(7,9,14,0.9)';

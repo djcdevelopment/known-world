@@ -1,0 +1,65 @@
+{
+ "observed_date": "2026-10-10",
+ "mechnet": {
+  "status": "original_archive_unavailable",
+  "original_host": "cc-conductor.mshome.net",
+  "original_root": "/home/claude/work/commandcenter/runs",
+  "missing_plan_ids": [
+   "hearth-mechnet-am4-fx99-capacity-evidence-20260915-81030f1d",
+   "hearth-mechnet-three-host-resource-review-fd96b4ac"
+  ],
+  "operator_lead": "Originally AM4 Windows Hyper-V; possibly later AM4 Linux or FX99, unconfirmed.",
+  "am4_search": {
+   "first_files_seen": 32833,
+   "first_max_depth": 4,
+   "first_budget_hit": false,
+   "focused_files_seen": 138,
+   "focused_max_depth": 8
+  },
+  "fx99_search": {
+   "first_files_seen": 40688,
+   "first_max_depth": 4,
+   "first_budget_hit": true,
+   "focused_files_seen": 86576,
+   "focused_max_depth": 8,
+   "focused_budget_hit": false
+  },
+  "focused_roots": [
+   "/home/derek/backups",
+   "/home/derek/drives",
+   "/home/claude",
+   "/home/derek/am4-fleet-node"
+  ],
+  "bounds": "Read-only metadata, no symlink traversal; models, caches, credentials, dependencies and Windows system trees excluded. AM4 /home/claude inaccessible. Not a whole-disk completeness claim.",
+  "result": "No VM disk found within bounds. FX99 backup has six older conductor results, two dated and integrated; none matches the missing plans. Mounted Windows VMs location contains SandboxVM-AuditLogs; E wsl location empty. Original hostname does not resolve.",
+  "github_mirror": {
+   "repository": "djcdevelopment/conductor",
+   "last_push": "2026-07-03T11:00:27Z",
+   "commits": 36,
+   "all_current_commits_already_in_corpus": true,
+   "evidence": "conductor-github-coverage.json"
+  }
+ },
+ "am4_image_benchmarks": {
+  "status": "undated",
+  "valid_result_ids": 4533,
+  "invalid_json": 17,
+  "benchmark_db_runs": 1522,
+  "benchmark_db_scores": 1523,
+  "benchmark_db_timestamp_columns": 0,
+  "comfyui_asset_rows": 0,
+  "linked_trace_ids_checked": 7,
+  "linked_traces_recovered": 0,
+  "jaeger_services": [
+   "jaeger-all-in-one"
+  ],
+  "reason": "Runner persisted durations but dropped execution timestamps. No native dated lifecycle found in inspected metadata, database or surviving trace service; filesystem dates were not substituted."
+ },
+ "other_benchmark_formats": {
+  "run_manifests": 48,
+  "with_native_jobs": 16,
+  "without_native_jobs": 32,
+  "additional_canonical_jobs_recovered": 22,
+  "enclosing_run_dates": "unavailable"
+ }
+}

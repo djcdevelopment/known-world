@@ -1,0 +1,68 @@
+{
+  "status": "reviewed",
+  "candidate_status_before_review": "awaiting_review",
+  "scout": "lab-history",
+  "reviewer": "codex-frontier",
+  "verdict": {
+    "substance": "partially_useful",
+    "accepted": [
+      "MechNet planning-spine navigation",
+      "bench27 lever ledger and research registry trails",
+      "Separate planned profiles from evidence of operation"
+    ],
+    "rejected": [
+      "Historical/current profile state conflation",
+      "README narrative counts as verified measurements",
+      "Directory names or publication revisions as event times"
+    ],
+    "form": "over requested word range; retained verbatim as candidate, no silent trimming"
+  },
+  "result": {
+    "ok": true,
+    "text": "[goal:G-known-world] Candidate source trails for growth animation\n\nThese are read-only candidates for frontier review, not accepted findings. Each trail must be confirmed by a timestamped, hash- or receipt-identified artifact before it can represent a data point.\n\n1. **MechNet planning/scheduling trail**\nSource: `~/work/lab-rnd/EVIDENCE.md`, “MechNet planning/scheduling” row; entry point `evidence/sources/planning-spine-manifest.json` (relative to `~/work/lab-rnd/`). Supporting paths named: `/home/derek/research/mechnet.md`, `/home/derek/research/scheduling.md`, `/home/derek/work/commandcenter-linux-flash/campaign/results/`.\nMeasurable quantity: number of raw schedules/traces recoverable from `campaign/results/` and manifest entries in `planning-spine-manifest.json`.\nNext lookup: enumerate `planning-spine-manifest.json` entries with their original paths and capture timestamps; list `/home/derek/work/commandcenter-linux-flash/campaign/results/` for files with mtime and content hash.\nCaveat: EVIDENCE.md calls these “navigation” and summary recommendations, not freshly reproduced measurements; the manifest is a navigation document until raw schedule files are located.\n\n2. **HEARTH coordinator → AM4 answer flow (wire behavior)**\nSource: `~/work/lab-rnd/EVIDENCE.md`, “HEARTH and earlier lab” row; run dirs `runs/lab-20261001T003150Z-3ea88b`, `runs/lab-20261001T004010Z-6aef12`, `runs/lab-20261001T004239Z-7f7965` under `~/work/lab-rnd/`.\nMeasurable quantity: four completed AM4 jobs; one repaired outgoing-thinking issue; receipt `br-20261001-003121-bc67d85e`.\nNext lookup: open each run dir for event logs with timestamps and token/context counts; verify receipt `br-20261001-003121-bc67d85e` in HEARTH ledger.\nCaveat: EVIDENCE.md explicitly warns “Four successful AM4 jobs do not imply semantic acceptance.” This is actual run evidence, but substance verdicts are absent.\n\n3. **bench27 paired lever arms on B70**\nSource: `~/work/lever-ledger/README.md`, revisions 9–14 entries; slices `slices/16-bench27.jsonl` and later slices referenced in `work/publication-rev*.json`.\nMeasurable quantity: rev 9 MTP-off paired verdict; rev 10 paired B70 FP8 with counted quote repairs; rev 12 paired memory0.85 with raw/after-repair form counts; rev 13 paired memory0.95 with counted failed repairs; rev 14 paired SSM bfloat16 with counted form corrections.\nNext lookup: parse `slices/16-bench27.jsonl` for per-arm regime fields (seat, card, thinking, turns, context, output budget, temperature, concurrency) and timestamps; cross-check each `work/publication-rev{9..14}.json` for FX99 deployment commit and check timestamps.\nCaveat: These are recorded verdicts in an append-only ledger, not raw run directories. The README confirms publication checks exist but states “No public push has been performed” through rev 14; animation should show staging, not publication.\n\n4. **Three-replica campaign structure and hold**\nSource: `~/work/bench27-plan/0-index.md`, “State when this was written (2026-10-05T06:21Z)” and “Hazard while the hold lasts” sections; campaign receipt `br-20261005-065233-53e45847`.\nMeasurable quantity: three backends (B70 card2 seat 0, B70 card3 seat 1, AM4 4070 Ti + 5070 TP2); OMEN profile `two-lane`; AM4 profile `tool-pair`; door leases = 0 at writing time.\nNext lookup: `~/work/Claude-ai-labs-planning.md` §0 for hold enter/exit lines with timestamps; `~/work/commandcenter-linux-flash/docs/rnd-log.md` top rows for lap dates and “Edge found” entries after 2026-10-05.\nCaveat: This is a planning document that describes intended structure. Actual three-dense live confirmation requires the task 1 RESULT.md in `~/work/lab-rnd/research/evidence/bench27-*` directories; without it, the animation shows intent, not operation.\n\n5. **Daily-capability acceptance and re-qualification**\nSource: `~/work/lab-rnd/README.md`, paragraph on “Daily capability campaign is open” and independent review withdrawal; `~/work/lever-ledger/README.md` revisions 4–5 (`slices/14-daily-capability.jsonl`, 11 observations; `slices/15-daily-requal.jsonl`, 10 observations).\nMeasurable quantity: 11 initial observations → 10 re-qualification observations; “5 of 7 operational” from live audit.\nNext lookup: `~/work/lab-rnd/plans/daily-capability/0-index.md` for workstream definitions and re-qualification state; parse both slices for per-capability status fields and timestamps; find the independent review document referenced in README.\nCaveat: README states acceptance was “withdrawn” by independent review, then rebuilt versions ran on real HEARTH executions. The 5-of-7 number is from a live audit that “invokes each workflow” — this is run evidence, but the slice records may contain both failed and successful attempts; do not plot 11 then 10 as simple growth without reading the re-qualification logic.\n\n6. **Lever-ledger scale as accumulated knowledge artifact**\nSource: `~/work/lever-ledger/README.md`, opening paragraph; `work/source-hashes.json`; `work/cross-review.json`.\nMeasurable quantity: 2,086 source reports → 744 lever families → 1,363 primary pulls (723 duplicates folded); 32 bench27 observations; 86 detector decisions + 5 handoff checks.\nNext lookup: `work/source-hashes.json` for per-slice file counts and hashes; `work/merge-*.json` (eight family passes) for merge timestamps showing when consolidation happened; compare `slices/01-*.jsonl` through `slices/16-*.jsonl` line counts for growth curve.\nCaveat: This is an aggregate index, not a timeline. The 2,086 count is a current snapshot; individual slice files in `slices/` carry their own internal timestamps that would show actual accumulation pace. The README notes “earlier slices retain their original wording” — revision history is append-only, so the growth animation should use per-slice first-entry timestamps, not revision dates.\n\n**Navigation vs. run evidence distinction:**\n- Navigation documents (do not plot as data points): `EVIDENCE.md` table rows describing source availability, `0-index.md` task structure, `planning-spine-manifest.json` as manifest, `README.md` revision summaries.\n- Run evidence (plot when confirmed): `runs/lab-20261001T*` directories, `slices/*.jsonl` individual entries with their internal timestamps, `work/publication-rev*.json` deployment records, `campaign/results/` raw files, `CLAUDE-APPROVED.md` rows (if consulted for timeline, though these are approval events not research outcomes).\n\n**Concrete next searches:**\n1. `ls -la ~/work/lab-rnd/research/evidence/bench27-*/RESULT.md` — find all completed lap result files with dates.\n2. `wc -l ~/work/lever-ledger/slices/*.jsonl` — per-slice observation counts for growth curve.\n3. `grep -l \"timestamp\\|date\\|created\" ~/work/lever-ledger/slices/16-bench27.jsonl | head -5` — confirm internal timestamp field names.\n4. `find ~/work/commandcenter-linux-flash/campaign/results/ -type f -name \"*.json\" -o -name \"*.yaml\" | head -20` — locate raw MechNet schedule artifacts.\n5. `head -50 ~/work/commandcenter-linux-flash/docs/rnd-log.md` — lap-by-lap timeline with “Edge found” column.\n6. `grep -n \"three-dense\\|hold\\|enter\\|exit\" ~/work/Claude-ai-labs-planning.md | head -20` — find hold transition timestamps.",
+    "execution": {
+      "request_id": "req_45699431df6e15f6f0f65a08d0a63f67",
+      "job_id": "job_a0cc43e8a32d312df12354fc5eef1d69",
+      "status": "succeeded",
+      "artifact": {
+        "artifact_id": "art_34c4aa1114acb1f519099b4aa98f2142",
+        "created_at": "2026-10-10T13:51:57.126012Z",
+        "filename": "job_a0cc43e8a32d312df12354fc5eef1d69-result.md",
+        "media_type": "text/plain; charset=utf-8",
+        "role": "result",
+        "sha256": "01a515de1f4b8bd86b4a39f935cf757cf44e5d4860dc750768fb81c60ab91e30",
+        "size": 7268
+      }
+    },
+    "backend": "omen-dense-27b",
+    "model": "qwen3.8-27b",
+    "routed_by": "family:reasoning_planning:depth_override:omen-dense-27b",
+    "occupancy": "available",
+    "rung_state": null,
+    "pool_config_hash": "fcc348a163ca",
+    "tokens_in": 10473,
+    "tokens_out": 1982,
+    "duration_ms": 44052,
+    "max_tokens": 2400,
+    "timeout_s": 239,
+    "task_family": "reasoning_planning",
+    "family_recommendation": {
+      "advisory": true,
+      "backend_hint": "omen-dense-27b",
+      "depth_rule_applied": true,
+      "evidence": "ADR-0039: 0.687x jobs/hour @512, 2.63x @8K, 5.49x @32K",
+      "family": "reasoning_planning",
+      "model_id": "qwen3.8-27b",
+      "pin_required": false,
+      "prompt_tokens": 10043,
+      "providers": [
+        "omen-dense-27b",
+        "omen-dense-27b-b"
+      ],
+      "reason": "depth_override: prompt_tokens 10043 >= 8192, so qwen3.8-27b is preferred over qwen3-30b-a3b for reasoning_planning. Qwen 3.8 campaign do_not_promote (12/15) at the 512-token operating point: the 27B delivers 0.687x the incumbent's jobs/hour there, so the door default (omen-vllm) serves shallow reasoning/planning.",
+      "refusal": null,
+      "refused": false,
+      "requested_family": "reasoning_planning"
+    }
+  }
+}

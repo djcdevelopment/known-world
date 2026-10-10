@@ -141,6 +141,127 @@ Work item (input to a collector): `{"id", "source_type", "host", "roots": [paths
 
 ## Revisions
 
+### Activity sidecar and numeric totals (2026-10-10)
+
+`corpus/activity/` contains versioned, metadata-only activity records, separate from the event schema and its
+launch inference. Each record has a source namespace, native ID, timestamp and timestamp meaning; optional
+end time, status, backend, usage and mapped lineage. The compiler pins the sidecar hash and filters both ends
+of the story's date range. New activity is never added to existing dispatch totals: executions, registry objects
+and client conversations are separate units. Native identities fold copies; conflicting observations are counted
+as coverage limitations. No prompts, titles, previews, response bodies, raw summaries or credential fields are emitted.
+
+- Windows HEARTH: immutable read-only SQL selects lifecycle event IDs/timestamps and allowlisted invocation
+  fields from the projection. Pair starts and terminal events by invocation ID; intervals are half-open, with
+  ends processed before starts at the same instant. Unpaired or invalid spans are reported, never completed by
+  inference. Recorded execution success is not delivery acceptance. Backend placement is not inferred from
+  the machine holding the ledger. No workload project is inferred from HEARTH ownership.
+- Antigravity: immutable read-only SQL selects only conversation ID, last-modified time, last-user-input time,
+  step count and workspace URIs. One conversation is observed at its last-modified timestamp, not its unknown
+  creation time; zero/invalid dates are rejected. Steps are snapshot totals and are not distributed over time.
+  IDs dedupe across stores; last observation wins. Model is unknown. Project joins require an exact workspace
+  match to a known lineage path, not a home directory or a parent-prefix guess. WAL presence is reported.
+- Lab registry: read only `sequence`, `at`, record `id`, `kind`, `revision`, `status`; first recorded appearance
+  of an ID is counted once, at that event's `at`. Attempts, investigations and findings remain separate units;
+  a finding record is not automatically an accepted capability. Registry activity may pulse its source repository
+  only, explicitly as research records, not as work attributed to an executing model.
+- MechNet: a result must join by `plan_id` to a dated execution record before entering the timeline. The inspected
+  schedule has an explicit `observed.conductor_result_at`, but its job IDs do not match the two result plan IDs;
+  those results remain undated. Scheduled jobs and predicted durations never become execution counts.
+- AM4 benchmark metadata: allowlisted native job IDs, configuration and measured duration can establish
+  distinct result records, but no event is dated from a filename or filesystem mtime. Undated results remain
+  in coverage until an authoritative timestamp join is found.
+
+Expanded source recipes:
+
+- Canonical execution API: discover native `job_id` metadata from the selected run manifests and their
+  `work.json`, `calls.json`, `delivery.json` and `output.json` companions, skipping substantive payload fields.
+  Query `get_execution` for those IDs only. Persist only job/operation IDs and invocation ID, start/end,
+  status, backend/model and measured token counters. Do not retain desired inputs, prompts, reasons, summaries,
+  principal data, artifact bodies or arbitrary result fields. Read refusals/missing jobs remain coverage gaps.
+  Fold invocation IDs with archived execution records; these are overlapping views of dispatch activity,
+  never additional calls to add to the ledger total. API recovery does not dispatch inference.
+
+- `thinking-run.v1` benchmark manifests: select `started_utc`, `finished_utc`, `dry_run`, `backend`, `ok` and
+  native `conversations[].{work,final}.job_id`. Count only non-dry-run manifests with valid endpoints and IDs.
+  A run's identity is the sorted set of native job IDs; copied manifests fold, conflicting copies are excluded
+  for review. Jobs dedupe separately and appear at the earliest completed enclosing run. These job counts are
+  a view of existing executions, never added to the HEARTH dispatch total. Overlap is run overlap, not GPU use.
+- Fleet result observations: select native `plan_id`, `promotion.risk.computed_at`, build count and promoted
+  boolean from the Windows campaign's harvest/results JSON. The explicit risk-computation timestamp dates an
+  observation of a result, not an inferred job completion. Earliest observation per plan ID wins. The owning
+  commandcenter repository may pulse as the record source; no workload or model attribution is inferred.
+  FX99's archived conductor results use the same plan ID and risk timestamp rule. Their frozen metadata selects
+  only relative path, plan ID and computed_at, with archive host/root provenance. An archive's location does not
+  establish execution placement: these observations have no project pulse. Copies fold across both sources.
+
+Default numeric line totals use uncapped additions plus removals from counted commits. Labels say line changes
+and file touches; these are neither current source size nor distinct files. Launch-yield weights remain capped.
+Sidebar headline launch counts are explicitly labelled bursts. Call-only rows expose native calls; session rows
+fold repeated/mirrored `chat_session` observations by `(actor.class, meta.session)` at the earliest observed time
+(`ref` is the identity fallback). Local participation totals select HEARTH ledger dispatch records, matching the
+activity header; 88 possibly overlapping tool observations remain available to existing activity/audio, but are
+not extra calls. Ending rows use the same cumulative participation series as the sidebar. Git totals use recorded
+commit actors; session-derived burst credit is a different measure. World file touches reconcile as git touches
+plus non-bulk creation and update observations; no model ownership is inferred for those filesystem observations.
+
+### Gemini participation (2026-10-10; event schema unchanged)
+
+The compiler derives a Gemini participation row from dated `offload_call` events whose `meta.backend` is exactly
+`gcp-gemini` or `gcp-gemini-pro`. The counter unit is HEARTH calls; the score shows call activity. This executing
+provider does not replace the recorded caller class. These calls alone establish no project target, launch,
+model generation, session or accepted delivery. The compiler receipt records the selected backends and count.
+This is coverage of the collected HEARTH records, not all Gemini or Antigravity activity.
+
+### Discovery sidecars (2026-10-10; event schema unchanged)
+
+Shape discovery includes gitignored outputs using `rg --files --hidden --no-ignore`
+with explicit dependency/cache/model/credential exclusions. Representative schema
+keys and size classify reader needs; matching files never become automatic work counts.
+When a source-hashed numeric export has lost its original files, historical Git blobs
+may be inspected through an explicit source catalog. Verify Git LF and Windows CRLF
+hash variants; select native dates/numeric metadata only, never prompt or generated text.
+
+Native benchmark configuration records may contribute `len(samples_ns)` positive
+measured repeats to the trial view. Configuration identity dedupes canonical native
+rows across worktrees/mirrors. Trial repeats are not telemetry samples. Denning
+`*.result.json` permits native `ts` and presence of numeric comparative results;
+`bench-<epoch>.jsonl` permits native request ordinal/admission metadata, observed at
+the harness's documented campaign-completion stamp. Exclude dry traces and summary
+duplicates. Memsplice's verified historical source catalog permits explicit start/end
+and source-hash/row identity; exports and original source rows are the same evidence.
+Keep trials/configurations/runner manifests/direct inference as overlapping views.
+Verified undated image-result totals may appear on the ending card with an explicit
+undated/outside-timeline label; they do not receive fabricated animation dates.
+
+Windows research recovery additionally permits the explicitly selected
+`C:/work/commandcenter/hearth/var/seats/{receipts.ndjson,run-records.ndjson,harvest-cursor.json}`.
+Select native attempt/run identities, source adapter/ownership, provider metadata, start/end,
+outcome, usage and timestamp derivation only. Cursor source paths map record owners; they
+do not establish where an accelerator ran. Count direct attempts separately from HEARTH
+dispatches and registry objects. Retain the archive's date uncertainty and exclude these
+receipts from exact overlap claims. Summary copies and repeated harvesting are not new attempts.
+
+Native Battlemage llama-bench JSONL rows in `bench-2026-05-24` and
+`burnin-2026-08/results` permit `test_time`, configuration identity, sample counts and
+row fingerprints. One measured configuration row is not one call or one repeated sample.
+Keep flagged/poisoned campaigns as observations without implying acceptance.
+B70tools `eval/runs/**/manifest.json` and Vllama `runs/**/manifest.json` permit native
+configuration/probe identity and explicit start/end. Count finished runner manifests as
+benchmark runs; never infer execution job IDs, token counts or success from telemetry,
+server launch manifests, directory names or missing completion fields.
+
+
+`corpus/discovery/` is a private source-discovery area, never a direct input to the animation. It may retain source
+directory paths, file-format counts, byte sizes, explicitly labelled mtime hints, SQLite table/column schemas and
+row counts, and bounded JSON key/type shapes. These are navigation and structural evidence, not event records.
+Enumeration never opens source contents. Structural probes never emit source scalar values; they do not descend
+into prompt/message/body fields and never select SQLite message/BLOB values. Credential-bearing paths and the
+existing never-walk rules remain excluded. Remote metadata is returned over read-only SSH; all writes stay here.
+Discovery completeness is scoped to recorded depth/time/file/candidate limits. Every incomplete source remains
+visible. No inferred model, date, accepted outcome or job count can be promoted from a filename, mtime or file count.
+New collectors require a source-specific field allowlist, native-ID and timestamp semantics, dedupe rule and
+frontier verification before any change to the event schema. See `EVIDENCE-HUNT.md` for the collection backlog.
+
 - v1 2026-10-09: initial, from the approved plan `~/.claude/plans/moonlit-wandering-sunbeam.md` and the executability review.
 - v1.1 2026-10-09 (toolkit, Sonnet manager): additions made while building `collect/knownworld/`, none loosening §2.
   Claude jsonl: `requestId` is read as an in-memory dedupe key only (a streamed reply is logged as several lines that repeat

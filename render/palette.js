@@ -1,7 +1,7 @@
 // palette.js: OKLCH by nation (hue table from DIRECTION), generation shades at 0.06 L steps. Pure math, no names.
 (function () {
   const KW = window.KW, D = KW.D;
-  const HUE = { human: [85, 0.045], chatgpt: [155, 0.16], claude: [35, 0.17], codex: [205, 0.13], opencode: [300, 0.18], local_model: [27, 0.2], automation: [80, 0.16] };
+  const HUE = { human: [85, 0.045], chatgpt: [155, 0.16], claude: [35, 0.17], codex: [205, 0.13], opencode: [300, 0.18], local_model: [27, 0.2], automation: [80, 0.16], gemini: [195, 0.12] };
   // Known World design system (design/known-world-design-system/tokens.json, nation-*): under layout ia the nation hues and chromas are the system's hex values, read back to OKLCH;
   // the lightness stays the film's own physics (fields capped at L 0.55, launches above it), so a hue changes without changing the luminance budget.
   const SYS_HEX = window.KW_SYS.nation;

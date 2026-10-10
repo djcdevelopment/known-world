@@ -1,0 +1,125 @@
+{
+ "errors": [],
+ "workers": 3,
+ "segFrames": 80,
+ "segments": 3,
+ "per_segment": [
+  {
+   "seg": 0,
+   "frames": 80,
+   "wall_ms": 6528.948247,
+   "capture_ms_per_frame": 70.7969930875,
+   "worker": 0
+  },
+  {
+   "seg": 2,
+   "frames": 80,
+   "wall_ms": 8046.367062,
+   "capture_ms_per_frame": 92.348609625,
+   "worker": 2
+  },
+  {
+   "seg": 1,
+   "frames": 80,
+   "wall_ms": 8056.847167,
+   "capture_ms_per_frame": 89.5048107625,
+   "worker": 1
+  }
+ ],
+ "wall_ms": 8164.468054,
+ "frames": 240,
+ "skipped_segments": 0,
+ "ms_per_frame_effective": 34.01861689166667,
+ "info": {
+  "F": 2700,
+  "fps": 30,
+  "font": "10px sans-serif",
+  "layers": [
+   "lattice",
+   "land",
+   "coast-edge",
+   "activity",
+   "links",
+   "spurs",
+   "beams",
+   "rings",
+   "sparks",
+   "activity-pulses",
+   "launches",
+   "hq",
+   "coast",
+   "legend",
+   "tallies",
+   "timeline",
+   "ticker",
+   "activity-counters",
+   "card"
+  ],
+  "layout": {
+   "mode": "landscape",
+   "W": 1920,
+   "H": 1080,
+   "B": 1,
+   "safe": [
+    0,
+    84,
+    1600,
+    796
+   ],
+   "ia": {
+    "tick": [
+     0,
+     0,
+     720,
+     84
+    ],
+    "nat": [
+     1600,
+     0,
+     320,
+     880
+    ],
+    "tl": [
+     0,
+     880,
+     1920,
+     200
+    ],
+    "ruler": [
+     0,
+     880,
+     1920,
+     24
+    ],
+    "band": [
+     0,
+     904,
+     1920,
+     60
+    ],
+    "lanes": [
+     0,
+     967,
+     1920,
+     110
+    ],
+    "ax0": 108,
+    "ax1": 1908,
+    "pxf": 3,
+    "nameX": 0,
+    "nameW": 108,
+    "pitch": 11,
+    "nl": 10,
+    "window_f": 600,
+    "safe": [
+     0,
+     84,
+     1600,
+     796
+    ],
+    "fade_f": 30,
+    "namePx": 10
+   }
+  }
+ }
+}

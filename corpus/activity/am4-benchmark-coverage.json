@@ -1,0 +1,21 @@
+{
+ "source": "am4:~/bench/results_full/meta",
+ "observed_at": "2026-10-10T14:20:10.833707+00:00",
+ "distinct_job_ids": 4533,
+ "duplicates": 0,
+ "missing_id": 0,
+ "invalid_json": 17,
+ "models": {
+  "sdxl": 546,
+  "flux": 1127,
+  "sd35": 268,
+  "sd15": 564,
+  "flux_bf16": 1028,
+  "sd3.5_large": 1000
+ },
+ "duration_records": 4533,
+ "summed_recorded_wall_seconds": 103155.96,
+ "dated_records": 0,
+ "status": "undated",
+ "reason": "Result records and manifest_full.jsonl have no execution timestamp; runner computes elapsed duration but does not persist execution_start/success timestamps. No mtime dating."
+}

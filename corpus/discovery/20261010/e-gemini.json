@@ -1,0 +1,34 @@
+{
+  "id": "e-gemini",
+  "host": "omen-e",
+  "root": "/mnt/omen-e-read/gemini",
+  "group": "clients",
+  "status": "complete",
+  "limits": {
+    "depth": 5,
+    "seconds": 25,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 2,
+    "files": 22
+  },
+  "candidates": [
+    {
+      "id": "027d1f0e201fcdf8",
+      "path": "/mnt/omen-e-read/gemini",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 6
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 55376133,
+      "mtime_hint_min": 1787800850,
+      "mtime_hint_max": 1788427035
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.0
+}

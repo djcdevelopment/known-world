@@ -1,0 +1,121 @@
+{
+  "group": "lab",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "am4-bench-found",
+    "host": "am4",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 5,
+      "seconds": 30,
+      "max_files": 100000,
+      "max_candidates": 2500
+    },
+    "rollups_omitted": 4,
+    "rollups": [
+      {
+        "path": "/home/derek/bench/results_full/meta",
+        "directories": 1,
+        "structured_files": {
+          ".json": 4550
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/bench/results_full/edgeless",
+        "directories": 1,
+        "structured_files": {
+          ".json": 164
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/bench/results_pilot/meta",
+        "directories": 1,
+        "structured_files": {
+          ".json": 48
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/bench",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 17,
+          ".csv": 1,
+          ".db": 1
+        },
+        "git_markers": 1
+      },
+      {
+        "path": "/home/derek/bench/context-landscape-canon-breadth-v1",
+        "directories": 1,
+        "structured_files": {
+          ".json": 6,
+          ".jsonl": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/bench/context-landscape-founding-canon-v2",
+        "directories": 1,
+        "structured_files": {
+          ".json": 5,
+          ".jsonl": 3
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/bench/results_burst/meta",
+        "directories": 1,
+        "structured_files": {
+          ".json": 8
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/bench/context-landscape-pilot",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 5,
+          ".json": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/bench/context-landscape-highlight-hd-v1",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 2,
+          ".json": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/bench/results_switch/meta",
+        "directories": 1,
+        "structured_files": {
+          ".json": 4
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/bench/results_full/edgeless.bak-20260629-192103",
+        "directories": 1,
+        "structured_files": {
+          ".json": 3
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/bench/results_smoke/meta",
+        "directories": 1,
+        "structured_files": {
+          ".json": 2
+        },
+        "git_markers": 0
+      }
+    ]
+  }
+}

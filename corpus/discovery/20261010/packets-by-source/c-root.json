@@ -1,0 +1,118 @@
+{
+  "group": "projects",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "c-root",
+    "host": "omen-c",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 2,
+      "seconds": 20,
+      "max_files": 100000,
+      "max_candidates": 1500
+    },
+    "rollups_omitted": 50,
+    "rollups": [
+      {
+        "path": "/mnt/omen-c-read/omen-perception-authored",
+        "directories": 1,
+        "structured_files": {
+          ".json": 5
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/work/omen-perception",
+        "directories": 1,
+        "structured_files": {
+          ".json": 5
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/Temp",
+        "directories": 1,
+        "structured_files": {
+          ".json": 4
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/hearth-var",
+        "directories": 1,
+        "structured_files": {
+          ".json": 3
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/hearth-var/execution",
+        "directories": 1,
+        "structured_files": {
+          ".sqlite": 2,
+          ".ndjson": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/hearth-var/sentinel",
+        "directories": 1,
+        "structured_files": {
+          ".ndjson": 1,
+          ".json": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/work/contextlandscape",
+        "directories": 1,
+        "structured_files": {
+          ".json": 3
+        },
+        "git_markers": 1
+      },
+      {
+        "path": "/mnt/omen-c-read/work/steppeintegrations-site",
+        "directories": 1,
+        "structured_files": {
+          ".json": 3
+        },
+        "git_markers": 1
+      },
+      {
+        "path": "/mnt/omen-c-read/hearth-var/ledger",
+        "directories": 1,
+        "structured_files": {
+          ".ndjson": 1,
+          ".sqlite": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/work/ComfyStewardView",
+        "directories": 1,
+        "structured_files": {
+          ".json": 2
+        },
+        "git_markers": 1
+      },
+      {
+        "path": "/mnt/omen-c-read/work/baseline",
+        "directories": 1,
+        "structured_files": {
+          ".json": 2
+        },
+        "git_markers": 1
+      },
+      {
+        "path": "/mnt/omen-c-read/work/commandcenter",
+        "directories": 1,
+        "structured_files": {
+          ".json": 2
+        },
+        "git_markers": 1
+      }
+    ]
+  }
+}

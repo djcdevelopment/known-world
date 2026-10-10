@@ -130,7 +130,7 @@ def synthesize(F, fps, seed, probe_f, launches, wh, nations, series, params, env
         s = l["f"] * spf
         key = "chatgpt" if (l["nat"] == "chatgpt") else l["nat"]
         freq = PITCH[key]
-        L = TONE_S[l["band"] - 1] * env_scale
+        L = TONE_S[l["band"] - 1] * env_scale * params.get("burst_tail_scale", 1.0)
         g = GAIN_DB[l["band"] - 1]
         if l["first_test"]:
             mix(out, bell(3.0 * env_scale if env_scale < 1 else 3.0), s, gl, gr); stats["bells"] += 1
@@ -162,7 +162,7 @@ def synthesize(F, fps, seed, probe_f, launches, wh, nations, series, params, env
             cnt[l["nat"]] = cnt.get(l["nat"], 0) + 1
         voices = sorted(cnt, key=lambda k: (-cnt[k], k))[:4]
         g = max(GAIN_DB[l["band"] - 1] for l in ls) - 3
-        L = max(TONE_S[l["band"] - 1] for l in ls) * env_scale
+        L = max(TONE_S[l["band"] - 1] for l in ls) * env_scale * params.get("burst_tail_scale", 1.0)
         s = b * 6000
         px = float(np.mean([l["px"] for l in ls]))
         gl, gr = pan_gains(px)

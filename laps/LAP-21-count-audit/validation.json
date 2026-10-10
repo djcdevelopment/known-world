@@ -1,0 +1,164 @@
+{
+ "receipt": "br-20261010-155657-7bb6b112",
+ "source_audit": {
+  "world": {
+   "commits": 9784,
+   "commit_file_touches": 88827,
+   "file_creations": 116099,
+   "file_update_observations": 4922,
+   "line_changes": 18447909,
+   "file_touches": 209848
+  },
+  "nation": {
+   "human": {
+    "commits": 4703,
+    "files_changed": 56296,
+    "lines_added": 10669684,
+    "lines_removed": 2234785
+   },
+   "claude": {
+    "commits": 4391,
+    "files_changed": 30354,
+    "lines_added": 5005288,
+    "lines_removed": 273092
+   },
+   "automation": {
+    "commits": 644,
+    "files_changed": 1120,
+    "lines_added": 86797,
+    "lines_removed": 7628
+   },
+   "codex": {
+    "commits": 46,
+    "files_changed": 1057,
+    "lines_added": 169966,
+    "lines_removed": 669
+   }
+  },
+  "session_records": {
+   "chatgpt": 157,
+   "claude": 1925,
+   "codex": 481,
+   "opencode": 24
+  },
+  "distinct_sessions": {
+   "chatgpt": 157,
+   "claude": 498,
+   "codex": 253,
+   "opencode": 24
+  },
+  "calls": {
+   "gemini": 1057,
+   "local_records": 22760,
+   "local_dispatch": 22672
+  }
+ },
+ "source_to_arrays_and_card": "passed",
+ "actual_canvas_text": "passed",
+ "rendered_frames": [
+  2520,
+  2640
+ ],
+ "live_http": {
+  "index.html": {
+   "status": 200,
+   "hash_match": true
+  },
+  "release.json": {
+   "status": 200,
+   "hash_match": true
+  },
+  "known-world-90s-bae1b69c1fe1.mp4": {
+   "status": 200,
+   "hash_match": true
+  },
+  "poster-3fd0f29ae1ab.png": {
+   "status": 200,
+   "hash_match": true
+  },
+  "range": {
+   "status": 206
+  }
+ },
+ "live_browser": [
+  {
+   "width": 1920,
+   "playback": true,
+   "seek84": true,
+   "seek88": true,
+   "duration": 90,
+   "src": "https://fx99.tail8e749c.ts.net/chronicles/known-world/known-world-90s-bae1b69c1fe1.mp4",
+   "rows": 21,
+   "bodyWidth": 1920,
+   "viewport": 1920,
+   "table": [
+    "Animation bursts\t845\tDerived episodes shown as flashes; separate from commits, calls and sessions.",
+    "Commits\t9,784\tDeduplicated recorded commits.",
+    "File touches\t209,848\t88,827 git touches + 116,099 creations + 4,922 update observations; not unique files.",
+    "Line changes\t18,447,909\tUncapped additions plus removals, not current code size.",
+    "Local HEARTH calls\t22,672\tDispatch records with evidenced local backends.",
+    "Gemini calls\t1,057\tGemini participation recorded through HEARTH.",
+    "Antigravity conversations\t160\tObserved at last recorded update; model unknown.",
+    "Completed invocations\t629\t625 succeeded; 4 failed. Partial execution history.",
+    "Benchmark runs\t257\t543 distinct jobs; copied manifests folded.",
+    "Fleet result observations\t23\tDated result assessments, not inferred job completion times.",
+    "Research attempts\t56\tDistinct registry records at first appearance.",
+    "Research investigations\t52\tDistinct registry records, separate from attempts.",
+    "Research findings\t95\tFinding records; not automatically accepted capabilities.",
+    "ChatGPT sessions\t157\tDistinct native session IDs; mirrored records folded.",
+    "Claude sessions\t498\tDistinct native session IDs; mirrored records folded.",
+    "Codex sessions\t253\tDistinct native session IDs; mirrored records folded.",
+    "OpenCode sessions\t24\tDistinct native session IDs; mirrored records folded.",
+    "Conductor code history\t36 commits already included\tGitHub and collected history match. The mirror was last pushed July 3, 2026.",
+    "AM4 image benchmarks\t4,533 valid results without dates\tRetained as coverage, outside the time-lapse; 17 malformed records were excluded.",
+    "Later MechNet history\tOriginal execution archive unavailable\tSurviving older fleet results are included where explicit dates exist.",
+    "Antigravity coverage\tLast-update observations\tOne invalid date and 14 observations after the cutoff are excluded. The Windows WAL may contain additional history."
+   ],
+   "errors": []
+  },
+  {
+   "width": 390,
+   "playback": true,
+   "seek84": true,
+   "seek88": true,
+   "duration": 90,
+   "src": "https://fx99.tail8e749c.ts.net/chronicles/known-world/known-world-90s-bae1b69c1fe1.mp4",
+   "rows": 21,
+   "bodyWidth": 390,
+   "viewport": 390,
+   "table": [
+    "Animation bursts\t845\tDerived episodes shown as flashes; separate from commits, calls and sessions.",
+    "Commits\t9,784\tDeduplicated recorded commits.",
+    "File touches\t209,848\t88,827 git touches + 116,099 creations + 4,922 update observations; not unique files.",
+    "Line changes\t18,447,909\tUncapped additions plus removals, not current code size.",
+    "Local HEARTH calls\t22,672\tDispatch records with evidenced local backends.",
+    "Gemini calls\t1,057\tGemini participation recorded through HEARTH.",
+    "Antigravity conversations\t160\tObserved at last recorded update; model unknown.",
+    "Completed invocations\t629\t625 succeeded; 4 failed. Partial execution history.",
+    "Benchmark runs\t257\t543 distinct jobs; copied manifests folded.",
+    "Fleet result observations\t23\tDated result assessments, not inferred job completion times.",
+    "Research attempts\t56\tDistinct registry records at first appearance.",
+    "Research investigations\t52\tDistinct registry records, separate from attempts.",
+    "Research findings\t95\tFinding records; not automatically accepted capabilities.",
+    "ChatGPT sessions\t157\tDistinct native session IDs; mirrored records folded.",
+    "Claude sessions\t498\tDistinct native session IDs; mirrored records folded.",
+    "Codex sessions\t253\tDistinct native session IDs; mirrored records folded.",
+    "OpenCode sessions\t24\tDistinct native session IDs; mirrored records folded.",
+    "Conductor code history\t36 commits already included\tGitHub and collected history match. The mirror was last pushed July 3, 2026.",
+    "AM4 image benchmarks\t4,533 valid results without dates\tRetained as coverage, outside the time-lapse; 17 malformed records were excluded.",
+    "Later MechNet history\tOriginal execution archive unavailable\tSurviving older fleet results are included where explicit dates exist.",
+    "Antigravity coverage\tLast-update observations\tOne invalid date and 14 observations after the cutoff are excluded. The Windows WAL may contain additional history."
+   ],
+   "errors": []
+  }
+ ],
+ "render_seconds": 46.738,
+ "render_errors": [],
+ "launches": 845,
+ "audio_unchanged": true,
+ "fixture_checks": 6,
+ "fixture_seconds": 0.011,
+ "diff_check": "passed",
+ "data_sha256": "951895754c45cfd51689c7ec39cf5a756b9c8bfe1640f4bb90e256678c34f028",
+ "backup": "/home/derek/backups/known-world-publish/20261010-count-audit"
+}

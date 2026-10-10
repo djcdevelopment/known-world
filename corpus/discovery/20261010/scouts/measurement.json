@@ -1,0 +1,69 @@
+{
+  "status": "reviewed",
+  "candidate_status_before_review": "awaiting_review",
+  "scout": "measurement",
+  "reviewer": "codex-frontier",
+  "verdict": {
+    "substance": "partially_useful",
+    "accepted": [
+      "Separate call/job/run/receipt IDs",
+      "Keep measured token usage separate from estimated tokens",
+      "Preserve caller and executing model separately"
+    ],
+    "rejected": [
+      "Hash task ID as unique job ID",
+      "Use submit-call duration as job runtime",
+      "Use birth-to-last-mtime as active interval",
+      "Assert existing ledger copies double count despite dedupe"
+    ],
+    "form": "usable report; no repairs"
+  },
+  "result": {
+    "ok": true,
+    "text": "Candidate findings (read-only, for frontier review). Each item names the supplied source symbol and proposes a minimal collection recipe. No directory claims; all proposals are new fields to be added by a collector/merge step, not invented from existing records.\n\nGap 1 — Jobs vs calls vs runs vs receipts are collapsed or missing\nSymbols: `hearth_ledger.py:DISPATCH`, `hearth_ledger.py:process_source`, `deepagents_runs.py:run_dirs`, `deepagents_runs.py:obs_offload`, `corpus.py` (no \"job\" kind).\nCurrent loss: `offload_call` counts dispatch calls; `run` counts directories; receipts exist as `kind` but are not indexed for concurrency or pairing. Scale of AI development is not expressible because one job may produce many calls, or one call may be a no-op; nothing links them.\nRecipe: In ledger and deepagents collectors, emit `meta.job_id` (sha1 of task id or work item id) on every `offload_call` and `run`; in merge, add `jobs.json` with `job_id, first_call_ts, last_call_ts, n_calls, n_runs, n_receipts, caller_class`. Render concurrency as active jobs per frame.\n\nGap 2 — Local model vs caller/client not separated\nSymbols: `hearth_ledger.py` (runner_class logic), `corpus.py:SESSION_CLASSES`, `corpus.py:is_local_backend`.\nCurrent loss: A Claude session driving a local 27B seat is counted as `claude` activity in nations and `local_model` in offloads, with no link showing the operator’s intent. Scale appears as model throughput, not as operator leverage.\nRecipe: Add `meta.driver_class` to `offload_call` (from `caller.runner_class`) and keep `actor.class` for the executing model. In compile, add `local_leverage.json`: per local backend, count `driver_class` breakdown and `tokens_in/out` per session. Render dual lines: local calls and their frontier drivers.\n\nGap 3 — Tokens are sparse and inconsistent\nSymbols: `hearth_ledger.py:_int(cost.get(\"tokens_in\"))`, `deepagents_runs.py:obs_offload` (tokens from `context_tokens` and `runtime_s*tps`), `corpus.py` (offloads tuple stores backend and class only).\nCurrent loss: Many `offload_call` records have null tokens; deepagents derives tokens from an estimate (`rt*tps`); no token total per job or per lineage. Scale is undercounted.\nRecipe: Add `meta.token_source` enum (`ledger`, `estimated`, `usage`) to every `offload_call`; in merge, add `token_totals.json` per `(lineage, host, backend, class)` with `tokens_in, tokens_out, estimated_tokens, null_token_calls`. Render token flow as a separate scale axis.\n\nGap 4 — Historical concurrency is not recoverable\nSymbols: `hearth_ledger.py` (single event per line, no overlap), `corpus.py` (appends to `offloads`, no interval), `deepagents_runs.py:run_dirs` (one `run` per directory with birth time only).\nCurrent loss: No record captures how many local seats or jobs ran at the same minute; the time-lapse can show counts per frame but not parallelism.\nRecipe: In `hearth_ledger.py`, add `meta.duration_ms` already present; ensure merge builds `concurrency.json` with per-minute counts of active `offload_call` jobs (`ts <= t < ts+duration_ms/1000`) grouped by `(host, backend)`. For `run`, add `meta.active_span` as `[birth_ts, last_file_mtime]` so compile can count overlapping run directories.\n\nGap 5 — Source copies dilute scale\nSymbols: `hearth_ledger.py:_primary_ids` (dedup across ledgers), `corpus.py` (`meta.hosts` on commits), `deepagents_runs.py` (no cross-host dedup).\nCurrent loss: The same ledger line or run on two hosts is counted twice in totals; the time-lapse overstates scale or, if deduped later, hides host diversity.\nRecipe: Add `meta.copy_count` to `offload_call` and `run`; in merge, fold by `ref` across hosts and store `hosts` set. In `CORPUS-REPORT.md`, report `duplicates_folded` per source and per host. In render, show unique scale as primary line and host count as a small badge.\n\nNext searches\n1. In `hearth_ledger.py`, confirm whether `cost.tokens_in` is always present for `local_generate`; if null, check the ledger schema for an alternate usage field.\n2. In `corpus.py`, verify `offloads` tuple and `first_backend` do not already carry `caller_class` for leverage; if not, add it to the tuple.\n3. In `deepagents_runs.py:obs_offload`, confirm `runtime_s` and `tokens_per_s` are nullable; add `token_source=\"estimated\"` when deriving tokens from their product.\n4. In `corpus.py`, search for any existing `receipt` indexing; if absent, add `receipts` list and a per-minute active-job count.\n5. In `hearth_ledger.py`, check whether `event_id` includes a copy ordinal; if not, add `meta.copy_index` for source copies.\n\nThese five gaps, if filled, let the animation express: how many jobs were in flight, how much of that was local model vs frontier, how many tokens flowed, how many seats ran in parallel, and how much of the scale was unique work versus copies.",
+    "execution": {
+      "request_id": "req_0697fd0764d9f2a93d31d001b2651949",
+      "job_id": "job_a7b157b426dce2ea3c1c112d98fce66f",
+      "status": "succeeded",
+      "artifact": {
+        "artifact_id": "art_415f19462fc29400be26836fb1a34295",
+        "created_at": "2026-10-10T13:51:12.865565Z",
+        "filename": "job_a7b157b426dce2ea3c1c112d98fce66f-result.md",
+        "media_type": "text/plain; charset=utf-8",
+        "role": "result",
+        "sha256": "be5464da921b958acd38d1b777631a2306dd6bfe6ac0665d36a4c76cf7522ca8",
+        "size": 4820
+      }
+    },
+    "backend": "omen-dense-27b",
+    "model": "qwen3.8-27b",
+    "routed_by": "family:reasoning_planning:depth_override:omen-dense-27b",
+    "occupancy": "available",
+    "rung_state": null,
+    "pool_config_hash": "fcc348a163ca",
+    "tokens_in": 14579,
+    "tokens_out": 1223,
+    "duration_ms": 36394,
+    "max_tokens": 2400,
+    "timeout_s": 239,
+    "task_family": "reasoning_planning",
+    "family_recommendation": {
+      "advisory": true,
+      "backend_hint": "omen-dense-27b",
+      "depth_rule_applied": true,
+      "evidence": "ADR-0039: 0.687x jobs/hour @512, 2.63x @8K, 5.49x @32K",
+      "family": "reasoning_planning",
+      "model_id": "qwen3.8-27b",
+      "pin_required": false,
+      "prompt_tokens": 13040,
+      "providers": [
+        "omen-dense-27b",
+        "omen-dense-27b-b"
+      ],
+      "reason": "depth_override: prompt_tokens 13040 >= 8192, so qwen3.8-27b is preferred over qwen3-30b-a3b for reasoning_planning. Qwen 3.8 campaign do_not_promote (12/15) at the 512-token operating point: the 27B delivers 0.687x the incumbent's jobs/hour there, so the door default (omen-vllm) serves shallow reasoning/planning.",
+      "refusal": null,
+      "refused": false,
+      "requested_family": "reasoning_planning"
+    }
+  }
+}

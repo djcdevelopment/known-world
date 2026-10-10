@@ -38,7 +38,7 @@
     // rate glyph: dim, brightening for 0.6 s (18 frames) after an era switch
     let a = 0.45;
     for (const sf of D.era_switch_f) { const k = f - sf; if (k >= 0 && k < 18) a = 0.45 + 0.55 * (1 - k / 18); }
-    const tot = D.w_cum ? (() => { const F = D.F, W3 = KW.wcum || (KW.wcum = KW.util.f32(D.w_cum)), c = KW.fmt.compact; return 'commits ' + c(W3[f]) + ' \u00b7 files ' + c(W3[F + f]) + ' \u00b7 lines ' + c(W3[2 * F + f]); })() : '';
+    const tot = D.w_cum ? (() => { const F = D.F, W3 = KW.wcum || (KW.wcum = (D.totals_precision === 'f64' ? KW.util.f64 : KW.util.f32)(D.w_cum)), c = KW.fmt.compact; return (por ? 'c ' : 'commits ') + c(W3[f]) + (por ? ' \u00b7 touches ' : ' \u00b7 file touches ') + c(W3[F + f]) + (por ? ' \u00b7 Δlines ' : ' \u00b7 line changes ') + c(W3[2 * F + f]); })() : '';
     if (LY.ia && !por) {
       // ia: date (kw-ticker 44 px) and rate glyph on line one, the world totals beneath once commits exist; no hairline (the timeline's ruler carries the marks)
       ctx.font = '44px ' + FONT; ctx.fillStyle = KW.C.fg;
@@ -80,7 +80,8 @@
   const U = KW.util, F = D.F, N = D.nat_names.length;
   const entry = U.i32(D.nat_entry_f), tests = U.u16(D.tests_cum), lines = U.f32(D.lines_cum), files = U.f32(D.files_cum);
   const commits = U.f32(D.commits_cum), capfiles = U.f32(D.capfiles_cum), parts = U.f32(D.parts_cum);
-  const insC = U.f32(D.ins_cum), delC = U.f32(D.del_cum), rateN = U.f32(D.rate_nat), crN = D.created_nat ? U.f32(D.created_nat) : null;
+  const totals = D.totals_precision === 'f64' ? U.f64 : U.f32;
+  const insC = totals(D.ins_cum), delC = totals(D.del_cum), rateN = U.f32(D.rate_nat), crN = D.created_nat ? U.f32(D.created_nat) : null;
   const fm = KW.fmt, UNIT = D.rate_unit_names;
   const compact = v => v >= 1e6 ? (v / 1e6).toFixed(1) + 'M' : v >= 1e3 ? (v / 1e3).toFixed(v >= 1e4 ? 0 : 1) + 'k' : String(Math.round(v));
   // one nation row at (x, y); cmp = compact (portrait overlay): no chips, bars tighter; mini = one line of figures, no bars
@@ -93,7 +94,13 @@
     ctx.font = '20px ' + FONT; ctx.fillStyle = KW.C.fg; ctx.textAlign = 'left';
     ctx.fillText(D.nat_names[i], x + 40, y + 20);
     ctx.font = (ia ? '30px ' : '28px ') + FONT; ctx.textAlign = 'right';   // kw-count: 30 px in the ia layout
-    if (!ia || tests[i * F + f] > 0) ctx.fillText(String(tests[i * F + f]), x + 306, y + 22);   // ia: a zero is not drawn
+    const k0 = i * F + f, burst = tests[k0], native = parts[k0];
+    if (D.count_semantics) {
+      ctx.font = '25px ' + FONT;
+      if (burst > 0 || native > 0) ctx.fillText(fm.commas(burst > 0 ? burst : native), x + 306, y + 22);
+      ctx.font = '10px ' + FONT; ctx.fillStyle = KW.C.muted;
+      if (burst > 0 || native > 0) ctx.fillText(burst > 0 ? 'bursts' : (D.part_labels[i] === 'sessions' ? 'sessions' : 'calls'), x + 306, y + 38);
+    } else if (!ia || burst > 0) ctx.fillText(String(burst), x + 306, y + 22);
     ctx.textAlign = 'left';
     if (!cmp) {
       // chips: the last chip_max entered, a new chip named in words for 3 s (scaled by the cut), then abbreviated; "+n" overflow
@@ -102,7 +109,7 @@
       const shown = vis.slice(Math.max(0, vis.length - D.chip_max)), over = vis.length - shown.length;
       ctx.font = '12px ' + FONT;
       if (over > 0) { ctx.fillStyle = 'rgba(' + KW.C.mutedRgb + ',0.9)'; ctx.fillText('+' + over, cx, y + 38); cx += ('+' + over).length * 7.4 + 8; }
-      const right = x + 306;  // chips stay inside the panel: a caption that does not fit falls back to its short form, then is cut with an ellipsis, then dropped
+      const right = x + (D.count_semantics ? 240 : 306);
       for (const c of shown) {
         const fresh = f - c.f < hold;
         let label = fresh ? c.label : c.short;
@@ -118,12 +125,14 @@
     const yy = cmp ? 40 : (ia ? 56 : 58);
     ctx.font = '14px ' + FONT; ctx.fillStyle = KW.C.muted;
     const ln = lines[i * F + f], fl2 = files[i * F + f], pc = parts[i * F + f], tc = tests[i * F + f];
-    let yv = ln > 0 ? compact(ln) + ' lines' : (fl2 > 0 ? compact(fl2) + ' files' : '0');
-    if (tc === 0) yv = compact(pc) + (D.nat_classes[i] === 'local_model' ? ' offload calls' : ' sessions');
+    let yv = ln > 0 ? compact(insC[i * F + f] + delC[i * F + f]) + ' changes' : (fl2 > 0 ? compact(fl2) + ' file links' : '0');
+    if (tc === 0) yv = compact(pc) + ' ' + (D.part_labels ? D.part_labels[i] : D.nat_classes[i] === 'local_model' ? 'offload calls' : 'sessions');
     if (!ia) ctx.fillText(yv + '  \u00b7  ' + compact(commits[i * F + f]) + 'c ' + compact(capfiles[i * F + f]) + 'f', x + 14, y + yy);
     else {   // ia: only the nonzero parts of the summary line
       const parts_ = []; if (yv !== '0') parts_.push(yv);
-      const cf_ = [commits[i * F + f] > 0 ? compact(commits[i * F + f]) + 'c' : '', capfiles[i * F + f] > 0 ? compact(capfiles[i * F + f]) + 'f' : ''].filter(Boolean).join(' ');
+      const cf_ = D.count_semantics
+        ? (pc > 0 && tc > 0 ? fm.commas(pc) + ' ' + D.part_labels[i] : '')
+        : [commits[i * F + f] > 0 ? compact(commits[i * F + f]) + 'c' : '', capfiles[i * F + f] > 0 ? compact(capfiles[i * F + f]) + 'f' : ''].filter(Boolean).join(' ');
       if (cf_) parts_.push(cf_);
       if (parts_.length) ctx.fillText(parts_.join('  \u00b7  '), x + 14, y + yy);
     }
@@ -136,7 +145,7 @@
       ctx.textAlign = 'left';
       return;
     }
-    const rows = [['commits', fm.commas(commits[k]), [commits[k]]], ['files', fm.commas(capfiles[k]), [capfiles[k]]],
+    const rows = [['commits', fm.commas(commits[k]), [commits[k]]], [D.count_semantics ? 'git touches' : 'files', fm.commas(capfiles[k]), [capfiles[k]]],
                   ['lines', '+' + fm.compact(insC[k]) + ' \u2212' + fm.compact(delC[k]), [insC[k], delC[k]]]];
     ctx.font = '12px ' + FONT;
     const b0 = cmp ? 56 : (ia ? 72 : 76), bp = cmp ? 14 : (ia ? 14 : 15);
@@ -169,17 +178,23 @@
   }
   KW.natShownF = sigF;
   const iaOrder = [...Array(N).keys()].sort((a, b) => sigF[a] - sigF[b] || a - b);
+  // Fixed row heights keep entry order steady. Call/session-only rows do not need
+  // space for empty capacity bars; preserve full counters as new providers enter.
+  const capacityRow = i => commits[i * F + F - 1] > 0 || insC[i * F + F - 1] > 0 || delC[i * F + F - 1] > 0;
+  const rowHeights = iaOrder.map(i => D.part_labels ? (capacityRow(i) ? 136 : 72) : D.ia?.nation_row || 136);
+  const rowOffset = [0]; for (const h of rowHeights) rowOffset.push(rowOffset[rowOffset.length - 1] + h);
   function drawLegendIA(ctx, f) {
-    const LY = KW.LAY, I = LY.ia, rowH = D.ia.nation_row, compact = rowH < D.ia.counters_min_row;
+    const LY = KW.LAY, I = LY.ia;
     KW.nationRows = [];
     const vis = iaOrder.filter(i => f >= sigF[i]);
     if (!vis.length) return;
     const x0 = I.nat[0], y0 = I.nat[1], w = I.nat[2];
-    KW.plate(ctx, x0, y0, w, Math.min(I.nat[3], 12 + D.ia.nN * rowH + 4));   // G slots are reserved from the first nation; an empty slot draws nothing
+    KW.plate(ctx, x0, y0, w, Math.min(I.nat[3], 16 + rowOffset[N]));
     ctx.textBaseline = 'alphabetic';
     ctx.save(); ctx.beginPath(); ctx.rect(x0 + 1, y0, w - 9, I.nat[3]); ctx.clip();
     vis.forEach((i, r) => {
-      const y = y0 + 12 + r * rowH, a = Math.min(1, (f - sigF[i] + 1) / I.fade_f);
+      const rowH = rowHeights[r], compact = rowH < D.ia.counters_min_row;
+      const y = y0 + 12 + rowOffset[r], a = Math.min(1, (f - sigF[i] + 1) / I.fade_f);
       KW.nationRows.push({ i, x: x0, y, h: rowH, w });
       ctx.globalAlpha = a; row(ctx, f, i, x0, y, false, false, true, compact); ctx.globalAlpha = 1;
     });

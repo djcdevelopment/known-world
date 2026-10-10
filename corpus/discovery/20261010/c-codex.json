@@ -1,0 +1,892 @@
+{
+  "id": "c-codex",
+  "host": "omen-c",
+  "root": "/mnt/omen-c-read/Users/derek/.codex/sessions",
+  "group": "clients",
+  "status": "complete",
+  "limits": {
+    "depth": 6,
+    "seconds": 30,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 74,
+    "files": 432
+  },
+  "candidates": [
+    {
+      "id": "398d34147c12d74b",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/06/29",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2565286,
+      "mtime_hint_min": 1782726924,
+      "mtime_hint_max": 1782738764
+    },
+    {
+      "id": "d8ef5e340ec790ca",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07/01",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 9
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 12650449,
+      "mtime_hint_min": 1782916353,
+      "mtime_hint_max": 1782977241
+    },
+    {
+      "id": "b2737f3380abb753",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07/02",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 9
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 10029969,
+      "mtime_hint_min": 1782994921,
+      "mtime_hint_max": 1783080329
+    },
+    {
+      "id": "ed8c3dd426f5d1ab",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07/03",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 10796312,
+      "mtime_hint_min": 1783093230,
+      "mtime_hint_max": 1783155074
+    },
+    {
+      "id": "fa2f02a593aa60db",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07/04",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 28714407,
+      "mtime_hint_min": 1783171468,
+      "mtime_hint_max": 1783532181
+    },
+    {
+      "id": "9abd9f91497c119e",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07/08",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 187877,
+      "mtime_hint_min": 1783560751,
+      "mtime_hint_max": 1783561653
+    },
+    {
+      "id": "cf7a3ab22955faa9",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07/09",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 495981,
+      "mtime_hint_min": 1783599216,
+      "mtime_hint_max": 1783661579
+    },
+    {
+      "id": "5e6697ae704a85cb",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07/10",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 21250675,
+      "mtime_hint_min": 1783732202,
+      "mtime_hint_max": 1783756817
+    },
+    {
+      "id": "f42cae95018a0436",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07/11",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 6
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 21989850,
+      "mtime_hint_min": 1783766445,
+      "mtime_hint_max": 1783839276
+    },
+    {
+      "id": "5de51dca9fc55dfb",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07/12",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 57887,
+      "mtime_hint_min": 1783940062,
+      "mtime_hint_max": 1783940062
+    },
+    {
+      "id": "6a5b7baf1a0d5abd",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07/13",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 126427531,
+      "mtime_hint_min": 1784186335,
+      "mtime_hint_max": 1784186335
+    },
+    {
+      "id": "bfb04222f5eaa276",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07/15",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 20
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1715963942,
+      "mtime_hint_min": 1784171552,
+      "mtime_hint_max": 1784192696
+    },
+    {
+      "id": "5e938e09cdbf5470",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07/16",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 107269,
+      "mtime_hint_min": 1784194512,
+      "mtime_hint_max": 1784194512
+    },
+    {
+      "id": "ae6af6f318520b8f",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07/18",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 16228894,
+      "mtime_hint_min": 1784438731,
+      "mtime_hint_max": 1784585515
+    },
+    {
+      "id": "1f21026d5edc2256",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07/20",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3347908,
+      "mtime_hint_min": 1784603759,
+      "mtime_hint_max": 1784603759
+    },
+    {
+      "id": "84aa2a837a7f1be7",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07/21",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 370672354,
+      "mtime_hint_min": 1784955497,
+      "mtime_hint_max": 1784955497
+    },
+    {
+      "id": "170d4b596ed4a32d",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07/23",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 204927,
+      "mtime_hint_min": 1784833614,
+      "mtime_hint_max": 1784833614
+    },
+    {
+      "id": "7d47760e4db19daa",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07/24",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2115342,
+      "mtime_hint_min": 1784894994,
+      "mtime_hint_max": 1784894994
+    },
+    {
+      "id": "428f77f9a369d672",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07/26",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 536532,
+      "mtime_hint_min": 1785126188,
+      "mtime_hint_max": 1785126188
+    },
+    {
+      "id": "ee5921f51aafee66",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07/28",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 9
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 20812320,
+      "mtime_hint_min": 1785303402,
+      "mtime_hint_max": 1785307098
+    },
+    {
+      "id": "f429b5241efe9df9",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07/29",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 24740707,
+      "mtime_hint_min": 1785310868,
+      "mtime_hint_max": 1785362131
+    },
+    {
+      "id": "f998675a6ea5daf3",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07/30",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 133204708,
+      "mtime_hint_min": 1785415367,
+      "mtime_hint_max": 1785474515
+    },
+    {
+      "id": "1d5057be00f4b5d6",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07/31",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 674637,
+      "mtime_hint_min": 1785485333,
+      "mtime_hint_max": 1785506150
+    },
+    {
+      "id": "3b5a34173583d030",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08/01",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 7
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 172806803,
+      "mtime_hint_min": 1785575460,
+      "mtime_hint_max": 1785648972
+    },
+    {
+      "id": "9075a08c01e08b6c",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08/02",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 10622139,
+      "mtime_hint_min": 1785659180,
+      "mtime_hint_max": 1785659191
+    },
+    {
+      "id": "d8fd14065ef8e5d6",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08/03",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1621393,
+      "mtime_hint_min": 1785821084,
+      "mtime_hint_max": 1785821084
+    },
+    {
+      "id": "d10b38ff335f5a63",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08/05",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 554875,
+      "mtime_hint_min": 1785984844,
+      "mtime_hint_max": 1785984844
+    },
+    {
+      "id": "4b8ef1916163c137",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08/08",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 15
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 709628956,
+      "mtime_hint_min": 1786184588,
+      "mtime_hint_max": 1786208580
+    },
+    {
+      "id": "06898e370bbb0734",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08/09",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 29
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 968200766,
+      "mtime_hint_min": 1786260707,
+      "mtime_hint_max": 1786330485
+    },
+    {
+      "id": "65edc833b99d64d3",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08/11",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 101298153,
+      "mtime_hint_min": 1786519451,
+      "mtime_hint_max": 1786519451
+    },
+    {
+      "id": "fd6d3d87df8c858f",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08/12",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 28
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 96024439,
+      "mtime_hint_min": 1786519462,
+      "mtime_hint_max": 1786592188
+    },
+    {
+      "id": "4e6b35f45eeafbac",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08/13",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 12
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 132692220,
+      "mtime_hint_min": 1786611591,
+      "mtime_hint_max": 1786633937
+    },
+    {
+      "id": "825afac28bb652b8",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08/17",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 34298251,
+      "mtime_hint_min": 1787033046,
+      "mtime_hint_max": 1787035963
+    },
+    {
+      "id": "a1a652852f6a6b65",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08/18",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 280496134,
+      "mtime_hint_min": 1787039553,
+      "mtime_hint_max": 1787121376
+    },
+    {
+      "id": "1bb1bfb9d2aeb17b",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08/19",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 11
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 49902078,
+      "mtime_hint_min": 1787126450,
+      "mtime_hint_max": 1787190059
+    },
+    {
+      "id": "83fb6235ab8a5613",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08/20",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 23
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 329995143,
+      "mtime_hint_min": 1787224140,
+      "mtime_hint_max": 1787257966
+    },
+    {
+      "id": "7fe94221e3644b89",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08/22",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 19
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 149390032,
+      "mtime_hint_min": 1787398565,
+      "mtime_hint_max": 1787423606
+    },
+    {
+      "id": "609ddbca23574fd0",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08/23",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1050953396,
+      "mtime_hint_min": 1787542567,
+      "mtime_hint_max": 1787543162
+    },
+    {
+      "id": "527a92529c80a4c3",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08/24",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 35048928,
+      "mtime_hint_min": 1787605688,
+      "mtime_hint_max": 1787623881
+    },
+    {
+      "id": "7e8ad4fb0866d693",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08/25",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 22009800,
+      "mtime_hint_min": 1787652442,
+      "mtime_hint_max": 1787652442
+    },
+    {
+      "id": "26c4e65e628f7b34",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08/26",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 6
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 55357437,
+      "mtime_hint_min": 1787800850,
+      "mtime_hint_max": 1787812926
+    },
+    {
+      "id": "5fb0e9ff438ae248",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08/27",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 18
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 718497176,
+      "mtime_hint_min": 1787825415,
+      "mtime_hint_max": 1787897554
+    },
+    {
+      "id": "a203d84bca0d57c9",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08/28",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 36
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 437993237,
+      "mtime_hint_min": 1787903360,
+      "mtime_hint_max": 1787986432
+    },
+    {
+      "id": "0b7d1f62064b53ce",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08/29",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 13
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 79013978,
+      "mtime_hint_min": 1787986913,
+      "mtime_hint_max": 1788004526
+    },
+    {
+      "id": "00d1eb8095c6e690",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08/30",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 201347832,
+      "mtime_hint_min": 1788085400,
+      "mtime_hint_max": 1788086123
+    },
+    {
+      "id": "e5d426cabe43e585",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/09/02",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 10
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 287208815,
+      "mtime_hint_min": 1788410338,
+      "mtime_hint_max": 1788411958
+    },
+    {
+      "id": "d4c231ee6ce1713a",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/09/03",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 6
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 683514681,
+      "mtime_hint_min": 1788430386,
+      "mtime_hint_max": 1788499514
+    },
+    {
+      "id": "526d5491e13ce388",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/09/04",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 7
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 86837824,
+      "mtime_hint_min": 1788512336,
+      "mtime_hint_max": 1788544718
+    },
+    {
+      "id": "4d68e671cf2884ce",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/09/05",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2475792,
+      "mtime_hint_min": 1788638595,
+      "mtime_hint_max": 1788638595
+    },
+    {
+      "id": "e7f430b8eb13bc9a",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/09/06",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 8
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 338102712,
+      "mtime_hint_min": 1788715222,
+      "mtime_hint_max": 1788757760
+    },
+    {
+      "id": "28a8712a0e69b03e",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/09/07",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 6
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 7407703,
+      "mtime_hint_min": 1788770237,
+      "mtime_hint_max": 1788779338
+    },
+    {
+      "id": "43321e72c1deabaa",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/09/08",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 7
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 223143783,
+      "mtime_hint_min": 1788893660,
+      "mtime_hint_max": 1788933799
+    },
+    {
+      "id": "161bc4bae2022985",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/09/09",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 6384356,
+      "mtime_hint_min": 1788948707,
+      "mtime_hint_max": 1788988879
+    },
+    {
+      "id": "4b6656f1436635db",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/09/10",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 14850128,
+      "mtime_hint_min": 1789047883,
+      "mtime_hint_max": 1789047883
+    },
+    {
+      "id": "d69a37de90638f86",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/09/12",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 9
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 152252341,
+      "mtime_hint_min": 1789210498,
+      "mtime_hint_max": 1789254416
+    },
+    {
+      "id": "d9707993c7978abd",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/09/13",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 11165268,
+      "mtime_hint_min": 1789296449,
+      "mtime_hint_max": 1789305791
+    },
+    {
+      "id": "ea938d18309cf41f",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/09/14",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 229199709,
+      "mtime_hint_min": 1789432143,
+      "mtime_hint_max": 1789441690
+    },
+    {
+      "id": "7139abc8ce9ac30d",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/09/15",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 110809281,
+      "mtime_hint_min": 1789463132,
+      "mtime_hint_max": 1789508483
+    },
+    {
+      "id": "56a4733704daacc2",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/09/16",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2009191,
+      "mtime_hint_min": 1789613166,
+      "mtime_hint_max": 1789613166
+    },
+    {
+      "id": "6c5ca760030d49e4",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/09/17",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 9
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 7771745,
+      "mtime_hint_min": 1789629771,
+      "mtime_hint_max": 1789658656
+    },
+    {
+      "id": "70479ecdeb8719c2",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/09/18",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 141867,
+      "mtime_hint_min": 1789770902,
+      "mtime_hint_max": 1789770902
+    },
+    {
+      "id": "af8db1d317538bc5",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/09/19",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 114443939,
+      "mtime_hint_min": 1789818039,
+      "mtime_hint_max": 1789818039
+    },
+    {
+      "id": "4d58dbb3f175770a",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/09/20",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 7479039,
+      "mtime_hint_min": 1789940685,
+      "mtime_hint_max": 1789940685
+    },
+    {
+      "id": "f7570df9d1db1abb",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/09/21",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 89461142,
+      "mtime_hint_min": 1790040264,
+      "mtime_hint_max": 1790058054
+    },
+    {
+      "id": "7bb7b0b6bbaf47a3",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/09/22",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2610693,
+      "mtime_hint_min": 1790079797,
+      "mtime_hint_max": 1790079797
+    },
+    {
+      "id": "a0872537427b8e12",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/09/23",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 32945815,
+      "mtime_hint_min": 1790157690,
+      "mtime_hint_max": 1790165964
+    },
+    {
+      "id": "14f69a786507620f",
+      "path": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/10/06",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 6869739,
+      "mtime_hint_min": 1791353625,
+      "mtime_hint_max": 1791354014
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.045
+}

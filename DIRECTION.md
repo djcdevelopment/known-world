@@ -1,5 +1,13 @@
 # DIRECTION.md: creative direction (Fable, 2026-10-09)
 
+## Purpose clarified by Derek, 2026-10-10
+
+The animation should express, viscerally, the scale and magnitude of local AI and AI development, and how Derek's
+own work scaled. Recover evidence of pace, parallelism, project spread, experimentation and accumulated capability
+alongside output volume. Keep the natural map, musical score, sound and running counters as the means of expression.
+The discovery workflow and measurement distinctions are in `EVIDENCE-HUNT.md`. Missing source coverage is a collection
+problem to expose and investigate, not zero activity. New measures enter the film only with dated, deduplicated evidence.
+
 ## The reference
 
 Isao Hashimoto, "1945-1998" (youtube.com/watch?v=cjAqR1zICA0). A still, dark world map. One second per month; a date
@@ -117,6 +125,10 @@ the numbers climb.
   drive and host with the same log bars; inside a launch window they may be attributed to the launch's nation as the
   inferred arm (`births_to_nation: off | launch_window`).
 - **Totals line in the ticker row:** cumulative commits · files · lines for the whole world, always visible.
+- **2026-10-10 correction:** numeric totals report uncapped line changes and file touches; launch-yield caps
+  control visual weight only. Recorded HEARTH executions, Antigravity conversation observations and research
+  objects have their own score rows and counters. Exact workspace links may pulse the map without implying
+  code yield or an executing model. Dates and units stay explicit; undated archives remain coverage evidence.
 - **Honesty:** numbers are the corpus's (numstat where present; 11,164 commits without numstat count as commits and
   files but 0 lines, stated once in the tally card footer). Nothing is smoothed except the rate.
 

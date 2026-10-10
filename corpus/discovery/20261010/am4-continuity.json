@@ -1,0 +1,45 @@
+{
+  "id": "am4-continuity",
+  "host": "am4",
+  "root": "/home/derek/.continuity/ledger",
+  "group": "execution",
+  "status": "complete",
+  "limits": {
+    "depth": 3,
+    "seconds": 25,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 5,
+    "files": 7
+  },
+  "candidates": [
+    {
+      "id": "45d504d4979a20be",
+      "path": "/home/derek/.continuity/ledger",
+      "git_marker": true,
+      "name_hint": true,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 8,
+      "mtime_hint_min": 1790526672,
+      "mtime_hint_max": 1790526672
+    },
+    {
+      "id": "36f017a51152c465",
+      "path": "/home/derek/.continuity/ledger/events",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3090,
+      "mtime_hint_min": 1790526673,
+      "mtime_hint_max": 1790526673
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.0
+}

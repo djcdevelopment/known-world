@@ -1,0 +1,332 @@
+{
+ "source": "experimental_recovery",
+ "copies": 3356,
+ "native_bench_files": [
+  {
+   "path": "/home/derek/work/commandcenter-linux-flash/corpus/fixtures/llama-bench/A-control-production-SINGLECARD.json",
+   "distinct_rows": 12,
+   "sha256": "0b60c7e6391e4273b1d6bcf2b83ff30a638aecf842a2a4d90cbd478190c39e70"
+  },
+  {
+   "path": "/home/derek/work/commandcenter-linux-flash/corpus/fixtures/llama-bench/A-control-production.json",
+   "distinct_rows": 6,
+   "sha256": "c2a8e428d926724f0a6decd84c6bffa5824de98dcdcf7a2d03a9614df0ace4bd"
+  },
+  {
+   "path": "/home/derek/work/commandcenter-linux-flash/corpus/fixtures/llama-bench/B-control-campaign.json",
+   "distinct_rows": 6,
+   "sha256": "1581920230798448ba1ff3cb10865e091dc8a0509e1037e440d79b793f2d8679"
+  },
+  {
+   "path": "/home/derek/work/commandcenter-linux-flash/corpus/fixtures/llama-bench/C-qwen38-27b.json",
+   "distinct_rows": 6,
+   "sha256": "3f82441d86272acb7a6ab24deff30d06610d8e460a309dcfc334e4bfaa39c4b1"
+  },
+  {
+   "path": "/home/derek/work/commandcenter-linux-flash/corpus/fixtures/llama-bench/D-flash-next.json",
+   "distinct_rows": 6,
+   "sha256": "339b92327d6a3e08a5391dab9e14a443b6fc9fa8cccc73f20a411190d0066a85"
+  },
+  {
+   "path": "/home/derek/work/commandcenter-linux-flash/corpus/fixtures/llama-bench/qwen3-30b-a3b-control.json",
+   "distinct_rows": 4,
+   "sha256": "0137302c30ebb09dbd6dc6cd50868f971c42d38b04084be66b5e78030fd41890"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/bench-2026-05-24/overnight-A-70b-28-32-bench.jsonl",
+   "distinct_rows": 2,
+   "sha256": "3b850f368ff2dfb5da0fc62dc84d67d5e91fcb875ffe74aae0d79298cdf87709"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/bench-2026-05-24/overnight-A-70b-fp16kv.jsonl",
+   "distinct_rows": 3,
+   "sha256": "55c21e8a54e6af1581c5baa2833283271e8abb11004b339f2d9c153c1d49e53f"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/bench-2026-05-24/overnight-B-70b-1-1-symmetric-bench.jsonl",
+   "distinct_rows": 2,
+   "sha256": "89d680284161627be523db96480be3dd6839b9d3b2f4a91ba3ec9955e9ff9699"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/bench-2026-05-24/overnight-C-70b-1-1-long-bench.jsonl",
+   "distinct_rows": 2,
+   "sha256": "5f2a066fde253dc48c210f052c1ad4ae31aead7c5a09cbac7fd2cef90df07884"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/bench-2026-05-24/phase1a-14b-vulkan0.jsonl",
+   "distinct_rows": 2,
+   "sha256": "10aa296532c36af2507685462fa705e07a026f633c2eea4f9156faf6581e217f"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/bench-2026-05-24/phase1b-14b-vulkan1.jsonl",
+   "distinct_rows": 2,
+   "sha256": "1d94ea314dbcc1553a9ae98f6f421db9200e2b587b52aa75ff05e40b046b24a0"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/bench-2026-05-24/phase2-14b-vulkan0-parallel.jsonl",
+   "distinct_rows": 2,
+   "sha256": "2bc16eec04feea462f4cb1cd8d0078e7c543551ee45df59f88291d504e6b7b23"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/bench-2026-05-24/phase2-14b-vulkan1-parallel.jsonl",
+   "distinct_rows": 2,
+   "sha256": "333241b99e3d6aeae2b7bb8d866755acf2f869d99554eadf8102a000c201156f"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/bench-2026-05-24/phase3-32b-vulkan1-fixed.jsonl",
+   "distinct_rows": 2,
+   "sha256": "ba682d81bd6cf6debc3fd61906b19e54db4ac6493cfa9faf0427f9ddc7f823f4"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/bench-2026-05-24/phase4-14b-vulkan0-scaling.jsonl",
+   "distinct_rows": 5,
+   "sha256": "3e91bd0623df6ae98e349a6eb7b3ce32a5aed8b9b869163dda8442bfe4451ee6"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/bench-2026-05-24/phase5-70b-tensor-split-bench.jsonl",
+   "distinct_rows": 1,
+   "sha256": "13c86f2e79924e937beb7353f14154eb7b6c1e1904c4cc45959d982bc8a68319"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/bench-2026-05-24/phase5b-70b-no-mmap-bench.jsonl",
+   "distinct_rows": 2,
+   "sha256": "1398abec5281634fbc950726c0aa8fb042bf8954fbd98325a46d686c5b36997f"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/burnin-2026-08/results/soak1-fa-off-low.jsonl",
+   "distinct_rows": 3,
+   "sha256": "9b32b41407c98eeadab970a111bedc460641c9dfc08cd375ef04eaa24375530d"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/burnin-2026-08/results/soak1-fa-on-deep.jsonl",
+   "distinct_rows": 2,
+   "sha256": "edebb4b410974db8cd4b3c3f5574f7a8ab5fba680b664ff10fa35d3db2bccdaa"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/burnin-2026-08/results/soak1-fa-on.jsonl",
+   "distinct_rows": 5,
+   "sha256": "044c03e5175b56de4670d8b2eb8bc032c48339a3c3565f3a9c98937a32e3299c"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/burnin-2026-08/results/soak1-q8kv-64k.jsonl",
+   "distinct_rows": 1,
+   "sha256": "5dccaba6a2dde0c179602aeeea51e793ad23b3e522f90c7e3d8b0d93923c0850"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/burnin-2026-08/results/soak1-q8kv.jsonl",
+   "distinct_rows": 2,
+   "sha256": "6434b0d32027fbda747fbd10d9f34bb5183f54a6849589ae9cdc53984e31cdc3"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/burnin-2026-08/results/soak1-smoke-bench-20260820-223145.jsonl",
+   "distinct_rows": 2,
+   "sha256": "eef1169bb894f6a424b08ffe7b4880e1e83906704a82236f855280ec4dc83a7d"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/burnin-2026-08/results/soak1-smoke-bench-20260820-223323.jsonl",
+   "distinct_rows": 2,
+   "sha256": "d3825c9f2fa07bf198a88b7648c808ac09ef8b600a8a418505a6dd259938762a"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/burnin-2026-08/results/stage1-b10549-card1-20260820-215507.jsonl",
+   "distinct_rows": 4,
+   "sha256": "e1a417ff4234b6ec6771bc28f9c054b8b75d09b9d0bd2d01442d08b9bb0a8884"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/burnin-2026-08/results/stage1-b10549-card1-coopmat.jsonl",
+   "distinct_rows": 2,
+   "sha256": "111cc16b4f4f862531d84675c2b02554693ec0db6312a19c84f8d37506fddbde"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/burnin-2026-08/results/stage1-b10549-card2-20260820-215507.jsonl",
+   "distinct_rows": 4,
+   "sha256": "6ffcd835eb2e7ce993967f34f9c79adf48ef4d3f85ec890577b84e6b92659e38"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/burnin-2026-08/results/stage1-b10549-card2-coopmat.jsonl",
+   "distinct_rows": 2,
+   "sha256": "0857a35d1f576195156aef534fc35bc2bffbc76d357f1d48409379e64cd1aa63"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/burnin-2026-08/results/stage1-b9305-card1-20260820-215507.jsonl",
+   "distinct_rows": 2,
+   "sha256": "ab3dc784a0003905da4c1dd37f6314021d3e303e5e1d3888a2200eefc1c9c2be"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/burnin-2026-08/results/stage1-b9305-card2-20260820-215507.jsonl",
+   "distinct_rows": 2,
+   "sha256": "ebbaf3239cfe475aa308296be6eca1e645a5d0394c9b2893463036cc1e5fdf1b"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/burnin-2026-08/results/stage2-bench70b-20260820-220104-POISONED-cotenant-load.jsonl",
+   "distinct_rows": 2,
+   "sha256": "73efdd23a7e7fb221e230027bb741130bd98465a53c87f76d851f686f3ae1b9b"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/burnin-2026-08/results/stage2-bench70b-20260820-221150.jsonl",
+   "distinct_rows": 4,
+   "sha256": "f8c0b12c08d72f8977f7ba35910773e70413908f4cf2651513868cc917f50487"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/burnin-2026-08/results/stage7b-cpu.jsonl",
+   "distinct_rows": 96,
+   "sha256": "98b088505b19f17355e6918aed7ae693fd4fedfdebcc2fac43092c0d4a832a73"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/burnin-2026-08/results/stage8-cpu.jsonl",
+   "distinct_rows": 48,
+   "sha256": "edc37c11ca594f035887ad13527306d1c870961b8fe3d1c2d56dc5776fd2bea3"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/ff-probes/ff0-knee-r1.json",
+   "distinct_rows": 9,
+   "sha256": "b3fda4786019c3f70b041fdb9a65693c33d39a21c817663611bebf4d561653ef"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/ff-probes/ff0-knee-r2.json",
+   "distinct_rows": 9,
+   "sha256": "d9344eed75b51b7b3ac6d29f872aa367e05a26053d5b69795c3a0b4b63a8509b"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/ff-probes/ff4-kv-f16.json",
+   "distinct_rows": 4,
+   "sha256": "a2944d284f60b2fde5cd216952117642b7086894d212c9d08bb7460bc8f72447"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/ff-probes/ff4-kv-q4_0.json",
+   "distinct_rows": 4,
+   "sha256": "bae1d58a04e819a2be68774dddc322692a23beae5c8ec112c33bbc34683fbe2d"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/ff-probes/ff4-kv-q8_0.json",
+   "distinct_rows": 4,
+   "sha256": "44ed1ac103f80f2990fd858f276779dbc3856de3b99417c1266a5678b45ba949"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/ff-probes/ff6-ub-dualsplit-r2.json",
+   "distinct_rows": 6,
+   "sha256": "8d5351c6c1e41db471db9408a7864a4d6ecbe1f0ca2e0627527703862511a535"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/ff-probes/ff6-ub-dualsplit-r3.json",
+   "distinct_rows": 6,
+   "sha256": "1ef33fdeb85ab5d039add9580c54bc127c6607e789bf0036fe82a962918af729"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/ff-probes/ff6-ub-dualsplit.json",
+   "distinct_rows": 6,
+   "sha256": "4e8d82e8d1b6b547957bffca87235a7be78a884c2fc06d10e6065ab80c6cf4f1"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/ff-probes/ff6-ub.json",
+   "distinct_rows": 12,
+   "sha256": "b8efb6b1c4c717f686646ff89b487271a067560edcabb5cf698b776e5ead7005"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/ff-probes/ff6c-dual-r1.json",
+   "distinct_rows": 12,
+   "sha256": "c482c8c29fd98a3de6d6dd2387dcf1813e49166ec7d5206f9a2db371d8486420"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/ff-probes/ff6c-dual-r2.json",
+   "distinct_rows": 12,
+   "sha256": "25289f17f088f258675b99d85ad30fedb173352a29ea170a377d0d73a64922be"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/ff-probes/ff6c-single-r1.json",
+   "distinct_rows": 12,
+   "sha256": "68ff7d4786e6814c44905de2cc9dac812dbf5c20dfd0a140b934b4fc4ea483c9"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/ff-probes/ff6c-single-r2.json",
+   "distinct_rows": 12,
+   "sha256": "8639b3c1167d7a6c35cb7d979277bedacdd2f83e3e32a7844bd7cd001ef1700f"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/ff-probes/ff6d-dual-r1.json",
+   "distinct_rows": 8,
+   "sha256": "27dd3efd0c5980cd1b47eee65392d1832de42e5d7246e59faefc8e6fab660ebb"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/ff-probes/ff6d-dual-r2.json",
+   "distinct_rows": 8,
+   "sha256": "f468c09d96fb18b3b430cf2eba4572e9c9420755200fd40ccc07067844b49ec4"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/ff-probes/ff6d-single-r1.json",
+   "distinct_rows": 8,
+   "sha256": "382f4dd12ee2cccbd02eb8af431acd78f8764e21e5e9054ef30d6ec13b23e4f1"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/battlemage/ff-probes/ff6d-single-r2.json",
+   "distinct_rows": 8,
+   "sha256": "6075b96cce2db8c404361f8a78e30c862c23d27384121fd3347c67a0c9363e23"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/denning/results/raw/battery-A1.json",
+   "distinct_rows": 2,
+   "sha256": "d8d3447b60470f003395a967ef521e6efb64637efc753601503a4dd5a30799a5"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/denning/results/raw/battery-A2.json",
+   "distinct_rows": 2,
+   "sha256": "b011b7758562c08af5dc0bc36c64776ae97bc5a7cad40dce0faa1345d2a7aa89"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/denning/results/raw/battery-Bf16.jsonl",
+   "distinct_rows": 14,
+   "sha256": "93e74c0b4265943932e4bd9b04568171eb8a43acb049fee7fbea5616bc762b01"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/denning/results/raw/battery-Bq8.jsonl",
+   "distinct_rows": 16,
+   "sha256": "07b2567f77b99aee6c7eb451637d05d1ea8dde57eb98cc479515b10f84c4fdbd"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/denning/results/raw/battery-D1.jsonl",
+   "distinct_rows": 4,
+   "sha256": "4b73e53ede674995c0204be657ff8e90fbd0f4a95515a9bbb624d3b880fac3e5"
+  },
+  {
+   "path": "/mnt/omen-e-read/work/denning/results/raw/prefill-x16-20260621.jsonl",
+   "distinct_rows": 8,
+   "sha256": "1791c27904d2c2c6619bfa5436b145fda5a21fb98e5a5ed825bbba96719532f9"
+  }
+ ],
+ "invalid_or_undated": 0,
+ "unmapped_files": 0,
+ "source_hashes": {
+  "/mnt/omen-e-read/work/denning/results/raw/h1-1781915479.result.json": "61c65f3167f5435a71eaf1a1e582ae3b62d75741ad0f4f8aa5f5d12e8b690f20",
+  "/mnt/omen-e-read/work/denning/results/raw/h1-1781915719.result.json": "0957f6346fd6a880e666eb8b7db792f612d9dc44ca033599a6566b37e8731f9d",
+  "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917078.result.json": "5182edc48f45ba86b0c323541ed1003118affb0fd5b64d2c7cec85d722b78311",
+  "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917124.result.json": "80a281937983ac4628669a80dc3a647e11749e44e5b091f22a6343ead0bb29ac",
+  "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917211.result.json": "9fb4c25ed90a9291d2c237ae3829a566d00c50e8660e041dfdb685db7b53c49f",
+  "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917238.result.json": "d9acae430d5b0711704667808d1408b455fd46e93dbad1734ae43b4af116a760",
+  "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917265.result.json": "adb8135e4c26b17cfc6d3ac9dc409166f699209341d62df6186d0b14986642e3",
+  "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917296.result.json": "5cf4762b819c6d0b320b991bdfdf58f4547fe0dd61062e20a63e6761a55aa171",
+  "/mnt/omen-e-read/work/denning/results/raw/h1r-1781917331.result.json": "89649fca17ef53992dbc50add69b066a363b0192cd8910f5a4be8d180775c1ef",
+  "/mnt/omen-e-read/work/denning/results/raw/bench-1782030562.jsonl": "6103f9eebf935684675523d976a00af67394d492aa0a261ebc0866e3eca48778",
+  "/mnt/omen-e-read/work/denning/results/raw/bench-1782030843.jsonl": "87fe7901d3f10fb8cf085399a7f05315f3c866b330820c271155d239315af8db",
+  "/mnt/omen-e-read/work/denning/results/raw/bench-1782030939.jsonl": "7f8288f9322fdc46ce57533e8dd8da3c8aa1ed0421bc1b340e93acc2d75483dd",
+  "/mnt/omen-e-read/work/denning/results/raw/bench-1782031916.jsonl": "4a376f97ab86d5049e2181427bbd1122698278c8f8944b9fd10ce18e98cdc68b",
+  "/mnt/omen-e-read/work/denning/results/raw/bench-1782031941.jsonl": "f8714fc33bc692de6d87ee677265a854cac9d49687c4b459b23d849a75cdd963",
+  "/mnt/omen-e-read/work/denning/results/raw/bench-1782031976.jsonl": "c43011f2dc60102586e69b0e19a2bfc395eb3055942d1d7de315a8f08f1e64fc",
+  "/mnt/omen-e-read/work/denning/results/raw/bench-1782031999.jsonl": "07f8760490652ade9902994902d9f66c47dbd8534b158f0a0f18dbdf8f5adfb0",
+  "/mnt/omen-e-read/work/denning/results/raw/bench-1782032020.jsonl": "8cd617d33c191161a8da6d370de6949b5581a5d616c62072186f9475898e675e",
+  "/mnt/omen-e-read/work/denning/results/raw/bench-1782032057.jsonl": "7f279dff6dcf23437b8fe7c206d8d05578572fc4f0dd21330c4598ae5ded5ac1",
+  "/mnt/omen-e-read/work/denning/results/raw/bench-1782063101.jsonl": "02948a0cc8329c98cbf04d0893438d79e7d814c3a1b787784f56d01b2cb18921",
+  "/mnt/omen-e-read/work/denning/results/raw/bench-1782063179.jsonl": "ab22a10ad1f40194c82cbd4aca18b10676705c2d6e09e2c275ce7de0ea6ea596"
+ },
+ "memsplice": {
+  "hash_verified_artifacts": 59,
+  "windows_checkout_crlf": 58,
+  "dated_trials": 60,
+  "undated_rows": 4,
+  "git_blob": 1
+ },
+ "status": "partial",
+ "distinct_measurements": 436,
+ "native_repeated_trials": 1242,
+ "distinct_other_trials": 245,
+ "timing_note": "Native benchmark records date groups of repeated samples. Denning request traces date the campaign completion, not an invented per-request timestamp. Memsplice dates come from original native intervals, with source hashes verified across line endings."
+}

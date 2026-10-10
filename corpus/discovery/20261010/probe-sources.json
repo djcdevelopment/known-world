@@ -1,0 +1,68 @@
+{
+  "probes": [
+    {
+      "id": "linux-antigravity-0",
+      "path": "/home/derek/.gemini/antigravity-cli/conversations/0b5ac45b-7ae5-49c9-8847-757de93d082f.db"
+    },
+    {
+      "id": "linux-antigravity-1",
+      "path": "/home/derek/.gemini/antigravity-cli/conversations/10aead28-48fe-4238-83e9-3de7aff88516.db"
+    },
+    {
+      "id": "linux-antigravity-2",
+      "path": "/home/derek/.gemini/antigravity-cli/conversations/12478e3d-3b4f-4ba9-b24f-b55fb9a448c6.db"
+    },
+    {
+      "id": "c-antigravity-0",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/conversations/0191643e-2994-468c-9a11-672301a20b12.db"
+    },
+    {
+      "id": "c-antigravity-1",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/conversations/024cf6e1-be9a-4fac-9efb-464d45c63256.db"
+    },
+    {
+      "id": "c-antigravity-2",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/conversations/042e9446-9c0a-4c4f-90a6-3172e59d4deb.db"
+    },
+    {
+      "id": "c-execution-6",
+      "path": "/mnt/omen-c-read/hearth-var/execution/coordination.sqlite"
+    },
+    {
+      "id": "c-execution-7",
+      "path": "/mnt/omen-c-read/hearth-var/execution/projection.sqlite"
+    },
+    {
+      "id": "lab-registry",
+      "path": "/home/derek/work/lab-rnd/research/state/events/00000001.json"
+    },
+    {
+      "id": "lever-bench27",
+      "path": "/home/derek/work/lever-ledger/slices/16-bench27.jsonl"
+    },
+    {
+      "id": "lever-runs",
+      "path": "/home/derek/work/lever-ledger/slices/06-runs-data.jsonl"
+    },
+    {
+      "id": "c-experiment-0",
+      "path": "/mnt/omen-c-read/hearth-var/experiments/doc-adr-bench-20260721T154713Z-smoke/summary.json"
+    },
+    {
+      "id": "c-experiment-1",
+      "path": "/mnt/omen-c-read/hearth-var/experiments/doc-adr-bench-20260721T161359Z-sweep/summary.json"
+    },
+    {
+      "id": "c-experiment-2",
+      "path": "/mnt/omen-c-read/hearth-var/experiments/matrix-20260705T110418Z-smoke/dataset.json"
+    },
+    {
+      "id": "c-experiment-3",
+      "path": "/mnt/omen-c-read/hearth-var/experiments/matrix-20260705T110418Z-smoke/summary.json"
+    },
+    {
+      "id": "c-experiment-4",
+      "path": "/mnt/omen-c-read/hearth-var/experiments/matrix-20260706T052819Z-pilot/dataset.json"
+    }
+  ]
+}

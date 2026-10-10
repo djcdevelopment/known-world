@@ -107,7 +107,8 @@
   "rate_window": "era_unit",
   "births_to_nation": "off",
   "births_exclude_bulk": true,
-  "totals_line_cap": "yield",
+  "totals_line_cap": "none",
+  "activity_file": "corpus/activity/20261010-experimental-recovery.json",
   "third_party_clones_row": "tally_card",
   "bulk_copy_footer": true,
   "hud": "plates",
@@ -227,5 +228,8 @@
   "ia_nation_row_fit": 120,
   "design_system": "on",
   "camera_centre_halfwidth_s": 1.5,
-  "layout_aspect": 2.0
+  "layout_aspect": 2.0,
+  "burst_tail_scale": 2.0,
+  "connection_hold_days": 5.0,
+  "connection_expire_days": 7.0
 }

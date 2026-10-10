@@ -1,0 +1,16 @@
+{
+  "distinct_bench_configurations": 436,
+  "native_repeats": 1242,
+  "other_trials": 245,
+  "total_measured_trials": 1487,
+  "all_previous_measurements_preserved": true,
+  "copied_rows_folded": 3356,
+  "memsplice_hashes_verified": 59,
+  "denning_dry_trace_excluded": true,
+  "local_advisory_verdict": {
+    "job_id": "job_d83abc526cc5f09c47161c0d4aac2e58",
+    "substance": "partially useful; JSON arrays and sweeps included; generic notebook suggestion not evidence",
+    "form": "over requested length; no applied output",
+    "frontier_verdict": "advisory only, independently verified shapes; no local candidate code applied"
+  }
+}

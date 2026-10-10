@@ -1,0 +1,121 @@
+{
+  "group": "projects",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "e-root",
+    "host": "omen-e",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 3,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500
+    },
+    "rollups_omitted": 87,
+    "rollups": [
+      {
+        "path": "/mnt/omen-e-read/work/ai-dev-system",
+        "directories": 3,
+        "structured_files": {
+          ".jsonl": 1,
+          ".json": 17
+        },
+        "git_markers": 1
+      },
+      {
+        "path": "/mnt/omen-e-read/work/battlemage",
+        "directories": 2,
+        "structured_files": {
+          ".jsonl": 16,
+          ".json": 2
+        },
+        "git_markers": 1
+      },
+      {
+        "path": "/mnt/omen-e-read/omen/steward-multi-era",
+        "directories": 8,
+        "structured_files": {
+          ".json": 16
+        },
+        "git_markers": 5
+      },
+      {
+        "path": "/mnt/omen-e-read/BF6-Highlights/work",
+        "directories": 1,
+        "structured_files": {
+          ".json": 14
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/work/hearth",
+        "directories": 4,
+        "structured_files": {
+          ".json": 13
+        },
+        "git_markers": 1
+      },
+      {
+        "path": "/mnt/omen-e-read/work/start",
+        "directories": 9,
+        "structured_files": {
+          ".json": 13
+        },
+        "git_markers": 9
+      },
+      {
+        "path": "/mnt/omen-e-read/work",
+        "directories": 1,
+        "structured_files": {
+          ".json": 11,
+          ".jsonl": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/omen/tensor",
+        "directories": 2,
+        "structured_files": {
+          ".json": 6,
+          ".jsonl": 1
+        },
+        "git_markers": 1
+      },
+      {
+        "path": "/mnt/omen-e-read/wool",
+        "directories": 1,
+        "structured_files": {
+          ".json": 6,
+          ".jsonl": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/work/Guild",
+        "directories": 1,
+        "structured_files": {
+          ".json": 7
+        },
+        "git_markers": 1
+      },
+      {
+        "path": "/mnt/omen-e-read/work/ai-systems-research",
+        "directories": 3,
+        "structured_files": {
+          ".jsonl": 4,
+          ".json": 3
+        },
+        "git_markers": 1
+      },
+      {
+        "path": "/mnt/omen-e-read/work/liveView",
+        "directories": 3,
+        "structured_files": {
+          ".json": 7
+        },
+        "git_markers": 3
+      }
+    ]
+  }
+}

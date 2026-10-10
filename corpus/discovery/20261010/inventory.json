@@ -1,0 +1,481 @@
+{
+  "version": 1,
+  "started": "2026-10-10T13:50:18.759128+00:00",
+  "roots_sha256": "cbd7a6dabad7646f2bec5ac72bd8ee2a4025d247e9811b4d7443b70822fb053c",
+  "scanner_sha256": "9ad3df56fe7bce0f91ffeb04bab6ebe10e8c4c1dfcefb7c586c05d0b59404d73",
+  "source_contents_read": false,
+  "privacy": "Private directory metadata only. No files opened, no transcript bodies, no credential contents.",
+  "coverage_rule": "Complete means enumerated within declared depth and exclusions. Missing/partial/failed are not zero activity.",
+  "sources": [
+    {
+      "id": "linux-work",
+      "host": "omen-linux",
+      "root": "/home/derek/work",
+      "group": "lab",
+      "status": "partial",
+      "counts": {
+        "directories": 7264,
+        "files": 67868,
+        "excluded": 438,
+        "symlinks_excluded": 34,
+        "directories_beyond_depth": 5111,
+        "candidates_omitted": 1406
+      },
+      "gaps": []
+    },
+    {
+      "id": "linux-research",
+      "host": "omen-linux",
+      "root": "/home/derek/research",
+      "group": "lab",
+      "status": "complete",
+      "counts": {
+        "directories": 3,
+        "files": 46,
+        "symlinks_excluded": 1
+      },
+      "gaps": []
+    },
+    {
+      "id": "linux-git",
+      "host": "omen-linux",
+      "root": "/home/derek/git",
+      "group": "projects",
+      "status": "complete",
+      "counts": {
+        "directories": 2
+      },
+      "gaps": []
+    },
+    {
+      "id": "linux-migration",
+      "host": "omen-linux",
+      "root": "/home/derek/private-migration-20260923",
+      "group": "projects",
+      "status": "complete",
+      "counts": {
+        "directories": 273,
+        "files": 2928,
+        "directories_beyond_depth": 124,
+        "excluded": 18
+      },
+      "gaps": []
+    },
+    {
+      "id": "linux-home",
+      "host": "omen-linux",
+      "root": "/home/derek",
+      "group": "projects",
+      "status": "complete",
+      "counts": {
+        "directories": 57,
+        "files": 286,
+        "excluded": 23,
+        "symlinks_excluded": 6,
+        "directories_beyond_depth": 228
+      },
+      "gaps": []
+    },
+    {
+      "id": "linux-hearth-ledger",
+      "host": "omen-linux",
+      "root": "/home/derek/hearth-production/var/ledger",
+      "group": "execution",
+      "status": "complete",
+      "counts": {
+        "directories": 1,
+        "files": 3
+      },
+      "gaps": []
+    },
+    {
+      "id": "linux-hearth-artifacts",
+      "host": "omen-linux",
+      "root": "/home/derek/hearth-production/runs",
+      "group": "execution",
+      "status": "complete",
+      "counts": {
+        "directories": 97,
+        "files": 2104,
+        "excluded": 4
+      },
+      "gaps": []
+    },
+    {
+      "id": "linux-continuity",
+      "host": "omen-linux",
+      "root": "/home/derek/.continuity/ledger",
+      "group": "execution",
+      "status": "complete",
+      "counts": {
+        "directories": 272,
+        "files": 889,
+        "directories_beyond_depth": 3
+      },
+      "gaps": []
+    },
+    {
+      "id": "linux-claude",
+      "host": "omen-linux",
+      "root": "/home/derek/.claude/projects",
+      "group": "clients",
+      "status": "complete",
+      "counts": {
+        "directories": 124,
+        "files": 1215,
+        "symlinks_excluded": 4,
+        "excluded": 1
+      },
+      "gaps": []
+    },
+    {
+      "id": "linux-codex",
+      "host": "omen-linux",
+      "root": "/home/derek/.codex/sessions",
+      "group": "clients",
+      "status": "complete",
+      "counts": {
+        "directories": 15,
+        "files": 61
+      },
+      "gaps": []
+    },
+    {
+      "id": "linux-gemini",
+      "host": "omen-linux",
+      "root": "/home/derek/.gemini",
+      "group": "clients",
+      "status": "complete",
+      "counts": {
+        "directories": 7413,
+        "files": 7905,
+        "symlinks_excluded": 1,
+        "directories_beyond_depth": 122
+      },
+      "gaps": []
+    },
+    {
+      "id": "linux-opencode",
+      "host": "omen-linux",
+      "root": "/home/derek/.local/share/opencode",
+      "group": "clients",
+      "status": "complete",
+      "counts": {
+        "directories": 210,
+        "files": 345
+      },
+      "gaps": []
+    },
+    {
+      "id": "c-work",
+      "host": "omen-c",
+      "root": "/mnt/omen-c-read/work",
+      "group": "projects",
+      "status": "partial",
+      "counts": {
+        "directories": 16494,
+        "files": 100000,
+        "excluded": 868,
+        "directories_beyond_depth": 5980,
+        "candidates_omitted": 2109,
+        "read_errors": 2
+      },
+      "gaps": [
+        {
+          "directory_id": "a9381d3620ca2122",
+          "errno": 13
+        },
+        {
+          "directory_id": "3f98a2a52c342652",
+          "errno": 13
+        },
+        "time_or_file_budget",
+        "time_or_file_budget"
+      ]
+    },
+    {
+      "id": "c-root",
+      "host": "omen-c",
+      "root": "/mnt/omen-c-read",
+      "group": "projects",
+      "status": "complete",
+      "counts": {
+        "directories": 194,
+        "files": 4162,
+        "symlinks_excluded": 48,
+        "excluded": 50,
+        "directories_beyond_depth": 1105
+      },
+      "gaps": []
+    },
+    {
+      "id": "c-assessment",
+      "host": "omen-c",
+      "root": "/mnt/omen-c-read/assessment",
+      "group": "lab",
+      "status": "complete",
+      "counts": {
+        "directories": 15,
+        "files": 48
+      },
+      "gaps": []
+    },
+    {
+      "id": "c-tuning",
+      "host": "omen-c",
+      "root": "/mnt/omen-c-read/tuning",
+      "group": "lab",
+      "status": "complete",
+      "counts": {
+        "directories": 6,
+        "files": 47
+      },
+      "gaps": []
+    },
+    {
+      "id": "c-hearth",
+      "host": "omen-c",
+      "root": "/mnt/omen-c-read/hearth-var",
+      "group": "execution",
+      "status": "complete",
+      "counts": {
+        "directories": 114,
+        "files": 1215,
+        "excluded": 10
+      },
+      "gaps": []
+    },
+    {
+      "id": "c-claude",
+      "host": "omen-c",
+      "root": "/mnt/omen-c-read/Users/derek/.claude/projects",
+      "group": "clients",
+      "status": "complete",
+      "counts": {
+        "directories": 338,
+        "files": 2389,
+        "excluded": 3
+      },
+      "gaps": []
+    },
+    {
+      "id": "c-codex",
+      "host": "omen-c",
+      "root": "/mnt/omen-c-read/Users/derek/.codex/sessions",
+      "group": "clients",
+      "status": "complete",
+      "counts": {
+        "directories": 74,
+        "files": 432
+      },
+      "gaps": []
+    },
+    {
+      "id": "c-gemini",
+      "host": "omen-c",
+      "root": "/mnt/omen-c-read/Users/derek/.gemini",
+      "group": "clients",
+      "status": "complete",
+      "counts": {
+        "directories": 15030,
+        "files": 18318,
+        "directories_beyond_depth": 161,
+        "excluded": 12
+      },
+      "gaps": []
+    },
+    {
+      "id": "e-work",
+      "host": "omen-e",
+      "root": "/mnt/omen-e-read/work",
+      "group": "projects",
+      "status": "partial",
+      "counts": {
+        "directories": 14264,
+        "files": 98312,
+        "excluded": 738,
+        "directories_beyond_depth": 3002,
+        "symlinks_excluded": 3,
+        "candidates_omitted": 2241
+      },
+      "gaps": []
+    },
+    {
+      "id": "e-root",
+      "host": "omen-e",
+      "root": "/mnt/omen-e-read",
+      "group": "projects",
+      "status": "complete",
+      "counts": {
+        "directories": 1334,
+        "excluded": 284,
+        "files": 15305,
+        "directories_beyond_depth": 2864,
+        "symlinks_excluded": 4
+      },
+      "gaps": []
+    },
+    {
+      "id": "e-omen",
+      "host": "omen-e",
+      "root": "/mnt/omen-e-read/omen",
+      "group": "execution",
+      "status": "partial",
+      "counts": {
+        "directories": 22555,
+        "excluded": 251,
+        "files": 100000,
+        "directories_beyond_depth": 898,
+        "symlinks_excluded": 4
+      },
+      "gaps": [
+        "time_or_file_budget",
+        "time_or_file_budget"
+      ]
+    },
+    {
+      "id": "e-start",
+      "host": "omen-e",
+      "root": "/mnt/omen-e-read/work/start",
+      "group": "lab",
+      "status": "complete",
+      "counts": {
+        "directories": 1556,
+        "files": 12299,
+        "directories_beyond_depth": 280,
+        "excluded": 81
+      },
+      "gaps": []
+    },
+    {
+      "id": "e-manifest",
+      "host": "omen-e",
+      "root": "/mnt/omen-e-read/work/manifest",
+      "group": "lab",
+      "status": "complete",
+      "counts": {
+        "directories": 36,
+        "files": 275,
+        "excluded": 7
+      },
+      "gaps": []
+    },
+    {
+      "id": "e-gemini",
+      "host": "omen-e",
+      "root": "/mnt/omen-e-read/gemini",
+      "group": "clients",
+      "status": "complete",
+      "counts": {
+        "directories": 2,
+        "files": 22
+      },
+      "gaps": []
+    },
+    {
+      "id": "am4-home",
+      "host": "am4",
+      "root": "/home/derek",
+      "group": "projects",
+      "status": "complete",
+      "counts": {
+        "directories": 259,
+        "excluded": 90,
+        "files": 2876,
+        "symlinks_excluded": 15,
+        "directories_beyond_depth": 1128
+      },
+      "gaps": []
+    },
+    {
+      "id": "am4-work",
+      "host": "am4",
+      "root": "/home/derek/work",
+      "group": "lab",
+      "status": "complete",
+      "counts": {
+        "directories": 805,
+        "excluded": 71,
+        "files": 5632,
+        "directories_beyond_depth": 383,
+        "symlinks_excluded": 78
+      },
+      "gaps": []
+    },
+    {
+      "id": "am4-continuity",
+      "host": "am4",
+      "root": "/home/derek/.continuity/ledger",
+      "group": "execution",
+      "status": "complete",
+      "counts": {
+        "directories": 5,
+        "files": 7
+      },
+      "gaps": []
+    },
+    {
+      "id": "am4-bench",
+      "host": "am4",
+      "root": "/home/derek/ai-bench",
+      "group": "lab",
+      "status": "missing",
+      "counts": {},
+      "gaps": [
+        "root_missing"
+      ]
+    },
+    {
+      "id": "fx99-home",
+      "host": "fx99",
+      "root": "/home/derek",
+      "group": "projects",
+      "status": "complete",
+      "counts": {
+        "directories": 127,
+        "files": 1335,
+        "excluded": 37,
+        "symlinks_excluded": 13,
+        "directories_beyond_depth": 1046
+      },
+      "gaps": []
+    },
+    {
+      "id": "fx99-work",
+      "host": "fx99",
+      "root": "/home/derek/work",
+      "group": "lab",
+      "status": "complete",
+      "counts": {
+        "directories": 1,
+        "excluded": 1
+      },
+      "gaps": []
+    },
+    {
+      "id": "fx99-continuity",
+      "host": "fx99",
+      "root": "/home/derek/.continuity/ledger",
+      "group": "execution",
+      "status": "complete",
+      "counts": {
+        "directories": 5,
+        "files": 7
+      },
+      "gaps": []
+    },
+    {
+      "id": "fx99-bench",
+      "host": "fx99",
+      "root": "/home/derek/ai-bench",
+      "group": "lab",
+      "status": "complete",
+      "counts": {
+        "directories": 3,
+        "files": 8
+      },
+      "gaps": []
+    }
+  ],
+  "unique_candidate_directories": 6254
+}

@@ -1,0 +1,80 @@
+{
+  "schemas": [
+    {
+      "name": "native_llama_bench",
+      "keys": [
+        "test_time",
+        "n_prompt",
+        "n_gen",
+        "samples_ns"
+      ],
+      "unit": "configuration measurement plus repeated samples",
+      "identity": "native dated row fingerprint"
+    },
+    {
+      "name": "runner_manifest",
+      "keys": [
+        "started_at",
+        "finished_at",
+        "config_name/probe"
+      ],
+      "unit": "runner campaign",
+      "identity": "config and native interval"
+    },
+    {
+      "name": "request_trace",
+      "keys": [
+        "i",
+        "arrival_ms",
+        "admitted",
+        "e2el_ms",
+        "tokens"
+      ],
+      "unit": "request trial",
+      "identity": "native campaign plus request ordinal"
+    },
+    {
+      "name": "experimental_result",
+      "keys": [
+        "ts",
+        "baseline",
+        "pressured",
+        "analysis"
+      ],
+      "unit": "experimental trial",
+      "identity": "native timestamp plus experiment kind"
+    },
+    {
+      "name": "numeric_provenance_export",
+      "keys": [
+        "source",
+        "source_sha256",
+        "measurements"
+      ],
+      "unit": "source-backed result record",
+      "identity": "source SHA, folds derived exports"
+    },
+    {
+      "name": "native_receipt",
+      "keys": [
+        "attempt_id",
+        "started_at",
+        "source",
+        "usage"
+      ],
+      "unit": "native attempt",
+      "identity": "attempt_id"
+    },
+    {
+      "name": "probe_receipt",
+      "keys": [
+        "kind",
+        "probe",
+        "status"
+      ],
+      "unit": "hardware probe result",
+      "identity": "native row/run ID when available, otherwise source fingerprint"
+    }
+  ],
+  "search_policy": "Names, extensions, nearby docs and file size identify candidates. Read schema keys and explicit metadata only. Prompt/output/credential files excluded. Count source identities, never matching files. Broaden Windows work/omen, Linux work and remote known work roots; prune generated copies and models/caches."
+}

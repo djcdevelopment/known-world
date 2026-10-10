@@ -1,0 +1,280 @@
+{
+  "id": "am4-work",
+  "host": "am4",
+  "root": "/home/derek/work",
+  "group": "lab",
+  "status": "complete",
+  "limits": {
+    "depth": 5,
+    "seconds": 25,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 805,
+    "excluded": 71,
+    "files": 5632,
+    "directories_beyond_depth": 383,
+    "symlinks_excluded": 78
+  },
+  "candidates": [
+    {
+      "id": "7c1ac7b10168e320",
+      "path": "/home/derek/work/am4-dual-nvidia-poc/llama.cpp",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 283349,
+      "mtime_hint_min": 1789631246,
+      "mtime_hint_max": 1789631246
+    },
+    {
+      "id": "f21c0750cd16eaee",
+      "path": "/home/derek/work/am4-dual-nvidia-poc/llama.cpp/benches/dgx-spark",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2432483,
+      "mtime_hint_min": 1789631246,
+      "mtime_hint_max": 1789631246
+    },
+    {
+      "id": "f09366d27916ccef",
+      "path": "/home/derek/work/am4-dual-nvidia-poc/llama.cpp/examples/eval-callback",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 8190,
+      "mtime_hint_min": 1789631246,
+      "mtime_hint_max": 1789631246
+    },
+    {
+      "id": "f97ae5618e5dd7a8",
+      "path": "/home/derek/work/am4-dual-nvidia-poc/llama.cpp/tools/results",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 7724,
+      "mtime_hint_min": 1789631246,
+      "mtime_hint_max": 1789631246
+    },
+    {
+      "id": "f527b78c84caf215",
+      "path": "/home/derek/work/am4-dual-nvidia-poc/llama.cpp-knee",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 278047,
+      "mtime_hint_min": 1789697483,
+      "mtime_hint_max": 1789697484
+    },
+    {
+      "id": "1403511f5c63b194",
+      "path": "/home/derek/work/am4-dual-nvidia-poc/llama.cpp-knee/benches/dgx-spark",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2432483,
+      "mtime_hint_min": 1789697483,
+      "mtime_hint_max": 1789697483
+    },
+    {
+      "id": "108beb85ab4bdc88",
+      "path": "/home/derek/work/am4-dual-nvidia-poc/llama.cpp-knee/examples/eval-callback",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 8188,
+      "mtime_hint_min": 1789697483,
+      "mtime_hint_max": 1789697483
+    },
+    {
+      "id": "1157266465273c56",
+      "path": "/home/derek/work/am4-dual-nvidia-poc/llama.cpp-knee/tools/results",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 7724,
+      "mtime_hint_min": 1789697483,
+      "mtime_hint_max": 1789697483
+    },
+    {
+      "id": "19c8f96fbb06cc25",
+      "path": "/home/derek/work/am4-dual-nvidia-poc/llama.cpp-master",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 283465,
+      "mtime_hint_min": 1789820517,
+      "mtime_hint_max": 1789820517
+    },
+    {
+      "id": "7e2d15a997623a51",
+      "path": "/home/derek/work/am4-dual-nvidia-poc/llama.cpp-master/benches/dgx-spark",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2432483,
+      "mtime_hint_min": 1789820517,
+      "mtime_hint_max": 1789820517
+    },
+    {
+      "id": "f8821f2c15c1289a",
+      "path": "/home/derek/work/am4-dual-nvidia-poc/llama.cpp-master/examples/eval-callback",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 8190,
+      "mtime_hint_min": 1789820517,
+      "mtime_hint_max": 1789820517
+    },
+    {
+      "id": "1c52a51d46e0e716",
+      "path": "/home/derek/work/am4-dual-nvidia-poc/llama.cpp-master/tools/results",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 7724,
+      "mtime_hint_min": 1789820517,
+      "mtime_hint_max": 1789820517
+    },
+    {
+      "id": "2b81bcc17bba0148",
+      "path": "/home/derek/work/am4-dual-nvidia-poc/logs/20260917T075959Z-4070ti",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 5,
+        ".csv": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 89101,
+      "mtime_hint_min": 1789632000,
+      "mtime_hint_max": 1789632066
+    },
+    {
+      "id": "c180c850a300c421",
+      "path": "/home/derek/work/am4-dual-nvidia-poc/logs/20260917T080159Z-4070ti",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 10,
+        ".csv": 1
+      },
+      "marker_files_direct": 5,
+      "bytes_direct": 186643,
+      "mtime_hint_min": 1789632119,
+      "mtime_hint_max": 1789632341
+    },
+    {
+      "id": "1b24cc94babb6ad0",
+      "path": "/home/derek/work/am4-dual-nvidia-poc/logs/20260917T080541Z-5070",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 10,
+        ".csv": 1
+      },
+      "marker_files_direct": 5,
+      "bytes_direct": 184836,
+      "mtime_hint_min": 1789632341,
+      "mtime_hint_max": 1789632558
+    },
+    {
+      "id": "0942459c43f2afb8",
+      "path": "/home/derek/work/am4-dual-nvidia-poc/logs/20260917T080918Z-dual-1-1",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 9,
+        ".csv": 1
+      },
+      "marker_files_direct": 5,
+      "bytes_direct": 118008,
+      "mtime_hint_min": 1789632559,
+      "mtime_hint_max": 1789632605
+    },
+    {
+      "id": "1405e15c19292882",
+      "path": "/home/derek/work/am4-dual-nvidia-poc/logs/20260917T081005Z-dual-2-3",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 9,
+        ".csv": 1
+      },
+      "marker_files_direct": 5,
+      "bytes_direct": 117320,
+      "mtime_hint_min": 1789632605,
+      "mtime_hint_max": 1789632650
+    },
+    {
+      "id": "d6a6aa9cca9dd2d4",
+      "path": "/home/derek/work/am4-dual-nvidia-poc/logs/20260917T081050Z-dual-3-2",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 9,
+        ".csv": 1
+      },
+      "marker_files_direct": 5,
+      "bytes_direct": 118200,
+      "mtime_hint_min": 1789632651,
+      "mtime_hint_max": 1789632698
+    },
+    {
+      "id": "34846b82889ef1dc",
+      "path": "/home/derek/work/am4-dual-nvidia-poc/output",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 10,
+        ".csv": 1,
+        ".jsonl": 1
+      },
+      "marker_files_direct": 4,
+      "bytes_direct": 387094,
+      "mtime_hint_min": 1789631110,
+      "mtime_hint_max": 1789633266
+    },
+    {
+      "id": "0067a5350cb62de5",
+      "path": "/home/derek/work/vllm-e3-20260923",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1130683,
+      "mtime_hint_min": 1790159086,
+      "mtime_hint_max": 1790159888
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.095
+}

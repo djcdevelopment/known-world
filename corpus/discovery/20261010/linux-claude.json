@@ -1,0 +1,268 @@
+{
+  "id": "linux-claude",
+  "host": "omen-linux",
+  "root": "/home/derek/.claude/projects",
+  "group": "clients",
+  "status": "complete",
+  "limits": {
+    "depth": 6,
+    "seconds": 20,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 124,
+    "files": 1215,
+    "symlinks_excluded": 4,
+    "excluded": 1
+  },
+  "candidates": [
+    {
+      "id": "00671dd6af78a9bb",
+      "path": "/home/derek/.claude/projects/-home-derek",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 122
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 182747087,
+      "mtime_hint_min": 1790499459,
+      "mtime_hint_max": 1791589613
+    },
+    {
+      "id": "13782e0e5ca1e6e4",
+      "path": "/home/derek/.claude/projects/-home-derek/memory",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 225744,
+      "mtime_hint_min": 1790517320,
+      "mtime_hint_max": 1791578547
+    },
+    {
+      "id": "9bd7cd7f00ae8141",
+      "path": "/home/derek/.claude/projects/-home-derek-continuity-triage-entire-probe",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 132683,
+      "mtime_hint_min": 1790501875,
+      "mtime_hint_max": 1790501875
+    },
+    {
+      "id": "4d1c3d27e48ad3a8",
+      "path": "/home/derek/.claude/projects/-home-derek-work-amux",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 7
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 46384491,
+      "mtime_hint_min": 1791588407,
+      "mtime_hint_max": 1791639995
+    },
+    {
+      "id": "ca59c21bc46f4d66",
+      "path": "/home/derek/.claude/projects/-home-derek-work-amux-scratch-baseline-project",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2801402,
+      "mtime_hint_min": 1791545998,
+      "mtime_hint_max": 1791626455
+    },
+    {
+      "id": "69492e1f6f2e5521",
+      "path": "/home/derek/.claude/projects/-home-derek-work-amux-scratch-g3-claude",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 875926,
+      "mtime_hint_min": 1791562404,
+      "mtime_hint_max": 1791570629
+    },
+    {
+      "id": "82621370f3112868",
+      "path": "/home/derek/.claude/projects/-home-derek-work-amux-scratch-p4-empty",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 217288,
+      "mtime_hint_min": 1791626455,
+      "mtime_hint_max": 1791626455
+    },
+    {
+      "id": "6ddd67155834232f",
+      "path": "/home/derek/.claude/projects/-home-derek-work-amux-scratch-p4-suggest",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 670157,
+      "mtime_hint_min": 1791626455,
+      "mtime_hint_max": 1791626455
+    },
+    {
+      "id": "7d656601a9475e20",
+      "path": "/home/derek/.claude/projects/-home-derek-work-amux-scratch-review-work",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2368767,
+      "mtime_hint_min": 1791626455,
+      "mtime_hint_max": 1791626455
+    },
+    {
+      "id": "881e69f743a06c6e",
+      "path": "/home/derek/.claude/projects/-home-derek-work-bench27-plan",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 293233,
+      "mtime_hint_min": 1791202102,
+      "mtime_hint_max": 1791202102
+    },
+    {
+      "id": "240ddf2eeda4d855",
+      "path": "/home/derek/.claude/projects/-home-derek-work-commandcenter-linux-flash",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 577660,
+      "mtime_hint_min": 1791200247,
+      "mtime_hint_max": 1791200247
+    },
+    {
+      "id": "358cb12171bf5b81",
+      "path": "/home/derek/.claude/projects/-home-derek-work-lab-rnd",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 197145,
+      "mtime_hint_min": 1790988397,
+      "mtime_hint_max": 1790988397
+    },
+    {
+      "id": "849483400a6893b2",
+      "path": "/home/derek/.claude/projects/-home-derek-work-trial-notebook",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2719674,
+      "mtime_hint_min": 1790505070,
+      "mtime_hint_max": 1790505422
+    },
+    {
+      "id": "a1353a1e0792185b",
+      "path": "/home/derek/.claude/projects/-home-derek-work-trial-notebook-cold",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 520307,
+      "mtime_hint_min": 1790506834,
+      "mtime_hint_max": 1790506834
+    },
+    {
+      "id": "9f58290f5d77db5c",
+      "path": "/home/derek/.claude/projects/-home-derek-work-trial-notebook-cold2",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 383293,
+      "mtime_hint_min": 1790506959,
+      "mtime_hint_max": 1790506959
+    },
+    {
+      "id": "351cd656ca7f9594",
+      "path": "/home/derek/.claude/projects/-home-derek-work-worktrees-bench27-routing",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1898933,
+      "mtime_hint_min": 1791184676,
+      "mtime_hint_max": 1791206522
+    },
+    {
+      "id": "9697be11ce893a1c",
+      "path": "/home/derek/.claude/projects/-home-derek-work-worktrees-bench27-three-dense",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 510856,
+      "mtime_hint_min": 1791183634,
+      "mtime_hint_max": 1791183634
+    },
+    {
+      "id": "31a31b49a05dcc83",
+      "path": "/home/derek/.claude/projects/-tmp",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 184334,
+      "mtime_hint_min": 1790501753,
+      "mtime_hint_max": 1791552375
+    },
+    {
+      "id": "96017349b2187669",
+      "path": "/home/derek/.claude/projects/-tmp-founderos-agent-a-1-Ppjc9l",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 168812,
+      "mtime_hint_min": 1791571577,
+      "mtime_hint_max": 1791571577
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.02
+}

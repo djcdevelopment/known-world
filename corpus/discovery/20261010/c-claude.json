@@ -1,0 +1,659 @@
+{
+  "id": "c-claude",
+  "host": "omen-c",
+  "root": "/mnt/omen-c-read/Users/derek/.claude/projects",
+  "group": "clients",
+  "status": "complete",
+  "limits": {
+    "depth": 6,
+    "seconds": 30,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 338,
+    "files": 2389,
+    "excluded": 3
+  },
+  "candidates": [
+    {
+      "id": "ed73ebf960781122",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 10265353,
+      "mtime_hint_min": 1791055506,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "b3a8df5af5dad274",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--OMEN-prep",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 569918,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "cb0549b5952be277",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 574174,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "649b615d616a0456",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-ComfyStewardView",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 10
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 46660604,
+      "mtime_hint_min": 1787847954,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "11bfa7306c8b8792",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-ComfyStewardView--claude-worktrees-zealous-vaughan-20c125",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1340920,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "f4f201dbf3070032",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-Diana",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2668674,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "48d1231efeae28b6",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-Lumberjacks--claude-worktrees-cool-almeida-88778d",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1060625,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "0a7339a32d039455",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-articleblitz",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2369961,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "c5f2866961bfc6fa",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-assessment",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 299760,
+      "mtime_hint_min": 1787120389,
+      "mtime_hint_max": 1787120389
+    },
+    {
+      "id": "387488ee3c5931c1",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-baseline",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 52
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 409601465,
+      "mtime_hint_min": 1789187066,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "e00d31b2c02865a3",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-baseline--claude-worktrees-distracted-tesla-0c1078",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 7
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 6381936,
+      "mtime_hint_min": 1791055506,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "b1a0bd27580b1369",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-baseline--claude-worktrees-epic-jemison-353e53",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1457537,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "6b125362cda8ce09",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-baseline--claude-worktrees-funny-spence-9eff96",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1381123,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "0aa2646b74011155",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-baseline--claude-worktrees-infallible-bassi-72f067",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 571720,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "6d08a9fa7cdf64fe",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-baseline--claude-worktrees-recursing-hugle-23a1aa",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 513546,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "ad0487cdbdc5f0d1",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-baseline--claude-worktrees-sharp-hamilton-f83f21",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2540352,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "7c1529ef827ee528",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-baseline--claude-worktrees-sweet-saha-15a3ad",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 802517,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "c8f847cb6b5f3abd",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-baseline--claude-worktrees-vigorous-booth-db2c3b",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1198667,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "5cbbd30bf73e0620",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-comfy",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 6
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 22687727,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "b8c255d939f32c4c",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-comfy-quest",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 9
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 13487217,
+      "mtime_hint_min": 1787118614,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "864b158beeeb23d8",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-comfy-quest--claude-worktrees-fervent-vaughan-1d6fbd",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 5732960,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "b35787ccf191c300",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-comfy-quest--claude-worktrees-youthful-tereshkova-c650fc",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 451605,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "4d3a617eed8691cf",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-commandcenter",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 64
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 199344441,
+      "mtime_hint_min": 1787141884,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "de851cbb286177fe",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-commandcenter--claude-worktrees-adoring-hodgkin-64c7eb",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 670040,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "221af933b4cfcbac",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-commandcenter--claude-worktrees-charming-goldstine-ca5b50",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 866810,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "fee968f2137e5fac",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-commandcenter--claude-worktrees-infallible-euclid-ec620e",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 5292896,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "8381deb44e04a987",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-commandcenter--claude-worktrees-jovial-cohen-a077bf",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 674339,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "04ac16b2a8f3dd90",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-commandcenter--claude-worktrees-quizzical-taussig-c91322",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 7
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 15787817,
+      "mtime_hint_min": 1791055506,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "4d1f7d07623fb761",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-commandcenter--claude-worktrees-relaxed-babbage-f74407",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 19608098,
+      "mtime_hint_min": 1791055506,
+      "mtime_hint_max": 1791055506
+    },
+    {
+      "id": "783644f8d3cbfc48",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-contextlandscape",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3959849,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "53b7d1d5ecd79638",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-handoffs",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 662839,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "adda6f13a518c1b6",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-irc",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 7
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 14377079,
+      "mtime_hint_min": 1791055506,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "a3ec2adfcd57e24a",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-irc--claude-worktrees-compassionate-greider-553b67",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2027084,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "95cc94998d316b7a",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-irc--claude-worktrees-upbeat-heisenberg-647518",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1370753,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "2f461d8e91f4b2bb",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-isolate--claude-worktrees-bold-gauss-5ee7cb",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 256209,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "facea7c66181fadd",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-lumberjacks-platform",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1696290,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "fcbd6c17d95e0346",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-memsplice",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2176,
+      "mtime_hint_min": 1789763991,
+      "mtime_hint_max": 1789763991
+    },
+    {
+      "id": "95c9619aeedf263b",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-nightshift",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 21629140,
+      "mtime_hint_min": 1791055506,
+      "mtime_hint_max": 1791055506
+    },
+    {
+      "id": "cbab137f0c391351",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-orchestration-local-operator-workspace-20260917",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 275861,
+      "mtime_hint_min": 1789658058,
+      "mtime_hint_max": 1789658095
+    },
+    {
+      "id": "73dc67fe40ac88ec",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-worktrees-commandcenter-g1-entry",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 7
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1164681,
+      "mtime_hint_min": 1789653902,
+      "mtime_hint_max": 1789658658
+    },
+    {
+      "id": "aae4a3d986d46df6",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-writing",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 7
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 8018132,
+      "mtime_hint_min": 1791055506,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "f33257a0ce06e3fa",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/E--linux",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1059836,
+      "mtime_hint_min": 1791527162,
+      "mtime_hint_max": 1791527162
+    },
+    {
+      "id": "57581ee6107560c2",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/E--omen-DMos",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 29850281,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "602c64ee13ef9aee",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/E--omen-benchmarks",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 11411939,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "8f0054427f752f09",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/E--omen-bmc",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 336725,
+      "mtime_hint_min": 1791055509,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "dbb469e9db42b2b5",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/E--omen-menu",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 10009679,
+      "mtime_hint_min": 1791055506,
+      "mtime_hint_max": 1791660307
+    },
+    {
+      "id": "66bbbfeca9ec2bbd",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/E--omen-steward-multi-era",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 26012157,
+      "mtime_hint_min": 1791055506,
+      "mtime_hint_max": 1791055509
+    },
+    {
+      "id": "c6e420d8ade500c1",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/E--resume",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 9625473,
+      "mtime_hint_min": 1789878283,
+      "mtime_hint_max": 1789878283
+    },
+    {
+      "id": "b8362e6a1cf951df",
+      "path": "/mnt/omen-c-read/Users/derek/.claude/projects/E--wool",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1784621,
+      "mtime_hint_min": 1791660307,
+      "mtime_hint_max": 1791660307
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.272
+}

@@ -1,0 +1,122 @@
+{
+  "group": "projects",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "am4-home",
+    "host": "am4",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 2,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500
+    },
+    "rollups_omitted": 25,
+    "rollups": [
+      {
+        "path": "/home/derek/am4bot/runs",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 82
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/am4-fleet-node/results",
+        "directories": 1,
+        "structured_files": {
+          ".json": 26
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/bench",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 17,
+          ".csv": 1,
+          ".db": 1
+        },
+        "git_markers": 1
+      },
+      {
+        "path": "/home/derek/chatgpt_parser_run/schemas",
+        "directories": 1,
+        "structured_files": {
+          ".json": 9
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/bench/context-landscape-canon-breadth-v1",
+        "directories": 1,
+        "structured_files": {
+          ".json": 6,
+          ".jsonl": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/bench/context-landscape-founding-canon-v2",
+        "directories": 1,
+        "structured_files": {
+          ".json": 5,
+          ".jsonl": 3
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/bench/context-landscape-pilot",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 5,
+          ".json": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/valheim-capture",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 5,
+          ".json": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/bench/context-landscape-highlight-hd-v1",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 2,
+          ".json": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/bench27-cuda134",
+        "directories": 1,
+        "structured_files": {
+          ".json": 4
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/gallery",
+        "directories": 1,
+        "structured_files": {
+          ".json": 4
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek",
+        "directories": 1,
+        "structured_files": {
+          ".json": 3
+        },
+        "git_markers": 0
+      }
+    ]
+  }
+}

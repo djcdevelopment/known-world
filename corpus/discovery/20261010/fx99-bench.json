@@ -1,0 +1,34 @@
+{
+  "id": "fx99-bench",
+  "host": "fx99",
+  "root": "/home/derek/ai-bench",
+  "group": "lab",
+  "status": "complete",
+  "limits": {
+    "depth": 5,
+    "seconds": 25,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 3,
+    "files": 8
+  },
+  "candidates": [
+    {
+      "id": "bca99e2fa7a26371",
+      "path": "/home/derek/ai-bench",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".csv": 2
+      },
+      "marker_files_direct": 2,
+      "bytes_direct": 16542,
+      "mtime_hint_min": 1782141526,
+      "mtime_hint_max": 1782169952
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.001
+}

@@ -1,0 +1,34 @@
+{
+  "id": "linux-opencode",
+  "host": "omen-linux",
+  "root": "/home/derek/.local/share/opencode",
+  "group": "clients",
+  "status": "complete",
+  "limits": {
+    "depth": 6,
+    "seconds": 20,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 210,
+    "files": 345
+  },
+  "candidates": [
+    {
+      "id": "d8e8cb2970489866",
+      "path": "/home/derek/.local/share/opencode",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".db": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 18640640,
+      "mtime_hint_min": 1790815740,
+      "mtime_hint_max": 1791546661
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.598
+}

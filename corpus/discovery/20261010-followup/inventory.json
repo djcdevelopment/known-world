@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "started": "2026-10-10T13:52:50.250683+00:00",
+  "roots_sha256": "f2c87433bfcab4ec5d01609db8e0bf128b24e9be8bd6e2a82fed86e9bc596e85",
+  "scanner_sha256": "9c65b4ab5f37addda28639bec94ab1b66c3313d355a1d9f5d5ea42e1b7a1237b",
+  "source_contents_read": false,
+  "privacy": "Private directory metadata only. No files opened, no transcript bodies, no credential contents.",
+  "coverage_rule": "Complete means enumerated within declared depth and exclusions. Missing/partial/failed are not zero activity.",
+  "sources": [
+    {
+      "id": "linux-lab-rnd",
+      "host": "omen-linux",
+      "root": "/home/derek/work/lab-rnd",
+      "group": "lab",
+      "status": "complete",
+      "counts": {
+        "directories": 2122,
+        "files": 8282,
+        "excluded": 128,
+        "directories_beyond_depth": 526
+      },
+      "gaps": []
+    },
+    {
+      "id": "linux-bench27",
+      "host": "omen-linux",
+      "root": "/home/derek/work/bench27-plan",
+      "group": "lab",
+      "status": "complete",
+      "counts": {
+        "directories": 4,
+        "files": 225
+      },
+      "gaps": []
+    },
+    {
+      "id": "linux-lever-ledger",
+      "host": "omen-linux",
+      "root": "/home/derek/work/lever-ledger/slices",
+      "group": "lab",
+      "status": "complete",
+      "counts": {
+        "directories": 1,
+        "files": 34
+      },
+      "gaps": []
+    },
+    {
+      "id": "linux-campaign",
+      "host": "omen-linux",
+      "root": "/home/derek/work/commandcenter-linux-flash/campaign",
+      "group": "execution",
+      "status": "complete",
+      "counts": {
+        "directories": 11,
+        "files": 136,
+        "excluded": 1
+      },
+      "gaps": []
+    },
+    {
+      "id": "linux-continuity-work",
+      "host": "omen-linux",
+      "root": "/home/derek/work/continuity",
+      "group": "execution",
+      "status": "complete",
+      "counts": {
+        "directories": 14,
+        "files": 119,
+        "excluded": 2
+      },
+      "gaps": []
+    },
+    {
+      "id": "c-commandcenter-campaign",
+      "host": "omen-c",
+      "root": "/mnt/omen-c-read/work/commandcenter/campaign",
+      "group": "execution",
+      "status": "complete",
+      "counts": {
+        "directories": 16,
+        "files": 148,
+        "excluded": 4
+      },
+      "gaps": []
+    },
+    {
+      "id": "c-benchmark",
+      "host": "omen-c",
+      "root": "/mnt/omen-c-read/work/benchmark",
+      "group": "lab",
+      "status": "complete",
+      "counts": {
+        "directories": 5,
+        "files": 8
+      },
+      "gaps": []
+    },
+    {
+      "id": "am4-bench-found",
+      "host": "am4",
+      "root": "/home/derek/bench",
+      "group": "lab",
+      "status": "complete",
+      "counts": {
+        "directories": 40,
+        "files": 14162,
+        "excluded": 1
+      },
+      "gaps": []
+    },
+    {
+      "id": "am4-fleet-results",
+      "host": "am4",
+      "root": "/home/derek/am4-fleet-node/results",
+      "group": "execution",
+      "status": "complete",
+      "counts": {
+        "directories": 1,
+        "files": 88
+      },
+      "gaps": []
+    },
+    {
+      "id": "am4-bot-runs",
+      "host": "am4",
+      "root": "/home/derek/am4bot/runs",
+      "group": "execution",
+      "status": "complete",
+      "counts": {
+        "directories": 1,
+        "files": 234
+      },
+      "gaps": []
+    },
+    {
+      "id": "fx99-fleet",
+      "host": "fx99",
+      "root": "/home/derek/fleet",
+      "group": "execution",
+      "status": "complete",
+      "counts": {
+        "directories": 2229,
+        "files": 10399,
+        "excluded": 2
+      },
+      "gaps": []
+    }
+  ],
+  "unique_candidate_directories": 3899
+}

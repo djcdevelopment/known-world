@@ -1,0 +1,67 @@
+{
+  "group": "execution",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "linux-campaign",
+    "host": "omen-linux",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 5,
+      "seconds": 30,
+      "max_files": 100000,
+      "max_candidates": 2500
+    },
+    "rollups_omitted": 0,
+    "rollups": [
+      {
+        "path": "/home/derek/work/commandcenter-linux-flash/campaign/harvest",
+        "directories": 1,
+        "structured_files": {
+          ".json": 23
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/commandcenter-linux-flash/campaign/qwen38/config",
+        "directories": 1,
+        "structured_files": {
+          ".json": 3
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/commandcenter-linux-flash/campaign/ff-probes",
+        "directories": 1,
+        "structured_files": {
+          ".json": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/commandcenter-linux-flash/campaign",
+        "directories": 1,
+        "structured_files": {
+          ".json": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/commandcenter-linux-flash/campaign/qwen38/assay",
+        "directories": 1,
+        "structured_files": {
+          ".json": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/work/commandcenter-linux-flash/campaign/qwen38/schema",
+        "directories": 1,
+        "structured_files": {
+          ".json": 1
+        },
+        "git_markers": 0
+      }
+    ]
+  }
+}

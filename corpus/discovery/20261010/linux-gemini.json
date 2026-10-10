@@ -1,0 +1,1522 @@
+{
+  "id": "linux-gemini",
+  "host": "omen-linux",
+  "root": "/home/derek/.gemini",
+  "group": "clients",
+  "status": "complete",
+  "limits": {
+    "depth": 6,
+    "seconds": 20,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 7413,
+    "files": 7905,
+    "symlinks_excluded": 1,
+    "directories_beyond_depth": 122
+  },
+  "candidates": [
+    {
+      "id": "50fc1e94ad5f0a0c",
+      "path": "/home/derek/.gemini",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2120,
+      "mtime_hint_min": 1791551603,
+      "mtime_hint_max": 1791551892
+    },
+    {
+      "id": "b68b6916b2c5a426",
+      "path": "/home/derek/.gemini/antigravity-cli",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1,
+        ".pb": 1,
+        ".db": 1,
+        ".pbtxt": 1,
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 543392,
+      "mtime_hint_min": 1790498393,
+      "mtime_hint_max": 1791626440
+    },
+    {
+      "id": "e480f056897d44e7",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/0b5ac45b-7ae5-49c9-8847-757de93d082f/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3392,
+      "mtime_hint_min": 1791565745,
+      "mtime_hint_max": 1791565745
+    },
+    {
+      "id": "067000b956b73ff6",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/10aead28-48fe-4238-83e9-3de7aff88516/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 654796,
+      "mtime_hint_min": 1790821958,
+      "mtime_hint_max": 1790821958
+    },
+    {
+      "id": "804914c79cf69b93",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/10aead28-48fe-4238-83e9-3de7aff88516/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 8
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 16019,
+      "mtime_hint_min": 1790803428,
+      "mtime_hint_max": 1790821847
+    },
+    {
+      "id": "186f8e375e1648bf",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/12478e3d-3b4f-4ba9-b24f-b55fb9a448c6/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4194,
+      "mtime_hint_min": 1791565830,
+      "mtime_hint_max": 1791565830
+    },
+    {
+      "id": "680426e13e6afad8",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/147c31e1-5094-4a2f-8fdc-7792792909bd",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 11946,
+      "mtime_hint_min": 1791367278,
+      "mtime_hint_max": 1791374691
+    },
+    {
+      "id": "be93d514ce91b4bb",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/147c31e1-5094-4a2f-8fdc-7792792909bd/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 16157121,
+      "mtime_hint_min": 1791443693,
+      "mtime_hint_max": 1791443693
+    },
+    {
+      "id": "b7298a95f509538d",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/147c31e1-5094-4a2f-8fdc-7792792909bd/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 70
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 362775,
+      "mtime_hint_min": 1791363668,
+      "mtime_hint_max": 1791443693
+    },
+    {
+      "id": "0094cc114e120fc2",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/147c31e1-5094-4a2f-8fdc-7792792909bd/.system_generated/subagents",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 686,
+      "mtime_hint_min": 1791387620,
+      "mtime_hint_max": 1791405776
+    },
+    {
+      "id": "03585cfca933e476",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/15197c6e-2ed9-4963-a368-19ab95952903/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 5056521,
+      "mtime_hint_min": 1791626431,
+      "mtime_hint_max": 1791626431
+    },
+    {
+      "id": "d41cf8fe65aca197",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/15197c6e-2ed9-4963-a368-19ab95952903/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3851,
+      "mtime_hint_min": 1791616252,
+      "mtime_hint_max": 1791616253
+    },
+    {
+      "id": "3833ef24423232aa",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/153ed644-d65c-43ad-a9a5-35d45d208f29/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3402,
+      "mtime_hint_min": 1791565819,
+      "mtime_hint_max": 1791565819
+    },
+    {
+      "id": "42e995e1f4d99e64",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/1ac31912-824d-4a2a-bc32-a96a3bd449d4",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 23079,
+      "mtime_hint_min": 1791401810,
+      "mtime_hint_max": 1791403668
+    },
+    {
+      "id": "edc1df03b23bfe5f",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/1ac31912-824d-4a2a-bc32-a96a3bd449d4/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1956113,
+      "mtime_hint_min": 1791428839,
+      "mtime_hint_max": 1791428839
+    },
+    {
+      "id": "ad5492aa69fe79b2",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/1ac31912-824d-4a2a-bc32-a96a3bd449d4/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 6
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 10755,
+      "mtime_hint_min": 1791398176,
+      "mtime_hint_max": 1791427774
+    },
+    {
+      "id": "aba33d7862556918",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/1ac82aae-e96d-4538-9332-d27a5e565c56/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 294497,
+      "mtime_hint_min": 1791538388,
+      "mtime_hint_max": 1791538388
+    },
+    {
+      "id": "9cd81b4e59e5b5bc",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/1ac82aae-e96d-4538-9332-d27a5e565c56/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3797,
+      "mtime_hint_min": 1791537955,
+      "mtime_hint_max": 1791537955
+    },
+    {
+      "id": "a66231f39625f632",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/1dfefa58-2053-4e01-8826-c9d654449f39/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 896905,
+      "mtime_hint_min": 1791406768,
+      "mtime_hint_max": 1791406768
+    },
+    {
+      "id": "14afdeb9a8a694a2",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/1dfefa58-2053-4e01-8826-c9d654449f39/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 15149,
+      "mtime_hint_min": 1791405776,
+      "mtime_hint_max": 1791406017
+    },
+    {
+      "id": "a3133240a433ab6a",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/21d9963b-17f9-463b-8191-e660c6a6f17e/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4355907,
+      "mtime_hint_min": 1791587982,
+      "mtime_hint_max": 1791587982
+    },
+    {
+      "id": "6936e428b10751c8",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/21d9963b-17f9-463b-8191-e660c6a6f17e/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 9268,
+      "mtime_hint_min": 1791569796,
+      "mtime_hint_max": 1791578762
+    },
+    {
+      "id": "3ce5f939f336272c",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/26513cf9-10ad-42b1-910a-e586f6918d3c/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 74085,
+      "mtime_hint_min": 1790500640,
+      "mtime_hint_max": 1790500640
+    },
+    {
+      "id": "36790d64be287a84",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/2a4fafd8-4775-4478-8e74-1430b7492f6f/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 200753,
+      "mtime_hint_min": 1791538215,
+      "mtime_hint_max": 1791538215
+    },
+    {
+      "id": "6dc677dc49d15d1c",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/2a4fafd8-4775-4478-8e74-1430b7492f6f/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 7261,
+      "mtime_hint_min": 1791537966,
+      "mtime_hint_max": 1791537966
+    },
+    {
+      "id": "4d6266424732bda4",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/2abc7321-657b-4956-b846-27bdba61c4cd/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 676828,
+      "mtime_hint_min": 1791407960,
+      "mtime_hint_max": 1791407960
+    },
+    {
+      "id": "597dccd1829dfc6b",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/2abc7321-657b-4956-b846-27bdba61c4cd/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 10
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 32619,
+      "mtime_hint_min": 1791406150,
+      "mtime_hint_max": 1791407711
+    },
+    {
+      "id": "3f27ccf4c6b8a416",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/31777a51-fbc1-40dc-8c28-95be3bcffd47/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 246064,
+      "mtime_hint_min": 1791539489,
+      "mtime_hint_max": 1791539489
+    },
+    {
+      "id": "fb728eb1498d79af",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/31777a51-fbc1-40dc-8c28-95be3bcffd47/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 6016,
+      "mtime_hint_min": 1791539173,
+      "mtime_hint_max": 1791539173
+    },
+    {
+      "id": "0ca4b3c878fc013f",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/3616dc05-b4bc-4cf9-a40e-ea773b553077/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 106156,
+      "mtime_hint_min": 1791618866,
+      "mtime_hint_max": 1791618866
+    },
+    {
+      "id": "6e1ecbbce99299ef",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/3616dc05-b4bc-4cf9-a40e-ea773b553077/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 526,
+      "mtime_hint_min": 1791592993,
+      "mtime_hint_max": 1791592993
+    },
+    {
+      "id": "127b35c043cc3868",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/3ab9e0cf-10be-4381-a65c-261c14ae5088/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 100096,
+      "mtime_hint_min": 1790981357,
+      "mtime_hint_max": 1790981357
+    },
+    {
+      "id": "f07ff8ddec1eb618",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/3ab9e0cf-10be-4381-a65c-261c14ae5088/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1619,
+      "mtime_hint_min": 1790980042,
+      "mtime_hint_max": 1790980046
+    },
+    {
+      "id": "ca9f6b2dd706e271",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/3e84bee8-d560-4a49-99cd-dd09d96c755c/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 166794,
+      "mtime_hint_min": 1790975151,
+      "mtime_hint_max": 1790975151
+    },
+    {
+      "id": "c2ad5cfd42d2f4d6",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/3f0808a1-072a-4e50-a2a7-f557491884a0/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2996,
+      "mtime_hint_min": 1791552309,
+      "mtime_hint_max": 1791552309
+    },
+    {
+      "id": "5b527322fc4bd008",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/4c293070-2555-4b2b-a8c4-1b9a180f3c87/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2504871,
+      "mtime_hint_min": 1791442750,
+      "mtime_hint_max": 1791442750
+    },
+    {
+      "id": "c8dd1fd01ce5a042",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/4c293070-2555-4b2b-a8c4-1b9a180f3c87/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 6
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 7027,
+      "mtime_hint_min": 1791438924,
+      "mtime_hint_max": 1791440944
+    },
+    {
+      "id": "d7741830bcc80432",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/575dbaa8-0616-4ddc-be05-5870c7f1600f/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 17594,
+      "mtime_hint_min": 1791552344,
+      "mtime_hint_max": 1791552344
+    },
+    {
+      "id": "e553b7e3a1f33290",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/5d6a9280-8eec-49a6-98d4-1bde3ccc2e59/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1736,
+      "mtime_hint_min": 1791597805,
+      "mtime_hint_max": 1791597805
+    },
+    {
+      "id": "73598bd672d5981f",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/6256dccb-8fd3-491e-99e6-ccc5ec623be3/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 742943,
+      "mtime_hint_min": 1790529637,
+      "mtime_hint_max": 1790529637
+    },
+    {
+      "id": "f97939b2b157b8da",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/6256dccb-8fd3-491e-99e6-ccc5ec623be3/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 6781,
+      "mtime_hint_min": 1790528658,
+      "mtime_hint_max": 1790528929
+    },
+    {
+      "id": "472708b3130a4890",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/65c90d6d-33d8-4fcb-8b7e-e0fd1a8496c0/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 23820,
+      "mtime_hint_min": 1791558226,
+      "mtime_hint_max": 1791558226
+    },
+    {
+      "id": "4a37e2a8936261a7",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/6a9e8517-4895-45f7-a2e6-a013ec069559/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1562,
+      "mtime_hint_min": 1791552112,
+      "mtime_hint_max": 1791552112
+    },
+    {
+      "id": "fbdbdd623418403b",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/6b76b2fd-6197-4917-8173-0616fb4b2a38/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1564,
+      "mtime_hint_min": 1791552274,
+      "mtime_hint_max": 1791552274
+    },
+    {
+      "id": "091be716a5d240c2",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/70247c79-c161-4c80-b19d-2dc1dd37bef4/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 295721,
+      "mtime_hint_min": 1791541497,
+      "mtime_hint_max": 1791541497
+    },
+    {
+      "id": "44ea30adf53b2b0b",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/70247c79-c161-4c80-b19d-2dc1dd37bef4/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 14286,
+      "mtime_hint_min": 1791541100,
+      "mtime_hint_max": 1791541100
+    },
+    {
+      "id": "d9ed537093e78555",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/725f8f65-87d7-48f5-b42a-629422ffc3af/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 184666,
+      "mtime_hint_min": 1791541311,
+      "mtime_hint_max": 1791541311
+    },
+    {
+      "id": "5d7cfcc84307cd3e",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/725f8f65-87d7-48f5-b42a-629422ffc3af/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 14541,
+      "mtime_hint_min": 1791541100,
+      "mtime_hint_max": 1791541100
+    },
+    {
+      "id": "3b01e163e77fc266",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/76c204f3-c67d-44ef-9f58-926871aa5d26/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 689161,
+      "mtime_hint_min": 1791619697,
+      "mtime_hint_max": 1791619697
+    },
+    {
+      "id": "89e3e04152e6338d",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/76c204f3-c67d-44ef-9f58-926871aa5d26/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 7
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 18800,
+      "mtime_hint_min": 1791558360,
+      "mtime_hint_max": 1791565606
+    },
+    {
+      "id": "ad5fe0418af5f660",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/7b0f08de-a448-4aa5-9a85-83fdbb319af0/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 8916287,
+      "mtime_hint_min": 1791559187,
+      "mtime_hint_max": 1791559187
+    },
+    {
+      "id": "7559b65739b35d9b",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/7b0f08de-a448-4aa5-9a85-83fdbb319af0/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 20
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 128667,
+      "mtime_hint_min": 1791528329,
+      "mtime_hint_max": 1791552426
+    },
+    {
+      "id": "b552cd746755f351",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/7b0f08de-a448-4aa5-9a85-83fdbb319af0/.system_generated/subagents",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 7
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1588,
+      "mtime_hint_min": 1791537955,
+      "mtime_hint_max": 1791541100
+    },
+    {
+      "id": "42c22278d4972da0",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/809457e5-ee43-48a7-8566-dde5f967490b/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 14426,
+      "mtime_hint_min": 1790504809,
+      "mtime_hint_max": 1790504809
+    },
+    {
+      "id": "131788b742736b25",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/80fbbe5d-4c01-4381-a259-9ab51c5331e4/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 264596,
+      "mtime_hint_min": 1791539553,
+      "mtime_hint_max": 1791539553
+    },
+    {
+      "id": "9009a7b4325c0e12",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/80fbbe5d-4c01-4381-a259-9ab51c5331e4/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 5719,
+      "mtime_hint_min": 1791539173,
+      "mtime_hint_max": 1791539173
+    },
+    {
+      "id": "e0974631ca1db422",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/8375205c-3077-4a93-91ed-5cc83bd05984/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1520,
+      "mtime_hint_min": 1791597867,
+      "mtime_hint_max": 1791597867
+    },
+    {
+      "id": "c543dfbbdd4191c3",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/83804fd4-9662-4fc7-988d-ba7800362370/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 34898,
+      "mtime_hint_min": 1790516733,
+      "mtime_hint_max": 1790516733
+    },
+    {
+      "id": "baf9038b7295c163",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/83804fd4-9662-4fc7-988d-ba7800362370/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3299,
+      "mtime_hint_min": 1790516370,
+      "mtime_hint_max": 1790516725
+    },
+    {
+      "id": "2f763b1c28a1190a",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/874d2000-035f-4732-8c24-91b2b481a057/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1512,
+      "mtime_hint_min": 1791552321,
+      "mtime_hint_max": 1791552321
+    },
+    {
+      "id": "471d7ae783d648bf",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/8fb90e56-7035-4bb8-b876-f4649afa72b7/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 11505316,
+      "mtime_hint_min": 1790852686,
+      "mtime_hint_max": 1790852686
+    },
+    {
+      "id": "f867de4f21394117",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/8fb90e56-7035-4bb8-b876-f4649afa72b7/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 34
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 146258,
+      "mtime_hint_min": 1790835195,
+      "mtime_hint_max": 1790852586
+    },
+    {
+      "id": "3f3e41d086c466f5",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/8fb90e56-7035-4bb8-b876-f4649afa72b7/.system_generated/subagents",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 226,
+      "mtime_hint_min": 1790835415,
+      "mtime_hint_max": 1790835415
+    },
+    {
+      "id": "da84c42738643ad3",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/929f9648-7dc7-4567-8181-db62a7f36a65/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 5206,
+      "mtime_hint_min": 1791566930,
+      "mtime_hint_max": 1791566930
+    },
+    {
+      "id": "304bb4756739fab0",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/96526262-4884-4c56-82b6-4bea965fcf1f",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 11417,
+      "mtime_hint_min": 1790565531,
+      "mtime_hint_max": 1790565531
+    },
+    {
+      "id": "f07d41508551367c",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/96526262-4884-4c56-82b6-4bea965fcf1f/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 771345,
+      "mtime_hint_min": 1790569421,
+      "mtime_hint_max": 1790569421
+    },
+    {
+      "id": "eaa43bfa673e674f",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/96526262-4884-4c56-82b6-4bea965fcf1f/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3676,
+      "mtime_hint_min": 1790566034,
+      "mtime_hint_max": 1790569076
+    },
+    {
+      "id": "fc2142c8283bd697",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/9907c382-336f-478b-8171-8efe8122a8c4/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2605578,
+      "mtime_hint_min": 1791403966,
+      "mtime_hint_max": 1791403966
+    },
+    {
+      "id": "c3bf2df6b456dd4c",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/9907c382-336f-478b-8171-8efe8122a8c4/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 10
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 22399,
+      "mtime_hint_min": 1791395841,
+      "mtime_hint_max": 1791403426
+    },
+    {
+      "id": "0b5744717f687580",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/9907c382-336f-478b-8171-8efe8122a8c4/.system_generated/subagents",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 446,
+      "mtime_hint_min": 1791399681,
+      "mtime_hint_max": 1791399681
+    },
+    {
+      "id": "b09f8671c95bfc01",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/9c32f509-a281-4c48-a9c4-d9647a65d256/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 183220,
+      "mtime_hint_min": 1790500023,
+      "mtime_hint_max": 1790500023
+    },
+    {
+      "id": "c441bd958c871dd0",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/9e88a0d3-8c8e-44af-8491-c14c85d18cf0/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 530677,
+      "mtime_hint_min": 1791388084,
+      "mtime_hint_max": 1791388084
+    },
+    {
+      "id": "65d1557aa7aaed09",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/9e88a0d3-8c8e-44af-8491-c14c85d18cf0/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 11564,
+      "mtime_hint_min": 1791387620,
+      "mtime_hint_max": 1791387620
+    },
+    {
+      "id": "fe6483f04c21d1f8",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/9e88a0d3-8c8e-44af-8491-c14c85d18cf0/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 181003,
+      "mtime_hint_min": 1791387781,
+      "mtime_hint_max": 1791387781
+    },
+    {
+      "id": "2fe1026cb1110134",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/a30d536d-b39a-4bbc-87ba-f687d2bcffe3/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 10710,
+      "mtime_hint_min": 1791565644,
+      "mtime_hint_max": 1791565644
+    },
+    {
+      "id": "df58c03d3578d392",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/a9a9a8bb-5d62-4c1e-912b-86e22e59df22",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 354698,
+      "mtime_hint_min": 1791548336,
+      "mtime_hint_max": 1791549586
+    },
+    {
+      "id": "3dfd2032a0eb8a86",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/a9a9a8bb-5d62-4c1e-912b-86e22e59df22/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4881385,
+      "mtime_hint_min": 1791558953,
+      "mtime_hint_max": 1791558953
+    },
+    {
+      "id": "9300cffd75c77de0",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/a9a9a8bb-5d62-4c1e-912b-86e22e59df22/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 35
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 132822,
+      "mtime_hint_min": 1791544998,
+      "mtime_hint_max": 1791558935
+    },
+    {
+      "id": "a6f274e318120ff2",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/aec013ff-4157-4a9d-82e3-c4e4ffecd5ae/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 434876,
+      "mtime_hint_min": 1791029248,
+      "mtime_hint_max": 1791029248
+    },
+    {
+      "id": "37cc03abb706747f",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/aec013ff-4157-4a9d-82e3-c4e4ffecd5ae/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 17533,
+      "mtime_hint_min": 1791029078,
+      "mtime_hint_max": 1791029152
+    },
+    {
+      "id": "5f169b1f3d343f95",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/aee7cd88-af9c-44a0-8bd1-6b82e4a77993/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 6738,
+      "mtime_hint_min": 1791593040,
+      "mtime_hint_max": 1791593040
+    },
+    {
+      "id": "46720de26dc9c485",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/aee7cd88-af9c-44a0-8bd1-6b82e4a77993/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 526,
+      "mtime_hint_min": 1791592997,
+      "mtime_hint_max": 1791592997
+    },
+    {
+      "id": "c7f4068a6757cac7",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/afff6b99-7088-4345-be49-703bdb30c613/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3406,
+      "mtime_hint_min": 1791565732,
+      "mtime_hint_max": 1791565732
+    },
+    {
+      "id": "e24351ab9ad08271",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/b0501036-9770-469c-8370-f4c5666d301b/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 255178,
+      "mtime_hint_min": 1791541491,
+      "mtime_hint_max": 1791541491
+    },
+    {
+      "id": "a432c44520c74c4d",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/b0501036-9770-469c-8370-f4c5666d301b/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 13506,
+      "mtime_hint_min": 1791541100,
+      "mtime_hint_max": 1791541100
+    },
+    {
+      "id": "96f3dcb904044c1c",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/b3427f70-188b-4f88-a2d5-99e9782db678/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4820024,
+      "mtime_hint_min": 1790868257,
+      "mtime_hint_max": 1790868257
+    },
+    {
+      "id": "a25120c59adf9d7a",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/b3427f70-188b-4f88-a2d5-99e9782db678/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 17
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 68593,
+      "mtime_hint_min": 1790861715,
+      "mtime_hint_max": 1790865972
+    },
+    {
+      "id": "630e3fc5428c41ec",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/b3427f70-188b-4f88-a2d5-99e9782db678/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4125,
+      "mtime_hint_min": 1790866230,
+      "mtime_hint_max": 1790866520
+    },
+    {
+      "id": "8ac70a9807f8a9ba",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/b4da336e-62a2-4b7d-a332-eaa7a2dec389/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 89258,
+      "mtime_hint_min": 1790835406,
+      "mtime_hint_max": 1790835406
+    },
+    {
+      "id": "fac7e6513a06dc28",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/b4da336e-62a2-4b7d-a332-eaa7a2dec389/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2149,
+      "mtime_hint_min": 1790835356,
+      "mtime_hint_max": 1790835356
+    },
+    {
+      "id": "cb6d49e998050de7",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/b85aa424-a717-4e92-9233-061ed552a969/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 13710,
+      "mtime_hint_min": 1791566586,
+      "mtime_hint_max": 1791566586
+    },
+    {
+      "id": "d5c716d38b9d0773",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/b85aa424-a717-4e92-9233-061ed552a969/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 526,
+      "mtime_hint_min": 1791565987,
+      "mtime_hint_max": 1791565987
+    },
+    {
+      "id": "9458847a72f119e9",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/c0da432d-4811-4ddf-b394-90ccc1e29b54/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 7708,
+      "mtime_hint_min": 1791552395,
+      "mtime_hint_max": 1791552395
+    },
+    {
+      "id": "cac9209798302879",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/c41dd11d-2d5f-449a-881c-486cd0d5211d/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 532304,
+      "mtime_hint_min": 1790524440,
+      "mtime_hint_max": 1790524440
+    },
+    {
+      "id": "b85a70e33daa3d4e",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/c41dd11d-2d5f-449a-881c-486cd0d5211d/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 8
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 26479,
+      "mtime_hint_min": 1790517148,
+      "mtime_hint_max": 1790524259
+    },
+    {
+      "id": "b23fee08804aeb10",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/cd2684a3-611d-412b-bd85-d2508d2a130f/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1588,
+      "mtime_hint_min": 1791558865,
+      "mtime_hint_max": 1791558865
+    },
+    {
+      "id": "bd0a4de1ec38ec3d",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/ce4418fd-745c-4b2c-b602-3e83d2b8934c/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1764,
+      "mtime_hint_min": 1791552550,
+      "mtime_hint_max": 1791552550
+    },
+    {
+      "id": "0ed1d03676f9ba56",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/d0bac8b1-c2b1-4738-9652-9b58c3648fd4/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 381173,
+      "mtime_hint_min": 1791029266,
+      "mtime_hint_max": 1791029266
+    },
+    {
+      "id": "d14cf38e21e996cc",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/d0bac8b1-c2b1-4738-9652-9b58c3648fd4/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 14275,
+      "mtime_hint_min": 1791029078,
+      "mtime_hint_max": 1791029156
+    },
+    {
+      "id": "be20bf0350b30fb0",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/d61d767a-6bd4-4c76-b4f9-b305027dbe5c/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1215450,
+      "mtime_hint_min": 1791033775,
+      "mtime_hint_max": 1791033775
+    },
+    {
+      "id": "cc48fc04146d6938",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/d61d767a-6bd4-4c76-b4f9-b305027dbe5c/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 7
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 172433,
+      "mtime_hint_min": 1791005868,
+      "mtime_hint_max": 1791029330
+    },
+    {
+      "id": "c1c3d14a95d94ba1",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/d61d767a-6bd4-4c76-b4f9-b305027dbe5c/.system_generated/subagents",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 744,
+      "mtime_hint_min": 1791029344,
+      "mtime_hint_max": 1791029344
+    },
+    {
+      "id": "afef723e900b6d7d",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/dcc45d3f-968f-4e47-8f3c-f3b91c863860/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 28508,
+      "mtime_hint_min": 1790557754,
+      "mtime_hint_max": 1790557754
+    },
+    {
+      "id": "c7e93fd75cd897c3",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/e6536d14-7f4c-4217-8be0-fb35b823f362/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 427735,
+      "mtime_hint_min": 1791029340,
+      "mtime_hint_max": 1791029340
+    },
+    {
+      "id": "2858d4aaae34fe07",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/e6536d14-7f4c-4217-8be0-fb35b823f362/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 9
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 34500,
+      "mtime_hint_min": 1791029078,
+      "mtime_hint_max": 1791029270
+    },
+    {
+      "id": "f1fa1456cf714b85",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/edf261f6-80c6-4c86-bffe-a3035401ed12/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 427138,
+      "mtime_hint_min": 1791399979,
+      "mtime_hint_max": 1791399979
+    },
+    {
+      "id": "0f28f765a49ea6b4",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/edf261f6-80c6-4c86-bffe-a3035401ed12/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4351,
+      "mtime_hint_min": 1791399681,
+      "mtime_hint_max": 1791399681
+    },
+    {
+      "id": "11a2cfaf252b94c0",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/f2c33da7-4c5b-491c-af89-028c948ab7a7/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3006,
+      "mtime_hint_min": 1790956376,
+      "mtime_hint_max": 1790956376
+    },
+    {
+      "id": "2604ec4200661cfb",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/faa70dba-d802-4dc6-ad33-92de999d97c1/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 291840,
+      "mtime_hint_min": 1791399983,
+      "mtime_hint_max": 1791399983
+    },
+    {
+      "id": "0d7ee6dfee76c02e",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/faa70dba-d802-4dc6-ad33-92de999d97c1/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 28599,
+      "mtime_hint_min": 1791399681,
+      "mtime_hint_max": 1791399903
+    },
+    {
+      "id": "aed782cd23737718",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/faa70dba-d802-4dc6-ad33-92de999d97c1/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 459957,
+      "mtime_hint_min": 1791399820,
+      "mtime_hint_max": 1791399853
+    },
+    {
+      "id": "d6b9b7106e925309",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/fe1f1874-cf61-404a-a4ec-8a1ff570bf47/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 794272,
+      "mtime_hint_min": 1791396568,
+      "mtime_hint_max": 1791396568
+    },
+    {
+      "id": "2da7912dd862986b",
+      "path": "/home/derek/.gemini/antigravity-cli/brain/fe1f1874-cf61-404a-a4ec-8a1ff570bf47/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 24314,
+      "mtime_hint_min": 1791395728,
+      "mtime_hint_max": 1791395883
+    },
+    {
+      "id": "c6664ebc35abc4f9",
+      "path": "/home/derek/.gemini/antigravity-cli/conversations",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".db": 62
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 373801544,
+      "mtime_hint_min": 1790500053,
+      "mtime_hint_max": 1791626440
+    },
+    {
+      "id": "afbb66d275e313e6",
+      "path": "/home/derek/.gemini/config",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 194,
+      "mtime_hint_min": 1790498393,
+      "mtime_hint_max": 1791546173
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.189
+}

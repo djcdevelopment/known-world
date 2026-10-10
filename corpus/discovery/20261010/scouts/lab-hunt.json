@@ -1,0 +1,87 @@
+{
+  "scout": "lab-hunt",
+  "status": "reviewed",
+  "cap_reached": false,
+  "brief": "Choose one source lead from local lab research and one Windows campaign source that could show growth of experiments or planning. What metadata must be extracted next?",
+  "result": {
+    "ok": true,
+    "text": "```json\n[\n  {\n    \"path\": \"/home/derek/work/lab-rnd/research/evidence\",\n    \"observed_file_counts\": 3170,\n    \"proposed_measure\": \"Experiment data collection\",\n    \"required_next_evidence\": \"File types (.json, .jsonl, .ndjson, .csv)\",\n    \"cannot_infer\": \"Experiment timeline or specific outcomes\"\n  },\n  {\n    \"path\": \"/mnt/omen-c-read/work/commandcenter/campaign/harvest\",\n    \"observed_file_counts\": 23,\n    \"proposed_measure\": \"Campaign harvest data\",\n    \"required_next_evidence\": \"File types (.json)\",\n    \"cannot_infer\": \"Campaign progress or results\"\n  }\n]\n```\n\n**Metadata to extract next:**\n1. **Timestamps:** When were the files last modified (mtime)?\n2. **Git markers:** Are there any `.git` directories or files indicating version control?\n3. **Subdirectory structure:** How deep are the subdirectories within each path?\n4. **File contents:** What specific information is stored in the `.json`, `.jsonl`, `.ndjson`, and `.csv` files?\n\nThis additional metadata will help in understanding the temporal context, versioning, depth of data organization, and the type of information being collected in both the local lab and command center campaigns.",
+    "execution": {
+      "request_id": "req_a97859b2a76ec041cdfe048e326958b5",
+      "job_id": "job_a70bac1ea0df2f7571e46ba1df59f7c6",
+      "status": "succeeded",
+      "artifact": {
+        "artifact_id": "art_64b8340e892f41acec98bf5e87e8841b",
+        "created_at": "2026-10-10T13:56:48.063749Z",
+        "filename": "job_a70bac1ea0df2f7571e46ba1df59f7c6-result.md",
+        "media_type": "text/plain; charset=utf-8",
+        "role": "result",
+        "sha256": "78260bc19b6397da40a1d89139759f448027c6128ae04c98b0298187473b69b2",
+        "size": 1156
+      }
+    },
+    "backend": "fx99-vllm",
+    "model": "qwen2.5-coder-7b",
+    "routed_by": "family:utility_text:tag:utility",
+    "occupancy": "available",
+    "rung_state": null,
+    "pool_config_hash": "fcc348a163ca",
+    "tokens_in": 1981,
+    "tokens_out": 284,
+    "duration_ms": 10702,
+    "max_tokens": 900,
+    "timeout_s": 179,
+    "task_family": "utility_text",
+    "family_recommendation": {
+      "advisory": true,
+      "backend_hint": "fx99-vllm",
+      "depth_rule_applied": false,
+      "evidence": "research/limits-found.md \u00a71.5: FX99 7B cannot produce reliable JSON tool calls and is restricted to pure text processing; fleet inventory keeps it as the utility lane (:18093, 4,096 ctx)",
+      "family": "utility_text",
+      "model_id": "qwen2.5-coder-7b",
+      "pin_required": false,
+      "prompt_tokens": 1582,
+      "providers": [
+        "fx99-vllm"
+      ],
+      "reason": "Short text-only summaries and rewrites that need no tool calls and fit 4K go to the idle 8 GB card, keeping the B70s free.",
+      "refusal": null,
+      "refused": false,
+      "requested_family": "utility_text"
+    }
+  },
+  "candidate_status_before_review": "awaiting_review",
+  "normalized_leads": [
+    {
+      "path": "/home/derek/work/lab-rnd/research/evidence",
+      "observed_file_counts": 3170,
+      "proposed_measure": "Experiment data collection",
+      "required_next_evidence": "File types (.json, .jsonl, .ndjson, .csv)",
+      "cannot_infer": "Experiment timeline or specific outcomes",
+      "count_unit": ".json files in supplied rollup; not all structured formats or work units"
+    },
+    {
+      "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest",
+      "observed_file_counts": 23,
+      "proposed_measure": "Campaign harvest data",
+      "required_next_evidence": "File types (.json)",
+      "cannot_infer": "Campaign progress or results",
+      "count_unit": ".json files in supplied rollup; not all structured formats or work units"
+    }
+  ],
+  "reviewer": "codex-frontier",
+  "verdict": {
+    "substance": "partially_useful",
+    "accepted": "Source paths and their specifically counted JSON-file populations agree with supplied inventory. Leads only, not execution or experiment counts.",
+    "rejected": [
+      "Unbounded requests to read file contents replaced by allowlisted schema probe",
+      "Mtime as historical activity evidence",
+      "Unlabelled counts as total artifacts across all formats"
+    ],
+    "form": "Code fence and trailing prose removed into normalized_leads; original text preserved",
+    "repairs": {
+      "json_array_extracted": 1,
+      "count_unit_explicitly_annotated": 2
+    }
+  }
+}

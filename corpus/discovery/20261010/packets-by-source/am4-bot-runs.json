@@ -1,0 +1,27 @@
+{
+  "group": "execution",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "am4-bot-runs",
+    "host": "am4",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 3,
+      "seconds": 30,
+      "max_files": 100000,
+      "max_candidates": 2500
+    },
+    "rollups_omitted": 0,
+    "rollups": [
+      {
+        "path": "/home/derek/am4bot/runs",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 82
+        },
+        "git_markers": 0
+      }
+    ]
+  }
+}

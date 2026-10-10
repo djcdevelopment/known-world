@@ -1,0 +1,59 @@
+{
+  "id": "c-tuning",
+  "host": "omen-c",
+  "root": "/mnt/omen-c-read/tuning",
+  "group": "lab",
+  "status": "complete",
+  "limits": {
+    "depth": 5,
+    "seconds": 25,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 6,
+    "files": 47
+  },
+  "candidates": [
+    {
+      "id": "5f06ca2ebc5648bc",
+      "path": "/mnt/omen-c-read/tuning",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 1765626,
+      "mtime_hint_min": 1787157215,
+      "mtime_hint_max": 1787157215
+    },
+    {
+      "id": "ba70dfe1a7c66f66",
+      "path": "/mnt/omen-c-read/tuning/ollama-backend-lab",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".csv": 1
+      },
+      "marker_files_direct": 2,
+      "bytes_direct": 68336,
+      "mtime_hint_min": 1787157215,
+      "mtime_hint_max": 1787157215
+    },
+    {
+      "id": "0c15e35323b91907",
+      "path": "/mnt/omen-c-read/tuning/ollama-backend-lab/results",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".csv": 4,
+        ".json": 10
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 121298,
+      "mtime_hint_min": 1787157215,
+      "mtime_hint_max": 1787157215
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.001
+}

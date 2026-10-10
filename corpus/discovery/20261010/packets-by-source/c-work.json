@@ -1,0 +1,143 @@
+{
+  "group": "projects",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "c-work",
+    "host": "omen-c",
+    "status": "partial",
+    "gaps": [
+      {
+        "directory_id": "a9381d3620ca2122",
+        "errno": 13
+      },
+      {
+        "directory_id": "3f98a2a52c342652",
+        "errno": 13
+      },
+      "time_or_file_budget",
+      "time_or_file_budget"
+    ],
+    "limits": {
+      "depth": 6,
+      "seconds": 55,
+      "max_files": 100000,
+      "max_candidates": 1500
+    },
+    "rollups_omitted": 93,
+    "rollups": [
+      {
+        "path": "/mnt/omen-c-read/work/baseline/captures",
+        "directories": 389,
+        "structured_files": {
+          ".json": 1616,
+          ".jsonl": 3
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/work/baseline/fieldlab",
+        "directories": 359,
+        "structured_files": {
+          ".csv": 1,
+          ".json": 1328,
+          ".jsonl": 172
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/work/_retired/comfy",
+        "directories": 324,
+        "structured_files": {
+          ".json": 615,
+          ".csv": 49,
+          ".jsonl": 10,
+          ".tsv": 46
+        },
+        "git_markers": 5
+      },
+      {
+        "path": "/mnt/omen-c-read/work/SelfieStick/artifacts",
+        "directories": 22,
+        "structured_files": {
+          ".json": 149,
+          ".tsv": 1,
+          ".jsonl": 10
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/work/ComfyStewardView/artifacts",
+        "directories": 27,
+        "structured_files": {
+          ".json": 101,
+          ".tsv": 1,
+          ".jsonl": 1,
+          ".db": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/work/ComfyStewardView/lab",
+        "directories": 201,
+        "structured_files": {
+          ".db": 44,
+          ".pb": 22,
+          ".json": 25
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/work/JEPA/experiments",
+        "directories": 22,
+        "structured_files": {
+          ".csv": 2,
+          ".json": 88
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/work/am4/logs",
+        "directories": 6,
+        "structured_files": {
+          ".json": 52,
+          ".csv": 6
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/work/am4-harvest/manifest",
+        "directories": 3,
+        "structured_files": {
+          ".json": 45,
+          ".csv": 2
+        },
+        "git_markers": 1
+      },
+      {
+        "path": "/mnt/omen-c-read/work/baseline/.claude",
+        "directories": 19,
+        "structured_files": {
+          ".json": 24
+        },
+        "git_markers": 4
+      },
+      {
+        "path": "/mnt/omen-c-read/work/JEPA/manifests",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 15,
+          ".json": 8
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/work/baseline/.tmp",
+        "directories": 2,
+        "structured_files": {
+          ".json": 22
+        },
+        "git_markers": 0
+      }
+    ]
+  }
+}

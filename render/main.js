@@ -4,6 +4,10 @@
 (function () {
   const KW = window.KW, D = KW.D;
   const Q = new URLSearchParams(location.search);
+  const extraFade = Math.round(Number(Q.get('closingFade') || 0) * KW.fps);
+  const statsFrame = D.coda_f + Math.ceil((D.F - D.coda_f) / 2);
+  const sourceF = KW.F;
+  KW.F = sourceF + extraFade;
   const cv = document.getElementById('c');
   const LY = KW.LAY, B = KW.B;
   cv.width = Math.round(LY.W * B); cv.height = Math.round(LY.H * B);
@@ -13,17 +17,28 @@
   KW.resetT = c => c.setTransform(B, 0, 0, B, 0, 0);
   function renderFrame(f) {
     f = Math.max(0, Math.min(KW.F - 1, f | 0));
+    const fadeFrame = f - statsFrame;
+    const inserted = extraFade > 0 && fadeFrame >= 0 && fadeFrame < extraFade;
+    const closing = extraFade > 0 && fadeFrame >= extraFade;
+    if (inserted) f = statsFrame - 1;
+    else if (closing) f -= extraFade;
     KW.resetT(ctx);
+    if (Q.get('intro') === '1') { window.renderIntro(ctx, f, LY.W, LY.H); return; }
     if (f === D.probe_f) { ctx.fillStyle = '#ffffff'; ctx.fillRect(0, 0, LY.W, LY.H); return; }
     ctx.globalCompositeOperation = 'source-over';
     ctx.fillStyle = '#07090e'; ctx.fillRect(0, 0, LY.W, LY.H);
     const V = KW.VIEW;
     for (const l of KW.layers) {
+      if (closing && l.id !== 'card') continue;
       if (KW.off && KW.off.has(l.id)) continue;
       ctx.save();
       if (l.map) { const C = LY.hud === 'plates' && !LY.ia ? KW.FRAME : V; ctx.beginPath(); ctx.rect(C.x, C.y, C.w, C.h); ctx.clip(); }
       try { l.render(ctx, f); } catch (e) { KW.errors.push(l.id + '@' + f + ':' + e.message); }
       ctx.restore();
+    }
+    if (inserted) {
+      ctx.fillStyle = 'rgba(7,9,14,' + ((fadeFrame + 1) / extraFade) + ')';
+      ctx.fillRect(0, 0, LY.W, LY.H);
     }
   }
   window.renderFrame = renderFrame;

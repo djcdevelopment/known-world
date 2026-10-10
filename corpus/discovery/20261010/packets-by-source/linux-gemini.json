@@ -1,0 +1,64 @@
+{
+  "group": "clients",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "linux-gemini",
+    "host": "omen-linux",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 6,
+      "seconds": 20,
+      "max_files": 100000,
+      "max_candidates": 1500
+    },
+    "rollups_omitted": 0,
+    "rollups": [
+      {
+        "path": "/home/derek/.gemini/antigravity-cli/brain",
+        "directories": 111,
+        "structured_files": {
+          ".jsonl": 122,
+          ".json": 339
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/.gemini/antigravity-cli/conversations",
+        "directories": 1,
+        "structured_files": {
+          ".db": 62
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/.gemini",
+        "directories": 1,
+        "structured_files": {
+          ".json": 5
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/.gemini/antigravity-cli",
+        "directories": 1,
+        "structured_files": {
+          ".json": 1,
+          ".pb": 1,
+          ".db": 1,
+          ".pbtxt": 1,
+          ".jsonl": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/.gemini/config",
+        "directories": 1,
+        "structured_files": {
+          ".json": 2
+        },
+        "git_markers": 0
+      }
+    ]
+  }
+}

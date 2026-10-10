@@ -1,0 +1,81 @@
+{
+ "receipt": "br-20261010-153817-6531009a",
+ "url": "https://fx99.tail8e749c.ts.net/chronicles/known-world/",
+ "snapshot_utc": "2026-10-09T15:41:09Z",
+ "data_sha256": "62012e6d05475a414cdf50530b8005e66943fbed0649781b335c38b99978e656",
+ "public_measures": 12,
+ "public_coverage_rows": 4,
+ "source_totals_reconciled": true,
+ "public_metadata_allowlist_checked": true,
+ "render": {
+  "frames": 2700,
+  "seconds": 47.056,
+  "errors": [],
+  "skipped_segments": 0
+ },
+ "http_checks": {
+  "index.html": {
+   "status": 200,
+   "bytes": 5191,
+   "sha256": "34e57563587a2976cfcd7f3b8fc93ca42637a3b084538f435906f3c68675de14",
+   "matches_staged": true
+  },
+  "release.json": {
+   "status": 200,
+   "bytes": 3529,
+   "sha256": "17777dae634959caf5aaee3bc7ac295b9db6e0aac59309b4e229b85565ea7a20",
+   "matches_staged": true
+  },
+  "known-world-90s-b58c7df86cf1.mp4": {
+   "status": 200,
+   "bytes": 34700108,
+   "sha256": "b58c7df86cf1f36c3c68d593402eafb811207138173ce89cf6eee5c5b42b58f4",
+   "matches_staged": true
+  },
+  "poster-078f51e936f5.png": {
+   "status": 200,
+   "bytes": 832785,
+   "sha256": "078f51e936f584c5f247fb421b89fe90cd7110c4eaf26eab92467a5a24488f1f",
+   "matches_staged": true
+  },
+  "range": {
+   "status": 206,
+   "content_range": "bytes 0-15/34700108",
+   "bytes": 16
+  }
+ },
+ "browser_checks": [
+  {
+   "viewport": 1920,
+   "playback": true,
+   "seeking": true,
+   "duration": 90,
+   "width": 1920,
+   "height": 1080,
+   "currentTime": 84,
+   "controls": true,
+   "playsInline": true,
+   "src": "https://fx99.tail8e749c.ts.net/chronicles/known-world/known-world-90s-b58c7df86cf1.mp4",
+   "rows": 16,
+   "bodyWidth": 1920,
+   "errors": []
+  },
+  {
+   "viewport": 390,
+   "playback": true,
+   "seeking": true,
+   "duration": 90,
+   "width": 1920,
+   "height": 1080,
+   "currentTime": 84,
+   "controls": true,
+   "playsInline": true,
+   "src": "https://fx99.tail8e749c.ts.net/chronicles/known-world/known-world-90s-b58c7df86cf1.mp4",
+   "rows": 16,
+   "bodyWidth": 390,
+   "errors": []
+  }
+ ],
+ "backup_on_fx99": "/home/derek/backups/known-world-publish/20261010-b58c7df86cf1",
+ "new_benchmarks": 0
+}

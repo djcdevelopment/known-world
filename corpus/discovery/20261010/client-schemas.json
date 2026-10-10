@@ -1,0 +1,938 @@
+[
+  {
+    "source": "/home/derek/.gemini/antigravity-cli/conversations",
+    "db_files": 62,
+    "sampled": 3,
+    "samples": [
+      {
+        "sample_id": 0,
+        "wal_present": false,
+        "tables": [
+          {
+            "table": "trajectory_meta",
+            "columns": [
+              [
+                "trajectory_id",
+                "TEXT"
+              ],
+              [
+                "cascade_id",
+                "TEXT"
+              ],
+              [
+                "trajectory_type",
+                "INTEGER"
+              ],
+              [
+                "source",
+                "INTEGER"
+              ]
+            ],
+            "rows": 1
+          },
+          {
+            "table": "steps",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "step_type",
+                "INTEGER"
+              ],
+              [
+                "status",
+                "INTEGER"
+              ],
+              [
+                "has_subtrajectory",
+                "numeric"
+              ],
+              [
+                "metadata",
+                "BLOB"
+              ],
+              [
+                "error_details",
+                "BLOB"
+              ],
+              [
+                "permissions",
+                "BLOB"
+              ],
+              [
+                "task_details",
+                "BLOB"
+              ],
+              [
+                "render_info",
+                "BLOB"
+              ],
+              [
+                "step_payload",
+                "BLOB"
+              ],
+              [
+                "step_format",
+                "INTEGER"
+              ]
+            ],
+            "rows": 4
+          },
+          {
+            "table": "gen_metadata",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ],
+              [
+                "size",
+                "INTEGER"
+              ]
+            ],
+            "rows": 2
+          },
+          {
+            "table": "executor_metadata",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 1
+          },
+          {
+            "table": "parent_references",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 0
+          },
+          {
+            "table": "trajectory_metadata_blob",
+            "columns": [
+              [
+                "id",
+                "TEXT"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 1
+          },
+          {
+            "table": "battle_mode_infos",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 0
+          }
+        ]
+      },
+      {
+        "sample_id": 1,
+        "wal_present": false,
+        "tables": [
+          {
+            "table": "trajectory_meta",
+            "columns": [
+              [
+                "trajectory_id",
+                "TEXT"
+              ],
+              [
+                "cascade_id",
+                "TEXT"
+              ],
+              [
+                "trajectory_type",
+                "INTEGER"
+              ],
+              [
+                "source",
+                "INTEGER"
+              ]
+            ],
+            "rows": 1
+          },
+          {
+            "table": "steps",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "step_type",
+                "INTEGER"
+              ],
+              [
+                "status",
+                "INTEGER"
+              ],
+              [
+                "has_subtrajectory",
+                "numeric"
+              ],
+              [
+                "metadata",
+                "BLOB"
+              ],
+              [
+                "error_details",
+                "BLOB"
+              ],
+              [
+                "permissions",
+                "BLOB"
+              ],
+              [
+                "task_details",
+                "BLOB"
+              ],
+              [
+                "render_info",
+                "BLOB"
+              ],
+              [
+                "step_payload",
+                "BLOB"
+              ],
+              [
+                "step_format",
+                "INTEGER"
+              ]
+            ],
+            "rows": 341
+          },
+          {
+            "table": "gen_metadata",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ],
+              [
+                "size",
+                "INTEGER"
+              ]
+            ],
+            "rows": 167
+          },
+          {
+            "table": "executor_metadata",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 23
+          },
+          {
+            "table": "parent_references",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 0
+          },
+          {
+            "table": "trajectory_metadata_blob",
+            "columns": [
+              [
+                "id",
+                "TEXT"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 1
+          },
+          {
+            "table": "battle_mode_infos",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 0
+          }
+        ]
+      },
+      {
+        "sample_id": 2,
+        "wal_present": false,
+        "tables": [
+          {
+            "table": "trajectory_meta",
+            "columns": [
+              [
+                "trajectory_id",
+                "TEXT"
+              ],
+              [
+                "cascade_id",
+                "TEXT"
+              ],
+              [
+                "trajectory_type",
+                "INTEGER"
+              ],
+              [
+                "source",
+                "INTEGER"
+              ]
+            ],
+            "rows": 1
+          },
+          {
+            "table": "steps",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "step_type",
+                "INTEGER"
+              ],
+              [
+                "status",
+                "INTEGER"
+              ],
+              [
+                "has_subtrajectory",
+                "numeric"
+              ],
+              [
+                "metadata",
+                "BLOB"
+              ],
+              [
+                "error_details",
+                "BLOB"
+              ],
+              [
+                "permissions",
+                "BLOB"
+              ],
+              [
+                "task_details",
+                "BLOB"
+              ],
+              [
+                "render_info",
+                "BLOB"
+              ],
+              [
+                "step_payload",
+                "BLOB"
+              ],
+              [
+                "step_format",
+                "INTEGER"
+              ]
+            ],
+            "rows": 4
+          },
+          {
+            "table": "gen_metadata",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ],
+              [
+                "size",
+                "INTEGER"
+              ]
+            ],
+            "rows": 2
+          },
+          {
+            "table": "executor_metadata",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 1
+          },
+          {
+            "table": "parent_references",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 0
+          },
+          {
+            "table": "trajectory_metadata_blob",
+            "columns": [
+              [
+                "id",
+                "TEXT"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 1
+          },
+          {
+            "table": "battle_mode_infos",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 0
+          }
+        ]
+      }
+    ],
+    "limitations": [
+      "First three sorted DBs only",
+      "immutable read may omit WAL",
+      "No data values or message contents read"
+    ]
+  },
+  {
+    "source": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/conversations",
+    "db_files": 113,
+    "sampled": 3,
+    "samples": [
+      {
+        "sample_id": 0,
+        "wal_present": false,
+        "tables": [
+          {
+            "table": "trajectory_meta",
+            "columns": [
+              [
+                "trajectory_id",
+                "TEXT"
+              ],
+              [
+                "cascade_id",
+                "TEXT"
+              ],
+              [
+                "trajectory_type",
+                "INTEGER"
+              ],
+              [
+                "source",
+                "INTEGER"
+              ]
+            ],
+            "rows": 1
+          },
+          {
+            "table": "steps",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "step_type",
+                "INTEGER"
+              ],
+              [
+                "status",
+                "INTEGER"
+              ],
+              [
+                "has_subtrajectory",
+                "numeric"
+              ],
+              [
+                "metadata",
+                "BLOB"
+              ],
+              [
+                "error_details",
+                "BLOB"
+              ],
+              [
+                "permissions",
+                "BLOB"
+              ],
+              [
+                "task_details",
+                "BLOB"
+              ],
+              [
+                "render_info",
+                "BLOB"
+              ],
+              [
+                "step_payload",
+                "BLOB"
+              ],
+              [
+                "step_format",
+                "INTEGER"
+              ]
+            ],
+            "rows": 21
+          },
+          {
+            "table": "gen_metadata",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ],
+              [
+                "size",
+                "INTEGER"
+              ]
+            ],
+            "rows": 9
+          },
+          {
+            "table": "executor_metadata",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 2
+          },
+          {
+            "table": "parent_references",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 0
+          },
+          {
+            "table": "trajectory_metadata_blob",
+            "columns": [
+              [
+                "id",
+                "TEXT"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 1
+          },
+          {
+            "table": "battle_mode_infos",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 0
+          }
+        ]
+      },
+      {
+        "sample_id": 1,
+        "wal_present": false,
+        "tables": [
+          {
+            "table": "trajectory_meta",
+            "columns": [
+              [
+                "trajectory_id",
+                "TEXT"
+              ],
+              [
+                "cascade_id",
+                "TEXT"
+              ],
+              [
+                "trajectory_type",
+                "INTEGER"
+              ],
+              [
+                "source",
+                "INTEGER"
+              ]
+            ],
+            "rows": 1
+          },
+          {
+            "table": "steps",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "step_type",
+                "INTEGER"
+              ],
+              [
+                "status",
+                "INTEGER"
+              ],
+              [
+                "has_subtrajectory",
+                "numeric"
+              ],
+              [
+                "metadata",
+                "BLOB"
+              ],
+              [
+                "error_details",
+                "BLOB"
+              ],
+              [
+                "permissions",
+                "BLOB"
+              ],
+              [
+                "task_details",
+                "BLOB"
+              ],
+              [
+                "render_info",
+                "BLOB"
+              ],
+              [
+                "step_payload",
+                "BLOB"
+              ],
+              [
+                "step_format",
+                "INTEGER"
+              ]
+            ],
+            "rows": 15
+          },
+          {
+            "table": "gen_metadata",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ],
+              [
+                "size",
+                "INTEGER"
+              ]
+            ],
+            "rows": 3
+          },
+          {
+            "table": "executor_metadata",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 1
+          },
+          {
+            "table": "parent_references",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 0
+          },
+          {
+            "table": "trajectory_metadata_blob",
+            "columns": [
+              [
+                "id",
+                "TEXT"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 1
+          },
+          {
+            "table": "battle_mode_infos",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 0
+          }
+        ]
+      },
+      {
+        "sample_id": 2,
+        "wal_present": false,
+        "tables": [
+          {
+            "table": "trajectory_meta",
+            "columns": [
+              [
+                "trajectory_id",
+                "TEXT"
+              ],
+              [
+                "cascade_id",
+                "TEXT"
+              ],
+              [
+                "trajectory_type",
+                "INTEGER"
+              ],
+              [
+                "source",
+                "INTEGER"
+              ]
+            ],
+            "rows": 1
+          },
+          {
+            "table": "steps",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "step_type",
+                "INTEGER"
+              ],
+              [
+                "status",
+                "INTEGER"
+              ],
+              [
+                "has_subtrajectory",
+                "numeric"
+              ],
+              [
+                "metadata",
+                "BLOB"
+              ],
+              [
+                "error_details",
+                "BLOB"
+              ],
+              [
+                "permissions",
+                "BLOB"
+              ],
+              [
+                "task_details",
+                "BLOB"
+              ],
+              [
+                "render_info",
+                "BLOB"
+              ],
+              [
+                "step_payload",
+                "BLOB"
+              ],
+              [
+                "step_format",
+                "INTEGER"
+              ]
+            ],
+            "rows": 67
+          },
+          {
+            "table": "gen_metadata",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ],
+              [
+                "size",
+                "INTEGER"
+              ]
+            ],
+            "rows": 32
+          },
+          {
+            "table": "executor_metadata",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 4
+          },
+          {
+            "table": "parent_references",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 0
+          },
+          {
+            "table": "trajectory_metadata_blob",
+            "columns": [
+              [
+                "id",
+                "TEXT"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 1
+          },
+          {
+            "table": "battle_mode_infos",
+            "columns": [
+              [
+                "idx",
+                "INTEGER"
+              ],
+              [
+                "data",
+                "BLOB"
+              ]
+            ],
+            "rows": 0
+          }
+        ]
+      }
+    ],
+    "limitations": [
+      "First three sorted DBs only",
+      "immutable read may omit WAL",
+      "No data values or message contents read"
+    ]
+  }
+]

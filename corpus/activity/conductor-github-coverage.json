@@ -1,0 +1,24 @@
+{
+ "observed_at": "2026-10-10T15:18:33.442366+00:00",
+ "repository": {
+  "default_branch": "main",
+  "full_name": "djcdevelopment/conductor",
+  "private": true,
+  "pushed_at": "2026-07-03T11:00:27Z"
+ },
+ "branches": [
+  {
+   "name": "main",
+   "sha": "aa7b2d81621db066f222dc6847329f59b83a612c"
+  }
+ ],
+ "github_commit_count": 36,
+ "local_commit_count": 36,
+ "corpus_commit_count": 36,
+ "missing_github_commits": [],
+ "native_sha_sets_match": true,
+ "lineage": "0a2dd31e35fa9ce6ee6518316bcc728a5feea44d",
+ "corpus_first_commit": "2026-07-01T17:39:34Z",
+ "corpus_last_commit": "2026-07-03T02:03:14Z",
+ "scope": "GitHub current main and all current branches; code history already included. Last push July 3; does not establish complete VM history after that date."
+}

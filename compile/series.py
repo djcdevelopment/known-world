@@ -94,6 +94,8 @@ def class_series(c, params, clock, nat_index):
         out[k] = np.bincount(f, weights=np.array(chatw[k], dtype=np.float64), minlength=F)[:F]
     f = clock.frame(np.array([x[0] for x in c.offloads], dtype=np.int64))
     out["local_model"] = np.bincount(f, minlength=F)[:F].astype(np.float64)
+    gf = clock.frame(np.array([x[0] for x in c.gemini_calls], dtype=np.int64))
+    out["gemini"] = np.bincount(gf, minlength=F)[:F].astype(np.float64)
     cm = np.array([x[0] for v in c.commits.values() for x in v], dtype=np.int64)
     out["commits"] = np.bincount(clock.frame(cm), minlength=F)[:F].astype(np.float64)
     # offloads per seat (omen, am4, fx99)
@@ -119,9 +121,12 @@ def participations(c, clock, nat_index):
     """Cumulative participations per nation: offload calls for local seats, sessions for the rest (for rows with 0 tests)."""
     F = clock.F
     out = np.zeros((len(nat_index), F))
-    f = clock.frame(np.array([x[0] for x in c.offloads], dtype=np.int64)) if c.offloads else np.zeros(0, dtype=np.int64)
+    f = clock.frame(np.array(c.local_dispatch_t, dtype=np.int64)) if c.local_dispatch_t else np.zeros(0, dtype=np.int64)
     if "local_model" in nat_index:
         out[nat_index["local_model"]] += np.bincount(f, minlength=F)[:F]
+    if "gemini" in nat_index:
+        gf = clock.frame(np.array([x[0] for x in c.gemini_calls], dtype=np.int64))
+        out[nat_index["gemini"]] += np.bincount(gf, minlength=F)[:F]
     for (t, cls, host) in c.sess_events:
         if cls in nat_index and cls != "local_model":
             out[nat_index[cls], int(clock.frame(np.array([t]))[0])] += 1
@@ -252,7 +257,8 @@ def running_totals(c, params, clock, nat_index, surfaces, hosts_fs, launches=Non
     del_raw = np.array([x[5] for x in cm], dtype=np.float64)
     raw = ins_raw + del_raw
     cap = float(params["yield_cap_lines_per_commit"])
-    # Fable 2026-10-10: displayed lines use the launch yield's cap, so "lines" means one thing everywhere (totals_line_cap: yield | none)
+    # Numeric totals default to raw numstat. The separate launch-yield cap still
+    # bounds map motion; the legacy capped arm remains available for comparison.
     sc = np.where(raw > cap, cap / np.maximum(raw, 1.0), 1.0) if params["totals_line_cap"] == "yield" else np.ones(len(cm))
     n_capped = int((sc < 1.0).sum())
     np.add.at(ins, (ni, fr), ins_raw * sc)

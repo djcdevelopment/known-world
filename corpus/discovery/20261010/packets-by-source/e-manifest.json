@@ -1,0 +1,66 @@
+{
+  "group": "lab",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "e-manifest",
+    "host": "omen-e",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 6,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500
+    },
+    "rollups_omitted": 0,
+    "rollups": [
+      {
+        "path": "/mnt/omen-e-read/work/manifest/framework/runs",
+        "directories": 1,
+        "structured_files": {
+          ".json": 45,
+          ".csv": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/work/manifest",
+        "directories": 1,
+        "structured_files": {
+          ".csv": 3
+        },
+        "git_markers": 1
+      },
+      {
+        "path": "/mnt/omen-e-read/work/manifest/exports",
+        "directories": 1,
+        "structured_files": {
+          ".json": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/work/manifest/.claude",
+        "directories": 1,
+        "structured_files": {
+          ".json": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-e-read/work/manifest/framework/tests",
+        "directories": 3,
+        "structured_files": {
+          ".json": 1
+        },
+        "git_markers": 3
+      },
+      {
+        "path": "/mnt/omen-e-read/work/manifest/docs",
+        "directories": 1,
+        "structured_files": {},
+        "git_markers": 0
+      }
+    ]
+  }
+}

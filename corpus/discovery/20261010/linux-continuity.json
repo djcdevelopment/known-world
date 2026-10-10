@@ -1,0 +1,46 @@
+{
+  "id": "linux-continuity",
+  "host": "omen-linux",
+  "root": "/home/derek/.continuity/ledger",
+  "group": "execution",
+  "status": "complete",
+  "limits": {
+    "depth": 3,
+    "seconds": 25,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 272,
+    "files": 889,
+    "directories_beyond_depth": 3
+  },
+  "candidates": [
+    {
+      "id": "e3e9325d7f0fa4cd",
+      "path": "/home/derek/.continuity/ledger",
+      "git_marker": true,
+      "name_hint": true,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 8,
+      "mtime_hint_min": 1790502360,
+      "mtime_hint_max": 1790502360
+    },
+    {
+      "id": "ffd54699c6b9958d",
+      "path": "/home/derek/.continuity/ledger/events",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 362
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 526257,
+      "mtime_hint_min": 1790502361,
+      "mtime_hint_max": 1791578365
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 1.026
+}

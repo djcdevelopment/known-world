@@ -1,0 +1,100 @@
+{
+  "id": "linux-campaign",
+  "host": "omen-linux",
+  "root": "/home/derek/work/commandcenter-linux-flash/campaign",
+  "group": "execution",
+  "status": "complete",
+  "limits": {
+    "depth": 5,
+    "seconds": 30,
+    "max_files": 100000,
+    "max_candidates": 2500
+  },
+  "counts": {
+    "directories": 11,
+    "files": 136,
+    "excluded": 1
+  },
+  "candidates": [
+    {
+      "id": "ea1884e47a4a4587",
+      "path": "/home/derek/work/commandcenter-linux-flash/campaign",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 92245,
+      "mtime_hint_min": 1790064003,
+      "mtime_hint_max": 1790064003
+    },
+    {
+      "id": "be9c9d93432f66ca",
+      "path": "/home/derek/work/commandcenter-linux-flash/campaign/ff-probes",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 712980,
+      "mtime_hint_min": 1790064003,
+      "mtime_hint_max": 1790064003
+    },
+    {
+      "id": "91bb1ee0420e961b",
+      "path": "/home/derek/work/commandcenter-linux-flash/campaign/harvest",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 23
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 107528,
+      "mtime_hint_min": 1790064003,
+      "mtime_hint_max": 1790064003
+    },
+    {
+      "id": "16ff61406b46676a",
+      "path": "/home/derek/work/commandcenter-linux-flash/campaign/qwen38/assay",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 22957,
+      "mtime_hint_min": 1790064003,
+      "mtime_hint_max": 1790064003
+    },
+    {
+      "id": "193e8a0ef0553f70",
+      "path": "/home/derek/work/commandcenter-linux-flash/campaign/qwen38/config",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 14216,
+      "mtime_hint_min": 1790064003,
+      "mtime_hint_max": 1790064003
+    },
+    {
+      "id": "eda8de67e2191e08",
+      "path": "/home/derek/work/commandcenter-linux-flash/campaign/qwen38/schema",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3601,
+      "mtime_hint_min": 1790064003,
+      "mtime_hint_max": 1790064003
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.001
+}

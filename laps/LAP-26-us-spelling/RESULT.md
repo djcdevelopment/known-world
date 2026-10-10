@@ -1,0 +1,1 @@
+Changed Colour/colour to Color/color in opening and public description. Re-rendered only 150 opening frames; reused original story stream and source WAV with five-second delay. Published stable and hashed assets with backup/lock/index-last. All six HTTPS files match package hashes; no British spelling remains in public page. No benchmarks or new tests.

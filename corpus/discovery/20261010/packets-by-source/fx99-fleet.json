@@ -1,0 +1,115 @@
+{
+  "group": "execution",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "fx99-fleet",
+    "host": "fx99",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 5,
+      "seconds": 30,
+      "max_files": 100000,
+      "max_candidates": 2500
+    },
+    "rollups_omitted": 731,
+    "rollups": [
+      {
+        "path": "/home/derek/fleet/snapshots/20261002T134738Z",
+        "directories": 3,
+        "structured_files": {
+          ".json": 6
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/fleet/snapshots/20261002T140248Z",
+        "directories": 3,
+        "structured_files": {
+          ".json": 6
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/fleet/snapshots/20261002T141848Z",
+        "directories": 3,
+        "structured_files": {
+          ".json": 6
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/fleet/snapshots/20261002T143428Z",
+        "directories": 3,
+        "structured_files": {
+          ".json": 6
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/fleet/snapshots/20261002T145020Z",
+        "directories": 3,
+        "structured_files": {
+          ".json": 6
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/fleet/snapshots/20261002T150558Z",
+        "directories": 3,
+        "structured_files": {
+          ".json": 6
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/fleet/snapshots/20261002T152121Z",
+        "directories": 3,
+        "structured_files": {
+          ".json": 6
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/fleet/snapshots/20261002T153638Z",
+        "directories": 3,
+        "structured_files": {
+          ".json": 6
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/fleet/snapshots/20261002T155142Z",
+        "directories": 3,
+        "structured_files": {
+          ".json": 6
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/fleet/snapshots/20261002T160738Z",
+        "directories": 3,
+        "structured_files": {
+          ".json": 6
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/fleet/snapshots/20261002T162337Z",
+        "directories": 3,
+        "structured_files": {
+          ".json": 6
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/fleet/snapshots/20261002T163935Z",
+        "directories": 3,
+        "structured_files": {
+          ".json": 6
+        },
+        "git_markers": 0
+      }
+    ]
+  }
+}

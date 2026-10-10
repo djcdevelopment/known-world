@@ -1,0 +1,3509 @@
+{
+  "id": "c-gemini",
+  "host": "omen-c",
+  "root": "/mnt/omen-c-read/Users/derek/.gemini",
+  "group": "clients",
+  "status": "complete",
+  "limits": {
+    "depth": 6,
+    "seconds": 30,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 15030,
+    "files": 18318,
+    "directories_beyond_depth": 161,
+    "excluded": 12
+  },
+  "candidates": [
+    {
+      "id": "53f2370b2ddbd054",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 6
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2146,
+      "mtime_hint_min": 1783054517,
+      "mtime_hint_max": 1789301282
+    },
+    {
+      "id": "792114e23b92a922",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".pb": 1,
+        ".pbtxt": 1,
+        ".db": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 309403,
+      "mtime_hint_min": 1783054715,
+      "mtime_hint_max": 1791471832
+    },
+    {
+      "id": "683f00446f955842",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/0191643e-2994-468c-9a11-672301a20b12/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 92900,
+      "mtime_hint_min": 1789658864,
+      "mtime_hint_max": 1789658864
+    },
+    {
+      "id": "9b5750cb51916bb3",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/024cf6e1-be9a-4fac-9efb-464d45c63256/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 73781,
+      "mtime_hint_min": 1786535132,
+      "mtime_hint_max": 1786535132
+    },
+    {
+      "id": "3856fe8a40cf7d6d",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/024cf6e1-be9a-4fac-9efb-464d45c63256/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1453,
+      "mtime_hint_min": 1786535068,
+      "mtime_hint_max": 1786535127
+    },
+    {
+      "id": "2afcf8c9e2bd0578",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/042e9446-9c0a-4c4f-90a6-3172e59d4deb/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 181091,
+      "mtime_hint_min": 1783073607,
+      "mtime_hint_max": 1783073607
+    },
+    {
+      "id": "f6f331f96200e199",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/07bbc885-d190-4ff8-9664-4df588bbfbc2",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 18
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4840504,
+      "mtime_hint_min": 1788389636,
+      "mtime_hint_max": 1788925337
+    },
+    {
+      "id": "9dff0367372a75d0",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/07bbc885-d190-4ff8-9664-4df588bbfbc2/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 6544021,
+      "mtime_hint_min": 1788925777,
+      "mtime_hint_max": 1788925777
+    },
+    {
+      "id": "d778c55f2688bed5",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/07bbc885-d190-4ff8-9664-4df588bbfbc2/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 41
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 276270,
+      "mtime_hint_min": 1788546299,
+      "mtime_hint_max": 1788925156
+    },
+    {
+      "id": "927bf4e46644b432",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/07bbc885-d190-4ff8-9664-4df588bbfbc2/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 52
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1797342,
+      "mtime_hint_min": 1788387266,
+      "mtime_hint_max": 1788925312
+    },
+    {
+      "id": "0707a396b4db0132",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/0b41eb3f-63ae-410b-8b2e-023e2b59e61f/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 112645,
+      "mtime_hint_min": 1788438088,
+      "mtime_hint_max": 1788438088
+    },
+    {
+      "id": "bb072d2a8d794dbb",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/0c1e3d78-fe86-467e-b3b3-a1d5c9cf4784/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 285636,
+      "mtime_hint_min": 1788438312,
+      "mtime_hint_max": 1788438312
+    },
+    {
+      "id": "2479cf4d88a20f2b",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/0ee80488-3724-4fea-935f-f9b6f01e46ec/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 602612,
+      "mtime_hint_min": 1788765576,
+      "mtime_hint_max": 1788765576
+    },
+    {
+      "id": "66fb851f49a77c04",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/0f97194f-2ff9-44b5-b68c-7ee1f39dc7ae/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 27387,
+      "mtime_hint_min": 1783722928,
+      "mtime_hint_max": 1783722928
+    },
+    {
+      "id": "70a577b7706577e9",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/0fac47d9-711c-41f3-9f2d-bf205b0f7f14/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 12182,
+      "mtime_hint_min": 1789439612,
+      "mtime_hint_max": 1789439612
+    },
+    {
+      "id": "ee7e32294ce75d78",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/1020345d-4cd5-4250-b932-48cfab6537da/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 91030,
+      "mtime_hint_min": 1783767588,
+      "mtime_hint_max": 1783767588
+    },
+    {
+      "id": "4241d5830613f43d",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/151155c4-4343-450f-bc81-1ed38f1bc951/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 245649,
+      "mtime_hint_min": 1786355981,
+      "mtime_hint_max": 1786355981
+    },
+    {
+      "id": "a639d6486aa9a5e9",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/1825fd52-6dce-498a-a945-8c9b337df510",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 5935,
+      "mtime_hint_min": 1786115992,
+      "mtime_hint_max": 1786116518
+    },
+    {
+      "id": "f9d2a3c108d0e21a",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/1825fd52-6dce-498a-a945-8c9b337df510/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 828275,
+      "mtime_hint_min": 1789457390,
+      "mtime_hint_max": 1789457390
+    },
+    {
+      "id": "ee1b5181c59a69d8",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/1825fd52-6dce-498a-a945-8c9b337df510/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 7
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 12251,
+      "mtime_hint_min": 1786115991,
+      "mtime_hint_max": 1789461176
+    },
+    {
+      "id": "e2e6d46b481eda92",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/196cfc5c-2645-4f01-ab47-7b6e6e941218/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 236375,
+      "mtime_hint_min": 1786532269,
+      "mtime_hint_max": 1786532269
+    },
+    {
+      "id": "0b8a7958f07c96b4",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/199364d8-9392-4aef-bcc1-fe07f01d1256/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 59932,
+      "mtime_hint_min": 1786534947,
+      "mtime_hint_max": 1786534947
+    },
+    {
+      "id": "08993ef1ca7b425a",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/21c8cad8-98e3-46b9-b39c-c189b7b5b85c",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 18691,
+      "mtime_hint_min": 1789683950,
+      "mtime_hint_max": 1789684887
+    },
+    {
+      "id": "e096aa9d0f503627",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/21c8cad8-98e3-46b9-b39c-c189b7b5b85c/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 420097,
+      "mtime_hint_min": 1789685093,
+      "mtime_hint_max": 1789685093
+    },
+    {
+      "id": "5ce375735f3150aa",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/234cbeb5-e5a7-4724-84ed-6d9d59e0558e/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 233806,
+      "mtime_hint_min": 1786532283,
+      "mtime_hint_max": 1786532283
+    },
+    {
+      "id": "8991e5c9bdeaf775",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/239cf04d-6413-48ac-a9e1-a7ab94dee6c7/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 481204,
+      "mtime_hint_min": 1790496900,
+      "mtime_hint_max": 1790496900
+    },
+    {
+      "id": "484037f3b471be23",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/239cf04d-6413-48ac-a9e1-a7ab94dee6c7/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1443,
+      "mtime_hint_min": 1790495478,
+      "mtime_hint_max": 1790495483
+    },
+    {
+      "id": "c68c00647daa5787",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/2555863a-8053-4731-8142-49c49bde1e80/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 91570,
+      "mtime_hint_min": 1785511048,
+      "mtime_hint_max": 1785511048
+    },
+    {
+      "id": "41a6b0fdfd041ac5",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/265a57e5-2fee-4fe2-ae66-d2dc25b0fbe2",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 20876,
+      "mtime_hint_min": 1790483936,
+      "mtime_hint_max": 1790483936
+    },
+    {
+      "id": "fa890266bf1e64c5",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/265a57e5-2fee-4fe2-ae66-d2dc25b0fbe2/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 697255,
+      "mtime_hint_min": 1790486641,
+      "mtime_hint_max": 1790486641
+    },
+    {
+      "id": "1adb54b4c85a88ed",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/265a57e5-2fee-4fe2-ae66-d2dc25b0fbe2/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1829,
+      "mtime_hint_min": 1790483964,
+      "mtime_hint_max": 1790483967
+    },
+    {
+      "id": "7e6f81efae5bbb45",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/29618b8b-832a-4e2b-a019-2f08537086db/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 74985,
+      "mtime_hint_min": 1786535158,
+      "mtime_hint_max": 1786535158
+    },
+    {
+      "id": "0e4e58b7e43ba7b8",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/29618b8b-832a-4e2b-a019-2f08537086db/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1283,
+      "mtime_hint_min": 1786535068,
+      "mtime_hint_max": 1786535068
+    },
+    {
+      "id": "6f905b38950fe669",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/2c01b3a0-81aa-4e85-9b5b-6687008464d4/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1002053,
+      "mtime_hint_min": 1791354864,
+      "mtime_hint_max": 1791354864
+    },
+    {
+      "id": "c90c6e164f232224",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/2c01b3a0-81aa-4e85-9b5b-6687008464d4/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 8
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 42359,
+      "mtime_hint_min": 1791353914,
+      "mtime_hint_max": 1791354788
+    },
+    {
+      "id": "dea65a171da8711d",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/2c539cdb-8746-4c91-bc6a-511e10e89ce0",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 913672,
+      "mtime_hint_min": 1789619093,
+      "mtime_hint_max": 1789626757
+    },
+    {
+      "id": "24ee1708de66c6f2",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/2c539cdb-8746-4c91-bc6a-511e10e89ce0/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2837970,
+      "mtime_hint_min": 1789627240,
+      "mtime_hint_max": 1789627240
+    },
+    {
+      "id": "4b44dd73e7113d2d",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/2c539cdb-8746-4c91-bc6a-511e10e89ce0/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 9
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 35563,
+      "mtime_hint_min": 1789613938,
+      "mtime_hint_max": 1789627165
+    },
+    {
+      "id": "b81f5440749e3f39",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/2c539cdb-8746-4c91-bc6a-511e10e89ce0/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 41
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 61755,
+      "mtime_hint_min": 1789614165,
+      "mtime_hint_max": 1789626701
+    },
+    {
+      "id": "035e67e927844de7",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/2d7635e0-4c6e-4c87-a510-1adedf8d61d6/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1724234,
+      "mtime_hint_min": 1789455664,
+      "mtime_hint_max": 1789455664
+    },
+    {
+      "id": "91a651087ea8e9bb",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/2d7635e0-4c6e-4c87-a510-1adedf8d61d6/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 22
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 123795,
+      "mtime_hint_min": 1789452358,
+      "mtime_hint_max": 1789455659
+    },
+    {
+      "id": "b5d8d9957aec2f0c",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/324679e8-a6d7-4f16-bbbd-1cf17ddbe23e",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4886,
+      "mtime_hint_min": 1786115209,
+      "mtime_hint_max": 1786115209
+    },
+    {
+      "id": "959a59f653088779",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/324679e8-a6d7-4f16-bbbd-1cf17ddbe23e/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 694971,
+      "mtime_hint_min": 1786115660,
+      "mtime_hint_max": 1786115660
+    },
+    {
+      "id": "ee50f25379f339fd",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/324679e8-a6d7-4f16-bbbd-1cf17ddbe23e/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 12989,
+      "mtime_hint_min": 1786115349,
+      "mtime_hint_max": 1786115514
+    },
+    {
+      "id": "0c435583b9d98618",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/324679e8-a6d7-4f16-bbbd-1cf17ddbe23e/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1669,
+      "mtime_hint_min": 1786115490,
+      "mtime_hint_max": 1786115498
+    },
+    {
+      "id": "8c4ebbeff023310b",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/32fd9d1b-892e-46dc-bfa9-c66b78c4cd55",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 103959,
+      "mtime_hint_min": 1788986108,
+      "mtime_hint_max": 1788986982
+    },
+    {
+      "id": "7e56564458d788d7",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/32fd9d1b-892e-46dc-bfa9-c66b78c4cd55/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1826242,
+      "mtime_hint_min": 1788987302,
+      "mtime_hint_max": 1788987302
+    },
+    {
+      "id": "909f6f0eaa275534",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/32fd9d1b-892e-46dc-bfa9-c66b78c4cd55/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 10
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 15599,
+      "mtime_hint_min": 1788984288,
+      "mtime_hint_max": 1788987234
+    },
+    {
+      "id": "31aa59fa2642d8ef",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/32fd9d1b-892e-46dc-bfa9-c66b78c4cd55/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 20
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 78572,
+      "mtime_hint_min": 1788984204,
+      "mtime_hint_max": 1788987285
+    },
+    {
+      "id": "06cdc28d9ec7ea64",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/33668440-269a-4ace-8129-99de0513e0f6",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 13
+      },
+      "marker_files_direct": 2,
+      "bytes_direct": 135361,
+      "mtime_hint_min": 1786357237,
+      "mtime_hint_max": 1786358382
+    },
+    {
+      "id": "866bf5951eda1b29",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/33668440-269a-4ace-8129-99de0513e0f6/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 670986,
+      "mtime_hint_min": 1786365002,
+      "mtime_hint_max": 1786365002
+    },
+    {
+      "id": "9d1bf4052e0e5b74",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/33668440-269a-4ace-8129-99de0513e0f6/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 7
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 80755,
+      "mtime_hint_min": 1786356955,
+      "mtime_hint_max": 1786358282
+    },
+    {
+      "id": "c7698595d9b9811d",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/35a4146f-9f65-4c26-ab77-5b919b1af71f/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3936,
+      "mtime_hint_min": 1786107160,
+      "mtime_hint_max": 1786107160
+    },
+    {
+      "id": "ca863c7ce4a5efbb",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/3967b146-f50a-4d13-891f-37f189f219c5",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 9384,
+      "mtime_hint_min": 1784615545,
+      "mtime_hint_max": 1784615545
+    },
+    {
+      "id": "8ed26e7998717860",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/3967b146-f50a-4d13-891f-37f189f219c5/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 267860,
+      "mtime_hint_min": 1784615814,
+      "mtime_hint_max": 1784615814
+    },
+    {
+      "id": "4111a4fdfb6a9870",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/3da71cdb-370c-4473-abd8-d56e8018e941/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 272871,
+      "mtime_hint_min": 1790488073,
+      "mtime_hint_max": 1790488073
+    },
+    {
+      "id": "ca9ac7aa9f66f019",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/3da71cdb-370c-4473-abd8-d56e8018e941/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 26819,
+      "mtime_hint_min": 1790487779,
+      "mtime_hint_max": 1790488071
+    },
+    {
+      "id": "ae9db1f68b34a06a",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/3e4437ce-5a32-4d59-9c80-df0713826b30/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1974595,
+      "mtime_hint_min": 1789433787,
+      "mtime_hint_max": 1789433787
+    },
+    {
+      "id": "24745114f44d607e",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/3e4437ce-5a32-4d59-9c80-df0713826b30/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 9
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 24993,
+      "mtime_hint_min": 1789314574,
+      "mtime_hint_max": 1789431904
+    },
+    {
+      "id": "32f96c2ff03a9b1c",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/3e4437ce-5a32-4d59-9c80-df0713826b30/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 31
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 96128,
+      "mtime_hint_min": 1789314482,
+      "mtime_hint_max": 1789433519
+    },
+    {
+      "id": "2bea11c9f678bd16",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/3e8e98d6-de5e-4908-acc4-a82fe201c178",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 46433,
+      "mtime_hint_min": 1788761545,
+      "mtime_hint_max": 1788766870
+    },
+    {
+      "id": "209163b27ccb0ba2",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/3e8e98d6-de5e-4908-acc4-a82fe201c178/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2956080,
+      "mtime_hint_min": 1788768990,
+      "mtime_hint_max": 1788768990
+    },
+    {
+      "id": "663f8fccfbb0c01b",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/3e8e98d6-de5e-4908-acc4-a82fe201c178/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 11
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 237194,
+      "mtime_hint_min": 1788760180,
+      "mtime_hint_max": 1788765571
+    },
+    {
+      "id": "18e5adaf655e906d",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/3e8e98d6-de5e-4908-acc4-a82fe201c178/.system_generated/subagents",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 903,
+      "mtime_hint_min": 1791348666,
+      "mtime_hint_max": 1791348666
+    },
+    {
+      "id": "19f7732c78788636",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/3e8e98d6-de5e-4908-acc4-a82fe201c178/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 10669,
+      "mtime_hint_min": 1788768970,
+      "mtime_hint_max": 1788768982
+    },
+    {
+      "id": "3054e33913620bd2",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/3f470835-c686-454d-b0c4-73f4dcdff38b/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 353395,
+      "mtime_hint_min": 1786358156,
+      "mtime_hint_max": 1786358156
+    },
+    {
+      "id": "bf6d16eb773d0d92",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/3f470835-c686-454d-b0c4-73f4dcdff38b/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 20588,
+      "mtime_hint_min": 1786358146,
+      "mtime_hint_max": 1786358146
+    },
+    {
+      "id": "e6e1211efe67d695",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/40dd4962-616e-41c4-b554-879cfac90d78",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 8928,
+      "mtime_hint_min": 1789303064,
+      "mtime_hint_max": 1789303150
+    },
+    {
+      "id": "242af5b7f144655a",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/40dd4962-616e-41c4-b554-879cfac90d78/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 810701,
+      "mtime_hint_min": 1789303497,
+      "mtime_hint_max": 1789303497
+    },
+    {
+      "id": "f619039b131f28c8",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/40dd4962-616e-41c4-b554-879cfac90d78/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 8
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 20420,
+      "mtime_hint_min": 1789301725,
+      "mtime_hint_max": 1789303496
+    },
+    {
+      "id": "dbe4df70cfbc3fa3",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/427bf7ef-df7b-4efc-9c3c-ccee35dbc111/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 39480,
+      "mtime_hint_min": 1789439607,
+      "mtime_hint_max": 1789439607
+    },
+    {
+      "id": "8c391e37776548c2",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/493f2e8f-33f9-485e-b30b-970c4809ab72/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 31096,
+      "mtime_hint_min": 1789017899,
+      "mtime_hint_max": 1789017899
+    },
+    {
+      "id": "32f5e11631d8490d",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/4a6df596-91b9-4447-8fb6-05be3690aed9",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 10289,
+      "mtime_hint_min": 1786356097,
+      "mtime_hint_max": 1786356097
+    },
+    {
+      "id": "3568a59657681be2",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/4a6df596-91b9-4447-8fb6-05be3690aed9/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 207570,
+      "mtime_hint_min": 1786356103,
+      "mtime_hint_max": 1786356103
+    },
+    {
+      "id": "0f1e2978e74ec007",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/4b06b5c2-c5fb-4521-9d23-3d4ae180a050/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 392267,
+      "mtime_hint_min": 1786358275,
+      "mtime_hint_max": 1786358275
+    },
+    {
+      "id": "6767e193ac72deb8",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/4b06b5c2-c5fb-4521-9d23-3d4ae180a050/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 17282,
+      "mtime_hint_min": 1786358261,
+      "mtime_hint_max": 1786358261
+    },
+    {
+      "id": "a4e67cd944c80c98",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/4b4bf4b4-5a28-4dbd-90c4-b80afbaa2986",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 18395,
+      "mtime_hint_min": 1790420354,
+      "mtime_hint_max": 1791448627
+    },
+    {
+      "id": "925d6ce0e7befd16",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/4b4bf4b4-5a28-4dbd-90c4-b80afbaa2986/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2941650,
+      "mtime_hint_min": 1791448639,
+      "mtime_hint_max": 1791448639
+    },
+    {
+      "id": "7dc0907be2b20640",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/4b4bf4b4-5a28-4dbd-90c4-b80afbaa2986/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 19
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 50562,
+      "mtime_hint_min": 1790397429,
+      "mtime_hint_max": 1791448553
+    },
+    {
+      "id": "da0ceddc0670af86",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/4f6d957d-10e3-4ca5-9890-739be9b45da9",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 10517,
+      "mtime_hint_min": 1783189918,
+      "mtime_hint_max": 1783190435
+    },
+    {
+      "id": "1d4801e5e1ee265d",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/4f6d957d-10e3-4ca5-9890-739be9b45da9/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 319741,
+      "mtime_hint_min": 1783190943,
+      "mtime_hint_max": 1783190943
+    },
+    {
+      "id": "f6808991c7ff62e0",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/4f6d957d-10e3-4ca5-9890-739be9b45da9/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4723,
+      "mtime_hint_min": 1783190153,
+      "mtime_hint_max": 1783190619
+    },
+    {
+      "id": "c726774cf11b01ff",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/545da479-5322-4aa9-9edd-db609377d49b/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 604484,
+      "mtime_hint_min": 1788765490,
+      "mtime_hint_max": 1788765490
+    },
+    {
+      "id": "2b60ca483ef6d316",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/556e4d3b-249c-4cfb-b82c-ab69834220df",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 40651,
+      "mtime_hint_min": 1790154682,
+      "mtime_hint_max": 1790155278
+    },
+    {
+      "id": "bf3cc9166857a31c",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/556e4d3b-249c-4cfb-b82c-ab69834220df/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 406342,
+      "mtime_hint_min": 1790157440,
+      "mtime_hint_max": 1790157440
+    },
+    {
+      "id": "fe1fd7b4e290f16c",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/556e4d3b-249c-4cfb-b82c-ab69834220df/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 7
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 199149,
+      "mtime_hint_min": 1790153827,
+      "mtime_hint_max": 1790154542
+    },
+    {
+      "id": "a2ce02edb76b31a4",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/556e4d3b-249c-4cfb-b82c-ab69834220df/.system_generated/subagents",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 579,
+      "mtime_hint_min": 1790154542,
+      "mtime_hint_max": 1790154542
+    },
+    {
+      "id": "84e7a03bdc96e317",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/56fa31bf-6d70-4897-80b3-ca7b6c0876c9",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 78996748,
+      "mtime_hint_min": 1788476003,
+      "mtime_hint_max": 1788734543
+    },
+    {
+      "id": "cccaaa62cbec4424",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/56fa31bf-6d70-4897-80b3-ca7b6c0876c9/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 12027695,
+      "mtime_hint_min": 1788796740,
+      "mtime_hint_max": 1788796740
+    },
+    {
+      "id": "1f644251c85e4247",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/56fa31bf-6d70-4897-80b3-ca7b6c0876c9/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 136
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 601417,
+      "mtime_hint_min": 1788475938,
+      "mtime_hint_max": 1788796725
+    },
+    {
+      "id": "75cf2feb415501da",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/56fa31bf-6d70-4897-80b3-ca7b6c0876c9/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 16
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 251072,
+      "mtime_hint_min": 1788513332,
+      "mtime_hint_max": 1788776887
+    },
+    {
+      "id": "975fe41234415e61",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/58464c92-8a2e-4ca7-bf5d-a6992dfd19b0/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 384191,
+      "mtime_hint_min": 1783078956,
+      "mtime_hint_max": 1783078956
+    },
+    {
+      "id": "320f52fc5abf31e0",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/5981c3c8-3452-4206-b3c6-80f2350d4ab5",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 19201,
+      "mtime_hint_min": 1789209440,
+      "mtime_hint_max": 1789209963
+    },
+    {
+      "id": "322f7268a3280c57",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/5981c3c8-3452-4206-b3c6-80f2350d4ab5/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1116748,
+      "mtime_hint_min": 1789210606,
+      "mtime_hint_max": 1789210606
+    },
+    {
+      "id": "d90467321df9ebd7",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/5981c3c8-3452-4206-b3c6-80f2350d4ab5/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4363,
+      "mtime_hint_min": 1789209767,
+      "mtime_hint_max": 1789209823
+    },
+    {
+      "id": "2719e1cffe635447",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/5983241f-4b08-44da-849f-db434939239c",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 24085,
+      "mtime_hint_min": 1790148794,
+      "mtime_hint_max": 1790149169
+    },
+    {
+      "id": "a91d381b11e2e914",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/5983241f-4b08-44da-849f-db434939239c/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3335596,
+      "mtime_hint_min": 1790150518,
+      "mtime_hint_max": 1790150518
+    },
+    {
+      "id": "16dfd17137891b68",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/5983241f-4b08-44da-849f-db434939239c/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 19
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 76853,
+      "mtime_hint_min": 1790141583,
+      "mtime_hint_max": 1790150489
+    },
+    {
+      "id": "e94d84f3add83bb5",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/5da82d3b-a3aa-4303-be59-913d6c275991",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 176504,
+      "mtime_hint_min": 1783777664,
+      "mtime_hint_max": 1783777861
+    },
+    {
+      "id": "96d5f0f5c278a4e3",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/5da82d3b-a3aa-4303-be59-913d6c275991/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 138804,
+      "mtime_hint_min": 1783777869,
+      "mtime_hint_max": 1783777869
+    },
+    {
+      "id": "cdc2d52ffa01ccc7",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/5e370b44-1621-4781-a4a5-a770a602b07f",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 12929,
+      "mtime_hint_min": 1791349481,
+      "mtime_hint_max": 1791349481
+    },
+    {
+      "id": "6bf15d323dc3d20f",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/5e370b44-1621-4781-a4a5-a770a602b07f/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 628217,
+      "mtime_hint_min": 1791353152,
+      "mtime_hint_max": 1791353152
+    },
+    {
+      "id": "225877d049615911",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/5e370b44-1621-4781-a4a5-a770a602b07f/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 20
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 50205,
+      "mtime_hint_min": 1791348884,
+      "mtime_hint_max": 1791353099
+    },
+    {
+      "id": "a9fffed15385d945",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/5e6b17d0-ee69-4afa-9128-d2c0e8849deb/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 316476,
+      "mtime_hint_min": 1788944483,
+      "mtime_hint_max": 1788944483
+    },
+    {
+      "id": "a55c0cd3e3808ba8",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/5e6b17d0-ee69-4afa-9128-d2c0e8849deb/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 7158,
+      "mtime_hint_min": 1788943340,
+      "mtime_hint_max": 1788944338
+    },
+    {
+      "id": "cca101d9d8bbe520",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/61257b5a-86c5-4116-842f-bfc6a52b02dd",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 5890,
+      "mtime_hint_min": 1789457243,
+      "mtime_hint_max": 1789464236
+    },
+    {
+      "id": "6764e71d658833f6",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/61257b5a-86c5-4116-842f-bfc6a52b02dd/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1083848,
+      "mtime_hint_min": 1789464267,
+      "mtime_hint_max": 1789464267
+    },
+    {
+      "id": "7beab5034b4a8ca2",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/61257b5a-86c5-4116-842f-bfc6a52b02dd/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 6
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 30695,
+      "mtime_hint_min": 1789457048,
+      "mtime_hint_max": 1789458357
+    },
+    {
+      "id": "641b60a6fa5ad85c",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/61257b5a-86c5-4116-842f-bfc6a52b02dd/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 12
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 111095,
+      "mtime_hint_min": 1789457284,
+      "mtime_hint_max": 1789464150
+    },
+    {
+      "id": "fd149480b43a152a",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/6ae79f20-6d05-41b3-bf92-7204dc1df91a",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1702166,
+      "mtime_hint_min": 1789306850,
+      "mtime_hint_max": 1789313654
+    },
+    {
+      "id": "df84876a59dde953",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/6ae79f20-6d05-41b3-bf92-7204dc1df91a/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2528700,
+      "mtime_hint_min": 1789314023,
+      "mtime_hint_max": 1789314023
+    },
+    {
+      "id": "9a72e65f1538ca58",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/6ae79f20-6d05-41b3-bf92-7204dc1df91a/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 6
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 48535,
+      "mtime_hint_min": 1789304883,
+      "mtime_hint_max": 1789313485
+    },
+    {
+      "id": "386dd0166ee22d50",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/6ae79f20-6d05-41b3-bf92-7204dc1df91a/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 29393,
+      "mtime_hint_min": 1789305022,
+      "mtime_hint_max": 1789313556
+    },
+    {
+      "id": "1c2444fec8e26bad",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/6c513ce8-5439-4c50-8189-f9b800ba0b1b",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 7161,
+      "mtime_hint_min": 1789438614,
+      "mtime_hint_max": 1789439557
+    },
+    {
+      "id": "14da84de210094a6",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/6c513ce8-5439-4c50-8189-f9b800ba0b1b/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 861292,
+      "mtime_hint_min": 1789439662,
+      "mtime_hint_max": 1789439662
+    },
+    {
+      "id": "610018133bbf45f9",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/6c513ce8-5439-4c50-8189-f9b800ba0b1b/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2433,
+      "mtime_hint_min": 1789439598,
+      "mtime_hint_max": 1789439612
+    },
+    {
+      "id": "609efbc1d197678d",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/6c8e2cc5-51a0-4f4e-9c98-b18ea49f5734/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 798307,
+      "mtime_hint_min": 1790153991,
+      "mtime_hint_max": 1790153991
+    },
+    {
+      "id": "234e2cc5c066491b",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/6e3f9f3c-8743-4f6d-a249-9ad7e0455342",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 16305,
+      "mtime_hint_min": 1786156340,
+      "mtime_hint_max": 1786157414
+    },
+    {
+      "id": "dfea8b2c9b78ecc5",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/6e3f9f3c-8743-4f6d-a249-9ad7e0455342/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 798695,
+      "mtime_hint_min": 1786157417,
+      "mtime_hint_max": 1786157417
+    },
+    {
+      "id": "e7498e849af2b322",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/6e3f9f3c-8743-4f6d-a249-9ad7e0455342/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 9705,
+      "mtime_hint_min": 1786157410,
+      "mtime_hint_max": 1786157410
+    },
+    {
+      "id": "c6c96cc7d8940407",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/71a1b5da-704d-4433-a139-56daf6cb9216",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 14249,
+      "mtime_hint_min": 1786355871,
+      "mtime_hint_max": 1786355871
+    },
+    {
+      "id": "431ffa35c1a67db6",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/71a1b5da-704d-4433-a139-56daf6cb9216/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 486932,
+      "mtime_hint_min": 1786356326,
+      "mtime_hint_max": 1786356326
+    },
+    {
+      "id": "bf8a7f0cbe27c0e0",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/71a1b5da-704d-4433-a139-56daf6cb9216/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 48582,
+      "mtime_hint_min": 1786355850,
+      "mtime_hint_max": 1786356324
+    },
+    {
+      "id": "29f54c0fba77c9d9",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/73be73bd-174b-4433-b94e-e09f66149609/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 648155,
+      "mtime_hint_min": 1788946327,
+      "mtime_hint_max": 1788946327
+    },
+    {
+      "id": "25ed869fd1605182",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/73be73bd-174b-4433-b94e-e09f66149609/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 6
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 19335,
+      "mtime_hint_min": 1788945588,
+      "mtime_hint_max": 1788945982
+    },
+    {
+      "id": "f9b6492503297a68",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/77ff740b-27d5-4aa9-a72f-ac61acd26079",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 11077,
+      "mtime_hint_min": 1789301804,
+      "mtime_hint_max": 1789302751
+    },
+    {
+      "id": "bfe11b6706145e0a",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/77ff740b-27d5-4aa9-a72f-ac61acd26079/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1088685,
+      "mtime_hint_min": 1789305238,
+      "mtime_hint_max": 1789305238
+    },
+    {
+      "id": "45dd9abb0e0b23dd",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/77ff740b-27d5-4aa9-a72f-ac61acd26079/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1080,
+      "mtime_hint_min": 1789301619,
+      "mtime_hint_max": 1789301619
+    },
+    {
+      "id": "449d2cd2ca486d09",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/7e0c4f33-4c7b-4f95-9bd2-d54b94d31fc0/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 433889,
+      "mtime_hint_min": 1789505773,
+      "mtime_hint_max": 1789505773
+    },
+    {
+      "id": "cf228e817f225638",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/81d957e1-cc79-4457-94f4-0cbdd51afe1a",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 250345,
+      "mtime_hint_min": 1790158999,
+      "mtime_hint_max": 1790171785
+    },
+    {
+      "id": "7d113666875be823",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/81d957e1-cc79-4457-94f4-0cbdd51afe1a/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4933956,
+      "mtime_hint_min": 1790171796,
+      "mtime_hint_max": 1790171796
+    },
+    {
+      "id": "135f94656cdc1a40",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/81d957e1-cc79-4457-94f4-0cbdd51afe1a/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 17
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 58303,
+      "mtime_hint_min": 1790150636,
+      "mtime_hint_max": 1790171691
+    },
+    {
+      "id": "f12508b4d7fc5bf9",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/830e4b84-0fd1-4b75-868a-17b9f81ba2c0/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 9770,
+      "mtime_hint_min": 1788987448,
+      "mtime_hint_max": 1788987448
+    },
+    {
+      "id": "dcefbf9833b3cce1",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/8478ba60-8da3-40d9-9864-ed9ff153fda2/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 538442,
+      "mtime_hint_min": 1788765489,
+      "mtime_hint_max": 1788765489
+    },
+    {
+      "id": "84ddfdbd22cd8f35",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/87f5641a-a181-4ec9-b147-6d7c76818a5b/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 334435,
+      "mtime_hint_min": 1786358129,
+      "mtime_hint_max": 1786358129
+    },
+    {
+      "id": "2bed539a4298d66d",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/87f5641a-a181-4ec9-b147-6d7c76818a5b/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 17218,
+      "mtime_hint_min": 1786358117,
+      "mtime_hint_max": 1786358117
+    },
+    {
+      "id": "7f01134c185b948e",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/8bd2885f-1c03-436a-b64e-c1a66ccd845b/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 391724,
+      "mtime_hint_min": 1788765368,
+      "mtime_hint_max": 1788765368
+    },
+    {
+      "id": "401d7bed525d7643",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/8ec7c9df-c4ad-44da-b22d-10ab888257f4",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 13171,
+      "mtime_hint_min": 1788487943,
+      "mtime_hint_max": 1788489347
+    },
+    {
+      "id": "785ef7e0b70d2af2",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/8ec7c9df-c4ad-44da-b22d-10ab888257f4/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2274885,
+      "mtime_hint_min": 1788489348,
+      "mtime_hint_max": 1788489348
+    },
+    {
+      "id": "f20822884a9b4f87",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/8ec7c9df-c4ad-44da-b22d-10ab888257f4/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 9
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 36354,
+      "mtime_hint_min": 1788482068,
+      "mtime_hint_max": 1788484448
+    },
+    {
+      "id": "e5f33253fff67cc3",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/8ec7c9df-c4ad-44da-b22d-10ab888257f4/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 18
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3009597,
+      "mtime_hint_min": 1788479266,
+      "mtime_hint_max": 1788489196
+    },
+    {
+      "id": "7016d13479a61e4b",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/8fe2bfdc-9b2e-4b2e-b88f-070907a7a712/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 256763,
+      "mtime_hint_min": 1783767590,
+      "mtime_hint_max": 1783767590
+    },
+    {
+      "id": "f14971a21f9318fb",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/91856977-68d7-4296-bc29-678bc068ec4e",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 7960,
+      "mtime_hint_min": 1783767179,
+      "mtime_hint_max": 1783767179
+    },
+    {
+      "id": "514168afd8fa048d",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/91856977-68d7-4296-bc29-678bc068ec4e/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 440557,
+      "mtime_hint_min": 1783767643,
+      "mtime_hint_max": 1783767643
+    },
+    {
+      "id": "531bfd678c879605",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/91856977-68d7-4296-bc29-678bc068ec4e/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 11308,
+      "mtime_hint_min": 1783767078,
+      "mtime_hint_max": 1783767591
+    },
+    {
+      "id": "53e91b6bf9b288cf",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/92033e0f-4c0f-44ac-b08b-4e55e60a37e9/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 6402,
+      "mtime_hint_min": 1789439598,
+      "mtime_hint_max": 1789439598
+    },
+    {
+      "id": "b8ff9ec6cf87413c",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/98e8dff7-a5d8-425c-ade1-52f9dbeb5647",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 11394,
+      "mtime_hint_min": 1790151540,
+      "mtime_hint_max": 1790151540
+    },
+    {
+      "id": "159ebfa6d91e99b8",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/98e8dff7-a5d8-425c-ade1-52f9dbeb5647/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 198900,
+      "mtime_hint_min": 1790151552,
+      "mtime_hint_max": 1790151552
+    },
+    {
+      "id": "394fe1989f7e80c6",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/9a1167c4-a3d2-462c-bf0a-e03164c22fa6/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 144109,
+      "mtime_hint_min": 1786532264,
+      "mtime_hint_max": 1786532264
+    },
+    {
+      "id": "21f3932ffff29029",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/9ce4d2ff-aad3-4bfe-b23a-425875629192/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1485,
+      "mtime_hint_min": 1788944726,
+      "mtime_hint_max": 1788944726
+    },
+    {
+      "id": "cd3610518df98e55",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/9e958b0a-62b7-4519-96d1-f15c987bf717",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 48361,
+      "mtime_hint_min": 1786356287,
+      "mtime_hint_max": 1786358464
+    },
+    {
+      "id": "26fadebde453065e",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/9e958b0a-62b7-4519-96d1-f15c987bf717/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 937296,
+      "mtime_hint_min": 1786359682,
+      "mtime_hint_max": 1786359682
+    },
+    {
+      "id": "6533c4776c730825",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/9e958b0a-62b7-4519-96d1-f15c987bf717/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 9
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 87579,
+      "mtime_hint_min": 1786355357,
+      "mtime_hint_max": 1786356326
+    },
+    {
+      "id": "87126a2a1627dd27",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/9e958b0a-62b7-4519-96d1-f15c987bf717/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 25
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 6174391,
+      "mtime_hint_min": 1786355374,
+      "mtime_hint_max": 1786359666
+    },
+    {
+      "id": "fcb4f401080d6c9e",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/9fd2a65f-b9f3-423e-9649-dc3023b673a2/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 21529,
+      "mtime_hint_min": 1784359470,
+      "mtime_hint_max": 1784359470
+    },
+    {
+      "id": "72dee1b425e3de64",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/a3077da4-2f82-4374-86e7-e22002f68819",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 13827,
+      "mtime_hint_min": 1789649928,
+      "mtime_hint_max": 1789650994
+    },
+    {
+      "id": "a8e76da5fd82fe3f",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/a3077da4-2f82-4374-86e7-e22002f68819/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1526238,
+      "mtime_hint_min": 1789651364,
+      "mtime_hint_max": 1789651364
+    },
+    {
+      "id": "7a5a40724f2f38d4",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/a3077da4-2f82-4374-86e7-e22002f68819/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 8
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 37987,
+      "mtime_hint_min": 1789649642,
+      "mtime_hint_max": 1789651230
+    },
+    {
+      "id": "bf0793e721fe24b4",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/a3077da4-2f82-4374-86e7-e22002f68819/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 9173,
+      "mtime_hint_min": 1789650504,
+      "mtime_hint_max": 1789650504
+    },
+    {
+      "id": "a11aab2737e242d0",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/a32f942e-a559-4e39-bf69-da8ebd19b565/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2850,
+      "mtime_hint_min": 1789439598,
+      "mtime_hint_max": 1789439598
+    },
+    {
+      "id": "77023701465c3e6a",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/a59df076-df1a-4ec2-8a8f-8257d095354c/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 850564,
+      "mtime_hint_min": 1789641245,
+      "mtime_hint_max": 1789641245
+    },
+    {
+      "id": "0e4caf1da679e21e",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/a59df076-df1a-4ec2-8a8f-8257d095354c/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3618,
+      "mtime_hint_min": 1789641197,
+      "mtime_hint_max": 1789641203
+    },
+    {
+      "id": "754d2be14c32d9bc",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/a7696d01-fa17-44d3-bfb9-b9be392196d3",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 9422,
+      "mtime_hint_min": 1789663272,
+      "mtime_hint_max": 1789688768
+    },
+    {
+      "id": "d11600dd3fb12dae",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/a7696d01-fa17-44d3-bfb9-b9be392196d3/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 9223524,
+      "mtime_hint_min": 1789691856,
+      "mtime_hint_max": 1789691856
+    },
+    {
+      "id": "52cb782f56423a75",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/a7696d01-fa17-44d3-bfb9-b9be392196d3/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 43
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 156908,
+      "mtime_hint_min": 1789657363,
+      "mtime_hint_max": 1789691943
+    },
+    {
+      "id": "6d7f83a92df586a9",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/a7696d01-fa17-44d3-bfb9-b9be392196d3/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 69
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 400753,
+      "mtime_hint_min": 1789657456,
+      "mtime_hint_max": 1789690881
+    },
+    {
+      "id": "94fa7f5f7c4ee402",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/a7edd5e7-2ff5-4fa6-ba08-f27acfa4abaa/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 396888,
+      "mtime_hint_min": 1786108931,
+      "mtime_hint_max": 1786108931
+    },
+    {
+      "id": "aa7400d8187762fb",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/a7f78479-99d2-4691-9d62-89633856a8ad/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 90759,
+      "mtime_hint_min": 1783779498,
+      "mtime_hint_max": 1783779498
+    },
+    {
+      "id": "ad0fed05d67ad4c5",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/a7f78479-99d2-4691-9d62-89633856a8ad/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 6
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 25078,
+      "mtime_hint_min": 1783779197,
+      "mtime_hint_max": 1783779454
+    },
+    {
+      "id": "481ee4ed09e910bd",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/b57217d6-7cd9-4053-8571-a86776ddecfc/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 525326,
+      "mtime_hint_min": 1790153912,
+      "mtime_hint_max": 1790153912
+    },
+    {
+      "id": "fc23e805b27fc0d4",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/b70588d7-9fed-453d-a7fe-6a5982e79981",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 7
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 37078,
+      "mtime_hint_min": 1786107576,
+      "mtime_hint_max": 1786112673
+    },
+    {
+      "id": "06532e7729d00e84",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/b70588d7-9fed-453d-a7fe-6a5982e79981/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2087917,
+      "mtime_hint_min": 1786112676,
+      "mtime_hint_max": 1786112676
+    },
+    {
+      "id": "b99c841e645aab21",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/b70588d7-9fed-453d-a7fe-6a5982e79981/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 34353,
+      "mtime_hint_min": 1786107160,
+      "mtime_hint_max": 1786111049
+    },
+    {
+      "id": "9d6459b13f62c44c",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/b793e8a4-d82e-4037-be24-b8ff2765b018/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1535279,
+      "mtime_hint_min": 1790140367,
+      "mtime_hint_max": 1790140367
+    },
+    {
+      "id": "6c17f716fd6d7c3a",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/b793e8a4-d82e-4037-be24-b8ff2765b018/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 8
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 12587,
+      "mtime_hint_min": 1790082271,
+      "mtime_hint_max": 1790140318
+    },
+    {
+      "id": "a9b585548a3c4e07",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/ba313242-a6ce-45fd-8db6-d2d06fc81f2e",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 12473,
+      "mtime_hint_min": 1789815913,
+      "mtime_hint_max": 1789816103
+    },
+    {
+      "id": "804d0e492f41ff13",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/ba313242-a6ce-45fd-8db6-d2d06fc81f2e/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1817385,
+      "mtime_hint_min": 1789818434,
+      "mtime_hint_max": 1789818434
+    },
+    {
+      "id": "0086422c8e9743e2",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/ba313242-a6ce-45fd-8db6-d2d06fc81f2e/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 29409,
+      "mtime_hint_min": 1789813876,
+      "mtime_hint_max": 1789816120
+    },
+    {
+      "id": "f5344b33420eb020",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/ba313242-a6ce-45fd-8db6-d2d06fc81f2e/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1024917,
+      "mtime_hint_min": 1789783188,
+      "mtime_hint_max": 1789814137
+    },
+    {
+      "id": "7fd5594a8f03e63a",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/ba313242-a6ce-45fd-8db6-d2d06fc81f2e/scratch/InfinityInventory",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 305828,
+      "mtime_hint_min": 1775878088,
+      "mtime_hint_max": 1777099552
+    },
+    {
+      "id": "6315293772eaa294",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/ba313242-a6ce-45fd-8db6-d2d06fc81f2e/scratch/Jotunn",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 169814,
+      "mtime_hint_min": 1620508348,
+      "mtime_hint_max": 1775502698
+    },
+    {
+      "id": "c15a418ff7a042d2",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/ba313242-a6ce-45fd-8db6-d2d06fc81f2e/scratch/obj",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 28767,
+      "mtime_hint_min": 1789783260,
+      "mtime_hint_max": 1789783390
+    },
+    {
+      "id": "462b690362772f6a",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/bb7c87f1-bc3c-41ab-9497-f80cfbc227c2/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2976,
+      "mtime_hint_min": 1783580822,
+      "mtime_hint_max": 1783580822
+    },
+    {
+      "id": "32c65c888ad5aa68",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/bf2f7534-1af7-46ac-be5c-fe82f080c739/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1738693,
+      "mtime_hint_min": 1788515495,
+      "mtime_hint_max": 1788515495
+    },
+    {
+      "id": "4aad982eb0f93588",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/bf2f7534-1af7-46ac-be5c-fe82f080c739/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 7
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 38532,
+      "mtime_hint_min": 1788511173,
+      "mtime_hint_max": 1788515318
+    },
+    {
+      "id": "2985a6d34de9e90d",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/c4af7848-5784-465d-95ab-59a19f867c36/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 456122,
+      "mtime_hint_min": 1784352749,
+      "mtime_hint_max": 1784352749
+    },
+    {
+      "id": "f2bbf4fdf193ba44",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/c4af7848-5784-465d-95ab-59a19f867c36/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 13165,
+      "mtime_hint_min": 1784342523,
+      "mtime_hint_max": 1784351001
+    },
+    {
+      "id": "96fe53ce6d707c94",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/c59d4564-4cf9-4889-b79c-5eebac73c95a/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 245475,
+      "mtime_hint_min": 1789597635,
+      "mtime_hint_max": 1789597635
+    },
+    {
+      "id": "a1f5322f633d2996",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/c59d4564-4cf9-4889-b79c-5eebac73c95a/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 11696,
+      "mtime_hint_min": 1789594573,
+      "mtime_hint_max": 1789597629
+    },
+    {
+      "id": "35c251a5fcc2be19",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/c59d4564-4cf9-4889-b79c-5eebac73c95a/task-51/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 213,
+      "mtime_hint_min": 1789594562,
+      "mtime_hint_max": 1789594562
+    },
+    {
+      "id": "3ce00d09633fa85c",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/c63133fd-7f10-42bc-a83d-cdf8d48caa92",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 777600,
+      "mtime_hint_min": 1789110172,
+      "mtime_hint_max": 1789274821
+    },
+    {
+      "id": "75e46640731ede2e",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/c63133fd-7f10-42bc-a83d-cdf8d48caa92/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 10318162,
+      "mtime_hint_min": 1789275109,
+      "mtime_hint_max": 1789275109
+    },
+    {
+      "id": "1406742dfd6d511b",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/c63133fd-7f10-42bc-a83d-cdf8d48caa92/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 80
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 289024,
+      "mtime_hint_min": 1789110289,
+      "mtime_hint_max": 1789275041
+    },
+    {
+      "id": "8651a6c0ca6a864b",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/c63133fd-7f10-42bc-a83d-cdf8d48caa92/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 18
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 63415,
+      "mtime_hint_min": 1789110259,
+      "mtime_hint_max": 1789193750
+    },
+    {
+      "id": "e543df0524ae10cd",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/c63133fd-7f10-42bc-a83d-cdf8d48caa92/scratch/AchScanner/obj",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 34685,
+      "mtime_hint_min": 1789273530,
+      "mtime_hint_max": 1789273534
+    },
+    {
+      "id": "9e2ce4ce2503640f",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/c63133fd-7f10-42bc-a83d-cdf8d48caa92/scratch/Inspector",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1077,
+      "mtime_hint_min": 1789195904,
+      "mtime_hint_max": 1789197931
+    },
+    {
+      "id": "ac666f4786e00a65",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/c63133fd-7f10-42bc-a83d-cdf8d48caa92/scratch/Inspector/obj",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 87939,
+      "mtime_hint_min": 1789191762,
+      "mtime_hint_max": 1789195904
+    },
+    {
+      "id": "8b64246889387076",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/c8570ebf-a10c-4363-9073-d0746588b759/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 56083,
+      "mtime_hint_min": 1786534988,
+      "mtime_hint_max": 1786534988
+    },
+    {
+      "id": "28fa5146d0746515",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/cc9aa220-d2dd-4539-9b4d-409638c7c26f/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 954483,
+      "mtime_hint_min": 1788987692,
+      "mtime_hint_max": 1788987692
+    },
+    {
+      "id": "b84b010bd7c6d775",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/cc9aa220-d2dd-4539-9b4d-409638c7c26f/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 20915,
+      "mtime_hint_min": 1788987074,
+      "mtime_hint_max": 1788987455
+    },
+    {
+      "id": "9596b0941e51647e",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/cd672b1a-3679-48f9-9c15-b4086566175b/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 88999,
+      "mtime_hint_min": 1788906742,
+      "mtime_hint_max": 1788906742
+    },
+    {
+      "id": "95011fc31f3f3ac5",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/cdb40d19-a8a1-4961-91f9-9fe6819e346d",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 22065,
+      "mtime_hint_min": 1788730517,
+      "mtime_hint_max": 1788945142
+    },
+    {
+      "id": "8f8e2e919e4308ff",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/cdb40d19-a8a1-4961-91f9-9fe6819e346d/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3736797,
+      "mtime_hint_min": 1788945282,
+      "mtime_hint_max": 1788945282
+    },
+    {
+      "id": "d7ae2c5f31a291ce",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/cdb40d19-a8a1-4961-91f9-9fe6819e346d/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 15
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 100170,
+      "mtime_hint_min": 1788490575,
+      "mtime_hint_max": 1788945273
+    },
+    {
+      "id": "96c967c7eb425089",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/cdb40d19-a8a1-4961-91f9-9fe6819e346d/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 23831,
+      "mtime_hint_min": 1788730589,
+      "mtime_hint_max": 1788945070
+    },
+    {
+      "id": "ab9dc32a96cf1a59",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/ce6e3f15-43d7-459b-9ce3-8afe75bb416b/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 261379,
+      "mtime_hint_min": 1788743932,
+      "mtime_hint_max": 1788743932
+    },
+    {
+      "id": "9cb555e146f6af59",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/cf9de4ef-9cfe-4de2-8d29-cb921876991e",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 17
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 117310,
+      "mtime_hint_min": 1788006967,
+      "mtime_hint_max": 1788426971
+    },
+    {
+      "id": "df71a840e4567b97",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/cf9de4ef-9cfe-4de2-8d29-cb921876991e/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1468758,
+      "mtime_hint_min": 1788427040,
+      "mtime_hint_max": 1788427040
+    },
+    {
+      "id": "b6219c25e0109170",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/cf9de4ef-9cfe-4de2-8d29-cb921876991e/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 9
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 52101,
+      "mtime_hint_min": 1788006781,
+      "mtime_hint_max": 1788426961
+    },
+    {
+      "id": "7bb5b57a82d7e653",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/cf9de4ef-9cfe-4de2-8d29-cb921876991e/podcast_debate_series",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 21
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 69087,
+      "mtime_hint_min": 1788036208,
+      "mtime_hint_max": 1788091694
+    },
+    {
+      "id": "81aae97f00ef8f41",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/cf9de4ef-9cfe-4de2-8d29-cb921876991e/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 6
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 9821,
+      "mtime_hint_min": 1788006780,
+      "mtime_hint_max": 1788091687
+    },
+    {
+      "id": "eb93a00372899a74",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/d6719c1e-08aa-4b05-832b-241347f4d3e9/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 108403,
+      "mtime_hint_min": 1790495122,
+      "mtime_hint_max": 1790495122
+    },
+    {
+      "id": "9a75a22d49d112bf",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/d71b0b9f-25d2-4efa-b3e3-3680c6292be9",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 598185,
+      "mtime_hint_min": 1788949552,
+      "mtime_hint_max": 1788950140
+    },
+    {
+      "id": "9990360e393fcd0d",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/d71b0b9f-25d2-4efa-b3e3-3680c6292be9/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 471508,
+      "mtime_hint_min": 1788950153,
+      "mtime_hint_max": 1788950153
+    },
+    {
+      "id": "1edddf54156baba7",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/d71b0b9f-25d2-4efa-b3e3-3680c6292be9/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1216,
+      "mtime_hint_min": 1788949574,
+      "mtime_hint_max": 1788949574
+    },
+    {
+      "id": "bb46975c04a74d26",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/d71b0b9f-25d2-4efa-b3e3-3680c6292be9/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 16438,
+      "mtime_hint_min": 1788949977,
+      "mtime_hint_max": 1788949977
+    },
+    {
+      "id": "47bcfc8261ba9953",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/da1b6168-1dbe-48b8-9f39-f980f63f207e",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 17302,
+      "mtime_hint_min": 1788064329,
+      "mtime_hint_max": 1788064333
+    },
+    {
+      "id": "01abe88eefd7c63c",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/da1b6168-1dbe-48b8-9f39-f980f63f207e/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 631244,
+      "mtime_hint_min": 1788068246,
+      "mtime_hint_max": 1788068246
+    },
+    {
+      "id": "f89f94189a362875",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/da1b6168-1dbe-48b8-9f39-f980f63f207e/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 10065,
+      "mtime_hint_min": 1788040223,
+      "mtime_hint_max": 1788040224
+    },
+    {
+      "id": "99ab84a97cead5ab",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/da1fdf19-4bf4-467b-a644-666936d01b74/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 37953,
+      "mtime_hint_min": 1783085716,
+      "mtime_hint_max": 1783085716
+    },
+    {
+      "id": "3d1cc6112d8c54d0",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/da5ecdb5-b239-4eea-af03-3e7140fd24af/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 82771,
+      "mtime_hint_min": 1789657707,
+      "mtime_hint_max": 1789657707
+    },
+    {
+      "id": "8adb7c700c116c4f",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/e0018837-4c27-464f-b683-79a27914f6fb",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 10218,
+      "mtime_hint_min": 1785503275,
+      "mtime_hint_max": 1785504608
+    },
+    {
+      "id": "045982adb4022927",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/e0018837-4c27-464f-b683-79a27914f6fb/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1151794,
+      "mtime_hint_min": 1785504832,
+      "mtime_hint_max": 1785504832
+    },
+    {
+      "id": "ce68a51d21810099",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/e0018837-4c27-464f-b683-79a27914f6fb/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 703,
+      "mtime_hint_min": 1785504460,
+      "mtime_hint_max": 1785504489
+    },
+    {
+      "id": "1e1d105c29a4dc05",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/e1cb781b-8ce2-4ae5-ad46-a351daa5e2c0/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 212821,
+      "mtime_hint_min": 1789543702,
+      "mtime_hint_max": 1789543702
+    },
+    {
+      "id": "4f296cec5205be7f",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/e594a1c7-228e-400e-b760-8f1ff743ebce/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 190281,
+      "mtime_hint_min": 1789451726,
+      "mtime_hint_max": 1789451726
+    },
+    {
+      "id": "adf63064fa0a192e",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/e594a1c7-228e-400e-b760-8f1ff743ebce/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4266,
+      "mtime_hint_min": 1789451596,
+      "mtime_hint_max": 1789451714
+    },
+    {
+      "id": "0a62ea26306b0409",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/e669c2b8-5fd0-4369-947e-a379f888daa8/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 236572,
+      "mtime_hint_min": 1790139517,
+      "mtime_hint_max": 1790139517
+    },
+    {
+      "id": "9991af75bd1d51a3",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/e669c2b8-5fd0-4369-947e-a379f888daa8/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 9871,
+      "mtime_hint_min": 1790139404,
+      "mtime_hint_max": 1790139487
+    },
+    {
+      "id": "5bf510b991e3f8ce",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/e669c2b8-5fd0-4369-947e-a379f888daa8/scratch/HashFinder/obj",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 46790,
+      "mtime_hint_min": 1790139447,
+      "mtime_hint_max": 1790139452
+    },
+    {
+      "id": "7e3ffe0944d5c6fd",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/e79c4f98-0898-458b-94e8-2449bc387721",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 18432,
+      "mtime_hint_min": 1789531601,
+      "mtime_hint_max": 1789548508
+    },
+    {
+      "id": "d65f3169988f4ddf",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/e79c4f98-0898-458b-94e8-2449bc387721/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4244635,
+      "mtime_hint_min": 1789593318,
+      "mtime_hint_max": 1789593318
+    },
+    {
+      "id": "704e92c21bf2ffbd",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/e79c4f98-0898-458b-94e8-2449bc387721/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 30
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 152271,
+      "mtime_hint_min": 1789531509,
+      "mtime_hint_max": 1789593317
+    },
+    {
+      "id": "61efe829a88c98f4",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/e79c4f98-0898-458b-94e8-2449bc387721/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 11
+      },
+      "marker_files_direct": 2,
+      "bytes_direct": 63744,
+      "mtime_hint_min": 1789531677,
+      "mtime_hint_max": 1789545578
+    },
+    {
+      "id": "a6c27cc3e86826d9",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/ebbae9bb-921f-4fe1-9644-cc74fa2e57bd",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 34311,
+      "mtime_hint_min": 1788517090,
+      "mtime_hint_max": 1788543292
+    },
+    {
+      "id": "c3bc7d0ebf2c1c03",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/ebbae9bb-921f-4fe1-9644-cc74fa2e57bd/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4641794,
+      "mtime_hint_min": 1788544563,
+      "mtime_hint_max": 1788544563
+    },
+    {
+      "id": "b1bbfd986e707fb0",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/ebbae9bb-921f-4fe1-9644-cc74fa2e57bd/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 65
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 238411,
+      "mtime_hint_min": 1788514367,
+      "mtime_hint_max": 1788544553
+    },
+    {
+      "id": "32d3a8cb3d35690f",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/ef8a933d-87d3-424d-b6f9-6ba33b99aa8d/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3204678,
+      "mtime_hint_min": 1789443394,
+      "mtime_hint_max": 1789443394
+    },
+    {
+      "id": "d7fa75dfcb94ed97",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/ef8a933d-87d3-424d-b6f9-6ba33b99aa8d/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 26
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 111580,
+      "mtime_hint_min": 1789315080,
+      "mtime_hint_max": 1789438913
+    },
+    {
+      "id": "098647fb03faec19",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/f0961be9-ecc8-4812-bca1-141f32aefe43",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 25713,
+      "mtime_hint_min": 1789113878,
+      "mtime_hint_max": 1789113878
+    },
+    {
+      "id": "8022441a01eb5b3c",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/f0961be9-ecc8-4812-bca1-141f32aefe43/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 679762,
+      "mtime_hint_min": 1789113889,
+      "mtime_hint_max": 1789113889
+    },
+    {
+      "id": "a4e11299a19183fd",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/f242a191-ffd8-4ac6-a3b2-0ebd38845f44/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 86993,
+      "mtime_hint_min": 1788898694,
+      "mtime_hint_max": 1788898694
+    },
+    {
+      "id": "7d401c27aa42431e",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/f2b7ac93-41c8-44c1-8e28-b6e8b8d4316b/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 830839,
+      "mtime_hint_min": 1790154530,
+      "mtime_hint_max": 1790154530
+    },
+    {
+      "id": "88e7fa2b116ac1d4",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/f2b7ac93-41c8-44c1-8e28-b6e8b8d4316b/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1167,
+      "mtime_hint_min": 1790154186,
+      "mtime_hint_max": 1790154491
+    },
+    {
+      "id": "d74156635c14672b",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/f33b0477-c0df-4b73-8ced-9e1343e67fef",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2652142,
+      "mtime_hint_min": 1789652095,
+      "mtime_hint_max": 1789822112
+    },
+    {
+      "id": "44bba3cd10bbdf19",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/f33b0477-c0df-4b73-8ced-9e1343e67fef/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1497962,
+      "mtime_hint_min": 1789822184,
+      "mtime_hint_max": 1789822184
+    },
+    {
+      "id": "76077e7d950f6720",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/f33b0477-c0df-4b73-8ced-9e1343e67fef/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 10
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 19434,
+      "mtime_hint_min": 1789529444,
+      "mtime_hint_max": 1789821984
+    },
+    {
+      "id": "e1b62a4e90e99603",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/f33b0477-c0df-4b73-8ced-9e1343e67fef/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 11752,
+      "mtime_hint_min": 1789529515,
+      "mtime_hint_max": 1789654492
+    },
+    {
+      "id": "9658963323c47db6",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/f8018e0b-ac14-4679-b778-bec7d5f8741d",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 11180769,
+      "mtime_hint_min": 1789639345,
+      "mtime_hint_max": 1789826614
+    },
+    {
+      "id": "6f8fda7dc9d17286",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/f8018e0b-ac14-4679-b778-bec7d5f8741d/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 17445195,
+      "mtime_hint_min": 1789871253,
+      "mtime_hint_max": 1789871253
+    },
+    {
+      "id": "51761b913ceccea7",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/f8018e0b-ac14-4679-b778-bec7d5f8741d/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 122
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 527321,
+      "mtime_hint_min": 1789636321,
+      "mtime_hint_max": 1789871192
+    },
+    {
+      "id": "63d70516508d1cc3",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/f8018e0b-ac14-4679-b778-bec7d5f8741d/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 18
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 184951,
+      "mtime_hint_min": 1789639333,
+      "mtime_hint_max": 1789824536
+    },
+    {
+      "id": "3368a7b1a83a573c",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/f8018e0b-ac14-4679-b778-bec7d5f8741d/task-2106/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 219,
+      "mtime_hint_min": 1789806345,
+      "mtime_hint_max": 1789806345
+    },
+    {
+      "id": "a31f58aba7148d05",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/fa74f18c-3588-40e1-8e80-0544181dfa2d",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 24884,
+      "mtime_hint_min": 1789224217,
+      "mtime_hint_max": 1789227001
+    },
+    {
+      "id": "899b3d66b6372735",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/fa74f18c-3588-40e1-8e80-0544181dfa2d/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1477224,
+      "mtime_hint_min": 1789227005,
+      "mtime_hint_max": 1789227005
+    },
+    {
+      "id": "5fecfdbd14c5a0a3",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/fa74f18c-3588-40e1-8e80-0544181dfa2d/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 24
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 90120,
+      "mtime_hint_min": 1789222185,
+      "mtime_hint_max": 1789226977
+    },
+    {
+      "id": "cd14bb6860b9fec8",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/fae5263b-76ca-4106-9580-001b1e3817c8",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 12577,
+      "mtime_hint_min": 1789081238,
+      "mtime_hint_max": 1789096460
+    },
+    {
+      "id": "09e88f9064b757f9",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/fae5263b-76ca-4106-9580-001b1e3817c8/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1237658,
+      "mtime_hint_min": 1789096469,
+      "mtime_hint_max": 1789096469
+    },
+    {
+      "id": "5be80cfd732c6d69",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/fae5263b-76ca-4106-9580-001b1e3817c8/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 7
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 26982,
+      "mtime_hint_min": 1789081879,
+      "mtime_hint_max": 1789096321
+    },
+    {
+      "id": "757fdbc574c22df0",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/fae5263b-76ca-4106-9580-001b1e3817c8/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 8
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 141380,
+      "mtime_hint_min": 1789081370,
+      "mtime_hint_max": 1789096407
+    },
+    {
+      "id": "6ca57c43dd94c99b",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/fd55186c-2964-4a1b-9bb5-1e27f9b9f44f/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 362618,
+      "mtime_hint_min": 1786357998,
+      "mtime_hint_max": 1786357998
+    },
+    {
+      "id": "10f9db318df637a9",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/fd55186c-2964-4a1b-9bb5-1e27f9b9f44f/scratch",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 21650,
+      "mtime_hint_min": 1786357972,
+      "mtime_hint_max": 1786357972
+    },
+    {
+      "id": "a2f6ac5b772ac9a2",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/ff5715e2-2d7c-4fc8-adc2-0d8a2227e4ae/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 314398,
+      "mtime_hint_min": 1786358002,
+      "mtime_hint_max": 1786358002
+    },
+    {
+      "id": "69a6226654f76230",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/ff5715e2-2d7c-4fc8-adc2-0d8a2227e4ae/.system_generated/messages",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 18051,
+      "mtime_hint_min": 1786357603,
+      "mtime_hint_max": 1786357908
+    },
+    {
+      "id": "f99c76a80d92c6e6",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain/ff6e7dea-e60a-4690-8360-d9704b99195f/.system_generated/logs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 715928,
+      "mtime_hint_min": 1789601441,
+      "mtime_hint_max": 1789601441
+    },
+    {
+      "id": "be8d7c1145bc5815",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/conversations",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".db": 113
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 688829552,
+      "mtime_hint_min": 1783073639,
+      "mtime_hint_max": 1791448669
+    },
+    {
+      "id": "c0fba37e43bffbb5",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/mcp/hearth",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 82
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 67053,
+      "mtime_hint_min": 1790171691,
+      "mtime_hint_max": 1790171691
+    },
+    {
+      "id": "da756f2a54aa3211",
+      "path": "/mnt/omen-c-read/Users/derek/.gemini/config",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 54690,
+      "mtime_hint_min": 1783054716,
+      "mtime_hint_max": 1789691196
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 1.258
+}

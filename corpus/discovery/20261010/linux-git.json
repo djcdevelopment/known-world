@@ -1,0 +1,31 @@
+{
+  "id": "linux-git",
+  "host": "omen-linux",
+  "root": "/home/derek/git",
+  "group": "projects",
+  "status": "complete",
+  "limits": {
+    "depth": 4,
+    "seconds": 25,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 2
+  },
+  "candidates": [
+    {
+      "id": "6c5d2fc479f7d709",
+      "path": "/home/derek/git/commandcenter-flash-base",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 0,
+      "mtime_hint_min": null,
+      "mtime_hint_max": null
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.002
+}

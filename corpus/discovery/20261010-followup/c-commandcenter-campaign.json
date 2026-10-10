@@ -1,0 +1,113 @@
+{
+  "id": "c-commandcenter-campaign",
+  "host": "omen-c",
+  "root": "/mnt/omen-c-read/work/commandcenter/campaign",
+  "group": "execution",
+  "status": "complete",
+  "limits": {
+    "depth": 6,
+    "seconds": 30,
+    "max_files": 100000,
+    "max_candidates": 2500
+  },
+  "counts": {
+    "directories": 16,
+    "files": 148,
+    "excluded": 4
+  },
+  "candidates": [
+    {
+      "id": "5518fdab2f9660ff",
+      "path": "/mnt/omen-c-read/work/commandcenter/campaign",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 92064,
+      "mtime_hint_min": 1783246074,
+      "mtime_hint_max": 1788760149
+    },
+    {
+      "id": "589c990a3313e459",
+      "path": "/mnt/omen-c-read/work/commandcenter/campaign/ff-probes",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 708561,
+      "mtime_hint_min": 1788039106,
+      "mtime_hint_max": 1789096904
+    },
+    {
+      "id": "a0d10b60cbbf45cc",
+      "path": "/mnt/omen-c-read/work/commandcenter/campaign/harvest",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 23
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 104598,
+      "mtime_hint_min": 1783778557,
+      "mtime_hint_max": 1783778557
+    },
+    {
+      "id": "ef9ff8e9c4246771",
+      "path": "/mnt/omen-c-read/work/commandcenter/campaign/results",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 45425,
+      "mtime_hint_min": 1789504220,
+      "mtime_hint_max": 1789506386
+    },
+    {
+      "id": "a254b8256530954f",
+      "path": "/mnt/omen-c-read/work/commandcenter/campaign/qwen38/assay",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 22817,
+      "mtime_hint_min": 1787817337,
+      "mtime_hint_max": 1787817337
+    },
+    {
+      "id": "033dd3326f6501a6",
+      "path": "/mnt/omen-c-read/work/commandcenter/campaign/qwen38/config",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 13738,
+      "mtime_hint_min": 1787854522,
+      "mtime_hint_max": 1787911634
+    },
+    {
+      "id": "8a68d7409c71eed6",
+      "path": "/mnt/omen-c-read/work/commandcenter/campaign/qwen38/schema",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3524,
+      "mtime_hint_min": 1787831108,
+      "mtime_hint_max": 1787831108
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.005
+}

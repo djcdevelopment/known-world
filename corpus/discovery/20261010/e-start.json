@@ -1,0 +1,1238 @@
+{
+  "id": "e-start",
+  "host": "omen-e",
+  "root": "/mnt/omen-e-read/work/start",
+  "group": "lab",
+  "status": "complete",
+  "limits": {
+    "depth": 6,
+    "seconds": 30,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 1556,
+    "files": 12299,
+    "directories_beyond_depth": 280,
+    "excluded": 81
+  },
+  "candidates": [
+    {
+      "id": "ed228618a10a19b7",
+      "path": "/mnt/omen-e-read/work/start/ashley",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 25653,
+      "mtime_hint_min": 1774930513,
+      "mtime_hint_max": 1775714250
+    },
+    {
+      "id": "f320d23e4b066fe8",
+      "path": "/mnt/omen-e-read/work/start/contextforge",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 10406,
+      "mtime_hint_min": 1774102197,
+      "mtime_hint_max": 1775714250
+    },
+    {
+      "id": "1a0bc2cffdf0ef7e",
+      "path": "/mnt/omen-e-read/work/start/contextforge/contracts",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 991,
+      "mtime_hint_min": 1774099017,
+      "mtime_hint_max": 1775714250
+    },
+    {
+      "id": "7808a9623f0cd61d",
+      "path": "/mnt/omen-e-read/work/start/farmer",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 9388,
+      "mtime_hint_min": 1775534175,
+      "mtime_hint_max": 1778142372
+    },
+    {
+      "id": "be035c42fd5b8708",
+      "path": "/mnt/omen-e-read/work/start/farmer/src/Farmer.Host/data/runs/run-2026-04-06-020e4f",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2719,
+      "mtime_hint_min": 1775512498,
+      "mtime_hint_max": 1775512498
+    },
+    {
+      "id": "29d77e6bd724f964",
+      "path": "/mnt/omen-e-read/work/start/farmer/src/Farmer.Host/data/runs/run-2026-04-06-5f477c",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4183,
+      "mtime_hint_min": 1775514516,
+      "mtime_hint_max": 1775514559
+    },
+    {
+      "id": "dc464d4b744c5e26",
+      "path": "/mnt/omen-e-read/work/start/farmer/src/Farmer.Host/data/runs/run-2026-04-06-780646",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 7
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 6533,
+      "mtime_hint_min": 1775510142,
+      "mtime_hint_max": 1775510143
+    },
+    {
+      "id": "233559b9817f6f82",
+      "path": "/mnt/omen-e-read/work/start/farmer/src/Farmer.Host/data/runs/run-2026-04-06-9b3c25",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2849,
+      "mtime_hint_min": 1775509942,
+      "mtime_hint_max": 1775509942
+    },
+    {
+      "id": "df2e61b01c0989c2",
+      "path": "/mnt/omen-e-read/work/start/farmer/src/Farmer.Host/data/runs/run-2026-04-06-bba11d",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 6
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 6443,
+      "mtime_hint_min": 1775510104,
+      "mtime_hint_max": 1775510104
+    },
+    {
+      "id": "4edb95934bdb1601",
+      "path": "/mnt/omen-e-read/work/start/farmer/src/Farmer.Host/data/runs/run-2026-04-06-e43160",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 8
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 6367,
+      "mtime_hint_min": 1775516061,
+      "mtime_hint_max": 1775516062
+    },
+    {
+      "id": "3509ec85585e24b2",
+      "path": "/mnt/omen-e-read/work/start/farmer/src/Farmer.Host/data/runs/run-2026-04-07-18f0f7",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1820,
+      "mtime_hint_min": 1775526294,
+      "mtime_hint_max": 1775526294
+    },
+    {
+      "id": "1987dd5311ed3864",
+      "path": "/mnt/omen-e-read/work/start/farmer/src/Farmer.Host/data/runs/run-2026-04-07-a721f2",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1043,
+      "mtime_hint_min": 1775526752,
+      "mtime_hint_max": 1775526752
+    },
+    {
+      "id": "c173e9845b8d3378",
+      "path": "/mnt/omen-e-read/work/start/farmer/src/Farmer.Host/data/runs/run-2026-04-07-cdc36f",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 6
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 4256,
+      "mtime_hint_min": 1775525977,
+      "mtime_hint_max": 1775525980
+    },
+    {
+      "id": "cfe1902409f7cc68",
+      "path": "/mnt/omen-e-read/work/start/langfuse",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1232201,
+      "mtime_hint_min": 1773795983,
+      "mtime_hint_max": 1774774915
+    },
+    {
+      "id": "d9d6adf452b58b6c",
+      "path": "/mnt/omen-e-read/work/start/langfuse/fern/apis/server/definition",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 3,
+      "bytes_direct": 156793,
+      "mtime_hint_min": 1773795983,
+      "mtime_hint_max": 1773795983
+    },
+    {
+      "id": "60be6754cc6f169b",
+      "path": "/mnt/omen-e-read/work/start/langfuse/fern/apis/server/definition/legacy",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 2,
+      "bytes_direct": 14578,
+      "mtime_hint_min": 1773795983,
+      "mtime_hint_max": 1773795983
+    },
+    {
+      "id": "4ee45c3c3cb2a629",
+      "path": "/mnt/omen-e-read/work/start/langfuse/packages/shared/src/domain",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 2,
+      "bytes_direct": 25477,
+      "mtime_hint_min": 1773795983,
+      "mtime_hint_max": 1773795983
+    },
+    {
+      "id": "5d7ab9dc81ec8321",
+      "path": "/mnt/omen-e-read/work/start/langfuse/packages/shared/src/server/repositories",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 6,
+      "bytes_direct": 461099,
+      "mtime_hint_min": 1773795983,
+      "mtime_hint_max": 1773795983
+    },
+    {
+      "id": "88afb010d7c3aec5",
+      "path": "/mnt/omen-e-read/work/start/langfuse/packages/shared/src/utils",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 26149,
+      "mtime_hint_min": 1773795983,
+      "mtime_hint_max": 1773795983
+    },
+    {
+      "id": "a89c15b89d1ad187",
+      "path": "/mnt/omen-e-read/work/start/langfuse/web/src/__tests__/server",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 9,
+      "bytes_direct": 2083945,
+      "mtime_hint_min": 1773795983,
+      "mtime_hint_max": 1773795983
+    },
+    {
+      "id": "7790347d4fa40cb6",
+      "path": "/mnt/omen-e-read/work/start/langfuse/web/src/components",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 135928,
+      "mtime_hint_min": 1773795983,
+      "mtime_hint_max": 1773795983
+    },
+    {
+      "id": "91b60bd022fe26da",
+      "path": "/mnt/omen-e-read/work/start/langfuse/web/src/components/table/use-cases",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 2,
+      "bytes_direct": 181800,
+      "mtime_hint_min": 1773795983,
+      "mtime_hint_max": 1773795983
+    },
+    {
+      "id": "200040d7f0a4856c",
+      "path": "/mnt/omen-e-read/work/start/langfuse/web/src/components/ui",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 294875,
+      "mtime_hint_min": 1773795983,
+      "mtime_hint_max": 1773795983
+    },
+    {
+      "id": "7df6239ac320824f",
+      "path": "/mnt/omen-e-read/work/start/langfuse/web/src/features/evals",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 1881,
+      "mtime_hint_min": 1773795983,
+      "mtime_hint_max": 1773795983
+    },
+    {
+      "id": "42222266ea0df231",
+      "path": "/mnt/omen-e-read/work/start/langfuse/web/src/features/evals/components",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {},
+      "marker_files_direct": 5,
+      "bytes_direct": 232889,
+      "mtime_hint_min": 1773795983,
+      "mtime_hint_max": 1773795983
+    },
+    {
+      "id": "d6c80a465e961e65",
+      "path": "/mnt/omen-e-read/work/start/langfuse/web/src/features/filters/config",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 3,
+      "bytes_direct": 14577,
+      "mtime_hint_min": 1773795983,
+      "mtime_hint_max": 1773795983
+    },
+    {
+      "id": "fb9aa3597e8c92f5",
+      "path": "/mnt/omen-e-read/work/start/langfuse/web/src/features/navigation/utils",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 4396,
+      "mtime_hint_min": 1773795983,
+      "mtime_hint_max": 1773795983
+    },
+    {
+      "id": "df72a123ede74938",
+      "path": "/mnt/omen-e-read/work/start/langfuse/web/src/features/public-api/server",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 3,
+      "bytes_direct": 104706,
+      "mtime_hint_min": 1773795983,
+      "mtime_hint_max": 1773795983
+    },
+    {
+      "id": "740375986f7cfcb7",
+      "path": "/mnt/omen-e-read/work/start/langfuse/web/src/features/public-api/types",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 3,
+      "bytes_direct": 56434,
+      "mtime_hint_min": 1773795983,
+      "mtime_hint_max": 1773795983
+    },
+    {
+      "id": "ab0792a2b85bab46",
+      "path": "/mnt/omen-e-read/work/start/langfuse/web/src/pages/api/public",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 32415,
+      "mtime_hint_min": 1773795983,
+      "mtime_hint_max": 1773795983
+    },
+    {
+      "id": "b66f6f091ec7ef73",
+      "path": "/mnt/omen-e-read/work/start/langfuse/web/src/pages/project/[projectId]",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 41565,
+      "mtime_hint_min": 1773795983,
+      "mtime_hint_max": 1773795983
+    },
+    {
+      "id": "1a8211ca2e057b24",
+      "path": "/mnt/omen-e-read/work/start/langfuse/web/src/server/api/routers",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 2,
+      "bytes_direct": 183779,
+      "mtime_hint_min": 1773795983,
+      "mtime_hint_max": 1773795983
+    },
+    {
+      "id": "c9da83f833ea9de4",
+      "path": "/mnt/omen-e-read/work/start/planner",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 545871,
+      "mtime_hint_min": 1773758578,
+      "mtime_hint_max": 1775714250
+    },
+    {
+      "id": "71b3e20f9cd0eace",
+      "path": "/mnt/omen-e-read/work/start/planner/.plan/archive/2026-03-17T213500-responsive-web-mobile/runs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1828
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 40267982,
+      "mtime_hint_min": 1773743954,
+      "mtime_hint_max": 1773808161
+    },
+    {
+      "id": "098dfa4b42a1e06b",
+      "path": "/mnt/omen-e-read/work/start/planner/.plan/archive/2026-03-17T213500-responsive-web-mobile/runs/archived_prototyping",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 6
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 13925,
+      "mtime_hint_min": 1773729386,
+      "mtime_hint_max": 1773730477
+    },
+    {
+      "id": "07cbbe620ffa78a9",
+      "path": "/mnt/omen-e-read/work/start/planner/.plan/archive/2026-03-17T220500-debug-archive/overnight-parse-failure-2026-03-17T093224/plan_runs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 36
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 49982,
+      "mtime_hint_min": 1773763847,
+      "mtime_hint_max": 1773764377
+    },
+    {
+      "id": "9143971e12800566",
+      "path": "/mnt/omen-e-read/work/start/planner/.plan/archive/2026-03-17T220500-debug-archive/overnight-parse-failure-2026-03-17T093338/plan_runs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 36
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 49982,
+      "mtime_hint_min": 1773763847,
+      "mtime_hint_max": 1773764377
+    },
+    {
+      "id": "617fc42ed009193a",
+      "path": "/mnt/omen-e-read/work/start/planner/.plan/archive/2026-03-19T105000-pre-feature-dev-loop-reset/runs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1854
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 8815238,
+      "mtime_hint_min": 1773809463,
+      "mtime_hint_max": 1773843073
+    },
+    {
+      "id": "ab719cb96af5118f",
+      "path": "/mnt/omen-e-read/work/start/planner/.plan/archive/2026-03-19T150200-post-integration-loop/runs/runs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 235
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 516132,
+      "mtime_hint_min": 1773809463,
+      "mtime_hint_max": 1773957669
+    },
+    {
+      "id": "84f8be2672d0e216",
+      "path": "/mnt/omen-e-read/work/start/planner/.plan/archive/2026-03-20T022628-pre-identity-platform-demo-reset/runs/runs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 9
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 63183,
+      "mtime_hint_min": 1773809463,
+      "mtime_hint_max": 1773995077
+    },
+    {
+      "id": "ffdd711a8411251d",
+      "path": "/mnt/omen-e-read/work/start/planner/.plan/archive/2026-03-20T053649-pre-scenario-sweep/runs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 26810,
+      "mtime_hint_min": 1773809463,
+      "mtime_hint_max": 1773999759
+    },
+    {
+      "id": "e2462a8dfc3f4875",
+      "path": "/mnt/omen-e-read/work/start/planner/.plan/archive/2026-03-20T060514-pre-scenario-sweep/runs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 26810,
+      "mtime_hint_min": 1773809463,
+      "mtime_hint_max": 1773999759
+    },
+    {
+      "id": "4e55733e3c6ddef7",
+      "path": "/mnt/omen-e-read/work/start/planner/.plan/archive/2026-03-20T064419-pre-scenario-sweep/runs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 26810,
+      "mtime_hint_min": 1773809463,
+      "mtime_hint_max": 1773999759
+    },
+    {
+      "id": "df7fd2f418d0a890",
+      "path": "/mnt/omen-e-read/work/start/planner/.plan/runs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 25171,
+      "mtime_hint_min": 1774072776,
+      "mtime_hint_max": 1774072776
+    },
+    {
+      "id": "96d247272870c749",
+      "path": "/mnt/omen-e-read/work/start/planner/docs/intake-precheck-examples",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 9581,
+      "mtime_hint_min": 1773988308,
+      "mtime_hint_max": 1774941102
+    },
+    {
+      "id": "96c7012810f62b11",
+      "path": "/mnt/omen-e-read/work/start/portmap",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 51613,
+      "mtime_hint_min": 1774771059,
+      "mtime_hint_max": 1780529102
+    },
+    {
+      "id": "8777e1f2065f73f6",
+      "path": "/mnt/omen-e-read/work/start/precheck",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 101334286,
+      "mtime_hint_min": 1774553866,
+      "mtime_hint_max": 1778221093
+    },
+    {
+      "id": "4126a9a9941f8923",
+      "path": "/mnt/omen-e-read/work/start/precheck/experiments",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1562,
+      "mtime_hint_min": 1774341857,
+      "mtime_hint_max": 1774341857
+    },
+    {
+      "id": "e3ffb56c6adfcba9",
+      "path": "/mnt/omen-e-read/work/start/precheck/plan/runs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 15527,
+      "mtime_hint_min": 1774377564,
+      "mtime_hint_max": 1774377564
+    },
+    {
+      "id": "8bb2ca6ef8f8f9e5",
+      "path": "/mnt/omen-e-read/work/start/precheck/rendered/demo-runs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1154,
+      "mtime_hint_min": 1774574065,
+      "mtime_hint_max": 1774574065
+    },
+    {
+      "id": "3170087b4e47710b",
+      "path": "/mnt/omen-e-read/work/start/precheck/rendered/demo-runs/20260319T225933Z-real-run-recover-001",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 94394,
+      "mtime_hint_min": 1774574065,
+      "mtime_hint_max": 1774574065
+    },
+    {
+      "id": "277c35be86bd4fc1",
+      "path": "/mnt/omen-e-read/work/start/precheck/rendered/demo-runs/20260320T094136Z-real-run-accept-001",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 30662,
+      "mtime_hint_min": 1774574065,
+      "mtime_hint_max": 1774574065
+    },
+    {
+      "id": "f9c15de295c48849",
+      "path": "/mnt/omen-e-read/work/start/precheck/rendered/demo-runs/20260320T094212Z-real-run-stop-001",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 88109,
+      "mtime_hint_min": 1774574065,
+      "mtime_hint_max": 1774574065
+    },
+    {
+      "id": "77e147bfea27d156",
+      "path": "/mnt/omen-e-read/work/start/precheck/rendered/demo-runs/20260324T080000Z-run-001",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 35864,
+      "mtime_hint_min": 1774574065,
+      "mtime_hint_max": 1774574065
+    },
+    {
+      "id": "70422a44899e7d77",
+      "path": "/mnt/omen-e-read/work/start/precheck/rendered/demo-runs/20260324T110000Z-run-003",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 120405,
+      "mtime_hint_min": 1774574065,
+      "mtime_hint_max": 1774574065
+    },
+    {
+      "id": "242685275d799cde",
+      "path": "/mnt/omen-e-read/work/start/precheck/runs/20260326T194208Z-define-validation-hierarchy",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 190670,
+      "mtime_hint_min": 1774554128,
+      "mtime_hint_max": 1774554128
+    },
+    {
+      "id": "50933610aa6a0f2e",
+      "path": "/mnt/omen-e-read/work/start/precheck/runs/20260326T214922Z-define-validation-hierarchy",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 14278,
+      "mtime_hint_min": 1774561762,
+      "mtime_hint_max": 1774561762
+    },
+    {
+      "id": "bc51d41867f06400",
+      "path": "/mnt/omen-e-read/work/start/precheck/runs/20260326T215144Z-define-validation-hierarchy",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 14278,
+      "mtime_hint_min": 1774561904,
+      "mtime_hint_max": 1774561904
+    },
+    {
+      "id": "1861842f82291e09",
+      "path": "/mnt/omen-e-read/work/start/precheck/runs/20260326T215230Z-define-validation-hierarchy",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 14278,
+      "mtime_hint_min": 1774561950,
+      "mtime_hint_max": 1774561950
+    },
+    {
+      "id": "6f0fd321d851d18c",
+      "path": "/mnt/omen-e-read/work/start/precheck/runs/20260326T215508Z-define-validation-hierarchy",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 46221,
+      "mtime_hint_min": 1774562108,
+      "mtime_hint_max": 1774562113
+    },
+    {
+      "id": "11c1f6f78a0a54e1",
+      "path": "/mnt/omen-e-read/work/start/precheck/runs/20260326T220804Z-define-validation-hierarchy",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 81215,
+      "mtime_hint_min": 1774562884,
+      "mtime_hint_max": 1774562893
+    },
+    {
+      "id": "116e93a488979f1d",
+      "path": "/mnt/omen-e-read/work/start/precheck/runs/20260327T084821Z-product-brief-identity-platform-delivery-under-e",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 88852,
+      "mtime_hint_min": 1774601301,
+      "mtime_hint_max": 1774601301
+    },
+    {
+      "id": "e5ff02541432e03f",
+      "path": "/mnt/omen-e-read/work/start/precheck/runs/20260327T095601Z-untitled-intake",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 87801,
+      "mtime_hint_min": 1774605361,
+      "mtime_hint_max": 1774605361
+    },
+    {
+      "id": "a95120b99406d018",
+      "path": "/mnt/omen-e-read/work/start/precheck/runs/20260327T095630Z-product-brief-identity-platform-delivery-under-e",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 88852,
+      "mtime_hint_min": 1774605390,
+      "mtime_hint_max": 1774605390
+    },
+    {
+      "id": "45f48be7451a13e6",
+      "path": "/mnt/omen-e-read/work/start/precheck/runs/20260327T095902Z-product-brief-identity-platform-delivery-under-e",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 89028,
+      "mtime_hint_min": 1774605542,
+      "mtime_hint_max": 1774605542
+    },
+    {
+      "id": "532dd2de974d7e16",
+      "path": "/mnt/omen-e-read/work/start/precheck/runs/20260327T100910Z-untitled-intake",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 87891,
+      "mtime_hint_min": 1774606150,
+      "mtime_hint_max": 1774606150
+    },
+    {
+      "id": "f36639e02cda9615",
+      "path": "/mnt/omen-e-read/work/start/precheck/tests/fixtures/canonical_runs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 115709,
+      "mtime_hint_min": 1774376940,
+      "mtime_hint_max": 1774553185
+    },
+    {
+      "id": "0c6ec297cabdc540",
+      "path": "/mnt/omen-e-read/work/start/precheck/tests/fixtures/real_runs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 103462,
+      "mtime_hint_min": 1774376940,
+      "mtime_hint_max": 1774549578
+    },
+    {
+      "id": "d979e4a2fe20bdc2",
+      "path": "/mnt/omen-e-read/work/start/precheck/ui/src/components",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 2,
+      "bytes_direct": 120966,
+      "mtime_hint_min": 1774688813,
+      "mtime_hint_max": 1775096259
+    },
+    {
+      "id": "49d4b7a8012b215d",
+      "path": "/mnt/omen-e-read/work/start/precheckv2",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 101344690,
+      "mtime_hint_min": 1775308748,
+      "mtime_hint_max": 1775314785
+    },
+    {
+      "id": "1f26e7bde6549c09",
+      "path": "/mnt/omen-e-read/work/start/precheckv2/experiments",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1562,
+      "mtime_hint_min": 1775308734,
+      "mtime_hint_max": 1775308734
+    },
+    {
+      "id": "1ed69d23614c22cb",
+      "path": "/mnt/omen-e-read/work/start/precheckv2/plan/runs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 15527,
+      "mtime_hint_min": 1775308735,
+      "mtime_hint_max": 1775308735
+    },
+    {
+      "id": "a5519900204ff0fb",
+      "path": "/mnt/omen-e-read/work/start/precheckv2/rendered/demo-runs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1154,
+      "mtime_hint_min": 1775308736,
+      "mtime_hint_max": 1775308736
+    },
+    {
+      "id": "54770d635afff512",
+      "path": "/mnt/omen-e-read/work/start/precheckv2/rendered/demo-runs/20260319T225933Z-real-run-recover-001",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 94394,
+      "mtime_hint_min": 1775308736,
+      "mtime_hint_max": 1775308736
+    },
+    {
+      "id": "4a37cb3bbc89c414",
+      "path": "/mnt/omen-e-read/work/start/precheckv2/rendered/demo-runs/20260320T094136Z-real-run-accept-001",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 30662,
+      "mtime_hint_min": 1775308736,
+      "mtime_hint_max": 1775308736
+    },
+    {
+      "id": "f17bf5840c00a8bc",
+      "path": "/mnt/omen-e-read/work/start/precheckv2/rendered/demo-runs/20260320T094212Z-real-run-stop-001",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 88109,
+      "mtime_hint_min": 1775308736,
+      "mtime_hint_max": 1775308736
+    },
+    {
+      "id": "f9f3e08ff731238b",
+      "path": "/mnt/omen-e-read/work/start/precheckv2/rendered/demo-runs/20260324T080000Z-run-001",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 35864,
+      "mtime_hint_min": 1775308736,
+      "mtime_hint_max": 1775308736
+    },
+    {
+      "id": "c89c7e591f2b96ca",
+      "path": "/mnt/omen-e-read/work/start/precheckv2/rendered/demo-runs/20260324T110000Z-run-003",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 120405,
+      "mtime_hint_min": 1775308736,
+      "mtime_hint_max": 1775308736
+    },
+    {
+      "id": "c3366c55fc16f069",
+      "path": "/mnt/omen-e-read/work/start/precheckv2/runs/20260326T194208Z-define-validation-hierarchy",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 190670,
+      "mtime_hint_min": 1775308737,
+      "mtime_hint_max": 1775308737
+    },
+    {
+      "id": "5b485c19f9a71ba4",
+      "path": "/mnt/omen-e-read/work/start/precheckv2/runs/20260326T214922Z-define-validation-hierarchy",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 14278,
+      "mtime_hint_min": 1775308737,
+      "mtime_hint_max": 1775308737
+    },
+    {
+      "id": "cd007ff729679179",
+      "path": "/mnt/omen-e-read/work/start/precheckv2/runs/20260326T215144Z-define-validation-hierarchy",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 14278,
+      "mtime_hint_min": 1775308736,
+      "mtime_hint_max": 1775308736
+    },
+    {
+      "id": "3b45e63e59eece70",
+      "path": "/mnt/omen-e-read/work/start/precheckv2/runs/20260326T215230Z-define-validation-hierarchy",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 14278,
+      "mtime_hint_min": 1775308736,
+      "mtime_hint_max": 1775308736
+    },
+    {
+      "id": "32a68c3d952c264f",
+      "path": "/mnt/omen-e-read/work/start/precheckv2/runs/20260326T215508Z-define-validation-hierarchy",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 46221,
+      "mtime_hint_min": 1775308736,
+      "mtime_hint_max": 1775308736
+    },
+    {
+      "id": "00c595986620c94f",
+      "path": "/mnt/omen-e-read/work/start/precheckv2/runs/20260326T220804Z-define-validation-hierarchy",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 81215,
+      "mtime_hint_min": 1775308736,
+      "mtime_hint_max": 1775308736
+    },
+    {
+      "id": "86fc0a0458146885",
+      "path": "/mnt/omen-e-read/work/start/precheckv2/runs/20260327T084821Z-product-brief-identity-platform-delivery-under-e",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 88852,
+      "mtime_hint_min": 1775308736,
+      "mtime_hint_max": 1775308736
+    },
+    {
+      "id": "ad1c2cc0b23d3e23",
+      "path": "/mnt/omen-e-read/work/start/precheckv2/runs/20260327T095601Z-untitled-intake",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 87801,
+      "mtime_hint_min": 1775308736,
+      "mtime_hint_max": 1775308737
+    },
+    {
+      "id": "3b72ed0cfa785663",
+      "path": "/mnt/omen-e-read/work/start/precheckv2/runs/20260327T095630Z-product-brief-identity-platform-delivery-under-e",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 88852,
+      "mtime_hint_min": 1775308737,
+      "mtime_hint_max": 1775308737
+    },
+    {
+      "id": "42491a42a377099e",
+      "path": "/mnt/omen-e-read/work/start/precheckv2/runs/20260327T095902Z-product-brief-identity-platform-delivery-under-e",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 89028,
+      "mtime_hint_min": 1775308736,
+      "mtime_hint_max": 1775308736
+    },
+    {
+      "id": "69d12bcb51f2b41d",
+      "path": "/mnt/omen-e-read/work/start/precheckv2/runs/20260327T100910Z-untitled-intake",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 87891,
+      "mtime_hint_min": 1775308736,
+      "mtime_hint_max": 1775308736
+    },
+    {
+      "id": "8691f4322b2902ab",
+      "path": "/mnt/omen-e-read/work/start/precheckv2/tests/fixtures/canonical_runs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 115709,
+      "mtime_hint_min": 1775308737,
+      "mtime_hint_max": 1775308737
+    },
+    {
+      "id": "9d112652e689c515",
+      "path": "/mnt/omen-e-read/work/start/precheckv2/tests/fixtures/real_runs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 103462,
+      "mtime_hint_min": 1775308738,
+      "mtime_hint_max": 1775308738
+    },
+    {
+      "id": "096e2c2929e5c161",
+      "path": "/mnt/omen-e-read/work/start/precheckv2/ui/src/components",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 2,
+      "bytes_direct": 133436,
+      "mtime_hint_min": 1775308592,
+      "mtime_hint_max": 1775308593
+    },
+    {
+      "id": "87109829f2155c92",
+      "path": "/mnt/omen-e-read/work/start/scarecrow",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 6
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 274917,
+      "mtime_hint_min": 1775463241,
+      "mtime_hint_max": 1778227738
+    },
+    {
+      "id": "911b33cec5797eb4",
+      "path": "/mnt/omen-e-read/work/start/temp",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".db": 1,
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1102679435,
+      "mtime_hint_min": 1751742180,
+      "mtime_hint_max": 1773839255
+    },
+    {
+      "id": "570d2cd87ac5e8cd",
+      "path": "/mnt/omen-e-read/work/start/temp/valheim-save-tools",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 30254,
+      "mtime_hint_min": 1773811448,
+      "mtime_hint_max": 1773840225
+    },
+    {
+      "id": "7e710f09614e79ba",
+      "path": "/mnt/omen-e-read/work/start/temp/valheim-save-tools/build/tmp/jar",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 74,
+      "mtime_hint_min": 1773816116,
+      "mtime_hint_max": 1773816116
+    },
+    {
+      "id": "f1b4b8c1ff0cba56",
+      "path": "/mnt/omen-e-read/work/start/temp/valheim-save-tools/build/tmp/shadowJar",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 74,
+      "mtime_hint_min": 1773816116,
+      "mtime_hint_max": 1773816116
+    },
+    {
+      "id": "9e2938edb4fe0e7a",
+      "path": "/mnt/omen-e-read/work/start/temp/valheim-save-tools/valheim-save-tools-lib/build/tmp/jar",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 25,
+      "mtime_hint_min": 1773816116,
+      "mtime_hint_max": 1773816116
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.317
+}

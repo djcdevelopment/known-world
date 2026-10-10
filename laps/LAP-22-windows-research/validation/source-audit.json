@@ -1,0 +1,31 @@
+{
+  "source_to_build": {
+    "attempts": 56,
+    "bench_jobs": 543,
+    "bench_measurements": 210,
+    "bench_overlap_peak": 2,
+    "bench_runs": 298,
+    "conversations": 160,
+    "direct_attempts": 11388,
+    "direct_failed": 45,
+    "direct_succeeded": 11322,
+    "direct_unknown": 21,
+    "executions": 629,
+    "failed": 4,
+    "findings": 95,
+    "fleet_results": 23,
+    "investigations": 52,
+    "local_calls": 22672,
+    "overlap_peak": 5,
+    "succeeded": 625
+  },
+  "unchanged_git_totals_audio_bursts": true,
+  "native_research_ids": 11388,
+  "windows_campaigns_added": 41,
+  "native_measurements": 210,
+  "local_review": {
+    "job_id": "job_7c50c0e392f041fb48c6881b060f9f4d",
+    "verdict": "accepted as advisory only",
+    "reason": "Date uncertainty is preserved; repeated measurements, attempts and campaigns retain separate units. No candidate code was applied."
+  }
+}

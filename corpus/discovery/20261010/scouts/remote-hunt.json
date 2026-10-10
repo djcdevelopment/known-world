@@ -1,0 +1,87 @@
+{
+  "scout": "remote-hunt",
+  "status": "reviewed",
+  "cap_reached": false,
+  "brief": "Choose one source lead from AM4 and one from FX99 that could show scale of local AI. What metadata must be extracted next?",
+  "result": {
+    "ok": true,
+    "text": "```json\n[\n  {\n    \"path\": \"/home/derek/bench/results_full/meta\",\n    \"observed_file_counts\": 4550,\n    \"proposed_measure\": \"AI Model Performance Metrics\",\n    \"required_next_evidence\": \"File contents of specific .json files to understand the metrics recorded.\",\n    \"cannot_infer\": \"Cannot determine if these are performance metrics without examining the file contents.\"\n  },\n  {\n    \"path\": \"/home/derek/fleet/snapshots/20261002T134738Z\",\n    \"observed_file_counts\": 6,\n    \"proposed_measure\": \"Fleet Snapshot Data\",\n    \"required_next_evidence\": \"Contents of specific .json files within each snapshot directory to understand the data captured.\",\n    \"cannot_infer\": \"Cannot determine the content of snapshots without examining their file contents.\"\n  }\n]\n```\n\n**Metadata to extract next:**\nFor the AM4 lead:\n- Contents of `.json` files in `/home/derek/bench/results_full/meta`.\n\nFor the FX99 lead:\n- Contents of `.json` files in `/home/derek/fleet/snapshots/20261002T134738Z`.",
+    "execution": {
+      "request_id": "req_4654032ca6a6041d86820bef455a5c42",
+      "job_id": "job_08e5d3994f4b200a733adda578322522",
+      "status": "succeeded",
+      "artifact": {
+        "artifact_id": "art_800ce42e9edb68be94e86198f3ce3a4c",
+        "created_at": "2026-10-10T13:56:37.226730Z",
+        "filename": "job_08e5d3994f4b200a733adda578322522-result.md",
+        "media_type": "text/plain; charset=utf-8",
+        "role": "result",
+        "sha256": "d61d24ae5e592eff539856951254bd18b83149e8ef0548e471a305ca5cbe7c58",
+        "size": 978
+      }
+    },
+    "backend": "fx99-vllm",
+    "model": "qwen2.5-coder-7b",
+    "routed_by": "family:utility_text:tag:utility",
+    "occupancy": "available",
+    "rung_state": null,
+    "pool_config_hash": "fcc348a163ca",
+    "tokens_in": 1992,
+    "tokens_out": 265,
+    "duration_ms": 10231,
+    "max_tokens": 900,
+    "timeout_s": 179,
+    "task_family": "utility_text",
+    "family_recommendation": {
+      "advisory": true,
+      "backend_hint": "fx99-vllm",
+      "depth_rule_applied": false,
+      "evidence": "research/limits-found.md \u00a71.5: FX99 7B cannot produce reliable JSON tool calls and is restricted to pure text processing; fleet inventory keeps it as the utility lane (:18093, 4,096 ctx)",
+      "family": "utility_text",
+      "model_id": "qwen2.5-coder-7b",
+      "pin_required": false,
+      "prompt_tokens": 1630,
+      "providers": [
+        "fx99-vllm"
+      ],
+      "reason": "Short text-only summaries and rewrites that need no tool calls and fit 4K go to the idle 8 GB card, keeping the B70s free.",
+      "refusal": null,
+      "refused": false,
+      "requested_family": "utility_text"
+    }
+  },
+  "candidate_status_before_review": "awaiting_review",
+  "normalized_leads": [
+    {
+      "path": "/home/derek/bench/results_full/meta",
+      "observed_file_counts": 4550,
+      "proposed_measure": "AI Model Performance Metrics",
+      "required_next_evidence": "File contents of specific .json files to understand the metrics recorded.",
+      "cannot_infer": "Cannot determine if these are performance metrics without examining the file contents.",
+      "count_unit": ".json files in supplied rollup; not all structured formats or work units"
+    },
+    {
+      "path": "/home/derek/fleet/snapshots/20261002T134738Z",
+      "observed_file_counts": 6,
+      "proposed_measure": "Fleet Snapshot Data",
+      "required_next_evidence": "Contents of specific .json files within each snapshot directory to understand the data captured.",
+      "cannot_infer": "Cannot determine the content of snapshots without examining their file contents.",
+      "count_unit": ".json files in supplied rollup; not all structured formats or work units"
+    }
+  ],
+  "reviewer": "codex-frontier",
+  "verdict": {
+    "substance": "partially_useful",
+    "accepted": "Source paths and their specifically counted JSON-file populations agree with supplied inventory. Leads only, not execution or experiment counts.",
+    "rejected": [
+      "Unbounded requests to read file contents replaced by allowlisted schema probe",
+      "Mtime as historical activity evidence",
+      "Unlabelled counts as total artifacts across all formats"
+    ],
+    "form": "Code fence and trailing prose removed into normalized_leads; original text preserved",
+    "repairs": {
+      "json_array_extracted": 1,
+      "count_unit_explicitly_annotated": 2
+    }
+  }
+}

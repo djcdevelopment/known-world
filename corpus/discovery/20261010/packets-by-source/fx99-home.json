@@ -1,0 +1,89 @@
+{
+  "group": "projects",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "fx99-home",
+    "host": "fx99",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 2,
+      "seconds": 25,
+      "max_files": 100000,
+      "max_candidates": 1500
+    },
+    "rollups_omitted": 0,
+    "rollups": [
+      {
+        "path": "/home/derek/fleet/artlab",
+        "directories": 1,
+        "structured_files": {
+          ".json": 3,
+          ".jsonl": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/fleet",
+        "directories": 1,
+        "structured_files": {
+          ".json": 2,
+          ".jsonl": 1
+        },
+        "git_markers": 1
+      },
+      {
+        "path": "/home/derek/wool-n8n",
+        "directories": 1,
+        "structured_files": {
+          ".json": 3
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/ai-bench",
+        "directories": 1,
+        "structured_files": {
+          ".csv": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/valheim-capture",
+        "directories": 1,
+        "structured_files": {
+          ".json": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/.hermes",
+        "directories": 1,
+        "structured_files": {
+          ".db": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/.steam",
+        "directories": 1,
+        "structured_files": {
+          ".json": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/.continuity/ledger",
+        "directories": 1,
+        "structured_files": {},
+        "git_markers": 1
+      },
+      {
+        "path": "/home/derek/continuity",
+        "directories": 1,
+        "structured_files": {},
+        "git_markers": 1
+      }
+    ]
+  }
+}

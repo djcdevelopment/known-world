@@ -1,0 +1,119 @@
+{
+  "group": "projects",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "linux-home",
+    "host": "omen-linux",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 1,
+      "seconds": 15,
+      "max_files": 100000,
+      "max_candidates": 1500
+    },
+    "rollups_omitted": 3,
+    "rollups": [
+      {
+        "path": "/home/derek/.codex",
+        "directories": 1,
+        "structured_files": {
+          ".json": 2,
+          ".sqlite": 6,
+          ".jsonl": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/hearth-production",
+        "directories": 1,
+        "structured_files": {
+          ".json": 9
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/.claude",
+        "directories": 1,
+        "structured_files": {
+          ".json": 5,
+          ".jsonl": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/.gemini",
+        "directories": 1,
+        "structured_files": {
+          ".json": 5
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek",
+        "directories": 1,
+        "structured_files": {
+          ".json": 1,
+          ".csv": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/.opencode",
+        "directories": 1,
+        "structured_files": {
+          ".json": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/Desktop",
+        "directories": 1,
+        "structured_files": {
+          ".csv": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/hearth-production-candidate",
+        "directories": 1,
+        "structured_files": {
+          ".json": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/private-migration-postwindows-20260923T210140Z",
+        "directories": 1,
+        "structured_files": {
+          ".json": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/Downloads",
+        "directories": 1,
+        "structured_files": {
+          ".csv": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/hearth-flash-canary",
+        "directories": 1,
+        "structured_files": {
+          ".sqlite": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/hearth-private-canary",
+        "directories": 1,
+        "structured_files": {
+          ".sqlite": 1
+        },
+        "git_markers": 0
+      }
+    ]
+  }
+}

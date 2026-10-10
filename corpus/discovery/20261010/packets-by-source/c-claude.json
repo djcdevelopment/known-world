@@ -1,0 +1,115 @@
+{
+  "group": "clients",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "c-claude",
+    "host": "omen-c",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 6,
+      "seconds": 30,
+      "max_files": 100000,
+      "max_candidates": 1500
+    },
+    "rollups_omitted": 37,
+    "rollups": [
+      {
+        "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-commandcenter",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 64
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-baseline",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 52
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-ComfyStewardView",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 10
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-comfy-quest",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 9
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-baseline--claude-worktrees-distracted-tesla-0c1078",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 7
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-commandcenter--claude-worktrees-quizzical-taussig-c91322",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 7
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-irc",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 7
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-worktrees-commandcenter-g1-entry",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 7
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-writing",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 7
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-comfy",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 6
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/Users/derek/.claude/projects/C--",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 5
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/mnt/omen-c-read/Users/derek/.claude/projects/E--omen-DMos",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 4
+        },
+        "git_markers": 0
+      }
+    ]
+  }
+}

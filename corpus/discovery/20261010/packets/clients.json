@@ -1,0 +1,693 @@
+{
+  "warning": "Candidate paths and file counts only, not sessions/jobs/experiments; may overlap across roots. Mtime not evidence time. Rollups are top 35 by structured files, not exhaustive.",
+  "sources": [
+    {
+      "source_id": "c-gemini",
+      "status": "complete",
+      "gaps": [],
+      "limits": {
+        "depth": 6,
+        "seconds": 30,
+        "max_files": 100000,
+        "max_candidates": 1500
+      },
+      "rollup_count": 6,
+      "rollups": [
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/brain",
+          "candidate_directories": 263,
+          "structured_files": {
+            ".jsonl": 226,
+            ".json": 1484
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/conversations",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".db": 113
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.gemini/antigravity/mcp",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 82
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.gemini",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 6
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.gemini/antigravity",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".pb": 1,
+            ".pbtxt": 1,
+            ".db": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.gemini/config",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 0
+        }
+      ]
+    },
+    {
+      "source_id": "linux-gemini",
+      "status": "complete",
+      "gaps": [],
+      "limits": {
+        "depth": 6,
+        "seconds": 20,
+        "max_files": 100000,
+        "max_candidates": 1500
+      },
+      "rollup_count": 5,
+      "rollups": [
+        {
+          "directory": "/home/derek/.gemini/antigravity-cli/brain",
+          "candidate_directories": 111,
+          "structured_files": {
+            ".jsonl": 122,
+            ".json": 339
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.gemini/antigravity-cli/conversations",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".db": 62
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.gemini",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 5
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.gemini/antigravity-cli",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1,
+            ".pb": 1,
+            ".db": 1,
+            ".pbtxt": 1,
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.gemini/config",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 0
+        }
+      ]
+    },
+    {
+      "source_id": "c-codex",
+      "status": "complete",
+      "gaps": [],
+      "limits": {
+        "depth": 6,
+        "seconds": 30,
+        "max_files": 100000,
+        "max_candidates": 1500
+      },
+      "rollup_count": 5,
+      "rollups": [
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/08",
+          "candidate_directories": 22,
+          "structured_files": {
+            ".jsonl": 243
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/07",
+          "candidate_directories": 22,
+          "structured_files": {
+            ".jsonl": 96
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/09",
+          "candidate_directories": 21,
+          "structured_files": {
+            ".jsonl": 86
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/10",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 5
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.codex/sessions/2026/06",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 2
+          },
+          "git_markers": 0
+        }
+      ]
+    },
+    {
+      "source_id": "linux-codex",
+      "status": "complete",
+      "gaps": [],
+      "limits": {
+        "depth": 6,
+        "seconds": 20,
+        "max_files": 100000,
+        "max_candidates": 1500
+      },
+      "rollup_count": 2,
+      "rollups": [
+        {
+          "directory": "/home/derek/.codex/sessions/2026/10",
+          "candidate_directories": 8,
+          "structured_files": {
+            ".jsonl": 43
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.codex/sessions/2026/09",
+          "candidate_directories": 3,
+          "structured_files": {
+            ".jsonl": 18
+          },
+          "git_markers": 0
+        }
+      ]
+    },
+    {
+      "source_id": "c-claude",
+      "status": "complete",
+      "gaps": [],
+      "limits": {
+        "depth": 6,
+        "seconds": 30,
+        "max_files": 100000,
+        "max_candidates": 1500
+      },
+      "rollup_count": 49,
+      "rollups": [
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-commandcenter",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 64
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-baseline",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 52
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-ComfyStewardView",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 10
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-comfy-quest",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 9
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-baseline--claude-worktrees-distracted-tesla-0c1078",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 7
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-commandcenter--claude-worktrees-quizzical-taussig-c91322",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 7
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-irc",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 7
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-worktrees-commandcenter-g1-entry",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 7
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-writing",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 7
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-comfy",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 6
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 5
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/E--omen-DMos",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 4
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/E--omen-steward-multi-era",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 4
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-orchestration-local-operator-workspace-20260917",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 3
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-ComfyStewardView--claude-worktrees-zealous-vaughan-20c125",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-Diana",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-baseline--claude-worktrees-sharp-hamilton-f83f21",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/E--omen-benchmarks",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/E--omen-menu",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--OMEN-prep",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-Lumberjacks--claude-worktrees-cool-almeida-88778d",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-articleblitz",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-assessment",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-baseline--claude-worktrees-epic-jemison-353e53",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-baseline--claude-worktrees-funny-spence-9eff96",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-baseline--claude-worktrees-infallible-bassi-72f067",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-baseline--claude-worktrees-recursing-hugle-23a1aa",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-baseline--claude-worktrees-sweet-saha-15a3ad",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-baseline--claude-worktrees-vigorous-booth-db2c3b",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-comfy-quest--claude-worktrees-fervent-vaughan-1d6fbd",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-comfy-quest--claude-worktrees-youthful-tereshkova-c650fc",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-commandcenter--claude-worktrees-adoring-hodgkin-64c7eb",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-commandcenter--claude-worktrees-charming-goldstine-ca5b50",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/Users/derek/.claude/projects/C--work-commandcenter--claude-worktrees-infallible-euclid-ec620e",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        }
+      ]
+    },
+    {
+      "source_id": "linux-claude",
+      "status": "complete",
+      "gaps": [],
+      "limits": {
+        "depth": 6,
+        "seconds": 20,
+        "max_files": 100000,
+        "max_candidates": 1500
+      },
+      "rollup_count": 19,
+      "rollups": [
+        {
+          "directory": "/home/derek/.claude/projects/-home-derek",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 122
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.claude/projects/-home-derek-work-amux",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 7
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.claude/projects/-home-derek-work-trial-notebook",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 5
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.claude/projects/-home-derek-work-amux-scratch-g3-claude",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 3
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.claude/projects/-home-derek-work-amux-scratch-p4-suggest",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 3
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.claude/projects/-home-derek-work-worktrees-bench27-routing",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 3
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.claude/projects/-home-derek-work-amux-scratch-baseline-project",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.claude/projects/-tmp",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.claude/projects/-home-derek-continuity-triage-entire-probe",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.claude/projects/-home-derek-work-amux-scratch-p4-empty",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.claude/projects/-home-derek-work-amux-scratch-review-work",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.claude/projects/-home-derek-work-bench27-plan",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.claude/projects/-home-derek-work-commandcenter-linux-flash",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.claude/projects/-home-derek-work-lab-rnd",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.claude/projects/-home-derek-work-trial-notebook-cold",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.claude/projects/-home-derek-work-trial-notebook-cold2",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.claude/projects/-home-derek-work-worktrees-bench27-three-dense",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.claude/projects/-tmp-founderos-agent-a-1-Ppjc9l",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.claude/projects/-home-derek/memory",
+          "candidate_directories": 1,
+          "structured_files": {},
+          "git_markers": 0
+        }
+      ]
+    },
+    {
+      "source_id": "linux-opencode",
+      "status": "complete",
+      "gaps": [],
+      "limits": {
+        "depth": 6,
+        "seconds": 20,
+        "max_files": 100000,
+        "max_candidates": 1500
+      },
+      "rollup_count": 1,
+      "rollups": [
+        {
+          "directory": "/home/derek/.local/share/opencode",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".db": 1
+          },
+          "git_markers": 0
+        }
+      ]
+    }
+  ]
+}

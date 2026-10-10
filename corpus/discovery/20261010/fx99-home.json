@@ -1,0 +1,139 @@
+{
+  "id": "fx99-home",
+  "host": "fx99",
+  "root": "/home/derek",
+  "group": "projects",
+  "status": "complete",
+  "limits": {
+    "depth": 2,
+    "seconds": 25,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 127,
+    "files": 1335,
+    "excluded": 37,
+    "symlinks_excluded": 13,
+    "directories_beyond_depth": 1046
+  },
+  "candidates": [
+    {
+      "id": "897e11e7106e6737",
+      "path": "/home/derek/.continuity/ledger",
+      "git_marker": true,
+      "name_hint": true,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 8,
+      "mtime_hint_min": 1790509886,
+      "mtime_hint_max": 1790509886
+    },
+    {
+      "id": "1ae148afd22349ea",
+      "path": "/home/derek/.hermes",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".db": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 168603,
+      "mtime_hint_min": 1789876928,
+      "mtime_hint_max": 1789992457
+    },
+    {
+      "id": "e7c2f663851b4d1a",
+      "path": "/home/derek/.steam",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 598,
+      "mtime_hint_min": 1789299941,
+      "mtime_hint_max": 1789300151
+    },
+    {
+      "id": "bca99e2fa7a26371",
+      "path": "/home/derek/ai-bench",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".csv": 2
+      },
+      "marker_files_direct": 2,
+      "bytes_direct": 16542,
+      "mtime_hint_min": 1782141526,
+      "mtime_hint_max": 1782169952
+    },
+    {
+      "id": "30a8225b1e219541",
+      "path": "/home/derek/continuity",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 7516,
+      "mtime_hint_min": 1790509885,
+      "mtime_hint_max": 1790509885
+    },
+    {
+      "id": "dcace4e77ef4cf13",
+      "path": "/home/derek/fleet",
+      "git_marker": true,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2,
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 824569,
+      "mtime_hint_min": 1786262007,
+      "mtime_hint_max": 1791639823
+    },
+    {
+      "id": "ab4bf6c4b3b255b0",
+      "path": "/home/derek/fleet/artlab",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3,
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 616030,
+      "mtime_hint_min": 1786494290,
+      "mtime_hint_max": 1790183508
+    },
+    {
+      "id": "e9a519a39bbf6de5",
+      "path": "/home/derek/valheim-capture",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 842310,
+      "mtime_hint_min": 1789297977,
+      "mtime_hint_max": 1789348524
+    },
+    {
+      "id": "a798b9d4be8a9210",
+      "path": "/home/derek/wool-n8n",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 54170,
+      "mtime_hint_min": 1790171809,
+      "mtime_hint_max": 1790409855
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.249
+}

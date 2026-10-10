@@ -1,0 +1,221 @@
+{
+  "id": "linux-home",
+  "host": "omen-linux",
+  "root": "/home/derek",
+  "group": "projects",
+  "status": "complete",
+  "limits": {
+    "depth": 1,
+    "seconds": 15,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 57,
+    "files": 286,
+    "excluded": 23,
+    "symlinks_excluded": 6,
+    "directories_beyond_depth": 228
+  },
+  "candidates": [
+    {
+      "id": "1a94117291bf87a5",
+      "path": "/home/derek",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1,
+        ".csv": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 16034873,
+      "mtime_hint_min": 1770984968,
+      "mtime_hint_max": 1791639988
+    },
+    {
+      "id": "494a769330be05db",
+      "path": "/home/derek/.claude",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 5,
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 166441,
+      "mtime_hint_min": 1791030582,
+      "mtime_hint_max": 1791639988
+    },
+    {
+      "id": "a482ddcc79a01862",
+      "path": "/home/derek/.codex",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 2,
+        ".sqlite": 6,
+        ".jsonl": 2
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 268788739,
+      "mtime_hint_min": 1790503223,
+      "mtime_hint_max": 1791640232
+    },
+    {
+      "id": "50fc1e94ad5f0a0c",
+      "path": "/home/derek/.gemini",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 5
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2120,
+      "mtime_hint_min": 1791551603,
+      "mtime_hint_max": 1791551892
+    },
+    {
+      "id": "83b8f5c7fb0d00e1",
+      "path": "/home/derek/.opencode",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 14762,
+      "mtime_hint_min": 1790509101,
+      "mtime_hint_max": 1790509105
+    },
+    {
+      "id": "e5b20c853561ffac",
+      "path": "/home/derek/Desktop",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".csv": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1498478,
+      "mtime_hint_min": 1790820064,
+      "mtime_hint_max": 1791006978
+    },
+    {
+      "id": "5bb79fb643e2320f",
+      "path": "/home/derek/Downloads",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".csv": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1027111912,
+      "mtime_hint_min": 1790501825,
+      "mtime_hint_max": 1791573338
+    },
+    {
+      "id": "c1a6959bfedb11b9",
+      "path": "/home/derek/git-local-probe",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 0,
+      "mtime_hint_min": null,
+      "mtime_hint_max": null
+    },
+    {
+      "id": "e6675b93c2241703",
+      "path": "/home/derek/hearth-flash-canary",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".sqlite": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 25974,
+      "mtime_hint_min": 1790191996,
+      "mtime_hint_max": 1790198689
+    },
+    {
+      "id": "63fda5ec7bd2e8c8",
+      "path": "/home/derek/hearth-private-canary",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".sqlite": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 25909,
+      "mtime_hint_min": 1790191996,
+      "mtime_hint_max": 1790195501
+    },
+    {
+      "id": "1fdb3a3521d3f191",
+      "path": "/home/derek/hearth-production",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 9
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 123238,
+      "mtime_hint_min": 1790191996,
+      "mtime_hint_max": 1791214164
+    },
+    {
+      "id": "a3ee8437292bce49",
+      "path": "/home/derek/hearth-production-candidate",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3411,
+      "mtime_hint_min": 1790191996,
+      "mtime_hint_max": 1790196192
+    },
+    {
+      "id": "3d53933ed0e87b19",
+      "path": "/home/derek/hearth-shadow",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".sqlite": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 20903,
+      "mtime_hint_min": 1790189741,
+      "mtime_hint_max": 1790192020
+    },
+    {
+      "id": "5ad8e1968e69581e",
+      "path": "/home/derek/private-migration-postwindows-20260923T210140Z",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 1669,
+      "mtime_hint_min": 1790197339,
+      "mtime_hint_max": 1790197355
+    },
+    {
+      "id": "8d7713db48b1f21d",
+      "path": "/home/derek/work",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 379700199,
+      "mtime_hint_min": 1790186262,
+      "mtime_hint_max": 1791639610
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.027
+}

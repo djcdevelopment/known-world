@@ -1,0 +1,1258 @@
+{
+  "warning": "Candidate paths and file counts only, not sessions/jobs/experiments; may overlap across roots. Mtime not evidence time. Rollups are top 35 by structured files, not exhaustive.",
+  "sources": [
+    {
+      "source_id": "c-work",
+      "status": "partial",
+      "gaps": [
+        {
+          "directory_id": "a9381d3620ca2122",
+          "errno": 13
+        },
+        {
+          "directory_id": "3f98a2a52c342652",
+          "errno": 13
+        },
+        "time_or_file_budget",
+        "time_or_file_budget"
+      ],
+      "limits": {
+        "depth": 6,
+        "seconds": 55,
+        "max_files": 100000,
+        "max_candidates": 1500
+      },
+      "rollup_count": 105,
+      "rollups": [
+        {
+          "directory": "/mnt/omen-c-read/work/baseline/captures",
+          "candidate_directories": 389,
+          "structured_files": {
+            ".json": 1616,
+            ".jsonl": 3
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/baseline/fieldlab",
+          "candidate_directories": 359,
+          "structured_files": {
+            ".csv": 1,
+            ".json": 1328,
+            ".jsonl": 172
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/_retired/comfy",
+          "candidate_directories": 324,
+          "structured_files": {
+            ".json": 615,
+            ".csv": 49,
+            ".jsonl": 10,
+            ".tsv": 46
+          },
+          "git_markers": 5
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/SelfieStick/artifacts",
+          "candidate_directories": 22,
+          "structured_files": {
+            ".json": 149,
+            ".tsv": 1,
+            ".jsonl": 10
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/ComfyStewardView/artifacts",
+          "candidate_directories": 27,
+          "structured_files": {
+            ".json": 101,
+            ".tsv": 1,
+            ".jsonl": 1,
+            ".db": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/ComfyStewardView/lab",
+          "candidate_directories": 201,
+          "structured_files": {
+            ".db": 44,
+            ".pb": 22,
+            ".json": 25
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/JEPA/experiments",
+          "candidate_directories": 22,
+          "structured_files": {
+            ".csv": 2,
+            ".json": 88
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/am4/logs",
+          "candidate_directories": 6,
+          "structured_files": {
+            ".json": 52,
+            ".csv": 6
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/am4-harvest/manifest",
+          "candidate_directories": 3,
+          "structured_files": {
+            ".json": 45,
+            ".csv": 2
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/baseline/.claude",
+          "candidate_directories": 19,
+          "structured_files": {
+            ".json": 24
+          },
+          "git_markers": 4
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/JEPA/manifests",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 15,
+            ".json": 8
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/baseline/.tmp",
+          "candidate_directories": 2,
+          "structured_files": {
+            ".json": 22
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/baseline/artifacts",
+          "candidate_directories": 9,
+          "structured_files": {
+            ".json": 9,
+            ".jsonl": 6
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/JEPA/benchmarks",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 3,
+            ".jsonl": 11
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/404/tools",
+          "candidate_directories": 9,
+          "structured_files": {
+            ".json": 12
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/am4/output",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 10,
+            ".csv": 1,
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/assessment/transcripts",
+          "candidate_directories": 4,
+          "structured_files": {
+            ".jsonl": 12
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/ComfyStewardView/tools",
+          "candidate_directories": 4,
+          "structured_files": {
+            ".json": 9
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/_extract",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 6
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/_retired/Lumberjacks",
+          "candidate_directories": 5,
+          "structured_files": {
+            ".json": 6
+          },
+          "git_markers": 2
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/404/isolate",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 4
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/_extract/comfy-quest-incomplete",
+          "candidate_directories": 4,
+          "structured_files": {
+            ".json": 3
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/baseline/docs",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1,
+            ".jsonl": 1,
+            ".tsv": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/ComfyStewardView",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/am4-harvest/ember",
+          "candidate_directories": 3,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/baseline",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-c-read/work",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/ComfyMods",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/ComfyMods/AlaCarte",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/ComfyMods/Atlas",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/ComfyMods/BetterServerPortals",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/ComfyMods/BetterZeeLog",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/ComfyMods/BetterZeeRouter",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/ComfyMods/Chatter",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/work/ComfyMods/ColorfulDamage",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        }
+      ]
+    },
+    {
+      "source_id": "linux-work",
+      "status": "partial",
+      "gaps": [],
+      "limits": {
+        "depth": 6,
+        "seconds": 55,
+        "max_files": 100000,
+        "max_candidates": 1500
+      },
+      "rollup_count": 68,
+      "rollups": [
+        {
+          "directory": "/home/derek/work/commandcenter-linux-flash/runs",
+          "candidate_directories": 687,
+          "structured_files": {
+            ".json": 27093,
+            ".jsonl": 72,
+            ".ndjson": 257
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/deepagents-linux/runs",
+          "candidate_directories": 133,
+          "structured_files": {
+            ".sqlite": 133,
+            ".jsonl": 130,
+            ".json": 2227
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/commandcenter-public/runs",
+          "candidate_directories": 72,
+          "structured_files": {
+            ".json": 1267,
+            ".jsonl": 22,
+            ".ndjson": 8
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/discengine/output",
+          "candidate_directories": 156,
+          "structured_files": {
+            ".json": 976,
+            ".jsonl": 49,
+            ".csv": 27,
+            ".db": 7
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/delivery-plan/evidence",
+          "candidate_directories": 142,
+          "structured_files": {
+            ".json": 683,
+            ".jsonl": 5
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/evidence-resume-20260928/ledger-snapshot",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 300
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/founderOS/artifacts",
+          "candidate_directories": 82,
+          "structured_files": {
+            ".db": 37,
+            ".json": 135,
+            ".jsonl": 15
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/founderOS/output",
+          "candidate_directories": 6,
+          "structured_files": {
+            ".json": 104,
+            ".jsonl": 6
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/commandcenter-linux-flash/docs",
+          "candidate_directories": 19,
+          "structured_files": {
+            ".json": 86
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/commandcenter-linux-flash/fleet",
+          "candidate_directories": 3,
+          "structured_files": {
+            ".json": 75
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/commandcenter-public/fleet",
+          "candidate_directories": 3,
+          "structured_files": {
+            ".json": 75
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/bench27-plan/review",
+          "candidate_directories": 3,
+          "structured_files": {
+            ".json": 70
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/commandcenter-linux-flash/hearth",
+          "candidate_directories": 17,
+          "structured_files": {
+            ".json": 49,
+            ".sqlite": 3,
+            ".ndjson": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/commandcenter-linux-flash/artifacts",
+          "candidate_directories": 19,
+          "structured_files": {
+            ".json": 36,
+            ".jsonl": 6
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/commandcenter-public/artifacts",
+          "candidate_directories": 19,
+          "structured_files": {
+            ".json": 36,
+            ".jsonl": 6
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/commandcenter-linux-private/campaign",
+          "candidate_directories": 7,
+          "structured_files": {
+            ".json": 36
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/discengine/.data",
+          "candidate_directories": 2,
+          "structured_files": {
+            ".json": 32,
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/commandcenter-linux-flash/campaign",
+          "candidate_directories": 6,
+          "structured_files": {
+            ".json": 31
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/commandcenter-public/campaign",
+          "candidate_directories": 6,
+          "structured_files": {
+            ".json": 31
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/commandcenter-linux-flash/tools",
+          "candidate_directories": 3,
+          "structured_files": {
+            ".json": 30
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/commandcenter-linux-private/tools",
+          "candidate_directories": 3,
+          "structured_files": {
+            ".json": 30
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/commandcenter-public/tools",
+          "candidate_directories": 3,
+          "structured_files": {
+            ".json": 30
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/b70-stress/evidence",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 26,
+            ".ndjson": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/commandcenter-public/hearth",
+          "candidate_directories": 6,
+          "structured_files": {
+            ".json": 26
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/clm-pilot/runs",
+          "candidate_directories": 12,
+          "structured_files": {
+            ".json": 24
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/commandcenter-linux-private/hearth",
+          "candidate_directories": 7,
+          "structured_files": {
+            ".json": 14,
+            ".sqlite": 1,
+            ".ndjson": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/founderOS/.data",
+          "candidate_directories": 2,
+          "structured_files": {
+            ".json": 14,
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/commandcenter-linux-flash/corpus",
+          "candidate_directories": 4,
+          "structured_files": {
+            ".json": 9,
+            ".jsonl": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/commandcenter-linux-private/corpus",
+          "candidate_directories": 4,
+          "structured_files": {
+            ".json": 9,
+            ".jsonl": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/commandcenter-public/corpus",
+          "candidate_directories": 4,
+          "structured_files": {
+            ".json": 9,
+            ".jsonl": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/commandcenter-linux-private/session-export-1787839617319",
+          "candidate_directories": 2,
+          "structured_files": {
+            ".jsonl": 5,
+            ".json": 5
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/bench27-night-prep-20261005",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 8
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/commandcenter-linux-flash/am4-fleet-node",
+          "candidate_directories": 4,
+          "structured_files": {
+            ".json": 4,
+            ".jsonl": 3
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/commandcenter-linux-flash/fixtures",
+          "candidate_directories": 7,
+          "structured_files": {
+            ".jsonl": 7
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/work/commandcenter-linux-private/fixtures",
+          "candidate_directories": 7,
+          "structured_files": {
+            ".jsonl": 7
+          },
+          "git_markers": 0
+        }
+      ]
+    },
+    {
+      "source_id": "e-work",
+      "status": "partial",
+      "gaps": [],
+      "limits": {
+        "depth": 6,
+        "seconds": 60,
+        "max_files": 100000,
+        "max_candidates": 1500
+      },
+      "rollup_count": 41,
+      "rollups": [
+        {
+          "directory": "/mnt/omen-e-read/work/battlemage/qwen38-bench-2026-08",
+          "candidate_directories": 925,
+          "structured_files": {
+            ".json": 1030,
+            ".jsonl": 1175
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/RaidUI/.worktrees",
+          "candidate_directories": 200,
+          "structured_files": {
+            ".json": 601
+          },
+          "git_markers": 32
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/b70tools/eval",
+          "candidate_directories": 136,
+          "structured_files": {
+            ".json": 279,
+            ".jsonl": 46
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/b70tools/runs",
+          "candidate_directories": 97,
+          "structured_files": {
+            ".json": 162,
+            ".jsonl": 141,
+            ".csv": 4
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/ai-dev-system/output",
+          "candidate_directories": 34,
+          "structured_files": {
+            ".jsonl": 17,
+            ".json": 58
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/battlemage/burnin-2026-08",
+          "candidate_directories": 22,
+          "structured_files": {
+            ".jsonl": 45,
+            ".csv": 1,
+            ".json": 21
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/battlemage/ff-probes",
+          "candidate_directories": 13,
+          "structured_files": {
+            ".jsonl": 13,
+            ".json": 13
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/battlemage/intel_ollama",
+          "candidate_directories": 12,
+          "structured_files": {
+            ".csv": 6,
+            ".json": 15,
+            ".jsonl": 3
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/.cbm-cache",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".db": 23
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/RaidUI/research",
+          "candidate_directories": 10,
+          "structured_files": {
+            ".json": 17,
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/battlemage/bench-2026-05-24",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 16,
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/ai-dev-system/runs",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 17
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 11,
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/RaidUI/out",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 12
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/ai-systems-research/artifacts",
+          "candidate_directories": 6,
+          "structured_files": {
+            ".json": 9
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/ai-systems-research/runs",
+          "candidate_directories": 4,
+          "structured_files": {
+            ".csv": 8
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/b70tools/out",
+          "candidate_directories": 4,
+          "structured_files": {
+            ".jsonl": 4,
+            ".json": 4
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/b70tools/tmp",
+          "candidate_directories": 4,
+          "structured_files": {
+            ".jsonl": 4,
+            ".json": 4
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/battlemage/foreman",
+          "candidate_directories": 4,
+          "structured_files": {
+            ".jsonl": 4,
+            ".json": 4
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/Guild",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 7
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/RaidUI/app",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 6
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/RaidUI/contracts",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 6
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/ai-systems-research/manifests",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2,
+            ".jsonl": 3
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/GasperCards",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 3
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/RaidUI",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/b70tools/build",
+          "candidate_directories": 2,
+          "structured_files": {
+            ".jsonl": 1,
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/.claude",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/Antigravity",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/RaidUI/NewUI",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/RaidUI/fixtures",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/RaidUI/out-fresh",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/ai-dev-system",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/ai-systems-research",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/ai-systems-research/.claude",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/azure-event-grid-viewer",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 1
+        }
+      ]
+    },
+    {
+      "source_id": "e-start",
+      "status": "complete",
+      "gaps": [],
+      "limits": {
+        "depth": 6,
+        "seconds": 30,
+        "max_files": 100000,
+        "max_candidates": 1500
+      },
+      "rollup_count": 30,
+      "rollups": [
+        {
+          "directory": "/mnt/omen-e-read/work/start/planner/.plan",
+          "candidate_directories": 11,
+          "structured_files": {
+            ".json": 4016
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/farmer/src",
+          "candidate_directories": 9,
+          "structured_files": {
+            ".json": 46
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/precheck/runs",
+          "candidate_directories": 11,
+          "structured_files": {
+            ".json": 22
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/precheckv2/runs",
+          "candidate_directories": 11,
+          "structured_files": {
+            ".json": 22
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/precheck/rendered",
+          "candidate_directories": 6,
+          "structured_files": {
+            ".json": 11
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/precheckv2/rendered",
+          "candidate_directories": 6,
+          "structured_files": {
+            ".json": 11
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/precheck/tests",
+          "candidate_directories": 2,
+          "structured_files": {
+            ".json": 9
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/precheckv2/tests",
+          "candidate_directories": 2,
+          "structured_files": {
+            ".json": 9
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/scarecrow",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 6
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/portmap",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 3
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/temp",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".db": 1,
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/langfuse",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/precheck",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/precheck/experiments",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/precheck/plan",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/precheckv2",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/precheckv2/experiments",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/precheckv2/plan",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/ashley",
+          "candidate_directories": 1,
+          "structured_files": {},
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/contextforge",
+          "candidate_directories": 1,
+          "structured_files": {},
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/contextforge/contracts",
+          "candidate_directories": 1,
+          "structured_files": {},
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/farmer",
+          "candidate_directories": 1,
+          "structured_files": {},
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/langfuse/fern",
+          "candidate_directories": 2,
+          "structured_files": {},
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/langfuse/packages",
+          "candidate_directories": 3,
+          "structured_files": {},
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/langfuse/web",
+          "candidate_directories": 13,
+          "structured_files": {},
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/planner",
+          "candidate_directories": 1,
+          "structured_files": {},
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/planner/docs",
+          "candidate_directories": 1,
+          "structured_files": {},
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/precheck/ui",
+          "candidate_directories": 1,
+          "structured_files": {},
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/precheckv2/ui",
+          "candidate_directories": 1,
+          "structured_files": {},
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/start/temp/valheim-save-tools",
+          "candidate_directories": 4,
+          "structured_files": {},
+          "git_markers": 1
+        }
+      ]
+    },
+    {
+      "source_id": "e-manifest",
+      "status": "complete",
+      "gaps": [],
+      "limits": {
+        "depth": 6,
+        "seconds": 25,
+        "max_files": 100000,
+        "max_candidates": 1500
+      },
+      "rollup_count": 6,
+      "rollups": [
+        {
+          "directory": "/mnt/omen-e-read/work/manifest/framework/runs",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 45,
+            ".csv": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/manifest",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".csv": 3
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/manifest/exports",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/manifest/.claude",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/manifest/framework/tests",
+          "candidate_directories": 3,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 3
+        },
+        {
+          "directory": "/mnt/omen-e-read/work/manifest/docs",
+          "candidate_directories": 1,
+          "structured_files": {},
+          "git_markers": 0
+        }
+      ]
+    }
+  ]
+}

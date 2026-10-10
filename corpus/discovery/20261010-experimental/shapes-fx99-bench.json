@@ -1,0 +1,37 @@
+{
+ "root": "/home/derek/ai-bench",
+ "enumerated_files": 8,
+ "candidate_files": 2,
+ "candidate_directories": 1,
+ "inspected": 2,
+ "rows": [
+  {
+   "path": "/home/derek/ai-bench/results-run1-partial.csv",
+   "bytes": 2496,
+   "keys": [
+    "model",
+    "phase",
+    "metric",
+    "value",
+    "note"
+   ],
+   "shapes": []
+  },
+  {
+   "path": "/home/derek/ai-bench/results.csv",
+   "bytes": 2485,
+   "keys": [
+    "model",
+    "phase",
+    "metric",
+    "value",
+    "note"
+   ],
+   "shapes": []
+  }
+ ],
+ "omissions": [],
+ "enumeration_status": "complete",
+ "elapsed_s": 0.0,
+ "policy": "Representative schema discovery only; no work counts inferred. Payload files, credentials and runtime/model caches excluded."
+}

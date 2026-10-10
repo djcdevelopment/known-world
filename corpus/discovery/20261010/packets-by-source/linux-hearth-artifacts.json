@@ -1,0 +1,119 @@
+{
+  "group": "execution",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "linux-hearth-artifacts",
+    "host": "omen-linux",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 4,
+      "seconds": 30,
+      "max_files": 100000,
+      "max_candidates": 1500
+    },
+    "rollups_omitted": 30,
+    "rollups": [
+      {
+        "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts",
+        "directories": 32,
+        "structured_files": {
+          ".json": 1546
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/hearth-production/runs/hearth-offload-claude-frontier/artifacts",
+        "directories": 12,
+        "structured_files": {
+          ".json": 349
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/hearth-production/runs/build-requests",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 29,
+          ".json": 28
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/hearth-production/runs/hearth-offload-codex-cli/artifacts",
+        "directories": 7,
+        "structured_files": {
+          ".json": 35
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/hearth-production/runs/hearth-offload-experiment-doc-adr-bench/artifacts",
+        "directories": 1,
+        "structured_files": {
+          ".json": 15
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/hearth-production/runs/omen-5070-hwbaseline-2026-07-02/artifacts",
+        "directories": 1,
+        "structured_files": {
+          ".json": 10
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/hearth-production/runs/hearth-gateway",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 4
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/hearth-production/runs/pour-b2/artifacts",
+        "directories": 1,
+        "structured_files": {
+          ".json": 3
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/hearth-production/runs/vllm-moe-crash-omen-wsl-2026-07-02/artifacts",
+        "directories": 1,
+        "structured_files": {
+          ".json": 3
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/hearth-production/runs/vllm-moe-crash-omen-wsl-2026-07-02/wsl",
+        "directories": 1,
+        "structured_files": {
+          ".json": 2,
+          ".jsonl": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/hearth-production/runs/enumerate",
+        "directories": 1,
+        "structured_files": {
+          ".json": 1,
+          ".jsonl": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/hearth-production/runs/hearth-offload-claude-frontier",
+        "directories": 1,
+        "structured_files": {
+          ".ndjson": 1,
+          ".jsonl": 1
+        },
+        "git_markers": 0
+      }
+    ]
+  }
+}

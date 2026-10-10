@@ -1,0 +1,35 @@
+{
+  "id": "linux-hearth-ledger",
+  "host": "omen-linux",
+  "root": "/home/derek/hearth-production/var/ledger",
+  "group": "execution",
+  "status": "complete",
+  "limits": {
+    "depth": 2,
+    "seconds": 25,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 1,
+    "files": 3
+  },
+  "candidates": [
+    {
+      "id": "5359a6f673832be4",
+      "path": "/home/derek/hearth-production/var/ledger",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".sqlite": 1,
+        ".ndjson": 1
+      },
+      "marker_files_direct": 2,
+      "bytes_direct": 485818867,
+      "mtime_hint_min": 1790080557,
+      "mtime_hint_max": 1791640131
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.0
+}

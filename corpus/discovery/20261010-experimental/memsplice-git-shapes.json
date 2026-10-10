@@ -1,0 +1,1097 @@
+[
+ {
+  "source": "am4-ceiling-128k-q4-20260919T013526Z.json",
+  "sha256": "6d6c48ffc66a93b60ef1ff308814a179ea167f28b2a6075162d0f2c87ff4c152",
+  "matches_public_provenance": false,
+  "keys": [
+   "target_tokens",
+   "label",
+   "started_at",
+   "seat_cmdline",
+   "vram_before",
+   "prompt_tokens",
+   "prompt_hash",
+   "prefill_wall_s",
+   "prefill_timings",
+   "save_wall_s",
+   "save",
+   "vram_peak_mib_during_prefill",
+   "vram_after",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "am4-ceiling-64k-q8-20260919T013110Z.json",
+  "sha256": "cb1d0f7763e288727633dacdf59fa25590a11f1ac4ed1a3667cdc3f2aa7ce317",
+  "matches_public_provenance": false,
+  "keys": [
+   "target_tokens",
+   "label",
+   "started_at",
+   "seat_cmdline",
+   "vram_before",
+   "prompt_tokens",
+   "prompt_hash",
+   "prefill_wall_s",
+   "prefill_timings",
+   "save_wall_s",
+   "save",
+   "vram_peak_mib_during_prefill",
+   "vram_after",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "am4-ceiling-am4-patched-np1-q4-20260919T041010Z.json",
+  "sha256": "d3701b931ba12a5588a2b48a55204f7dc69450360488737b9e27cdc1c44c2b35",
+  "matches_public_provenance": false,
+  "keys": [
+   "target_tokens",
+   "label",
+   "started_at",
+   "seat_cmdline",
+   "vram_before",
+   "prompt_tokens",
+   "prompt_hash",
+   "prefill_wall_s",
+   "prefill_timings",
+   "save_wall_s",
+   "save",
+   "vram_peak_mib_during_prefill",
+   "vram_after",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "b70-cold-baseline.json",
+  "sha256": "c1799f6774e8b86bd5611d28590cfb5e64e8af10c35e236e60fb6e2112ed7f3b",
+  "matches_public_provenance": false,
+  "keys": [
+   "b70_cold_timings",
+   "b70_cold_wall_s",
+   "content",
+   "ok",
+   "error"
+  ]
+ },
+ {
+  "source": "cold-answer-l2-sycl-27b-16k-20260919T060321Z.json",
+  "sha256": "abfa231ad6be60ea1d1644826272491399692aaa577f4657716e77cad8892d9f",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "compare",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l2-sycl-moe-16k-20260919T060449Z.json",
+  "sha256": "7448eaa09219a7ced9771ae82c039d6f7a58b1b96788e9df7270dcefc0def87c",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "compare",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l2-sycl-moe-16k-disableopt-20260919T060705Z.json",
+  "sha256": "5c0c87aad5b690f7edfefd228daadef90ecffec9c0ead2cfeddc26f1f07011c1",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l2-sycl-moe-16k-disableopt-rerun-20260919T060721Z.json",
+  "sha256": "9631e2c6b96ddb2dd11f76b3050f731be4db552d29ff4c7751db1879b490b06c",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "compare",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l2-sycl-moe-16k-rerun-20260919T060528Z.json",
+  "sha256": "825dc29c9d2b623653f6d2d42de61406545a17c3b07b3acd59c8d4a5b79d3666",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "compare",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l2-vk-27b-16k-20260919T060151Z.json",
+  "sha256": "8049eed83a8c21220c0652290f7c7e7167c936dcc600364a50d62f796ce6dc31",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l2-vk-moe-16k-20260919T060430Z.json",
+  "sha256": "7a5ac3430c606c9542a2d507c783af1295ffacc7b3e8932cbe62b81d9fa59651",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l2-vk-moe-16k-rerun-20260919T060614Z.json",
+  "sha256": "3326beadb06f04c480128add9d15cb061f9d8d80fc9d143ca4a423759e8c1a54",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "compare",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l3-sycl-27b-tensor-16k-20260919T061315Z.json",
+  "sha256": "17bc0e53268eea1a694d9337ad8ef06817eee75235c8890cac88725f8890157d",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "compare",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4-sycl-27b-dual-119k-20260919T062034Z.json",
+  "sha256": "0dccf5f4e83bfa8b21748df2bd66e0289ffb8fc172543b33eb048656d5c815a2",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4-sycl-27b-dual-16k-20260919T061441Z.json",
+  "sha256": "1051edd02d97a2dd984836a19c09962a2a04e45d07c2a23d5dfb32be901eb629",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4-sycl-27b-dual-30k-20260919T061524Z.json",
+  "sha256": "d977cde7821503affb44550d547232fda04c144b60140b9d7c95ba6c8b15e59e",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4-sycl-27b-dual-60k-20260919T061655Z.json",
+  "sha256": "79951356c74b08f4e39d63898f7908dfda5ed092dc60cc9fe36b365eecebb1a3",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4-sycl-27b-tensor-119k-20260919T062558Z.json",
+  "sha256": "bb7786f5017e6d14c31e9224c878d32f19de04c289f95a655018d55b5765215c",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "compare",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4b-sycl-27b-dual-250k-20260919T065527Z.json",
+  "sha256": "1c76e99ce1a5d1f300c434a392313f24974bcacf3e176af43d97361259ef7517",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4c-sycl-27b-dual-119k-f16-20260919T071632Z.json",
+  "sha256": "cbe6f1ac691ad3bc13e624240d8c7d3a382b67b274c911f335561f1a83cda2aa",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "compare",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4c-sycl-27b-dual-119k-f16-ub2048-20260919T072958Z.json",
+  "sha256": "5cbccd3c28c08766c7ffe9ab8e6e6991985666162ced87e06bf572aae0ab9dcd",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "compare",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4c-sycl-27b-dual-119k-f16-ub4096-20260919T073327Z.json",
+  "sha256": "deae2f4b586f58f3f211fe3896e1b9f3fe583035229d50d0f92487ac7888251c",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4c-sycl-27b-dual-250k-f16-20260919T072625Z.json",
+  "sha256": "e77a8893df3b272e647716c16cc8a772fc12473230d80633fe2268d286e87c1a",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4c-sycl-27b-dual-250k-f16-ub4096-20260919T074217Z.json",
+  "sha256": "f3f8994f9e56a68ae153b60f02c55abbefb6e528222a66fdc75a345f5ee6c43c",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4d-sycl-27b-dual-119k-f16-mtp-20260919T091012Z.json",
+  "sha256": "dc547bfb8aac49f46bd47e9e1ac64f70cde3b24ceaa17e6459481d301bcf17e8",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "compare",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4d-sycl-27b-dual-119k-f16-ngram-20260919T091401Z.json",
+  "sha256": "0f691435260c74455b55bd88490a1fdd718cb943083e7f47d42befe16ecda149",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "compare",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4d-sycl-27b-dual-250k-f16-mtp-20260919T092413Z.json",
+  "sha256": "4facd85dae991a504b70f3ad0c204e957a487e0ff184535d40335b533755c92b",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4d-sycl-27b-tensor-119k-f16-20260919T081420Z.json",
+  "sha256": "863726a861d7d4ba5744cafeede9d894e6eaea3b8bd0730daaa9ffc9f33c10d6",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "compare",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4e-sycl-27b-dual-119k-k8-v41-20260919T105019Z.json",
+  "sha256": "2accad6ac377ea1530c1e5568d4cd95a8bf56b6e4249b7ed96af7a814b94b5a2",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "compare",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4e-sycl-27b-dual-119k-kf16-v40-20260919T105626Z.json",
+  "sha256": "0eaf871faaf35a22eb99fa27444e3f305c3979b808764591eae5d4e30eeed170",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "compare",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4f-rpc4-27b-119k-f16-20260919T111639Z.json",
+  "sha256": "dd5478f67db75ae0a9c4498898cd7fd4b675e9a1c3abb19255c20bb543ddb895",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "compare",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4f-rpc4b-27b-119k-f16-20260919T112217Z.json",
+  "sha256": "48768784fd410e110701dfa4ebedfd14d4fa2c4f23f1f1e4966bb596311320e7",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "compare",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4g-sycl-27b-dual-119k-q8-20260919T114155Z.json",
+  "sha256": "af0edbe4f8bd106f31314ad0e455fc320b221bad2584db4f4ac3cba323594a0b",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4g-vk-27b-dual-30k-f16-20260919T113819Z.json",
+  "sha256": "d80d53fe41a06907ba6c6cd786184f6d6d4ebb85bdd89ce6352ba2861d5969c8",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4h-flash-rpc4-16k-32kctx-20260919T125315Z.json",
+  "sha256": "225ca0e7a597cd5bc51c2ae12aa8576ca7dbb7f4a09aaa5c2cd2c27dcd9a5ee0",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4h-flash-rpc4-16k-32kctx-rerun-20260919T125437Z.json",
+  "sha256": "a17c905e5ad7ab78d55faaea6e792cbc27266d4383a597fda70da5841bac710f",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "compare",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "cold-answer-l4h-flash-rpc4-248k-256kctx-resident-20260919T142300Z.json",
+  "sha256": "b6b17ac4ba506b3783ef4ab03a1b4fa4f92ff9304ec93f501ca4ffa2a8ebedd2",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "server",
+   "body",
+   "suffix",
+   "n_predict",
+   "wall_s",
+   "timings",
+   "content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "disaggregated-kv-20260918T015435Z.json",
+  "sha256": "76dee62cbd55abbd479faeb26fccd36409ed76dfd194f0fa9772770efd05b3c7",
+  "matches_public_provenance": false,
+  "keys": [
+   "stamp",
+   "rows",
+   "stage1",
+   "b70_cold",
+   "restore"
+  ]
+ },
+ {
+  "source": "disaggregated-kv-20260918T021803Z.json",
+  "sha256": "d272741c0466c04541f533e0d14972928966be577764177879f5c8360ac4058c",
+  "matches_public_provenance": false,
+  "keys": [
+   "stage",
+   "started_at",
+   "stage1",
+   "restore_receipt",
+   "b70_hot_wall_s",
+   "b70_hot_timings",
+   "b70_hot_content",
+   "b70_cold_wall_s",
+   "b70_cold_timings",
+   "b70_cold_content",
+   "decode_identical",
+   "summary",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "hot-l4h-flash-rpc4-248k-256kctx-resident-decode2.json",
+  "sha256": "208a1c1d4943cee5e53f6ba8999e15703c06b404f7f89a031dfad560d625382e",
+  "matches_public_provenance": true,
+  "keys": [
+   "cache_n",
+   "prompt_n",
+   "prompt_ms",
+   "prompt_per_token_ms",
+   "prompt_per_second",
+   "predicted_n",
+   "predicted_ms",
+   "predicted_per_token_ms",
+   "predicted_per_second"
+  ]
+ },
+ {
+  "source": "moe-longctx-20260918T022840Z.json",
+  "sha256": "7775e501619c558862917100e9bb2e20370ddc58bf877f77dea722892f908172",
+  "matches_public_provenance": false,
+  "keys": [
+   [
+    "target_tokens",
+    "prompt_tokens_omen_tokenizer",
+    "prompt_hash",
+    "filename",
+    "started_at",
+    "am4_prefill_wall_s",
+    "am4_prefill_timings",
+    "am4_save_wall_s",
+    "am4_save",
+    "wire_sender",
+    "wire_receiver",
+    "wire_ok",
+    "b70_restore_wall_s",
+    "b70_restore",
+    "b70_hot_wall_s",
+    "b70_hot_timings",
+    "b70_hot_content",
+    "b70_cold_wall_s",
+    "b70_cold_timings",
+    "b70_cold_content",
+    "decode_identical_48",
+    "summary",
+    "finished_at"
+   ]
+  ]
+ },
+ {
+  "source": "moe-longctx-27b-dualb70-20260919T005038Z.json",
+  "sha256": "08df895415135d1bc64c330347a3385b974044dbf969ca767d0f3d58898e24d5",
+  "matches_public_provenance": false,
+  "keys": [
+   [
+    "target_tokens",
+    "prompt_tokens_omen_tokenizer",
+    "prompt_hash",
+    "filename",
+    "started_at",
+    "am4_prefill_wall_s",
+    "am4_prefill_timings",
+    "am4_save_wall_s",
+    "am4_save",
+    "wire_sender",
+    "wire_receiver",
+    "wire_ok",
+    "reused_am4_and_wire_from",
+    "b70_restore_wall_s",
+    "b70_restore",
+    "b70_hot_wall_s",
+    "b70_hot_timings",
+    "b70_hot_content",
+    "b70_cold_wall_s",
+    "b70_cold_timings",
+    "b70_cold_content",
+    "decode_identical_48",
+    "summary",
+    "finished_at"
+   ]
+  ]
+ },
+ {
+  "source": "moe-longctx-27b-singleb70-20260919T004305Z.json",
+  "sha256": "c174e4fdb824f70ed5a90650697c21a32acd17b6aeb24d2018d26fa7de1ca018",
+  "matches_public_provenance": false,
+  "keys": [
+   [
+    "target_tokens",
+    "prompt_tokens_omen_tokenizer",
+    "prompt_hash",
+    "filename",
+    "started_at",
+    "am4_prefill_wall_s",
+    "am4_prefill_timings",
+    "am4_save_wall_s",
+    "am4_save",
+    "wire_sender",
+    "wire_receiver",
+    "wire_ok",
+    "b70_restore_wall_s",
+    "b70_restore",
+    "b70_hot_wall_s",
+    "b70_hot_timings",
+    "b70_hot_content",
+    "b70_cold_wall_s",
+    "b70_cold_timings",
+    "b70_cold_content",
+    "decode_identical_48",
+    "summary",
+    "finished_at"
+   ]
+  ]
+ },
+ {
+  "source": "moe-longctx-27b-singleb70-suffix-20260919T004759Z.json",
+  "sha256": "d8f1281b86dcb346cf967e18a9473b2c06796b14090370931790a33808435d22",
+  "matches_public_provenance": false,
+  "keys": [
+   [
+    "target_tokens",
+    "prompt_tokens_omen_tokenizer",
+    "prompt_hash",
+    "filename",
+    "started_at",
+    "am4_prefill_wall_s",
+    "am4_prefill_timings",
+    "am4_save_wall_s",
+    "am4_save",
+    "wire_sender",
+    "wire_receiver",
+    "wire_ok",
+    "reused_am4_and_wire_from",
+    "b70_restore_wall_s",
+    "b70_restore",
+    "b70_hot_wall_s",
+    "b70_hot_timings",
+    "b70_hot_content",
+    "b70_cold_wall_s",
+    "b70_cold_timings",
+    "b70_cold_content",
+    "decode_identical_48",
+    "summary",
+    "finished_at"
+   ]
+  ]
+ },
+ {
+  "source": "moe-longctx-dualb70-20260918T023551Z.json",
+  "sha256": "9747e7058404f6f439eefab77a03c124e02ebcdcf740944019b8f6249ca91ff5",
+  "matches_public_provenance": false,
+  "keys": [
+   [
+    "target_tokens",
+    "prompt_tokens_omen_tokenizer",
+    "prompt_hash",
+    "filename",
+    "started_at",
+    "am4_prefill_wall_s",
+    "am4_prefill_timings",
+    "am4_save_wall_s",
+    "am4_save",
+    "wire_sender",
+    "wire_receiver",
+    "wire_ok",
+    "reused_am4_and_wire_from",
+    "b70_restore_wall_s",
+    "b70_restore",
+    "b70_hot_wall_s",
+    "b70_hot_timings",
+    "b70_hot_content",
+    "b70_cold_wall_s",
+    "b70_cold_timings",
+    "b70_cold_content",
+    "decode_identical_48",
+    "summary",
+    "finished_at"
+   ]
+  ]
+ },
+ {
+  "source": "np-depth-119k-q4-dualb70-kvu-noram-20260919T024218Z.json",
+  "sha256": "557fd50c29e62a8857c00bbe7713846a4216b8fb8afb19178706bf2478ccb720",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "filename",
+   "n_predict",
+   "rounds",
+   "restores",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "np-depth-119k-q4-dualb70-nonunified-patched-1of8resident-20260919T032942Z.json",
+  "sha256": "af685a97f18dce5ee1e8d69d836bbfef1b2effda6a80339ce089b9bce12434a9",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "filename",
+   "n_predict",
+   "rounds",
+   "restores",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "np-depth-119k-q4-dualb70-nonunified-patched-20260919T032857Z.json",
+  "sha256": "907be4c2c547cf33737a9cb3d1ca4c1ebda9addfedc8fc292bf53f0453a4a1ce",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "filename",
+   "n_predict",
+   "rounds",
+   "restores",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "omen-depth-119k-q4-dualb70-20260919T015951Z.json",
+  "sha256": "adfbc7a89707b95964e73ce43b92e77c69faf182a04c98e8a1ca61755e1b0f08",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "filename",
+   "prompt_plus_suffix_tokens_omen",
+   "hot_suffix",
+   "n_predict",
+   "ignore_eos",
+   "kv_file_bytes",
+   "restore_wall_s",
+   "restore",
+   "hot_wall_s",
+   "hot_timings",
+   "hot_content",
+   "cold_wall_s",
+   "cold_timings",
+   "cold_content",
+   "identical",
+   "common_prefix_chars",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "omen-depth-l4g-rpc4-restore-f16-mtp3-20260919T114719Z.json",
+  "sha256": "792e38bdd80d68e8f0993c156ee8ca174e449c1f8fb9b2a2222bd6acc3ef0755",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "filename",
+   "prompt_plus_suffix_tokens_omen",
+   "hot_suffix",
+   "n_predict",
+   "ignore_eos",
+   "kv_file_bytes",
+   "restore_wall_s",
+   "restore",
+   "hot_wall_s",
+   "hot_timings",
+   "hot_content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "omen-depth-l4g-rpc4-restore-f16-mtp3-ts2211-20260919T115011Z.json",
+  "sha256": "b4c7873f13e198f004ec6220db0dbda52ecb87ed926e0d486fded2ec14d9ad61",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "filename",
+   "prompt_plus_suffix_tokens_omen",
+   "hot_suffix",
+   "n_predict",
+   "ignore_eos",
+   "kv_file_bytes",
+   "restore_wall_s",
+   "restore",
+   "hot_wall_s",
+   "hot_timings",
+   "hot_content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "omen-depth-l4g-rpc4-restore-f16-mtp6-20260919T114825Z.json",
+  "sha256": "66cf7ac75d4d4ee9365b24185420c60dda5f34c069baa9bf6f03d4cf94a8957a",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "filename",
+   "prompt_plus_suffix_tokens_omen",
+   "hot_suffix",
+   "n_predict",
+   "ignore_eos",
+   "kv_file_bytes",
+   "restore_wall_s",
+   "restore",
+   "hot_wall_s",
+   "hot_timings",
+   "hot_content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "omen-depth-l4h-rpc4-256k-restore-f16-mtp3-20260919T123428Z.json",
+  "sha256": "c3ef907a749b2bb3a85468ba0c9b53f789e689d763b64c13801a4db33d8b06e5",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "filename",
+   "prompt_plus_suffix_tokens_omen",
+   "hot_suffix",
+   "n_predict",
+   "ignore_eos",
+   "kv_file_bytes",
+   "restore_wall_s",
+   "restore",
+   "hot_wall_s",
+   "hot_timings",
+   "hot_content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "omen-depth-l4h-rpc4-256k-restore-f16-mtp3-ts1111-20260919T123607Z.json",
+  "sha256": "c353087223e1958e41238d044f8bbac603051ef315c85ca3296e225e3febd987",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "filename",
+   "prompt_plus_suffix_tokens_omen",
+   "hot_suffix",
+   "n_predict",
+   "ignore_eos",
+   "kv_file_bytes",
+   "restore_wall_s",
+   "restore",
+   "hot_wall_s",
+   "hot_timings",
+   "hot_content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "restore-receipt.json",
+  "sha256": "2feca86e8d695ed8dd3c402aed004b891cfc902c8d4cc921ce3d0a18b99d1195",
+  "matches_public_provenance": false,
+  "keys": [
+   "ok",
+   "entry",
+   "n_restored",
+   "n_read",
+   "timings",
+   "verify_timings",
+   "prompt_n_after_restore",
+   "cache_n_after_restore",
+   "restore_wall_s",
+   "window"
+  ]
+ },
+ {
+  "source": "split-prefill-135k-q4-dualb70-20260919T025425Z.json",
+  "sha256": "37188146f5827510cd2e07df4b674f74b548a396e11554f81d0fe52d7fc71ebd",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "filename",
+   "prefix_tokens",
+   "tail_tokens",
+   "full_tokens",
+   "tail_files",
+   "restore_wall_s",
+   "restore",
+   "wall_s",
+   "timings",
+   "content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "split-prefill-135k-q4-dualb70-np1-20260919T030049Z.json",
+  "sha256": "801b0ed241f6ae7a3a56f5f638373d214e9b90d10e384fbda80a60e9843fc589",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "filename",
+   "prefix_tokens",
+   "tail_tokens",
+   "full_tokens",
+   "tail_files",
+   "restore_wall_s",
+   "restore",
+   "wall_s",
+   "timings",
+   "content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "split-prefill-l4b-hybrid-am4-119k-plus-sycl-tail-20260919T070135Z.json",
+  "sha256": "b90249ce94ca5ede3fc39de1b081d4d025f9afa607774bf04d9aff9fa16d6e7a",
+  "matches_public_provenance": false,
+  "keys": [
+   "started_at",
+   "filename",
+   "prefix_tokens",
+   "tail_tokens",
+   "full_tokens",
+   "tail_files",
+   "restore_wall_s",
+   "restore",
+   "wall_s",
+   "timings",
+   "content",
+   "finished_at"
+  ]
+ },
+ {
+  "source": "stage1.json",
+  "sha256": "713db36a87520892554c8a8d88d36c379addf3914b3852110f25031a3fa1d361",
+  "matches_public_provenance": false,
+  "keys": [
+   "stage",
+   "started_at",
+   "prompt_hash",
+   "filename",
+   "prompt_chars",
+   "model_id",
+   "slot",
+   "am4_prefill_wall_s",
+   "am4_prefill_timings",
+   "am4_prefill_tokens",
+   "am4_save_wall_s",
+   "am4_save",
+   "am4_sha256",
+   "wire_sender",
+   "wire_receiver",
+   "wire_ok",
+   "manifest_recorded",
+   "prompt_path",
+   "finished_at"
+  ]
+ }
+]

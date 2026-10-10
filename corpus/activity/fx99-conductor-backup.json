@@ -1,0 +1,36 @@
+{
+ "source_host": "fx99",
+ "source_root": "/home/derek/backups/omen-linux/hearth-production/runs",
+ "records": [
+  {
+   "relative_path": "omen-debut-bl-dee707/conductor/result.json",
+   "plan_id": "bl-20260702-dee707",
+   "computed_at": "2026-07-02T10:45:55Z"
+  },
+  {
+   "relative_path": "omen-worker-1-reearn/conductor/result.json",
+   "plan_id": "omen-worker-1-reearn",
+   "computed_at": null
+  },
+  {
+   "relative_path": "pour-a1-r7/conductor/result.json",
+   "plan_id": "pour-a1-r7",
+   "computed_at": null
+  },
+  {
+   "relative_path": "pour-b2/conductor/result.json",
+   "plan_id": "pour-b2",
+   "computed_at": null
+  },
+  {
+   "relative_path": "pour-c2/conductor/result.json",
+   "plan_id": "pour-c2",
+   "computed_at": "2026-07-03T13:30:15Z"
+  },
+  {
+   "relative_path": "regression-probe-ccb1/conductor/result.json",
+   "plan_id": "regression-probe-ccb1",
+   "computed_at": null
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+  "group": "clients",
+  "warning": "Directory metadata only. Files are not jobs/sessions/trials. Roots may overlap. Mtime is not event time.",
+  "source": {
+    "source_id": "linux-claude",
+    "host": "omen-linux",
+    "status": "complete",
+    "gaps": [],
+    "limits": {
+      "depth": 6,
+      "seconds": 20,
+      "max_files": 100000,
+      "max_candidates": 1500
+    },
+    "rollups_omitted": 7,
+    "rollups": [
+      {
+        "path": "/home/derek/.claude/projects/-home-derek",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 122
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/.claude/projects/-home-derek-work-amux",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 7
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/.claude/projects/-home-derek-work-trial-notebook",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 5
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/.claude/projects/-home-derek-work-amux-scratch-g3-claude",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 3
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/.claude/projects/-home-derek-work-amux-scratch-p4-suggest",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 3
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/.claude/projects/-home-derek-work-worktrees-bench27-routing",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 3
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/.claude/projects/-home-derek-work-amux-scratch-baseline-project",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/.claude/projects/-tmp",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 2
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/.claude/projects/-home-derek-continuity-triage-entire-probe",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/.claude/projects/-home-derek-work-amux-scratch-p4-empty",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/.claude/projects/-home-derek-work-amux-scratch-review-work",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 1
+        },
+        "git_markers": 0
+      },
+      {
+        "path": "/home/derek/.claude/projects/-home-derek-work-bench27-plan",
+        "directories": 1,
+        "structured_files": {
+          ".jsonl": 1
+        },
+        "git_markers": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "task_id": "br-20261010-134823-70316e83",
+  "parallelism": 1,
+  "out_dir": "corpus/discovery/20261010/scouts",
+  "brief": "[goal:G-known-world] You are a local metadata scout. Lab purpose: measured capability and capacity; candidates need frontier review. No cloud substitute. Use ONLY supplied directory metadata. Return two source leads as a JSON array with fields path, observed_file_counts, proposed_measure, required_next_evidence, cannot_infer. Copy paths and counts exactly. A directory/file count is NOT a session/job/trial count. No invented timestamps, outcomes, model IDs or shell commands. Do not infer parallelism from volume. No transcript text. Maximum 220 words.",
+  "scouts": [
+    {
+      "id": "remote-hunt",
+      "task_family": "utility_text",
+      "max_tokens": 900,
+      "files": [
+        "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/am4-bench-found.json",
+        "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/fx99-fleet.json"
+      ],
+      "question": "Choose one source lead from AM4 and one from FX99 that could show scale of local AI. What metadata must be extracted next?"
+    },
+    {
+      "id": "lab-hunt",
+      "task_family": "utility_text",
+      "max_tokens": 900,
+      "files": [
+        "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/linux-lab-rnd.json",
+        "/home/derek/work/known-world/corpus/discovery/20261010/packets-by-source/c-commandcenter-campaign.json"
+      ],
+      "question": "Choose one source lead from local lab research and one Windows campaign source that could show growth of experiments or planning. What metadata must be extracted next?"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "id": "e-manifest",
+  "host": "omen-e",
+  "root": "/mnt/omen-e-read/work/manifest",
+  "group": "lab",
+  "status": "complete",
+  "limits": {
+    "depth": 6,
+    "seconds": 25,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 36,
+    "files": 275,
+    "excluded": 7
+  },
+  "candidates": [
+    {
+      "id": "8e2dc8dcbe84223e",
+      "path": "/mnt/omen-e-read/work/manifest",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".csv": 3
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 372015,
+      "mtime_hint_min": 1779441236,
+      "mtime_hint_max": 1790148740
+    },
+    {
+      "id": "eb58d6d47909d7b3",
+      "path": "/mnt/omen-e-read/work/manifest/.claude",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 456,
+      "mtime_hint_min": 1780208603,
+      "mtime_hint_max": 1780208603
+    },
+    {
+      "id": "1b6fe0672df7f1df",
+      "path": "/mnt/omen-e-read/work/manifest/docs",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 7954,
+      "mtime_hint_min": 1780206439,
+      "mtime_hint_max": 1780206439
+    },
+    {
+      "id": "cbaba3448e30c84b",
+      "path": "/mnt/omen-e-read/work/manifest/exports",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 298314,
+      "mtime_hint_min": 1790149085,
+      "mtime_hint_max": 1790149101
+    },
+    {
+      "id": "9b38de7d53ecb1dd",
+      "path": "/mnt/omen-e-read/work/manifest/framework/runs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 45,
+        ".csv": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 517350,
+      "mtime_hint_min": 1779964458,
+      "mtime_hint_max": 1779979643
+    },
+    {
+      "id": "ec94dea3ba5459ef",
+      "path": "/mnt/omen-e-read/work/manifest/framework/tests/fixtures/discovery-smoke/engine-repo",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 766,
+      "mtime_hint_min": 1779960724,
+      "mtime_hint_max": 1779960738
+    },
+    {
+      "id": "0ae70398f1ccefb3",
+      "path": "/mnt/omen-e-read/work/manifest/framework/tests/fixtures/discovery-smoke/sparse-repo",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 74,
+      "mtime_hint_min": 1779960765,
+      "mtime_hint_max": 1779960765
+    },
+    {
+      "id": "7d6764397e4a296a",
+      "path": "/mnt/omen-e-read/work/manifest/framework/tests/fixtures/discovery-smoke/viewer-repo",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 584,
+      "mtime_hint_min": 1779960749,
+      "mtime_hint_max": 1779960753
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.002
+}

@@ -1,0 +1,1200 @@
+{
+  "id": "linux-hearth-artifacts",
+  "host": "omen-linux",
+  "root": "/home/derek/hearth-production/runs",
+  "group": "execution",
+  "status": "complete",
+  "limits": {
+    "depth": 4,
+    "seconds": 30,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 97,
+    "files": 2104,
+    "excluded": 4
+  },
+  "candidates": [
+    {
+      "id": "14434fce434d4f26",
+      "path": "/home/derek/hearth-production/runs/build-requests",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 29,
+        ".json": 28
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3074869,
+      "mtime_hint_min": 1790246126,
+      "mtime_hint_max": 1791640131
+    },
+    {
+      "id": "7933b86375dc7e9d",
+      "path": "/home/derek/hearth-production/runs/enumerate",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1,
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 3553,
+      "mtime_hint_min": 1788514384,
+      "mtime_hint_max": 1788514384
+    },
+    {
+      "id": "d2eb9b41465dab47",
+      "path": "/home/derek/hearth-production/runs/g2-validation",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3230,
+      "mtime_hint_min": 1783137783,
+      "mtime_hint_max": 1783137892
+    },
+    {
+      "id": "0082b1279a47686a",
+      "path": "/home/derek/hearth-production/runs/g2-validation/artifacts",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1679,
+      "mtime_hint_min": 1783137871,
+      "mtime_hint_max": 1783137871
+    },
+    {
+      "id": "dabf2e5d092d44e5",
+      "path": "/home/derek/hearth-production/runs/hearth",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 90496,
+      "mtime_hint_min": 1790046919,
+      "mtime_hint_max": 1790046919
+    },
+    {
+      "id": "86be55f18f0d5463",
+      "path": "/home/derek/hearth-production/runs/hearth/harvest-proofs",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4259,
+      "mtime_hint_min": 1784347098,
+      "mtime_hint_max": 1784347098
+    },
+    {
+      "id": "baeaa59160645fe2",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 4
+      },
+      "marker_files_direct": 4,
+      "bytes_direct": 224557122,
+      "mtime_hint_min": 1788482823,
+      "mtime_hint_max": 1790222036
+    },
+    {
+      "id": "61933d8fe8c54e9a",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-07-04",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2754,
+      "mtime_hint_min": 1787052466,
+      "mtime_hint_max": 1787052466
+    },
+    {
+      "id": "e5e8778c586a8c4e",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-07-05",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 918,
+      "mtime_hint_min": 1787052466,
+      "mtime_hint_max": 1787052466
+    },
+    {
+      "id": "534161a5bfaa9d5e",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-07-08",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1835,
+      "mtime_hint_min": 1787052466,
+      "mtime_hint_max": 1787052466
+    },
+    {
+      "id": "2632131f031d1da3",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-07-09",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2736,
+      "mtime_hint_min": 1787052466,
+      "mtime_hint_max": 1787052466
+    },
+    {
+      "id": "98c795acf608a724",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-07-11",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1835,
+      "mtime_hint_min": 1787052466,
+      "mtime_hint_max": 1787052466
+    },
+    {
+      "id": "f8883414cb5d3dbc",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-07-12",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 17
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 15632,
+      "mtime_hint_min": 1787052466,
+      "mtime_hint_max": 1787052466
+    },
+    {
+      "id": "0325392716c3d54a",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-07-13",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1838,
+      "mtime_hint_min": 1787052466,
+      "mtime_hint_max": 1787052466
+    },
+    {
+      "id": "08aa5a06b0ccdb3d",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-07-16",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 127
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 117604,
+      "mtime_hint_min": 1787052466,
+      "mtime_hint_max": 1787052466
+    },
+    {
+      "id": "da6ae7d1876369ae",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-07-17",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 15
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 13868,
+      "mtime_hint_min": 1787052466,
+      "mtime_hint_max": 1787052466
+    },
+    {
+      "id": "3d607fba79d82cce",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-07-18",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 43
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 40616,
+      "mtime_hint_min": 1787052466,
+      "mtime_hint_max": 1787052466
+    },
+    {
+      "id": "1e54add8b3a1676d",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-07-19",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 9
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 8544,
+      "mtime_hint_min": 1787052466,
+      "mtime_hint_max": 1787052466
+    },
+    {
+      "id": "cd16b19e9778525d",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-07-20",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 45
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 42605,
+      "mtime_hint_min": 1787052466,
+      "mtime_hint_max": 1787052466
+    },
+    {
+      "id": "8b3faf496c39d26f",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-07-21",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 81
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 77246,
+      "mtime_hint_min": 1787052466,
+      "mtime_hint_max": 1787052466
+    },
+    {
+      "id": "55d1f4e1cdef3258",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-07-22",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 946,
+      "mtime_hint_min": 1787052466,
+      "mtime_hint_max": 1787052466
+    },
+    {
+      "id": "abfbe74f25a8d90c",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-07-23",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 10
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 9568,
+      "mtime_hint_min": 1787052466,
+      "mtime_hint_max": 1787052466
+    },
+    {
+      "id": "49ba8e5513c698b4",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-07-24",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 962,
+      "mtime_hint_min": 1787052466,
+      "mtime_hint_max": 1787052466
+    },
+    {
+      "id": "875f0016593f1c1b",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-07-29",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 15
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 14151,
+      "mtime_hint_min": 1787052466,
+      "mtime_hint_max": 1787052466
+    },
+    {
+      "id": "5c3e2fd115856046",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-07-30",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 797
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 758373,
+      "mtime_hint_min": 1787052466,
+      "mtime_hint_max": 1787052466
+    },
+    {
+      "id": "d347a70ff1a31f39",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-07-31",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 945,
+      "mtime_hint_min": 1787052466,
+      "mtime_hint_max": 1787052466
+    },
+    {
+      "id": "866d76b6ca7b3905",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-09-04",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1880,
+      "mtime_hint_min": 1788517926,
+      "mtime_hint_max": 1788518833
+    },
+    {
+      "id": "70809d97d6b4c021",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-09-08",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 6
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 5632,
+      "mtime_hint_min": 1788914280,
+      "mtime_hint_max": 1788914280
+    },
+    {
+      "id": "2b4d1b22c11f000e",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-09-09",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 7
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 6569,
+      "mtime_hint_min": 1788935880,
+      "mtime_hint_max": 1788998406
+    },
+    {
+      "id": "869b2b08eaf674b0",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-09-10",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1898,
+      "mtime_hint_min": 1789041606,
+      "mtime_hint_max": 1789084811
+    },
+    {
+      "id": "b289f71eadd92ba5",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-09-12",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 165
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 156764,
+      "mtime_hint_min": 1789208247,
+      "mtime_hint_max": 1789259300
+    },
+    {
+      "id": "c19a5a4a117ba1a5",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-09-13",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 945,
+      "mtime_hint_min": 1789280899,
+      "mtime_hint_max": 1789280899
+    },
+    {
+      "id": "8f9975bacf9c508a",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-09-15",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2803,
+      "mtime_hint_min": 1789525253,
+      "mtime_hint_max": 1789525253
+    },
+    {
+      "id": "762fc1bd2059b43a",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-09-17",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 948,
+      "mtime_hint_min": 1789658387,
+      "mtime_hint_max": 1789658387
+    },
+    {
+      "id": "faa645a611ec1ad7",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-09-18",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 8
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 7598,
+      "mtime_hint_min": 1789695383,
+      "mtime_hint_max": 1789716983
+    },
+    {
+      "id": "63fe83704be38fef",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-09-19",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 10
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 9412,
+      "mtime_hint_min": 1789789060,
+      "mtime_hint_max": 1789832260
+    },
+    {
+      "id": "4c6f5904e7209531",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-09-20",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1863,
+      "mtime_hint_min": 1789897061,
+      "mtime_hint_max": 1789897061
+    },
+    {
+      "id": "91346c3e4edb45ff",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-09-21",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 146
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 138320,
+      "mtime_hint_min": 1789961861,
+      "mtime_hint_max": 1790005062
+    },
+    {
+      "id": "b9527af8a5386feb",
+      "path": "/home/derek/hearth-production/runs/hearth-gateway/artifacts/2026-09-22",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 18
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 16980,
+      "mtime_hint_min": 1790059940,
+      "mtime_hint_max": 1790080573
+    },
+    {
+      "id": "e01233f3cf70300a",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-claude-frontier",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".ndjson": 1,
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 287449,
+      "mtime_hint_min": 1789960917,
+      "mtime_hint_max": 1790050855
+    },
+    {
+      "id": "31b53e9330a39834",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-claude-frontier/artifacts/2026-07-30",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 8
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 7720,
+      "mtime_hint_min": 1785403405,
+      "mtime_hint_max": 1787052466
+    },
+    {
+      "id": "5d0f220e716529ac",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-claude-frontier/artifacts/2026-07-31",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 949,
+      "mtime_hint_min": 1787052466,
+      "mtime_hint_max": 1787052466
+    },
+    {
+      "id": "39851d234b742ef3",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-claude-frontier/artifacts/2026-09-04",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3160,
+      "mtime_hint_min": 1788516929,
+      "mtime_hint_max": 1788518760
+    },
+    {
+      "id": "2115d54b96267c31",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-claude-frontier/artifacts/2026-09-09",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3052,
+      "mtime_hint_min": 1788934144,
+      "mtime_hint_max": 1788998278
+    },
+    {
+      "id": "8ad2f61ebdbbd1db",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-claude-frontier/artifacts/2026-09-10",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2033,
+      "mtime_hint_min": 1789040649,
+      "mtime_hint_max": 1789078304
+    },
+    {
+      "id": "9620bdf7adf8ac08",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-claude-frontier/artifacts/2026-09-12",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 164
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 159580,
+      "mtime_hint_min": 1789190772,
+      "mtime_hint_max": 1789247786
+    },
+    {
+      "id": "fd087fe4c813cc60",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-claude-frontier/artifacts/2026-09-13",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 968,
+      "mtime_hint_min": 1789269677,
+      "mtime_hint_max": 1789269677
+    },
+    {
+      "id": "cff0db1342d1adc2",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-claude-frontier/artifacts/2026-09-17",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 970,
+      "mtime_hint_min": 1789652358,
+      "mtime_hint_max": 1789652358
+    },
+    {
+      "id": "fc89fb3cf540157b",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-claude-frontier/artifacts/2026-09-18",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 8
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 8140,
+      "mtime_hint_min": 1789694413,
+      "mtime_hint_max": 1789698996
+    },
+    {
+      "id": "2259b472efcba747",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-claude-frontier/artifacts/2026-09-19",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 10
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 10077,
+      "mtime_hint_min": 1789779096,
+      "mtime_hint_max": 1789829507
+    },
+    {
+      "id": "eaa0cebadd5e5b9d",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-claude-frontier/artifacts/2026-09-21",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 142
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 140286,
+      "mtime_hint_min": 1789954599,
+      "mtime_hint_max": 1789991548
+    },
+    {
+      "id": "25985733f9816b72",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-claude-frontier/artifacts/2026-09-22",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 6
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 6032,
+      "mtime_hint_min": 1790046267,
+      "mtime_hint_max": 1790050855
+    },
+    {
+      "id": "e2f5b3d85cc0f632",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-codex-cli",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".ndjson": 1,
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 28321,
+      "mtime_hint_min": 1790074895,
+      "mtime_hint_max": 1790076821
+    },
+    {
+      "id": "73cbff3e61357ed2",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-codex-cli/artifacts/2026-09-08",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 7
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 7236,
+      "mtime_hint_min": 1788893956,
+      "mtime_hint_max": 1788908707
+    },
+    {
+      "id": "26361676fe0b5355",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-codex-cli/artifacts/2026-09-09",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3799,
+      "mtime_hint_min": 1788919634,
+      "mtime_hint_max": 1788931004
+    },
+    {
+      "id": "b743e1b172d1e9f8",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-codex-cli/artifacts/2026-09-12",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1053,
+      "mtime_hint_min": 1789210892,
+      "mtime_hint_max": 1789210892
+    },
+    {
+      "id": "66f0d0ac7fe3a428",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-codex-cli/artifacts/2026-09-15",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2873,
+      "mtime_hint_min": 1789503977,
+      "mtime_hint_max": 1789505526
+    },
+    {
+      "id": "df150fb4cb9cef9f",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-codex-cli/artifacts/2026-09-20",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2060,
+      "mtime_hint_min": 1789876774,
+      "mtime_hint_max": 1789878598
+    },
+    {
+      "id": "5dce5ca0cbd95e61",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-codex-cli/artifacts/2026-09-21",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 4124,
+      "mtime_hint_min": 1789976615,
+      "mtime_hint_max": 1789981804
+    },
+    {
+      "id": "edca995ddf96563d",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-codex-cli/artifacts/2026-09-22",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 14
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 14316,
+      "mtime_hint_min": 1790067159,
+      "mtime_hint_max": 1790076821
+    },
+    {
+      "id": "3f8c1e4107bd75a4",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-experiment-doc-adr-bench",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".ndjson": 1,
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 13011,
+      "mtime_hint_min": 1788482622,
+      "mtime_hint_max": 1788483448
+    },
+    {
+      "id": "4d669bc40db6f0a5",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-experiment-doc-adr-bench/artifacts/2026-09-04",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 15
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 15526,
+      "mtime_hint_min": 1788482841,
+      "mtime_hint_max": 1788483448
+    },
+    {
+      "id": "430dab0b4904179f",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-gcp-adk-test",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".ndjson": 1,
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 1165,
+      "mtime_hint_min": 1785403351,
+      "mtime_hint_max": 1785403408
+    },
+    {
+      "id": "4950d9ccb5cc6724",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-gcp-adk-test/artifacts/2026-07-30",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 938,
+      "mtime_hint_min": 1785403408,
+      "mtime_hint_max": 1785403408
+    },
+    {
+      "id": "ef9e90d1cbefd9c9",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-rotation-proof",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 780,
+      "mtime_hint_min": 1788483775,
+      "mtime_hint_max": 1788483775
+    },
+    {
+      "id": "b63c10acd840c949",
+      "path": "/home/derek/hearth-production/runs/hearth-offload-rotation-proof/artifacts/2026-09-04",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 967,
+      "mtime_hint_min": 1788483775,
+      "mtime_hint_max": 1788483775
+    },
+    {
+      "id": "968cc1516f6d171a",
+      "path": "/home/derek/hearth-production/runs/omen-5070-hwbaseline-2026-07-02",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 1964,
+      "mtime_hint_min": 1783042660,
+      "mtime_hint_max": 1783042660
+    },
+    {
+      "id": "e6f8d8cb409b9213",
+      "path": "/home/derek/hearth-production/runs/omen-5070-hwbaseline-2026-07-02/artifacts",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 10
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 9228,
+      "mtime_hint_min": 1783042660,
+      "mtime_hint_max": 1783042660
+    },
+    {
+      "id": "4b419efdd1dd7361",
+      "path": "/home/derek/hearth-production/runs/omen-debut-bl-dee707",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 9667,
+      "mtime_hint_min": 1783082678,
+      "mtime_hint_max": 1783082726
+    },
+    {
+      "id": "10f9ed56ef17655f",
+      "path": "/home/derek/hearth-production/runs/omen-debut-bl-dee707/artifacts",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1274,
+      "mtime_hint_min": 1783082662,
+      "mtime_hint_max": 1783082662
+    },
+    {
+      "id": "7e880fa7819c034a",
+      "path": "/home/derek/hearth-production/runs/omen-debut-bl-dee707/conductor",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 9368,
+      "mtime_hint_min": 1783082652,
+      "mtime_hint_max": 1783082652
+    },
+    {
+      "id": "9a8adc9392437799",
+      "path": "/home/derek/hearth-production/runs/omen-worker-1-reearn",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 5281,
+      "mtime_hint_min": 1783146730,
+      "mtime_hint_max": 1783147933
+    },
+    {
+      "id": "65351c4aa88e249b",
+      "path": "/home/derek/hearth-production/runs/omen-worker-1-reearn/artifacts",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2225,
+      "mtime_hint_min": 1783146730,
+      "mtime_hint_max": 1783146730
+    },
+    {
+      "id": "0f4270da6ac9dab1",
+      "path": "/home/derek/hearth-production/runs/omen-worker-1-reearn/conductor",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 4354,
+      "mtime_hint_min": 1783146730,
+      "mtime_hint_max": 1783146730
+    },
+    {
+      "id": "304b410506f83db9",
+      "path": "/home/derek/hearth-production/runs/pour-a1-r7",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 695,
+      "mtime_hint_min": 1783058435,
+      "mtime_hint_max": 1783058435
+    },
+    {
+      "id": "0d218349a49de6d1",
+      "path": "/home/derek/hearth-production/runs/pour-a1-r7/artifacts",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 1650,
+      "mtime_hint_min": 1783058435,
+      "mtime_hint_max": 1783058435
+    },
+    {
+      "id": "8b9dff92e7a0d7f9",
+      "path": "/home/derek/hearth-production/runs/pour-a1-r7/conductor",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 4276,
+      "mtime_hint_min": 1783058413,
+      "mtime_hint_max": 1783058414
+    },
+    {
+      "id": "b30c776da87cbd50",
+      "path": "/home/derek/hearth-production/runs/pour-b2",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 783,
+      "mtime_hint_min": 1783052771,
+      "mtime_hint_max": 1783052771
+    },
+    {
+      "id": "fce34a6dca6a4284",
+      "path": "/home/derek/hearth-production/runs/pour-b2/artifacts",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3379,
+      "mtime_hint_min": 1783052771,
+      "mtime_hint_max": 1783052771
+    },
+    {
+      "id": "c83739771a314e56",
+      "path": "/home/derek/hearth-production/runs/pour-b2/conductor",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 5394,
+      "mtime_hint_min": 1783052771,
+      "mtime_hint_max": 1783052771
+    },
+    {
+      "id": "eb2b8d07dbaa69f9",
+      "path": "/home/derek/hearth-production/runs/pour-c2",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 2150,
+      "mtime_hint_min": 1783086509,
+      "mtime_hint_max": 1783086509
+    },
+    {
+      "id": "03223cb0b7831a6e",
+      "path": "/home/derek/hearth-production/runs/pour-c2/artifacts",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2288,
+      "mtime_hint_min": 1783086512,
+      "mtime_hint_max": 1783086517
+    },
+    {
+      "id": "b478491b0c32df73",
+      "path": "/home/derek/hearth-production/runs/pour-c2/conductor",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 4527,
+      "mtime_hint_min": 1783085492,
+      "mtime_hint_max": 1783085492
+    },
+    {
+      "id": "72bc3739a0a806cb",
+      "path": "/home/derek/hearth-production/runs/regression-probe-ccb1",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 4446,
+      "mtime_hint_min": 1783142489,
+      "mtime_hint_max": 1783142752
+    },
+    {
+      "id": "7d3c9631c0d148ea",
+      "path": "/home/derek/hearth-production/runs/regression-probe-ccb1/artifacts",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 2264,
+      "mtime_hint_min": 1783142489,
+      "mtime_hint_max": 1783142489
+    },
+    {
+      "id": "ccebc77e0226e242",
+      "path": "/home/derek/hearth-production/runs/regression-probe-ccb1/conductor",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 4361,
+      "mtime_hint_min": 1783142489,
+      "mtime_hint_max": 1783142489
+    },
+    {
+      "id": "794f79dc51b78939",
+      "path": "/home/derek/hearth-production/runs/run",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 1,
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 34560,
+      "mtime_hint_min": 1788515112,
+      "mtime_hint_max": 1788515113
+    },
+    {
+      "id": "f7dc346ff3f9a59e",
+      "path": "/home/derek/hearth-production/runs/vllm-moe-crash-omen-wsl-2026-07-02",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 10637,
+      "mtime_hint_min": 1783082677,
+      "mtime_hint_max": 1783082732
+    },
+    {
+      "id": "0565136f5c748124",
+      "path": "/home/derek/hearth-production/runs/vllm-moe-crash-omen-wsl-2026-07-02/artifacts",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 3460,
+      "mtime_hint_min": 1783082677,
+      "mtime_hint_max": 1783082677
+    },
+    {
+      "id": "06b7de52bdc723ff",
+      "path": "/home/derek/hearth-production/runs/vllm-moe-crash-omen-wsl-2026-07-02/wsl",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 2,
+        ".jsonl": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 87916,
+      "mtime_hint_min": 1783082677,
+      "mtime_hint_max": 1783082677
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.028
+}

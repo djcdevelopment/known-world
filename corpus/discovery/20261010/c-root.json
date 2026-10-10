@@ -1,0 +1,767 @@
+{
+  "id": "c-root",
+  "host": "omen-c",
+  "root": "/mnt/omen-c-read",
+  "group": "projects",
+  "status": "complete",
+  "limits": {
+    "depth": 2,
+    "seconds": 20,
+    "max_files": 100000,
+    "max_candidates": 1500
+  },
+  "counts": {
+    "directories": 194,
+    "files": 4162,
+    "symlinks_excluded": 48,
+    "excluded": 50,
+    "directories_beyond_depth": 1105
+  },
+  "candidates": [
+    {
+      "id": "ffacfb7ffd7fd766",
+      "path": "/mnt/omen-c-read/ProgramData/Windows App Certification Kit",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 513047,
+      "mtime_hint_min": 1769519932,
+      "mtime_hint_max": 1769519934
+    },
+    {
+      "id": "be98ae2fb00227bc",
+      "path": "/mnt/omen-c-read/Temp",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 4
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 71301,
+      "mtime_hint_min": 1785644138,
+      "mtime_hint_max": 1785646433
+    },
+    {
+      "id": "5c8ff1c689b1be53",
+      "path": "/mnt/omen-c-read/asdfdsa",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 4082339,
+      "mtime_hint_min": 1782752654,
+      "mtime_hint_max": 1785640801
+    },
+    {
+      "id": "fb38212b23d86a77",
+      "path": "/mnt/omen-c-read/asdfdsa/bundle",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".jsonl": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 280010,
+      "mtime_hint_min": 1782752653,
+      "mtime_hint_max": 1782752653
+    },
+    {
+      "id": "f87c6ee75586d486",
+      "path": "/mnt/omen-c-read/assessment",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 6538,
+      "mtime_hint_min": 1787157214,
+      "mtime_hint_max": 1787157214
+    },
+    {
+      "id": "f1783bd32d8d25fb",
+      "path": "/mnt/omen-c-read/hearth-var",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 88178593,
+      "mtime_hint_min": 1787157214,
+      "mtime_hint_max": 1787157217
+    },
+    {
+      "id": "0d4afa36c346dc7d",
+      "path": "/mnt/omen-c-read/hearth-var/execution",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".sqlite": 2,
+        ".ndjson": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 988149,
+      "mtime_hint_min": 1787157214,
+      "mtime_hint_max": 1787157214
+    },
+    {
+      "id": "b721e23d925a76e7",
+      "path": "/mnt/omen-c-read/hearth-var/ledger",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".ndjson": 1,
+        ".sqlite": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 89647379,
+      "mtime_hint_min": 1787157214,
+      "mtime_hint_max": 1787157214
+    },
+    {
+      "id": "246cf54ddcd4ec72",
+      "path": "/mnt/omen-c-read/hearth-var/sentinel",
+      "git_marker": false,
+      "name_hint": true,
+      "structured_files_direct": {
+        ".ndjson": 1,
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 8304823,
+      "mtime_hint_min": 1787157214,
+      "mtime_hint_max": 1787157214
+    },
+    {
+      "id": "9c4e8f126272a3ec",
+      "path": "/mnt/omen-c-read/omen-perception-authored",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 5
+      },
+      "marker_files_direct": 2,
+      "bytes_direct": 13830866,
+      "mtime_hint_min": 1787157215,
+      "mtime_hint_max": 1787157215
+    },
+    {
+      "id": "6885a1094239a861",
+      "path": "/mnt/omen-c-read/surreal_data/mydatabase.db",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 34044760,
+      "mtime_hint_min": 1787157215,
+      "mtime_hint_max": 1787157215
+    },
+    {
+      "id": "5f06ca2ebc5648bc",
+      "path": "/mnt/omen-c-read/tuning",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 1765626,
+      "mtime_hint_min": 1787157215,
+      "mtime_hint_max": 1787157215
+    },
+    {
+      "id": "ba70dfe1a7c66f66",
+      "path": "/mnt/omen-c-read/tuning/ollama-backend-lab",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".csv": 1
+      },
+      "marker_files_direct": 2,
+      "bytes_direct": 68336,
+      "mtime_hint_min": 1787157215,
+      "mtime_hint_max": 1787157215
+    },
+    {
+      "id": "223c1c5cd66dc07b",
+      "path": "/mnt/omen-c-read/work",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 191256927,
+      "mtime_hint_min": 1782901791,
+      "mtime_hint_max": 1789510332
+    },
+    {
+      "id": "5989f8a1ebbc500a",
+      "path": "/mnt/omen-c-read/work/404",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 38823,
+      "mtime_hint_min": 1789594670,
+      "mtime_hint_max": 1790144359
+    },
+    {
+      "id": "ed8cb386446b244f",
+      "path": "/mnt/omen-c-read/work/ComfyMods",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 112227,
+      "mtime_hint_min": 1789191048,
+      "mtime_hint_max": 1789198121
+    },
+    {
+      "id": "08ca34754969e60d",
+      "path": "/mnt/omen-c-read/work/ComfyStewardView",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 2,
+      "bytes_direct": 11801166,
+      "mtime_hint_min": 1782901439,
+      "mtime_hint_max": 1789507089
+    },
+    {
+      "id": "47c75c106f4514bc",
+      "path": "/mnt/omen-c-read/work/JEPA",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 724253,
+      "mtime_hint_min": 1790079682,
+      "mtime_hint_max": 1790171771
+    },
+    {
+      "id": "20b128bbc23ae25f",
+      "path": "/mnt/omen-c-read/work/SelfieStick",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 325584,
+      "mtime_hint_min": 1789301817,
+      "mtime_hint_max": 1791447985
+    },
+    {
+      "id": "bd1a8204cefd03c3",
+      "path": "/mnt/omen-c-read/work/Unfaded",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 471286,
+      "mtime_hint_min": 1789301817,
+      "mtime_hint_max": 1791447959
+    },
+    {
+      "id": "9ace70269cfd437b",
+      "path": "/mnt/omen-c-read/work/archify",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 1549031,
+      "mtime_hint_min": 1788921552,
+      "mtime_hint_max": 1788921552
+    },
+    {
+      "id": "ff5e518e0044a428",
+      "path": "/mnt/omen-c-read/work/articleblitz",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 7176,
+      "mtime_hint_min": 1783754381,
+      "mtime_hint_max": 1783755609
+    },
+    {
+      "id": "5163cbf57a33879c",
+      "path": "/mnt/omen-c-read/work/assessment",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 6538,
+      "mtime_hint_min": 1787132929,
+      "mtime_hint_max": 1787132929
+    },
+    {
+      "id": "80fea210848f8649",
+      "path": "/mnt/omen-c-read/work/baseline",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 149312,
+      "mtime_hint_min": 1784615545,
+      "mtime_hint_max": 1790148706
+    },
+    {
+      "id": "16b09302e48f7d38",
+      "path": "/mnt/omen-c-read/work/comfy-quest",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 40033,
+      "mtime_hint_min": 1786522410,
+      "mtime_hint_max": 1789506804
+    },
+    {
+      "id": "7f6a2a3058778ce5",
+      "path": "/mnt/omen-c-read/work/commandcenter",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 6277025,
+      "mtime_hint_min": 1782558810,
+      "mtime_hint_max": 1790222066
+    },
+    {
+      "id": "86296926dd507c0f",
+      "path": "/mnt/omen-c-read/work/commandcenter-d1-guard-9f306fb",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 870907,
+      "mtime_hint_min": 1790072333,
+      "mtime_hint_max": 1790072333
+    },
+    {
+      "id": "7f207cb631cc38ce",
+      "path": "/mnt/omen-c-read/work/commandcenter-flash-foreman",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 2474302,
+      "mtime_hint_min": 1790064003,
+      "mtime_hint_max": 1790064004
+    },
+    {
+      "id": "aceb11f81a504aa4",
+      "path": "/mnt/omen-c-read/work/commandcenter-hermes-fx99",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 2444655,
+      "mtime_hint_min": 1789836970,
+      "mtime_hint_max": 1789856927
+    },
+    {
+      "id": "fbd4e1c2c42dce78",
+      "path": "/mnt/omen-c-read/work/commandcenter-jev-scheduler",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 2444660,
+      "mtime_hint_min": 1789968856,
+      "mtime_hint_max": 1789968857
+    },
+    {
+      "id": "387a2844b20673cf",
+      "path": "/mnt/omen-c-read/work/commandcenter-local-work",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 2474302,
+      "mtime_hint_min": 1790058076,
+      "mtime_hint_max": 1790058076
+    },
+    {
+      "id": "8e572addc3d07884",
+      "path": "/mnt/omen-c-read/work/contextlandscape",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 372037,
+      "mtime_hint_min": 1785322836,
+      "mtime_hint_max": 1790148399
+    },
+    {
+      "id": "517095b83263d5dd",
+      "path": "/mnt/omen-c-read/work/deepagents-poc",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 662,
+      "mtime_hint_min": 1789652617,
+      "mtime_hint_max": 1789652617
+    },
+    {
+      "id": "1dcfa039d3d21d51",
+      "path": "/mnt/omen-c-read/work/deepagents-shot-director",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 17423,
+      "mtime_hint_min": 1789209455,
+      "mtime_hint_max": 1789275056
+    },
+    {
+      "id": "abd218932968c4be",
+      "path": "/mnt/omen-c-read/work/deepnorthtesting",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 169653,
+      "mtime_hint_min": 1789274313,
+      "mtime_hint_max": 1791447928
+    },
+    {
+      "id": "637ab426c12179da",
+      "path": "/mnt/omen-c-read/work/djcdevelopment",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 2511,
+      "mtime_hint_min": 1787913571,
+      "mtime_hint_max": 1787913571
+    },
+    {
+      "id": "70b273003d7b3a58",
+      "path": "/mnt/omen-c-read/work/gallery-stage-baseline-20260915",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 142805,
+      "mtime_hint_min": 1789511438,
+      "mtime_hint_max": 1789511438
+    },
+    {
+      "id": "4efc65ed8eaec5c7",
+      "path": "/mnt/omen-c-read/work/gallery-stage-quest-20260915",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 40195,
+      "mtime_hint_min": 1789510043,
+      "mtime_hint_max": 1789539133
+    },
+    {
+      "id": "da01afae0bba9c95",
+      "path": "/mnt/omen-c-read/work/gallery-stage-steward-20260915",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 2,
+      "bytes_direct": 11801902,
+      "mtime_hint_min": 1789510009,
+      "mtime_hint_max": 1789539187
+    },
+    {
+      "id": "8bfdc490334eb15a",
+      "path": "/mnt/omen-c-read/work/hearth-execution-control-plane",
+      "git_marker": true,
+      "name_hint": true,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 1685230,
+      "mtime_hint_min": 1785458330,
+      "mtime_hint_max": 1785458330
+    },
+    {
+      "id": "0dab78af52f97ae8",
+      "path": "/mnt/omen-c-read/work/irc",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 42634,
+      "mtime_hint_min": 1785433246,
+      "mtime_hint_max": 1790150499
+    },
+    {
+      "id": "f795971a74ecbe0f",
+      "path": "/mnt/omen-c-read/work/irc-hearth-adapter",
+      "git_marker": true,
+      "name_hint": true,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 39383,
+      "mtime_hint_min": 1785458330,
+      "mtime_hint_max": 1785460960
+    },
+    {
+      "id": "b26dd71e4abf52df",
+      "path": "/mnt/omen-c-read/work/ismodded",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 439278,
+      "mtime_hint_min": 1789274313,
+      "mtime_hint_max": 1791447526
+    },
+    {
+      "id": "890fe247e1f753f7",
+      "path": "/mnt/omen-c-read/work/isolate",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 10247,
+      "mtime_hint_min": 1786119918,
+      "mtime_hint_max": 1788905205
+    },
+    {
+      "id": "f109c8737d3c7018",
+      "path": "/mnt/omen-c-read/work/lumberjacks-platform",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 23057,
+      "mtime_hint_min": 1784888092,
+      "mtime_hint_max": 1790144335
+    },
+    {
+      "id": "fba75bcefbc9efb3",
+      "path": "/mnt/omen-c-read/work/m11-transport-20260722-r1-bundle",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 2
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 8181,
+      "mtime_hint_min": 1784727122,
+      "mtime_hint_max": 1784728594
+    },
+    {
+      "id": "e85a28bd64d07d05",
+      "path": "/mnt/omen-c-read/work/memsplice",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 5757,
+      "mtime_hint_min": 1790042660,
+      "mtime_hint_max": 1790046436
+    },
+    {
+      "id": "e63a64f39e57c884",
+      "path": "/mnt/omen-c-read/work/networksense",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 25283,
+      "mtime_hint_min": 1786521885,
+      "mtime_hint_max": 1788905208
+    },
+    {
+      "id": "d4fd4abc0461dbf1",
+      "path": "/mnt/omen-c-read/work/nightshift",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 166499,
+      "mtime_hint_min": 1789263820,
+      "mtime_hint_max": 1789306388
+    },
+    {
+      "id": "d2cf3d25de9b1306",
+      "path": "/mnt/omen-c-read/work/notebook",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 4661,
+      "mtime_hint_min": 1784441881,
+      "mtime_hint_max": 1790148389
+    },
+    {
+      "id": "23ba570d81f0a23a",
+      "path": "/mnt/omen-c-read/work/omen-perception",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 5
+      },
+      "marker_files_direct": 2,
+      "bytes_direct": 22315305,
+      "mtime_hint_min": 1782597345,
+      "mtime_hint_max": 1791660124
+    },
+    {
+      "id": "16264e49656052e5",
+      "path": "/mnt/omen-c-read/work/overview",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 1,
+      "bytes_direct": 185944,
+      "mtime_hint_min": 1786355871,
+      "mtime_hint_max": 1786364999
+    },
+    {
+      "id": "2a6e11b93b406c45",
+      "path": "/mnt/omen-c-read/work/sealcompanion",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 348541,
+      "mtime_hint_min": 1789274313,
+      "mtime_hint_max": 1789627187
+    },
+    {
+      "id": "06b1d5b66f2f999a",
+      "path": "/mnt/omen-c-read/work/sovereign-shards",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 21632,
+      "mtime_hint_min": 1786516344,
+      "mtime_hint_max": 1788905211
+    },
+    {
+      "id": "8e8743d130478d2c",
+      "path": "/mnt/omen-c-read/work/steppeintegrations-site",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 3
+      },
+      "marker_files_direct": 0,
+      "bytes_direct": 89596,
+      "mtime_hint_min": 1783149422,
+      "mtime_hint_max": 1790148437
+    },
+    {
+      "id": "bb91b0379b064916",
+      "path": "/mnt/omen-c-read/work/steward-spatial-lab",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 29344,
+      "mtime_hint_min": 1787551084,
+      "mtime_hint_max": 1788439146
+    },
+    {
+      "id": "db0d548e5e2d64c1",
+      "path": "/mnt/omen-c-read/work/totemalert",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 512152,
+      "mtime_hint_min": 1786599442,
+      "mtime_hint_max": 1791447780
+    },
+    {
+      "id": "7010fedff7081208",
+      "path": "/mnt/omen-c-read/work/tuning",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 1765626,
+      "mtime_hint_min": 1782991072,
+      "mtime_hint_max": 1782995614
+    },
+    {
+      "id": "d14608dfd4eb83ae",
+      "path": "/mnt/omen-c-read/work/valheim-profile-engine",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 166365,
+      "mtime_hint_min": 1789274313,
+      "mtime_hint_max": 1789942114
+    },
+    {
+      "id": "942a23d1d9ab756f",
+      "path": "/mnt/omen-c-read/work/vulkancliff",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 14035,
+      "mtime_hint_min": 1787544266,
+      "mtime_hint_max": 1787584257
+    },
+    {
+      "id": "f4feefe97fdfc7dd",
+      "path": "/mnt/omen-c-read/work/windtunnel",
+      "git_marker": true,
+      "name_hint": false,
+      "structured_files_direct": {},
+      "marker_files_direct": 0,
+      "bytes_direct": 131994,
+      "mtime_hint_min": 1783712779,
+      "mtime_hint_max": 1788422488
+    },
+    {
+      "id": "213807478bb2d6dd",
+      "path": "/mnt/omen-c-read/work/writing",
+      "git_marker": false,
+      "name_hint": false,
+      "structured_files_direct": {
+        ".json": 1
+      },
+      "marker_files_direct": 1,
+      "bytes_direct": 4021645,
+      "mtime_hint_min": 1783150094,
+      "mtime_hint_max": 1789437666
+    }
+  ],
+  "gaps": [],
+  "elapsed_s": 0.263
+}

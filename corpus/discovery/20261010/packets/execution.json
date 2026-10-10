@@ -1,0 +1,893 @@
+{
+  "warning": "Candidate paths and file counts only, not sessions/jobs/experiments; may overlap across roots. Mtime not evidence time. Rollups are top 35 by structured files, not exhaustive.",
+  "sources": [
+    {
+      "source_id": "linux-hearth-artifacts",
+      "status": "complete",
+      "gaps": [],
+      "limits": {
+        "depth": 4,
+        "seconds": 30,
+        "max_files": 100000,
+        "max_candidates": 1500
+      },
+      "rollup_count": 42,
+      "rollups": [
+        {
+          "directory": "/home/derek/hearth-production/runs/hearth-gateway/artifacts",
+          "candidate_directories": 32,
+          "structured_files": {
+            ".json": 1546
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/hearth-offload-claude-frontier/artifacts",
+          "candidate_directories": 12,
+          "structured_files": {
+            ".json": 349
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/build-requests",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 29,
+            ".json": 28
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/hearth-offload-codex-cli/artifacts",
+          "candidate_directories": 7,
+          "structured_files": {
+            ".json": 35
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/hearth-offload-experiment-doc-adr-bench/artifacts",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 15
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/omen-5070-hwbaseline-2026-07-02/artifacts",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 10
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/hearth-gateway",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 4
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/pour-b2/artifacts",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 3
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/vllm-moe-crash-omen-wsl-2026-07-02/artifacts",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 3
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/vllm-moe-crash-omen-wsl-2026-07-02/wsl",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2,
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/enumerate",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1,
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/hearth-offload-claude-frontier",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".ndjson": 1,
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/hearth-offload-codex-cli",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".ndjson": 1,
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/hearth-offload-experiment-doc-adr-bench",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".ndjson": 1,
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/hearth-offload-gcp-adk-test",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".ndjson": 1,
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/omen-debut-bl-dee707/conductor",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/omen-worker-1-reearn/artifacts",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/pour-a1-r7/artifacts",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/pour-a1-r7/conductor",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/pour-b2/conductor",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/pour-c2/artifacts",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/pour-c2/conductor",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/regression-probe-ccb1/artifacts",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/run",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1,
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/g2-validation",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/g2-validation/artifacts",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/hearth",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/hearth/harvest-proofs",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/hearth-offload-gcp-adk-test/artifacts",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/hearth-offload-rotation-proof",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/hearth-offload-rotation-proof/artifacts",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/omen-5070-hwbaseline-2026-07-02",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/omen-debut-bl-dee707",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/omen-debut-bl-dee707/artifacts",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/hearth-production/runs/omen-worker-1-reearn",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        }
+      ]
+    },
+    {
+      "source_id": "linux-hearth-ledger",
+      "status": "complete",
+      "gaps": [],
+      "limits": {
+        "depth": 2,
+        "seconds": 25,
+        "max_files": 100000,
+        "max_candidates": 1500
+      },
+      "rollup_count": 1,
+      "rollups": [
+        {
+          "directory": "/home/derek/hearth-production/var/ledger",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".sqlite": 1,
+            ".ndjson": 1
+          },
+          "git_markers": 0
+        }
+      ]
+    },
+    {
+      "source_id": "linux-continuity",
+      "status": "complete",
+      "gaps": [],
+      "limits": {
+        "depth": 3,
+        "seconds": 25,
+        "max_files": 100000,
+        "max_candidates": 1500
+      },
+      "rollup_count": 2,
+      "rollups": [
+        {
+          "directory": "/home/derek/.continuity/ledger/events",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 362
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.continuity/ledger",
+          "candidate_directories": 1,
+          "structured_files": {},
+          "git_markers": 1
+        }
+      ]
+    },
+    {
+      "source_id": "c-hearth",
+      "status": "complete",
+      "gaps": [],
+      "limits": {
+        "depth": 5,
+        "seconds": 25,
+        "max_files": 100000,
+        "max_candidates": 1500
+      },
+      "rollup_count": 17,
+      "rollups": [
+        {
+          "directory": "/mnt/omen-c-read/hearth-var/experiments/study-20260707T073708Z",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 5,
+            ".json": 5
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/hearth-var/experiments/study-20260707T073205Z",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2,
+            ".jsonl": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/hearth-var",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 3
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/hearth-var/execution",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".sqlite": 2,
+            ".ndjson": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/hearth-var/sentinel",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".ndjson": 1,
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/hearth-var/experiments/doc-adr-bench-20260721T154713Z-smoke",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1,
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/hearth-var/experiments/doc-adr-bench-20260721T161359Z-sweep",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1,
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/hearth-var/experiments/matrix-20260705T110418Z-smoke",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/hearth-var/experiments/matrix-20260706T052819Z-pilot",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/hearth-var/experiments/matrix-20260706T063613Z-sweep-r2",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/hearth-var/experiments/matrix-20260706T074048Z-pc-sweep-r3",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/hearth-var/experiments/matrix-20260706T080240Z-pc-sweep-r3",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/hearth-var/experiments/matrix-20260706T083726Z-pc-sweep-r2",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/hearth-var/experiments/matrix-20260706T101617Z-pilot",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/hearth-var/experiments/study-20260707T134629Z",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 1,
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/hearth-var/ledger",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".ndjson": 1,
+            ".sqlite": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/mnt/omen-c-read/hearth-var/commander/refine",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        }
+      ]
+    },
+    {
+      "source_id": "am4-home",
+      "status": "complete",
+      "gaps": [],
+      "limits": {
+        "depth": 2,
+        "seconds": 25,
+        "max_files": 100000,
+        "max_candidates": 1500
+      },
+      "rollup_count": 37,
+      "rollups": [
+        {
+          "directory": "/home/derek/am4bot/runs",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 82
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/am4-fleet-node/results",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 26
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/bench",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 17,
+            ".csv": 1,
+            ".db": 1
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/home/derek/chatgpt_parser_run/schemas",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 9
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/bench/context-landscape-canon-breadth-v1",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 6,
+            ".jsonl": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/bench/context-landscape-founding-canon-v2",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 5,
+            ".jsonl": 3
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/bench/context-landscape-pilot",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 5,
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/valheim-capture",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 5,
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/bench/context-landscape-highlight-hd-v1",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".jsonl": 2,
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/bench27-cuda134",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 4
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/gallery",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 4
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 3
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.config/am4-fleet",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".sqlite": 1,
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/am4bot",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".db": 2,
+            ".json": 1
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/home/derek/bench27-cuda130",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 3
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/handoff",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 3
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.config/fleet-review-seat",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/baseline/llama.cpp",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/home/derek/.steam",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/am4-fleet-node",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/bench/results_full",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/bench27-cuda134/pre-arm-cache",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/chatgpt_parser_run/.claude",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/chatgpt_parser_run/docs",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/contextlandscape-topography",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/o1/level-zero-tests",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".csv": 1
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/home/derek/o1/libpng",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/home/derek/otelpipe",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/quest-build-20260915/artifacts",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/thunderstore_tracker",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.continuity/ledger",
+          "candidate_directories": 1,
+          "structured_files": {},
+          "git_markers": 1
+        },
+        {
+          "directory": "/home/derek/ComfyUI",
+          "candidate_directories": 1,
+          "structured_files": {},
+          "git_markers": 1
+        },
+        {
+          "directory": "/home/derek/chatgpt_parser_run",
+          "candidate_directories": 1,
+          "structured_files": {},
+          "git_markers": 1
+        },
+        {
+          "directory": "/home/derek/continuity",
+          "candidate_directories": 1,
+          "structured_files": {},
+          "git_markers": 1
+        },
+        {
+          "directory": "/home/derek/quest-build-20260915",
+          "candidate_directories": 1,
+          "structured_files": {},
+          "git_markers": 1
+        }
+      ]
+    },
+    {
+      "source_id": "fx99-home",
+      "status": "complete",
+      "gaps": [],
+      "limits": {
+        "depth": 2,
+        "seconds": 25,
+        "max_files": 100000,
+        "max_candidates": 1500
+      },
+      "rollup_count": 9,
+      "rollups": [
+        {
+          "directory": "/home/derek/fleet/artlab",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 3,
+            ".jsonl": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/fleet",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2,
+            ".jsonl": 1
+          },
+          "git_markers": 1
+        },
+        {
+          "directory": "/home/derek/wool-n8n",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 3
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/ai-bench",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".csv": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/valheim-capture",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 2
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.hermes",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".db": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.steam",
+          "candidate_directories": 1,
+          "structured_files": {
+            ".json": 1
+          },
+          "git_markers": 0
+        },
+        {
+          "directory": "/home/derek/.continuity/ledger",
+          "candidate_directories": 1,
+          "structured_files": {},
+          "git_markers": 1
+        },
+        {
+          "directory": "/home/derek/continuity",
+          "candidate_directories": 1,
+          "structured_files": {},
+          "git_markers": 1
+        }
+      ]
+    }
+  ]
+}

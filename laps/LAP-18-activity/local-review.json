@@ -1,0 +1,11 @@
+{
+ "backend": "fx99-vllm",
+ "model": "qwen2.5-coder-7b",
+ "job_id": "job_1708710ef1b41f42d0fbffaeee0df602",
+ "duration_ms": 2561,
+ "tokens_in": 1450,
+ "tokens_out": 49,
+ "text": "No concrete bugs found. The code ensures that same-time interval ends precede starts by sorting events. Completion counts are managed correctly to avoid revealing outcomes after the snapshot. Score counts also adhere to the rule of not revealing activity before its event.",
+ "frontier_verdict": "accepted as a bounded advisory review, not as proof of correctness",
+ "evidence": "Exact-time half-open sweep independently checked with adjacent, overlapping and zero-duration fixtures; actual dated counter arrays reconciled to source at three frames. Subsequent changes narrow dispatch-source attribution; no generated code applied."
+}

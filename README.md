@@ -1,68 +1,73 @@
 # Known World
 
-A fog-of-war time-lapse of everything built on the lab's surfaces (C:, E:, omen-linux, AM4, FX99, GitHub) and
-everything said to agents along the way, in the manner of Isao Hashimoto's "1945-1998". The world is laid out once
-from the final corpus and revealed as it is touched; conversations are the radio traffic.
+A time-lapse of a year of software development and AI experimentation, inspired by Isao Hashimoto’s *1945–1998*. Projects become land; recorded work lights it up. Human and AI activity forms a musical score beneath the map.
 
-Goal `G-known-world` in `~/work/lab/intent.yaml`. Plan: `~/.claude/plans/moonlit-wandering-sunbeam.md` (approved
-2026-10-09). Handoff briefs: `~/work/known-world-plan/0-index.md`. Living plan: `plan.html`.
+**[Watch the film on FX99](https://fx99.tail8e749c.ts.net/known-world/)** · 98 seconds · Best with headphones. The FX99 address requires access to its Tailscale network.
 
-## Read first
+## Reading the world
 
-1. `DIRECTION.md`: the creative direction and the initial parameters.
-2. `CONTRACT.md`: the data contract, allowlists, lineage rules, operating rules. Everything flows through it.
-3. `SURVEY.md`: what exists, where, how big; the Scope agent turns it into the work-list.
-4. `EVIDENCE-HUNT.md`: repeatable local-scout discovery workflow, measurement recipes and the 2026-10-10 coverage hunt.
+A five-second animated key opens the film:
 
-## Layout
+- **Land:** clusters represent projects and repositories; tiles represent folders.
+- **Color and brightness:** color identifies the collaborator; brightness reflects weighted recent activity and fades over time.
+- **Bursts:** larger flashes represent larger recorded output. Bright centers and expanding rings with dark edges keep them visible against matching terrain.
+- **Connections:** moving trails show work reaching projects or local calls reaching machines. Recorded paths remain for five story days, fade through day seven, and renew with relevant activity. Pale project links and worktree spokes use the same fade window.
+- **Circle and dot:** an inferred coordination hub, following the machine with the most recent recorded agent chat.
+- **Score and totals:** activity over time appears below; recorded counts appear at right. The final map fades for three extra seconds before the closing totals.
 
+The current story covers January 1 through October 9, 2026. Its evidence spans Windows C: and E:, Linux, AM4, FX99, GitHub, agent sessions, HEARTH dispatches and archived experiment results. Collaborators include human, ChatGPT, Claude, Codex, Gemini, local models, OpenCode and automation; Antigravity activity is tracked separately.
+
+## Recorded scale
+
+| Measure | Current evidence |
+| --- | ---: |
+| Commits | 9,784 |
+| File touches | 209,848 |
+| Line additions + removals | 18,447,909 |
+| Local HEARTH calls | 22,672 |
+| Gemini calls | 1,057 |
+| Antigravity conversations | 160 |
+| Completed invocations | 629 |
+| Recorded benchmark runners | 298 |
+| Native benchmark configurations | 436 |
+| Measured experiment trials | 1,487 |
+| Direct research attempts | 11,388 |
+| Undated image results, outside the timeline | 4,533 |
+
+These are overlapping views, not numbers to add into one grand total. File touches are observations rather than unique files; line changes are not current code size; runner, configuration and trial counts use different units. Copies and mirrored sessions are folded where native identities permit. Undated evidence remains visible without invented dates. Coverage is partial and does not measure total operator hours or hardware utilization.
+
+[Evidence discovery and reconciliation](EVIDENCE-HUNT.md) documents the reusable search workflow, source shapes, historical recovery and remaining gaps. [The data contract](CONTRACT.md) describes collection boundaries and identity rules. Chat collection uses metadata rather than message bodies.
+
+## Project layout
+
+| Directory | Purpose |
+| --- | --- |
+| `collect/knownworld/` | Source adapters, schema discovery, recovery and metadata validation |
+| `corpus/activity/` | Structured activity sidecars and coverage records |
+| `corpus/discovery/` | Evidence inventories and schema/source reports |
+| `compile/` | Deterministic geometry, counters, event timing and synthesized audio |
+| `render/` | Canvas map, bursts, connections, score, opening key and closing card |
+| `export/` | Browser frame capture, video encoding and static-site packaging |
+| `laps/` | Iteration records, source audits and validation receipts |
+
+Generated video, audio, PNGs, frame exports and build directories are excluded from Git. Historical evidence adapters rely on the lab’s source archives; the repository alone does not include every original source needed for a complete rebuild.
+
+## Development and rendering
+
+Python dependencies are NumPy and imageio-ffmpeg; frame capture uses Node.js, Playwright and Chromium. The current export scripts resolve Playwright from the local lab installation, so update that path when using a different environment.
+
+```bash
+uv venv .venv
+uv pip install --python .venv/bin/python numpy imageio-ffmpeg
+.venv/bin/python compile/build_cli.py --cut 90 --out <new-lap>/build
 ```
-collect/knownworld/   extractors (one per source type), identity.json, privacy_scan.py, run_item.py
-corpus/raw/<item>/    fleet output per work item: events.ndjson, repos.ndjson, manifest.json, card.md
-corpus/merged/        merge.py output: events.ndjson, repos.json, actors.json, hosts.json, sessions.json
-corpus/CORPUS-REPORT.md
-compile/              layout.py (hex world), timeline.py (touches, decay, camera, rates), audio.py (wav)
-render/               index.html + kw.js (Canvas 2D, deterministic render(t)), styles.css
-export/               frames.mjs (Playwright headless Chromium), encode.sh (ffmpeg)
-laps/LAP-NN-<var>/    RESULT.md, preview, frame grid
-cache/clones/         --mirror clones of GitHub repos missing locally (gitignored)
-```
 
-## Environment
+With the required source corpus available, export 2,790 story frames using `export/frames.mjs --query closingFade=3` and 150 opening frames using `--query intro=1`. Set `FFMPEG` to the executable supplied by imageio-ffmpeg. The five-second opener plus the 93-second story/coda produces the 98-second release.
 
-```
-uv venv .venv && uv pip install --python .venv/bin/python numpy imageio-ffmpeg
-export PYTHONDONTWRITEBYTECODE=1 GIT_OPTIONAL_LOCKS=0 GIT_TERMINAL_PROMPT=0
-```
+[LAP-29’s assembly recipe](laps/LAP-29-burst-contrast/assemble.py) shows the reviewed audio/video assembly. For a new compile, use its matching WAV. Package with `export/publication.py --opening-seconds 5 --closing-fade-seconds 3`; its assets include both hashed filenames and stable compatibility aliases.
 
-Windows mounts are read-only; nothing is ever written there or into `jepa-*`, `hybrid-context-trial`, `runs/`.
-Chat sources are metadata only; see CONTRACT.md §2.
+[The current handoff](HANDOFF-20261010.md) records release hashes, deployment, rebuild details and limitations. [Creative direction](DIRECTION.md) explains the visual approach.
 
-## Status
+## License
 
-- 2026-10-10 public release: https://fx99.tail8e749c.ts.net/known-world/ — 98 seconds,
-  including a five-second animated key, slower burst/tone tails, five-to-seven story-day
-  connection memory, improved burst contrast and three extra seconds fading before closing totals.
-  Both the original stable media URL and the current hashed video serve this release.
-  The older `/chronicles/known-world/` remains an alias of the same content.
-  See [current handoff](HANDOFF-20261010.md) for release hashes, regeneration and deployment details.
-
-- 2026-10-10: [LAP-23](laps/LAP-23-experimental-shapes/RESULT.md) discovers evidence by schema across
-  known roots, including ignored outputs and removed Git artifacts. Reconciles 436 configurations and 1,487
-  measured trials, folds 3,356 copied rows, recovers 60 dated Memsplice experiments from source hashes,
-  and adds undated image evidence to the ending card. Updated FX99 film published and checked.
-- 2026-10-10: [LAP-22](laps/LAP-22-windows-research/RESULT.md) recovers 11,388 direct Windows research
-  attempts, 41 finished B70tools/Vllama runners and 210 dated Battlemage benchmark measurements.
-  Adds visible counters, timeline rows and source coverage; published on FX99 with verified playback and asset hashes.
-- 2026-10-10: [LAP-21](laps/LAP-21-count-audit/RESULT.md) independently audits raw records, compiled counters,
-  rendered sidebar text and the public release. Corrects mirrored-session counts, unlabelled bursts, inconsistent
-  local-call counts and omitted ending-summary activity. Corrected FX99 film is published.
-- 2026-10-10: [LAP-20](laps/LAP-20-publication/RESULT.md) publishes the recovered film, poster and categorized
-  evidence summary on [FX99](https://fx99.tail8e749c.ts.net/chronicles/known-world/). Live media hashes, playback,
-  seeking and desktop/mobile layouts verified. Snapshot cutoff: October 9, 15:41 UTC.
-- 2026-10-10: [LAP-19](laps/LAP-19-benchmark-history/RESULT.md) recovers 257 benchmark runs, expands dated
-  invocation coverage to 629, and adds 23 fleet-result observations. Includes the reusable recovery workflow
-  and explicit AM4/Conductor archive gaps. Local preview only.
-- 2026-10-10: [LAP-18](laps/LAP-18-activity/RESULT.md) adds execution, Antigravity and research activity,
-  uncapped numeric totals, landscape/portrait stills and an eight-second audio excerpt. Local preview only.
-- 2026-10-09: scaffolded; contract v1; surveys in; gh installed (auth pending Derek's token); corpus run next.
+[MIT](LICENSE).
